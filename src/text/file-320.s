@@ -14209,19 +14209,19 @@ _sub_4CFF1E:
     .4byte 8 # dwOfs 
     .4byte 0x80FFFF03 # dwType 
     .4byte 0 # dwFlags 
-    .4byte _HELPME # pguid
+    .4byte 0x0 # pguid
     .4byte 12 # dwOfs 
     .4byte 0x00FFFF0C # dwType 
     .4byte 0 # dwFlags 
-    .4byte _HELPME # pguid
+    .4byte 0x0 # pguid
     .4byte 13 # dwOfs 
     .4byte 0x00FFFF0C # dwType 
     .4byte 0 # dwFlags 
-    .4byte _HELPME # pguid
+    .4byte 0x0 # pguid
     .4byte 14 # dwOfs 
     .4byte 0x80FFFF0C # dwType 
     .4byte 0 # dwFlags 
-    .4byte _HELPME # pguid
+    .4byte 0x0 # pguid
     .4byte 15 # dwOfs 
     .4byte 0x80FFFF0C # dwType 
     .4byte 0 # dwFlags 
