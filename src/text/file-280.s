@@ -1318,26 +1318,78 @@ _sub_4BF476:
     mov eax, 0x3d                                        # 004BF48E
     mov ebx, 0x37                                        # 004BF493
     msvc_jmp _sub_4BE621                                 # 004BF498
-# 0x4BF49D
-    .byte 0x53, 0x52, 0x33, 0xDB, 0x66, 0x0B, 0xC0, 0x79 #        0 SR3.f..y
-    .byte 0x06, 0x83, 0xC3, 0x05, 0x66, 0xF7, 0xD8, 0x0F #        8 ....f...
-    .byte 0xB7, 0xC9, 0xC1, 0xE0, 0x10, 0x99, 0x0B, 0xC9 #       10 ........
-    .byte 0x74, 0x04, 0xF7, 0xF9, 0xEB, 0x05, 0xB8, 0xFF #       18 t.......
-    .byte 0xFF, 0xFF, 0xFF, 0x3D, 0x03, 0x0D, 0x00, 0x00 #       20 ...=....
-    .byte 0x72, 0x09, 0x43, 0x3D, 0x28, 0x23, 0x00, 0x00 #       28 r.C=(#..
-    .byte 0x72, 0x01, 0x43, 0x0F, 0xB6, 0x83, 0x5C, 0x3E #       30 r.C....>
-    .byte 0x50, 0x00, 0x5A, 0x5B, 0xC3, 0x53, 0x52, 0x33 #       38 P.Z[.SR3
-    .byte 0xDB, 0x66, 0x0B, 0xC0, 0x79, 0x06, 0x83, 0xC3 #       40 .f..y...
-    .byte 0x05, 0x66, 0xF7, 0xD8, 0x0F, 0xB7, 0xC9, 0xC1 #       48 .f......
-    .byte 0xE0, 0x10, 0x99, 0x0B, 0xC9, 0x74, 0x04, 0xF7 #       50 .....t..
-    .byte 0xF9, 0xEB, 0x05, 0xB8, 0xFF, 0xFF, 0xFF, 0xFF #       58 ........
-    .byte 0x3D, 0x50, 0x27, 0x00, 0x00, 0x77, 0x0A, 0x3D #       60 =P'..w.=
-    .byte 0x03, 0x0D, 0x00, 0x00, 0x72, 0x16, 0x43, 0xEB #       68 ....r.C.
-    .byte 0x13, 0x83, 0xC3, 0x02, 0x3D, 0x14, 0x50, 0x00 #       70 ....=.P.
-    .byte 0x00, 0x72, 0x09, 0x43, 0x3D, 0xF0, 0x55, 0x00 #       78 .r.C=.U.
-    .byte 0x00, 0x72, 0x01, 0x43, 0x0F, 0xB6, 0x83, 0x5C #       80 .r.C....
-    .byte 0x3E, 0x50, 0x00, 0x5A, 0x5B, 0xC3             #       88 >P.Z[.
 
+    .global _sub_4BF49D
+_sub_4BF49D:
+    push ebx                                             # 004BF49D
+    push edx                                             # 004BF49E
+    msvc_xor ebx, ebx                                    # 004BF49F
+    msvc_or ax, ax                                       # 004BF4A1
+    jns .L4BF4AC                                         # 004BF4A4
+    add ebx, 5                                           # 004BF4A6
+    neg ax                                               # 004BF4A9
+.L4BF4AC:
+    movzx ecx, cx                                        # 004BF4AC
+    shl eax, 0x10                                        # 004BF4AF
+    cdq                                                  # 004BF4B2
+    msvc_or ecx, ecx                                     # 004BF4B3
+    je .L4BF4BB                                          # 004BF4B5
+    idiv ecx                                             # 004BF4B7
+    jmp .L4BF4C0                                         # 004BF4B9
+.L4BF4BB:
+    mov eax, 0xffffffff                                  # 004BF4BB
+.L4BF4C0:
+    cmp eax, 0xd03                                       # 004BF4C0
+    jb .L4BF4D0                                          # 004BF4C5
+    inc ebx                                              # 004BF4C7
+    cmp eax, 0x2328                                      # 004BF4C8
+    jb .L4BF4D0                                          # 004BF4CD
+    inc ebx                                              # 004BF4CF
+.L4BF4D0:
+    movzx eax, byte ptr [ebx + 0x503e5c]                 # 004BF4D0
+    pop edx                                              # 004BF4D7
+    pop ebx                                              # 004BF4D8
+    ret                                                  # 004BF4D9
+
+    .global _sub_4BF4DA
+_sub_4BF4DA:
+    push ebx                                             # 004BF4DA
+    push edx                                             # 004BF4DB
+    msvc_xor ebx, ebx                                    # 004BF4DC
+    msvc_or ax, ax                                       # 004BF4DE
+    jns .L4BF4E9                                         # 004BF4E1
+    add ebx, 5                                           # 004BF4E3
+    neg ax                                               # 004BF4E6
+.L4BF4E9:
+    movzx ecx, cx                                        # 004BF4E9
+    shl eax, 0x10                                        # 004BF4EC
+    cdq                                                  # 004BF4EF
+    msvc_or ecx, ecx                                     # 004BF4F0
+    je .L4BF4F8                                          # 004BF4F2
+    idiv ecx                                             # 004BF4F4
+    jmp .L4BF4FD                                         # 004BF4F6
+.L4BF4F8:
+    mov eax, 0xffffffff                                  # 004BF4F8
+.L4BF4FD:
+    cmp eax, 0x2750                                      # 004BF4FD
+    ja .L4BF50E                                          # 004BF502
+    cmp eax, 0xd03                                       # 004BF504
+    jb .L4BF521                                          # 004BF509
+    inc ebx                                              # 004BF50B
+    jmp .L4BF521                                         # 004BF50C
+.L4BF50E:
+    add ebx, 2                                           # 004BF50E
+    cmp eax, 0x5014                                      # 004BF511
+    jb .L4BF521                                          # 004BF516
+    inc ebx                                              # 004BF518
+    cmp eax, 0x55f0                                      # 004BF519
+    jb .L4BF521                                          # 004BF51E
+    inc ebx                                              # 004BF520
+.L4BF521:
+    movzx eax, byte ptr [ebx + 0x503e5c]                 # 004BF521
+    pop edx                                              # 004BF528
+    pop ebx                                              # 004BF529
+    ret                                                  # 004BF52A
 
     .global _sub_4BF52B
 _sub_4BF52B:

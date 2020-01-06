@@ -3027,9 +3027,10 @@ _sub_431C05:
     call _sub_494E33                                     # 00431E13
     pop esi                                              # 00431E18
     ret                                                  # 00431E19
-# 0x431E1A
-    .byte 0xC3                                           #        0 .
 
+    .global _sub_431E1A
+_sub_431E1A:
+    ret                                                  # 00431E1A
 
     .global _sub_431E1B
 _sub_431E1B:
@@ -6105,28 +6106,49 @@ _sub_4345EE:
     call _sub_4CD320                                     # 00434687
     call _sub_4C8DBF                                     # 0043468C
     ret                                                  # 00434691
-# 0x434692
-    .byte 0xB1, 0x1A, 0x66, 0x8B, 0xD0, 0xE8, 0x0D, 0x8D #        0 ..f.....
-    .byte 0x09, 0x00, 0x74, 0x36, 0x0F, 0xBA, 0x25, 0x68 #        8 ..t6..%h
-    .byte 0x33, 0x52, 0x00, 0x03, 0x73, 0x20, 0x8A, 0x8E #       10 3R..s ..
-    .byte 0x82, 0x08, 0x00, 0x00, 0x3A, 0x0D, 0x92, 0x33 #       18 ....:..3
-    .byte 0x52, 0x00, 0x75, 0x12, 0x66, 0x8B, 0x4E, 0x40 #       20 R.u.f.N@
-    .byte 0x66, 0x3B, 0x0D, 0x90, 0x33, 0x52, 0x00, 0x75 #       28 f;..3R.u
-    .byte 0x05, 0xE8, 0x0E, 0x9D, 0x09, 0x00, 0xB1, 0x1A #       30 ........
-    .byte 0x66, 0x8B, 0xD0, 0xE8, 0xD7, 0x8C, 0x09, 0x00 #       38 f.......
-    .byte 0x75, 0x05, 0xE8, 0xF7, 0x00, 0x00, 0x00, 0x66 #       40 u......f
-    .byte 0xC7, 0x86, 0x70, 0x08, 0x00, 0x00, 0x01, 0x00 #       48 ..p.....
-    .byte 0x66, 0xC7, 0x46, 0x34, 0x54, 0x01, 0x66, 0xC7 #       50 f.F4T.f.
-    .byte 0x46, 0x36, 0xC2, 0x00, 0xE8, 0xCA, 0x5D, 0x09 #       58 F6....].
-    .byte 0x00, 0xA1, 0xC4, 0x92, 0x4F, 0x00, 0x89, 0x46 #       60 ....O..F
-    .byte 0x2C, 0xA1, 0xF8, 0x92, 0x4F, 0x00, 0x89, 0x46 #       68 ,...O..F
-    .byte 0x0C, 0xA1, 0xFC, 0x92, 0x4F, 0x00, 0x89, 0x46 #       70 ....O..F
-    .byte 0x10, 0xA1, 0x24, 0x93, 0x4F, 0x00, 0x89, 0x46 #       78 ..$.O..F
-    .byte 0x24, 0xA1, 0xDC, 0x92, 0x4F, 0x00, 0x89, 0x06 #       80 $...O...
-    .byte 0xC7, 0x46, 0x1C, 0x00, 0x00, 0x00, 0x00, 0xE8 #       88 .F......
-    .byte 0xD6, 0xFC, 0xFF, 0xFF, 0xE8, 0x54, 0x5A, 0x09 #       90 .....TZ.
-    .byte 0x00, 0xE8, 0xF0, 0x8B, 0x09, 0x00, 0xC3       #       98 .......
 
+    .global _sub_434692
+_sub_434692:
+    mov cl, 0x1a                                         # 00434692
+    msvc_mov dx, ax                                      # 00434694
+    call _sub_4CD3A9                                     # 00434697
+    je .L4346D4                                          # 0043469C
+    bt dword ptr [0x523368], 3                           # 0043469E
+    jae .L4346C8                                         # 004346A6
+    mov cl, byte ptr [esi + 0x882]                       # 004346A8
+    cmp cl, byte ptr [0x523392]                          # 004346AE
+    jne .L4346C8                                         # 004346B4
+    mov cx, word ptr [esi + 0x40]                        # 004346B6
+    cmp cx, word ptr [0x523390]                          # 004346BA
+    jne .L4346C8                                         # 004346C1
+    call _sub_4CE3D6                                     # 004346C3
+.L4346C8:
+    mov cl, 0x1a                                         # 004346C8
+    msvc_mov dx, ax                                      # 004346CA
+    call _sub_4CD3A9                                     # 004346CD
+    jne .L4346D9                                         # 004346D2
+.L4346D4:
+    call _sub_4347D0                                     # 004346D4
+.L4346D9:
+    mov word ptr [esi + 0x870], 1                        # 004346D9
+    mov word ptr [esi + 0x34], 0x154                     # 004346E2
+    mov word ptr [esi + 0x36], 0xc2                      # 004346E8
+    call _sub_4CA4BD                                     # 004346EE
+    mov eax, dword ptr [0x4f92c4]                        # 004346F3
+    mov dword ptr [esi + 0x2c], eax                      # 004346F8
+    mov eax, dword ptr [0x4f92f8]                        # 004346FB
+    mov dword ptr [esi + 0xc], eax                       # 00434700
+    mov eax, dword ptr [0x4f92fc]                        # 00434703
+    mov dword ptr [esi + 0x10], eax                      # 00434708
+    mov eax, dword ptr [0x4f9324]                        # 0043470B
+    mov dword ptr [esi + 0x24], eax                      # 00434710
+    mov eax, dword ptr [0x4f92dc]                        # 00434713
+    mov dword ptr [esi], eax                             # 00434718
+    mov dword ptr [esi + 0x1c], 0                        # 0043471A
+    call _sub_4343FC                                     # 00434721
+    call _sub_4CA17F                                     # 00434726
+    call _sub_4CD320                                     # 0043472B
+    ret                                                  # 00434730
 
     .global _sub_434731
 _sub_434731:

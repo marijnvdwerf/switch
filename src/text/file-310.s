@@ -145,10 +145,12 @@ _sub_4C4C28:
 .L4C4D6C:
     mov ebx, dword ptr [0x1136524]                       # 004C4D6C
     ret                                                  # 004C4D72
-# 0x4C4D73
-    .byte 0x59, 0x58, 0xE8, 0x14, 0xDF, 0xF9, 0xFF, 0xBB #        0 YX......
-    .byte 0x00, 0x00, 0x00, 0x80, 0xC3                   #        8 .....
-
+.L4C4D73:
+    pop ecx                                              # 004C4D73
+    pop eax                                              # 004C4D74
+    call _sub_462C8E                                     # 004C4D75
+    mov ebx, 0x80000000                                  # 004C4D7A
+    ret                                                  # 004C4D7F
 .L4C4D80:
     mov word ptr [0x9c68e6], 0x5fa                       # 004C4D80
 .L4C4D89:
@@ -162,54 +164,111 @@ _sub_4C4C28:
     mov word ptr [0x9c68e6], 0x63                        # 004C4D9E
     mov ebx, 0x80000000                                  # 004C4DA7
     ret                                                  # 004C4DAC
-# 0x4C4DAD
-    .byte 0x60, 0x8A, 0x06, 0x24, 0x3C, 0x3C, 0x00, 0x0F #        0 `..$<<..
-    .byte 0x84, 0x5B, 0x01, 0x00, 0x00, 0x3C, 0x14, 0x74 #        8 .[...<.t
-    .byte 0x07, 0x3C, 0x10, 0x74, 0x6B, 0x61, 0xF9, 0xC3 #       10 .<.tka..
-    .byte 0x8B, 0x2D, 0x20, 0x65, 0x13, 0x01, 0x0F, 0xB6 #       18 .- e....
-    .byte 0x5E, 0x04, 0x8B, 0x1C, 0x9D, 0x64, 0xCD, 0x50 #       20 ^....d.P
-    .byte 0x00, 0x0F, 0xBF, 0x4B, 0x42, 0x0F, 0xB6, 0x5B #       28 ...KB..[
-    .byte 0x3F, 0x0F, 0xAF, 0x0C, 0x9D, 0x5E, 0x5E, 0x52 #       30 ?....^^R
-    .byte 0x00, 0xC1, 0xF9, 0x0C, 0x01, 0x0D, 0x24, 0x65 #       38 ......$e
-    .byte 0x13, 0x01, 0xF6, 0x45, 0x04, 0x40, 0x0F, 0x85 #       40 ...E.@..
-    .byte 0x1C, 0x01, 0x00, 0x00, 0xF6, 0x45, 0x04, 0x01 #       48 .....E..
-    .byte 0x0F, 0x84, 0x12, 0x01, 0x00, 0x00, 0x89, 0x35 #       50 .......5
-    .byte 0x58, 0x01, 0xF0, 0x00, 0x66, 0xA1, 0x38, 0x65 #       58 X...f.8e
-    .byte 0x13, 0x01, 0x66, 0x8B, 0x0D, 0x3A, 0x65, 0x13 #       60 ..f..:e.
-    .byte 0x01, 0xB3, 0x01, 0xE8, 0x15, 0x66, 0xFF, 0xFF #       68 .....f..
-    .byte 0x8B, 0x35, 0x58, 0x01, 0xF0, 0x00, 0x89, 0x35 #       70 .5X....5
-    .byte 0x5C, 0x01, 0xF0, 0x00, 0x61, 0x23, 0xC0, 0xC3 #       78 ....a#..
-    .byte 0x0F, 0xB6, 0x5E, 0x04, 0x8B, 0x1C, 0x9D, 0x70 #       80 ..^....p
-    .byte 0xCE, 0x50, 0x00, 0xF6, 0x83, 0x98, 0x00, 0x00 #       88 .P......
-    .byte 0x00, 0x08, 0x75, 0x81, 0x66, 0xA1, 0x38, 0x65 #       90 ..u.f.8e
-    .byte 0x13, 0x01, 0x66, 0x8B, 0x0D, 0x3A, 0x65, 0x13 #       98 ..f..:e.
-    .byte 0x01, 0x8A, 0x5E, 0x05, 0x83, 0xE3, 0x03, 0x66 #       A0 ..^....f
-    .byte 0x2B, 0x04, 0x9D, 0x96, 0x92, 0x4F, 0x00, 0x66 #       A8 +....O.f
-    .byte 0x2B, 0x0C, 0x9D, 0x98, 0x92, 0x4F, 0x00, 0x8A #       B0 +....O..
-    .byte 0x56, 0x02, 0xBD, 0x70, 0x01, 0xF0, 0x00, 0x66 #       B8 V..p...f
-    .byte 0x83, 0x7D, 0x00, 0xFF, 0x74, 0x1A, 0x66, 0x3B #       C0 .}..t.f;
-    .byte 0x45, 0x00, 0x75, 0x0F, 0x66, 0x3B, 0x4D, 0x02 #       C8 E.u.f;M.
-    .byte 0x75, 0x09, 0x3A, 0x55, 0x04, 0x0F, 0x84, 0x8D #       D0 u.:U....
-    .byte 0x00, 0x00, 0x00, 0x83, 0xC5, 0x06, 0xEB, 0xDF #       D8 ........
-    .byte 0x81, 0xFD, 0x9C, 0x02, 0xF0, 0x00, 0x0F, 0x83 #       E0 ........
-    .byte 0x29, 0xFF, 0xFF, 0xFF, 0x66, 0x89, 0x45, 0x00 #       E8 )...f.E.
-    .byte 0x66, 0x89, 0x4D, 0x02, 0x88, 0x55, 0x04, 0x66 #       F0 f.M..U.f
-    .byte 0xC7, 0x45, 0x06, 0xFF, 0xFF, 0x89, 0x35, 0x58 #       F8 .E....5X
-    .byte 0x01, 0xF0, 0x00, 0x8B, 0x2D, 0x20, 0x65, 0x13 #      100 ....- e.
-    .byte 0x01, 0x66, 0x0F, 0xB6, 0x7E, 0x02, 0x66, 0xC1 #      108 .f..~.f.
-    .byte 0xE7, 0x02, 0x8A, 0x5D, 0x04, 0xF6, 0xC3, 0x01 #      110 ...]....
-    .byte 0x75, 0x0A, 0x66, 0x83, 0x3D, 0x76, 0x01, 0xF0 #      118 u.f.=v..
-    .byte 0x00, 0xFF, 0x74, 0x03, 0x80, 0xCB, 0x80, 0xF6 #      120 ..t.....
-    .byte 0xC3, 0x40, 0x74, 0x03, 0x80, 0xE3, 0xBE, 0xE8 #      128 .@t.....
-    .byte 0x6D, 0x88, 0xF6, 0xFF, 0x81, 0xFB, 0x00, 0x00 #      130 m.......
-    .byte 0x00, 0x80, 0x0F, 0x84, 0xD5, 0xFE, 0xFF, 0xFF #      138 ........
-    .byte 0x01, 0x1D, 0x24, 0x65, 0x13, 0x01, 0x8B, 0x2D #      140 ..$e...-
-    .byte 0x20, 0x65, 0x13, 0x01, 0xF6, 0x45, 0x04, 0x01 #      148  e...E..
-    .byte 0x74, 0x16, 0xF6, 0x45, 0x04, 0x40, 0x75, 0x10 #      150 t..E.@u.
-    .byte 0x8B, 0x35, 0x58, 0x01, 0xF0, 0x00, 0x89, 0x35 #      158 .5X....5
-    .byte 0x5C, 0x01, 0xF0, 0x00, 0x61, 0x23, 0xC0, 0xC3 #      160 ....a#..
-    .byte 0x61, 0x23, 0xDB, 0xC3                         #      168 a#..
 
+    .global _sub_4C4DAD
+_sub_4C4DAD:
+    pushal                                               # 004C4DAD
+    mov al, byte ptr [esi]                               # 004C4DAE
+    and al, 0x3c                                         # 004C4DB0
+    cmp al, 0                                            # 004C4DB2
+    je .L4C4F15                                          # 004C4DB4
+    cmp al, 0x14                                         # 004C4DBA
+    je .L4C4DC5                                          # 004C4DBC
+    cmp al, 0x10                                         # 004C4DBE
+    je .L4C4E2D                                          # 004C4DC0
+.L4C4DC2:
+    popal                                                # 004C4DC2
+    stc                                                  # 004C4DC3
+    ret                                                  # 004C4DC4
+.L4C4DC5:
+    mov ebp, dword ptr [0x1136520]                       # 004C4DC5
+    movzx ebx, byte ptr [esi + 4]                        # 004C4DCB
+    mov ebx, dword ptr [ebx*4 + 0x50cd64]                # 004C4DCF
+    movsx ecx, word ptr [ebx + 0x42]                     # 004C4DD6
+    movzx ebx, byte ptr [ebx + 0x3f]                     # 004C4DDA
+    imul ecx, dword ptr [ebx*4 + 0x525e5e]               # 004C4DDE
+    sar ecx, 0xc                                         # 004C4DE6
+    add dword ptr [0x1136524], ecx                       # 004C4DE9
+    test byte ptr [ebp + 4], 0x40                        # 004C4DEF
+    jne .L4C4F15                                         # 004C4DF3
+    test byte ptr [ebp + 4], 1                           # 004C4DF9
+    je .L4C4F15                                          # 004C4DFD
+    mov dword ptr [0xf00158], esi                        # 004C4E03
+    mov ax, word ptr [0x1136538]                         # 004C4E09
+    mov cx, word ptr [0x113653a]                         # 004C4E0F
+    mov bl, 1                                            # 004C4E16
+    call _sub_4BB432                                     # 004C4E18
+    mov esi, dword ptr [0xf00158]                        # 004C4E1D
+    mov dword ptr [0xf0015c], esi                        # 004C4E23
+    popal                                                # 004C4E29
+    msvc_and eax, eax                                    # 004C4E2A
+    ret                                                  # 004C4E2C
+.L4C4E2D:
+    movzx ebx, byte ptr [esi + 4]                        # 004C4E2D
+    mov ebx, dword ptr [ebx*4 + 0x50ce70]                # 004C4E31
+    test byte ptr [ebx + 0x98], 8                        # 004C4E38
+    jne .L4C4DC2                                         # 004C4E3F
+    mov ax, word ptr [0x1136538]                         # 004C4E41
+    mov cx, word ptr [0x113653a]                         # 004C4E47
+    mov bl, byte ptr [esi + 5]                           # 004C4E4E
+    and ebx, 3                                           # 004C4E51
+    sub ax, word ptr [ebx*4 + 0x4f9296]                  # 004C4E54
+    sub cx, word ptr [ebx*4 + 0x4f9298]                  # 004C4E5C
+    mov dl, byte ptr [esi + 2]                           # 004C4E64
+    mov ebp, 0xf00170                                    # 004C4E67
+.L4C4E6C:
+    cmp word ptr [ebp], -1                               # 004C4E6C
+    je .L4C4E8D                                          # 004C4E71
+    cmp ax, word ptr [ebp]                               # 004C4E73
+    jne .L4C4E88                                         # 004C4E77
+    cmp cx, word ptr [ebp + 2]                           # 004C4E79
+    jne .L4C4E88                                         # 004C4E7D
+    cmp dl, byte ptr [ebp + 4]                           # 004C4E7F
+    je .L4C4F15                                          # 004C4E82
+.L4C4E88:
+    add ebp, 6                                           # 004C4E88
+    jmp .L4C4E6C                                         # 004C4E8B
+.L4C4E8D:
+    cmp ebp, 0xf0029c                                    # 004C4E8D
+    jae .L4C4DC2                                         # 004C4E93
+    mov word ptr [ebp], ax                               # 004C4E99
+    mov word ptr [ebp + 2], cx                           # 004C4E9D
+    mov byte ptr [ebp + 4], dl                           # 004C4EA1
+    mov word ptr [ebp + 6], 0xffff                       # 004C4EA4
+    mov dword ptr [0xf00158], esi                        # 004C4EAA
+    mov ebp, dword ptr [0x1136520]                       # 004C4EB0
+    movzx di, byte ptr [esi + 2]                         # 004C4EB6
+    shl di, 2                                            # 004C4EBB
+    mov bl, byte ptr [ebp + 4]                           # 004C4EBF
+    test bl, 1                                           # 004C4EC2
+    jne .L4C4ED1                                         # 004C4EC5
+    cmp word ptr [0xf00176], -1                          # 004C4EC7
+    je .L4C4ED4                                          # 004C4ECF
+.L4C4ED1:
+    or bl, 0x80                                          # 004C4ED1
+.L4C4ED4:
+    test bl, 0x40                                        # 004C4ED4
+    je .L4C4EDC                                          # 004C4ED7
+    and bl, 0xbe                                         # 004C4ED9
+.L4C4EDC:
+    call _sub_42D74E                                     # 004C4EDC
+    cmp ebx, 0x80000000                                  # 004C4EE1
+    je .L4C4DC2                                          # 004C4EE7
+    add dword ptr [0x1136524], ebx                       # 004C4EED
+    mov ebp, dword ptr [0x1136520]                       # 004C4EF3
+    test byte ptr [ebp + 4], 1                           # 004C4EF9
+    je .L4C4F15                                          # 004C4EFD
+    test byte ptr [ebp + 4], 0x40                        # 004C4EFF
+    jne .L4C4F15                                         # 004C4F03
+    mov esi, dword ptr [0xf00158]                        # 004C4F05
+    mov dword ptr [0xf0015c], esi                        # 004C4F0B
+    popal                                                # 004C4F11
+    msvc_and eax, eax                                    # 004C4F12
+    ret                                                  # 004C4F14
+.L4C4F15:
+    popal                                                # 004C4F15
+    msvc_and ebx, ebx                                    # 004C4F16
+    ret                                                  # 004C4F18
 
     .global _sub_4C4F19
 _sub_4C4F19:

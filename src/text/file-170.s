@@ -6729,26 +6729,50 @@ _sub_45FE4C:
     pop esi                                              # 0045FE93
     pop edi                                              # 0045FE94
     ret                                                  # 0045FE95
-# 0x45FE96
-    .byte 0x57, 0x56, 0x55, 0x50, 0x53, 0xBA, 0xFE, 0xFF #        0 WVUPS...
-    .byte 0xFF, 0xFF, 0xE8, 0xAF, 0x9F, 0xFF, 0xFF, 0x80 #        8 ........
-    .byte 0xFB, 0x00, 0x75, 0x0A, 0x5B, 0x58, 0x5D, 0x5E #       10 ..u.[X]^
-    .byte 0x5F, 0x66, 0xB8, 0x00, 0x80, 0xC3, 0x88, 0x1D #       18 _f......
-    .byte 0x32, 0x01, 0xE4, 0x00, 0x89, 0x15, 0x24, 0x01 #       20 2.....$.
-    .byte 0xE4, 0x00, 0x66, 0x89, 0x1D, 0x30, 0x01, 0xE4 #       28 ..f..0..
-    .byte 0x00, 0x66, 0xA3, 0x28, 0x01, 0xE4, 0x00, 0x66 #       30 .f.(...f
-    .byte 0x89, 0x0D, 0x2A, 0x01, 0xE4, 0x00, 0x66, 0x83 #       38 ..*...f.
-    .byte 0xC0, 0x1F, 0x66, 0x83, 0xC1, 0x1F, 0x66, 0xA3 #       40 ..f...f.
-    .byte 0x2C, 0x01, 0xE4, 0x00, 0x66, 0x89, 0x0D, 0x2E #       48 ,...f...
-    .byte 0x01, 0xE4, 0x00, 0x66, 0x83, 0xC0, 0xF1, 0x66 #       50 ...f...f
-    .byte 0x83, 0xC1, 0xF1, 0x66, 0x8B, 0x15, 0x30, 0x01 #       58 ...f..0.
-    .byte 0xE4, 0x00, 0xE8, 0x9A, 0x73, 0x00, 0x00, 0x5B #       60 ....s..[
-    .byte 0x58, 0x66, 0x2B, 0x47, 0x04, 0x66, 0x2B, 0x5F #       68 Xf+G.f+_
-    .byte 0x06, 0x8A, 0x4F, 0x10, 0x66, 0xD3, 0xE0, 0x66 #       70 ..O.f..f
-    .byte 0xD3, 0xE3, 0x66, 0x03, 0x47, 0x08, 0x66, 0x03 #       78 ..f.G.f.
-    .byte 0x5F, 0x0A, 0x8B, 0x0D, 0xB8, 0xF0, 0xE3, 0x00 #       80 _.......
-    .byte 0xFF, 0x24, 0x8D, 0x80, 0xD2, 0x4F, 0x00       #       88 .$...O.
 
+    .global _sub_45FE96
+_sub_45FE96:
+    push edi                                             # 0045FE96
+    push esi                                             # 0045FE97
+    push ebp                                             # 0045FE98
+    push eax                                             # 0045FE99
+    push ebx                                             # 0045FE9A
+    mov edx, 0xfffffffe                                  # 0045FE9B
+    call _sub_459E54                                     # 0045FEA0
+    cmp bl, 0                                            # 0045FEA5
+    jne .L45FEB4                                         # 0045FEA8
+    pop ebx                                              # 0045FEAA
+    pop eax                                              # 0045FEAB
+    pop ebp                                              # 0045FEAC
+    pop esi                                              # 0045FEAD
+    pop edi                                              # 0045FEAE
+    mov ax, 0x8000                                       # 0045FEAF
+    ret                                                  # 0045FEB3
+.L45FEB4:
+    mov byte ptr [0xe40132], bl                          # 0045FEB4
+    mov dword ptr [0xe40124], edx                        # 0045FEBA
+    mov word ptr [0xe40130], bx                          # 0045FEC0
+    mov word ptr [0xe40128], ax                          # 0045FEC7
+    mov word ptr [0xe4012a], cx                          # 0045FECD
+    add ax, 0x1f                                         # 0045FED4
+    add cx, 0x1f                                         # 0045FED8
+    mov word ptr [0xe4012c], ax                          # 0045FEDC
+    mov word ptr [0xe4012e], cx                          # 0045FEE2
+    add ax, -0xf                                         # 0045FEE9
+    add cx, -0xf                                         # 0045FEED
+    mov dx, word ptr [0xe40130]                          # 0045FEF1
+    call _sub_467297                                     # 0045FEF8
+    pop ebx                                              # 0045FEFD
+    pop eax                                              # 0045FEFE
+    sub ax, word ptr [edi + 4]                           # 0045FEFF
+    sub bx, word ptr [edi + 6]                           # 0045FF03
+    mov cl, byte ptr [edi + 0x10]                        # 0045FF07
+    shl ax, cl                                           # 0045FF0A
+    shl bx, cl                                           # 0045FF0D
+    add ax, word ptr [edi + 8]                           # 0045FF10
+    add bx, word ptr [edi + 0xa]                         # 0045FF14
+    mov ecx, dword ptr [0xe3f0b8]                        # 0045FF18
+    jmp dword ptr [ecx*4 + 0x4fd280]                     # 0045FF1E
 
     .global _sub_45FF25
 _sub_45FF25:
@@ -7384,13 +7408,27 @@ _sub_46071C:
     pop edi                                              # 00460756
     mov edx, dword ptr [0xe40124]                        # 00460757
     ret                                                  # 0046075D
-# 0x46075E
-    .byte 0x57, 0x56, 0x55, 0x50, 0x53, 0xBA, 0xDA, 0xFF #        0 WVUPS...
-    .byte 0xFF, 0xFF, 0xE8, 0xE7, 0x96, 0xFF, 0xFF, 0x80 #        8 ........
-    .byte 0xFB, 0x04, 0x75, 0x05, 0x8A, 0x1A, 0x80, 0xE3 #       10 ..u.....
-    .byte 0x3C, 0x5B, 0x58, 0x5D, 0x5E, 0x5F, 0xE9, 0x15 #       18 <[X]^_..
-    .byte 0xF7, 0xFF, 0xFF                               #       20 ...
 
+    .global _sub_46075E
+_sub_46075E:
+    push edi                                             # 0046075E
+    push esi                                             # 0046075F
+    push ebp                                             # 00460760
+    push eax                                             # 00460761
+    push ebx                                             # 00460762
+    mov edx, 0xffffffda                                  # 00460763
+    call _sub_459E54                                     # 00460768
+    cmp bl, 4                                            # 0046076D
+    jne .L460777                                         # 00460770
+    mov bl, byte ptr [edx]                               # 00460772
+    and bl, 0x3c                                         # 00460774
+.L460777:
+    pop ebx                                              # 00460777
+    pop eax                                              # 00460778
+    pop ebp                                              # 00460779
+    pop esi                                              # 0046077A
+    pop edi                                              # 0046077B
+    msvc_jmp _sub_45FE96                                 # 0046077C
 
     .global _sub_460781
 _sub_460781:

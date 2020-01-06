@@ -1443,52 +1443,173 @@ _sub_497A6A:
     pop eax                                              # 00497C0E
     pop edx                                              # 00497C0F
     ret                                                  # 00497C10
-# 0x497C11
-    .byte 0x60, 0x8A, 0x07, 0x0A, 0xC0, 0x0F, 0x84, 0x52 #        0 `......R
-    .byte 0x01, 0x00, 0x00, 0x3C, 0xFF, 0x0F, 0x84, 0x42 #        8 ...<...B
-    .byte 0x01, 0x00, 0x00, 0x3C, 0xBF, 0x0F, 0x84, 0x35 #       10 ...<...5
-    .byte 0x01, 0x00, 0x00, 0x3C, 0xC0, 0x72, 0x08, 0x3C #       18 ...<.r.<
-    .byte 0xC5, 0x0F, 0x86, 0x1F, 0x01, 0x00, 0x00, 0x3C #       20 .......<
-    .byte 0xC6, 0x0F, 0x84, 0x0D, 0x01, 0x00, 0x00, 0x3C #       28 .......<
-    .byte 0xC7, 0x0F, 0x84, 0xFB, 0x00, 0x00, 0x00, 0x3C #       30 .......<
-    .byte 0xC8, 0x72, 0x08, 0x3C, 0xCB, 0x0F, 0x86, 0xE5 #       38 .r.<....
-    .byte 0x00, 0x00, 0x00, 0x3C, 0xCC, 0x72, 0x08, 0x3C #       40 ...<.r.<
-    .byte 0xCF, 0x0F, 0x86, 0xCF, 0x00, 0x00, 0x00, 0x3C #       48 .......<
-    .byte 0xD0, 0x0F, 0x84, 0xBD, 0x00, 0x00, 0x00, 0x3C #       50 .......<
-    .byte 0xD1, 0x0F, 0x84, 0xDD, 0x00, 0x00, 0x00, 0x3C #       58 .......<
-    .byte 0xD2, 0x72, 0x08, 0x3C, 0xD6, 0x0F, 0x86, 0x9F #       60 .r.<....
-    .byte 0x00, 0x00, 0x00, 0x3C, 0xD7, 0x72, 0x08, 0x3C #       68 ...<.r.<
-    .byte 0xD8, 0x0F, 0x86, 0x89, 0x00, 0x00, 0x00, 0x3C #       70 .......<
-    .byte 0xD9, 0x72, 0x04, 0x3C, 0xDC, 0x76, 0x77, 0x3C #       78 .r.<.vw<
-    .byte 0xDD, 0x0F, 0x84, 0xC4, 0x00, 0x00, 0x00, 0x3C #       80 .......<
-    .byte 0xDE, 0x0F, 0x84, 0xA8, 0x00, 0x00, 0x00, 0x3C #       88 .......<
-    .byte 0xDF, 0x0F, 0x84, 0x82, 0x00, 0x00, 0x00, 0x3C #       90 .......<
-    .byte 0xE0, 0x72, 0x08, 0x3C, 0xE5, 0x0F, 0x86, 0xA8 #       98 .r.<....
-    .byte 0x00, 0x00, 0x00, 0x3C, 0xE6, 0x0F, 0x84, 0x82 #       A0 ...<....
-    .byte 0x00, 0x00, 0x00, 0x3C, 0xE7, 0x0F, 0x84, 0x84 #       A8 ...<....
-    .byte 0x00, 0x00, 0x00, 0x3C, 0xE8, 0x72, 0x04, 0x3C #       B0 ...<.r.<
-    .byte 0xEB, 0x76, 0x72, 0x3C, 0xEC, 0x72, 0x04, 0x3C #       B8 .vr<.r.<
-    .byte 0xEF, 0x76, 0x60, 0x3C, 0xF0, 0x72, 0x04, 0x3C #       C0 .v`<.r.<
-    .byte 0xF1, 0x76, 0x76, 0x3C, 0xF2, 0x72, 0x04, 0x3C #       C8 .vv<.r.<
-    .byte 0xF6, 0x76, 0x3C, 0x3C, 0xF7, 0x74, 0x1A, 0x3C #       D0 .v<<.t.<
-    .byte 0xF8, 0x74, 0x3E, 0x3C, 0xF9, 0x72, 0x04, 0x3C #       D8 .t><.r.<
-    .byte 0xFC, 0x76, 0x18, 0x3C, 0xFD, 0x72, 0x04, 0x3C #       E0 .v.<.r.<
-    .byte 0xFE, 0x76, 0x1A, 0x47, 0xE9, 0x10, 0xFF, 0xFF #       E8 .v.G....
-    .byte 0xFF, 0xC6, 0x07, 0x6C, 0xEB, 0xF5, 0xC6, 0x07 #       F0 ...l....
-    .byte 0x55, 0xEB, 0xF0, 0xC6, 0x07, 0x75, 0xEB, 0xEB #       F8 U....u..
-    .byte 0xC6, 0x07, 0x5A, 0xEB, 0xE6, 0xC6, 0x07, 0x7A #      100 ..Z....z
-    .byte 0xEB, 0xE1, 0xC6, 0x07, 0x4F, 0xEB, 0xDC, 0xC6 #      108 ....O...
-    .byte 0x07, 0x6F, 0xEB, 0xD7, 0xC6, 0x07, 0x53, 0xEB #      110 .o....S.
-    .byte 0xD2, 0xC6, 0x07, 0x73, 0xEB, 0xCD, 0xC6, 0x07 #      118 ...s....
-    .byte 0x49, 0xEB, 0xC8, 0xC6, 0x07, 0x69, 0xEB, 0xC3 #      120 I....i..
-    .byte 0xC6, 0x07, 0x45, 0xEB, 0xBE, 0xC6, 0x07, 0x65 #      128 ..E....e
-    .byte 0xEB, 0xB9, 0xC6, 0x07, 0x43, 0xEB, 0xB4, 0xC6 #      130 ....C...
-    .byte 0x07, 0x63, 0xEB, 0xAF, 0xC6, 0x07, 0x4E, 0xEB #      138 .c....N.
-    .byte 0xAA, 0xC6, 0x07, 0x6E, 0xEB, 0xA5, 0xC6, 0x07 #      140 ...n....
-    .byte 0x41, 0xEB, 0xA0, 0xC6, 0x07, 0x61, 0xEB, 0x9B #      148 A....a..
-    .byte 0xC6, 0x07, 0x3F, 0xEB, 0x96, 0x83, 0xC7, 0x03 #      150 ..?.....
-    .byte 0xE9, 0xA4, 0xFE, 0xFF, 0xFF, 0x61, 0xC3       #      158 .....a.
 
+    .global _sub_497C11
+_sub_497C11:
+    pushal                                               # 00497C11
+.L497C12:
+    mov al, byte ptr [edi]                               # 00497C12
+    msvc_or al, al                                       # 00497C14
+    je .L497D6E                                          # 00497C16
+    cmp al, 0xff                                         # 00497C1C
+    je .L497D66                                          # 00497C1E
+    cmp al, 0xbf                                         # 00497C24
+    je .L497D61                                          # 00497C26
+    cmp al, 0xc0                                         # 00497C2C
+    jb .L497C38                                          # 00497C2E
+    cmp al, 0xc5                                         # 00497C30
+    jbe .L497D57                                         # 00497C32
+.L497C38:
+    cmp al, 0xc6                                         # 00497C38
+    je .L497D4D                                          # 00497C3A
+    cmp al, 0xc7                                         # 00497C40
+    je .L497D43                                          # 00497C42
+    cmp al, 0xc8                                         # 00497C48
+    jb .L497C54                                          # 00497C4A
+    cmp al, 0xcb                                         # 00497C4C
+    jbe .L497D39                                         # 00497C4E
+.L497C54:
+    cmp al, 0xcc                                         # 00497C54
+    jb .L497C60                                          # 00497C56
+    cmp al, 0xcf                                         # 00497C58
+    jbe .L497D2F                                         # 00497C5A
+.L497C60:
+    cmp al, 0xd0                                         # 00497C60
+    je .L497D25                                          # 00497C62
+    cmp al, 0xd1                                         # 00497C68
+    je .L497D4D                                          # 00497C6A
+    cmp al, 0xd2                                         # 00497C70
+    jb .L497C7C                                          # 00497C72
+    cmp al, 0xd6                                         # 00497C74
+    jbe .L497D1B                                         # 00497C76
+.L497C7C:
+    cmp al, 0xd7                                         # 00497C7C
+    jb .L497C88                                          # 00497C7E
+    cmp al, 0xd8                                         # 00497C80
+    jbe .L497D11                                         # 00497C82
+.L497C88:
+    cmp al, 0xd9                                         # 00497C88
+    jb .L497C90                                          # 00497C8A
+    cmp al, 0xdc                                         # 00497C8C
+    jbe .L497D07                                         # 00497C8E
+.L497C90:
+    cmp al, 0xdd                                         # 00497C90
+    je .L497D5C                                          # 00497C92
+    cmp al, 0xde                                         # 00497C98
+    je .L497D48                                          # 00497C9A
+    cmp al, 0xdf                                         # 00497CA0
+    je .L497D2A                                          # 00497CA2
+    cmp al, 0xe0                                         # 00497CA8
+    jb .L497CB4                                          # 00497CAA
+    cmp al, 0xe5                                         # 00497CAC
+    jbe .L497D5C                                         # 00497CAE
+.L497CB4:
+    cmp al, 0xe6                                         # 00497CB4
+    je .L497D3E                                          # 00497CB6
+    cmp al, 0xe7                                         # 00497CBC
+    je .L497D48                                          # 00497CBE
+    cmp al, 0xe8                                         # 00497CC4
+    jb .L497CCC                                          # 00497CC6
+    cmp al, 0xeb                                         # 00497CC8
+    jbe .L497D3E                                         # 00497CCA
+.L497CCC:
+    cmp al, 0xec                                         # 00497CCC
+    jb .L497CD4                                          # 00497CCE
+    cmp al, 0xef                                         # 00497CD0
+    jbe .L497D34                                         # 00497CD2
+.L497CD4:
+    cmp al, 0xf0                                         # 00497CD4
+    jb .L497CDC                                          # 00497CD6
+    cmp al, 0xf1                                         # 00497CD8
+    jbe .L497D52                                         # 00497CDA
+.L497CDC:
+    cmp al, 0xf2                                         # 00497CDC
+    jb .L497CE4                                          # 00497CDE
+    cmp al, 0xf6                                         # 00497CE0
+    jbe .L497D20                                         # 00497CE2
+.L497CE4:
+    cmp al, 0xf7                                         # 00497CE4
+    je .L497D02                                          # 00497CE6
+    cmp al, 0xf8                                         # 00497CE8
+    je .L497D2A                                          # 00497CEA
+    cmp al, 0xf9                                         # 00497CEC
+    jb .L497CF4                                          # 00497CEE
+    cmp al, 0xfc                                         # 00497CF0
+    jbe .L497D0C                                         # 00497CF2
+.L497CF4:
+    cmp al, 0xfd                                         # 00497CF4
+    jb .L497CFC                                          # 00497CF6
+    cmp al, 0xfe                                         # 00497CF8
+    jbe .L497D16                                         # 00497CFA
+.L497CFC:
+    inc edi                                              # 00497CFC
+    msvc_jmp .L497C12                                    # 00497CFD
+.L497D02:
+    mov byte ptr [edi], 0x6c                             # 00497D02
+    jmp .L497CFC                                         # 00497D05
+.L497D07:
+    mov byte ptr [edi], 0x55                             # 00497D07
+    jmp .L497CFC                                         # 00497D0A
+.L497D0C:
+    mov byte ptr [edi], 0x75                             # 00497D0C
+    jmp .L497CFC                                         # 00497D0F
+.L497D11:
+    mov byte ptr [edi], 0x5a                             # 00497D11
+    jmp .L497CFC                                         # 00497D14
+.L497D16:
+    mov byte ptr [edi], 0x7a                             # 00497D16
+    jmp .L497CFC                                         # 00497D19
+.L497D1B:
+    mov byte ptr [edi], 0x4f                             # 00497D1B
+    jmp .L497CFC                                         # 00497D1E
+.L497D20:
+    mov byte ptr [edi], 0x6f                             # 00497D20
+    jmp .L497CFC                                         # 00497D23
+.L497D25:
+    mov byte ptr [edi], 0x53                             # 00497D25
+    jmp .L497CFC                                         # 00497D28
+.L497D2A:
+    mov byte ptr [edi], 0x73                             # 00497D2A
+    jmp .L497CFC                                         # 00497D2D
+.L497D2F:
+    mov byte ptr [edi], 0x49                             # 00497D2F
+    jmp .L497CFC                                         # 00497D32
+.L497D34:
+    mov byte ptr [edi], 0x69                             # 00497D34
+    jmp .L497CFC                                         # 00497D37
+.L497D39:
+    mov byte ptr [edi], 0x45                             # 00497D39
+    jmp .L497CFC                                         # 00497D3C
+.L497D3E:
+    mov byte ptr [edi], 0x65                             # 00497D3E
+    jmp .L497CFC                                         # 00497D41
+.L497D43:
+    mov byte ptr [edi], 0x43                             # 00497D43
+    jmp .L497CFC                                         # 00497D46
+.L497D48:
+    mov byte ptr [edi], 0x63                             # 00497D48
+    jmp .L497CFC                                         # 00497D4B
+.L497D4D:
+    mov byte ptr [edi], 0x4e                             # 00497D4D
+    jmp .L497CFC                                         # 00497D50
+.L497D52:
+    mov byte ptr [edi], 0x6e                             # 00497D52
+    jmp .L497CFC                                         # 00497D55
+.L497D57:
+    mov byte ptr [edi], 0x41                             # 00497D57
+    jmp .L497CFC                                         # 00497D5A
+.L497D5C:
+    mov byte ptr [edi], 0x61                             # 00497D5C
+    jmp .L497CFC                                         # 00497D5F
+.L497D61:
+    mov byte ptr [edi], 0x3f                             # 00497D61
+    jmp .L497CFC                                         # 00497D64
+.L497D66:
+    add edi, 3                                           # 00497D66
+    msvc_jmp .L497C12                                    # 00497D69
+.L497D6E:
+    popal                                                # 00497D6E
+    ret                                                  # 00497D6F
 
     .global _sub_497D70
 _sub_497D70:
@@ -1703,25 +1824,59 @@ _sub_497F1F:
     pop ecx                                              # 00497F71
     pop ebx                                              # 00497F72
     ret                                                  # 00497F73
-# 0x497F74
-    .byte 0x52, 0x56, 0x66, 0x8B, 0xF1, 0x0F, 0xB7, 0xF6 #        0 RVf.....
-    .byte 0xC1, 0xE6, 0x09, 0x66, 0x0B, 0xF0, 0xC1, 0xEE #        8 ...f....
-    .byte 0x03, 0x8B, 0xB6, 0x34, 0x01, 0xE4, 0x00, 0xF6 #       10 ...4....
-    .byte 0x06, 0x3C, 0x74, 0x08, 0x83, 0xC6, 0x08, 0xF6 #       18 .<t.....
-    .byte 0x06, 0x3C, 0x75, 0xF8, 0x8A, 0x16, 0x80, 0xE2 #       20 .<u.....
-    .byte 0x3C, 0x80, 0xFA, 0x1C, 0x75, 0x22, 0xF6, 0x46 #       28 <...u".F
-    .byte 0x01, 0x30, 0x75, 0x1C, 0xF6, 0x46, 0x05, 0x03 #       30 .0u..F..
-    .byte 0x75, 0x16, 0x0F, 0xB6, 0x56, 0x05, 0xC1, 0xEA #       38 u...V...
-    .byte 0x04, 0x8B, 0x14, 0x95, 0x84, 0xC9, 0x50, 0x00 #       40 ......P.
-    .byte 0x66, 0xF7, 0x42, 0x12, 0x08, 0x00, 0x75, 0x0E #       48 f.B...u.
-    .byte 0x83, 0xC6, 0x08, 0xF6, 0x46, 0xF9, 0x80, 0x74 #       50 ....F..t
-    .byte 0xCB, 0x5E, 0x5A, 0x23, 0xC0, 0xC3, 0x66, 0x83 #       58 .^Z#..f.
-    .byte 0x3D, 0x4C, 0x5C, 0x13, 0x01, 0xFF, 0x74, 0x08 #       60 =L....t.
-    .byte 0xD1, 0x0D, 0x48, 0x5C, 0x13, 0x01, 0x72, 0x13 #       68 ..H...r.
-    .byte 0x66, 0xA3, 0x4C, 0x5C, 0x13, 0x01, 0x66, 0x89 #       70 f.L...f.
-    .byte 0x0D, 0x4E, 0x5C, 0x13, 0x01, 0x89, 0x35, 0x44 #       78 .N....5D
-    .byte 0x5C, 0x13, 0x01, 0x5E, 0x5A, 0x23, 0xC0, 0xC3 #       80 ...^Z#..
 
+    .global _sub_497F74
+_sub_497F74:
+    push edx                                             # 00497F74
+    push esi                                             # 00497F75
+    msvc_mov si, cx                                      # 00497F76
+    movzx esi, si                                        # 00497F79
+    shl esi, 9                                           # 00497F7C
+    msvc_or si, ax                                       # 00497F7F
+    shr esi, 3                                           # 00497F82
+    mov esi, dword ptr [esi + 0xe40134]                  # 00497F85
+    test byte ptr [esi], 0x3c                            # 00497F8B
+    je .L497F98                                          # 00497F8E
+.L497F90:
+    add esi, 8                                           # 00497F90
+    test byte ptr [esi], 0x3c                            # 00497F93
+    jne .L497F90                                         # 00497F96
+.L497F98:
+    mov dl, byte ptr [esi]                               # 00497F98
+    and dl, 0x3c                                         # 00497F9A
+    cmp dl, 0x1c                                         # 00497F9D
+    jne .L497FC4                                         # 00497FA0
+    test byte ptr [esi + 1], 0x30                        # 00497FA2
+    jne .L497FC4                                         # 00497FA6
+    test byte ptr [esi + 5], 3                           # 00497FA8
+    jne .L497FC4                                         # 00497FAC
+    movzx edx, byte ptr [esi + 5]                        # 00497FAE
+    shr edx, 4                                           # 00497FB2
+    mov edx, dword ptr [edx*4 + 0x50c984]                # 00497FB5
+    test word ptr [edx + 0x12], 8                        # 00497FBC
+    jne .L497FD2                                         # 00497FC2
+.L497FC4:
+    add esi, 8                                           # 00497FC4
+    test byte ptr [esi - 7], 0x80                        # 00497FC7
+    je .L497F98                                          # 00497FCB
+    pop esi                                              # 00497FCD
+    pop edx                                              # 00497FCE
+    msvc_and eax, eax                                    # 00497FCF
+    ret                                                  # 00497FD1
+.L497FD2:
+    cmp word ptr [0x1135c4c], -1                         # 00497FD2
+    je .L497FE4                                          # 00497FDA
+    ror dword ptr [0x1135c48], 1                         # 00497FDC
+    jb .L497FF7                                          # 00497FE2
+.L497FE4:
+    mov word ptr [0x1135c4c], ax                         # 00497FE4
+    mov word ptr [0x1135c4e], cx                         # 00497FEA
+    mov dword ptr [0x1135c44], esi                       # 00497FF1
+.L497FF7:
+    pop esi                                              # 00497FF7
+    pop edx                                              # 00497FF8
+    msvc_and eax, eax                                    # 00497FF9
+    ret                                                  # 00497FFB
 
     .global _sub_497FFC
 _sub_497FFC:
@@ -1759,25 +1914,55 @@ _sub_497FFC:
 .L49807B:
     pop ebx                                              # 0049807B
     ret                                                  # 0049807C
-# 0x49807D
-    .byte 0x60, 0x66, 0x8B, 0xE9, 0x0F, 0xB7, 0xED, 0xC1 #        0 `f......
-    .byte 0xE5, 0x09, 0x66, 0x0B, 0xE8, 0xC1, 0xED, 0x03 #        8 ..f.....
-    .byte 0x8B, 0xAD, 0x34, 0x01, 0xE4, 0x00, 0xF6, 0x45 #       10 ..4....E
-    .byte 0x00, 0x3C, 0x74, 0x09, 0x83, 0xC5, 0x08, 0xF6 #       18 .<t.....
-    .byte 0x45, 0x00, 0x3C, 0x75, 0xF7, 0x0F, 0xB6, 0x7D #       20 E.<u...}
-    .byte 0x02, 0x66, 0xC1, 0xE7, 0x02, 0xF6, 0x45, 0x04 #       28 .f....E.
-    .byte 0x0F, 0x74, 0x0E, 0x66, 0x83, 0xC7, 0x10, 0xF6 #       30 .t.f....
-    .byte 0x45, 0x04, 0x10, 0x74, 0x04, 0x66, 0x83, 0xC7 #       38 E..t.f..
-    .byte 0x10, 0xE8, 0x5C, 0xFE, 0xFF, 0xFF, 0x81, 0xCA #       40 ........
-    .byte 0x00, 0x00, 0x00, 0xFF, 0xB6, 0x00, 0x8B, 0x5E #       48 .......^
-    .byte 0x28, 0x8B, 0x6E, 0x2C, 0xC1, 0xCB, 0x03, 0x81 #       50 (.n,....
-    .byte 0xF5, 0x7F, 0x56, 0x34, 0x12, 0x89, 0x5E, 0x2C #       58 ..V4..^,
-    .byte 0xC1, 0xCD, 0x07, 0x01, 0x6E, 0x28, 0x80, 0xE7 #       60 ....n(..
-    .byte 0x03, 0xB3, 0x01, 0xBE, 0x26, 0x00, 0x00, 0x00 #       68 ....&...
-    .byte 0xE8, 0x23, 0x92, 0xF9, 0xFF, 0x81, 0xFB, 0x00 #       70 .#......
-    .byte 0x00, 0x00, 0x80, 0x75, 0x04, 0x61, 0x23, 0xC0 #       78 ...u.a#.
-    .byte 0xC3, 0x61, 0xF9, 0xC3                         #       80 .a..
 
+    .global _sub_49807D
+_sub_49807D:
+    pushal                                               # 0049807D
+    msvc_mov bp, cx                                      # 0049807E
+    movzx ebp, bp                                        # 00498081
+    shl ebp, 9                                           # 00498084
+    msvc_or bp, ax                                       # 00498087
+    shr ebp, 3                                           # 0049808A
+    mov ebp, dword ptr [ebp + 0xe40134]                  # 0049808D
+    test byte ptr [ebp], 0x3c                            # 00498093
+    je .L4980A2                                          # 00498097
+.L498099:
+    add ebp, 8                                           # 00498099
+    test byte ptr [ebp], 0x3c                            # 0049809C
+    jne .L498099                                         # 004980A0
+.L4980A2:
+    movzx edi, byte ptr [ebp + 2]                        # 004980A2
+    shl di, 2                                            # 004980A6
+    test byte ptr [ebp + 4], 0xf                         # 004980AA
+    je .L4980BE                                          # 004980AE
+    add di, 0x10                                         # 004980B0
+    test byte ptr [ebp + 4], 0x10                        # 004980B4
+    je .L4980BE                                          # 004980B8
+    add di, 0x10                                         # 004980BA
+.L4980BE:
+    call _sub_497F1F                                     # 004980BE
+    or edx, 0xff000000                                   # 004980C3
+    mov dh, 0                                            # 004980C9
+    mov ebx, dword ptr [esi + 0x28]                      # 004980CB
+    mov ebp, dword ptr [esi + 0x2c]                      # 004980CE
+    ror ebx, 3                                           # 004980D1
+    xor ebp, 0x1234567f                                  # 004980D4
+    mov dword ptr [esi + 0x2c], ebx                      # 004980DA
+    ror ebp, 7                                           # 004980DD
+    add dword ptr [esi + 0x28], ebp                      # 004980E0
+    and bh, 3                                            # 004980E3
+    mov bl, 1                                            # 004980E6
+    mov esi, 0x26                                        # 004980E8
+    call _sub_431315                                     # 004980ED
+    cmp ebx, 0x80000000                                  # 004980F2
+    jne .L4980FE                                         # 004980F8
+    popal                                                # 004980FA
+    msvc_and eax, eax                                    # 004980FB
+    ret                                                  # 004980FD
+.L4980FE:
+    popal                                                # 004980FE
+    stc                                                  # 004980FF
+    ret                                                  # 00498100
 
     .global _sub_498101
 _sub_498101:

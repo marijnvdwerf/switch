@@ -1846,10 +1846,14 @@ _sub_47FB1D:
     pop edi                                              # 0047FC34
     pop ecx                                              # 0047FC35
     ret                                                  # 0047FC36
-# 0x47FC37
-    .byte 0x81, 0xC4, 0x80, 0x00, 0x00, 0x00, 0x5B, 0xBB #        0 ......[.
-    .byte 0xFF, 0xFF, 0xFF, 0xFF, 0x5E, 0x5F, 0x59, 0xC3 #        8 ....^_Y.
-
+.L47FC37:
+    add esp, 0x80                                        # 0047FC37
+    pop ebx                                              # 0047FC3D
+    mov ebx, 0xffffffff                                  # 0047FC3E
+    pop esi                                              # 0047FC43
+    pop edi                                              # 0047FC44
+    pop ecx                                              # 0047FC45
+    ret                                                  # 0047FC46
 .L47FC47:
     mov ebx, 0xffffffff                                  # 0047FC47
     add esp, 0x280                                       # 0047FC4C
@@ -1957,10 +1961,14 @@ _sub_47FC56:
     pop edi                                              # 0047FD6D
     pop ecx                                              # 0047FD6E
     ret                                                  # 0047FD6F
-# 0x47FD70
-    .byte 0x81, 0xC4, 0x80, 0x00, 0x00, 0x00, 0x5B, 0xBB #        0 ......[.
-    .byte 0xFF, 0xFF, 0xFF, 0xFF, 0x5E, 0x5F, 0x59, 0xC3 #        8 ....^_Y.
-
+.L47FD70:
+    add esp, 0x80                                        # 0047FD70
+    pop ebx                                              # 0047FD76
+    mov ebx, 0xffffffff                                  # 0047FD77
+    pop esi                                              # 0047FD7C
+    pop edi                                              # 0047FD7D
+    pop ecx                                              # 0047FD7E
+    ret                                                  # 0047FD7F
 .L47FD80:
     mov ebx, 0xffffffff                                  # 0047FD80
     add esp, 0x280                                       # 0047FD85
@@ -7201,50 +7209,65 @@ _sub_484266:
     pop edi                                              # 004843B3
     msvc_and eax, eax                                    # 004843B4
     ret                                                  # 004843B6
-# 0x4843B7
-    .byte 0x66, 0x8B, 0x86, 0xC9, 0x85, 0x00, 0x00, 0x66 #        0 f......f
-    .byte 0x8B, 0x8E, 0xCB, 0x85, 0x00, 0x00, 0x8A, 0x96 #        8 ........
-    .byte 0xCD, 0x85, 0x00, 0x00, 0x8A, 0x9E, 0xCF, 0x85 #       10 ........
-    .byte 0x00, 0x00, 0x66, 0xA3, 0xC2, 0xC3, 0x12, 0x01 #       18 ..f.....
-    .byte 0x66, 0x89, 0x0D, 0xC4, 0xC3, 0x12, 0x01, 0x88 #       20 f.......
-    .byte 0x15, 0x15, 0xC5, 0x12, 0x01, 0x88, 0x1D, 0x16 #       28 ........
-    .byte 0xC5, 0x12, 0x01, 0x66, 0x8B, 0x86, 0xD7, 0x85 #       30 ...f....
-    .byte 0x00, 0x00, 0x66, 0x8B, 0x8E, 0xD9, 0x85, 0x00 #       38 ..f.....
-    .byte 0x00, 0x8A, 0x96, 0xDB, 0x85, 0x00, 0x00, 0x66 #       40 .......f
-    .byte 0x8B, 0x9E, 0xDC, 0x85, 0x00, 0x00, 0x66, 0xA3 #       48 ......f.
-    .byte 0xC6, 0xC3, 0x12, 0x01, 0x66, 0x89, 0x0D, 0xC8 #       50 ....f...
-    .byte 0xC3, 0x12, 0x01, 0x88, 0x15, 0x17, 0xC5, 0x12 #       58 ........
-    .byte 0x01, 0x66, 0x89, 0x1D, 0xCA, 0xC3, 0x12, 0x01 #       60 .f......
-    .byte 0x66, 0x8B, 0x86, 0xD0, 0x85, 0x00, 0x00, 0x66 #       68 f......f
-    .byte 0x8B, 0x8E, 0xD2, 0x85, 0x00, 0x00, 0x8A, 0x96 #       70 ........
-    .byte 0xD4, 0x85, 0x00, 0x00, 0x66, 0x8B, 0x9E, 0xD5 #       78 ....f...
-    .byte 0x85, 0x00, 0x00, 0x66, 0xA3, 0xCC, 0xC3, 0x12 #       80 ...f....
-    .byte 0x01, 0x66, 0x89, 0x0D, 0xCE, 0xC3, 0x12, 0x01 #       88 .f......
-    .byte 0x88, 0x15, 0x9C, 0xC5, 0x12, 0x01, 0x66, 0x89 #       90 ......f.
-    .byte 0x1D, 0xD4, 0xC4, 0x12, 0x01, 0x8B, 0x86, 0xE2 #       98 ........
-    .byte 0x85, 0x00, 0x00, 0x8A, 0x8E, 0xEF, 0x85, 0x00 #       A0 ........
-    .byte 0x00, 0xA3, 0x98, 0xC3, 0x12, 0x01, 0x88, 0x0D #       A8 ........
-    .byte 0x18, 0xC5, 0x12, 0x01, 0x89, 0x35, 0x90, 0xC3 #       B0 .....5..
-    .byte 0x12, 0x01, 0x89, 0x3D, 0x94, 0xC3, 0x12, 0x01 #       B8 ...=....
-    .byte 0xE8, 0x02, 0xF6, 0xFF, 0xFF, 0x83, 0x3D, 0x98 #       C0 ......=.
-    .byte 0xC3, 0x12, 0x01, 0x00, 0x0F, 0x84, 0x76, 0x01 #       C8 ......v.
-    .byte 0x00, 0x00, 0x66, 0xFF, 0x86, 0xF0, 0x85, 0x00 #       D0 ..f.....
-    .byte 0x00, 0x66, 0x81, 0xBE, 0xF0, 0x85, 0x00, 0x00 #       D8 .f......
-    .byte 0x80, 0x01, 0x77, 0x69, 0xC6, 0x05, 0x18, 0xC5 #       E0 ..wi....
-    .byte 0x12, 0x01, 0x01, 0xE8, 0xA1, 0x01, 0x00, 0x00 #       E8 ........
-    .byte 0x8B, 0x35, 0x90, 0xC3, 0x12, 0x01, 0x8B, 0x3D #       F0 .5.....=
-    .byte 0x94, 0xC3, 0x12, 0x01, 0xA1, 0x98, 0xC3, 0x12 #       F8 ........
-    .byte 0x01, 0x8A, 0x0D, 0x18, 0xC5, 0x12, 0x01, 0x89 #      100 ........
-    .byte 0x86, 0xE2, 0x85, 0x00, 0x00, 0x88, 0x8E, 0xEF #      108 ........
-    .byte 0x85, 0x00, 0x00, 0x66, 0xA1, 0xC6, 0xC3, 0x12 #      110 ...f....
-    .byte 0x01, 0x66, 0x8B, 0x0D, 0xC8, 0xC3, 0x12, 0x01 #      118 .f......
-    .byte 0x8A, 0x15, 0x17, 0xC5, 0x12, 0x01, 0x66, 0x8B #      120 ......f.
-    .byte 0x1D, 0xCA, 0xC3, 0x12, 0x01, 0x66, 0x89, 0x86 #      128 .....f..
-    .byte 0xD7, 0x85, 0x00, 0x00, 0x66, 0x89, 0x8E, 0xD9 #      130 ....f...
-    .byte 0x85, 0x00, 0x00, 0x88, 0x96, 0xDB, 0x85, 0x00 #      138 ........
-    .byte 0x00, 0x66, 0x89, 0x9E, 0xDC, 0x85, 0x00, 0x00 #      140 .f......
-    .byte 0x5E, 0x5F, 0x23, 0xC0, 0xC3                   #      148 ^_#..
 
+    .global _sub_4843B7
+_sub_4843B7:
+    mov ax, word ptr [esi + 0x85c9]                      # 004843B7
+    mov cx, word ptr [esi + 0x85cb]                      # 004843BE
+    mov dl, byte ptr [esi + 0x85cd]                      # 004843C5
+    mov bl, byte ptr [esi + 0x85cf]                      # 004843CB
+    mov word ptr [0x112c3c2], ax                         # 004843D1
+    mov word ptr [0x112c3c4], cx                         # 004843D7
+    mov byte ptr [0x112c515], dl                         # 004843DE
+    mov byte ptr [0x112c516], bl                         # 004843E4
+    mov ax, word ptr [esi + 0x85d7]                      # 004843EA
+    mov cx, word ptr [esi + 0x85d9]                      # 004843F1
+    mov dl, byte ptr [esi + 0x85db]                      # 004843F8
+    mov bx, word ptr [esi + 0x85dc]                      # 004843FE
+    mov word ptr [0x112c3c6], ax                         # 00484405
+    mov word ptr [0x112c3c8], cx                         # 0048440B
+    mov byte ptr [0x112c517], dl                         # 00484412
+    mov word ptr [0x112c3ca], bx                         # 00484418
+    mov ax, word ptr [esi + 0x85d0]                      # 0048441F
+    mov cx, word ptr [esi + 0x85d2]                      # 00484426
+    mov dl, byte ptr [esi + 0x85d4]                      # 0048442D
+    mov bx, word ptr [esi + 0x85d5]                      # 00484433
+    mov word ptr [0x112c3cc], ax                         # 0048443A
+    mov word ptr [0x112c3ce], cx                         # 00484440
+    mov byte ptr [0x112c59c], dl                         # 00484447
+    mov word ptr [0x112c4d4], bx                         # 0048444D
+    mov eax, dword ptr [esi + 0x85e2]                    # 00484454
+    mov cl, byte ptr [esi + 0x85ef]                      # 0048445A
+    mov dword ptr [0x112c398], eax                       # 00484460
+    mov byte ptr [0x112c518], cl                         # 00484465
+    mov dword ptr [0x112c390], esi                       # 0048446B
+    mov dword ptr [0x112c394], edi                       # 00484471
+    call _sub_483A7E                                     # 00484477
+    cmp dword ptr [0x112c398], 0                         # 0048447C
+    je _sub_4845FF                                       # 00484483
+    inc word ptr [esi + 0x85f0]                          # 00484489
+    cmp word ptr [esi + 0x85f0], 0x180                   # 00484490
+    ja _sub_484504                                       # 00484499
+    mov byte ptr [0x112c518], 1                          # 0048449B
+    call _sub_484648                                     # 004844A2
+    mov esi, dword ptr [0x112c390]                       # 004844A7
+    mov edi, dword ptr [0x112c394]                       # 004844AD
+    mov eax, dword ptr [0x112c398]                       # 004844B3
+    mov cl, byte ptr [0x112c518]                         # 004844B8
+    mov dword ptr [esi + 0x85e2], eax                    # 004844BE
+    mov byte ptr [esi + 0x85ef], cl                      # 004844C4
+    mov ax, word ptr [0x112c3c6]                         # 004844CA
+    mov cx, word ptr [0x112c3c8]                         # 004844D0
+    mov dl, byte ptr [0x112c517]                         # 004844D7
+    mov bx, word ptr [0x112c3ca]                         # 004844DD
+    mov word ptr [esi + 0x85d7], ax                      # 004844E4
+    mov word ptr [esi + 0x85d9], cx                      # 004844EB
+    mov byte ptr [esi + 0x85db], dl                      # 004844F2
+    mov word ptr [esi + 0x85dc], bx                      # 004844F8
+    pop esi                                              # 004844FF
+    pop edi                                              # 00484500
+    msvc_and eax, eax                                    # 00484501
+    ret                                                  # 00484503
 
     .global _sub_484504
 _sub_484504:
@@ -15700,9 +15723,9 @@ _sub_48AFA5:
 .L48AFEE:
     msvc_and eax, eax                                    # 0048AFEE
     ret                                                  # 0048AFF0
-# 0x48AFF1
-    .byte 0xF9, 0xC3                                     #        0 ..
-
+.L48AFF1:
+    stc                                                  # 0048AFF1
+    ret                                                  # 0048AFF2
 .L48AFF3:
     push esi                                             # 0048AFF3
     msvc_or ah, ah                                       # 0048AFF4

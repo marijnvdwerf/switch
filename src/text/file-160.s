@@ -2853,23 +2853,43 @@ _sub_4551CC:
     pop eax                                              # 00455726
     mov ebx, 0x80000000                                  # 00455727
     ret                                                  # 0045572C
-# 0x45572D
-    .byte 0x60, 0x8A, 0x1E, 0x80, 0xE3, 0x3C, 0x80, 0xFB #        0 `....<..
-    .byte 0x14, 0x74, 0x07, 0x61, 0xF9, 0xC3, 0x61, 0x23 #        8 .t.a..a#
-    .byte 0xC0, 0xC3, 0x0F, 0xB6, 0x5E, 0x04, 0x8B, 0x1C #       10 ....^...
-    .byte 0x9D, 0x64, 0xCD, 0x50, 0x00, 0x0F, 0xBF, 0x4B #       18 .d.P...K
-    .byte 0x42, 0x0F, 0xB6, 0x5B, 0x3F, 0x0F, 0xAF, 0x0C #       20 B..[?...
-    .byte 0x9D, 0x5E, 0x5E, 0x52, 0x00, 0xC1, 0xF9, 0x0C #       28 .^^R....
-    .byte 0x01, 0x0D, 0xA8, 0xC3, 0xE0, 0x00, 0xF6, 0x05 #       30 ........
-    .byte 0xCA, 0xC3, 0xE0, 0x00, 0x40, 0x75, 0xCF, 0xF6 #       38 ....@u..
-    .byte 0x05, 0xCA, 0xC3, 0xE0, 0x00, 0x01, 0x74, 0xC6 #       40 ......t.
-    .byte 0x89, 0x35, 0x58, 0x01, 0xF0, 0x00, 0x66, 0xA1 #       48 .5X...f.
-    .byte 0xB8, 0xC3, 0xE0, 0x00, 0x66, 0x8B, 0x0D, 0xBA #       50 ....f...
-    .byte 0xC3, 0xE0, 0x00, 0xB3, 0x01, 0xE8, 0xA3, 0x5C #       58 ........
-    .byte 0x06, 0x00, 0x8B, 0x35, 0x58, 0x01, 0xF0, 0x00 #       60 ...5X...
-    .byte 0x89, 0x35, 0x5C, 0x01, 0xF0, 0x00, 0x61, 0x23 #       68 .5....a#
-    .byte 0xC0, 0xC3                                     #       70 ..
 
+    .global _sub_45572D
+_sub_45572D:
+    pushal                                               # 0045572D
+    mov bl, byte ptr [esi]                               # 0045572E
+    and bl, 0x3c                                         # 00455730
+    cmp bl, 0x14                                         # 00455733
+    je .L45573F                                          # 00455736
+    popal                                                # 00455738
+    stc                                                  # 00455739
+    ret                                                  # 0045573A
+.L45573B:
+    popal                                                # 0045573B
+    msvc_and eax, eax                                    # 0045573C
+    ret                                                  # 0045573E
+.L45573F:
+    movzx ebx, byte ptr [esi + 4]                        # 0045573F
+    mov ebx, dword ptr [ebx*4 + 0x50cd64]                # 00455743
+    movsx ecx, word ptr [ebx + 0x42]                     # 0045574A
+    movzx ebx, byte ptr [ebx + 0x3f]                     # 0045574E
+    imul ecx, dword ptr [ebx*4 + 0x525e5e]               # 00455752
+    sar ecx, 0xc                                         # 0045575A
+    add dword ptr [0xe0c3a8], ecx                        # 0045575D
+    test byte ptr [0xe0c3ca], 0x40                       # 00455763
+    jne .L45573B                                         # 0045576A
+    test byte ptr [0xe0c3ca], 1                          # 0045576C
+    je .L45573B                                          # 00455773
+    mov dword ptr [0xf00158], esi                        # 00455775
+    mov ax, word ptr [0xe0c3b8]                          # 0045577B
+    mov cx, word ptr [0xe0c3ba]                          # 00455781
+    mov bl, 1                                            # 00455788
+    call _sub_4BB432                                     # 0045578A
+    mov esi, dword ptr [0xf00158]                        # 0045578F
+    mov dword ptr [0xf0015c], esi                        # 00455795
+    popal                                                # 0045579B
+    msvc_and eax, eax                                    # 0045579C
+    ret                                                  # 0045579E
 
     .global _sub_45579F
 _sub_45579F:

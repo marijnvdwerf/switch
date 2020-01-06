@@ -4394,16 +4394,36 @@ _sub_4AC1C2:
 .L4AC215:
     stc                                                  # 004AC215
     ret                                                  # 004AC216
-# 0x4AC217
-    .byte 0xF7, 0xC5, 0x00, 0x80, 0x00, 0x00, 0x74, 0x14 #        0 ......t.
-    .byte 0x55, 0x81, 0xE5, 0xFF, 0x01, 0x00, 0x00, 0xBF #        8 U.......
-    .byte 0x08, 0x00, 0x00, 0x80, 0xE8, 0x0F, 0xD4, 0xFD #       10 ........
-    .byte 0xFF, 0x5D, 0xF9, 0xC3, 0x23, 0xC0, 0xC3, 0xF7 #       18 .]..#...
-    .byte 0xC5, 0x00, 0x80, 0x00, 0x00, 0x74, 0x14, 0x55 #       20 .....t.U
-    .byte 0x81, 0xE5, 0xFF, 0x01, 0x00, 0x00, 0xBF, 0x09 #       28 ........
-    .byte 0x00, 0x00, 0x80, 0xE8, 0xF0, 0xD3, 0xFD, 0xFF #       30 ........
-    .byte 0x5D, 0xF9, 0xC3, 0x23, 0xC0, 0xC3             #       38 ]..#..
 
+    .global _sub_4AC217
+_sub_4AC217:
+    test ebp, 0x8000                                     # 004AC217
+    je .L4AC233                                          # 004AC21D
+    push ebp                                             # 004AC21F
+    and ebp, 0x1ff                                       # 004AC220
+    mov edi, 0x80000008                                  # 004AC226
+    call _sub_48963F                                     # 004AC22B
+    pop ebp                                              # 004AC230
+    stc                                                  # 004AC231
+    ret                                                  # 004AC232
+.L4AC233:
+    msvc_and eax, eax                                    # 004AC233
+    ret                                                  # 004AC235
+
+    .global _sub_4AC236
+_sub_4AC236:
+    test ebp, 0x8000                                     # 004AC236
+    je .L4AC252                                          # 004AC23C
+    push ebp                                             # 004AC23E
+    and ebp, 0x1ff                                       # 004AC23F
+    mov edi, 0x80000009                                  # 004AC245
+    call _sub_48963F                                     # 004AC24A
+    pop ebp                                              # 004AC24F
+    stc                                                  # 004AC250
+    ret                                                  # 004AC251
+.L4AC252:
+    msvc_and eax, eax                                    # 004AC252
+    ret                                                  # 004AC254
 
     .global _sub_4AC255
 _sub_4AC255:

@@ -2023,10 +2023,8 @@ _sub_429EEB:
     cmp bp, -1                                           # 00429FC6
     je .L429FD6                                          # 00429FCA
     ret                                                  # 00429FCC
-# 0x429FCD
-    .byte 0x66, 0xC7, 0x85, 0xC8, 0x00, 0x00, 0x00, 0xFF #        0 f.......
-    .byte 0xFF                                           #        8 .
-
+.L429FCD:
+    mov word ptr [ebp + 0xc8], 0xffff                    # 00429FCD
 .L429FD6:
     mov word ptr [0x5271d0], 0xffff                      # 00429FD6
     msvc_jmp _sub_4CC6EA                                 # 00429FDF

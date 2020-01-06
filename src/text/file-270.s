@@ -424,9 +424,9 @@ _sub_4BB392:
     pop eax                                              # 004BB429
     pop eax                                              # 004BB42A
     ret                                                  # 004BB42B
-# 0x4BB42C
-    .byte 0xBB, 0x00, 0x00, 0x00, 0x80, 0xC3             #        0 ......
-
+.L4BB42C:
+    mov ebx, 0x80000000                                  # 004BB42C
+    ret                                                  # 004BB431
 
     .global _sub_4BB432
 _sub_4BB432:
@@ -3510,15 +3510,34 @@ _sub_4BD9C0:
     .global _sub_4BDA16
 _sub_4BDA16:
     ret                                                  # 004BDA16
-# 0x4BDA17
-    .byte 0x50, 0xF6, 0x46, 0x01, 0x30, 0x75, 0x1F, 0x8A #        0 P.F.0u..
-    .byte 0x06, 0x24, 0x3C, 0x3C, 0x14, 0x74, 0x17, 0x3C #        8 .$<<.t.<
-    .byte 0x10, 0x74, 0x13, 0x3C, 0x20, 0x74, 0x0F, 0x3C #       10 .t.< t.<
-    .byte 0x04, 0x74, 0x0F, 0x3C, 0x1C, 0x74, 0x0B, 0xC6 #       18 .t.<.t..
-    .byte 0x05, 0x98, 0x64, 0x13, 0x01, 0x01, 0x58, 0x23 #       20 ..d...X#
-    .byte 0xC0, 0xC3, 0xF6, 0x46, 0x04, 0x80, 0x74, 0xF6 #       28 ...F..t.
-    .byte 0xEB, 0xED                                     #       30 ..
 
+    .global _sub_4BDA17
+_sub_4BDA17:
+    push eax                                             # 004BDA17
+    test byte ptr [esi + 1], 0x30                        # 004BDA18
+    jne .L4BDA3D                                         # 004BDA1C
+    mov al, byte ptr [esi]                               # 004BDA1E
+    and al, 0x3c                                         # 004BDA20
+    cmp al, 0x14                                         # 004BDA22
+    je .L4BDA3D                                          # 004BDA24
+    cmp al, 0x10                                         # 004BDA26
+    je .L4BDA3D                                          # 004BDA28
+    cmp al, 0x20                                         # 004BDA2A
+    je .L4BDA3D                                          # 004BDA2C
+    cmp al, 4                                            # 004BDA2E
+    je .L4BDA41                                          # 004BDA30
+    cmp al, 0x1c                                         # 004BDA32
+    je .L4BDA41                                          # 004BDA34
+.L4BDA36:
+    mov byte ptr [0x1136498], 1                          # 004BDA36
+.L4BDA3D:
+    pop eax                                              # 004BDA3D
+    msvc_and eax, eax                                    # 004BDA3E
+    ret                                                  # 004BDA40
+.L4BDA41:
+    test byte ptr [esi + 4], 0x80                        # 004BDA41
+    je .L4BDA3D                                          # 004BDA45
+    jmp .L4BDA36                                         # 004BDA47
 
     .global _sub_4BDA49
 _sub_4BDA49:

@@ -4,176 +4,471 @@
 
 .text
 
-# 0x401000
-    .byte 0x55, 0x8B, 0xEC, 0x83, 0xEC, 0x2C, 0x53, 0x56 #        0 U....,SV
-    .byte 0x57, 0x8B, 0x7D, 0x1C, 0x8B, 0xF7, 0x8D, 0x55 #        8 W.}....U
-    .byte 0xD8, 0x69, 0xF6, 0x6C, 0x01, 0x00, 0x00, 0x33 #       10 .i.l...3
-    .byte 0xDB, 0x52, 0x8B, 0x86, 0x0C, 0x10, 0x14, 0x01 #       18 .R......
-    .byte 0x89, 0x5D, 0xDC, 0x50, 0x8B, 0x08, 0xFF, 0x51 #       20 .].P...Q
-    .byte 0x24, 0xF6, 0x45, 0xD8, 0x02, 0x74, 0x21, 0x8B #       28 $.E..t!.
-    .byte 0x86, 0x0C, 0x10, 0x14, 0x01, 0x50, 0x8B, 0x08 #       30 .....P..
-    .byte 0xFF, 0x51, 0x50, 0x85, 0xC0, 0x0F, 0x8C, 0x97 #       38 .QP.....
-    .byte 0x04, 0x00, 0x00, 0x89, 0x9E, 0x14, 0x10, 0x14 #       40 ........
-    .byte 0x01, 0xC7, 0x45, 0xDC, 0x01, 0x00, 0x00, 0x00 #       48 ..E.....
-    .byte 0x8B, 0x86, 0x0C, 0x10, 0x14, 0x01, 0x8D, 0x55 #       50 .......U
-    .byte 0xD4, 0x52, 0x8D, 0x55, 0xF0, 0x8B, 0x08, 0x52 #       58 .R.U...R
-    .byte 0x50, 0xFF, 0x51, 0x10, 0x8B, 0x96, 0x14, 0x10 #       60 P.Q.....
-    .byte 0x14, 0x01, 0x8B, 0x45, 0xF0, 0x3B, 0xC2, 0x75 #       68 ...E.;.u
-    .byte 0x09, 0x39, 0x5D, 0xDC, 0x0F, 0x84, 0x60, 0x04 #       70 .9]...`.
-    .byte 0x00, 0x00, 0x39, 0x9E, 0x28, 0x10, 0x14, 0x01 #       78 ..9.(...
-    .byte 0x74, 0x7A, 0x39, 0x9E, 0x1C, 0x10, 0x14, 0x01 #       80 tz9.....
-    .byte 0x75, 0x72, 0x39, 0x9E, 0x20, 0x10, 0x14, 0x01 #       88 ur9. ...
-    .byte 0x8D, 0x86, 0x20, 0x10, 0x14, 0x01, 0x0F, 0x85 #       90 .. .....
-    .byte 0x3E, 0x04, 0x00, 0x00, 0xC7, 0x00, 0x01, 0x00 #       98 >.......
-    .byte 0x00, 0x00, 0x39, 0x9E, 0xC4, 0x0E, 0x14, 0x01 #       A0 ..9.....
-    .byte 0x0F, 0x85, 0x2C, 0x04, 0x00, 0x00, 0x8B, 0x04 #       A8 ..,.....
-    .byte 0xBD, 0x30, 0x41, 0x52, 0x00, 0x8D, 0x3C, 0xBD #       B0 .0AR..<.
-    .byte 0x30, 0x41, 0x52, 0x00, 0x3B, 0xC3, 0x89, 0x9E #       B8 0AR.;...
-    .byte 0xC0, 0x0E, 0x14, 0x01, 0x74, 0x10, 0x8B, 0x08 #       C0 ....t...
-    .byte 0x50, 0xFF, 0x51, 0x48, 0x8B, 0x07, 0x50, 0x8B #       C8 P.QH..P.
-    .byte 0x08, 0xFF, 0x51, 0x08, 0x89, 0x1F, 0x39, 0x9E #       D0 ..Q...9.
-    .byte 0xE0, 0x0F, 0x14, 0x01, 0x8D, 0x86, 0xE0, 0x0F #       D8 ........
-    .byte 0x14, 0x01, 0x0F, 0x84, 0xF2, 0x03, 0x00, 0x00 #       E0 ........
-    .byte 0x8D, 0x8E, 0xDC, 0x0F, 0x14, 0x01, 0x51, 0x50 #       E8 ......QP
-    .byte 0xE8, 0x4F, 0x42, 0x00, 0x00, 0x59, 0x59, 0xE9 #       F0 .OB..YY.
-    .byte 0xDE, 0x03, 0x00, 0x00, 0x3B, 0xC2, 0x73, 0x0C #       F8 ....;.s.
-    .byte 0x8B, 0x8E, 0x10, 0x10, 0x14, 0x01, 0x2B, 0xCA #      100 ......+.
-    .byte 0x03, 0xC8, 0xEB, 0x04, 0x2B, 0xC2, 0x8B, 0xC8 #      108 ....+...
-    .byte 0x39, 0x5D, 0xDC, 0x74, 0x14, 0x8B, 0x86, 0x10 #      110 9].t....
-    .byte 0x10, 0x14, 0x01, 0x6A, 0x06, 0xD1, 0xE0, 0x33 #      118 ...j...3
-    .byte 0xD2, 0x5F, 0xF7, 0xF7, 0x89, 0x45, 0xE4, 0xEB #      120 ._...E..
-    .byte 0x03, 0x89, 0x4D, 0xE4, 0x01, 0x8E, 0x18, 0x10 #      128 ..M.....
-    .byte 0x14, 0x01, 0x39, 0x9E, 0x28, 0x10, 0x14, 0x01 #      130 ..9.(...
-    .byte 0x0F, 0x84, 0xEB, 0x00, 0x00, 0x00, 0x8B, 0x86 #      138 ........
-    .byte 0x1C, 0x10, 0x14, 0x01, 0x8D, 0x96, 0x1C, 0x10 #      140 ........
-    .byte 0x14, 0x01, 0x3B, 0xC3, 0x0F, 0x84, 0xD7, 0x00 #      148 ..;.....
-    .byte 0x00, 0x00, 0x3B, 0xC8, 0x76, 0x04, 0x89, 0x1A #      150 ..;.v...
-    .byte 0xEB, 0x04, 0x2B, 0xC1, 0x89, 0x02, 0x8D, 0x55 #      158 ..+....U
-    .byte 0xE8, 0x53, 0x52, 0x8D, 0x55, 0xFC, 0x52, 0x8D #      160 .SR.U.R.
-    .byte 0x55, 0xF4, 0x8B, 0x86, 0x0C, 0x10, 0x14, 0x01 #      168 U.......
-    .byte 0x52, 0x8D, 0x55, 0xF8, 0x8B, 0x08, 0x52, 0xFF #      170 R.U...R.
-    .byte 0x75, 0xE4, 0xFF, 0xB6, 0x14, 0x10, 0x14, 0x01 #      178 u.......
-    .byte 0x50, 0xFF, 0x51, 0x2C, 0x85, 0xC0, 0x0F, 0x85 #      180 P.Q,....
-    .byte 0xC7, 0x00, 0x00, 0x00, 0x8B, 0x86, 0xDC, 0x0F #      188 ........
-    .byte 0x14, 0x01, 0xFF, 0x75, 0xF4, 0xBF, 0x80, 0x00 #      190 ...u....
-    .byte 0x00, 0x00, 0x66, 0x8B, 0x40, 0x0E, 0x66, 0x2D #      198 ..f.@.f-
-    .byte 0x08, 0x00, 0x66, 0xF7, 0xD8, 0x1B, 0xC0, 0x24 #      1A0 ..f....$
-    .byte 0x80, 0x03, 0xC7, 0x50, 0xFF, 0x75, 0xF8, 0xE8 #      1A8 ...P.u..
-    .byte 0x0C, 0xFE, 0x0C, 0x00, 0x83, 0xC4, 0x0C, 0x39 #      1B0 .......9
-    .byte 0x5D, 0xFC, 0x74, 0x2B, 0x39, 0x5D, 0xE8, 0x74 #      1B8 ].t+9].t
-    .byte 0x26, 0x8B, 0x86, 0xDC, 0x0F, 0x14, 0x01, 0xFF #      1C0 &.......
-    .byte 0x75, 0xE8, 0x66, 0x8B, 0x40, 0x0E, 0x66, 0x2D #      1C8 u.f.@.f-
-    .byte 0x08, 0x00, 0x66, 0xF7, 0xD8, 0x1B, 0xC0, 0x24 #      1D0 ..f....$
-    .byte 0x80, 0x03, 0xC7, 0x50, 0xFF, 0x75, 0xFC, 0xE8 #      1D8 ...P.u..
-    .byte 0xDC, 0xFD, 0x0C, 0x00, 0x83, 0xC4, 0x0C, 0xFF #      1E0 ........
-    .byte 0x75, 0xE8, 0x8B, 0x86, 0x0C, 0x10, 0x14, 0x01 #      1E8 u.......
-    .byte 0xFF, 0x75, 0xFC, 0x8B, 0x08, 0xFF, 0x75, 0xF4 #      1F0 .u....u.
-    .byte 0xFF, 0x75, 0xF8, 0x50, 0xFF, 0x51, 0x4C, 0x8B #      1F8 .u.P.QL.
-    .byte 0x45, 0xE4, 0x01, 0x86, 0x14, 0x10, 0x14, 0x01 #      200 E.......
-    .byte 0x8B, 0x86, 0x14, 0x10, 0x14, 0x01, 0x8B, 0x8E #      208 ........
-    .byte 0x10, 0x10, 0x14, 0x01, 0x3B, 0xC1, 0x0F, 0x82 #      210 ....;...
-    .byte 0xBE, 0x02, 0x00, 0x00, 0x2B, 0xC1, 0x89, 0x86 #      218 ....+...
-    .byte 0x14, 0x10, 0x14, 0x01, 0xE9, 0xB1, 0x02, 0x00 #      220 ........
-    .byte 0x00, 0x8D, 0x55, 0xE8, 0x53, 0x52, 0x8D, 0x55 #      228 ..U.SR.U
-    .byte 0xFC, 0x52, 0x8D, 0x55, 0xF4, 0x8B, 0x86, 0x0C #      230 .R.U....
-    .byte 0x10, 0x14, 0x01, 0x52, 0x8D, 0x55, 0xF8, 0x8B #      238 ...R.U..
-    .byte 0x08, 0x52, 0xFF, 0x75, 0xE4, 0xFF, 0xB6, 0x14 #      240 .R.u....
-    .byte 0x10, 0x14, 0x01, 0x50, 0xFF, 0x51, 0x2C, 0x85 #      248 ...P.Q,.
-    .byte 0xC0, 0x74, 0x10, 0x68, 0x30, 0x60, 0x50, 0x00 #      250 .t.h0`P.
-    .byte 0xFF, 0x15, 0x90, 0x71, 0x4D, 0x00, 0xE9, 0x77 #      258 ...qM..w
-    .byte 0x02, 0x00, 0x00, 0x39, 0x5D, 0xF4, 0xBF, 0x80 #      260 ...9]...
-    .byte 0x00, 0x00, 0x00, 0x0F, 0x84, 0x04, 0x01, 0x00 #      268 ........
-    .byte 0x00, 0x39, 0x9E, 0x20, 0x10, 0x14, 0x01, 0x0F #      270 .9. ....
-    .byte 0x85, 0xD2, 0x00, 0x00, 0x00, 0x8D, 0x4D, 0xEC #      278 ......M.
-    .byte 0x8D, 0x86, 0xE4, 0x0F, 0x14, 0x01, 0x51, 0x50 #      280 ......QP
-    .byte 0xFF, 0x75, 0xF8, 0xFF, 0x75, 0xF4, 0xFF, 0xB6 #      288 .u..u...
-    .byte 0xE0, 0x0F, 0x14, 0x01, 0xE8, 0xF8, 0x3F, 0x00 #      290 ......?.
-    .byte 0x00, 0x8B, 0x45, 0xEC, 0x8B, 0x55, 0xF4, 0x83 #      298 ..E..U..
-    .byte 0xC4, 0x14, 0x3B, 0xC2, 0x0F, 0x83, 0xCB, 0x00 #      2A0 ..;.....
-    .byte 0x00, 0x00, 0x39, 0x9E, 0x24, 0x10, 0x14, 0x01 #      2A8 ..9.$...
-    .byte 0x75, 0x61, 0x8B, 0x8E, 0xDC, 0x0F, 0x14, 0x01 #      2B0 ua......
-    .byte 0x66, 0x8B, 0x49, 0x0E, 0x66, 0x83, 0xF9, 0x08 #      2B8 f.I.f...
-    .byte 0x75, 0x06, 0x2B, 0xD0, 0x52, 0x57, 0xEB, 0x0A #      2C0 u.+.RW..
-    .byte 0x66, 0x83, 0xF9, 0x10, 0x75, 0x12, 0x2B, 0xD0 #      2C8 f...u.+.
-    .byte 0x52, 0x53, 0x8B, 0x4D, 0xF8, 0x03, 0xC1, 0x50 #      2D0 RS.M...P
-    .byte 0xE8, 0xE3, 0xFC, 0x0C, 0x00, 0x83, 0xC4, 0x0C #      2D8 ........
-    .byte 0xC7, 0x86, 0x28, 0x10, 0x14, 0x01, 0x01, 0x00 #      2E0 ..(.....
-    .byte 0x00, 0x00, 0x8B, 0x86, 0x14, 0x10, 0x14, 0x01 #      2E8 ........
-    .byte 0x39, 0x45, 0xF0, 0x76, 0x13, 0x8B, 0x8E, 0x10 #      2F0 9E.v....
-    .byte 0x10, 0x14, 0x01, 0x2B, 0x4D, 0xF0, 0x03, 0xC8 #      2F8 ...+M...
-    .byte 0x89, 0x8E, 0x1C, 0x10, 0x14, 0x01, 0xEB, 0x6D #      300 .......m
-    .byte 0x2B, 0x45, 0xF0, 0x89, 0x86, 0x1C, 0x10, 0x14 #      308 +E......
-    .byte 0x01, 0xEB, 0x62, 0x8B, 0x5D, 0xF8, 0x89, 0x55 #      310 ..b.]..U
-    .byte 0xE0, 0xFF, 0x75, 0x1C, 0x29, 0x45, 0xE0, 0x03 #      318 ..u.)E..
-    .byte 0xD8, 0xE8, 0x15, 0x02, 0x00, 0x00, 0x8D, 0x45 #      320 .......E
-    .byte 0xEC, 0x50, 0x8D, 0x86, 0xE4, 0x0F, 0x14, 0x01 #      328 .P......
-    .byte 0x50, 0x53, 0xFF, 0x75, 0xE0, 0xFF, 0xB6, 0xE0 #      330 PS.u....
-    .byte 0x0F, 0x14, 0x01, 0xE8, 0x51, 0x3F, 0x00, 0x00 #      338 ....Q?..
-    .byte 0x8B, 0x45, 0xEC, 0x83, 0xC4, 0x18, 0x3B, 0x45 #      340 .E....;E
-    .byte 0xE0, 0x72, 0xCE, 0x33, 0xDB, 0xEB, 0x26, 0x8B #      348 .r.3..&.
-    .byte 0x86, 0xDC, 0x0F, 0x14, 0x01, 0xFF, 0x75, 0xF4 #      350 ......u.
-    .byte 0x66, 0x8B, 0x40, 0x0E, 0x66, 0x2D, 0x08, 0x00 #      358 f.@.f-..
-    .byte 0x66, 0xF7, 0xD8, 0x1B, 0xC0, 0x24, 0x80, 0x03 #      360 f....$..
-    .byte 0xC7, 0x50, 0xFF, 0x75, 0xF8, 0xE8, 0x4E, 0xFC #      368 .P.u..N.
-    .byte 0x0C, 0x00, 0x83, 0xC4, 0x0C, 0x8B, 0x4D, 0xE8 #      370 ......M.
-    .byte 0x3B, 0xCB, 0x0F, 0x84, 0xD7, 0x00, 0x00, 0x00 #      378 ;.......
-    .byte 0x39, 0x9E, 0x20, 0x10, 0x14, 0x01, 0x0F, 0x85 #      380 9. .....
-    .byte 0xCB, 0x00, 0x00, 0x00, 0x8D, 0x55, 0xEC, 0x8D #      388 .....U..
-    .byte 0x86, 0xE4, 0x0F, 0x14, 0x01, 0x52, 0x50, 0xFF #      390 .....RP.
-    .byte 0x75, 0xFC, 0x51, 0xFF, 0xB6, 0xE0, 0x0F, 0x14 #      398 u.Q.....
-    .byte 0x01, 0xE8, 0xEB, 0x3E, 0x00, 0x00, 0x8B, 0x45 #      3A0 ...>...E
-    .byte 0xEC, 0x8B, 0x55, 0xE8, 0x83, 0xC4, 0x14, 0x3B #      3A8 ..U....;
-    .byte 0xC2, 0x0F, 0x83, 0xD5, 0x00, 0x00, 0x00, 0x39 #      3B0 .......9
-    .byte 0x9E, 0x24, 0x10, 0x14, 0x01, 0x75, 0x61, 0x8B #      3B8 .$...ua.
-    .byte 0x8E, 0xDC, 0x0F, 0x14, 0x01, 0x66, 0x8B, 0x49 #      3C0 .....f.I
-    .byte 0x0E, 0x66, 0x83, 0xF9, 0x08, 0x75, 0x06, 0x2B #      3C8 .f...u.+
-    .byte 0xD0, 0x52, 0x57, 0xEB, 0x0A, 0x66, 0x83, 0xF9 #      3D0 .RW..f..
-    .byte 0x10, 0x75, 0x12, 0x2B, 0xD0, 0x52, 0x53, 0x8B #      3D8 .u.+.RS.
-    .byte 0x4D, 0xFC, 0x03, 0xC1, 0x50, 0xE8, 0xD6, 0xFB #      3E0 M...P...
-    .byte 0x0C, 0x00, 0x83, 0xC4, 0x0C, 0xC7, 0x86, 0x28 #      3E8 .......(
-    .byte 0x10, 0x14, 0x01, 0x01, 0x00, 0x00, 0x00, 0x8B #      3F0 ........
-    .byte 0x86, 0x14, 0x10, 0x14, 0x01, 0x39, 0x45, 0xF0 #      3F8 .....9E.
-    .byte 0x76, 0x13, 0x8B, 0x8E, 0x10, 0x10, 0x14, 0x01 #      400 v.......
-    .byte 0x2B, 0x4D, 0xF0, 0x03, 0xC8, 0x89, 0x8E, 0x1C #      408 +M......
-    .byte 0x10, 0x14, 0x01, 0xEB, 0x77, 0x2B, 0x45, 0xF0 #      410 ....w+E.
-    .byte 0x89, 0x86, 0x1C, 0x10, 0x14, 0x01, 0xEB, 0x6C #      418 .......l
-    .byte 0x8B, 0x7D, 0xFC, 0x8B, 0xDA, 0xFF, 0x75, 0x1C #      420 .}....u.
-    .byte 0x03, 0xF8, 0x2B, 0xD8, 0xE8, 0x0A, 0x01, 0x00 #      428 ..+.....
-    .byte 0x00, 0x8D, 0x45, 0xEC, 0x50, 0x8D, 0x86, 0xE4 #      430 ..E.P...
-    .byte 0x0F, 0x14, 0x01, 0x50, 0x57, 0x53, 0xFF, 0xB6 #      438 ...PWS..
-    .byte 0xE0, 0x0F, 0x14, 0x01, 0xE8, 0x48, 0x3E, 0x00 #      440 .....H>.
-    .byte 0x00, 0x8B, 0x45, 0xEC, 0x83, 0xC4, 0x18, 0x3B #      448 ..E....;
-    .byte 0xC3, 0x72, 0xD2, 0x33, 0xDB, 0xEB, 0x35, 0x39 #      450 .r.3..59
-    .byte 0x5D, 0xFC, 0x74, 0x30, 0x3B, 0xCB, 0x74, 0x2C #      458 ].t0;.t,
-    .byte 0x39, 0x9E, 0x20, 0x10, 0x14, 0x01, 0x74, 0x24 #      460 9. ...t$
-    .byte 0x8B, 0x86, 0xDC, 0x0F, 0x14, 0x01, 0x51, 0x66 #      468 ......Qf
-    .byte 0x8B, 0x40, 0x0E, 0x66, 0x2D, 0x08, 0x00, 0x66 #      470 .@.f-..f
-    .byte 0xF7, 0xD8, 0x1B, 0xC0, 0x24, 0x80, 0x03, 0xC7 #      478 ....$...
-    .byte 0x50, 0xFF, 0x75, 0xFC, 0xE8, 0x37, 0xFB, 0x0C #      480 P.u..7..
-    .byte 0x00, 0x83, 0xC4, 0x0C, 0xFF, 0x75, 0xE8, 0x8B #      488 .....u..
-    .byte 0x86, 0x0C, 0x10, 0x14, 0x01, 0xFF, 0x75, 0xFC #      490 ......u.
-    .byte 0x8B, 0x08, 0xFF, 0x75, 0xF4, 0xFF, 0x75, 0xF8 #      498 ...u..u.
-    .byte 0x50, 0xFF, 0x51, 0x4C, 0x8B, 0x45, 0xE4, 0x01 #      4A0 P.QL.E..
-    .byte 0x86, 0x14, 0x10, 0x14, 0x01, 0x8B, 0x86, 0x14 #      4A8 ........
-    .byte 0x10, 0x14, 0x01, 0x8B, 0x8E, 0x10, 0x10, 0x14 #      4B0 ........
-    .byte 0x01, 0x3B, 0xC1, 0x72, 0x08, 0x2B, 0xC1, 0x89 #      4B8 .;.r.+..
-    .byte 0x86, 0x14, 0x10, 0x14, 0x01, 0x39, 0x5D, 0xDC #      4C0 .....9].
-    .byte 0x74, 0x10, 0x8B, 0xB6, 0x0C, 0x10, 0x14, 0x01 #      4C8 t.......
-    .byte 0x6A, 0x01, 0x53, 0x53, 0x8B, 0x06, 0x56, 0xFF #      4D0 j.SS..V.
-    .byte 0x50, 0x30, 0x5F, 0x5E, 0x5B, 0xC9, 0xC3, 0x55 #      4D8 P0_^[..U
-    .byte 0x8B, 0xEC, 0x53, 0x8B, 0x1D, 0x8C, 0x71, 0x4D #      4E0 ..S...qM
-    .byte 0x00, 0x6A, 0x01, 0x68, 0x2C, 0x41, 0x52, 0x00 #      4E8 .j.h,AR.
-    .byte 0xFF, 0xD3, 0x85, 0xC0, 0x75, 0x40, 0x56, 0x57 #      4F0 ....u@VW
-    .byte 0x33, 0xF6, 0xBF, 0xC0, 0x0E, 0x14, 0x01, 0x83 #      4F8 3.......
-    .byte 0x3F, 0x00, 0x74, 0x18, 0x56, 0xFF, 0x75, 0x18 #      500 ?.t.V.u.
-    .byte 0xFF, 0x75, 0x14, 0xFF, 0x75, 0x10, 0xFF, 0x75 #      508 .u..u..u
-    .byte 0x0C, 0xFF, 0x75, 0x08, 0xE8, 0xE7, 0xFA, 0xFF #      510 ..u.....
-    .byte 0xFF, 0x83, 0xC4, 0x18, 0x81, 0xC7, 0x6C, 0x01 #      518 ......l.
-    .byte 0x00, 0x00, 0x46, 0x81, 0xFF, 0x70, 0x14, 0x14 #      520 ..F..p..
-    .byte 0x01, 0x7C, 0xD4, 0x6A, 0x00, 0x68, 0x2C, 0x41 #      528 .|.j.h,A
-    .byte 0x52, 0x00, 0xFF, 0xD3, 0x5F, 0x5E, 0x5B, 0x5D #      530 R..._^[]
-    .byte 0xC2, 0x14, 0x00                               #      538 ...
 
+    .global _sub_401000
+_sub_401000:
+    push ebp                                             # 00401000
+    msvc_mov ebp, esp                                    # 00401001
+    sub esp, 0x2c                                        # 00401003
+    push ebx                                             # 00401006
+    push esi                                             # 00401007
+    push edi                                             # 00401008
+    mov edi, dword ptr [ebp + 0x1c]                      # 00401009
+    msvc_mov esi, edi                                    # 0040100C
+    lea edx, [ebp - 0x28]                                # 0040100E
+    imul esi, esi, 0x16c                                 # 00401011
+    msvc_xor ebx, ebx                                    # 00401017
+    push edx                                             # 00401019
+    mov eax, dword ptr [esi + 0x114100c]                 # 0040101A
+    mov dword ptr [ebp - 0x24], ebx                      # 00401020
+    push eax                                             # 00401023
+    mov ecx, dword ptr [eax]                             # 00401024
+    call dword ptr [ecx + 0x24]                          # 00401026
+    test byte ptr [ebp - 0x28], 2                        # 00401029
+    je .L401050                                          # 0040102D
+    mov eax, dword ptr [esi + 0x114100c]                 # 0040102F
+    push eax                                             # 00401035
+    mov ecx, dword ptr [eax]                             # 00401036
+    call dword ptr [ecx + 0x50]                          # 00401038
+    test eax, eax                                        # 0040103B
+    jl .L4014DA                                          # 0040103D
+    mov dword ptr [esi + 0x1141014], ebx                 # 00401043
+    mov dword ptr [ebp - 0x24], 1                        # 00401049
+.L401050:
+    mov eax, dword ptr [esi + 0x114100c]                 # 00401050
+    lea edx, [ebp - 0x2c]                                # 00401056
+    push edx                                             # 00401059
+    lea edx, [ebp - 0x10]                                # 0040105A
+    mov ecx, dword ptr [eax]                             # 0040105D
+    push edx                                             # 0040105F
+    push eax                                             # 00401060
+    call dword ptr [ecx + 0x10]                          # 00401061
+    mov edx, dword ptr [esi + 0x1141014]                 # 00401064
+    mov eax, dword ptr [ebp - 0x10]                      # 0040106A
+    msvc_cmp eax, edx                                    # 0040106D
+    jne .L40107A                                         # 0040106F
+    cmp dword ptr [ebp - 0x24], ebx                      # 00401071
+    je .L4014DA                                          # 00401074
+.L40107A:
+    cmp dword ptr [esi + 0x1141028], ebx                 # 0040107A
+    je .L4010FC                                          # 00401080
+    cmp dword ptr [esi + 0x114101c], ebx                 # 00401082
+    jne .L4010FC                                         # 00401088
+    cmp dword ptr [esi + 0x1141020], ebx                 # 0040108A
+    lea eax, [esi + 0x1141020]                           # 00401090
+    jne .L4014DA                                         # 00401096
+    mov dword ptr [eax], 1                               # 0040109C
+    cmp dword ptr [esi + 0x1140ec4], ebx                 # 004010A2
+    jne .L4014DA                                         # 004010A8
+    mov eax, dword ptr [edi*4 + 0x524130]                # 004010AE
+    lea edi, [edi*4 + 0x524130]                          # 004010B5
+    msvc_cmp eax, ebx                                    # 004010BC
+    mov dword ptr [esi + 0x1140ec0], ebx                 # 004010BE
+    je .L4010D6                                          # 004010C4
+    mov ecx, dword ptr [eax]                             # 004010C6
+    push eax                                             # 004010C8
+    call dword ptr [ecx + 0x48]                          # 004010C9
+    mov eax, dword ptr [edi]                             # 004010CC
+    push eax                                             # 004010CE
+    mov ecx, dword ptr [eax]                             # 004010CF
+    call dword ptr [ecx + 8]                             # 004010D1
+    mov dword ptr [edi], ebx                             # 004010D4
+.L4010D6:
+    cmp dword ptr [esi + 0x1140fe0], ebx                 # 004010D6
+    lea eax, [esi + 0x1140fe0]                           # 004010DC
+    je .L4014DA                                          # 004010E2
+    lea ecx, [esi + 0x1140fdc]                           # 004010E8
+    push ecx                                             # 004010EE
+    push eax                                             # 004010EF
+    call _sub_405344                                     # 004010F0
+    pop ecx                                              # 004010F5
+    pop ecx                                              # 004010F6
+    msvc_jmp .L4014DA                                    # 004010F7
+.L4010FC:
+    msvc_cmp eax, edx                                    # 004010FC
+    jae .L40110C                                         # 004010FE
+    mov ecx, dword ptr [esi + 0x1141010]                 # 00401100
+    msvc_sub ecx, edx                                    # 00401106
+    msvc_add ecx, eax                                    # 00401108
+    jmp .L401110                                         # 0040110A
+.L40110C:
+    msvc_sub eax, edx                                    # 0040110C
+    msvc_mov ecx, eax                                    # 0040110E
+.L401110:
+    cmp dword ptr [ebp - 0x24], ebx                      # 00401110
+    je .L401129                                          # 00401113
+    mov eax, dword ptr [esi + 0x1141010]                 # 00401115
+    push 6                                               # 0040111B
+    shl eax, 1                                           # 0040111D
+    msvc_xor edx, edx                                    # 0040111F
+    pop edi                                              # 00401121
+    div edi                                              # 00401122
+    mov dword ptr [ebp - 0x1c], eax                      # 00401124
+    jmp .L40112C                                         # 00401127
+.L401129:
+    mov dword ptr [ebp - 0x1c], ecx                      # 00401129
+.L40112C:
+    add dword ptr [esi + 0x1141018], ecx                 # 0040112C
+    cmp dword ptr [esi + 0x1141028], ebx                 # 00401132
+    je .L401229                                          # 00401138
+    mov eax, dword ptr [esi + 0x114101c]                 # 0040113E
+    lea edx, [esi + 0x114101c]                           # 00401144
+    msvc_cmp eax, ebx                                    # 0040114A
+    je .L401229                                          # 0040114C
+    msvc_cmp ecx, eax                                    # 00401152
+    jbe .L40115A                                         # 00401154
+    mov dword ptr [edx], ebx                             # 00401156
+    jmp .L40115E                                         # 00401158
+.L40115A:
+    msvc_sub eax, ecx                                    # 0040115A
+    mov dword ptr [edx], eax                             # 0040115C
+.L40115E:
+    lea edx, [ebp - 0x18]                                # 0040115E
+    push ebx                                             # 00401161
+    push edx                                             # 00401162
+    lea edx, [ebp - 4]                                   # 00401163
+    push edx                                             # 00401166
+    lea edx, [ebp - 0xc]                                 # 00401167
+    mov eax, dword ptr [esi + 0x114100c]                 # 0040116A
+    push edx                                             # 00401170
+    lea edx, [ebp - 8]                                   # 00401171
+    mov ecx, dword ptr [eax]                             # 00401174
+    push edx                                             # 00401176
+    push dword ptr [ebp - 0x1c]                          # 00401177
+    push dword ptr [esi + 0x1141014]                     # 0040117A
+    push eax                                             # 00401180
+    call dword ptr [ecx + 0x2c]                          # 00401181
+    test eax, eax                                        # 00401184
+    jne .L401253                                         # 00401186
+    mov eax, dword ptr [esi + 0x1140fdc]                 # 0040118C
+    push dword ptr [ebp - 0xc]                           # 00401192
+    mov edi, 0x80                                        # 00401195
+    mov ax, word ptr [eax + 0xe]                         # 0040119A
+    msvc_sub ax, 8                                       # 0040119E
+    neg ax                                               # 004011A2
+    msvc_sbb eax, eax                                    # 004011A5
+    and al, 0x80                                         # 004011A7
+    msvc_add eax, edi                                    # 004011A9
+    push eax                                             # 004011AB
+    push dword ptr [ebp - 8]                             # 004011AC
+    call _sub_4D0FC0                                     # 004011AF
+    add esp, 0xc                                         # 004011B4
+    cmp dword ptr [ebp - 4], ebx                         # 004011B7
+    je .L4011E7                                          # 004011BA
+    cmp dword ptr [ebp - 0x18], ebx                      # 004011BC
+    je .L4011E7                                          # 004011BF
+    mov eax, dword ptr [esi + 0x1140fdc]                 # 004011C1
+    push dword ptr [ebp - 0x18]                          # 004011C7
+    mov ax, word ptr [eax + 0xe]                         # 004011CA
+    msvc_sub ax, 8                                       # 004011CE
+    neg ax                                               # 004011D2
+    msvc_sbb eax, eax                                    # 004011D5
+    and al, 0x80                                         # 004011D7
+    msvc_add eax, edi                                    # 004011D9
+    push eax                                             # 004011DB
+    push dword ptr [ebp - 4]                             # 004011DC
+    call _sub_4D0FC0                                     # 004011DF
+    add esp, 0xc                                         # 004011E4
+.L4011E7:
+    push dword ptr [ebp - 0x18]                          # 004011E7
+    mov eax, dword ptr [esi + 0x114100c]                 # 004011EA
+    push dword ptr [ebp - 4]                             # 004011F0
+    mov ecx, dword ptr [eax]                             # 004011F3
+    push dword ptr [ebp - 0xc]                           # 004011F5
+    push dword ptr [ebp - 8]                             # 004011F8
+    push eax                                             # 004011FB
+    call dword ptr [ecx + 0x4c]                          # 004011FC
+    mov eax, dword ptr [ebp - 0x1c]                      # 004011FF
+    add dword ptr [esi + 0x1141014], eax                 # 00401202
+    mov eax, dword ptr [esi + 0x1141014]                 # 00401208
+    mov ecx, dword ptr [esi + 0x1141010]                 # 0040120E
+    msvc_cmp eax, ecx                                    # 00401214
+    jb .L4014DA                                          # 00401216
+    msvc_sub eax, ecx                                    # 0040121C
+    mov dword ptr [esi + 0x1141014], eax                 # 0040121E
+    msvc_jmp .L4014DA                                    # 00401224
+.L401229:
+    lea edx, [ebp - 0x18]                                # 00401229
+    push ebx                                             # 0040122C
+    push edx                                             # 0040122D
+    lea edx, [ebp - 4]                                   # 0040122E
+    push edx                                             # 00401231
+    lea edx, [ebp - 0xc]                                 # 00401232
+    mov eax, dword ptr [esi + 0x114100c]                 # 00401235
+    push edx                                             # 0040123B
+    lea edx, [ebp - 8]                                   # 0040123C
+    mov ecx, dword ptr [eax]                             # 0040123F
+    push edx                                             # 00401241
+    push dword ptr [ebp - 0x1c]                          # 00401242
+    push dword ptr [esi + 0x1141014]                     # 00401245
+    push eax                                             # 0040124B
+    call dword ptr [ecx + 0x2c]                          # 0040124C
+    test eax, eax                                        # 0040124F
+    je .L401263                                          # 00401251
+.L401253:
+    push 0x506030                                        # 00401253
+    msvc_abscall 0x4D7190                                # 00401258
+    msvc_jmp .L4014DA                                    # 0040125E
+.L401263:
+    cmp dword ptr [ebp - 0xc], ebx                       # 00401263
+    mov edi, 0x80                                        # 00401266
+    je .L401375                                          # 0040126B
+    cmp dword ptr [esi + 0x1141020], ebx                 # 00401271
+    jne .L40134F                                         # 00401277
+    lea ecx, [ebp - 0x14]                                # 0040127D
+    lea eax, [esi + 0x1140fe4]                           # 00401280
+    push ecx                                             # 00401286
+    push eax                                             # 00401287
+    push dword ptr [ebp - 8]                             # 00401288
+    push dword ptr [ebp - 0xc]                           # 0040128B
+    push dword ptr [esi + 0x1140fe0]                     # 0040128E
+    call _sub_405291                                     # 00401294
+    mov eax, dword ptr [ebp - 0x14]                      # 00401299
+    mov edx, dword ptr [ebp - 0xc]                       # 0040129C
+    add esp, 0x14                                        # 0040129F
+    msvc_cmp eax, edx                                    # 004012A2
+    jae .L401375                                         # 004012A4
+    cmp dword ptr [esi + 0x1141024], ebx                 # 004012AA
+    jne .L401313                                         # 004012B0
+    mov ecx, dword ptr [esi + 0x1140fdc]                 # 004012B2
+    mov cx, word ptr [ecx + 0xe]                         # 004012B8
+    cmp cx, 8                                            # 004012BC
+    jne .L4012C8                                         # 004012C0
+    msvc_sub edx, eax                                    # 004012C2
+    push edx                                             # 004012C4
+    push edi                                             # 004012C5
+    jmp .L4012D2                                         # 004012C6
+.L4012C8:
+    cmp cx, 0x10                                         # 004012C8
+    jne .L4012E0                                         # 004012CC
+    msvc_sub edx, eax                                    # 004012CE
+    push edx                                             # 004012D0
+    push ebx                                             # 004012D1
+.L4012D2:
+    mov ecx, dword ptr [ebp - 8]                         # 004012D2
+    msvc_add eax, ecx                                    # 004012D5
+    push eax                                             # 004012D7
+    call _sub_4D0FC0                                     # 004012D8
+    add esp, 0xc                                         # 004012DD
+.L4012E0:
+    mov dword ptr [esi + 0x1141028], 1                   # 004012E0
+    mov eax, dword ptr [esi + 0x1141014]                 # 004012EA
+    cmp dword ptr [ebp - 0x10], eax                      # 004012F0
+    jbe .L401308                                         # 004012F3
+    mov ecx, dword ptr [esi + 0x1141010]                 # 004012F5
+    sub ecx, dword ptr [ebp - 0x10]                      # 004012FB
+    msvc_add ecx, eax                                    # 004012FE
+    mov dword ptr [esi + 0x114101c], ecx                 # 00401300
+    jmp .L401375                                         # 00401306
+.L401308:
+    sub eax, dword ptr [ebp - 0x10]                      # 00401308
+    mov dword ptr [esi + 0x114101c], eax                 # 0040130B
+    jmp .L401375                                         # 00401311
+.L401313:
+    mov ebx, dword ptr [ebp - 8]                         # 00401313
+    mov dword ptr [ebp - 0x20], edx                      # 00401316
+.L401319:
+    push dword ptr [ebp + 0x1c]                          # 00401319
+    sub dword ptr [ebp - 0x20], eax                      # 0040131C
+    msvc_add ebx, eax                                    # 0040131F
+    call _sub_40153B                                     # 00401321
+    lea eax, [ebp - 0x14]                                # 00401326
+    push eax                                             # 00401329
+    lea eax, [esi + 0x1140fe4]                           # 0040132A
+    push eax                                             # 00401330
+    push ebx                                             # 00401331
+    push dword ptr [ebp - 0x20]                          # 00401332
+    push dword ptr [esi + 0x1140fe0]                     # 00401335
+    call _sub_405291                                     # 0040133B
+    mov eax, dword ptr [ebp - 0x14]                      # 00401340
+    add esp, 0x18                                        # 00401343
+    cmp eax, dword ptr [ebp - 0x20]                      # 00401346
+    jb .L401319                                          # 00401349
+    msvc_xor ebx, ebx                                    # 0040134B
+    jmp .L401375                                         # 0040134D
+.L40134F:
+    mov eax, dword ptr [esi + 0x1140fdc]                 # 0040134F
+    push dword ptr [ebp - 0xc]                           # 00401355
+    mov ax, word ptr [eax + 0xe]                         # 00401358
+    msvc_sub ax, 8                                       # 0040135C
+    neg ax                                               # 00401360
+    msvc_sbb eax, eax                                    # 00401363
+    and al, 0x80                                         # 00401365
+    msvc_add eax, edi                                    # 00401367
+    push eax                                             # 00401369
+    push dword ptr [ebp - 8]                             # 0040136A
+    call _sub_4D0FC0                                     # 0040136D
+    add esp, 0xc                                         # 00401372
+.L401375:
+    mov ecx, dword ptr [ebp - 0x18]                      # 00401375
+    msvc_cmp ecx, ebx                                    # 00401378
+    je .L401457                                          # 0040137A
+    cmp dword ptr [esi + 0x1141020], ebx                 # 00401380
+    jne .L401457                                         # 00401386
+    lea edx, [ebp - 0x14]                                # 0040138C
+    lea eax, [esi + 0x1140fe4]                           # 0040138F
+    push edx                                             # 00401395
+    push eax                                             # 00401396
+    push dword ptr [ebp - 4]                             # 00401397
+    push ecx                                             # 0040139A
+    push dword ptr [esi + 0x1140fe0]                     # 0040139B
+    call _sub_405291                                     # 004013A1
+    mov eax, dword ptr [ebp - 0x14]                      # 004013A6
+    mov edx, dword ptr [ebp - 0x18]                      # 004013A9
+    add esp, 0x14                                        # 004013AC
+    msvc_cmp eax, edx                                    # 004013AF
+    jae .L40148C                                         # 004013B1
+    cmp dword ptr [esi + 0x1141024], ebx                 # 004013B7
+    jne .L401420                                         # 004013BD
+    mov ecx, dword ptr [esi + 0x1140fdc]                 # 004013BF
+    mov cx, word ptr [ecx + 0xe]                         # 004013C5
+    cmp cx, 8                                            # 004013C9
+    jne .L4013D5                                         # 004013CD
+    msvc_sub edx, eax                                    # 004013CF
+    push edx                                             # 004013D1
+    push edi                                             # 004013D2
+    jmp .L4013DF                                         # 004013D3
+.L4013D5:
+    cmp cx, 0x10                                         # 004013D5
+    jne .L4013ED                                         # 004013D9
+    msvc_sub edx, eax                                    # 004013DB
+    push edx                                             # 004013DD
+    push ebx                                             # 004013DE
+.L4013DF:
+    mov ecx, dword ptr [ebp - 4]                         # 004013DF
+    msvc_add eax, ecx                                    # 004013E2
+    push eax                                             # 004013E4
+    call _sub_4D0FC0                                     # 004013E5
+    add esp, 0xc                                         # 004013EA
+.L4013ED:
+    mov dword ptr [esi + 0x1141028], 1                   # 004013ED
+    mov eax, dword ptr [esi + 0x1141014]                 # 004013F7
+    cmp dword ptr [ebp - 0x10], eax                      # 004013FD
+    jbe .L401415                                         # 00401400
+    mov ecx, dword ptr [esi + 0x1141010]                 # 00401402
+    sub ecx, dword ptr [ebp - 0x10]                      # 00401408
+    msvc_add ecx, eax                                    # 0040140B
+    mov dword ptr [esi + 0x114101c], ecx                 # 0040140D
+    jmp .L40148C                                         # 00401413
+.L401415:
+    sub eax, dword ptr [ebp - 0x10]                      # 00401415
+    mov dword ptr [esi + 0x114101c], eax                 # 00401418
+    jmp .L40148C                                         # 0040141E
+.L401420:
+    mov edi, dword ptr [ebp - 4]                         # 00401420
+    msvc_mov ebx, edx                                    # 00401423
+.L401425:
+    push dword ptr [ebp + 0x1c]                          # 00401425
+    msvc_add edi, eax                                    # 00401428
+    msvc_sub ebx, eax                                    # 0040142A
+    call _sub_40153B                                     # 0040142C
+    lea eax, [ebp - 0x14]                                # 00401431
+    push eax                                             # 00401434
+    lea eax, [esi + 0x1140fe4]                           # 00401435
+    push eax                                             # 0040143B
+    push edi                                             # 0040143C
+    push ebx                                             # 0040143D
+    push dword ptr [esi + 0x1140fe0]                     # 0040143E
+    call _sub_405291                                     # 00401444
+    mov eax, dword ptr [ebp - 0x14]                      # 00401449
+    add esp, 0x18                                        # 0040144C
+    msvc_cmp eax, ebx                                    # 0040144F
+    jb .L401425                                          # 00401451
+    msvc_xor ebx, ebx                                    # 00401453
+    jmp .L40148C                                         # 00401455
+.L401457:
+    cmp dword ptr [ebp - 4], ebx                         # 00401457
+    je .L40148C                                          # 0040145A
+    msvc_cmp ecx, ebx                                    # 0040145C
+    je .L40148C                                          # 0040145E
+    cmp dword ptr [esi + 0x1141020], ebx                 # 00401460
+    je .L40148C                                          # 00401466
+    mov eax, dword ptr [esi + 0x1140fdc]                 # 00401468
+    push ecx                                             # 0040146E
+    mov ax, word ptr [eax + 0xe]                         # 0040146F
+    msvc_sub ax, 8                                       # 00401473
+    neg ax                                               # 00401477
+    msvc_sbb eax, eax                                    # 0040147A
+    and al, 0x80                                         # 0040147C
+    msvc_add eax, edi                                    # 0040147E
+    push eax                                             # 00401480
+    push dword ptr [ebp - 4]                             # 00401481
+    call _sub_4D0FC0                                     # 00401484
+    add esp, 0xc                                         # 00401489
+.L40148C:
+    push dword ptr [ebp - 0x18]                          # 0040148C
+    mov eax, dword ptr [esi + 0x114100c]                 # 0040148F
+    push dword ptr [ebp - 4]                             # 00401495
+    mov ecx, dword ptr [eax]                             # 00401498
+    push dword ptr [ebp - 0xc]                           # 0040149A
+    push dword ptr [ebp - 8]                             # 0040149D
+    push eax                                             # 004014A0
+    call dword ptr [ecx + 0x4c]                          # 004014A1
+    mov eax, dword ptr [ebp - 0x1c]                      # 004014A4
+    add dword ptr [esi + 0x1141014], eax                 # 004014A7
+    mov eax, dword ptr [esi + 0x1141014]                 # 004014AD
+    mov ecx, dword ptr [esi + 0x1141010]                 # 004014B3
+    msvc_cmp eax, ecx                                    # 004014B9
+    jb .L4014C5                                          # 004014BB
+    msvc_sub eax, ecx                                    # 004014BD
+    mov dword ptr [esi + 0x1141014], eax                 # 004014BF
+.L4014C5:
+    cmp dword ptr [ebp - 0x24], ebx                      # 004014C5
+    je .L4014DA                                          # 004014C8
+    mov esi, dword ptr [esi + 0x114100c]                 # 004014CA
+    push 1                                               # 004014D0
+    push ebx                                             # 004014D2
+    push ebx                                             # 004014D3
+    mov eax, dword ptr [esi]                             # 004014D4
+    push esi                                             # 004014D6
+    call dword ptr [eax + 0x30]                          # 004014D7
+.L4014DA:
+    pop edi                                              # 004014DA
+    pop esi                                              # 004014DB
+    pop ebx                                              # 004014DC
+    leave                                                # 004014DD
+    ret                                                  # 004014DE
+
+    .global _sub_4014DF
+_sub_4014DF:
+    push ebp                                             # 004014DF
+    msvc_mov ebp, esp                                    # 004014E0
+    push ebx                                             # 004014E2
+    mov ebx, dword ptr [0x4d718c]                        # 004014E3
+    push 1                                               # 004014E9
+    push 0x52412c                                        # 004014EB
+    call ebx                                             # 004014F0
+    test eax, eax                                        # 004014F2
+    jne .L401536                                         # 004014F4
+    push esi                                             # 004014F6
+    push edi                                             # 004014F7
+    msvc_xor esi, esi                                    # 004014F8
+    mov edi, 0x1140ec0                                   # 004014FA
+.L4014FF:
+    cmp dword ptr [edi], 0                               # 004014FF
+    je .L40151C                                          # 00401502
+    push esi                                             # 00401504
+    push dword ptr [ebp + 0x18]                          # 00401505
+    push dword ptr [ebp + 0x14]                          # 00401508
+    push dword ptr [ebp + 0x10]                          # 0040150B
+    push dword ptr [ebp + 0xc]                           # 0040150E
+    push dword ptr [ebp + 8]                             # 00401511
+    call _sub_401000                                     # 00401514
+    add esp, 0x18                                        # 00401519
+.L40151C:
+    add edi, 0x16c                                       # 0040151C
+    inc esi                                              # 00401522
+    cmp edi, 0x1141470                                   # 00401523
+    jl .L4014FF                                          # 00401529
+    push 0                                               # 0040152B
+    push 0x52412c                                        # 0040152D
+    call ebx                                             # 00401532
+    pop edi                                              # 00401534
+    pop esi                                              # 00401535
+.L401536:
+    pop ebx                                              # 00401536
+    pop ebp                                              # 00401537
+    ret 0x14                                             # 00401538
 
     .global _sub_40153B
 _sub_40153B:
@@ -181,7 +476,7 @@ _sub_40153B:
     mov esi, dword ptr [esp + 8]                         # 0040153C
     imul esi, esi, 0x16c                                 # 00401540
     cmp dword ptr [esi + 0x1140ec4], 0                   # 00401546
-    jne _sub_401584                                      # 0040154D
+    jne .L401584                                         # 0040154D
     push dword ptr [esi + 0x1140fd8]                     # 0040154F
     lea eax, [esi + 0x1140ff8]                           # 00401555
     push eax                                             # 0040155B
@@ -194,23 +489,19 @@ _sub_40153B:
     add esp, 0x10                                        # 00401575
     test eax, eax                                        # 00401578
     mov dword ptr [esi + 0x1141018], ecx                 # 0040157A
-    je _sub_4015E2                                       # 00401580
-    jmp _sub_4015BF                                      # 00401582
-
-    .global _sub_401584
-_sub_401584:
+    je .L4015E2                                          # 00401580
+    jmp .L4015BF                                         # 00401582
+.L401584:
     cmp dword ptr [esi + 0x1140fe0], 0                   # 00401584
     lea eax, [esi + 0x1140fe0]                           # 0040158B
-    je _sub_4015A2                                       # 00401591
+    je .L4015A2                                          # 00401591
     lea ecx, [esi + 0x1140fdc]                           # 00401593
     push ecx                                             # 00401599
     push eax                                             # 0040159A
     call _sub_405344                                     # 0040159B
     pop ecx                                              # 004015A0
     pop ecx                                              # 004015A1
-
-    .global _sub_4015A2
-_sub_4015A2:
+.L4015A2:
     push dword ptr [esi + 0x1140fd0]                     # 004015A2
     lea eax, [esi + 0x1140ec8]                           # 004015A8
     push eax                                             # 004015AE
@@ -218,24 +509,18 @@ _sub_4015A2:
     call _sub_401822                                     # 004015B3
     add esp, 0xc                                         # 004015B8
     test eax, eax                                        # 004015BB
-    je _sub_4015C3                                       # 004015BD
-
-    .global _sub_4015BF
-_sub_4015BF:
+    je .L4015C3                                          # 004015BD
+.L4015BF:
     msvc_xor eax, eax                                    # 004015BF
     pop esi                                              # 004015C1
     ret                                                  # 004015C2
-
-    .global _sub_4015C3
-_sub_4015C3:
+.L4015C3:
     mov eax, dword ptr [esi + 0x1140fd4]                 # 004015C3
     mov dword ptr [esi + 0x1141024], eax                 # 004015C9
     mov eax, dword ptr [esi + 0x1140fd0]                 # 004015CF
     mov dword ptr [esi + 0x1140fd8], eax                 # 004015D5
     and dword ptr [esi + 0x1140ec4], 0                   # 004015DB
-
-    .global _sub_4015E2
-_sub_4015E2:
+.L4015E2:
     push 1                                               # 004015E2
     pop eax                                              # 004015E4
     pop esi                                              # 004015E5
@@ -270,9 +555,9 @@ _sub_4015E7:
     push eax                                             # 00401620
     call dword ptr [ecx + 0x2c]                          # 00401621
     test eax, eax                                        # 00401624
-    jne _sub_4016FA                                      # 00401626
+    jne .L4016FA                                         # 00401626
     cmp dword ptr [ebp - 8], ebx                         # 0040162C
-    je _sub_4016DC                                       # 0040162F
+    je .L4016DC                                          # 0040162F
     lea ecx, [ebp - 0x10]                                # 00401635
     lea eax, [esi + 0x1140fe4]                           # 00401638
     push ecx                                             # 0040163E
@@ -285,14 +570,12 @@ _sub_4015E7:
     mov ecx, dword ptr [ebp - 8]                         # 00401654
     add esp, 0x14                                        # 00401657
     msvc_cmp eax, ecx                                    # 0040165A
-    jae _sub_4016DC                                      # 0040165C
+    jae .L4016DC                                         # 0040165C
     cmp dword ptr [esi + 0x1141024], ebx                 # 0040165E
-    je _sub_4016A2                                       # 00401664
+    je .L4016A2                                          # 00401664
     mov ebx, dword ptr [ebp - 0xc]                       # 00401666
     mov dword ptr [ebp - 4], ecx                         # 00401669
-
-    .global _sub_40166C
-_sub_40166C:
+.L40166C:
     push dword ptr [ebp + 8]                             # 0040166C
     sub dword ptr [ebp - 4], eax                         # 0040166F
     msvc_add ebx, eax                                    # 00401672
@@ -308,12 +591,10 @@ _sub_40166C:
     mov eax, dword ptr [ebp - 0x10]                      # 00401693
     add esp, 0x18                                        # 00401696
     cmp eax, dword ptr [ebp - 4]                         # 00401699
-    jb _sub_40166C                                       # 0040169C
+    jb .L40166C                                          # 0040169C
     msvc_xor ebx, ebx                                    # 0040169E
-    jmp _sub_4016DC                                      # 004016A0
-
-    .global _sub_4016A2
-_sub_4016A2:
+    jmp .L4016DC                                         # 004016A0
+.L4016A2:
     msvc_sub ecx, eax                                    # 004016A2
     mov dword ptr [esi + 0x1141028], 1                   # 004016A4
     mov dword ptr [esi + 0x114101c], eax                 # 004016AE
@@ -330,9 +611,7 @@ _sub_4016A2:
     push eax                                             # 004016D3
     call _sub_4D0FC0                                     # 004016D4
     add esp, 0xc                                         # 004016D9
-
-    .global _sub_4016DC
-_sub_4016DC:
+.L4016DC:
     mov eax, dword ptr [edi]                             # 004016DC
     push ebx                                             # 004016DE
     push dword ptr [ebp - 0x14]                          # 004016DF
@@ -343,9 +622,7 @@ _sub_4016DC:
     call dword ptr [ecx + 0x4c]                          # 004016EB
     mov dword ptr [esi + 0x1141018], ebx                 # 004016EE
     mov dword ptr [esi + 0x1141014], ebx                 # 004016F4
-
-    .global _sub_4016FA
-_sub_4016FA:
+.L4016FA:
     pop edi                                              # 004016FA
     pop esi                                              # 004016FB
     pop ebx                                              # 004016FC
@@ -372,20 +649,16 @@ _sub_4016FF:
     call _sub_405130                                     # 00401729
     add esp, 0x10                                        # 0040172E
     test eax, eax                                        # 00401731
-    je _sub_40173C                                       # 00401733
+    je .L40173C                                          # 00401733
     push -0x64                                           # 00401735
-    msvc_jmp _sub_4017E2                                 # 00401737
-
-    .global _sub_40173C
-_sub_40173C:
+    msvc_jmp .L4017E2                                    # 00401737
+.L40173C:
     mov eax, dword ptr [edi]                             # 0040173C
     cmp word ptr [eax], 1                                # 0040173E
-    je _sub_401748                                       # 00401742
+    je .L401748                                          # 00401742
     push -0x65                                           # 00401744
-    jmp _sub_401768                                      # 00401746
-
-    .global _sub_401748
-_sub_401748:
+    jmp .L401768                                         # 00401746
+.L401748:
     push dword ptr [ebp + 0x10]                          # 00401748
     lea eax, [esi + 0x1140ff8]                           # 0040174B
     push eax                                             # 00401751
@@ -395,11 +668,9 @@ _sub_401748:
     call _sub_405373                                     # 0040175A
     add esp, 0x10                                        # 0040175F
     test eax, eax                                        # 00401762
-    je _sub_401779                                       # 00401764
+    je .L401779                                          # 00401764
     push -0x67                                           # 00401766
-
-    .global _sub_401768
-_sub_401768:
+.L401768:
     pop esi                                              # 00401768
     push edi                                             # 00401769
     push ebx                                             # 0040176A
@@ -407,10 +678,8 @@ _sub_401768:
     pop ecx                                              # 00401770
     msvc_mov eax, esi                                    # 00401771
     pop ecx                                              # 00401773
-    msvc_jmp _sub_40181D                                 # 00401774
-
-    .global _sub_401779
-_sub_401779:
+    msvc_jmp .L40181D                                    # 00401774
+.L401779:
     mov eax, dword ptr [edi]                             # 00401779
     push 0x64                                            # 0040177B
     msvc_xor edx, edx                                    # 0040177D
@@ -445,16 +714,12 @@ _sub_401779:
     push eax                                             # 004017D8
     call dword ptr [ecx + 0xc]                           # 004017D9
     test eax, eax                                        # 004017DC
-    je _sub_4017E5                                       # 004017DE
+    je .L4017E5                                          # 004017DE
     push -0x66                                           # 004017E0
-
-    .global _sub_4017E2
-_sub_4017E2:
+.L4017E2:
     pop eax                                              # 004017E2
-    jmp _sub_40181D                                      # 004017E3
-
-    .global _sub_4017E5
-_sub_4017E5:
+    jmp .L40181D                                         # 004017E3
+.L4017E5:
     mov eax, dword ptr [edi]                             # 004017E5
     push dword ptr [ebp + 8]                             # 004017E7
     mov dword ptr [esi + 0x114100c], eax                 # 004017EA
@@ -467,9 +732,7 @@ _sub_4017E5:
     mov dword ptr [esi + 0x1141018], eax                 # 0040180F
     mov dword ptr [esi + 0x1141020], ebx                 # 00401815
     msvc_xor eax, eax                                    # 0040181B
-
-    .global _sub_40181D
-_sub_40181D:
+.L40181D:
     pop edi                                              # 0040181D
     pop esi                                              # 0040181E
     pop ebx                                              # 0040181F
@@ -496,22 +759,18 @@ _sub_401822:
     call _sub_405130                                     # 0040184C
     add esp, 0x10                                        # 00401851
     test eax, eax                                        # 00401854
-    je _sub_40185D                                       # 00401856
+    je .L40185D                                          # 00401856
     push -0x64                                           # 00401858
     pop eax                                              # 0040185A
-    jmp _sub_4018A1                                      # 0040185B
-
-    .global _sub_40185D
-_sub_40185D:
+    jmp .L4018A1                                         # 0040185B
+.L40185D:
     mov eax, dword ptr [ebp + 8]                         # 0040185D
     mov eax, dword ptr [eax]                             # 00401860
     cmp word ptr [eax], 1                                # 00401862
-    je _sub_40186C                                       # 00401866
+    je .L40186C                                          # 00401866
     push -0x65                                           # 00401868
-    jmp _sub_401886                                      # 0040186A
-
-    .global _sub_40186C
-_sub_40186C:
+    jmp .L401886                                         # 0040186A
+.L40186C:
     push dword ptr [ebp + 0x10]                          # 0040186C
     lea eax, [esi + 0x1140fe4]                           # 0040186F
     push ebx                                             # 00401875
@@ -520,11 +779,9 @@ _sub_40186C:
     call _sub_405373                                     # 00401878
     add esp, 0x10                                        # 0040187D
     test eax, eax                                        # 00401880
-    je _sub_401896                                       # 00401882
+    je .L401896                                          # 00401882
     push -0x67                                           # 00401884
-
-    .global _sub_401886
-_sub_401886:
+.L401886:
     pop esi                                              # 00401886
     push dword ptr [ebp + 8]                             # 00401887
     push edi                                             # 0040188A
@@ -532,16 +789,12 @@ _sub_401886:
     pop ecx                                              # 00401890
     msvc_mov eax, esi                                    # 00401891
     pop ecx                                              # 00401893
-    jmp _sub_4018A1                                      # 00401894
-
-    .global _sub_401896
-_sub_401896:
+    jmp .L4018A1                                         # 00401894
+.L401896:
     mov eax, dword ptr [ebp + 0x10]                      # 00401896
     mov dword ptr [esi + 0x1141018], eax                 # 00401899
     msvc_xor eax, eax                                    # 0040189F
-
-    .global _sub_4018A1
-_sub_4018A1:
+.L4018A1:
     pop edi                                              # 004018A1
     pop esi                                              # 004018A2
     pop ebx                                              # 004018A3
@@ -551,15 +804,13 @@ _sub_4018A1:
     .global _sub_4018A6
 _sub_4018A6:
     cmp dword ptr [0x524124], 0                          # 004018A6
-    jne _sub_4018ED                                      # 004018AD
+    jne .L4018ED                                         # 004018AD
     mov eax, 0x1140ec0                                   # 004018AF
-
-    .global _sub_4018B4
-_sub_4018B4:
+.L4018B4:
     and dword ptr [eax], 0                               # 004018B4
     add eax, 0x16c                                       # 004018B7
     cmp eax, 0x1141470                                   # 004018BC
-    jl _sub_4018B4                                       # 004018C1
+    jl .L4018B4                                          # 004018C1
     push 1                                               # 004018C3
     push 0                                               # 004018C5
     push 0x4014df                                        # 004018C7
@@ -568,14 +819,12 @@ _sub_4018B4:
     msvc_abscall 0x4D72B8                                # 004018D0
     test eax, eax                                        # 004018D6
     mov dword ptr [0x524120], eax                        # 004018D8
-    je _sub_4018ED                                       # 004018DD
+    je .L4018ED                                          # 004018DD
     push 1                                               # 004018DF
     mov dword ptr [0x524124], 1                          # 004018E1
     pop eax                                              # 004018EB
     ret                                                  # 004018EC
-
-    .global _sub_4018ED
-_sub_4018ED:
+.L4018ED:
     msvc_xor eax, eax                                    # 004018ED
     ret                                                  # 004018EF
 
@@ -583,17 +832,15 @@ _sub_4018ED:
 _sub_4018F0:
     push esi                                             # 004018F0
     msvc_xor esi, esi                                    # 004018F1
-
-    .global _sub_4018F3
-_sub_4018F3:
+.L4018F3:
     push esi                                             # 004018F3
     call _sub_401A05                                     # 004018F4
     inc esi                                              # 004018F9
     pop ecx                                              # 004018FA
     cmp esi, 4                                           # 004018FB
-    jl _sub_4018F3                                       # 004018FE
+    jl .L4018F3                                          # 004018FE
     cmp dword ptr [0x524124], 0                          # 00401900
-    je _sub_40194C                                       # 00401907
+    je .L40194C                                          # 00401907
     push edi                                             # 00401909
     push dword ptr [0x524120]                            # 0040190A
     msvc_abscall 0x4D729C                                # 00401910
@@ -603,28 +850,22 @@ _sub_4018F3:
     mov edi, 0x52412c                                    # 00401924
     push 1                                               # 00401929
     push edi                                             # 0040192B
-
-    .global _sub_40192C
-_sub_40192C:
+.L40192C:
     call esi                                             # 0040192C
     test eax, eax                                        # 0040192E
-    je _sub_40193F                                       # 00401930
+    je .L40193F                                          # 00401930
     push 0x64                                            # 00401932
     msvc_abscall 0x4D7188                                # 00401934
     push 1                                               # 0040193A
     push edi                                             # 0040193C
-    jmp _sub_40192C                                      # 0040193D
-
-    .global _sub_40193F
-_sub_40193F:
+    jmp .L40192C                                         # 0040193D
+.L40193F:
     push 0                                               # 0040193F
     push edi                                             # 00401941
     call esi                                             # 00401942
     and dword ptr [0x524124], 0                          # 00401944
     pop edi                                              # 0040194B
-
-    .global _sub_40194C
-_sub_40194C:
+.L40194C:
     pop esi                                              # 0040194C
     ret                                                  # 0040194D
 
@@ -632,35 +873,29 @@ _sub_40194C:
 _sub_40194E:
     cmp dword ptr [0x524124], 0                          # 0040194E
     push esi                                             # 00401955
-    je _sub_401983                                       # 00401956
+    je .L401983                                          # 00401956
     mov esi, dword ptr [esp + 8]                         # 00401958
     push esi                                             # 0040195C
     call _sub_401B10                                     # 0040195D
     test eax, eax                                        # 00401962
     pop ecx                                              # 00401964
-    je _sub_40196E                                       # 00401965
+    je .L40196E                                          # 00401965
     push esi                                             # 00401967
     call _sub_401A05                                     # 00401968
     pop ecx                                              # 0040196D
-
-    .global _sub_40196E
-_sub_40196E:
+.L40196E:
     push dword ptr [esp + 0x10]                          # 0040196E
     push dword ptr [esp + 0x10]                          # 00401972
     push esi                                             # 00401976
     call _sub_4016FF                                     # 00401977
     add esp, 0xc                                         # 0040197C
     test eax, eax                                        # 0040197F
-    je _sub_401987                                       # 00401981
-
-    .global _sub_401983
-_sub_401983:
+    je .L401987                                          # 00401981
+.L401983:
     msvc_xor eax, eax                                    # 00401983
     pop esi                                              # 00401985
     ret                                                  # 00401986
-
-    .global _sub_401987
-_sub_401987:
+.L401987:
     imul esi, esi, 0x16c                                 # 00401987
     push 1                                               # 0040198D
     and dword ptr [esi + 0x1140ec4], 0                   # 0040198F
@@ -727,36 +962,30 @@ _sub_401A05:
     push eax                                             # 00401A2A
     mov dword ptr [esi + 0x1141020], eax                 # 00401A2B
     push ebx                                             # 00401A31
-
-    .global _sub_401A32
-_sub_401A32:
+.L401A32:
     call edi                                             # 00401A32
     test eax, eax                                        # 00401A34
-    je _sub_401A45                                       # 00401A36
+    je .L401A45                                          # 00401A36
     push 0xa                                             # 00401A38
     msvc_abscall 0x4D7188                                # 00401A3A
     push 1                                               # 00401A40
     push ebx                                             # 00401A42
-    jmp _sub_401A32                                      # 00401A43
-
-    .global _sub_401A45
-_sub_401A45:
+    jmp .L401A32                                         # 00401A43
+.L401A45:
     cmp dword ptr [esi + 0x1140fe0], 0                   # 00401A45
     lea eax, [esi + 0x1140fe0]                           # 00401A4C
-    je _sub_401A63                                       # 00401A52
+    je .L401A63                                          # 00401A52
     lea ecx, [esi + 0x1140fdc]                           # 00401A54
     push ecx                                             # 00401A5A
     push eax                                             # 00401A5B
     call _sub_405344                                     # 00401A5C
     pop ecx                                              # 00401A61
     pop ecx                                              # 00401A62
-
-    .global _sub_401A63
-_sub_401A63:
+.L401A63:
     mov eax, dword ptr [ebp*4 + 0x524130]                # 00401A63
     lea esi, [ebp*4 + 0x524130]                          # 00401A6A
     test eax, eax                                        # 00401A71
-    je _sub_401A86                                       # 00401A73
+    je .L401A86                                          # 00401A73
     mov ecx, dword ptr [eax]                             # 00401A75
     push eax                                             # 00401A77
     call dword ptr [ecx + 0x48]                          # 00401A78
@@ -765,9 +994,7 @@ _sub_401A63:
     mov ecx, dword ptr [eax]                             # 00401A7E
     call dword ptr [ecx + 8]                             # 00401A80
     and dword ptr [esi], 0                               # 00401A83
-
-    .global _sub_401A86
-_sub_401A86:
+.L401A86:
     push 0                                               # 00401A86
     push ebx                                             # 00401A88
     call edi                                             # 00401A89
@@ -784,11 +1011,9 @@ _sub_401A93:
     mov eax, dword ptr [esp + 4]                         # 00401A93
     mov eax, dword ptr [eax*4 + 0x524130]                # 00401A97
     test eax, eax                                        # 00401A9E
-    jne _sub_401AA3                                      # 00401AA0
+    jne .L401AA3                                         # 00401AA0
     ret                                                  # 00401AA2
-
-    .global _sub_401AA3
-_sub_401AA3:
+.L401AA3:
     push dword ptr [esp + 8]                             # 00401AA3
     mov ecx, dword ptr [eax]                             # 00401AA7
     push eax                                             # 00401AA9
@@ -803,11 +1028,9 @@ _sub_401AB3:
     mov eax, dword ptr [esp + 4]                         # 00401AB3
     mov eax, dword ptr [eax*4 + 0x524130]                # 00401AB7
     test eax, eax                                        # 00401ABE
-    jne _sub_401AC3                                      # 00401AC0
+    jne .L401AC3                                         # 00401AC0
     ret                                                  # 00401AC2
-
-    .global _sub_401AC3
-_sub_401AC3:
+.L401AC3:
     push dword ptr [esp + 8]                             # 00401AC3
     mov ecx, dword ptr [eax]                             # 00401AC7
     push eax                                             # 00401AC9
@@ -822,11 +1045,9 @@ _sub_401AD3:
     mov eax, dword ptr [esp + 4]                         # 00401AD3
     mov eax, dword ptr [eax*4 + 0x524130]                # 00401AD7
     test eax, eax                                        # 00401ADE
-    jne _sub_401AE3                                      # 00401AE0
+    jne .L401AE3                                         # 00401AE0
     ret                                                  # 00401AE2
-
-    .global _sub_401AE3
-_sub_401AE3:
+.L401AE3:
     push dword ptr [esp + 8]                             # 00401AE3
     mov ecx, dword ptr [eax]                             # 00401AE7
     push eax                                             # 00401AE9
@@ -841,12 +1062,10 @@ _sub_401AF3:
     mov eax, dword ptr [esp + 4]                         # 00401AF3
     imul eax, eax, 0x16c                                 # 00401AF7
     cmp dword ptr [eax + 0x1141020], 0                   # 00401AFD
-    je _sub_401B09                                       # 00401B04
+    je .L401B09                                          # 00401B04
     msvc_xor eax, eax                                    # 00401B06
     ret                                                  # 00401B08
-
-    .global _sub_401B09
-_sub_401B09:
+.L401B09:
     mov eax, dword ptr [eax + 0x1141018]                 # 00401B09
     ret                                                  # 00401B0F
 
@@ -855,12 +1074,10 @@ _sub_401B10:
     mov eax, dword ptr [esp + 4]                         # 00401B10
     imul eax, eax, 0x16c                                 # 00401B14
     cmp dword ptr [eax + 0x1140ec0], 0                   # 00401B1A
-    jne _sub_401B26                                      # 00401B21
+    jne .L401B26                                         # 00401B21
     msvc_xor eax, eax                                    # 00401B23
     ret                                                  # 00401B25
-
-    .global _sub_401B26
-_sub_401B26:
+.L401B26:
     msvc_xor ecx, ecx                                    # 00401B26
     cmp dword ptr [eax + 0x1141020], ecx                 # 00401B28
     sete cl                                              # 00401B2E
@@ -875,13 +1092,11 @@ _sub_401B34:
     push 0                                               # 00401B40
     call _sub_4CFF1E                                     # 00401B42
     test eax, eax                                        # 00401B47
-    jne _sub_401B4F                                      # 00401B49
+    jne .L401B4F                                         # 00401B49
     push 1                                               # 00401B4B
     pop eax                                              # 00401B4D
     ret                                                  # 00401B4E
-
-    .global _sub_401B4F
-_sub_401B4F:
+.L401B4F:
     call _sub_401B57                                     # 00401B4F
     msvc_xor eax, eax                                    # 00401B54
     ret                                                  # 00401B56
@@ -890,42 +1105,39 @@ _sub_401B4F:
 _sub_401B57:
     mov eax, dword ptr [0x524140]                        # 00401B57
     test eax, eax                                        # 00401B5C
-    je _sub_401B6D                                       # 00401B5E
+    je .L401B6D                                          # 00401B5E
     mov ecx, dword ptr [eax]                             # 00401B60
     push eax                                             # 00401B62
     call dword ptr [ecx + 8]                             # 00401B63
     and dword ptr [0x524140], 0                          # 00401B66
-
-    .global _sub_401B6D
-_sub_401B6D:
+.L401B6D:
     ret                                                  # 00401B6D
 
     .global _sub_401B6E
 _sub_401B6E:
     call _sub_401B34                                     # 00401B6E
     test eax, eax                                        # 00401B73
-    je _sub_401B7E                                       # 00401B75
+    je .L401B7E                                          # 00401B75
     or dword ptr [0x113ffec], 2                          # 00401B77
-
-    .global _sub_401B7E
-_sub_401B7E:
+.L401B7E:
     ret                                                  # 00401B7E
-# 0x401B7F
-    .byte 0xFF, 0x05, 0x68, 0x41, 0x52, 0x00, 0x6A, 0x01 #        0 ..hAR.j.
-    .byte 0x58, 0xC2, 0x08, 0x00                         #        8 X...
 
+    .global _sub_401B7F
+_sub_401B7F:
+    inc dword ptr [0x524168]                             # 00401B7F
+    push 1                                               # 00401B85
+    pop eax                                              # 00401B87
+    ret 8                                                # 00401B88
 
     .global _sub_401B8B
 _sub_401B8B:
     mov eax, dword ptr [0x524140]                        # 00401B8B
     msvc_xor ecx, ecx                                    # 00401B90
     msvc_cmp eax, ecx                                    # 00401B92
-    jne _sub_401B99                                      # 00401B94
+    jne .L401B99                                         # 00401B94
     msvc_xor eax, eax                                    # 00401B96
     ret                                                  # 00401B98
-
-    .global _sub_401B99
-_sub_401B99:
+.L401B99:
     push 0x401b7f                                        # 00401B99
     push ecx                                             # 00401B9E
     mov dword ptr [0x524168], ecx                        # 00401B9F
@@ -939,26 +1151,58 @@ _sub_401B99:
     not eax                                              # 00401BB1
     and eax, dword ptr [0x524168]                        # 00401BB3
     ret                                                  # 00401BB9
-# 0x401BBA
-    .byte 0xA1, 0x54, 0x08, 0x14, 0x01, 0x8B, 0x0D, 0x1C #        0 .T......
-    .byte 0x52, 0x52, 0x00, 0x8D, 0x04, 0xC0, 0x8D, 0x04 #        8 RR......
-    .byte 0x41, 0x8B, 0x4C, 0x24, 0x04, 0x66, 0x8B, 0x51 #       10 A.L$.f.Q
-    .byte 0x0C, 0x66, 0x89, 0x10, 0x66, 0x8B, 0x51, 0x08 #       18 .f..f.Q.
-    .byte 0x66, 0x89, 0x50, 0x02, 0xC6, 0x40, 0x04, 0x02 #       20 f.P..@..
-    .byte 0x8A, 0x51, 0x18, 0x88, 0x50, 0x0E, 0x33, 0xD2 #       28 .Q..P.3.
-    .byte 0xF6, 0x41, 0x4C, 0x40, 0x74, 0x14, 0x53, 0xC6 #       30 .AL@t.S.
-    .byte 0x40, 0x05, 0x01, 0x8A, 0x59, 0x54, 0x66, 0xC7 #       38 @...YTf.
-    .byte 0x40, 0x10, 0x06, 0x00, 0x88, 0x58, 0x06, 0x5B #       40 @....X.[
-    .byte 0xEB, 0x0A, 0x88, 0x50, 0x05, 0x88, 0x50, 0x06 #       48 ...P..P.
-    .byte 0x66, 0x89, 0x50, 0x10, 0x66, 0xF7, 0x41, 0x4C #       50 f.P.f.AL
-    .byte 0x28, 0x18, 0x74, 0x14, 0x8A, 0x48, 0x06, 0x56 #       58 (.t..H.V
-    .byte 0x6A, 0x01, 0xC6, 0x40, 0x07, 0x01, 0x5E, 0xD3 #       60 j..@..^.
-    .byte 0xE6, 0x66, 0x89, 0x70, 0x0C, 0x5E, 0xEB, 0x07 #       68 .f.p.^..
-    .byte 0x88, 0x50, 0x07, 0x66, 0x89, 0x50, 0x0C, 0x6A #       70 .P.f.P.j
-    .byte 0x01, 0x66, 0x89, 0x50, 0x08, 0x66, 0x89, 0x50 #       78 .f.P.f.P
-    .byte 0x0A, 0xC6, 0x40, 0x0F, 0x01, 0xFF, 0x05, 0x54 #       80 ..@....T
-    .byte 0x08, 0x14, 0x01, 0x58, 0xC2, 0x08, 0x00       #       88 ...X...
 
+    .global _sub_401BBA
+_sub_401BBA:
+    mov eax, dword ptr [0x1140854]                       # 00401BBA
+    mov ecx, dword ptr [0x52521c]                        # 00401BBF
+    lea eax, [eax + eax*8]                               # 00401BC5
+    lea eax, [ecx + eax*2]                               # 00401BC8
+    mov ecx, dword ptr [esp + 4]                         # 00401BCB
+    mov dx, word ptr [ecx + 0xc]                         # 00401BCF
+    mov word ptr [eax], dx                               # 00401BD3
+    mov dx, word ptr [ecx + 8]                           # 00401BD6
+    mov word ptr [eax + 2], dx                           # 00401BDA
+    mov byte ptr [eax + 4], 2                            # 00401BDE
+    mov dl, byte ptr [ecx + 0x18]                        # 00401BE2
+    mov byte ptr [eax + 0xe], dl                         # 00401BE5
+    msvc_xor edx, edx                                    # 00401BE8
+    test byte ptr [ecx + 0x4c], 0x40                     # 00401BEA
+    je .L401C04                                          # 00401BEE
+    push ebx                                             # 00401BF0
+    mov byte ptr [eax + 5], 1                            # 00401BF1
+    mov bl, byte ptr [ecx + 0x54]                        # 00401BF5
+    mov word ptr [eax + 0x10], 6                         # 00401BF8
+    mov byte ptr [eax + 6], bl                           # 00401BFE
+    pop ebx                                              # 00401C01
+    jmp .L401C0E                                         # 00401C02
+.L401C04:
+    mov byte ptr [eax + 5], dl                           # 00401C04
+    mov byte ptr [eax + 6], dl                           # 00401C07
+    mov word ptr [eax + 0x10], dx                        # 00401C0A
+.L401C0E:
+    test word ptr [ecx + 0x4c], 0x1828                   # 00401C0E
+    je .L401C2A                                          # 00401C14
+    mov cl, byte ptr [eax + 6]                           # 00401C16
+    push esi                                             # 00401C19
+    push 1                                               # 00401C1A
+    mov byte ptr [eax + 7], 1                            # 00401C1C
+    pop esi                                              # 00401C20
+    shl esi, cl                                          # 00401C21
+    mov word ptr [eax + 0xc], si                         # 00401C23
+    pop esi                                              # 00401C27
+    jmp .L401C31                                         # 00401C28
+.L401C2A:
+    mov byte ptr [eax + 7], dl                           # 00401C2A
+    mov word ptr [eax + 0xc], dx                         # 00401C2D
+.L401C31:
+    push 1                                               # 00401C31
+    mov word ptr [eax + 8], dx                           # 00401C33
+    mov word ptr [eax + 0xa], dx                         # 00401C37
+    mov byte ptr [eax + 0xf], 1                          # 00401C3B
+    inc dword ptr [0x1140854]                            # 00401C3F
+    pop eax                                              # 00401C45
+    ret 8                                                # 00401C46
 
     .global _sub_401C49
 _sub_401C49:
@@ -975,12 +1219,10 @@ _sub_401C49:
     push eax                                             # 00401C65
     call dword ptr [edx + 0x20]                          # 00401C66
     test eax, eax                                        # 00401C69
-    jne _sub_401C74                                      # 00401C6B
+    jne .L401C74                                         # 00401C6B
     mov eax, dword ptr [0x524168]                        # 00401C6D
     msvc_add eax, esi                                    # 00401C72
-
-    .global _sub_401C74
-_sub_401C74:
+.L401C74:
     pop esi                                              # 00401C74
     ret                                                  # 00401C75
 
@@ -994,576 +1236,1622 @@ _sub_401C76:
     push eax                                             # 00401C85
     call dword ptr [ecx + 0x6c]                          # 00401C86
     test eax, eax                                        # 00401C89
-    jne _sub_401CF3                                      # 00401C8B
+    jne .L401CF3                                         # 00401C8B
     cmp dword ptr [0x524164], eax                        # 00401C8D
-    je _sub_401CB8                                       # 00401C93
+    je .L401CB8                                          # 00401C93
     mov eax, dword ptr [0x524150]                        # 00401C95
     push eax                                             # 00401C9A
     mov ecx, dword ptr [eax]                             # 00401C9B
     call dword ptr [ecx + 0x6c]                          # 00401C9D
     test eax, eax                                        # 00401CA0
-    jne _sub_401CF3                                      # 00401CA2
+    jne .L401CF3                                         # 00401CA2
     push 0x50605c                                        # 00401CA4
     push dword ptr [0x524150]                            # 00401CA9
     call _sub_4035E7                                     # 00401CAF
     pop ecx                                              # 00401CB4
     pop ecx                                              # 00401CB5
-    jmp _sub_401CDD                                      # 00401CB6
-
-    .global _sub_401CB8
-_sub_401CB8:
+    jmp .L401CDD                                         # 00401CB6
+.L401CB8:
     msvc_xor edi, edi                                    # 00401CB8
     cmp dword ptr [0x1140850], edi                       # 00401CBA
-    jle _sub_401CDD                                      # 00401CC0
-
-    .global _sub_401CC2
-_sub_401CC2:
+    jle .L401CDD                                         # 00401CC0
+.L401CC2:
     mov eax, dword ptr [0x524148]                        # 00401CC2
     mov eax, dword ptr [eax + edi*4]                     # 00401CC7
     push eax                                             # 00401CCA
     mov ecx, dword ptr [eax]                             # 00401CCB
     call dword ptr [ecx + 0x6c]                          # 00401CCD
     test eax, eax                                        # 00401CD0
-    jne _sub_401CF3                                      # 00401CD2
+    jne .L401CF3                                         # 00401CD2
     inc edi                                              # 00401CD4
     cmp edi, dword ptr [0x1140850]                       # 00401CD5
-    jl _sub_401CC2                                       # 00401CDB
-
-    .global _sub_401CDD
-_sub_401CDD:
+    jl .L401CC2                                          # 00401CDB
+.L401CDD:
     test esi, esi                                        # 00401CDD
-    je _sub_401CF7                                       # 00401CDF
+    je .L401CF7                                          # 00401CDF
     mov eax, dword ptr [esi + 4]                         # 00401CE1
     push eax                                             # 00401CE4
     mov ecx, dword ptr [eax]                             # 00401CE5
     call dword ptr [ecx + 0x6c]                          # 00401CE7
     test eax, eax                                        # 00401CEA
-    jne _sub_401CF3                                      # 00401CEC
+    jne .L401CF3                                         # 00401CEC
     mov esi, dword ptr [esi + 8]                         # 00401CEE
-    jmp _sub_401CDD                                      # 00401CF1
-
-    .global _sub_401CF3
-_sub_401CF3:
+    jmp .L401CDD                                         # 00401CF1
+.L401CF3:
     msvc_xor eax, eax                                    # 00401CF3
-    jmp _sub_401CFA                                      # 00401CF5
-
-    .global _sub_401CF7
-_sub_401CF7:
+    jmp .L401CFA                                         # 00401CF5
+.L401CF7:
     push 1                                               # 00401CF7
     pop eax                                              # 00401CF9
-
-    .global _sub_401CFA
-_sub_401CFA:
+.L401CFA:
     pop edi                                              # 00401CFA
     pop esi                                              # 00401CFB
     ret                                                  # 00401CFC
-# 0x401CFD
-    .byte 0x53, 0x8B, 0x5C, 0x24, 0x0C, 0x85, 0xDB, 0x7C #        0 S..$...|
-    .byte 0x46, 0x3B, 0x1D, 0x08, 0x00, 0x14, 0x01, 0x7D #        8 F;.....}
-    .byte 0x3E, 0x56, 0x8B, 0x74, 0x24, 0x0C, 0x57, 0x68 #       10 >V.t$.Wh
-    .byte 0xB8, 0x00, 0x00, 0x00, 0x6A, 0x00, 0x56, 0xE8 #       18 ....j.V.
-    .byte 0x9F, 0xF2, 0x0C, 0x00, 0x8D, 0x7E, 0x14, 0x6A #       20 .....~.j
-    .byte 0x7C, 0x6A, 0x00, 0x57, 0xE8, 0x92, 0xF2, 0x0C #       28 |j.W....
-    .byte 0x00, 0xC7, 0x07, 0x7C, 0x00, 0x00, 0x00, 0xA1 #       30 ...|....
-    .byte 0x48, 0x41, 0x52, 0x00, 0x83, 0xC4, 0x18, 0x8B #       38 HAR.....
-    .byte 0x04, 0x98, 0x6A, 0x01, 0x89, 0x86, 0x90, 0x00 #       40 ..j.....
-    .byte 0x00, 0x00, 0x58, 0x5F, 0x5E, 0x5B, 0xC3, 0x33 #       48 ..X_^[.3
-    .byte 0xC0, 0x5B, 0xC3, 0x56, 0x8B, 0x74, 0x24, 0x08 #       50 .[.V.t$.
-    .byte 0x57, 0x68, 0xB8, 0x00, 0x00, 0x00, 0x6A, 0x00 #       58 Wh....j.
-    .byte 0x56, 0xE8, 0x5D, 0xF2, 0x0C, 0x00, 0x8D, 0x7E #       60 V.]....~
-    .byte 0x14, 0x6A, 0x7C, 0x6A, 0x00, 0x57, 0xE8, 0x50 #       68 .j|j.W.P
-    .byte 0xF2, 0x0C, 0x00, 0x83, 0xC4, 0x18, 0xC7, 0x07 #       70 ........
-    .byte 0x7C, 0x00, 0x00, 0x00, 0xA1, 0x44, 0x41, 0x52 #       78 |....DAR
-    .byte 0x00, 0x6A, 0x01, 0x89, 0x86, 0x90, 0x00, 0x00 #       80 .j......
-    .byte 0x00, 0x58, 0x5F, 0x5E, 0xC3, 0x56, 0x8B, 0x74 #       88 .X_^.V.t
-    .byte 0x24, 0x08, 0x57, 0x66, 0x83, 0x7E, 0x0C, 0x00 #       90 $.Wf.~..
-    .byte 0x75, 0x67, 0x83, 0xBE, 0x90, 0x00, 0x00, 0x00 #       98 ug......
-    .byte 0x00, 0x74, 0x5E, 0x8D, 0x7E, 0x14, 0x8B, 0x86 #       A0 .t^.~...
-    .byte 0x90, 0x00, 0x00, 0x00, 0x6A, 0x00, 0x6A, 0x01 #       A8 ....j.j.
-    .byte 0x57, 0x8B, 0x08, 0x6A, 0x00, 0x50, 0xFF, 0x51 #       B0 W..j.P.Q
-    .byte 0x64, 0x3D, 0xC2, 0x01, 0x76, 0x88, 0x75, 0x0B #       B8 d=..v.u.
-    .byte 0xE8, 0xB4, 0xFE, 0xFF, 0xFF, 0x85, 0xC0, 0x74 #       C0 .......t
-    .byte 0x38, 0xEB, 0xDB, 0x85, 0xC0, 0x75, 0x32, 0x8B #       C8 8....u2.
-    .byte 0x46, 0x38, 0x6A, 0x01, 0x89, 0x06, 0x66, 0x8B #       D0 F8j...f.
-    .byte 0x46, 0x20, 0x66, 0x89, 0x46, 0x06, 0x66, 0x8B #       D8 F f.F.f.
-    .byte 0x46, 0x1C, 0x66, 0x89, 0x46, 0x08, 0x8B, 0x46 #       E0 F.f.F..F
-    .byte 0x24, 0x89, 0x46, 0x10, 0x66, 0xC7, 0x46, 0x04 #       E8 $.F.f.F.
-    .byte 0x04, 0x00, 0x66, 0xC7, 0x46, 0x0A, 0x01, 0x00 #       F0 ..f.F...
-    .byte 0x66, 0xC7, 0x46, 0x0C, 0x01, 0x00, 0x58, 0xEB #       F8 f.F...X.
-    .byte 0x02, 0x33, 0xC0, 0x5F, 0x5E, 0xC3, 0x56, 0x8B #      100 .3._^.V.
-    .byte 0x74, 0x24, 0x08, 0x57, 0x33, 0xFF, 0x66, 0x39 #      108 t$.W3.f9
-    .byte 0x7E, 0x0C, 0x74, 0x2D, 0x8B, 0x86, 0x90, 0x00 #      110 ~.t-....
-    .byte 0x00, 0x00, 0x3B, 0xC7, 0x74, 0x23, 0x8B, 0x08 #      118 ..;.t#..
-    .byte 0x57, 0x50, 0xFF, 0x91, 0x80, 0x00, 0x00, 0x00 #      120 WP......
-    .byte 0x66, 0x89, 0x7E, 0x0C, 0x89, 0x3E, 0x66, 0x89 #      128 f.~..>f.
-    .byte 0x7E, 0x08, 0x66, 0x89, 0x7E, 0x06, 0x66, 0x89 #      130 ~.f.~.f.
-    .byte 0x7E, 0x04, 0x89, 0x7E, 0x10, 0x66, 0x89, 0x7E #      138 ~..~.f.~
-    .byte 0x0A, 0x5F, 0x5E, 0xC3, 0x55, 0x8B, 0xEC, 0x83 #      140 ._^.U...
-    .byte 0xEC, 0x28, 0x8B, 0x15, 0x2C, 0xE7, 0x13, 0x01 #      148 .(..,...
-    .byte 0xA1, 0x2C, 0x06, 0x14, 0x01, 0x53, 0x56, 0x8B #      150 .,...SV.
-    .byte 0x35, 0x30, 0xE7, 0x13, 0x01, 0x8D, 0x0C, 0x10 #      158 50......
-    .byte 0xA1, 0xFC, 0xFF, 0x13, 0x01, 0x57, 0x33, 0xDB #      160 .....W3.
-    .byte 0x89, 0x4D, 0xFC, 0x39, 0x1D, 0x64, 0x41, 0x52 #      168 .M.9.dAR
-    .byte 0x00, 0x8D, 0x3C, 0x30, 0x89, 0x7D, 0xF8, 0x75 #      170 ..<0.}.u
-    .byte 0x5E, 0xA1, 0x50, 0x08, 0x14, 0x01, 0x83, 0xF8 #      178 ^.P.....
-    .byte 0x01, 0x0F, 0x8E, 0x5A, 0x02, 0x00, 0x00, 0x8B #      180 ...Z....
-    .byte 0x0D, 0x48, 0x41, 0x52, 0x00, 0x48, 0x85, 0xC0 #      188 .HAR.H..
-    .byte 0x8B, 0x31, 0x7E, 0x36, 0xA1, 0x48, 0x41, 0x52 #      190 .1~6.HAR
-    .byte 0x00, 0x8B, 0x04, 0x98, 0x50, 0x8B, 0x08, 0xFF #      198 ....P...
-    .byte 0x51, 0x60, 0x85, 0xC0, 0x74, 0x0D, 0xE8, 0xCE #      1A0 Q`..t...
-    .byte 0xFD, 0xFF, 0xFF, 0x85, 0xC0, 0x0F, 0x84, 0x2E #      1A8 ........
-    .byte 0x02, 0x00, 0x00, 0xA1, 0x48, 0x41, 0x52, 0x00 #      1B0 ....HAR.
-    .byte 0x8B, 0x4C, 0x98, 0x04, 0x89, 0x0C, 0x98, 0xA1 #      1B8 .L......
-    .byte 0x50, 0x08, 0x14, 0x01, 0x43, 0x48, 0x3B, 0xD8 #      1C0 P...CH;.
-    .byte 0x7C, 0xCA, 0xA1, 0x48, 0x41, 0x52, 0x00, 0x89 #      1C8 |..HAR..
-    .byte 0x34, 0x98, 0xE9, 0x0A, 0x02, 0x00, 0x00, 0x83 #      1D0 4.......
-    .byte 0x3D, 0x50, 0x08, 0x14, 0x01, 0x02, 0x0F, 0x8C #      1D8 =P......
-    .byte 0xE7, 0x01, 0x00, 0x00, 0x39, 0x1D, 0x5C, 0x41 #      1E0 ....9..A
-    .byte 0x52, 0x00, 0x0F, 0x85, 0xDB, 0x01, 0x00, 0x00 #      1E8 R.......
-    .byte 0x39, 0x1D, 0xF0, 0xFF, 0x13, 0x01, 0x0F, 0x84 #      1F0 9.......
-    .byte 0xE8, 0x00, 0x00, 0x00, 0xA1, 0x04, 0x00, 0x14 #      1F8 ........
-    .byte 0x01, 0x3B, 0xC8, 0x7E, 0x03, 0x89, 0x45, 0xFC #      200 .;.~..E.
-    .byte 0xA1, 0xF4, 0xFF, 0x13, 0x01, 0x3B, 0xF8, 0x7E #      208 .....;.~
-    .byte 0x03, 0x89, 0x45, 0xF8, 0x8B, 0x4D, 0xF8, 0x8B #      210 ..E..M..
-    .byte 0x45, 0xFC, 0x2B, 0xCE, 0x2B, 0xC2, 0x89, 0x4D #      218 E.+.+..M
-    .byte 0xE4, 0x89, 0x4D, 0xF4, 0x8B, 0x0D, 0x98, 0x0E #      220 ..M.....
-    .byte 0x14, 0x01, 0x89, 0x45, 0xE0, 0x89, 0x5D, 0xDC #      228 ...E..].
-    .byte 0x89, 0x5D, 0xD8, 0x8D, 0x79, 0x01, 0x89, 0x5D #      230 .]..y..]
-    .byte 0xEC, 0xC1, 0xE7, 0x06, 0x89, 0x7D, 0xE8, 0x03 #      238 .....}..
-    .byte 0xF8, 0x8B, 0xC1, 0x89, 0x7D, 0xF0, 0xC1, 0xE0 #      240 ....}...
-    .byte 0x04, 0x89, 0x90, 0xA0, 0x0E, 0x14, 0x01, 0x8B #      248 ........
-    .byte 0x55, 0xFC, 0x89, 0xB0, 0xA4, 0x0E, 0x14, 0x01 #      250 U.......
-    .byte 0x89, 0x90, 0xA8, 0x0E, 0x14, 0x01, 0x8B, 0x55 #      258 .......U
-    .byte 0xF8, 0x89, 0x90, 0xAC, 0x0E, 0x14, 0x01, 0xEB #      260 ........
-    .byte 0x06, 0x8B, 0x0D, 0x98, 0x0E, 0x14, 0x01, 0xA1 #      268 ........
-    .byte 0x50, 0x41, 0x52, 0x00, 0x53, 0xC1, 0xE1, 0x04 #      270 PAR.S...
-    .byte 0x81, 0xC1, 0xA0, 0x0E, 0x14, 0x01, 0x8B, 0x10 #      278 ........
-    .byte 0x68, 0x00, 0x00, 0x00, 0x01, 0x51, 0x8B, 0x0D #      280 h....Q..
-    .byte 0x48, 0x41, 0x52, 0x00, 0xFF, 0x31, 0x8D, 0x4D #      288 HAR..1.M
-    .byte 0xE8, 0x51, 0x50, 0xFF, 0x52, 0x14, 0xBE, 0xC2 #      290 .QP.R...
-    .byte 0x01, 0x76, 0x88, 0x3B, 0xC6, 0x75, 0x09, 0xE8 #      298 .v.;.u..
-    .byte 0xD5, 0xFC, 0xFF, 0xFF, 0x85, 0xC0, 0x75, 0xC1 #      2A0 ......u.
-    .byte 0xA1, 0x48, 0x41, 0x52, 0x00, 0x53, 0x8D, 0x55 #      2A8 .HAR.S.U
-    .byte 0xD8, 0x68, 0x00, 0x80, 0x00, 0x01, 0x8B, 0x00 #      2B0 .h......
-    .byte 0x52, 0x8B, 0x15, 0x98, 0x0E, 0x14, 0x01, 0xFF #      2B8 R.......
-    .byte 0x35, 0x50, 0x41, 0x52, 0x00, 0x8B, 0x08, 0xC1 #      2C0 5PAR....
-    .byte 0xE2, 0x04, 0x81, 0xC2, 0xA0, 0x0E, 0x14, 0x01 #      2C8 ........
-    .byte 0x52, 0x50, 0xFF, 0x51, 0x14, 0x3B, 0xC6, 0x75 #      2D0 RP.Q.;.u
-    .byte 0x10, 0xE8, 0x9B, 0xFC, 0xFF, 0xFF, 0x85, 0xC0 #      2D8 ........
-    .byte 0x75, 0xC6, 0xEB, 0x05, 0xBE, 0xC2, 0x01, 0x76 #      2E0 u......v
-    .byte 0x88, 0xA1, 0x44, 0x41, 0x52, 0x00, 0x6A, 0x01 #      2E8 ..DAR.j.
-    .byte 0x53, 0x50, 0x8B, 0x08, 0xFF, 0x51, 0x2C, 0x3B #      2F0 SP...Q,;
-    .byte 0xC6, 0x75, 0x09, 0xE8, 0x79, 0xFC, 0xFF, 0xFF #      2F8 .u..y...
-    .byte 0x85, 0xC0, 0x75, 0xE5, 0xA1, 0x98, 0x0E, 0x14 #      300 ..u.....
-    .byte 0x01, 0x40, 0x3B, 0x05, 0x50, 0x08, 0x14, 0x01 #      308 .@;.P...
-    .byte 0xA3, 0x98, 0x0E, 0x14, 0x01, 0x7C, 0x07, 0x33 #      310 .....|.3
-    .byte 0xC0, 0xA3, 0x98, 0x0E, 0x14, 0x01, 0x39, 0x1D #      318 ......9.
-    .byte 0x00, 0x00, 0x14, 0x01, 0xA3, 0xF8, 0xFF, 0x13 #      320 ........
-    .byte 0x01, 0x74, 0x16, 0xA1, 0x44, 0x41, 0x52, 0x00 #      328 .t..DAR.
-    .byte 0x6A, 0x02, 0x50, 0x8B, 0x08, 0xFF, 0x51, 0x48 #      330 j.P...QH
-    .byte 0x85, 0xC0, 0x75, 0xEF, 0xA1, 0x98, 0x0E, 0x14 #      338 ..u.....
-    .byte 0x01, 0x8B, 0xC8, 0xC1, 0xE1, 0x04, 0x8B, 0xB9 #      340 ........
-    .byte 0xA8, 0x0E, 0x14, 0x01, 0x2B, 0xB9, 0xA0, 0x0E #      348 ....+...
-    .byte 0x14, 0x01, 0x3B, 0xFB, 0x0F, 0x8E, 0x87, 0x00 #      350 ..;.....
-    .byte 0x00, 0x00, 0x8D, 0x50, 0x01, 0x89, 0x5D, 0xEC #      358 ...P..].
-    .byte 0xC1, 0xE2, 0x06, 0x89, 0x55, 0xE8, 0x03, 0xFA #      360 ....U...
-    .byte 0x8B, 0x91, 0xAC, 0x0E, 0x14, 0x01, 0x89, 0x7D #      368 .......}
-    .byte 0xF0, 0x2B, 0x91, 0xA4, 0x0E, 0x14, 0x01, 0x89 #      370 .+......
-    .byte 0x55, 0xF4, 0xEB, 0x05, 0xA1, 0x98, 0x0E, 0x14 #      378 U.......
-    .byte 0x01, 0x8B, 0x0D, 0x48, 0x41, 0x52, 0x00, 0x53 #      380 ...HAR.S
-    .byte 0x8D, 0x7D, 0xE8, 0x68, 0x00, 0x00, 0x00, 0x01 #      388 .}.h....
-    .byte 0x8B, 0x09, 0x57, 0xFF, 0x35, 0x50, 0x41, 0x52 #      390 ..W.5PAR
-    .byte 0x00, 0x8B, 0x11, 0xC1, 0xE0, 0x04, 0x05, 0xA0 #      398 ........
-    .byte 0x0E, 0x14, 0x01, 0x50, 0x51, 0xFF, 0x52, 0x14 #      3A0 ...PQ.R.
-    .byte 0x3B, 0xC6, 0x75, 0x09, 0xE8, 0xC8, 0xFB, 0xFF #      3A8 ;.u.....
-    .byte 0xFF, 0x85, 0xC0, 0x75, 0xC7, 0xA1, 0x98, 0x0E #      3B0 ...u....
-    .byte 0x14, 0x01, 0xC1, 0xE0, 0x04, 0x89, 0x98, 0xA0 #      3B8 ........
-    .byte 0x0E, 0x14, 0x01, 0x89, 0x98, 0xA8, 0x0E, 0x14 #      3C0 ........
-    .byte 0x01, 0xEB, 0x16, 0x39, 0x1D, 0x00, 0x00, 0x14 #      3C8 ...9....
-    .byte 0x01, 0x74, 0x0E, 0xA1, 0x40, 0x41, 0x52, 0x00 #      3D0 .t..@AR.
-    .byte 0x53, 0x6A, 0x01, 0x50, 0x8B, 0x08, 0xFF, 0x51 #      3D8 Sj.P...Q
-    .byte 0x58, 0x5F, 0x5E, 0x5B, 0xC9, 0xC3, 0x55, 0x8B #      3E0 X_^[..U.
-    .byte 0xEC, 0x51, 0x56, 0x8B, 0x35, 0x4C, 0x41, 0x52 #      3E8 .QV.5LAR
-    .byte 0x00, 0x85, 0xF6, 0x0F, 0x84, 0xA6, 0x00, 0x00 #      3F0 ........
-    .byte 0x00, 0x8B, 0x55, 0x0C, 0x81, 0xFA, 0x00, 0x01 #      3F8 ..U.....
-    .byte 0x00, 0x00, 0x0F, 0x8D, 0x97, 0x00, 0x00, 0x00 #      400 ........
-    .byte 0x83, 0xFA, 0x0A, 0x7D, 0x03, 0x6A, 0x0A, 0x5A #      408 ...}.j.Z
-    .byte 0x8B, 0x45, 0x10, 0x57, 0xB9, 0xF6, 0x00, 0x00 #      410 .E.W....
-    .byte 0x00, 0x8D, 0x3C, 0x02, 0x3B, 0xF9, 0x7E, 0x07 #      418 ..<.;.~.
-    .byte 0x8B, 0xC1, 0x2B, 0xC2, 0x89, 0x45, 0x10, 0x8D #      420 ..+..E..
-    .byte 0x0C, 0x02, 0x3B, 0xD1, 0x7D, 0x5E, 0x8B, 0x75 #      428 ..;.}^.u
-    .byte 0x08, 0x53, 0xC7, 0x45, 0x0C, 0x60, 0x08, 0x14 #      430 .S.E.`..
-    .byte 0x01, 0xC7, 0x45, 0x08, 0x61, 0x08, 0x14, 0x01 #      438 ..E.a...
-    .byte 0x29, 0x75, 0x0C, 0x29, 0x75, 0x08, 0xBB, 0x62 #      440 )u.)u..b
-    .byte 0x08, 0x14, 0x01, 0x8D, 0x3C, 0x95, 0x60, 0x08 #      448 ....<.`.
-    .byte 0x14, 0x01, 0x2B, 0xDE, 0x2B, 0xCA, 0x8D, 0x44 #      450 ..+.+..D
-    .byte 0x96, 0x01, 0x89, 0x4D, 0xFC, 0x8A, 0x48, 0x01 #      458 ...M..H.
-    .byte 0x8B, 0x75, 0x0C, 0x88, 0x0F, 0x8A, 0x08, 0x88 #      460 .u......
-    .byte 0x0C, 0x06, 0x8B, 0x75, 0x08, 0x8A, 0x48, 0xFF #      468 ...u..H.
-    .byte 0x83, 0xC7, 0x04, 0x88, 0x0C, 0x06, 0xC6, 0x04 #      470 ........
-    .byte 0x03, 0x05, 0x83, 0xC0, 0x04, 0xFF, 0x4D, 0xFC #      478 ......M.
-    .byte 0x75, 0xDB, 0x8B, 0x35, 0x4C, 0x41, 0x52, 0x00 #      480 u..5LAR.
-    .byte 0x8B, 0x45, 0x10, 0x5B, 0x8B, 0x0E, 0x8D, 0x3C #      488 .E.[...<
-    .byte 0x95, 0x60, 0x08, 0x14, 0x01, 0x57, 0x50, 0x52 #      490 .`...WPR
-    .byte 0x6A, 0x00, 0x56, 0xFF, 0x51, 0x18, 0x5F, 0x5E #      498 j.V.Q._^
-    .byte 0xC9, 0xC3, 0xFF, 0x74, 0x24, 0x08, 0x6A, 0x00 #      4A0 ...t$.j.
-    .byte 0xFF, 0x74, 0x24, 0x0C, 0xE8, 0x35, 0xFF, 0xFF #      4A8 .t$..5..
-    .byte 0xFF, 0x83, 0xC4, 0x0C, 0xC3, 0xA1, 0x40, 0x41 #      4B0 ......@A
-    .byte 0x52, 0x00, 0x6A, 0x00, 0x6A, 0x01, 0x50, 0x8B #      4B8 R.j.j.P.
-    .byte 0x08, 0xFF, 0x51, 0x58, 0xC3, 0x55, 0x8B, 0xEC #      4C0 ..QX.U..
-    .byte 0x83, 0xEC, 0x10, 0x56, 0x8B, 0x75, 0x08, 0x66 #      4C8 ...V.u.f
-    .byte 0x83, 0x7E, 0x0C, 0x00, 0x75, 0x6A, 0x8B, 0x86 #      4D0 .~..uj..
-    .byte 0x90, 0x00, 0x00, 0x00, 0x85, 0xC0, 0x74, 0x60 #      4D8 ......t`
-    .byte 0x8B, 0x08, 0x8D, 0x55, 0x08, 0x52, 0x50, 0xFF #      4E0 ...U.RP.
-    .byte 0x51, 0x44, 0x85, 0xC0, 0x75, 0x52, 0x66, 0xC7 #      4E8 QD..uRf.
-    .byte 0x46, 0x0C, 0x01, 0x00, 0x39, 0x05, 0x64, 0x41 #      4F0 F...9.dA
-    .byte 0x52, 0x00, 0x75, 0x3F, 0x8B, 0x86, 0x90, 0x00 #      4F8 R.u?....
-    .byte 0x00, 0x00, 0x3B, 0x05, 0x44, 0x41, 0x52, 0x00 #      500 ..;.DAR.
-    .byte 0x75, 0x31, 0x8D, 0x45, 0xF0, 0x50, 0xFF, 0x35 #      508 u1.E.P.5
-    .byte 0x20, 0x53, 0x52, 0x00, 0xFF, 0x15, 0x84, 0x72 #      510  SR....r
-    .byte 0x4D, 0x00, 0x8D, 0x45, 0xF0, 0x50, 0xFF, 0x35 #      518 M..E.P.5
-    .byte 0x20, 0x53, 0x52, 0x00, 0xFF, 0x15, 0x88, 0x72 #      520  SR....r
-    .byte 0x4D, 0x00, 0x6A, 0x00, 0xFF, 0x75, 0xF4, 0xFF #      528 M.j..u..
-    .byte 0x75, 0xF0, 0xFF, 0x75, 0x08, 0xFF, 0x15, 0x80 #      530 u..u....
-    .byte 0x70, 0x4D, 0x00, 0x8B, 0x45, 0x08, 0xEB, 0x02 #      538 pM..E...
-    .byte 0x33, 0xC0, 0x5E, 0xC9, 0xC3, 0x56, 0x8B, 0x74 #      540 3.^..V.t
-    .byte 0x24, 0x08, 0x66, 0x83, 0x7E, 0x0C, 0x00, 0x74 #      548 $.f.~..t
-    .byte 0x19, 0x8B, 0x86, 0x90, 0x00, 0x00, 0x00, 0x85 #      550 ........
-    .byte 0xC0, 0x74, 0x0F, 0xFF, 0x74, 0x24, 0x0C, 0x8B #      558 .t..t$..
-    .byte 0x08, 0x50, 0xFF, 0x51, 0x68, 0x66, 0x83, 0x66 #      560 .P.Qhf.f
-    .byte 0x0C, 0x00, 0x5E, 0xC3, 0x55, 0x8B, 0xEC, 0x83 #      568 ..^.U...
-    .byte 0xEC, 0x64, 0x83, 0x65, 0xEC, 0x00, 0xC7, 0x45 #      570 .d.e...E
-    .byte 0x9C, 0x64, 0x00, 0x00, 0x00, 0x8B, 0x45, 0x08 #      578 .d....E.
-    .byte 0x8D, 0x55, 0x9C, 0x52, 0x68, 0x00, 0x04, 0x00 #      580 .U.Rh...
-    .byte 0x01, 0x8B, 0x80, 0x90, 0x00, 0x00, 0x00, 0x6A #      588 .......j
-    .byte 0x00, 0x6A, 0x00, 0x6A, 0x00, 0x8B, 0x08, 0x50 #      590 .j.j...P
-    .byte 0xFF, 0x51, 0x14, 0x3D, 0xC2, 0x01, 0x76, 0x88 #      598 .Q.=..v.
-    .byte 0x75, 0x09, 0xE8, 0xD2, 0xF9, 0xFF, 0xFF, 0x85 #      5A0 u.......
-    .byte 0xC0, 0x75, 0xD2, 0xC9, 0xC3, 0x53, 0x56, 0x57 #      5A8 .u...SVW
-    .byte 0x6A, 0x0C, 0x6A, 0x01, 0xE8, 0xCE, 0xF0, 0x0C #      5B0 j.j.....
-    .byte 0x00, 0xBB, 0xB8, 0x00, 0x00, 0x00, 0x8B, 0xF8 #      5B8 ........
-    .byte 0x53, 0x6A, 0x01, 0xE8, 0xBF, 0xF0, 0x0C, 0x00 #      5C0 Sj......
-    .byte 0x8B, 0xF0, 0x83, 0xC4, 0x10, 0x85, 0xF6, 0x0F #      5C8 ........
-    .byte 0x84, 0xF1, 0x00, 0x00, 0x00, 0x85, 0xFF, 0x0F #      5D0 ........
-    .byte 0x84, 0xE0, 0x00, 0x00, 0x00, 0x53, 0x6A, 0x00 #      5D8 .....Sj.
-    .byte 0x56, 0xE8, 0xDD, 0xEC, 0x0C, 0x00, 0x0F, 0xBF #      5E0 V.......
-    .byte 0x44, 0x24, 0x1C, 0x89, 0x46, 0x20, 0x8D, 0x4E #      5E8 D$..F .N
-    .byte 0x14, 0x0F, 0xBF, 0x44, 0x24, 0x20, 0x89, 0x46 #      5F0 ...D$ .F
-    .byte 0x1C, 0x33, 0xC0, 0x83, 0xC4, 0x0C, 0xC7, 0x01 #      5F8 .3......
-    .byte 0x7C, 0x00, 0x00, 0x00, 0xC7, 0x46, 0x18, 0x07 #      600 |....F..
-    .byte 0x10, 0x00, 0x00, 0xC7, 0x46, 0x7C, 0x40, 0x08 #      608 ....F|@.
-    .byte 0x00, 0x00, 0xC7, 0x46, 0x5C, 0x20, 0x00, 0x00 #      610 ...F. ..
-    .byte 0x00, 0xC7, 0x46, 0x60, 0x60, 0x00, 0x00, 0x00 #      618 ..F``...
-    .byte 0xC7, 0x46, 0x68, 0x08, 0x00, 0x00, 0x00, 0x89 #      620 .Fh.....
-    .byte 0x46, 0x6C, 0x89, 0x46, 0x70, 0x89, 0x46, 0x74 #      628 Fl.Fp.Ft
-    .byte 0x89, 0x46, 0x78, 0xA1, 0x40, 0x41, 0x52, 0x00 #      630 .Fx.@AR.
-    .byte 0x8D, 0x9E, 0x90, 0x00, 0x00, 0x00, 0x6A, 0x00 #      638 ......j.
-    .byte 0x8B, 0x10, 0x53, 0x51, 0x50, 0xFF, 0x52, 0x18 #      640 ..SQP.R.
-    .byte 0x85, 0xC0, 0x74, 0x12, 0x57, 0xE8, 0x06, 0xF0 #      648 ..t.W...
-    .byte 0x0C, 0x00, 0x56, 0xE8, 0x00, 0xF0, 0x0C, 0x00 #      650 ..V.....
-    .byte 0x59, 0x33, 0xF6, 0x59, 0xEB, 0x73, 0xA1, 0x58 #      658 Y3.Y.s.X
-    .byte 0x41, 0x52, 0x00, 0x89, 0x37, 0x8B, 0x0B, 0x83 #      660 AR..7...
-    .byte 0x67, 0x08, 0x00, 0x85, 0xC0, 0x89, 0x4F, 0x04 #      668 g.....O.
-    .byte 0x75, 0x08, 0x89, 0x3D, 0x58, 0x41, 0x52, 0x00 #      670 u..=XAR.
-    .byte 0xEB, 0x0E, 0x8B, 0x48, 0x08, 0x85, 0xC9, 0x74 #      678 ...H...t
-    .byte 0x04, 0x8B, 0xC1, 0xEB, 0xF5, 0x89, 0x78, 0x08 #      680 ......x.
-    .byte 0x56, 0xE8, 0xDE, 0xFE, 0xFF, 0xFF, 0x8B, 0x03 #      688 V.......
-    .byte 0x59, 0xFF, 0x35, 0x4C, 0x41, 0x52, 0x00, 0x8B #      690 Y.5LAR..
-    .byte 0x08, 0x50, 0xFF, 0x51, 0x7C, 0x3D, 0xC2, 0x01 #      698 .P.Q|=..
-    .byte 0x76, 0x88, 0x75, 0x2D, 0xE8, 0xD0, 0xF8, 0xFF #      6A0 v.u-....
-    .byte 0xFF, 0x85, 0xC0, 0x74, 0x24, 0x8B, 0x1B, 0xFF #      6A8 ...t$...
-    .byte 0x35, 0x4C, 0x41, 0x52, 0x00, 0x8B, 0x03, 0x53 #      6B0 5LAR...S
-    .byte 0xFF, 0x50, 0x7C, 0xEB, 0x14, 0x56, 0xE8, 0x95 #      6B8 .P|..V..
-    .byte 0xEF, 0x0C, 0x00, 0x59, 0x33, 0xF6, 0x85, 0xFF #      6C0 ...Y3...
-    .byte 0x74, 0x07, 0x57, 0xE8, 0x88, 0xEF, 0x0C, 0x00 #      6C8 t.W.....
-    .byte 0x59, 0x8B, 0xC6, 0x5F, 0x5E, 0x5B, 0xC3, 0x53 #      6D0 Y.._^[.S
-    .byte 0x8B, 0x5C, 0x24, 0x08, 0x56, 0x57, 0x85, 0xDB #      6D8 ..$.VW..
-    .byte 0x74, 0x53, 0x8B, 0x35, 0x58, 0x41, 0x52, 0x00 #      6E0 tS.5XAR.
-    .byte 0x85, 0xF6, 0x74, 0x49, 0x33, 0xC0, 0x33, 0xFF #      6E8 ..tI3.3.
-    .byte 0x85, 0xF6, 0x74, 0x41, 0x85, 0xC0, 0x75, 0x11 #      6F0 ..tA..u.
-    .byte 0x39, 0x1E, 0x75, 0x04, 0x8B, 0xC6, 0xEB, 0x05 #      6F8 9.u.....
-    .byte 0x8B, 0xFE, 0x8B, 0x76, 0x08, 0x85, 0xF6, 0x75 #      700 ...v...u
-    .byte 0xEB, 0x85, 0xF6, 0x74, 0x28, 0x8B, 0x46, 0x04 #      708 ...t(.F.
-    .byte 0x50, 0x8B, 0x08, 0xFF, 0x51, 0x08, 0x53, 0xE8 #      710 P...Q.S.
-    .byte 0x3C, 0xEF, 0x0C, 0x00, 0x8B, 0x46, 0x08, 0x59 #      718 <....F.Y
-    .byte 0x85, 0xFF, 0x74, 0x05, 0x89, 0x47, 0x08, 0xEB #      720 ..t..G..
-    .byte 0x05, 0xA3, 0x58, 0x41, 0x52, 0x00, 0x56, 0xE8 #      728 ..XAR.V.
-    .byte 0x24, 0xEF, 0x0C, 0x00, 0x59, 0x5F, 0x5E, 0x5B #      730 $...Y_^[
-    .byte 0xC3, 0x55, 0x8B, 0xEC, 0x83, 0xEC, 0x10, 0x33 #      738 .U.....3
-    .byte 0xD2, 0x53, 0x39, 0x15, 0x64, 0x41, 0x52, 0x00 #      740 .S9.dAR.
-    .byte 0x56, 0x57, 0x0F, 0x84, 0x8F, 0x00, 0x00, 0x00 #      748 VW......
-    .byte 0x39, 0x15, 0x50, 0x41, 0x52, 0x00, 0x0F, 0x84 #      750 9.PAR...
-    .byte 0x83, 0x00, 0x00, 0x00, 0x39, 0x55, 0x08, 0x74 #      758 ....9U.t
-    .byte 0x7E, 0x8B, 0x75, 0x0C, 0x8B, 0x06, 0x8B, 0x7E #      760 ~.u....~
-    .byte 0x08, 0x8B, 0x4E, 0x04, 0x8B, 0x5E, 0x0C, 0x2B #      768 ..N..^.+
-    .byte 0xF8, 0x2B, 0xD9, 0x3B, 0xFA, 0x7E, 0x68, 0x3B #      770 .+.;.~h;
-    .byte 0xDA, 0x7E, 0x64, 0x6A, 0x40, 0x5A, 0x3B, 0xFA #      778 .~dj@Z;.
-    .byte 0x7E, 0x07, 0x03, 0xC2, 0x8B, 0xFA, 0x89, 0x46 #      780 ~......F
-    .byte 0x08, 0x3B, 0xDA, 0x7E, 0x08, 0x83, 0xC1, 0x40 #      788 .;.~...@
-    .byte 0x8B, 0xDA, 0x89, 0x4E, 0x0C, 0x83, 0x65, 0xF4 #      790 ...N..e.
-    .byte 0x00, 0x83, 0x65, 0xF0, 0x00, 0x89, 0x7D, 0xF8 #      798 ..e...}.
-    .byte 0x89, 0x5D, 0xFC, 0x8B, 0x55, 0x08, 0xA1, 0x50 #      7A0 .]..U..P
-    .byte 0x41, 0x52, 0x00, 0x6A, 0x00, 0x68, 0x00, 0x00 #      7A8 AR.j.h..
-    .byte 0x00, 0x01, 0x8B, 0x08, 0x56, 0xFF, 0xB2, 0x90 #      7B0 ....V...
-    .byte 0x00, 0x00, 0x00, 0x8D, 0x55, 0xF0, 0x52, 0x50 #      7B8 ....U.RP
-    .byte 0xFF, 0x51, 0x14, 0x3D, 0xC2, 0x01, 0x76, 0x88 #      7C0 .Q.=..v.
-    .byte 0x75, 0x09, 0xE8, 0xAA, 0xF7, 0xFF, 0xFF, 0x85 #      7C8 u.......
-    .byte 0xC0, 0x75, 0xD0, 0x89, 0x3D, 0x2C, 0x06, 0x14 #      7D0 .u..=,..
-    .byte 0x01, 0x89, 0x1D, 0xFC, 0xFF, 0x13, 0x01, 0x5F #      7D8 ......._
-    .byte 0x5E, 0x5B, 0xC9, 0xC3, 0x55, 0x8B, 0xEC, 0x83 #      7E0 ^[..U...
-    .byte 0xEC, 0x20, 0x56, 0x57, 0x8B, 0x7D, 0x08, 0x33 #      7E8 . VW.}.3
-    .byte 0xC0, 0x3B, 0xF8, 0x0F, 0x84, 0xBD, 0x00, 0x00 #      7F0 .;......
-    .byte 0x00, 0x8B, 0x75, 0x10, 0x3B, 0xF0, 0x0F, 0x84 #      7F8 ..u.;...
-    .byte 0xB2, 0x00, 0x00, 0x00, 0x39, 0x86, 0x90, 0x00 #      800 ....9...
-    .byte 0x00, 0x00, 0x0F, 0x84, 0xA6, 0x00, 0x00, 0x00 #      808 ........
-    .byte 0x39, 0x87, 0x90, 0x00, 0x00, 0x00, 0x0F, 0x84 #      810 9.......
-    .byte 0x9A, 0x00, 0x00, 0x00, 0x39, 0x05, 0x64, 0x41 #      818 ....9.dA
-    .byte 0x52, 0x00, 0x53, 0x8B, 0x5D, 0x14, 0x75, 0x40 #      820 R.S.].u@
-    .byte 0x8B, 0xF3, 0x8D, 0x7D, 0xE0, 0xA5, 0xA5, 0x8D #      828 ...}....
-    .byte 0x45, 0xF0, 0xA5, 0x50, 0xFF, 0x35, 0x20, 0x53 #      830 E..P.5 S
-    .byte 0x52, 0x00, 0xA5, 0xFF, 0x15, 0x84, 0x72, 0x4D #      838 R.....rM
-    .byte 0x00, 0x8D, 0x45, 0xF0, 0x50, 0xFF, 0x35, 0x20 #      840 ..E.P.5 
-    .byte 0x53, 0x52, 0x00, 0xFF, 0x15, 0x88, 0x72, 0x4D #      848 SR....rM
-    .byte 0x00, 0x8B, 0x45, 0xF0, 0x8B, 0x4D, 0xF4, 0x01 #      850 ..E..M..
-    .byte 0x03, 0x01, 0x4B, 0x04, 0x01, 0x43, 0x08, 0x01 #      858 ..K..C..
-    .byte 0x4B, 0x0C, 0x8B, 0x7D, 0x08, 0x8B, 0x75, 0x10 #      860 K..}..u.
-    .byte 0x8B, 0x86, 0x90, 0x00, 0x00, 0x00, 0x6A, 0x00 #      868 ......j.
-    .byte 0x68, 0x00, 0x00, 0x00, 0x01, 0xFF, 0x75, 0x0C #      870 h.....u.
-    .byte 0x8B, 0x08, 0xFF, 0xB7, 0x90, 0x00, 0x00, 0x00 #      878 ........
-    .byte 0x53, 0x50, 0xFF, 0x51, 0x14, 0x3D, 0xC2, 0x01 #      880 SP.Q.=..
-    .byte 0x76, 0x88, 0x89, 0x45, 0x08, 0x75, 0x09, 0xE8 #      888 v..E.u..
-    .byte 0xE5, 0xF6, 0xFF, 0xFF, 0x85, 0xC0, 0x75, 0xD0 #      890 ......u.
-    .byte 0x83, 0x3D, 0x64, 0x41, 0x52, 0x00, 0x00, 0x75 #      898 .=dAR..u
-    .byte 0x09, 0x8D, 0x75, 0xE0, 0x8B, 0xFB, 0xA5, 0xA5 #      8A0 ..u.....
-    .byte 0xA5, 0xA5, 0x83, 0x7D, 0x08, 0x00, 0x5B, 0x75 #      8A8 ...}..[u
-    .byte 0x05, 0x6A, 0x01, 0x58, 0xEB, 0x02, 0x33, 0xC0 #      8B0 .j.X..3.
-    .byte 0x5F, 0x5E, 0xC9, 0xC3, 0x55, 0x8B, 0xEC, 0x83 #      8B8 _^..U...
-    .byte 0xEC, 0x28, 0x56, 0x8B, 0x75, 0x08, 0x33, 0xC0 #      8C0 .(V.u.3.
-    .byte 0x57, 0x3B, 0xF0, 0x0F, 0x84, 0xD8, 0x00, 0x00 #      8C8 W;......
-    .byte 0x00, 0x8B, 0x7D, 0x10, 0x3B, 0xF8, 0x0F, 0x84 #      8D0 ..}.;...
-    .byte 0xCD, 0x00, 0x00, 0x00, 0x39, 0x87, 0x90, 0x00 #      8D8 ....9...
-    .byte 0x00, 0x00, 0x0F, 0x84, 0xC1, 0x00, 0x00, 0x00 #      8E0 ........
-    .byte 0x39, 0x86, 0x90, 0x00, 0x00, 0x00, 0x0F, 0x84 #      8E8 9.......
-    .byte 0xB5, 0x00, 0x00, 0x00, 0x39, 0x05, 0x64, 0x41 #      8F0 ....9.dA
-    .byte 0x52, 0x00, 0x53, 0x8B, 0x5D, 0x14, 0x75, 0x40 #      8F8 R.S.].u@
-    .byte 0x8B, 0xF3, 0x8D, 0x7D, 0xD8, 0xA5, 0xA5, 0x8D #      900 ...}....
-    .byte 0x45, 0xE8, 0xA5, 0x50, 0xFF, 0x35, 0x20, 0x53 #      908 E..P.5 S
-    .byte 0x52, 0x00, 0xA5, 0xFF, 0x15, 0x84, 0x72, 0x4D #      910 R.....rM
-    .byte 0x00, 0x8D, 0x45, 0xE8, 0x50, 0xFF, 0x35, 0x20 #      918 ..E.P.5 
-    .byte 0x53, 0x52, 0x00, 0xFF, 0x15, 0x88, 0x72, 0x4D #      920 SR....rM
-    .byte 0x00, 0x8B, 0x45, 0xE8, 0x8B, 0x4D, 0xEC, 0x01 #      928 ..E..M..
-    .byte 0x03, 0x01, 0x4B, 0x04, 0x01, 0x43, 0x08, 0x01 #      930 ..K..C..
-    .byte 0x4B, 0x0C, 0x8B, 0x75, 0x08, 0x8B, 0x7D, 0x10 #      938 K..u..}.
-    .byte 0x8B, 0x45, 0x18, 0x8D, 0x55, 0xF8, 0x89, 0x45 #      940 .E..U..E
-    .byte 0xF8, 0x89, 0x45, 0xFC, 0x8B, 0x86, 0x90, 0x00 #      948 ..E.....
-    .byte 0x00, 0x00, 0x52, 0x6A, 0x08, 0x50, 0x8B, 0x08 #      950 ..Rj.P..
-    .byte 0xFF, 0x51, 0x74, 0x8B, 0x87, 0x90, 0x00, 0x00 #      958 .Qt.....
-    .byte 0x00, 0x6A, 0x00, 0x68, 0x00, 0x80, 0x00, 0x01 #      960 .j.h....
-    .byte 0xFF, 0x75, 0x0C, 0x8B, 0x08, 0xFF, 0xB6, 0x90 #      968 .u......
-    .byte 0x00, 0x00, 0x00, 0x53, 0x50, 0xFF, 0x51, 0x14 #      970 ...SP.Q.
-    .byte 0x3D, 0xC2, 0x01, 0x76, 0x88, 0x89, 0x45, 0x08 #      978 =..v..E.
-    .byte 0x75, 0x09, 0xE8, 0xF2, 0xF5, 0xFF, 0xFF, 0x85 #      980 u.......
-    .byte 0xC0, 0x75, 0xD0, 0x83, 0x3D, 0x64, 0x41, 0x52 #      988 .u..=dAR
-    .byte 0x00, 0x00, 0x75, 0x09, 0x8D, 0x75, 0xD8, 0x8B #      990 ..u..u..
-    .byte 0xFB, 0xA5, 0xA5, 0xA5, 0xA5, 0x83, 0x7D, 0x08 #      998 ......}.
-    .byte 0x00, 0x5B, 0x75, 0x05, 0x6A, 0x01, 0x58, 0xEB #      9A0 .[u.j.X.
-    .byte 0x02, 0x33, 0xC0, 0x5F, 0x5E, 0xC9, 0xC3, 0x55 #      9A8 .3._^..U
-    .byte 0x8B, 0xEC, 0x83, 0xEC, 0x10, 0x83, 0x3D, 0x64 #      9B0 ......=d
-    .byte 0x41, 0x52, 0x00, 0x00, 0x56, 0x57, 0x75, 0x39 #      9B8 AR..VWu9
-    .byte 0x8B, 0x45, 0x0C, 0x8B, 0x4D, 0x14, 0x89, 0x4D #      9C0 .E..M..M
-    .byte 0xF0, 0x8B, 0x50, 0x08, 0x2B, 0x10, 0x03, 0xD1 #      9C8 ..P.+...
-    .byte 0x8B, 0x4D, 0x18, 0x89, 0x55, 0xF8, 0x8B, 0x50 #      9D0 .M..U..P
-    .byte 0x0C, 0x2B, 0x50, 0x04, 0x89, 0x4D, 0xF4, 0x03 #      9D8 .+P..M..
-    .byte 0xD1, 0x8D, 0x4D, 0xF0, 0x51, 0x89, 0x55, 0xFC #      9E0 ..M.Q.U.
-    .byte 0xFF, 0x75, 0x10, 0x50, 0xFF, 0x75, 0x08, 0xE8 #      9E8 .u.P.u..
-    .byte 0xF0, 0xFD, 0xFF, 0xFF, 0x83, 0xC4, 0x10, 0xEB #      9F0 ........
-    .byte 0x58, 0x8B, 0x7D, 0x08, 0x85, 0xFF, 0x74, 0x4F #      9F8 X.}...tO
-    .byte 0x8B, 0x75, 0x10, 0x85, 0xF6, 0x74, 0x48, 0x83 #      A00 .u...tH.
-    .byte 0xBE, 0x90, 0x00, 0x00, 0x00, 0x00, 0x74, 0x3F #      A08 ......t?
-    .byte 0x83, 0xBF, 0x90, 0x00, 0x00, 0x00, 0x00, 0x74 #      A10 .......t
-    .byte 0x36, 0x6A, 0x10, 0x8B, 0x86, 0x90, 0x00, 0x00 #      A18 6j......
-    .byte 0x00, 0xFF, 0x75, 0x0C, 0x8B, 0x08, 0xFF, 0xB7 #      A20 ..u.....
-    .byte 0x90, 0x00, 0x00, 0x00, 0xFF, 0x75, 0x18, 0xFF #      A28 .....u..
-    .byte 0x75, 0x14, 0x50, 0xFF, 0x51, 0x1C, 0x3D, 0xC2 #      A30 u.P.Q.=.
-    .byte 0x01, 0x76, 0x88, 0x75, 0x09, 0xE8, 0x37, 0xF5 #      A38 .v.u..7.
-    .byte 0xFF, 0xFF, 0x85, 0xC0, 0xEB, 0xD1, 0x85, 0xC0 #      A40 ........
-    .byte 0x75, 0x05, 0x6A, 0x01, 0x58, 0xEB, 0x02, 0x33 #      A48 u.j.X..3
-    .byte 0xC0, 0x5F, 0x5E, 0xC9, 0xC3, 0x55, 0x8B, 0xEC #      A50 ._^..U..
-    .byte 0x83, 0xEC, 0x10, 0x83, 0x3D, 0x64, 0x41, 0x52 #      A58 ....=dAR
-    .byte 0x00, 0x00, 0x56, 0x57, 0x75, 0x3C, 0x8B, 0x45 #      A60 ..VWu<.E
-    .byte 0x0C, 0x8B, 0x4D, 0x14, 0xFF, 0x75, 0x1C, 0x89 #      A68 ..M..u..
-    .byte 0x4D, 0xF0, 0x8B, 0x50, 0x08, 0x2B, 0x10, 0x03 #      A70 M..P.+..
-    .byte 0xD1, 0x8B, 0x4D, 0x18, 0x89, 0x55, 0xF8, 0x8B #      A78 ..M..U..
-    .byte 0x50, 0x0C, 0x2B, 0x50, 0x04, 0x89, 0x4D, 0xF4 #      A80 P.+P..M.
-    .byte 0x03, 0xD1, 0x8D, 0x4D, 0xF0, 0x51, 0x89, 0x55 #      A88 ...M.Q.U
-    .byte 0xFC, 0xFF, 0x75, 0x10, 0x50, 0xFF, 0x75, 0x08 #      A90 ..u.P.u.
-    .byte 0xE8, 0x1F, 0xFE, 0xFF, 0xFF, 0x83, 0xC4, 0x14 #      A98 ........
-    .byte 0xEB, 0x70, 0x8B, 0x75, 0x08, 0x85, 0xF6, 0x74 #      AA0 .p.u...t
-    .byte 0x67, 0x8B, 0x7D, 0x10, 0x85, 0xFF, 0x74, 0x60 #      AA8 g.}...t`
-    .byte 0x83, 0xBF, 0x90, 0x00, 0x00, 0x00, 0x00, 0x74 #      AB0 .......t
-    .byte 0x57, 0x8B, 0x86, 0x90, 0x00, 0x00, 0x00, 0x85 #      AB8 W.......
-    .byte 0xC0, 0x74, 0x4D, 0x8B, 0x4D, 0x1C, 0x8D, 0x55 #      AC0 .tM.M..U
-    .byte 0xF8, 0x89, 0x4D, 0xF8, 0x89, 0x4D, 0xFC, 0x8B #      AC8 ..M..M..
-    .byte 0x08, 0x52, 0x6A, 0x08, 0x50, 0xFF, 0x51, 0x74 #      AD0 .Rj.P.Qt
-    .byte 0x6A, 0x11, 0x8B, 0x87, 0x90, 0x00, 0x00, 0x00 #      AD8 j.......
-    .byte 0xFF, 0x75, 0x0C, 0x8B, 0x08, 0xFF, 0xB6, 0x90 #      AE0 .u......
-    .byte 0x00, 0x00, 0x00, 0xFF, 0x75, 0x18, 0xFF, 0x75 #      AE8 ....u..u
-    .byte 0x14, 0x50, 0xFF, 0x51, 0x1C, 0x3D, 0xC2, 0x01 #      AF0 .P.Q.=..
-    .byte 0x76, 0x88, 0x75, 0x0B, 0xE8, 0x78, 0xF4, 0xFF #      AF8 v.u..x..
-    .byte 0xFF, 0x85, 0xC0, 0x74, 0x0B, 0xEB, 0xD1, 0x85 #      B00 ...t....
-    .byte 0xC0, 0x75, 0x05, 0x6A, 0x01, 0x58, 0xEB, 0x02 #      B08 .u.j.X..
-    .byte 0x33, 0xC0, 0x5F, 0x5E, 0xC9, 0xC3, 0x55, 0x8B #      B10 3._^..U.
-    .byte 0xEC, 0x81, 0xEC, 0x80, 0x00, 0x00, 0x00, 0x83 #      B18 ........
-    .byte 0x3D, 0x64, 0x41, 0x52, 0x00, 0x00, 0x56, 0x74 #      B20 =dAR..Vt
-    .byte 0x6F, 0x83, 0x3D, 0x50, 0x08, 0x14, 0x01, 0x02 #      B28 o.=P....
-    .byte 0x7C, 0x5C, 0x83, 0x3D, 0x5C, 0x41, 0x52, 0x00 #      B30 |..=.AR.
-    .byte 0x00, 0x75, 0x53, 0xA1, 0x40, 0x41, 0x52, 0x00 #      B38 .uS.@AR.
-    .byte 0x8D, 0x55, 0xFC, 0x52, 0x50, 0x8B, 0x08, 0xFF #      B40 .U.RP...
-    .byte 0x51, 0x38, 0x85, 0xC0, 0x75, 0x4A, 0x8B, 0x45 #      B48 Q8..uJ.E
-    .byte 0xFC, 0x6A, 0x01, 0x5E, 0x8D, 0x55, 0x80, 0xC7 #      B50 .j.^.U..
-    .byte 0x45, 0x80, 0x7C, 0x00, 0x00, 0x00, 0x89, 0x75 #      B58 E.|....u
-    .byte 0x84, 0x8B, 0x08, 0x52, 0x50, 0xFF, 0x51, 0x58 #      B60 ...RP.QX
-    .byte 0x85, 0xC0, 0x75, 0x2C, 0xF6, 0x45, 0xE9, 0x02 #      B68 ..u,.E..
-    .byte 0x75, 0x0D, 0xE8, 0xCD, 0xF5, 0xFF, 0xFF, 0x89 #      B70 u.......
-    .byte 0x35, 0x60, 0x41, 0x52, 0x00, 0xEB, 0x07, 0x83 #      B78 5`AR....
-    .byte 0x25, 0x60, 0x41, 0x52, 0x00, 0x00, 0x89, 0x35 #      B80 %`AR...5
-    .byte 0x5C, 0x41, 0x52, 0x00, 0xEB, 0x0A, 0xC7, 0x05 #      B88 .AR.....
-    .byte 0x5C, 0x41, 0x52, 0x00, 0x01, 0x00, 0x00, 0x00 #      B90 .AR.....
-    .byte 0x5E, 0xC9, 0xC3, 0x56, 0x33, 0xF6, 0x39, 0x35 #      B98 ^..V3.95
-    .byte 0x64, 0x41, 0x52, 0x00, 0x74, 0x32, 0x83, 0x3D #      BA0 dAR.t2.=
-    .byte 0x50, 0x08, 0x14, 0x01, 0x02, 0x7C, 0x23, 0x39 #      BA8 P....|#9
-    .byte 0x35, 0x5C, 0x41, 0x52, 0x00, 0x74, 0x1B, 0x39 #      BB0 5.AR.t.9
-    .byte 0x35, 0x60, 0x41, 0x52, 0x00, 0x89, 0x35, 0x5C #      BB8 5`AR..5.
-    .byte 0x41, 0x52, 0x00, 0x74, 0x13, 0xE8, 0x7A, 0xF5 #      BC0 AR.t..z.
-    .byte 0xFF, 0xFF, 0x89, 0x35, 0x60, 0x41, 0x52, 0x00 #      BC8 ...5`AR.
-    .byte 0x5E, 0xC3, 0x89, 0x35, 0x5C, 0x41, 0x52, 0x00 #      BD0 ^..5.AR.
-    .byte 0x5E, 0xC3, 0x83, 0x3D, 0x64, 0x41, 0x52, 0x00 #      BD8 ^..=dAR.
-    .byte 0x00, 0x75, 0x3B, 0xA1, 0x44, 0x41, 0x52, 0x00 #      BE0 .u;.DAR.
-    .byte 0x85, 0xC0, 0x74, 0x32, 0x8B, 0x0D, 0x4C, 0x41 #      BE8 ..t2..LA
-    .byte 0x52, 0x00, 0x85, 0xC9, 0x74, 0x28, 0x8B, 0x10 #      BF0 R...t(..
-    .byte 0x51, 0x50, 0xFF, 0x52, 0x7C, 0x3D, 0xC2, 0x01 #      BF8 QP.R|=..
-    .byte 0x76, 0x88, 0x75, 0x1A, 0xE8, 0x70, 0xF3, 0xFF #      C00 v.u..p..
-    .byte 0xFF, 0x85, 0xC0, 0x74, 0x11, 0xA1, 0x44, 0x41 #      C08 ...t..DA
-    .byte 0x52, 0x00, 0xFF, 0x35, 0x4C, 0x41, 0x52, 0x00 #      C10 R..5LAR.
-    .byte 0x8B, 0x08, 0x50, 0xFF, 0x51, 0x7C, 0xC3, 0x33 #      C18 ..P.Q|.3
-    .byte 0xD2, 0x39, 0x15, 0x6C, 0x41, 0x52, 0x00, 0x75 #      C20 .9.lAR.u
-    .byte 0x34, 0x39, 0x15, 0x70, 0x41, 0x52, 0x00, 0x75 #      C28 49.pAR.u
-    .byte 0x2C, 0x8B, 0x44, 0x24, 0x04, 0x8B, 0x88, 0x90 #      C30 ,.D$....
-    .byte 0x00, 0x00, 0x00, 0x3B, 0xCA, 0x74, 0x1E, 0x8B #      C38 ...;.t..
-    .byte 0x44, 0x24, 0x08, 0x05, 0x90, 0x00, 0x00, 0x00 #      C40 D$......
-    .byte 0x39, 0x10, 0x74, 0x11, 0x89, 0x0D, 0x6C, 0x41 #      C48 9.t...lA
-    .byte 0x52, 0x00, 0x8B, 0x00, 0x6A, 0x01, 0xA3, 0x70 #      C50 R...j..p
-    .byte 0x41, 0x52, 0x00, 0x58, 0xC3, 0x33, 0xC0, 0xC3 #      C58 AR.X.3..
-    .byte 0x83, 0x25, 0x6C, 0x41, 0x52, 0x00, 0x00, 0x83 #      C60 .%lAR...
-    .byte 0x25, 0x70, 0x41, 0x52, 0x00, 0x00, 0xC3, 0x55 #      C68 %pAR...U
-    .byte 0x8B, 0xEC, 0x83, 0xEC, 0x20, 0x33, 0xC0, 0x39 #      C70 .... 3.9
-    .byte 0x05, 0x6C, 0x41, 0x52, 0x00, 0x0F, 0x84, 0xA3 #      C78 .lAR....
-    .byte 0x00, 0x00, 0x00, 0x39, 0x05, 0x70, 0x41, 0x52 #      C80 ...9.pAR
-    .byte 0x00, 0x0F, 0x84, 0x97, 0x00, 0x00, 0x00, 0x39 #      C88 .......9
-    .byte 0x05, 0x64, 0x41, 0x52, 0x00, 0x53, 0x8B, 0x5D #      C90 .dAR.S.]
-    .byte 0x0C, 0x56, 0x57, 0x75, 0x3A, 0x8B, 0xF3, 0x8D #      C98 .VWu:...
-    .byte 0x7D, 0xE0, 0xA5, 0xA5, 0x8D, 0x45, 0xF0, 0xA5 #      CA0 }....E..
-    .byte 0x50, 0xFF, 0x35, 0x20, 0x53, 0x52, 0x00, 0xA5 #      CA8 P.5 SR..
-    .byte 0xFF, 0x15, 0x84, 0x72, 0x4D, 0x00, 0x8D, 0x45 #      CB0 ...rM..E
-    .byte 0xF0, 0x50, 0xFF, 0x35, 0x20, 0x53, 0x52, 0x00 #      CB8 .P.5 SR.
-    .byte 0xFF, 0x15, 0x88, 0x72, 0x4D, 0x00, 0x8B, 0x45 #      CC0 ...rM..E
-    .byte 0xF0, 0x8B, 0x4D, 0xF4, 0x01, 0x03, 0x01, 0x4B #      CC8 ..M....K
-    .byte 0x04, 0x01, 0x43, 0x08, 0x01, 0x4B, 0x0C, 0xA1 #      CD0 ..C..K..
-    .byte 0x70, 0x41, 0x52, 0x00, 0x6A, 0x00, 0x68, 0x00 #      CD8 pAR.j.h.
-    .byte 0x00, 0x00, 0x01, 0xFF, 0x75, 0x08, 0x8B, 0x08 #      CE0 ....u...
-    .byte 0xFF, 0x35, 0x6C, 0x41, 0x52, 0x00, 0x53, 0x50 #      CE8 .5lAR.SP
-    .byte 0xFF, 0x51, 0x14, 0x3D, 0xC2, 0x01, 0x76, 0x88 #      CF0 .Q.=..v.
-    .byte 0x89, 0x45, 0x0C, 0x75, 0x09, 0xE8, 0x77, 0xF2 #      CF8 .E.u..w.
-    .byte 0xFF, 0xFF, 0x85, 0xC0, 0x75, 0xD1, 0x83, 0x3D #      D00 ....u..=
-    .byte 0x64, 0x41, 0x52, 0x00, 0x00, 0x75, 0x09, 0x8D #      D08 dAR..u..
-    .byte 0x75, 0xE0, 0x8B, 0xFB, 0xA5, 0xA5, 0xA5, 0xA5 #      D10 u.......
-    .byte 0x83, 0x7D, 0x0C, 0x00, 0x5F, 0x5E, 0x5B, 0x75 #      D18 .}.._^[u
-    .byte 0x05, 0x6A, 0x01, 0x58, 0xC9, 0xC3, 0x33, 0xC0 #      D20 .j.X..3.
-    .byte 0xC9, 0xC3, 0x55, 0x8B, 0xEC, 0x83, 0xEC, 0x28 #      D28 ..U....(
-    .byte 0xA1, 0x6C, 0x41, 0x52, 0x00, 0x85, 0xC0, 0x0F #      D30 .lAR....
-    .byte 0x84, 0xBF, 0x00, 0x00, 0x00, 0x83, 0x3D, 0x70 #      D38 ......=p
-    .byte 0x41, 0x52, 0x00, 0x00, 0x0F, 0x84, 0xB2, 0x00 #      D40 AR......
-    .byte 0x00, 0x00, 0x83, 0x3D, 0x64, 0x41, 0x52, 0x00 #      D48 ...=dAR.
-    .byte 0x00, 0x53, 0x8B, 0x5D, 0x0C, 0x56, 0x57, 0x75 #      D50 .S.].VWu
-    .byte 0x3F, 0x8B, 0xF3, 0x8D, 0x7D, 0xD8, 0xA5, 0xA5 #      D58 ?...}...
-    .byte 0x8D, 0x45, 0xE8, 0xA5, 0x50, 0xFF, 0x35, 0x20 #      D60 .E..P.5 
-    .byte 0x53, 0x52, 0x00, 0xA5, 0xFF, 0x15, 0x84, 0x72 #      D68 SR.....r
-    .byte 0x4D, 0x00, 0x8D, 0x45, 0xE8, 0x50, 0xFF, 0x35 #      D70 M..E.P.5
-    .byte 0x20, 0x53, 0x52, 0x00, 0xFF, 0x15, 0x88, 0x72 #      D78  SR....r
-    .byte 0x4D, 0x00, 0x8B, 0x45, 0xE8, 0x8B, 0x4D, 0xEC #      D80 M..E..M.
-    .byte 0x01, 0x03, 0x01, 0x4B, 0x04, 0x01, 0x43, 0x08 #      D88 ...K..C.
-    .byte 0x01, 0x4B, 0x0C, 0xA1, 0x6C, 0x41, 0x52, 0x00 #      D90 .K..lAR.
-    .byte 0x8B, 0x4D, 0x10, 0x8D, 0x55, 0xF8, 0x89, 0x4D #      D98 .M..U..M
-    .byte 0xF8, 0x89, 0x4D, 0xFC, 0x8B, 0x08, 0x52, 0x6A #      DA0 ..M...Rj
-    .byte 0x08, 0x50, 0xFF, 0x51, 0x74, 0xA1, 0x70, 0x41 #      DA8 .P.Qt.pA
-    .byte 0x52, 0x00, 0x6A, 0x00, 0x68, 0x00, 0x00, 0x00 #      DB0 R.j.h...
-    .byte 0x01, 0xFF, 0x75, 0x08, 0x8B, 0x08, 0xFF, 0x35 #      DB8 ..u....5
-    .byte 0x6C, 0x41, 0x52, 0x00, 0x53, 0x50, 0xFF, 0x51 #      DC0 lAR.SP.Q
-    .byte 0x14, 0x3D, 0xC2, 0x01, 0x76, 0x88, 0x89, 0x45 #      DC8 .=..v..E
-    .byte 0x0C, 0x75, 0x09, 0xE8, 0xA1, 0xF1, 0xFF, 0xFF #      DD0 .u......
-    .byte 0x85, 0xC0, 0x75, 0xD1, 0x83, 0x3D, 0x64, 0x41 #      DD8 ..u..=dA
-    .byte 0x52, 0x00, 0x00, 0x75, 0x09, 0x8D, 0x75, 0xD8 #      DE0 R..u..u.
-    .byte 0x8B, 0xFB, 0xA5, 0xA5, 0xA5, 0xA5, 0x83, 0x7D #      DE8 .......}
-    .byte 0x0C, 0x00, 0x5F, 0x5E, 0x5B, 0x75, 0x05, 0x6A #      DF0 .._^[u.j
-    .byte 0x01, 0x58, 0xC9, 0xC3, 0x33, 0xC0, 0xC9, 0xC3 #      DF8 .X..3...
-    .byte 0x55, 0x8B, 0xEC, 0x83, 0xEC, 0x10, 0x83, 0x3D #      E00 U......=
-    .byte 0x64, 0x41, 0x52, 0x00, 0x00, 0x75, 0x32, 0x8B #      E08 dAR..u2.
-    .byte 0x45, 0x08, 0x8B, 0x4D, 0x0C, 0x89, 0x4D, 0xF0 #      E10 E..M..M.
-    .byte 0x8B, 0x50, 0x08, 0x2B, 0x10, 0x03, 0xD1, 0x8B #      E18 .P.+....
-    .byte 0x4D, 0x10, 0x89, 0x55, 0xF8, 0x8B, 0x50, 0x0C #      E20 M..U..P.
-    .byte 0x2B, 0x50, 0x04, 0x89, 0x4D, 0xF4, 0x03, 0xD1 #      E28 +P..M...
-    .byte 0x8D, 0x4D, 0xF0, 0x51, 0x50, 0x89, 0x55, 0xFC #      E30 .M.QP.U.
-    .byte 0xE8, 0x32, 0xFE, 0xFF, 0xFF, 0x59, 0x59, 0xC9 #      E38 .2...YY.
-    .byte 0xC3, 0xA1, 0x70, 0x41, 0x52, 0x00, 0x85, 0xC0 #      E40 ..pAR...
-    .byte 0x74, 0x40, 0x83, 0x3D, 0x6C, 0x41, 0x52, 0x00 #      E48 t@.=lAR.
-    .byte 0x00, 0x74, 0x37, 0x6A, 0x10, 0x8B, 0x08, 0xFF #      E50 .t7j....
-    .byte 0x75, 0x08, 0xFF, 0x35, 0x6C, 0x41, 0x52, 0x00 #      E58 u..5lAR.
-    .byte 0xFF, 0x75, 0x10, 0xFF, 0x75, 0x0C, 0x50, 0xFF #      E60 .u..u.P.
-    .byte 0x51, 0x1C, 0x3D, 0xC2, 0x01, 0x76, 0x88, 0x75 #      E68 Q.=..v.u
-    .byte 0x10, 0xE8, 0x03, 0xF1, 0xFF, 0xFF, 0x85, 0xC0 #      E70 ........
-    .byte 0x74, 0x10, 0xA1, 0x70, 0x41, 0x52, 0x00, 0xEB #      E78 t..pAR..
-    .byte 0xD2, 0x85, 0xC0, 0x75, 0x05, 0x6A, 0x01, 0x58 #      E80 ...u.j.X
-    .byte 0xC9, 0xC3, 0x33, 0xC0, 0xC9, 0xC3, 0x55, 0x8B #      E88 ..3...U.
-    .byte 0xEC, 0x83, 0xEC, 0x10, 0x83, 0x3D, 0x64, 0x41 #      E90 .....=dA
-    .byte 0x52, 0x00, 0x00, 0x75, 0x36, 0x8B, 0x45, 0x08 #      E98 R..u6.E.
-    .byte 0x8B, 0x4D, 0x0C, 0xFF, 0x75, 0x14, 0x89, 0x4D #      EA0 .M..u..M
-    .byte 0xF0, 0x8B, 0x50, 0x08, 0x2B, 0x10, 0x03, 0xD1 #      EA8 ..P.+...
-    .byte 0x8B, 0x4D, 0x10, 0x89, 0x55, 0xF8, 0x8B, 0x50 #      EB0 .M..U..P
-    .byte 0x0C, 0x2B, 0x50, 0x04, 0x89, 0x4D, 0xF4, 0x03 #      EB8 .+P..M..
-    .byte 0xD1, 0x8D, 0x4D, 0xF0, 0x51, 0x50, 0x89, 0x55 #      EC0 ..M.QP.U
-    .byte 0xFC, 0xE8, 0x5C, 0xFE, 0xFF, 0xFF, 0x83, 0xC4 #      EC8 ........
-    .byte 0x0C, 0xC9, 0xC3, 0x83, 0x3D, 0x70, 0x41, 0x52 #      ED0 ....=pAR
-    .byte 0x00, 0x00, 0x74, 0x55, 0xA1, 0x6C, 0x41, 0x52 #      ED8 ..tU.lAR
-    .byte 0x00, 0x85, 0xC0, 0x74, 0x4C, 0x8B, 0x4D, 0x14 #      EE0 ...tL.M.
-    .byte 0x8D, 0x55, 0xF8, 0x89, 0x4D, 0xF8, 0x89, 0x4D #      EE8 .U..M..M
-    .byte 0xFC, 0x8B, 0x08, 0x52, 0x6A, 0x08, 0x50, 0xFF #      EF0 ...Rj.P.
-    .byte 0x51, 0x74, 0x6A, 0x11, 0xA1, 0x70, 0x41, 0x52 #      EF8 Qtj..pAR
-    .byte 0x00, 0xFF, 0x75, 0x08, 0x8B, 0x08, 0xFF, 0x35 #      F00 ..u....5
-    .byte 0x6C, 0x41, 0x52, 0x00, 0xFF, 0x75, 0x10, 0xFF #      F08 lAR..u..
-    .byte 0x75, 0x0C, 0x50, 0xFF, 0x51, 0x1C, 0x3D, 0xC2 #      F10 u.P.Q.=.
-    .byte 0x01, 0x76, 0x88, 0x75, 0x0B, 0xE8, 0x57, 0xF0 #      F18 .v.u..W.
-    .byte 0xFF, 0xFF, 0x85, 0xC0, 0x74, 0x0B, 0xEB, 0xD2 #      F20 ....t...
-    .byte 0x85, 0xC0, 0x75, 0x05, 0x6A, 0x01, 0x58, 0xC9 #      F28 ..u.j.X.
-    .byte 0xC3, 0x33, 0xC0, 0xC9, 0xC3                   #      F30 .3...
 
+    .global _sub_401CFD
+_sub_401CFD:
+    push ebx                                             # 00401CFD
+    mov ebx, dword ptr [esp + 0xc]                       # 00401CFE
+    test ebx, ebx                                        # 00401D02
+    jl .L401D4C                                          # 00401D04
+    cmp ebx, dword ptr [0x1140008]                       # 00401D06
+    jge .L401D4C                                         # 00401D0C
+    push esi                                             # 00401D0E
+    mov esi, dword ptr [esp + 0xc]                       # 00401D0F
+    push edi                                             # 00401D13
+    push 0xb8                                            # 00401D14
+    push 0                                               # 00401D19
+    push esi                                             # 00401D1B
+    call _sub_4D0FC0                                     # 00401D1C
+    lea edi, [esi + 0x14]                                # 00401D21
+    push 0x7c                                            # 00401D24
+    push 0                                               # 00401D26
+    push edi                                             # 00401D28
+    call _sub_4D0FC0                                     # 00401D29
+    mov dword ptr [edi], 0x7c                            # 00401D2E
+    mov eax, dword ptr [0x524148]                        # 00401D34
+    add esp, 0x18                                        # 00401D39
+    mov eax, dword ptr [eax + ebx*4]                     # 00401D3C
+    push 1                                               # 00401D3F
+    mov dword ptr [esi + 0x90], eax                      # 00401D41
+    pop eax                                              # 00401D47
+    pop edi                                              # 00401D48
+    pop esi                                              # 00401D49
+    pop ebx                                              # 00401D4A
+    ret                                                  # 00401D4B
+.L401D4C:
+    msvc_xor eax, eax                                    # 00401D4C
+    pop ebx                                              # 00401D4E
+    ret                                                  # 00401D4F
+
+    .global _sub_401D50
+_sub_401D50:
+    push esi                                             # 00401D50
+    mov esi, dword ptr [esp + 8]                         # 00401D51
+    push edi                                             # 00401D55
+    push 0xb8                                            # 00401D56
+    push 0                                               # 00401D5B
+    push esi                                             # 00401D5D
+    call _sub_4D0FC0                                     # 00401D5E
+    lea edi, [esi + 0x14]                                # 00401D63
+    push 0x7c                                            # 00401D66
+    push 0                                               # 00401D68
+    push edi                                             # 00401D6A
+    call _sub_4D0FC0                                     # 00401D6B
+    add esp, 0x18                                        # 00401D70
+    mov dword ptr [edi], 0x7c                            # 00401D73
+    mov eax, dword ptr [0x524144]                        # 00401D79
+    push 1                                               # 00401D7E
+    mov dword ptr [esi + 0x90], eax                      # 00401D80
+    pop eax                                              # 00401D86
+    pop edi                                              # 00401D87
+    pop esi                                              # 00401D88
+    ret                                                  # 00401D89
+
+    .global _sub_401D8A
+_sub_401D8A:
+    push esi                                             # 00401D8A
+    mov esi, dword ptr [esp + 8]                         # 00401D8B
+    push edi                                             # 00401D8F
+    cmp word ptr [esi + 0xc], 0                          # 00401D90
+    jne .L401DFE                                         # 00401D95
+    cmp dword ptr [esi + 0x90], 0                        # 00401D97
+    je .L401DFE                                          # 00401D9E
+    lea edi, [esi + 0x14]                                # 00401DA0
+.L401DA3:
+    mov eax, dword ptr [esi + 0x90]                      # 00401DA3
+    push 0                                               # 00401DA9
+    push 1                                               # 00401DAB
+    push edi                                             # 00401DAD
+    mov ecx, dword ptr [eax]                             # 00401DAE
+    push 0                                               # 00401DB0
+    push eax                                             # 00401DB2
+    call dword ptr [ecx + 0x64]                          # 00401DB3
+    cmp eax, 0x887601c2                                  # 00401DB6
+    jne .L401DC8                                         # 00401DBB
+    call _sub_401C76                                     # 00401DBD
+    test eax, eax                                        # 00401DC2
+    je .L401DFE                                          # 00401DC4
+    jmp .L401DA3                                         # 00401DC6
+.L401DC8:
+    test eax, eax                                        # 00401DC8
+    jne .L401DFE                                         # 00401DCA
+    mov eax, dword ptr [esi + 0x38]                      # 00401DCC
+    push 1                                               # 00401DCF
+    mov dword ptr [esi], eax                             # 00401DD1
+    mov ax, word ptr [esi + 0x20]                        # 00401DD3
+    mov word ptr [esi + 6], ax                           # 00401DD7
+    mov ax, word ptr [esi + 0x1c]                        # 00401DDB
+    mov word ptr [esi + 8], ax                           # 00401DDF
+    mov eax, dword ptr [esi + 0x24]                      # 00401DE3
+    mov dword ptr [esi + 0x10], eax                      # 00401DE6
+    mov word ptr [esi + 4], 4                            # 00401DE9
+    mov word ptr [esi + 0xa], 1                          # 00401DEF
+    mov word ptr [esi + 0xc], 1                          # 00401DF5
+    pop eax                                              # 00401DFB
+    jmp .L401E00                                         # 00401DFC
+.L401DFE:
+    msvc_xor eax, eax                                    # 00401DFE
+.L401E00:
+    pop edi                                              # 00401E00
+    pop esi                                              # 00401E01
+    ret                                                  # 00401E02
+
+    .global _sub_401E03
+_sub_401E03:
+    push esi                                             # 00401E03
+    mov esi, dword ptr [esp + 8]                         # 00401E04
+    push edi                                             # 00401E08
+    msvc_xor edi, edi                                    # 00401E09
+    cmp word ptr [esi + 0xc], di                         # 00401E0B
+    je .L401E3E                                          # 00401E0F
+    mov eax, dword ptr [esi + 0x90]                      # 00401E11
+    msvc_cmp eax, edi                                    # 00401E17
+    je .L401E3E                                          # 00401E19
+    mov ecx, dword ptr [eax]                             # 00401E1B
+    push edi                                             # 00401E1D
+    push eax                                             # 00401E1E
+    call dword ptr [ecx + 0x80]                          # 00401E1F
+    mov word ptr [esi + 0xc], di                         # 00401E25
+    mov dword ptr [esi], edi                             # 00401E29
+    mov word ptr [esi + 8], di                           # 00401E2B
+    mov word ptr [esi + 6], di                           # 00401E2F
+    mov word ptr [esi + 4], di                           # 00401E33
+    mov dword ptr [esi + 0x10], edi                      # 00401E37
+    mov word ptr [esi + 0xa], di                         # 00401E3A
+.L401E3E:
+    pop edi                                              # 00401E3E
+    pop esi                                              # 00401E3F
+    ret                                                  # 00401E40
+
+    .global _sub_401E41
+_sub_401E41:
+    push ebp                                             # 00401E41
+    msvc_mov ebp, esp                                    # 00401E42
+    sub esp, 0x28                                        # 00401E44
+    mov edx, dword ptr [0x113e72c]                       # 00401E47
+    mov eax, dword ptr [0x114062c]                       # 00401E4D
+    push ebx                                             # 00401E52
+    push esi                                             # 00401E53
+    mov esi, dword ptr [0x113e730]                       # 00401E54
+    lea ecx, [eax + edx]                                 # 00401E5A
+    mov eax, dword ptr [0x113fffc]                       # 00401E5D
+    push edi                                             # 00401E62
+    msvc_xor ebx, ebx                                    # 00401E63
+    mov dword ptr [ebp - 4], ecx                         # 00401E65
+    cmp dword ptr [0x524164], ebx                        # 00401E68
+    lea edi, [eax + esi]                                 # 00401E6E
+    mov dword ptr [ebp - 8], edi                         # 00401E71
+    jne .L401ED4                                         # 00401E74
+    mov eax, dword ptr [0x1140850]                       # 00401E76
+    cmp eax, 1                                           # 00401E7B
+    jle .L4020DE                                         # 00401E7E
+    mov ecx, dword ptr [0x524148]                        # 00401E84
+    dec eax                                              # 00401E8A
+    test eax, eax                                        # 00401E8B
+    mov esi, dword ptr [ecx]                             # 00401E8D
+    jle .L401EC7                                         # 00401E8F
+.L401E91:
+    mov eax, dword ptr [0x524148]                        # 00401E91
+    mov eax, dword ptr [eax + ebx*4]                     # 00401E96
+    push eax                                             # 00401E99
+    mov ecx, dword ptr [eax]                             # 00401E9A
+    call dword ptr [ecx + 0x60]                          # 00401E9C
+    test eax, eax                                        # 00401E9F
+    je .L401EB0                                          # 00401EA1
+    call _sub_401C76                                     # 00401EA3
+    test eax, eax                                        # 00401EA8
+    je .L4020DE                                          # 00401EAA
+.L401EB0:
+    mov eax, dword ptr [0x524148]                        # 00401EB0
+    mov ecx, dword ptr [eax + ebx*4 + 4]                 # 00401EB5
+    mov dword ptr [eax + ebx*4], ecx                     # 00401EB9
+    mov eax, dword ptr [0x1140850]                       # 00401EBC
+    inc ebx                                              # 00401EC1
+    dec eax                                              # 00401EC2
+    msvc_cmp ebx, eax                                    # 00401EC3
+    jl .L401E91                                          # 00401EC5
+.L401EC7:
+    mov eax, dword ptr [0x524148]                        # 00401EC7
+    mov dword ptr [eax + ebx*4], esi                     # 00401ECC
+    msvc_jmp .L4020DE                                    # 00401ECF
+.L401ED4:
+    cmp dword ptr [0x1140850], 2                         # 00401ED4
+    jl .L4020C8                                          # 00401EDB
+    cmp dword ptr [0x52415c], ebx                        # 00401EE1
+    jne .L4020C8                                         # 00401EE7
+    cmp dword ptr [0x113fff0], ebx                       # 00401EED
+    je .L401FE1                                          # 00401EF3
+    mov eax, dword ptr [0x1140004]                       # 00401EF9
+    msvc_cmp ecx, eax                                    # 00401EFE
+    jle .L401F05                                         # 00401F00
+    mov dword ptr [ebp - 4], eax                         # 00401F02
+.L401F05:
+    mov eax, dword ptr [0x113fff4]                       # 00401F05
+    msvc_cmp edi, eax                                    # 00401F0A
+    jle .L401F11                                         # 00401F0C
+    mov dword ptr [ebp - 8], eax                         # 00401F0E
+.L401F11:
+    mov ecx, dword ptr [ebp - 8]                         # 00401F11
+    mov eax, dword ptr [ebp - 4]                         # 00401F14
+    msvc_sub ecx, esi                                    # 00401F17
+    msvc_sub eax, edx                                    # 00401F19
+    mov dword ptr [ebp - 0x1c], ecx                      # 00401F1B
+    mov dword ptr [ebp - 0xc], ecx                       # 00401F1E
+    mov ecx, dword ptr [0x1140e98]                       # 00401F21
+    mov dword ptr [ebp - 0x20], eax                      # 00401F27
+    mov dword ptr [ebp - 0x24], ebx                      # 00401F2A
+    mov dword ptr [ebp - 0x28], ebx                      # 00401F2D
+    lea edi, [ecx + 1]                                   # 00401F30
+    mov dword ptr [ebp - 0x14], ebx                      # 00401F33
+    shl edi, 6                                           # 00401F36
+    mov dword ptr [ebp - 0x18], edi                      # 00401F39
+    msvc_add edi, eax                                    # 00401F3C
+    msvc_mov eax, ecx                                    # 00401F3E
+    mov dword ptr [ebp - 0x10], edi                      # 00401F40
+    shl eax, 4                                           # 00401F43
+    mov dword ptr [eax + 0x1140ea0], edx                 # 00401F46
+    mov edx, dword ptr [ebp - 4]                         # 00401F4C
+    mov dword ptr [eax + 0x1140ea4], esi                 # 00401F4F
+    mov dword ptr [eax + 0x1140ea8], edx                 # 00401F55
+    mov edx, dword ptr [ebp - 8]                         # 00401F5B
+    mov dword ptr [eax + 0x1140eac], edx                 # 00401F5E
+    jmp .L401F6C                                         # 00401F64
+.L401F66:
+    mov ecx, dword ptr [0x1140e98]                       # 00401F66
+.L401F6C:
+    mov eax, dword ptr [0x524150]                        # 00401F6C
+    push ebx                                             # 00401F71
+    shl ecx, 4                                           # 00401F72
+    add ecx, 0x1140ea0                                   # 00401F75
+    mov edx, dword ptr [eax]                             # 00401F7B
+    push 0x1000000                                       # 00401F7D
+    push ecx                                             # 00401F82
+    mov ecx, dword ptr [0x524148]                        # 00401F83
+    push dword ptr [ecx]                                 # 00401F89
+    lea ecx, [ebp - 0x18]                                # 00401F8B
+    push ecx                                             # 00401F8E
+    push eax                                             # 00401F8F
+    call dword ptr [edx + 0x14]                          # 00401F90
+    mov esi, 0x887601c2                                  # 00401F93
+    msvc_cmp eax, esi                                    # 00401F98
+    jne .L401FA5                                         # 00401F9A
+    call _sub_401C76                                     # 00401F9C
+    test eax, eax                                        # 00401FA1
+    jne .L401F66                                         # 00401FA3
+.L401FA5:
+    mov eax, dword ptr [0x524148]                        # 00401FA5
+    push ebx                                             # 00401FAA
+    lea edx, [ebp - 0x28]                                # 00401FAB
+    push 0x1008000                                       # 00401FAE
+    mov eax, dword ptr [eax]                             # 00401FB3
+    push edx                                             # 00401FB5
+    mov edx, dword ptr [0x1140e98]                       # 00401FB6
+    push dword ptr [0x524150]                            # 00401FBC
+    mov ecx, dword ptr [eax]                             # 00401FC2
+    shl edx, 4                                           # 00401FC4
+    add edx, 0x1140ea0                                   # 00401FC7
+    push edx                                             # 00401FCD
+    push eax                                             # 00401FCE
+    call dword ptr [ecx + 0x14]                          # 00401FCF
+    msvc_cmp eax, esi                                    # 00401FD2
+    jne .L401FE6                                         # 00401FD4
+    call _sub_401C76                                     # 00401FD6
+    test eax, eax                                        # 00401FDB
+    jne .L401FA5                                         # 00401FDD
+    jmp .L401FE6                                         # 00401FDF
+.L401FE1:
+    mov esi, 0x887601c2                                  # 00401FE1
+.L401FE6:
+    mov eax, dword ptr [0x524144]                        # 00401FE6
+    push 1                                               # 00401FEB
+    push ebx                                             # 00401FED
+    push eax                                             # 00401FEE
+    mov ecx, dword ptr [eax]                             # 00401FEF
+    call dword ptr [ecx + 0x2c]                          # 00401FF1
+    msvc_cmp eax, esi                                    # 00401FF4
+    jne .L402001                                         # 00401FF6
+    call _sub_401C76                                     # 00401FF8
+    test eax, eax                                        # 00401FFD
+    jne .L401FE6                                         # 00401FFF
+.L402001:
+    mov eax, dword ptr [0x1140e98]                       # 00402001
+    inc eax                                              # 00402006
+    cmp eax, dword ptr [0x1140850]                       # 00402007
+    mov dword ptr [0x1140e98], eax                       # 0040200D
+    jl .L40201B                                          # 00402012
+    msvc_xor eax, eax                                    # 00402014
+    mov dword ptr [0x1140e98], eax                       # 00402016
+.L40201B:
+    cmp dword ptr [0x1140000], ebx                       # 0040201B
+    mov dword ptr [0x113fff8], eax                       # 00402021
+    je .L40203E                                          # 00402026
+.L402028:
+    mov eax, dword ptr [0x524144]                        # 00402028
+    push 2                                               # 0040202D
+    push eax                                             # 0040202F
+    mov ecx, dword ptr [eax]                             # 00402030
+    call dword ptr [ecx + 0x48]                          # 00402032
+    test eax, eax                                        # 00402035
+    jne .L402028                                         # 00402037
+    mov eax, dword ptr [0x1140e98]                       # 00402039
+.L40203E:
+    msvc_mov ecx, eax                                    # 0040203E
+    shl ecx, 4                                           # 00402040
+    mov edi, dword ptr [ecx + 0x1140ea8]                 # 00402043
+    sub edi, dword ptr [ecx + 0x1140ea0]                 # 00402049
+    msvc_cmp edi, ebx                                    # 0040204F
+    jle .L4020DE                                         # 00402051
+    lea edx, [eax + 1]                                   # 00402057
+    mov dword ptr [ebp - 0x14], ebx                      # 0040205A
+    shl edx, 6                                           # 0040205D
+    mov dword ptr [ebp - 0x18], edx                      # 00402060
+    msvc_add edi, edx                                    # 00402063
+    mov edx, dword ptr [ecx + 0x1140eac]                 # 00402065
+    mov dword ptr [ebp - 0x10], edi                      # 0040206B
+    sub edx, dword ptr [ecx + 0x1140ea4]                 # 0040206E
+    mov dword ptr [ebp - 0xc], edx                       # 00402074
+    jmp .L40207E                                         # 00402077
+.L402079:
+    mov eax, dword ptr [0x1140e98]                       # 00402079
+.L40207E:
+    mov ecx, dword ptr [0x524148]                        # 0040207E
+    push ebx                                             # 00402084
+    lea edi, [ebp - 0x18]                                # 00402085
+    push 0x1000000                                       # 00402088
+    mov ecx, dword ptr [ecx]                             # 0040208D
+    push edi                                             # 0040208F
+    push dword ptr [0x524150]                            # 00402090
+    mov edx, dword ptr [ecx]                             # 00402096
+    shl eax, 4                                           # 00402098
+    add eax, 0x1140ea0                                   # 0040209B
+    push eax                                             # 004020A0
+    push ecx                                             # 004020A1
+    call dword ptr [edx + 0x14]                          # 004020A2
+    msvc_cmp eax, esi                                    # 004020A5
+    jne .L4020B2                                         # 004020A7
+    call _sub_401C76                                     # 004020A9
+    test eax, eax                                        # 004020AE
+    jne .L402079                                         # 004020B0
+.L4020B2:
+    mov eax, dword ptr [0x1140e98]                       # 004020B2
+    shl eax, 4                                           # 004020B7
+    mov dword ptr [eax + 0x1140ea0], ebx                 # 004020BA
+    mov dword ptr [eax + 0x1140ea8], ebx                 # 004020C0
+    jmp .L4020DE                                         # 004020C6
+.L4020C8:
+    cmp dword ptr [0x1140000], ebx                       # 004020C8
+    je .L4020DE                                          # 004020CE
+    mov eax, dword ptr [0x524140]                        # 004020D0
+    push ebx                                             # 004020D5
+    push 1                                               # 004020D6
+    push eax                                             # 004020D8
+    mov ecx, dword ptr [eax]                             # 004020D9
+    call dword ptr [ecx + 0x58]                          # 004020DB
+.L4020DE:
+    pop edi                                              # 004020DE
+    pop esi                                              # 004020DF
+    pop ebx                                              # 004020E0
+    leave                                                # 004020E1
+    ret                                                  # 004020E2
+
+    .global _sub_4020E3
+_sub_4020E3:
+    push ebp                                             # 004020E3
+    msvc_mov ebp, esp                                    # 004020E4
+    push ecx                                             # 004020E6
+    push esi                                             # 004020E7
+    mov esi, dword ptr [0x52414c]                        # 004020E8
+    test esi, esi                                        # 004020EE
+    je .L40219C                                          # 004020F0
+    mov edx, dword ptr [ebp + 0xc]                       # 004020F6
+    cmp edx, 0x100                                       # 004020F9
+    jge .L40219C                                         # 004020FF
+    cmp edx, 0xa                                         # 00402105
+    jge .L40210D                                         # 00402108
+    push 0xa                                             # 0040210A
+    pop edx                                              # 0040210C
+.L40210D:
+    mov eax, dword ptr [ebp + 0x10]                      # 0040210D
+    push edi                                             # 00402110
+    mov ecx, 0xf6                                        # 00402111
+    lea edi, [edx + eax]                                 # 00402116
+    msvc_cmp edi, ecx                                    # 00402119
+    jle .L402124                                         # 0040211B
+    msvc_mov eax, ecx                                    # 0040211D
+    msvc_sub eax, edx                                    # 0040211F
+    mov dword ptr [ebp + 0x10], eax                      # 00402121
+.L402124:
+    lea ecx, [edx + eax]                                 # 00402124
+    msvc_cmp edx, ecx                                    # 00402127
+    jge .L402189                                         # 00402129
+    mov esi, dword ptr [ebp + 8]                         # 0040212B
+    push ebx                                             # 0040212E
+    mov dword ptr [ebp + 0xc], 0x1140860                 # 0040212F
+    mov dword ptr [ebp + 8], 0x1140861                   # 00402136
+    sub dword ptr [ebp + 0xc], esi                       # 0040213D
+    sub dword ptr [ebp + 8], esi                         # 00402140
+    mov ebx, 0x1140862                                   # 00402143
+    lea edi, [edx*4 + 0x1140860]                         # 00402148
+    msvc_sub ebx, esi                                    # 0040214F
+    msvc_sub ecx, edx                                    # 00402151
+    lea eax, [esi + edx*4 + 1]                           # 00402153
+    mov dword ptr [ebp - 4], ecx                         # 00402157
+.L40215A:
+    mov cl, byte ptr [eax + 1]                           # 0040215A
+    mov esi, dword ptr [ebp + 0xc]                       # 0040215D
+    mov byte ptr [edi], cl                               # 00402160
+    mov cl, byte ptr [eax]                               # 00402162
+    mov byte ptr [esi + eax], cl                         # 00402164
+    mov esi, dword ptr [ebp + 8]                         # 00402167
+    mov cl, byte ptr [eax - 1]                           # 0040216A
+    add edi, 4                                           # 0040216D
+    mov byte ptr [esi + eax], cl                         # 00402170
+    mov byte ptr [ebx + eax], 5                          # 00402173
+    add eax, 4                                           # 00402177
+    dec dword ptr [ebp - 4]                              # 0040217A
+    jne .L40215A                                         # 0040217D
+    mov esi, dword ptr [0x52414c]                        # 0040217F
+    mov eax, dword ptr [ebp + 0x10]                      # 00402185
+    pop ebx                                              # 00402188
+.L402189:
+    mov ecx, dword ptr [esi]                             # 00402189
+    lea edi, [edx*4 + 0x1140860]                         # 0040218B
+    push edi                                             # 00402192
+    push eax                                             # 00402193
+    push edx                                             # 00402194
+    push 0                                               # 00402195
+    push esi                                             # 00402197
+    call dword ptr [ecx + 0x18]                          # 00402198
+    pop edi                                              # 0040219B
+.L40219C:
+    pop esi                                              # 0040219C
+    leave                                                # 0040219D
+    ret                                                  # 0040219E
+
+    .global _sub_40219F
+_sub_40219F:
+    push dword ptr [esp + 8]                             # 0040219F
+    push 0                                               # 004021A3
+    push dword ptr [esp + 0xc]                           # 004021A5
+    call _sub_4020E3                                     # 004021A9
+    add esp, 0xc                                         # 004021AE
+    ret                                                  # 004021B1
+
+    .global _sub_4021B2
+_sub_4021B2:
+    mov eax, dword ptr [0x524140]                        # 004021B2
+    push 0                                               # 004021B7
+    push 1                                               # 004021B9
+    push eax                                             # 004021BB
+    mov ecx, dword ptr [eax]                             # 004021BC
+    call dword ptr [ecx + 0x58]                          # 004021BE
+    ret                                                  # 004021C1
+
+    .global _sub_4021C2
+_sub_4021C2:
+    push ebp                                             # 004021C2
+    msvc_mov ebp, esp                                    # 004021C3
+    sub esp, 0x10                                        # 004021C5
+    push esi                                             # 004021C8
+    mov esi, dword ptr [ebp + 8]                         # 004021C9
+    cmp word ptr [esi + 0xc], 0                          # 004021CC
+    jne .L40223D                                         # 004021D1
+    mov eax, dword ptr [esi + 0x90]                      # 004021D3
+    test eax, eax                                        # 004021D9
+    je .L40223D                                          # 004021DB
+    mov ecx, dword ptr [eax]                             # 004021DD
+    lea edx, [ebp + 8]                                   # 004021DF
+    push edx                                             # 004021E2
+    push eax                                             # 004021E3
+    call dword ptr [ecx + 0x44]                          # 004021E4
+    test eax, eax                                        # 004021E7
+    jne .L40223D                                         # 004021E9
+    mov word ptr [esi + 0xc], 1                          # 004021EB
+    cmp dword ptr [0x524164], eax                        # 004021F1
+    jne .L402238                                         # 004021F7
+    mov eax, dword ptr [esi + 0x90]                      # 004021F9
+    cmp eax, dword ptr [0x524144]                        # 004021FF
+    jne .L402238                                         # 00402205
+    lea eax, [ebp - 0x10]                                # 00402207
+    push eax                                             # 0040220A
+    push dword ptr [0x525320]                            # 0040220B
+    msvc_abscall 0x4D7284                                # 00402211
+    lea eax, [ebp - 0x10]                                # 00402217
+    push eax                                             # 0040221A
+    push dword ptr [0x525320]                            # 0040221B
+    msvc_abscall 0x4D7288                                # 00402221
+    push 0                                               # 00402227
+    push dword ptr [ebp - 0xc]                           # 00402229
+    push dword ptr [ebp - 0x10]                          # 0040222C
+    push dword ptr [ebp + 8]                             # 0040222F
+    msvc_abscall 0x4D7080                                # 00402232
+.L402238:
+    mov eax, dword ptr [ebp + 8]                         # 00402238
+    jmp .L40223F                                         # 0040223B
+.L40223D:
+    msvc_xor eax, eax                                    # 0040223D
+.L40223F:
+    pop esi                                              # 0040223F
+    leave                                                # 00402240
+    ret                                                  # 00402241
+
+    .global _sub_402242
+_sub_402242:
+    push esi                                             # 00402242
+    mov esi, dword ptr [esp + 8]                         # 00402243
+    cmp word ptr [esi + 0xc], 0                          # 00402247
+    je .L402267                                          # 0040224C
+    mov eax, dword ptr [esi + 0x90]                      # 0040224E
+    test eax, eax                                        # 00402254
+    je .L402267                                          # 00402256
+    push dword ptr [esp + 0xc]                           # 00402258
+    mov ecx, dword ptr [eax]                             # 0040225C
+    push eax                                             # 0040225E
+    call dword ptr [ecx + 0x68]                          # 0040225F
+    and word ptr [esi + 0xc], 0                          # 00402262
+.L402267:
+    pop esi                                              # 00402267
+    ret                                                  # 00402268
+
+    .global _sub_402269
+_sub_402269:
+    push ebp                                             # 00402269
+    msvc_mov ebp, esp                                    # 0040226A
+    sub esp, 0x64                                        # 0040226C
+    and dword ptr [ebp - 0x14], 0                        # 0040226F
+    mov dword ptr [ebp - 0x64], 0x64                     # 00402273
+.L40227A:
+    mov eax, dword ptr [ebp + 8]                         # 0040227A
+    lea edx, [ebp - 0x64]                                # 0040227D
+    push edx                                             # 00402280
+    push 0x1000400                                       # 00402281
+    mov eax, dword ptr [eax + 0x90]                      # 00402286
+    push 0                                               # 0040228C
+    push 0                                               # 0040228E
+    push 0                                               # 00402290
+    mov ecx, dword ptr [eax]                             # 00402292
+    push eax                                             # 00402294
+    call dword ptr [ecx + 0x14]                          # 00402295
+    cmp eax, 0x887601c2                                  # 00402298
+    jne .L4022A8                                         # 0040229D
+    call _sub_401C76                                     # 0040229F
+    test eax, eax                                        # 004022A4
+    jne .L40227A                                         # 004022A6
+.L4022A8:
+    leave                                                # 004022A8
+    ret                                                  # 004022A9
+
+    .global _sub_4022AA
+_sub_4022AA:
+    push ebx                                             # 004022AA
+    push esi                                             # 004022AB
+    push edi                                             # 004022AC
+    push 0xc                                             # 004022AD
+    push 1                                               # 004022AF
+    call _sub_4D1384                                     # 004022B1
+    mov ebx, 0xb8                                        # 004022B6
+    msvc_mov edi, eax                                    # 004022BB
+    push ebx                                             # 004022BD
+    push 1                                               # 004022BE
+    call _sub_4D1384                                     # 004022C0
+    msvc_mov esi, eax                                    # 004022C5
+    add esp, 0x10                                        # 004022C7
+    test esi, esi                                        # 004022CA
+    je .L4023C3                                          # 004022CC
+    test edi, edi                                        # 004022D2
+    je .L4023BA                                          # 004022D4
+    push ebx                                             # 004022DA
+    push 0                                               # 004022DB
+    push esi                                             # 004022DD
+    call _sub_4D0FC0                                     # 004022DE
+    movsx eax, word ptr [esp + 0x1c]                     # 004022E3
+    mov dword ptr [esi + 0x20], eax                      # 004022E8
+    lea ecx, [esi + 0x14]                                # 004022EB
+    movsx eax, word ptr [esp + 0x20]                     # 004022EE
+    mov dword ptr [esi + 0x1c], eax                      # 004022F3
+    msvc_xor eax, eax                                    # 004022F6
+    add esp, 0xc                                         # 004022F8
+    mov dword ptr [ecx], 0x7c                            # 004022FB
+    mov dword ptr [esi + 0x18], 0x1007                   # 00402301
+    mov dword ptr [esi + 0x7c], 0x840                    # 00402308
+    mov dword ptr [esi + 0x5c], 0x20                     # 0040230F
+    mov dword ptr [esi + 0x60], 0x60                     # 00402316
+    mov dword ptr [esi + 0x68], 8                        # 0040231D
+    mov dword ptr [esi + 0x6c], eax                      # 00402324
+    mov dword ptr [esi + 0x70], eax                      # 00402327
+    mov dword ptr [esi + 0x74], eax                      # 0040232A
+    mov dword ptr [esi + 0x78], eax                      # 0040232D
+    mov eax, dword ptr [0x524140]                        # 00402330
+    lea ebx, [esi + 0x90]                                # 00402335
+    push 0                                               # 0040233B
+    mov edx, dword ptr [eax]                             # 0040233D
+    push ebx                                             # 0040233F
+    push ecx                                             # 00402340
+    push eax                                             # 00402341
+    call dword ptr [edx + 0x18]                          # 00402342
+    test eax, eax                                        # 00402345
+    je .L40235B                                          # 00402347
+    push edi                                             # 00402349
+    call _sub_4D1355                                     # 0040234A
+    push esi                                             # 0040234F
+    call _sub_4D1355                                     # 00402350
+    pop ecx                                              # 00402355
+    msvc_xor esi, esi                                    # 00402356
+    pop ecx                                              # 00402358
+    jmp .L4023CE                                         # 00402359
+.L40235B:
+    mov eax, dword ptr [0x524158]                        # 0040235B
+    mov dword ptr [edi], esi                             # 00402360
+    mov ecx, dword ptr [ebx]                             # 00402362
+    and dword ptr [edi + 8], 0                           # 00402364
+    test eax, eax                                        # 00402368
+    mov dword ptr [edi + 4], ecx                         # 0040236A
+    jne .L402377                                         # 0040236D
+    mov dword ptr [0x524158], edi                        # 0040236F
+    jmp .L402385                                         # 00402375
+.L402377:
+    mov ecx, dword ptr [eax + 8]                         # 00402377
+    test ecx, ecx                                        # 0040237A
+    je .L402382                                          # 0040237C
+    msvc_mov eax, ecx                                    # 0040237E
+    jmp .L402377                                         # 00402380
+.L402382:
+    mov dword ptr [eax + 8], edi                         # 00402382
+.L402385:
+    push esi                                             # 00402385
+    call _sub_402269                                     # 00402386
+    mov eax, dword ptr [ebx]                             # 0040238B
+    pop ecx                                              # 0040238D
+    push dword ptr [0x52414c]                            # 0040238E
+    mov ecx, dword ptr [eax]                             # 00402394
+    push eax                                             # 00402396
+    call dword ptr [ecx + 0x7c]                          # 00402397
+    cmp eax, 0x887601c2                                  # 0040239A
+    jne .L4023CE                                         # 0040239F
+    call _sub_401C76                                     # 004023A1
+    test eax, eax                                        # 004023A6
+    je .L4023CE                                          # 004023A8
+    mov ebx, dword ptr [ebx]                             # 004023AA
+    push dword ptr [0x52414c]                            # 004023AC
+    mov eax, dword ptr [ebx]                             # 004023B2
+    push ebx                                             # 004023B4
+    call dword ptr [eax + 0x7c]                          # 004023B5
+    jmp .L4023CE                                         # 004023B8
+.L4023BA:
+    push esi                                             # 004023BA
+    call _sub_4D1355                                     # 004023BB
+    pop ecx                                              # 004023C0
+    msvc_xor esi, esi                                    # 004023C1
+.L4023C3:
+    test edi, edi                                        # 004023C3
+    je .L4023CE                                          # 004023C5
+    push edi                                             # 004023C7
+    call _sub_4D1355                                     # 004023C8
+    pop ecx                                              # 004023CD
+.L4023CE:
+    msvc_mov eax, esi                                    # 004023CE
+    pop edi                                              # 004023D0
+    pop esi                                              # 004023D1
+    pop ebx                                              # 004023D2
+    ret                                                  # 004023D3
+
+    .global _sub_4023D4
+_sub_4023D4:
+    push ebx                                             # 004023D4
+    mov ebx, dword ptr [esp + 8]                         # 004023D5
+    push esi                                             # 004023D9
+    push edi                                             # 004023DA
+    test ebx, ebx                                        # 004023DB
+    je .L402432                                          # 004023DD
+    mov esi, dword ptr [0x524158]                        # 004023DF
+    test esi, esi                                        # 004023E5
+    je .L402432                                          # 004023E7
+    msvc_xor eax, eax                                    # 004023E9
+    msvc_xor edi, edi                                    # 004023EB
+    test esi, esi                                        # 004023ED
+    je .L402432                                          # 004023EF
+.L4023F1:
+    test eax, eax                                        # 004023F1
+    jne .L402406                                         # 004023F3
+    cmp dword ptr [esi], ebx                             # 004023F5
+    jne .L4023FD                                         # 004023F7
+    msvc_mov eax, esi                                    # 004023F9
+    jmp .L402402                                         # 004023FB
+.L4023FD:
+    msvc_mov edi, esi                                    # 004023FD
+    mov esi, dword ptr [esi + 8]                         # 004023FF
+.L402402:
+    test esi, esi                                        # 00402402
+    jne .L4023F1                                         # 00402404
+.L402406:
+    test esi, esi                                        # 00402406
+    je .L402432                                          # 00402408
+    mov eax, dword ptr [esi + 4]                         # 0040240A
+    push eax                                             # 0040240D
+    mov ecx, dword ptr [eax]                             # 0040240E
+    call dword ptr [ecx + 8]                             # 00402410
+    push ebx                                             # 00402413
+    call _sub_4D1355                                     # 00402414
+    mov eax, dword ptr [esi + 8]                         # 00402419
+    pop ecx                                              # 0040241C
+    test edi, edi                                        # 0040241D
+    je .L402426                                          # 0040241F
+    mov dword ptr [edi + 8], eax                         # 00402421
+    jmp .L40242B                                         # 00402424
+.L402426:
+    mov dword ptr [0x524158], eax                        # 00402426
+.L40242B:
+    push esi                                             # 0040242B
+    call _sub_4D1355                                     # 0040242C
+    pop ecx                                              # 00402431
+.L402432:
+    pop edi                                              # 00402432
+    pop esi                                              # 00402433
+    pop ebx                                              # 00402434
+    ret                                                  # 00402435
+
+    .global _sub_402436
+_sub_402436:
+    push ebp                                             # 00402436
+    msvc_mov ebp, esp                                    # 00402437
+    sub esp, 0x10                                        # 00402439
+    msvc_xor edx, edx                                    # 0040243C
+    push ebx                                             # 0040243E
+    cmp dword ptr [0x524164], edx                        # 0040243F
+    push esi                                             # 00402445
+    push edi                                             # 00402446
+    je .L4024DC                                          # 00402447
+    cmp dword ptr [0x524150], edx                        # 0040244D
+    je .L4024DC                                          # 00402453
+    cmp dword ptr [ebp + 8], edx                         # 00402459
+    je .L4024DC                                          # 0040245C
+    mov esi, dword ptr [ebp + 0xc]                       # 0040245E
+    mov eax, dword ptr [esi]                             # 00402461
+    mov edi, dword ptr [esi + 8]                         # 00402463
+    mov ecx, dword ptr [esi + 4]                         # 00402466
+    mov ebx, dword ptr [esi + 0xc]                       # 00402469
+    msvc_sub edi, eax                                    # 0040246C
+    msvc_sub ebx, ecx                                    # 0040246E
+    msvc_cmp edi, edx                                    # 00402470
+    jle .L4024DC                                         # 00402472
+    msvc_cmp ebx, edx                                    # 00402474
+    jle .L4024DC                                         # 00402476
+    push 0x40                                            # 00402478
+    pop edx                                              # 0040247A
+    msvc_cmp edi, edx                                    # 0040247B
+    jle .L402486                                         # 0040247D
+    msvc_add eax, edx                                    # 0040247F
+    msvc_mov edi, edx                                    # 00402481
+    mov dword ptr [esi + 8], eax                         # 00402483
+.L402486:
+    msvc_cmp ebx, edx                                    # 00402486
+    jle .L402492                                         # 00402488
+    add ecx, 0x40                                        # 0040248A
+    msvc_mov ebx, edx                                    # 0040248D
+    mov dword ptr [esi + 0xc], ecx                       # 0040248F
+.L402492:
+    and dword ptr [ebp - 0xc], 0                         # 00402492
+    and dword ptr [ebp - 0x10], 0                        # 00402496
+    mov dword ptr [ebp - 8], edi                         # 0040249A
+    mov dword ptr [ebp - 4], ebx                         # 0040249D
+.L4024A0:
+    mov edx, dword ptr [ebp + 8]                         # 004024A0
+    mov eax, dword ptr [0x524150]                        # 004024A3
+    push 0                                               # 004024A8
+    push 0x1000000                                       # 004024AA
+    mov ecx, dword ptr [eax]                             # 004024AF
+    push esi                                             # 004024B1
+    push dword ptr [edx + 0x90]                          # 004024B2
+    lea edx, [ebp - 0x10]                                # 004024B8
+    push edx                                             # 004024BB
+    push eax                                             # 004024BC
+    call dword ptr [ecx + 0x14]                          # 004024BD
+    cmp eax, 0x887601c2                                  # 004024C0
+    jne .L4024D0                                         # 004024C5
+    call _sub_401C76                                     # 004024C7
+    test eax, eax                                        # 004024CC
+    jne .L4024A0                                         # 004024CE
+.L4024D0:
+    mov dword ptr [0x114062c], edi                       # 004024D0
+    mov dword ptr [0x113fffc], ebx                       # 004024D6
+.L4024DC:
+    pop edi                                              # 004024DC
+    pop esi                                              # 004024DD
+    pop ebx                                              # 004024DE
+    leave                                                # 004024DF
+    ret                                                  # 004024E0
+
+    .global _sub_4024E1
+_sub_4024E1:
+    push ebp                                             # 004024E1
+    msvc_mov ebp, esp                                    # 004024E2
+    sub esp, 0x20                                        # 004024E4
+    push esi                                             # 004024E7
+    push edi                                             # 004024E8
+    mov edi, dword ptr [ebp + 8]                         # 004024E9
+    msvc_xor eax, eax                                    # 004024EC
+    msvc_cmp edi, eax                                    # 004024EE
+    je .L4025B3                                          # 004024F0
+    mov esi, dword ptr [ebp + 0x10]                      # 004024F6
+    msvc_cmp esi, eax                                    # 004024F9
+    je .L4025B3                                          # 004024FB
+    cmp dword ptr [esi + 0x90], eax                      # 00402501
+    je .L4025B3                                          # 00402507
+    cmp dword ptr [edi + 0x90], eax                      # 0040250D
+    je .L4025B3                                          # 00402513
+    cmp dword ptr [0x524164], eax                        # 00402519
+    push ebx                                             # 0040251F
+    mov ebx, dword ptr [ebp + 0x14]                      # 00402520
+    jne .L402565                                         # 00402523
+    msvc_mov esi, ebx                                    # 00402525
+    lea edi, [ebp - 0x20]                                # 00402527
+    movsd dword ptr es:[edi], dword ptr [esi]            # 0040252A
+    movsd dword ptr es:[edi], dword ptr [esi]            # 0040252B
+    lea eax, [ebp - 0x10]                                # 0040252C
+    movsd dword ptr es:[edi], dword ptr [esi]            # 0040252F
+    push eax                                             # 00402530
+    push dword ptr [0x525320]                            # 00402531
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402537
+    msvc_abscall 0x4D7284                                # 00402538
+    lea eax, [ebp - 0x10]                                # 0040253E
+    push eax                                             # 00402541
+    push dword ptr [0x525320]                            # 00402542
+    msvc_abscall 0x4D7288                                # 00402548
+    mov eax, dword ptr [ebp - 0x10]                      # 0040254E
+    mov ecx, dword ptr [ebp - 0xc]                       # 00402551
+    add dword ptr [ebx], eax                             # 00402554
+    add dword ptr [ebx + 4], ecx                         # 00402556
+    add dword ptr [ebx + 8], eax                         # 00402559
+    add dword ptr [ebx + 0xc], ecx                       # 0040255C
+    mov edi, dword ptr [ebp + 8]                         # 0040255F
+    mov esi, dword ptr [ebp + 0x10]                      # 00402562
+.L402565:
+    mov eax, dword ptr [esi + 0x90]                      # 00402565
+    push 0                                               # 0040256B
+    push 0x1000000                                       # 0040256D
+    push dword ptr [ebp + 0xc]                           # 00402572
+    mov ecx, dword ptr [eax]                             # 00402575
+    push dword ptr [edi + 0x90]                          # 00402577
+    push ebx                                             # 0040257D
+    push eax                                             # 0040257E
+    call dword ptr [ecx + 0x14]                          # 0040257F
+    cmp eax, 0x887601c2                                  # 00402582
+    mov dword ptr [ebp + 8], eax                         # 00402587
+    jne .L402595                                         # 0040258A
+    call _sub_401C76                                     # 0040258C
+    test eax, eax                                        # 00402591
+    jne .L402565                                         # 00402593
+.L402595:
+    cmp dword ptr [0x524164], 0                          # 00402595
+    jne .L4025A7                                         # 0040259C
+    lea esi, [ebp - 0x20]                                # 0040259E
+    msvc_mov edi, ebx                                    # 004025A1
+    movsd dword ptr es:[edi], dword ptr [esi]            # 004025A3
+    movsd dword ptr es:[edi], dword ptr [esi]            # 004025A4
+    movsd dword ptr es:[edi], dword ptr [esi]            # 004025A5
+    movsd dword ptr es:[edi], dword ptr [esi]            # 004025A6
+.L4025A7:
+    cmp dword ptr [ebp + 8], 0                           # 004025A7
+    pop ebx                                              # 004025AB
+    jne .L4025B3                                         # 004025AC
+    push 1                                               # 004025AE
+    pop eax                                              # 004025B0
+    jmp .L4025B5                                         # 004025B1
+.L4025B3:
+    msvc_xor eax, eax                                    # 004025B3
+.L4025B5:
+    pop edi                                              # 004025B5
+    pop esi                                              # 004025B6
+    leave                                                # 004025B7
+    ret                                                  # 004025B8
+
+    .global _sub_4025B9
+_sub_4025B9:
+    push ebp                                             # 004025B9
+    msvc_mov ebp, esp                                    # 004025BA
+    sub esp, 0x28                                        # 004025BC
+    push esi                                             # 004025BF
+    mov esi, dword ptr [ebp + 8]                         # 004025C0
+    msvc_xor eax, eax                                    # 004025C3
+    push edi                                             # 004025C5
+    msvc_cmp esi, eax                                    # 004025C6
+    je .L4026A6                                          # 004025C8
+    mov edi, dword ptr [ebp + 0x10]                      # 004025CE
+    msvc_cmp edi, eax                                    # 004025D1
+    je .L4026A6                                          # 004025D3
+    cmp dword ptr [edi + 0x90], eax                      # 004025D9
+    je .L4026A6                                          # 004025DF
+    cmp dword ptr [esi + 0x90], eax                      # 004025E5
+    je .L4026A6                                          # 004025EB
+    cmp dword ptr [0x524164], eax                        # 004025F1
+    push ebx                                             # 004025F7
+    mov ebx, dword ptr [ebp + 0x14]                      # 004025F8
+    jne .L40263D                                         # 004025FB
+    msvc_mov esi, ebx                                    # 004025FD
+    lea edi, [ebp - 0x28]                                # 004025FF
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402602
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402603
+    lea eax, [ebp - 0x18]                                # 00402604
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402607
+    push eax                                             # 00402608
+    push dword ptr [0x525320]                            # 00402609
+    movsd dword ptr es:[edi], dword ptr [esi]            # 0040260F
+    msvc_abscall 0x4D7284                                # 00402610
+    lea eax, [ebp - 0x18]                                # 00402616
+    push eax                                             # 00402619
+    push dword ptr [0x525320]                            # 0040261A
+    msvc_abscall 0x4D7288                                # 00402620
+    mov eax, dword ptr [ebp - 0x18]                      # 00402626
+    mov ecx, dword ptr [ebp - 0x14]                      # 00402629
+    add dword ptr [ebx], eax                             # 0040262C
+    add dword ptr [ebx + 4], ecx                         # 0040262E
+    add dword ptr [ebx + 8], eax                         # 00402631
+    add dword ptr [ebx + 0xc], ecx                       # 00402634
+    mov esi, dword ptr [ebp + 8]                         # 00402637
+    mov edi, dword ptr [ebp + 0x10]                      # 0040263A
+.L40263D:
+    mov eax, dword ptr [ebp + 0x18]                      # 0040263D
+    lea edx, [ebp - 8]                                   # 00402640
+    mov dword ptr [ebp - 8], eax                         # 00402643
+    mov dword ptr [ebp - 4], eax                         # 00402646
+    mov eax, dword ptr [esi + 0x90]                      # 00402649
+    push edx                                             # 0040264F
+    push 8                                               # 00402650
+    push eax                                             # 00402652
+    mov ecx, dword ptr [eax]                             # 00402653
+    call dword ptr [ecx + 0x74]                          # 00402655
+.L402658:
+    mov eax, dword ptr [edi + 0x90]                      # 00402658
+    push 0                                               # 0040265E
+    push 0x1008000                                       # 00402660
+    push dword ptr [ebp + 0xc]                           # 00402665
+    mov ecx, dword ptr [eax]                             # 00402668
+    push dword ptr [esi + 0x90]                          # 0040266A
+    push ebx                                             # 00402670
+    push eax                                             # 00402671
+    call dword ptr [ecx + 0x14]                          # 00402672
+    cmp eax, 0x887601c2                                  # 00402675
+    mov dword ptr [ebp + 8], eax                         # 0040267A
+    jne .L402688                                         # 0040267D
+    call _sub_401C76                                     # 0040267F
+    test eax, eax                                        # 00402684
+    jne .L402658                                         # 00402686
+.L402688:
+    cmp dword ptr [0x524164], 0                          # 00402688
+    jne .L40269A                                         # 0040268F
+    lea esi, [ebp - 0x28]                                # 00402691
+    msvc_mov edi, ebx                                    # 00402694
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402696
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402697
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402698
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402699
+.L40269A:
+    cmp dword ptr [ebp + 8], 0                           # 0040269A
+    pop ebx                                              # 0040269E
+    jne .L4026A6                                         # 0040269F
+    push 1                                               # 004026A1
+    pop eax                                              # 004026A3
+    jmp .L4026A8                                         # 004026A4
+.L4026A6:
+    msvc_xor eax, eax                                    # 004026A6
+.L4026A8:
+    pop edi                                              # 004026A8
+    pop esi                                              # 004026A9
+    leave                                                # 004026AA
+    ret                                                  # 004026AB
+
+    .global _sub_4026AC
+_sub_4026AC:
+    push ebp                                             # 004026AC
+    msvc_mov ebp, esp                                    # 004026AD
+    sub esp, 0x10                                        # 004026AF
+    cmp dword ptr [0x524164], 0                          # 004026B2
+    push esi                                             # 004026B9
+    push edi                                             # 004026BA
+    jne .L4026F6                                         # 004026BB
+    mov eax, dword ptr [ebp + 0xc]                       # 004026BD
+    mov ecx, dword ptr [ebp + 0x14]                      # 004026C0
+    mov dword ptr [ebp - 0x10], ecx                      # 004026C3
+    mov edx, dword ptr [eax + 8]                         # 004026C6
+    sub edx, dword ptr [eax]                             # 004026C9
+    msvc_add edx, ecx                                    # 004026CB
+    mov ecx, dword ptr [ebp + 0x18]                      # 004026CD
+    mov dword ptr [ebp - 8], edx                         # 004026D0
+    mov edx, dword ptr [eax + 0xc]                       # 004026D3
+    sub edx, dword ptr [eax + 4]                         # 004026D6
+    mov dword ptr [ebp - 0xc], ecx                       # 004026D9
+    msvc_add edx, ecx                                    # 004026DC
+    lea ecx, [ebp - 0x10]                                # 004026DE
+    push ecx                                             # 004026E1
+    mov dword ptr [ebp - 4], edx                         # 004026E2
+    push dword ptr [ebp + 0x10]                          # 004026E5
+    push eax                                             # 004026E8
+    push dword ptr [ebp + 8]                             # 004026E9
+    call _sub_4024E1                                     # 004026EC
+    add esp, 0x10                                        # 004026F1
+    jmp .L40274E                                         # 004026F4
+.L4026F6:
+    mov edi, dword ptr [ebp + 8]                         # 004026F6
+    test edi, edi                                        # 004026F9
+    je .L40274C                                          # 004026FB
+    mov esi, dword ptr [ebp + 0x10]                      # 004026FD
+    test esi, esi                                        # 00402700
+    je .L40274C                                          # 00402702
+    cmp dword ptr [esi + 0x90], 0                        # 00402704
+    je .L40274C                                          # 0040270B
+    cmp dword ptr [edi + 0x90], 0                        # 0040270D
+.L402714:
+    je .L40274C                                          # 00402714
+    push 0x10                                            # 00402716
+    mov eax, dword ptr [esi + 0x90]                      # 00402718
+    push dword ptr [ebp + 0xc]                           # 0040271E
+    mov ecx, dword ptr [eax]                             # 00402721
+    push dword ptr [edi + 0x90]                          # 00402723
+    push dword ptr [ebp + 0x18]                          # 00402729
+    push dword ptr [ebp + 0x14]                          # 0040272C
+    push eax                                             # 0040272F
+    call dword ptr [ecx + 0x1c]                          # 00402730
+    cmp eax, 0x887601c2                                  # 00402733
+    jne .L402743                                         # 00402738
+    call _sub_401C76                                     # 0040273A
+    test eax, eax                                        # 0040273F
+    jmp .L402714                                         # 00402741
+.L402743:
+    test eax, eax                                        # 00402743
+    jne .L40274C                                         # 00402745
+    push 1                                               # 00402747
+    pop eax                                              # 00402749
+    jmp .L40274E                                         # 0040274A
+.L40274C:
+    msvc_xor eax, eax                                    # 0040274C
+.L40274E:
+    pop edi                                              # 0040274E
+    pop esi                                              # 0040274F
+    leave                                                # 00402750
+    ret                                                  # 00402751
+
+    .global _sub_402752
+_sub_402752:
+    push ebp                                             # 00402752
+    msvc_mov ebp, esp                                    # 00402753
+    sub esp, 0x10                                        # 00402755
+    cmp dword ptr [0x524164], 0                          # 00402758
+    push esi                                             # 0040275F
+    push edi                                             # 00402760
+    jne .L40279F                                         # 00402761
+    mov eax, dword ptr [ebp + 0xc]                       # 00402763
+    mov ecx, dword ptr [ebp + 0x14]                      # 00402766
+    push dword ptr [ebp + 0x1c]                          # 00402769
+    mov dword ptr [ebp - 0x10], ecx                      # 0040276C
+    mov edx, dword ptr [eax + 8]                         # 0040276F
+    sub edx, dword ptr [eax]                             # 00402772
+    msvc_add edx, ecx                                    # 00402774
+    mov ecx, dword ptr [ebp + 0x18]                      # 00402776
+    mov dword ptr [ebp - 8], edx                         # 00402779
+    mov edx, dword ptr [eax + 0xc]                       # 0040277C
+    sub edx, dword ptr [eax + 4]                         # 0040277F
+    mov dword ptr [ebp - 0xc], ecx                       # 00402782
+    msvc_add edx, ecx                                    # 00402785
+    lea ecx, [ebp - 0x10]                                # 00402787
+    push ecx                                             # 0040278A
+    mov dword ptr [ebp - 4], edx                         # 0040278B
+    push dword ptr [ebp + 0x10]                          # 0040278E
+    push eax                                             # 00402791
+    push dword ptr [ebp + 8]                             # 00402792
+    call _sub_4025B9                                     # 00402795
+    add esp, 0x14                                        # 0040279A
+    jmp .L40280F                                         # 0040279D
+.L40279F:
+    mov esi, dword ptr [ebp + 8]                         # 0040279F
+    test esi, esi                                        # 004027A2
+    je .L40280D                                          # 004027A4
+    mov edi, dword ptr [ebp + 0x10]                      # 004027A6
+    test edi, edi                                        # 004027A9
+    je .L40280D                                          # 004027AB
+    cmp dword ptr [edi + 0x90], 0                        # 004027AD
+    je .L40280D                                          # 004027B4
+    mov eax, dword ptr [esi + 0x90]                      # 004027B6
+    test eax, eax                                        # 004027BC
+    je .L40280D                                          # 004027BE
+    mov ecx, dword ptr [ebp + 0x1c]                      # 004027C0
+    lea edx, [ebp - 8]                                   # 004027C3
+    mov dword ptr [ebp - 8], ecx                         # 004027C6
+    mov dword ptr [ebp - 4], ecx                         # 004027C9
+    mov ecx, dword ptr [eax]                             # 004027CC
+    push edx                                             # 004027CE
+    push 8                                               # 004027CF
+    push eax                                             # 004027D1
+    call dword ptr [ecx + 0x74]                          # 004027D2
+.L4027D5:
+    push 0x11                                            # 004027D5
+    mov eax, dword ptr [edi + 0x90]                      # 004027D7
+    push dword ptr [ebp + 0xc]                           # 004027DD
+    mov ecx, dword ptr [eax]                             # 004027E0
+    push dword ptr [esi + 0x90]                          # 004027E2
+    push dword ptr [ebp + 0x18]                          # 004027E8
+    push dword ptr [ebp + 0x14]                          # 004027EB
+    push eax                                             # 004027EE
+    call dword ptr [ecx + 0x1c]                          # 004027EF
+    cmp eax, 0x887601c2                                  # 004027F2
+    jne .L402804                                         # 004027F7
+    call _sub_401C76                                     # 004027F9
+    test eax, eax                                        # 004027FE
+    je .L40280D                                          # 00402800
+    jmp .L4027D5                                         # 00402802
+.L402804:
+    test eax, eax                                        # 00402804
+    jne .L40280D                                         # 00402806
+    push 1                                               # 00402808
+    pop eax                                              # 0040280A
+    jmp .L40280F                                         # 0040280B
+.L40280D:
+    msvc_xor eax, eax                                    # 0040280D
+.L40280F:
+    pop edi                                              # 0040280F
+    pop esi                                              # 00402810
+    leave                                                # 00402811
+    ret                                                  # 00402812
+
+    .global _sub_402813
+_sub_402813:
+    push ebp                                             # 00402813
+    msvc_mov ebp, esp                                    # 00402814
+    sub esp, 0x80                                        # 00402816
+    cmp dword ptr [0x524164], 0                          # 0040281C
+    push esi                                             # 00402823
+    je .L402895                                          # 00402824
+    cmp dword ptr [0x1140850], 2                         # 00402826
+    jl .L40288B                                          # 0040282D
+    cmp dword ptr [0x52415c], 0                          # 0040282F
+    jne .L40288B                                         # 00402836
+    mov eax, dword ptr [0x524140]                        # 00402838
+    lea edx, [ebp - 4]                                   # 0040283D
+    push edx                                             # 00402840
+    push eax                                             # 00402841
+    mov ecx, dword ptr [eax]                             # 00402842
+    call dword ptr [ecx + 0x38]                          # 00402844
+    test eax, eax                                        # 00402847
+    jne .L402895                                         # 00402849
+    mov eax, dword ptr [ebp - 4]                         # 0040284B
+    push 1                                               # 0040284E
+    pop esi                                              # 00402850
+    lea edx, [ebp - 0x80]                                # 00402851
+    mov dword ptr [ebp - 0x80], 0x7c                     # 00402854
+    mov dword ptr [ebp - 0x7c], esi                      # 0040285B
+    mov ecx, dword ptr [eax]                             # 0040285E
+    push edx                                             # 00402860
+    push eax                                             # 00402861
+    call dword ptr [ecx + 0x58]                          # 00402862
+    test eax, eax                                        # 00402865
+    jne .L402895                                         # 00402867
+    test byte ptr [ebp - 0x17], 2                        # 00402869
+    jne .L40287C                                         # 0040286D
+    call _sub_401E41                                     # 0040286F
+    mov dword ptr [0x524160], esi                        # 00402874
+    jmp .L402883                                         # 0040287A
+.L40287C:
+    and dword ptr [0x524160], 0                          # 0040287C
+.L402883:
+    mov dword ptr [0x52415c], esi                        # 00402883
+    jmp .L402895                                         # 00402889
+.L40288B:
+    mov dword ptr [0x52415c], 1                          # 0040288B
+.L402895:
+    pop esi                                              # 00402895
+    leave                                                # 00402896
+    ret                                                  # 00402897
+
+    .global _sub_402898
+_sub_402898:
+    push esi                                             # 00402898
+    msvc_xor esi, esi                                    # 00402899
+    cmp dword ptr [0x524164], esi                        # 0040289B
+    je .L4028D5                                          # 004028A1
+    cmp dword ptr [0x1140850], 2                         # 004028A3
+    jl .L4028CF                                          # 004028AA
+    cmp dword ptr [0x52415c], esi                        # 004028AC
+    je .L4028CF                                          # 004028B2
+    cmp dword ptr [0x524160], esi                        # 004028B4
+    mov dword ptr [0x52415c], esi                        # 004028BA
+    je .L4028D5                                          # 004028C0
+    call _sub_401E41                                     # 004028C2
+    mov dword ptr [0x524160], esi                        # 004028C7
+    pop esi                                              # 004028CD
+    ret                                                  # 004028CE
+.L4028CF:
+    mov dword ptr [0x52415c], esi                        # 004028CF
+.L4028D5:
+    pop esi                                              # 004028D5
+    ret                                                  # 004028D6
+
+    .global _sub_4028D7
+_sub_4028D7:
+    cmp dword ptr [0x524164], 0                          # 004028D7
+    jne .L40291B                                         # 004028DE
+    mov eax, dword ptr [0x524144]                        # 004028E0
+    test eax, eax                                        # 004028E5
+    je .L40291B                                          # 004028E7
+    mov ecx, dword ptr [0x52414c]                        # 004028E9
+    test ecx, ecx                                        # 004028EF
+    je .L40291B                                          # 004028F1
+    mov edx, dword ptr [eax]                             # 004028F3
+    push ecx                                             # 004028F5
+    push eax                                             # 004028F6
+    call dword ptr [edx + 0x7c]                          # 004028F7
+    cmp eax, 0x887601c2                                  # 004028FA
+    jne .L40291B                                         # 004028FF
+    call _sub_401C76                                     # 00402901
+    test eax, eax                                        # 00402906
+    je .L40291B                                          # 00402908
+    mov eax, dword ptr [0x524144]                        # 0040290A
+    push dword ptr [0x52414c]                            # 0040290F
+    mov ecx, dword ptr [eax]                             # 00402915
+    push eax                                             # 00402917
+    call dword ptr [ecx + 0x7c]                          # 00402918
+.L40291B:
+    ret                                                  # 0040291B
+
+    .global _sub_40291C
+_sub_40291C:
+    msvc_xor edx, edx                                    # 0040291C
+    cmp dword ptr [0x52416c], edx                        # 0040291E
+    jne .L40295A                                         # 00402924
+    cmp dword ptr [0x524170], edx                        # 00402926
+    jne .L40295A                                         # 0040292C
+    mov eax, dword ptr [esp + 4]                         # 0040292E
+    mov ecx, dword ptr [eax + 0x90]                      # 00402932
+    msvc_cmp ecx, edx                                    # 00402938
+    je .L40295A                                          # 0040293A
+    mov eax, dword ptr [esp + 8]                         # 0040293C
+    add eax, 0x90                                        # 00402940
+    cmp dword ptr [eax], edx                             # 00402945
+    je .L40295A                                          # 00402947
+    mov dword ptr [0x52416c], ecx                        # 00402949
+    mov eax, dword ptr [eax]                             # 0040294F
+    push 1                                               # 00402951
+    mov dword ptr [0x524170], eax                        # 00402953
+    pop eax                                              # 00402958
+    ret                                                  # 00402959
+.L40295A:
+    msvc_xor eax, eax                                    # 0040295A
+    ret                                                  # 0040295C
+
+    .global _sub_40295D
+_sub_40295D:
+    and dword ptr [0x52416c], 0                          # 0040295D
+    and dword ptr [0x524170], 0                          # 00402964
+    ret                                                  # 0040296B
+
+    .global _sub_40296C
+_sub_40296C:
+    push ebp                                             # 0040296C
+    msvc_mov ebp, esp                                    # 0040296D
+    sub esp, 0x20                                        # 0040296F
+    msvc_xor eax, eax                                    # 00402972
+    cmp dword ptr [0x52416c], eax                        # 00402974
+    je .L402A23                                          # 0040297A
+    cmp dword ptr [0x524170], eax                        # 00402980
+    je .L402A23                                          # 00402986
+    cmp dword ptr [0x524164], eax                        # 0040298C
+    push ebx                                             # 00402992
+    mov ebx, dword ptr [ebp + 0xc]                       # 00402993
+    push esi                                             # 00402996
+    push edi                                             # 00402997
+    jne .L4029D4                                         # 00402998
+    msvc_mov esi, ebx                                    # 0040299A
+    lea edi, [ebp - 0x20]                                # 0040299C
+    movsd dword ptr es:[edi], dword ptr [esi]            # 0040299F
+    movsd dword ptr es:[edi], dword ptr [esi]            # 004029A0
+    lea eax, [ebp - 0x10]                                # 004029A1
+    movsd dword ptr es:[edi], dword ptr [esi]            # 004029A4
+    push eax                                             # 004029A5
+    push dword ptr [0x525320]                            # 004029A6
+    movsd dword ptr es:[edi], dword ptr [esi]            # 004029AC
+    msvc_abscall 0x4D7284                                # 004029AD
+    lea eax, [ebp - 0x10]                                # 004029B3
+    push eax                                             # 004029B6
+    push dword ptr [0x525320]                            # 004029B7
+    msvc_abscall 0x4D7288                                # 004029BD
+    mov eax, dword ptr [ebp - 0x10]                      # 004029C3
+    mov ecx, dword ptr [ebp - 0xc]                       # 004029C6
+    add dword ptr [ebx], eax                             # 004029C9
+    add dword ptr [ebx + 4], ecx                         # 004029CB
+    add dword ptr [ebx + 8], eax                         # 004029CE
+    add dword ptr [ebx + 0xc], ecx                       # 004029D1
+.L4029D4:
+    mov eax, dword ptr [0x524170]                        # 004029D4
+    push 0                                               # 004029D9
+    push 0x1000000                                       # 004029DB
+    push dword ptr [ebp + 8]                             # 004029E0
+    mov ecx, dword ptr [eax]                             # 004029E3
+    push dword ptr [0x52416c]                            # 004029E5
+    push ebx                                             # 004029EB
+    push eax                                             # 004029EC
+    call dword ptr [ecx + 0x14]                          # 004029ED
+    cmp eax, 0x887601c2                                  # 004029F0
+    mov dword ptr [ebp + 0xc], eax                       # 004029F5
+    jne .L402A03                                         # 004029F8
+    call _sub_401C76                                     # 004029FA
+    test eax, eax                                        # 004029FF
+    jne .L4029D4                                         # 00402A01
+.L402A03:
+    cmp dword ptr [0x524164], 0                          # 00402A03
+    jne .L402A15                                         # 00402A0A
+    lea esi, [ebp - 0x20]                                # 00402A0C
+    msvc_mov edi, ebx                                    # 00402A0F
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402A11
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402A12
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402A13
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402A14
+.L402A15:
+    cmp dword ptr [ebp + 0xc], 0                         # 00402A15
+    pop edi                                              # 00402A19
+    pop esi                                              # 00402A1A
+    pop ebx                                              # 00402A1B
+    jne .L402A23                                         # 00402A1C
+    push 1                                               # 00402A1E
+    pop eax                                              # 00402A20
+    leave                                                # 00402A21
+    ret                                                  # 00402A22
+.L402A23:
+    msvc_xor eax, eax                                    # 00402A23
+    leave                                                # 00402A25
+    ret                                                  # 00402A26
+
+    .global _sub_402A27
+_sub_402A27:
+    push ebp                                             # 00402A27
+    msvc_mov ebp, esp                                    # 00402A28
+    sub esp, 0x28                                        # 00402A2A
+    mov eax, dword ptr [0x52416c]                        # 00402A2D
+    test eax, eax                                        # 00402A32
+    je .L402AF9                                          # 00402A34
+    cmp dword ptr [0x524170], 0                          # 00402A3A
+    je .L402AF9                                          # 00402A41
+    cmp dword ptr [0x524164], 0                          # 00402A47
+    push ebx                                             # 00402A4E
+    mov ebx, dword ptr [ebp + 0xc]                       # 00402A4F
+    push esi                                             # 00402A52
+    push edi                                             # 00402A53
+    jne .L402A95                                         # 00402A54
+    msvc_mov esi, ebx                                    # 00402A56
+    lea edi, [ebp - 0x28]                                # 00402A58
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402A5B
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402A5C
+    lea eax, [ebp - 0x18]                                # 00402A5D
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402A60
+    push eax                                             # 00402A61
+    push dword ptr [0x525320]                            # 00402A62
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402A68
+    msvc_abscall 0x4D7284                                # 00402A69
+    lea eax, [ebp - 0x18]                                # 00402A6F
+    push eax                                             # 00402A72
+    push dword ptr [0x525320]                            # 00402A73
+    msvc_abscall 0x4D7288                                # 00402A79
+    mov eax, dword ptr [ebp - 0x18]                      # 00402A7F
+    mov ecx, dword ptr [ebp - 0x14]                      # 00402A82
+    add dword ptr [ebx], eax                             # 00402A85
+    add dword ptr [ebx + 4], ecx                         # 00402A87
+    add dword ptr [ebx + 8], eax                         # 00402A8A
+    add dword ptr [ebx + 0xc], ecx                       # 00402A8D
+    mov eax, dword ptr [0x52416c]                        # 00402A90
+.L402A95:
+    mov ecx, dword ptr [ebp + 0x10]                      # 00402A95
+    lea edx, [ebp - 8]                                   # 00402A98
+    mov dword ptr [ebp - 8], ecx                         # 00402A9B
+    mov dword ptr [ebp - 4], ecx                         # 00402A9E
+    mov ecx, dword ptr [eax]                             # 00402AA1
+    push edx                                             # 00402AA3
+    push 8                                               # 00402AA4
+    push eax                                             # 00402AA6
+    call dword ptr [ecx + 0x74]                          # 00402AA7
+.L402AAA:
+    mov eax, dword ptr [0x524170]                        # 00402AAA
+    push 0                                               # 00402AAF
+    push 0x1000000                                       # 00402AB1
+    push dword ptr [ebp + 8]                             # 00402AB6
+    mov ecx, dword ptr [eax]                             # 00402AB9
+    push dword ptr [0x52416c]                            # 00402ABB
+    push ebx                                             # 00402AC1
+    push eax                                             # 00402AC2
+    call dword ptr [ecx + 0x14]                          # 00402AC3
+    cmp eax, 0x887601c2                                  # 00402AC6
+    mov dword ptr [ebp + 0xc], eax                       # 00402ACB
+    jne .L402AD9                                         # 00402ACE
+    call _sub_401C76                                     # 00402AD0
+    test eax, eax                                        # 00402AD5
+    jne .L402AAA                                         # 00402AD7
+.L402AD9:
+    cmp dword ptr [0x524164], 0                          # 00402AD9
+    jne .L402AEB                                         # 00402AE0
+    lea esi, [ebp - 0x28]                                # 00402AE2
+    msvc_mov edi, ebx                                    # 00402AE5
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402AE7
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402AE8
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402AE9
+    movsd dword ptr es:[edi], dword ptr [esi]            # 00402AEA
+.L402AEB:
+    cmp dword ptr [ebp + 0xc], 0                         # 00402AEB
+    pop edi                                              # 00402AEF
+    pop esi                                              # 00402AF0
+    pop ebx                                              # 00402AF1
+    jne .L402AF9                                         # 00402AF2
+    push 1                                               # 00402AF4
+    pop eax                                              # 00402AF6
+    leave                                                # 00402AF7
+    ret                                                  # 00402AF8
+.L402AF9:
+    msvc_xor eax, eax                                    # 00402AF9
+    leave                                                # 00402AFB
+    ret                                                  # 00402AFC
+
+    .global _sub_402AFD
+_sub_402AFD:
+    push ebp                                             # 00402AFD
+    msvc_mov ebp, esp                                    # 00402AFE
+    sub esp, 0x10                                        # 00402B00
+    cmp dword ptr [0x524164], 0                          # 00402B03
+    jne .L402B3E                                         # 00402B0A
+    mov eax, dword ptr [ebp + 8]                         # 00402B0C
+    mov ecx, dword ptr [ebp + 0xc]                       # 00402B0F
+    mov dword ptr [ebp - 0x10], ecx                      # 00402B12
+    mov edx, dword ptr [eax + 8]                         # 00402B15
+    sub edx, dword ptr [eax]                             # 00402B18
+    msvc_add edx, ecx                                    # 00402B1A
+    mov ecx, dword ptr [ebp + 0x10]                      # 00402B1C
+    mov dword ptr [ebp - 8], edx                         # 00402B1F
+    mov edx, dword ptr [eax + 0xc]                       # 00402B22
+    sub edx, dword ptr [eax + 4]                         # 00402B25
+    mov dword ptr [ebp - 0xc], ecx                       # 00402B28
+    msvc_add edx, ecx                                    # 00402B2B
+    lea ecx, [ebp - 0x10]                                # 00402B2D
+    push ecx                                             # 00402B30
+    push eax                                             # 00402B31
+    mov dword ptr [ebp - 4], edx                         # 00402B32
+    call _sub_40296C                                     # 00402B35
+    pop ecx                                              # 00402B3A
+    pop ecx                                              # 00402B3B
+    leave                                                # 00402B3C
+    ret                                                  # 00402B3D
+.L402B3E:
+    mov eax, dword ptr [0x524170]                        # 00402B3E
+    test eax, eax                                        # 00402B43
+    je .L402B87                                          # 00402B45
+    cmp dword ptr [0x52416c], 0                          # 00402B47
+    je .L402B87                                          # 00402B4E
+.L402B50:
+    push 0x10                                            # 00402B50
+    mov ecx, dword ptr [eax]                             # 00402B52
+    push dword ptr [ebp + 8]                             # 00402B54
+    push dword ptr [0x52416c]                            # 00402B57
+    push dword ptr [ebp + 0x10]                          # 00402B5D
+    push dword ptr [ebp + 0xc]                           # 00402B60
+    push eax                                             # 00402B63
+    call dword ptr [ecx + 0x1c]                          # 00402B64
+    cmp eax, 0x887601c2                                  # 00402B67
+    jne .L402B7E                                         # 00402B6C
+    call _sub_401C76                                     # 00402B6E
+    test eax, eax                                        # 00402B73
+    je .L402B87                                          # 00402B75
+    mov eax, dword ptr [0x524170]                        # 00402B77
+    jmp .L402B50                                         # 00402B7C
+.L402B7E:
+    test eax, eax                                        # 00402B7E
+    jne .L402B87                                         # 00402B80
+    push 1                                               # 00402B82
+    pop eax                                              # 00402B84
+    leave                                                # 00402B85
+    ret                                                  # 00402B86
+.L402B87:
+    msvc_xor eax, eax                                    # 00402B87
+    leave                                                # 00402B89
+    ret                                                  # 00402B8A
+
+    .global _sub_402B8B
+_sub_402B8B:
+    push ebp                                             # 00402B8B
+    msvc_mov ebp, esp                                    # 00402B8C
+    sub esp, 0x10                                        # 00402B8E
+    cmp dword ptr [0x524164], 0                          # 00402B91
+    jne .L402BD0                                         # 00402B98
+    mov eax, dword ptr [ebp + 8]                         # 00402B9A
+    mov ecx, dword ptr [ebp + 0xc]                       # 00402B9D
+    push dword ptr [ebp + 0x14]                          # 00402BA0
+    mov dword ptr [ebp - 0x10], ecx                      # 00402BA3
+    mov edx, dword ptr [eax + 8]                         # 00402BA6
+    sub edx, dword ptr [eax]                             # 00402BA9
+    msvc_add edx, ecx                                    # 00402BAB
+    mov ecx, dword ptr [ebp + 0x10]                      # 00402BAD
+    mov dword ptr [ebp - 8], edx                         # 00402BB0
+    mov edx, dword ptr [eax + 0xc]                       # 00402BB3
+    sub edx, dword ptr [eax + 4]                         # 00402BB6
+    mov dword ptr [ebp - 0xc], ecx                       # 00402BB9
+    msvc_add edx, ecx                                    # 00402BBC
+    lea ecx, [ebp - 0x10]                                # 00402BBE
+    push ecx                                             # 00402BC1
+    push eax                                             # 00402BC2
+    mov dword ptr [ebp - 4], edx                         # 00402BC3
+    call _sub_402A27                                     # 00402BC6
+    add esp, 0xc                                         # 00402BCB
+    leave                                                # 00402BCE
+    ret                                                  # 00402BCF
+.L402BD0:
+    cmp dword ptr [0x524170], 0                          # 00402BD0
+    je .L402C2E                                          # 00402BD7
+    mov eax, dword ptr [0x52416c]                        # 00402BD9
+    test eax, eax                                        # 00402BDE
+    je .L402C2E                                          # 00402BE0
+    mov ecx, dword ptr [ebp + 0x14]                      # 00402BE2
+    lea edx, [ebp - 8]                                   # 00402BE5
+    mov dword ptr [ebp - 8], ecx                         # 00402BE8
+    mov dword ptr [ebp - 4], ecx                         # 00402BEB
+    mov ecx, dword ptr [eax]                             # 00402BEE
+    push edx                                             # 00402BF0
+    push 8                                               # 00402BF1
+    push eax                                             # 00402BF3
+    call dword ptr [ecx + 0x74]                          # 00402BF4
+.L402BF7:
+    push 0x11                                            # 00402BF7
+    mov eax, dword ptr [0x524170]                        # 00402BF9
+    push dword ptr [ebp + 8]                             # 00402BFE
+    mov ecx, dword ptr [eax]                             # 00402C01
+    push dword ptr [0x52416c]                            # 00402C03
+    push dword ptr [ebp + 0x10]                          # 00402C09
+    push dword ptr [ebp + 0xc]                           # 00402C0C
+    push eax                                             # 00402C0F
+    call dword ptr [ecx + 0x1c]                          # 00402C10
+    cmp eax, 0x887601c2                                  # 00402C13
+    jne .L402C25                                         # 00402C18
+    call _sub_401C76                                     # 00402C1A
+    test eax, eax                                        # 00402C1F
+    je .L402C2E                                          # 00402C21
+    jmp .L402BF7                                         # 00402C23
+.L402C25:
+    test eax, eax                                        # 00402C25
+    jne .L402C2E                                         # 00402C27
+    push 1                                               # 00402C29
+    pop eax                                              # 00402C2B
+    leave                                                # 00402C2C
+    ret                                                  # 00402C2D
+.L402C2E:
+    msvc_xor eax, eax                                    # 00402C2E
+    leave                                                # 00402C30
+    ret                                                  # 00402C31
 
     .global _sub_402C32
 _sub_402C32:
     mov ecx, dword ptr [0x524154]                        # 00402C32
     test ecx, ecx                                        # 00402C38
-    je _sub_402C5F                                       # 00402C3A
+    je .L402C5F                                          # 00402C3A
     cmp dword ptr [0x1140850], 1                         # 00402C3C
-    jne _sub_402C4C                                      # 00402C43
+    jne .L402C4C                                         # 00402C43
     mov eax, dword ptr [0x524144]                        # 00402C45
-    jmp _sub_402C53                                      # 00402C4A
-
-    .global _sub_402C4C
-_sub_402C4C:
+    jmp .L402C53                                         # 00402C4A
+.L402C4C:
     mov eax, dword ptr [0x524148]                        # 00402C4C
     mov eax, dword ptr [eax]                             # 00402C51
-
-    .global _sub_402C53
-_sub_402C53:
+.L402C53:
     mov edx, dword ptr [eax]                             # 00402C53
     push ecx                                             # 00402C55
     push eax                                             # 00402C56
@@ -1571,36 +2859,35 @@ _sub_402C53:
     neg eax                                              # 00402C5A
     msvc_sbb eax, eax                                    # 00402C5C
     inc eax                                              # 00402C5E
-
-    .global _sub_402C5F
-_sub_402C5F:
+.L402C5F:
     ret                                                  # 00402C5F
 
     .global _sub_402C60
 _sub_402C60:
     cmp dword ptr [0x1140850], 1                         # 00402C60
-    jne _sub_402C70                                      # 00402C67
+    jne .L402C70                                         # 00402C67
     mov eax, dword ptr [0x524144]                        # 00402C69
-    jmp _sub_402C77                                      # 00402C6E
-
-    .global _sub_402C70
-_sub_402C70:
+    jmp .L402C77                                         # 00402C6E
+.L402C70:
     mov eax, dword ptr [0x524148]                        # 00402C70
     mov eax, dword ptr [eax]                             # 00402C75
-
-    .global _sub_402C77
-_sub_402C77:
+.L402C77:
     mov ecx, dword ptr [eax]                             # 00402C77
     push 0                                               # 00402C79
     push eax                                             # 00402C7B
     call dword ptr [ecx + 0x70]                          # 00402C7C
     ret                                                  # 00402C7F
-# 0x402C80
-    .byte 0xA1, 0x94, 0x0E, 0x14, 0x01, 0x8B, 0x15, 0x48 #        0 .......H
-    .byte 0x41, 0x52, 0x00, 0x8B, 0x4C, 0x24, 0x04, 0x6A #        8 AR..L$.j
-    .byte 0x01, 0x89, 0x0C, 0x82, 0xFF, 0x05, 0x94, 0x0E #       10 ........
-    .byte 0x14, 0x01, 0x58, 0xC2, 0x0C, 0x00             #       18 ..X...
 
+    .global _sub_402C80
+_sub_402C80:
+    mov eax, dword ptr [0x1140e94]                       # 00402C80
+    mov edx, dword ptr [0x524148]                        # 00402C85
+    mov ecx, dword ptr [esp + 4]                         # 00402C8B
+    push 1                                               # 00402C8F
+    mov dword ptr [edx + eax*4], ecx                     # 00402C91
+    inc dword ptr [0x1140e94]                            # 00402C94
+    pop eax                                              # 00402C9A
+    ret 0xc                                              # 00402C9B
 
     .global _sub_402C9E
 _sub_402C9E:
@@ -1623,10 +2910,8 @@ _sub_402C9E:
     msvc_cmp esi, ebx                                    # 00402CC0
     mov dword ptr [ebp - 0x7c], edi                      # 00402CC2
     mov dword ptr [ebp - 0x78], 1                        # 00402CC5
-    je _sub_402CEF                                       # 00402CCC
-
-    .global _sub_402CCE
-_sub_402CCE:
+    je .L402CEF                                          # 00402CCC
+.L402CCE:
     push dword ptr [esi]                                 # 00402CCE
     mov edi, dword ptr [esi + 8]                         # 00402CD0
     call _sub_4D1355                                     # 00402CD3
@@ -1640,51 +2925,41 @@ _sub_402CCE:
     msvc_cmp edi, ebx                                    # 00402CE8
     pop ecx                                              # 00402CEA
     msvc_mov esi, edi                                    # 00402CEB
-    jne _sub_402CCE                                      # 00402CED
-
-    .global _sub_402CEF
-_sub_402CEF:
+    jne .L402CCE                                         # 00402CED
+.L402CEF:
     mov eax, dword ptr [0x524154]                        # 00402CEF
     mov dword ptr [0x524158], ebx                        # 00402CF4
     msvc_cmp eax, ebx                                    # 00402CFA
-    je _sub_402D0A                                       # 00402CFC
+    je .L402D0A                                          # 00402CFC
     mov ecx, dword ptr [eax]                             # 00402CFE
     push eax                                             # 00402D00
     call dword ptr [ecx + 8]                             # 00402D01
     mov dword ptr [0x524154], ebx                        # 00402D04
-
-    .global _sub_402D0A
-_sub_402D0A:
+.L402D0A:
     mov eax, dword ptr [0x524148]                        # 00402D0A
     msvc_cmp eax, ebx                                    # 00402D0F
-    je _sub_402D20                                       # 00402D11
+    je .L402D20                                          # 00402D11
     push eax                                             # 00402D13
     call _sub_4D1355                                     # 00402D14
     pop ecx                                              # 00402D19
     mov dword ptr [0x524148], ebx                        # 00402D1A
-
-    .global _sub_402D20
-_sub_402D20:
+.L402D20:
     mov eax, dword ptr [0x524144]                        # 00402D20
     msvc_cmp eax, ebx                                    # 00402D25
-    je _sub_402D35                                       # 00402D27
+    je .L402D35                                          # 00402D27
     mov ecx, dword ptr [eax]                             # 00402D29
     push eax                                             # 00402D2B
     call dword ptr [ecx + 8]                             # 00402D2C
     mov dword ptr [0x524144], ebx                        # 00402D2F
-
-    .global _sub_402D35
-_sub_402D35:
+.L402D35:
     mov eax, dword ptr [0x52414c]                        # 00402D35
     msvc_cmp eax, ebx                                    # 00402D3A
-    je _sub_402D4A                                       # 00402D3C
+    je .L402D4A                                          # 00402D3C
     mov ecx, dword ptr [eax]                             # 00402D3E
     push eax                                             # 00402D40
     call dword ptr [ecx + 8]                             # 00402D41
     mov dword ptr [0x52414c], ebx                        # 00402D44
-
-    .global _sub_402D4A
-_sub_402D4A:
+.L402D4A:
     mov eax, dword ptr [0x524140]                        # 00402D4A
     push eax                                             # 00402D4F
     mov ecx, dword ptr [eax]                             # 00402D50
@@ -1708,11 +2983,9 @@ _sub_402D6D:
     mov esi, dword ptr [0x524158]                        # 00402D6F
     msvc_xor ebx, ebx                                    # 00402D75
     msvc_cmp esi, ebx                                    # 00402D77
-    je _sub_402D9E                                       # 00402D79
+    je .L402D9E                                          # 00402D79
     push edi                                             # 00402D7B
-
-    .global _sub_402D7C
-_sub_402D7C:
+.L402D7C:
     push dword ptr [esi]                                 # 00402D7C
     mov edi, dword ptr [esi + 8]                         # 00402D7E
     call _sub_4D1355                                     # 00402D81
@@ -1726,30 +2999,24 @@ _sub_402D7C:
     msvc_cmp edi, ebx                                    # 00402D96
     pop ecx                                              # 00402D98
     msvc_mov esi, edi                                    # 00402D99
-    jne _sub_402D7C                                      # 00402D9B
+    jne .L402D7C                                         # 00402D9B
     pop edi                                              # 00402D9D
-
-    .global _sub_402D9E
-_sub_402D9E:
+.L402D9E:
     mov eax, dword ptr [0x524154]                        # 00402D9E
     mov dword ptr [0x524158], ebx                        # 00402DA3
     msvc_cmp eax, ebx                                    # 00402DA9
-    je _sub_402DB9                                       # 00402DAB
+    je .L402DB9                                          # 00402DAB
     mov ecx, dword ptr [eax]                             # 00402DAD
     push eax                                             # 00402DAF
     call dword ptr [ecx + 8]                             # 00402DB0
     mov dword ptr [0x524154], ebx                        # 00402DB3
-
-    .global _sub_402DB9
-_sub_402DB9:
+.L402DB9:
     cmp dword ptr [0x524148], ebx                        # 00402DB9
-    je _sub_402DF4                                       # 00402DBF
+    je .L402DF4                                          # 00402DBF
     msvc_xor esi, esi                                    # 00402DC1
     cmp dword ptr [0x1140850], ebx                       # 00402DC3
-    jle _sub_402DE2                                      # 00402DC9
-
-    .global _sub_402DCB
-_sub_402DCB:
+    jle .L402DE2                                         # 00402DC9
+.L402DCB:
     mov eax, dword ptr [0x524148]                        # 00402DCB
     mov eax, dword ptr [eax + esi*4]                     # 00402DD0
     push eax                                             # 00402DD3
@@ -1757,54 +3024,44 @@ _sub_402DCB:
     call dword ptr [ecx + 8]                             # 00402DD6
     inc esi                                              # 00402DD9
     cmp esi, dword ptr [0x1140850]                       # 00402DDA
-    jl _sub_402DCB                                       # 00402DE0
-
-    .global _sub_402DE2
-_sub_402DE2:
+    jl .L402DCB                                          # 00402DE0
+.L402DE2:
     push dword ptr [0x524148]                            # 00402DE2
     call _sub_4D1355                                     # 00402DE8
     pop ecx                                              # 00402DED
     mov dword ptr [0x524148], ebx                        # 00402DEE
-
-    .global _sub_402DF4
-_sub_402DF4:
+.L402DF4:
     mov eax, dword ptr [0x524144]                        # 00402DF4
     msvc_cmp eax, ebx                                    # 00402DF9
-    je _sub_402E09                                       # 00402DFB
+    je .L402E09                                          # 00402DFB
     mov ecx, dword ptr [eax]                             # 00402DFD
     push eax                                             # 00402DFF
     call dword ptr [ecx + 8]                             # 00402E00
     mov dword ptr [0x524144], ebx                        # 00402E03
-
-    .global _sub_402E09
-_sub_402E09:
+.L402E09:
     mov eax, dword ptr [0x52414c]                        # 00402E09
     msvc_cmp eax, ebx                                    # 00402E0E
-    je _sub_402E1E                                       # 00402E10
+    je .L402E1E                                          # 00402E10
     mov ecx, dword ptr [eax]                             # 00402E12
     push eax                                             # 00402E14
     call dword ptr [ecx + 8]                             # 00402E15
     mov dword ptr [0x52414c], ebx                        # 00402E18
-
-    .global _sub_402E1E
-_sub_402E1E:
+.L402E1E:
     mov eax, dword ptr [0x525320]                        # 00402E1E
     msvc_cmp eax, ebx                                    # 00402E23
-    je _sub_402E4A                                       # 00402E25
+    je .L402E4A                                          # 00402E25
     push eax                                             # 00402E27
     msvc_abscall 0x4D727C                                # 00402E28
     msvc_mov esi, eax                                    # 00402E2E
     msvc_cmp esi, ebx                                    # 00402E30
-    je _sub_402E4A                                       # 00402E32
+    je .L402E4A                                          # 00402E32
     push 1                                               # 00402E34
     push esi                                             # 00402E36
     msvc_abscall 0x4D7084                                # 00402E37
     push esi                                             # 00402E3D
     push dword ptr [0x525320]                            # 00402E3E
     msvc_abscall 0x4D7280                                # 00402E44
-
-    .global _sub_402E4A
-_sub_402E4A:
+.L402E4A:
     pop esi                                              # 00402E4A
     pop ebx                                              # 00402E4B
     ret                                                  # 00402E4C
@@ -1822,7 +3079,7 @@ _sub_402E4D:
     push esi                                             # 00402E65
     push edi                                             # 00402E66
     mov dword ptr [0x1140850], eax                       # 00402E67
-    je _sub_402FE0                                       # 00402E6C
+    je .L402FE0                                          # 00402E6C
     mov eax, dword ptr [0x524140]                        # 00402E72
     mov dword ptr [0x1140c60], 0x17c                     # 00402E77
     push 0x1140c60                                       # 00402E81
@@ -1837,7 +3094,7 @@ _sub_402E4D:
     push eax                                             # 00402E9C
     call dword ptr [ecx + 0x50]                          # 00402E9D
     test eax, eax                                        # 00402EA0
-    jne _sub_402FDB                                      # 00402EA2
+    jne .L402FDB                                         # 00402EA2
     mov eax, dword ptr [0x524140]                        # 00402EA8
     push ebx                                             # 00402EAD
     push ebx                                             # 00402EAE
@@ -1848,7 +3105,7 @@ _sub_402E4D:
     push eax                                             # 00402EC3
     call dword ptr [ecx + 0x54]                          # 00402EC4
     test eax, eax                                        # 00402EC7
-    jne _sub_402FDB                                      # 00402EC9
+    jne .L402FDB                                         # 00402EC9
     cmp dword ptr [0x1140008], ebx                       # 00402ECF
     push 0x7c                                            # 00402ED5
     pop esi                                              # 00402ED7
@@ -1856,7 +3113,7 @@ _sub_402E4D:
     push esi                                             # 00402EDE
     push ebx                                             # 00402EDF
     push eax                                             # 00402EE0
-    jle _sub_402F71                                      # 00402EE1
+    jle .L402F71                                         # 00402EE1
     call _sub_4D0FC0                                     # 00402EE7
     mov eax, dword ptr [0x1140008]                       # 00402EEC
     add esp, 0xc                                         # 00402EF1
@@ -1873,7 +3130,7 @@ _sub_402E4D:
     push eax                                             # 00402F1F
     call dword ptr [ecx + 0x18]                          # 00402F20
     test eax, eax                                        # 00402F23
-    jne _sub_402FDB                                      # 00402F25
+    jne .L402FDB                                         # 00402F25
     push 4                                               # 00402F2B
     push dword ptr [0x1140008]                           # 00402F2D
     call _sub_4D1384                                     # 00402F33
@@ -1881,7 +3138,7 @@ _sub_402E4D:
     msvc_cmp eax, ebx                                    # 00402F39
     pop ecx                                              # 00402F3B
     mov dword ptr [0x524148], eax                        # 00402F3C
-    je _sub_402FDB                                       # 00402F41
+    je .L402FDB                                          # 00402F41
     mov eax, dword ptr [0x524144]                        # 00402F47
     mov dword ptr [0x1140e94], ebx                       # 00402F4C
     push 0x402c80                                        # 00402F52
@@ -1890,14 +3147,12 @@ _sub_402E4D:
     push eax                                             # 00402F5A
     call dword ptr [ecx + 0x24]                          # 00402F5B
     test eax, eax                                        # 00402F5E
-    jne _sub_402FDB                                      # 00402F60
+    jne .L402FDB                                         # 00402F60
     mov eax, dword ptr [0x1140e94]                       # 00402F62
     cmp eax, dword ptr [0x1140008]                       # 00402F67
-    je _sub_402FAF                                       # 00402F6D
-    jmp _sub_402FDB                                      # 00402F6F
-
-    .global _sub_402F71
-_sub_402F71:
+    je .L402FAF                                          # 00402F6D
+    jmp .L402FDB                                         # 00402F6F
+.L402F71:
     call _sub_4D0FC0                                     # 00402F71
     mov eax, dword ptr [0x524140]                        # 00402F76
     add esp, 0xc                                         # 00402F7B
@@ -1912,11 +3167,9 @@ _sub_402F71:
     push eax                                             # 00402FA1
     call dword ptr [ecx + 0x18]                          # 00402FA2
     test eax, eax                                        # 00402FA5
-    jne _sub_402FDB                                      # 00402FA7
+    jne .L402FDB                                         # 00402FA7
     mov dword ptr [0x524148], ebx                        # 00402FA9
-
-    .global _sub_402FAF
-_sub_402FAF:
+.L402FAF:
     mov eax, dword ptr [0x524140]                        # 00402FAF
     push ebx                                             # 00402FB4
     push 0x524154                                        # 00402FB5
@@ -1925,7 +3178,7 @@ _sub_402FAF:
     push eax                                             # 00402FBD
     call dword ptr [ecx + 0x10]                          # 00402FBE
     test eax, eax                                        # 00402FC1
-    jne _sub_402FDB                                      # 00402FC3
+    jne .L402FDB                                         # 00402FC3
     mov eax, dword ptr [0x524154]                        # 00402FC5
     push dword ptr [0x525320]                            # 00402FCA
     mov ecx, dword ptr [eax]                             # 00402FD0
@@ -1933,30 +3186,22 @@ _sub_402FAF:
     push eax                                             # 00402FD3
     call dword ptr [ecx + 0x20]                          # 00402FD4
     test eax, eax                                        # 00402FD7
-    je _sub_402FE7                                       # 00402FD9
-
-    .global _sub_402FDB
-_sub_402FDB:
+    je .L402FE7                                          # 00402FD9
+.L402FDB:
     call _sub_402C9E                                     # 00402FDB
-
-    .global _sub_402FE0
-_sub_402FE0:
+.L402FE0:
     msvc_xor eax, eax                                    # 00402FE0
-
-    .global _sub_402FE2
-_sub_402FE2:
+.L402FE2:
     pop edi                                              # 00402FE2
     pop esi                                              # 00402FE3
     pop ebx                                              # 00402FE4
     leave                                                # 00402FE5
     ret                                                  # 00402FE6
-
-    .global _sub_402FE7
-_sub_402FE7:
+.L402FE7:
     push 8                                               # 00402FE7
     pop esi                                              # 00402FE9
     cmp dword ptr [0x1140620], esi                       # 00402FEA
-    jne _sub_4030BA                                      # 00402FF0
+    jne .L4030BA                                         # 00402FF0
     push ebx                                             # 00402FF6
     msvc_abscall 0x4D727C                                # 00402FF7
     mov edi, dword ptr [0x4d7088]                        # 00402FFD
@@ -1970,14 +3215,12 @@ _sub_402FE7:
     push 0xa                                             # 00403013
     lea eax, [ebp - 0x10d]                               # 00403015
     pop ecx                                              # 0040301B
-
-    .global _sub_40301C
-_sub_40301C:
+.L40301C:
     mov byte ptr [eax - 0x3d8], 2                        # 0040301C
     mov byte ptr [eax], 2                                # 00403023
     add eax, 4                                           # 00403026
     dec ecx                                              # 00403029
-    jne _sub_40301C                                      # 0040302A
+    jne .L40301C                                         # 0040302A
     lea eax, [ebp - 0x110]                               # 0040302C
     mov esi, 0xf6                                        # 00403032
     push eax                                             # 00403037
@@ -1991,9 +3234,7 @@ _sub_40301C:
     push 0xa                                             # 0040304A
     lea eax, [ebp - 0x4bf]                               # 0040304C
     pop edx                                              # 00403052
-
-    .global _sub_403053
-_sub_403053:
+.L403053:
     msvc_mov cl, dl                                      # 00403053
     sub cl, 9                                            # 00403055
     inc edx                                              # 00403058
@@ -2003,7 +3244,7 @@ _sub_403053:
     mov byte ptr [eax + 2], 5                            # 00403061
     add eax, 4                                           # 00403065
     msvc_cmp edx, esi                                    # 00403068
-    jl _sub_403053                                       # 0040306A
+    jl .L403053                                          # 0040306A
     mov eax, dword ptr [0x524140]                        # 0040306C
     push ebx                                             # 00403071
     lea edx, [ebp - 0x4e8]                               # 00403072
@@ -2014,12 +3255,10 @@ _sub_403053:
     push eax                                             # 00403082
     call dword ptr [ecx + 0x14]                          # 00403083
     test eax, eax                                        # 00403086
-    je _sub_403094                                       # 00403088
+    je .L403094                                          # 00403088
     call _sub_402D6D                                     # 0040308A
-    msvc_jmp _sub_402FE0                                 # 0040308F
-
-    .global _sub_403094
-_sub_403094:
+    msvc_jmp .L402FE0                                    # 0040308F
+.L403094:
     mov eax, dword ptr [0x524144]                        # 00403094
     push dword ptr [0x52414c]                            # 00403099
     mov ecx, dword ptr [eax]                             # 0040309F
@@ -2031,9 +3270,7 @@ _sub_403094:
     push 8                                               # 004030B5
     rep movsd dword ptr es:[edi], dword ptr [esi]        # 004030B7
     pop esi                                              # 004030B9
-
-    .global _sub_4030BA
-_sub_4030BA:
+.L4030BA:
     mov ecx, dword ptr [0x1140850]                       # 004030BA
     push 0x40                                            # 004030C0
     pop eax                                              # 004030C2
@@ -2052,12 +3289,10 @@ _sub_4030BA:
     push eax                                             # 004030EB
     call dword ptr [ecx + 0x18]                          # 004030EC
     test eax, eax                                        # 004030EF
-    jne _sub_403153                                      # 004030F1
+    jne .L403153                                         # 004030F1
     mov dword ptr [ebp - 0xe8], 0x64                     # 004030F3
     mov dword ptr [ebp - 0x98], ebx                      # 004030FD
-
-    .global _sub_403103
-_sub_403103:
+.L403103:
     mov eax, dword ptr [0x524150]                        # 00403103
     lea edx, [ebp - 0xe8]                                # 00403108
     push edx                                             # 0040310E
@@ -2069,12 +3304,10 @@ _sub_403103:
     push eax                                             # 00403119
     call dword ptr [ecx + 0x14]                          # 0040311A
     cmp eax, 0x887601c2                                  # 0040311D
-    jne _sub_40312B                                      # 00403122
+    jne .L40312B                                         # 00403122
     call _sub_401C76                                     # 00403124
-    jmp _sub_403103                                      # 00403129
-
-    .global _sub_40312B
-_sub_40312B:
+    jmp .L403103                                         # 00403129
+.L40312B:
     push 0x50605c                                        # 0040312B
     push dword ptr [0x524150]                            # 00403130
     call _sub_4035E7                                     # 00403136
@@ -2089,32 +3322,26 @@ _sub_40312B:
     push esi                                             # 0040314E
     push eax                                             # 0040314F
     call dword ptr [ecx + 0x74]                          # 00403150
-
-    .global _sub_403153
-_sub_403153:
+.L403153:
     mov ecx, dword ptr [0x1140008]                       # 00403153
     mov dword ptr [0x114062c], esi                       # 00403159
     msvc_cmp ecx, ebx                                    # 0040315F
     mov dword ptr [0x113fffc], esi                       # 00403161
-    jle _sub_40317F                                      # 00403167
+    jle .L40317F                                         # 00403167
     mov eax, 0x1140ea0                                   # 00403169
-
-    .global _sub_40316E
-_sub_40316E:
+.L40316E:
     mov dword ptr [eax + 4], ebx                         # 0040316E
     mov dword ptr [eax], ebx                             # 00403171
     mov dword ptr [eax + 0xc], ebx                       # 00403173
     mov dword ptr [eax + 8], ebx                         # 00403176
     add eax, 0x10                                        # 00403179
     dec ecx                                              # 0040317C
-    jne _sub_40316E                                      # 0040317D
-
-    .global _sub_40317F
-_sub_40317F:
+    jne .L40316E                                         # 0040317D
+.L40317F:
     push 1                                               # 0040317F
     mov dword ptr [0x525230], 0x402c9e                   # 00403181
     pop eax                                              # 0040318B
-    msvc_jmp _sub_402FE2                                 # 0040318C
+    msvc_jmp .L402FE2                                    # 0040318C
 
     .global _sub_403191
 _sub_403191:
@@ -2128,7 +3355,7 @@ _sub_403191:
     msvc_cmp ecx, esi                                    # 004031A8
     push edi                                             # 004031AA
     mov dword ptr [0x1140850], eax                       # 004031AB
-    je _sub_40336F                                       # 004031B0
+    je .L40336F                                          # 004031B0
     mov eax, dword ptr [0x524140]                        # 004031B6
     push 8                                               # 004031BB
     push ecx                                             # 004031BD
@@ -2136,7 +3363,7 @@ _sub_403191:
     mov edx, dword ptr [eax]                             # 004031BF
     call dword ptr [edx + 0x50]                          # 004031C1
     test eax, eax                                        # 004031C4
-    jne _sub_40336A                                      # 004031C6
+    jne .L40336A                                         # 004031C6
     push 0x7c                                            # 004031CC
     lea eax, [ebp - 0x7c]                                # 004031CE
     pop edi                                              # 004031D1
@@ -2157,10 +3384,10 @@ _sub_403191:
     push eax                                             # 004031FF
     call dword ptr [ecx + 0x18]                          # 00403200
     test eax, eax                                        # 00403203
-    jne _sub_40336A                                      # 00403205
+    jne .L40336A                                         # 00403205
     mov eax, dword ptr [0x1140008]                       # 0040320B
     msvc_cmp eax, esi                                    # 00403210
-    jle _sub_40322B                                      # 00403212
+    jle .L40322B                                         # 00403212
     push 4                                               # 00403214
     push eax                                             # 00403216
     call _sub_4D1384                                     # 00403217
@@ -2168,16 +3395,12 @@ _sub_403191:
     msvc_cmp eax, esi                                    # 0040321D
     pop ecx                                              # 0040321F
     mov dword ptr [0x524148], eax                        # 00403220
-    je _sub_40336A                                       # 00403225
-
-    .global _sub_40322B
-_sub_40322B:
+    je .L40336A                                          # 00403225
+.L40322B:
     msvc_xor edi, edi                                    # 0040322B
     cmp dword ptr [0x1140008], esi                       # 0040322D
-    jle _sub_40327E                                      # 00403233
-
-    .global _sub_403235
-_sub_403235:
+    jle .L40327E                                         # 00403233
+.L403235:
     mov eax, dword ptr [0x113fff4]                       # 00403235
     mov edx, dword ptr [0x524148]                        # 0040323A
     mov dword ptr [ebp - 0x74], eax                      # 00403240
@@ -2195,13 +3418,11 @@ _sub_403235:
     push eax                                             # 00403269
     call dword ptr [ecx + 0x18]                          # 0040326A
     test eax, eax                                        # 0040326D
-    jne _sub_40336A                                      # 0040326F
+    jne .L40336A                                         # 0040326F
     inc edi                                              # 00403275
     cmp edi, dword ptr [0x1140008]                       # 00403276
-    jl _sub_403235                                       # 0040327C
-
-    .global _sub_40327E
-_sub_40327E:
+    jl .L403235                                          # 0040327C
+.L40327E:
     mov eax, dword ptr [0x524140]                        # 0040327E
     push esi                                             # 00403283
     push 0x524154                                        # 00403284
@@ -2210,7 +3431,7 @@ _sub_40327E:
     push eax                                             # 0040328C
     call dword ptr [ecx + 0x10]                          # 0040328D
     test eax, eax                                        # 00403290
-    jne _sub_40336A                                      # 00403292
+    jne .L40336A                                         # 00403292
     mov eax, dword ptr [0x524154]                        # 00403298
     push dword ptr [0x525320]                            # 0040329D
     mov ecx, dword ptr [eax]                             # 004032A3
@@ -2218,16 +3439,16 @@ _sub_40327E:
     push eax                                             # 004032A6
     call dword ptr [ecx + 0x20]                          # 004032A7
     test eax, eax                                        # 004032AA
-    jne _sub_40336A                                      # 004032AC
+    jne .L40336A                                         # 004032AC
     mov eax, dword ptr [0x524144]                        # 004032B2
     push dword ptr [0x524154]                            # 004032B7
     mov ecx, dword ptr [eax]                             # 004032BD
     push eax                                             # 004032BF
     call dword ptr [ecx + 0x70]                          # 004032C0
     test eax, eax                                        # 004032C3
-    jne _sub_40336A                                      # 004032C5
+    jne .L40336A                                         # 004032C5
     cmp dword ptr [0x1140620], 8                         # 004032CB
-    jne _sub_403398                                      # 004032D2
+    jne .L403398                                         # 004032D2
     push ebx                                             # 004032D8
     push esi                                             # 004032D9
     msvc_abscall 0x4D727C                                # 004032DA
@@ -2254,18 +3475,14 @@ _sub_40327E:
     pop edx                                              # 00403318
     pop ebx                                              # 00403319
     msvc_mov ecx, edx                                    # 0040331A
-
-    .global _sub_40331C
-_sub_40331C:
+.L40331C:
     mov byte ptr [eax - 0x3d8], 2                        # 0040331C
     mov byte ptr [eax], 2                                # 00403323
     add eax, 4                                           # 00403326
     dec ecx                                              # 00403329
-    jne _sub_40331C                                      # 0040332A
+    jne .L40331C                                         # 0040332A
     lea eax, [ebp - 0x453]                               # 0040332C
-
-    .global _sub_403332
-_sub_403332:
+.L403332:
     msvc_mov cl, dl                                      # 00403332
     sub cl, 9                                            # 00403334
     inc edx                                              # 00403337
@@ -2275,7 +3492,7 @@ _sub_403332:
     mov byte ptr [eax + 2], 4                            # 00403340
     add eax, 4                                           # 00403344
     msvc_cmp edx, edi                                    # 00403347
-    jl _sub_403332                                       # 00403349
+    jl .L403332                                          # 00403349
     mov eax, dword ptr [0x524140]                        # 0040334B
     push 0                                               # 00403350
     lea edx, [ebp - 0x47c]                               # 00403352
@@ -2286,25 +3503,17 @@ _sub_403332:
     push eax                                             # 00403362
     call dword ptr [ecx + 0x14]                          # 00403363
     test eax, eax                                        # 00403366
-    je _sub_403375                                       # 00403368
-
-    .global _sub_40336A
-_sub_40336A:
+    je .L403375                                          # 00403368
+.L40336A:
     call _sub_402D6D                                     # 0040336A
-
-    .global _sub_40336F
-_sub_40336F:
+.L40336F:
     msvc_xor eax, eax                                    # 0040336F
-
-    .global _sub_403371
-_sub_403371:
+.L403371:
     pop edi                                              # 00403371
     pop esi                                              # 00403372
     leave                                                # 00403373
     ret                                                  # 00403374
-
-    .global _sub_403375
-_sub_403375:
+.L403375:
     mov eax, dword ptr [0x524144]                        # 00403375
     push dword ptr [0x52414c]                            # 0040337A
     mov ecx, dword ptr [eax]                             # 00403380
@@ -2314,31 +3523,25 @@ _sub_403375:
     lea esi, [ebp - 0x47c]                               # 0040338B
     mov edi, 0x1140860                                   # 00403391
     rep movsd dword ptr es:[edi], dword ptr [esi]        # 00403396
-
-    .global _sub_403398
-_sub_403398:
+.L403398:
     push 1                                               # 00403398
     mov dword ptr [0x525230], 0x402d6d                   # 0040339A
     pop eax                                              # 004033A4
-    jmp _sub_403371                                      # 004033A5
+    jmp .L403371                                         # 004033A5
 
     .global _sub_4033A7
 _sub_4033A7:
     cmp dword ptr [0x1140008], 1                         # 004033A7
-    jg _sub_4034F8                                       # 004033AE
+    jg .L4034F8                                          # 004033AE
     cmp dword ptr [0x524164], 0                          # 004033B4
-    je _sub_4033C4                                       # 004033BB
+    je .L4033C4                                          # 004033BB
     call _sub_402E4D                                     # 004033BD
-    jmp _sub_4033C9                                      # 004033C2
-
-    .global _sub_4033C4
-_sub_4033C4:
+    jmp .L4033C9                                         # 004033C2
+.L4033C4:
     call _sub_403191                                     # 004033C4
-
-    .global _sub_4033C9
-_sub_4033C9:
+.L4033C9:
     test eax, eax                                        # 004033C9
-    je _sub_4034F8                                       # 004033CB
+    je .L4034F8                                          # 004033CB
     and dword ptr [0x524158], 0                          # 004033D1
     and dword ptr [0x1140e98], 0                         # 004033D8
     and dword ptr [0x113fff8], 0                         # 004033DF
@@ -2372,14 +3575,13 @@ _sub_4033C9:
     mov dword ptr [0x52537c], 0x4028d7                   # 004034EC
     pop eax                                              # 004034F6
     ret                                                  # 004034F7
-
-    .global _sub_4034F8
-_sub_4034F8:
+.L4034F8:
     msvc_xor eax, eax                                    # 004034F8
     ret                                                  # 004034FA
-# 0x4034FB
-    .byte 0xC3                                           #        0 .
 
+    .global _sub_4034FB
+_sub_4034FB:
+    ret                                                  # 004034FB
 
     .global _sub_4034FC
 _sub_4034FC:
@@ -2390,9 +3592,9 @@ _sub_4034FC:
     msvc_xor esi, esi                                    # 00403503
     cmp dword ptr [0x524174], esi                        # 00403505
     push edi                                             # 0040350B
-    jne _sub_40356F                                      # 0040350C
+    jne .L40356F                                         # 0040350C
     cmp dword ptr [0x524144], esi                        # 0040350E
-    je _sub_40356F                                       # 00403514
+    je .L40356F                                          # 00403514
     push 0x7c                                            # 00403516
     lea eax, [ebp - 0x7c]                                # 00403518
     pop edi                                              # 0040351B
@@ -2404,9 +3606,7 @@ _sub_4034FC:
     mov dword ptr [ebp - 0x7c], edi                      # 00403527
     push 1                                               # 0040352A
     pop edi                                              # 0040352C
-
-    .global _sub_40352D
-_sub_40352D:
+.L40352D:
     mov eax, dword ptr [0x524144]                        # 0040352D
     push esi                                             # 00403532
     lea edx, [ebp - 0x7c]                                # 00403533
@@ -2417,16 +3617,14 @@ _sub_40352D:
     push eax                                             # 0040353B
     call dword ptr [ecx + 0x64]                          # 0040353C
     cmp eax, 0x887601c2                                  # 0040353F
-    jne _sub_403551                                      # 00403544
+    jne .L403551                                         # 00403544
     call _sub_401C76                                     # 00403546
     test eax, eax                                        # 0040354B
-    je _sub_40356F                                       # 0040354D
-    jmp _sub_40352D                                      # 0040354F
-
-    .global _sub_403551
-_sub_403551:
+    je .L40356F                                          # 0040354D
+    jmp .L40352D                                         # 0040354F
+.L403551:
     msvc_cmp eax, esi                                    # 00403551
-    jne _sub_40356F                                      # 00403553
+    jne .L40356F                                         # 00403553
     mov eax, dword ptr [ebp + 8]                         # 00403555
     mov ecx, dword ptr [ebp - 0x58]                      # 00403558
     mov dword ptr [eax], ecx                             # 0040355B
@@ -2435,14 +3633,10 @@ _sub_403551:
     mov dword ptr [eax], ecx                             # 00403563
     mov dword ptr [0x524174], edi                        # 00403565
     msvc_mov eax, edi                                    # 0040356B
-    jmp _sub_403571                                      # 0040356D
-
-    .global _sub_40356F
-_sub_40356F:
+    jmp .L403571                                         # 0040356D
+.L40356F:
     msvc_xor eax, eax                                    # 0040356F
-
-    .global _sub_403571
-_sub_403571:
+.L403571:
     pop edi                                              # 00403571
     pop esi                                              # 00403572
     leave                                                # 00403573
@@ -2451,18 +3645,16 @@ _sub_403571:
     .global _sub_403575
 _sub_403575:
     cmp dword ptr [0x524174], 0                          # 00403575
-    je _sub_403599                                       # 0040357C
+    je .L403599                                          # 0040357C
     mov eax, dword ptr [0x524144]                        # 0040357E
     test eax, eax                                        # 00403583
-    je _sub_403599                                       # 00403585
+    je .L403599                                          # 00403585
     mov ecx, dword ptr [eax]                             # 00403587
     push 0                                               # 00403589
     push eax                                             # 0040358B
     call dword ptr [ecx + 0x80]                          # 0040358C
     and dword ptr [0x524174], 0                          # 00403592
-
-    .global _sub_403599
-_sub_403599:
+.L403599:
     ret                                                  # 00403599
 
     .global _sub_40359A
@@ -2474,7 +3666,7 @@ _sub_40359A:
     push 0                                               # 004035B4
     msvc_abscall 0x4D7278                                # 004035B6
     test eax, eax                                        # 004035BC
-    je _sub_4035E4                                       # 004035BE
+    je .L4035E4                                          # 004035BE
     mov eax, dword ptr [0x1140e68]                       # 004035C0
     mov dword ptr [0x1140de0], eax                       # 004035C5
     mov eax, dword ptr [0x1140e70]                       # 004035CA
@@ -2483,9 +3675,7 @@ _sub_40359A:
     mov dword ptr [0x1140de4], eax                       # 004035D9
     mov eax, 0x1140de0                                   # 004035DE
     ret                                                  # 004035E3
-
-    .global _sub_4035E4
-_sub_4035E4:
+.L4035E4:
     msvc_xor eax, eax                                    # 004035E4
     ret                                                  # 004035E6
 
@@ -2507,7 +3697,7 @@ _sub_4035E7:
     call edi                                             # 00403606
     msvc_mov ebx, eax                                    # 00403608
     msvc_cmp ebx, esi                                    # 0040360A
-    jne _sub_40362A                                      # 0040360C
+    jne .L40362A                                         # 0040360C
     push 0x2010                                          # 0040360E
     push esi                                             # 00403613
     push esi                                             # 00403614
@@ -2517,12 +3707,10 @@ _sub_4035E7:
     call edi                                             # 0040361B
     msvc_mov ebx, eax                                    # 0040361D
     msvc_cmp ebx, esi                                    # 0040361F
-    jne _sub_40362A                                      # 00403621
+    jne .L40362A                                         # 00403621
     mov eax, 0x80004005                                  # 00403623
-    jmp _sub_403646                                      # 00403628
-
-    .global _sub_40362A
-_sub_40362A:
+    jmp .L403646                                         # 00403628
+.L40362A:
     push esi                                             # 0040362A
     push esi                                             # 0040362B
     push esi                                             # 0040362C
@@ -2535,9 +3723,7 @@ _sub_40362A:
     push ebx                                             # 0040363D
     msvc_abscall 0x4D708C                                # 0040363E
     msvc_mov eax, esi                                    # 00403644
-
-    .global _sub_403646
-_sub_403646:
+.L403646:
     pop edi                                              # 00403646
     pop esi                                              # 00403647
     pop ebx                                              # 00403648
@@ -2552,10 +3738,10 @@ _sub_40364A:
     push edi                                             # 00403654
     msvc_xor edi, edi                                    # 00403655
     cmp dword ptr [ebp + 0xc], edi                       # 00403657
-    je _sub_40370F                                       # 0040365A
+    je .L40370F                                          # 0040365A
     mov esi, dword ptr [ebp + 8]                         # 00403660
     msvc_cmp esi, edi                                    # 00403663
-    je _sub_40370F                                       # 00403665
+    je .L40370F                                          # 00403665
     mov eax, dword ptr [esi]                             # 0040366B
     push ebx                                             # 0040366D
     push esi                                             # 0040366E
@@ -2572,19 +3758,15 @@ _sub_40364A:
     push dword ptr [ebp + 0xc]                           # 0040368B
     msvc_abscall 0x4D7090                                # 0040368E
     cmp dword ptr [ebp + 0x18], edi                      # 00403694
-    jne _sub_40369F                                      # 00403697
+    jne .L40369F                                         # 00403697
     mov eax, dword ptr [ebp - 0x14]                      # 00403699
     mov dword ptr [ebp + 0x18], eax                      # 0040369C
-
-    .global _sub_40369F
-_sub_40369F:
+.L40369F:
     cmp dword ptr [ebp + 0x1c], edi                      # 0040369F
-    jne _sub_4036AA                                      # 004036A2
+    jne .L4036AA                                         # 004036A2
     mov eax, dword ptr [ebp - 0x10]                      # 004036A4
     mov dword ptr [ebp + 0x1c], eax                      # 004036A7
-
-    .global _sub_4036AA
-_sub_4036AA:
+.L4036AA:
     mov eax, dword ptr [esi]                             # 004036AA
     lea ecx, [ebp - 0x94]                                # 004036AC
     push ecx                                             # 004036B2
@@ -2599,7 +3781,7 @@ _sub_4036AA:
     call dword ptr [eax + 0x44]                          # 004036D2
     msvc_cmp eax, edi                                    # 004036D5
     mov dword ptr [ebp + 0xc], eax                       # 004036D7
-    jne _sub_403702                                      # 004036DA
+    jne .L403702                                         # 004036DA
     push 0xcc0020                                        # 004036DC
     push dword ptr [ebp + 0x14]                          # 004036E1
     push dword ptr [ebp + 0x10]                          # 004036E4
@@ -2614,21 +3796,15 @@ _sub_4036AA:
     mov eax, dword ptr [esi]                             # 004036FC
     push esi                                             # 004036FE
     call dword ptr [eax + 0x68]                          # 004036FF
-
-    .global _sub_403702
-_sub_403702:
+.L403702:
     push ebx                                             # 00403702
     msvc_abscall 0x4D7094                                # 00403703
     mov eax, dword ptr [ebp + 0xc]                       # 00403709
     pop ebx                                              # 0040370C
-    jmp _sub_403714                                      # 0040370D
-
-    .global _sub_40370F
-_sub_40370F:
+    jmp .L403714                                         # 0040370D
+.L40370F:
     mov eax, 0x80004005                                  # 0040370F
-
-    .global _sub_403714
-_sub_403714:
+.L403714:
     pop edi                                              # 00403714
     pop esi                                              # 00403715
     leave                                                # 00403716
@@ -2639,12 +3815,10 @@ _sub_403718:
     call _sub_405442                                     # 00403718
     test eax, eax                                        # 0040371D
     mov dword ptr [0x525320], eax                        # 0040371F
-    je _sub_403888                                       # 00403724
+    je .L403888                                          # 00403724
     msvc_xor ecx, ecx                                    # 0040372A
     mov eax, 0x524179                                    # 0040372C
-
-    .global _sub_403731
-_sub_403731:
+.L403731:
     mov byte ptr [eax - 1], cl                           # 00403731
     mov byte ptr [eax], cl                               # 00403734
     mov byte ptr [eax + 1], cl                           # 00403736
@@ -2652,7 +3826,7 @@ _sub_403731:
     add eax, 4                                           # 0040373D
     inc ecx                                              # 00403740
     cmp eax, 0x524579                                    # 00403741
-    jl _sub_403731                                       # 00403746
+    jl .L403731                                          # 00403746
     push 0x524580                                        # 00403748
     push 0x100                                           # 0040374D
     push 0x524178                                        # 00403752
@@ -2660,7 +3834,7 @@ _sub_403731:
     add esp, 0xc                                         # 0040375C
     mov dword ptr [0x52498c], eax                        # 0040375F
     test eax, eax                                        # 00403764
-    je _sub_403888                                       # 00403766
+    je .L403888                                          # 00403766
     push 1                                               # 0040376C
     mov dword ptr [0x525230], 0x40417f                   # 0040376E
     mov dword ptr [0x525234], 0x403f6d                   # 00403778
@@ -2692,326 +3866,939 @@ _sub_403731:
     mov dword ptr [0x52537c], 0x403f70                   # 0040387C
     pop eax                                              # 00403886
     ret                                                  # 00403887
-
-    .global _sub_403888
-_sub_403888:
+.L403888:
     msvc_xor eax, eax                                    # 00403888
     ret                                                  # 0040388A
-# 0x40388B
-    .byte 0x56, 0x8B, 0x74, 0x24, 0x08, 0x68, 0xB8, 0x00 #        0 V.t$.h..
-    .byte 0x00, 0x00, 0x6A, 0x00, 0x56, 0xE8, 0x23, 0xD7 #        8 ..j.V.#.
-    .byte 0x0C, 0x00, 0x83, 0xC4, 0x0C, 0x6A, 0x01, 0x58 #       10 .....j.X
-    .byte 0x89, 0x86, 0xA0, 0x00, 0x00, 0x00, 0x5E, 0xC3 #       18 ......^.
-    .byte 0x8B, 0x44, 0x24, 0x04, 0x83, 0xB8, 0xA0, 0x00 #       20 .D$.....
-    .byte 0x00, 0x00, 0x00, 0x75, 0x13, 0x66, 0xC7, 0x40 #       28 ...u.f.@
-    .byte 0x04, 0x04, 0x00, 0x66, 0xC7, 0x40, 0x0A, 0x01 #       30 ...f.@..
-    .byte 0x00, 0x66, 0xC7, 0x40, 0x0C, 0x01, 0x00, 0xC3 #       38 .f.@....
-    .byte 0x33, 0xC0, 0xC3, 0x8B, 0x44, 0x24, 0x04, 0x66 #       40 3...D$.f
-    .byte 0x83, 0x60, 0x0C, 0x00, 0xC3, 0x55, 0x8B, 0xEC #       48 .`...U..
-    .byte 0x83, 0xEC, 0x0C, 0x83, 0x3D, 0x8C, 0x49, 0x52 #       50 ....=.IR
-    .byte 0x00, 0x00, 0x56, 0x0F, 0x84, 0xFF, 0x00, 0x00 #       58 ..V.....
-    .byte 0x00, 0x8B, 0x75, 0x0C, 0x81, 0xFE, 0x00, 0x01 #       60 ..u.....
-    .byte 0x00, 0x00, 0x0F, 0x8D, 0xF0, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x8B, 0x0D, 0xB0, 0x51, 0x52, 0x00, 0x3B, 0xF1 #       70 ...QR.;.
-    .byte 0x7D, 0x02, 0x8B, 0xF1, 0xA1, 0xB4, 0x51, 0x52 #       78 }.....QR
-    .byte 0x00, 0x8B, 0x55, 0x10, 0x03, 0xC8, 0x03, 0xD6 #       80 ..U.....
-    .byte 0x3B, 0xD1, 0x7E, 0x05, 0x2B, 0xC6, 0x89, 0x45 #       88 ;.~.+..E
-    .byte 0x10, 0x8B, 0x45, 0x10, 0x53, 0x57, 0x8D, 0x14 #       90 ..E.SW..
-    .byte 0x06, 0x3B, 0xF2, 0x7D, 0x72, 0x8B, 0x4D, 0x08 #       98 .;.}r.M.
-    .byte 0xC7, 0x45, 0x0C, 0x79, 0x41, 0x52, 0x00, 0x29 #       A0 .E.yAR.)
-    .byte 0x4D, 0x0C, 0xC7, 0x45, 0x08, 0x83, 0x45, 0x52 #       A8 M..E..ER
-    .byte 0x00, 0x29, 0x4D, 0x08, 0xC7, 0x45, 0xFC, 0x78 #       B0 .)M..E.x
-    .byte 0x41, 0x52, 0x00, 0x29, 0x4D, 0xFC, 0xC7, 0x45 #       B8 AR.)M..E
-    .byte 0xF8, 0x84, 0x45, 0x52, 0x00, 0x29, 0x4D, 0xF8 #       C0 ..ER.)M.
-    .byte 0xBB, 0x85, 0x45, 0x52, 0x00, 0x2B, 0xD9, 0x2B #       C8 ..ER.+.+
-    .byte 0xD6, 0x8D, 0x3C, 0xB5, 0x78, 0x41, 0x52, 0x00 #       D0 ..<.xAR.
-    .byte 0x8D, 0x44, 0xB1, 0x01, 0x89, 0x55, 0xF4, 0x8B #       D8 .D...U..
-    .byte 0x55, 0x0C, 0x8A, 0x48, 0x01, 0x88, 0x0C, 0x02 #       E0 U..H....
-    .byte 0x8B, 0x55, 0x08, 0x88, 0x0C, 0x02, 0x8B, 0x55 #       E8 .U.....U
-    .byte 0xFC, 0x8A, 0x08, 0x88, 0x0C, 0x02, 0x8B, 0x55 #       F0 .......U
-    .byte 0xF8, 0x88, 0x0C, 0x02, 0x8A, 0x48, 0xFF, 0x88 #       F8 .....H..
-    .byte 0x0F, 0x88, 0x0C, 0x03, 0x83, 0xC0, 0x04, 0x83 #      100 ........
-    .byte 0xC7, 0x04, 0xFF, 0x4D, 0xF4, 0x75, 0xD0, 0xFF #      108 ...M.u..
-    .byte 0x35, 0x20, 0x53, 0x52, 0x00, 0xFF, 0x15, 0x7C #      110 5 SR...|
-    .byte 0x72, 0x4D, 0x00, 0x8B, 0x3D, 0x30, 0x70, 0x4D #      118 rM..=0pM
-    .byte 0x00, 0x6A, 0x00, 0xFF, 0x35, 0x8C, 0x49, 0x52 #      120 .j..5.IR
-    .byte 0x00, 0x8B, 0xD8, 0x53, 0xFF, 0xD7, 0x89, 0x45 #      128 ...S...E
-    .byte 0x0C, 0x8D, 0x04, 0xB5, 0x84, 0x45, 0x52, 0x00 #      130 .....ER.
-    .byte 0x50, 0xFF, 0x75, 0x10, 0x56, 0xFF, 0x35, 0x8C #      138 P.u.V.5.
-    .byte 0x49, 0x52, 0x00, 0xFF, 0x15, 0x44, 0x70, 0x4D #      140 IR...DpM
-    .byte 0x00, 0x6A, 0x01, 0xFF, 0x75, 0x0C, 0x53, 0xFF #      148 .j..u.S.
-    .byte 0xD7, 0x53, 0xFF, 0x35, 0x20, 0x53, 0x52, 0x00 #      150 .S.5 SR.
-    .byte 0xFF, 0x15, 0x80, 0x72, 0x4D, 0x00, 0x5F, 0x5B #      158 ...rM._[
-    .byte 0x5E, 0xC9, 0xC3, 0xFF, 0x74, 0x24, 0x08, 0x6A #      160 ^...t$.j
-    .byte 0x00, 0xFF, 0x74, 0x24, 0x0C, 0xE8, 0xDB, 0xFE #      168 ..t$....
-    .byte 0xFF, 0xFF, 0x83, 0xC4, 0x0C, 0xC3, 0xC3, 0x53 #      170 .......S
-    .byte 0x56, 0x8B, 0x74, 0x24, 0x0C, 0x33, 0xDB, 0x57 #      178 V.t$.3.W
-    .byte 0x39, 0x9E, 0xA0, 0x00, 0x00, 0x00, 0x74, 0x0E #      180 9.....t.
-    .byte 0xFF, 0x35, 0x20, 0x53, 0x52, 0x00, 0xFF, 0x15 #      188 .5 SR...
-    .byte 0x7C, 0x72, 0x4D, 0x00, 0xEB, 0x07, 0x53, 0xFF #      190 |rM...S.
-    .byte 0x15, 0x7C, 0x70, 0x4D, 0x00, 0x8B, 0xF8, 0x3B #      198 .|pM...;
-    .byte 0xFB, 0x74, 0x7D, 0x57, 0xFF, 0x15, 0x4C, 0x70 #      1A0 .t}W..Lp
-    .byte 0x4D, 0x00, 0x57, 0x89, 0x86, 0xA8, 0x00, 0x00 #      1A8 M.W.....
-    .byte 0x00, 0xFF, 0x15, 0x40, 0x70, 0x4D, 0x00, 0x57 #      1B0 ...@pM.W
-    .byte 0x89, 0x86, 0xAC, 0x00, 0x00, 0x00, 0xFF, 0x15 #      1B8 ........
-    .byte 0x3C, 0x70, 0x4D, 0x00, 0x39, 0x9E, 0xA0, 0x00 #      1C0 <pM.9...
-    .byte 0x00, 0x00, 0x89, 0x86, 0xB4, 0x00, 0x00, 0x00 #      1C8 ........
-    .byte 0x89, 0x9E, 0xB0, 0x00, 0x00, 0x00, 0x66, 0xC7 #      1D0 ......f.
-    .byte 0x46, 0x0C, 0x01, 0x00, 0x74, 0x1D, 0x53, 0xFF #      1D8 F...t.S.
-    .byte 0x35, 0x8C, 0x49, 0x52, 0x00, 0x57, 0xFF, 0x15 #      1E0 5.IR.W..
-    .byte 0x30, 0x70, 0x4D, 0x00, 0x57, 0x89, 0x86, 0xA4 #      1E8 0pM.W...
-    .byte 0x00, 0x00, 0x00, 0xFF, 0x15, 0x38, 0x70, 0x4D #      1F0 .....8pM
-    .byte 0x00, 0xEB, 0x25, 0xFF, 0xB6, 0x9C, 0x00, 0x00 #      1F8 ..%.....
-    .byte 0x00, 0x57, 0xFF, 0x15, 0x9C, 0x70, 0x4D, 0x00 #      200 .W...pM.
-    .byte 0x68, 0x78, 0x41, 0x52, 0x00, 0x68, 0x00, 0x01 #      208 hxAR.h..
-    .byte 0x00, 0x00, 0x53, 0x57, 0x89, 0x86, 0xA4, 0x00 #      210 ..SW....
-    .byte 0x00, 0x00, 0xFF, 0x15, 0x34, 0x70, 0x4D, 0x00 #      218 ....4pM.
-    .byte 0x8B, 0xC7, 0x5F, 0x5E, 0x5B, 0xC3, 0x53, 0x56 #      220 .._^[.SV
-    .byte 0x8B, 0x74, 0x24, 0x0C, 0x57, 0x33, 0xFF, 0x66 #      228 .t$.W3.f
-    .byte 0x39, 0x7E, 0x0C, 0x74, 0x79, 0xFF, 0xB6, 0xA8 #      230 9~.ty...
-    .byte 0x00, 0x00, 0x00, 0x8B, 0x5C, 0x24, 0x18, 0x66 #      238 .....$.f
-    .byte 0x89, 0x7E, 0x0C, 0x53, 0xFF, 0x15, 0x54, 0x70 #      240 .~.S..Tp
-    .byte 0x4D, 0x00, 0xFF, 0xB6, 0xAC, 0x00, 0x00, 0x00 #      248 M.......
-    .byte 0x53, 0xFF, 0x15, 0x98, 0x70, 0x4D, 0x00, 0xFF #      250 S...pM..
-    .byte 0xB6, 0xB4, 0x00, 0x00, 0x00, 0x53, 0xFF, 0x15 #      258 .....S..
-    .byte 0x50, 0x70, 0x4D, 0x00, 0x39, 0xBE, 0xA0, 0x00 #      260 PpM.9...
-    .byte 0x00, 0x00, 0x74, 0x1E, 0x6A, 0x01, 0xFF, 0xB6 #      268 ..t.j...
-    .byte 0xA4, 0x00, 0x00, 0x00, 0x53, 0xFF, 0x15, 0x30 #      270 ....S..0
-    .byte 0x70, 0x4D, 0x00, 0x53, 0xFF, 0x35, 0x20, 0x53 #      278 pM.S.5 S
-    .byte 0x52, 0x00, 0xFF, 0x15, 0x80, 0x72, 0x4D, 0x00 #      280 R....rM.
-    .byte 0xEB, 0x24, 0xFF, 0xB6, 0xA4, 0x00, 0x00, 0x00 #      288 .$......
-    .byte 0x8B, 0x3D, 0x9C, 0x70, 0x4D, 0x00, 0x53, 0xFF #      290 .=.pM.S.
-    .byte 0xD7, 0x8B, 0xB6, 0xB0, 0x00, 0x00, 0x00, 0x85 #      298 ........
-    .byte 0xF6, 0x74, 0x04, 0x56, 0x53, 0xFF, 0xD7, 0x53 #      2A0 .t.VS..S
-    .byte 0xFF, 0x15, 0x94, 0x70, 0x4D, 0x00, 0x5F, 0x5E #      2A8 ...pM._^
-    .byte 0x5B, 0xC3, 0x56, 0x57, 0x68, 0xB8, 0x00, 0x00 #      2B0 [.VWh...
-    .byte 0x00, 0xE8, 0xB8, 0xD8, 0x0C, 0x00, 0x8B, 0xF8 #      2B8 ........
-    .byte 0x59, 0x85, 0xFF, 0x74, 0x63, 0x6A, 0x08, 0xE8 #      2C0 Y..tcj..
-    .byte 0xAA, 0xD8, 0x0C, 0x00, 0x8B, 0xF0, 0x59, 0x85 #      2C8 ......Y.
-    .byte 0xF6, 0x74, 0x4E, 0x0F, 0xBF, 0x44, 0x24, 0x10 #      2D0 .tN..D$.
-    .byte 0x83, 0x66, 0x04, 0x00, 0x50, 0x0F, 0xBF, 0x44 #      2D8 .f..P..D
-    .byte 0x24, 0x10, 0x50, 0x57, 0x89, 0x3E, 0xE8, 0x42 #      2E0 $.PW.>.B
-    .byte 0x00, 0x00, 0x00, 0x83, 0xC4, 0x0C, 0x85, 0xC0 #      2E8 ........
-    .byte 0x74, 0x28, 0xA1, 0x84, 0x49, 0x52, 0x00, 0x85 #      2F0 t(..IR..
-    .byte 0xC0, 0x8B, 0xC8, 0x75, 0x08, 0x89, 0x35, 0x84 #      2F8 ...u..5.
-    .byte 0x49, 0x52, 0x00, 0xEB, 0x11, 0x8B, 0x40, 0x04 #      300 IR....@.
-    .byte 0x85, 0xC0, 0x74, 0x07, 0x8B, 0xC8, 0x8B, 0x41 #      308 ..t....A
-    .byte 0x04, 0xEB, 0xF5, 0x89, 0x71, 0x04, 0x8B, 0xC7 #      310 ....q...
-    .byte 0xEB, 0x10, 0x56, 0xE8, 0xAA, 0xD7, 0x0C, 0x00 #      318 ..V.....
-    .byte 0x59, 0x57, 0xE8, 0xA3, 0xD7, 0x0C, 0x00, 0x59 #      320 YW.....Y
-    .byte 0x33, 0xC0, 0x5F, 0x5E, 0xC3, 0x55, 0x8B, 0xEC #      328 3._^.U..
-    .byte 0x53, 0x56, 0x8B, 0x75, 0x08, 0x57, 0x68, 0x28 #      330 SV.u.Wh(
-    .byte 0x04, 0x00, 0x00, 0x83, 0xA6, 0xA0, 0x00, 0x00 #      338 ........
-    .byte 0x00, 0x00, 0xE8, 0x2F, 0xD8, 0x0C, 0x00, 0x85 #      340 .../....
-    .byte 0xC0, 0x59, 0x89, 0x86, 0x98, 0x00, 0x00, 0x00 #      348 .Y......
-    .byte 0x0F, 0x84, 0x0E, 0x01, 0x00, 0x00, 0x8D, 0x48 #      350 .......H
-    .byte 0x28, 0xBA, 0x78, 0x41, 0x52, 0x00, 0xBB, 0x79 #      358 (.xAR..y
-    .byte 0x41, 0x52, 0x00, 0x8B, 0xFA, 0x2B, 0xD9, 0x8D #      360 AR...+..
-    .byte 0x41, 0x01, 0x2B, 0xD1, 0x8A, 0x0C, 0x03, 0x88 #      368 A.+.....
-    .byte 0x48, 0x01, 0x8A, 0x0C, 0x02, 0x88, 0x08, 0x8A #      370 H.......
-    .byte 0x0F, 0x88, 0x48, 0xFF, 0x80, 0x60, 0x02, 0x00 #      378 ..H..`..
-    .byte 0x83, 0xC7, 0x04, 0x83, 0xC0, 0x04, 0x81, 0xFF #      380 ........
-    .byte 0x78, 0x45, 0x52, 0x00, 0x7C, 0xDE, 0x8B, 0x5D #      388 xER.|..]
-    .byte 0x0C, 0x8B, 0x4D, 0x10, 0x8B, 0x86, 0x98, 0x00 #      390 ..M.....
-    .byte 0x00, 0x00, 0x33, 0xD2, 0x8D, 0x7B, 0x03, 0x52 #      398 ..3..{.R
-    .byte 0xF7, 0xD9, 0x83, 0xE7, 0xFC, 0x89, 0x48, 0x08 #      3A0 ......H.
-    .byte 0x8B, 0xCF, 0x83, 0x60, 0x10, 0x00, 0x0F, 0xAF #      3A8 ...`....
-    .byte 0x4D, 0x10, 0x89, 0x48, 0x14, 0xB9, 0x00, 0x01 #      3B0 M..H....
-    .byte 0x00, 0x00, 0xC7, 0x00, 0x28, 0x00, 0x00, 0x00 #      3B8 ....(...
-    .byte 0x89, 0x58, 0x04, 0x66, 0xC7, 0x40, 0x0C, 0x01 #      3C0 .X.f.@..
-    .byte 0x00, 0x66, 0xC7, 0x40, 0x0E, 0x08, 0x00, 0x89 #      3C8 .f.@....
-    .byte 0x50, 0x18, 0x89, 0x50, 0x1C, 0x89, 0x48, 0x20 #      3D0 P..P..H 
-    .byte 0x89, 0x48, 0x24, 0xFF, 0x15, 0x7C, 0x70, 0x4D #      3D8 .H$..|pM
-    .byte 0x00, 0x85, 0xC0, 0x89, 0x45, 0x08, 0x74, 0x7C #      3E0 ....E.t|
-    .byte 0xA1, 0x8C, 0x49, 0x52, 0x00, 0x85, 0xC0, 0x74 #      3E8 ..IR...t
-    .byte 0x11, 0x6A, 0x01, 0x50, 0xFF, 0x75, 0x08, 0xFF #      3F0 .j.P.u..
-    .byte 0x15, 0x30, 0x70, 0x4D, 0x00, 0x89, 0x45, 0x0C #      3F8 .0pM..E.
-    .byte 0xEB, 0x04, 0x83, 0x65, 0x0C, 0x00, 0x33, 0xC9 #      400 ...e..3.
-    .byte 0x8D, 0x86, 0x94, 0x00, 0x00, 0x00, 0x51, 0x51 #      408 ......QQ
-    .byte 0x50, 0x51, 0xFF, 0xB6, 0x98, 0x00, 0x00, 0x00 #      410 PQ......
-    .byte 0xFF, 0x75, 0x08, 0xFF, 0x15, 0x58, 0x70, 0x4D #      418 .u...XpM
-    .byte 0x00, 0x83, 0x7D, 0x0C, 0x00, 0x89, 0x86, 0x9C #      420 ..}.....
-    .byte 0x00, 0x00, 0x00, 0x74, 0x0E, 0x6A, 0x01, 0xFF #      428 ...t.j..
-    .byte 0x75, 0x0C, 0xFF, 0x75, 0x08, 0xFF, 0x15, 0x30 #      430 u..u...0
-    .byte 0x70, 0x4D, 0x00, 0xFF, 0x75, 0x08, 0xFF, 0x15 #      438 pM..u...
-    .byte 0x94, 0x70, 0x4D, 0x00, 0x8B, 0x86, 0x94, 0x00 #      440 .pM.....
-    .byte 0x00, 0x00, 0x85, 0xC0, 0x74, 0x16, 0x66, 0x8B #      448 ....t.f.
-    .byte 0x4D, 0x10, 0x6A, 0x01, 0x89, 0x06, 0x66, 0x89 #      450 M.j...f.
-    .byte 0x5E, 0x06, 0x66, 0x89, 0x4E, 0x08, 0x89, 0x7E #      458 ^.f.N..~
-    .byte 0x10, 0x58, 0xEB, 0x02, 0x33, 0xC0, 0x5F, 0x5E #      460 .X..3._^
-    .byte 0x5B, 0x5D, 0xC3, 0x56, 0x8B, 0x35, 0x84, 0x49 #      468 [].V.5.I
-    .byte 0x52, 0x00, 0x33, 0xC0, 0x85, 0xF6, 0x74, 0x37 #      470 R.3...t7
-    .byte 0x8B, 0x4C, 0x24, 0x08, 0x39, 0x0E, 0x74, 0x09 #      478 .L$.9.t.
-    .byte 0x8B, 0xC6, 0x8B, 0x76, 0x04, 0x85, 0xF6, 0x75 #      480 ...v...u
-    .byte 0xF3, 0x85, 0xF6, 0x74, 0x22, 0x85, 0xC0, 0x74 #      488 ...t"..t
-    .byte 0x08, 0x8B, 0x56, 0x04, 0x89, 0x50, 0x04, 0xEB #      490 ..V..P..
-    .byte 0x08, 0x8B, 0x46, 0x04, 0xA3, 0x84, 0x49, 0x52 #      498 ..F...IR
-    .byte 0x00, 0x51, 0xE8, 0x0A, 0x00, 0x00, 0x00, 0x56 #      4A0 .Q.....V
-    .byte 0xE8, 0x1D, 0xD6, 0x0C, 0x00, 0x59, 0x59, 0x5E #      4A8 .....YY^
-    .byte 0xC3, 0x56, 0x8B, 0x74, 0x24, 0x08, 0x83, 0xBE #      4B0 .V.t$...
-    .byte 0xA0, 0x00, 0x00, 0x00, 0x00, 0x75, 0x29, 0x8B #      4B8 .....u).
-    .byte 0x86, 0x98, 0x00, 0x00, 0x00, 0x85, 0xC0, 0x74 #      4C0 .......t
-    .byte 0x07, 0x50, 0xE8, 0xFB, 0xD5, 0x0C, 0x00, 0x59 #      4C8 .P.....Y
-    .byte 0x8B, 0x86, 0x9C, 0x00, 0x00, 0x00, 0x85, 0xC0 #      4D0 ........
-    .byte 0x74, 0x07, 0x50, 0xFF, 0x15, 0x8C, 0x70, 0x4D #      4D8 t.P...pM
-    .byte 0x00, 0x56, 0xE8, 0xE3, 0xD5, 0x0C, 0x00, 0x59 #      4E0 .V.....Y
-    .byte 0x5E, 0xC3, 0x55, 0x8B, 0xEC, 0x51, 0x56, 0x8B #      4E8 ^.U..QV.
-    .byte 0x75, 0x08, 0x57, 0x33, 0xFF, 0x39, 0xBE, 0xA0 #      4F0 u.W3.9..
-    .byte 0x00, 0x00, 0x00, 0x0F, 0x85, 0xCF, 0x00, 0x00 #      4F8 ........
-    .byte 0x00, 0x8B, 0x45, 0x10, 0x39, 0xB8, 0xA0, 0x00 #      500 ..E.9...
-    .byte 0x00, 0x00, 0x0F, 0x84, 0xC0, 0x00, 0x00, 0x00 #      508 ........
-    .byte 0x53, 0xFF, 0x35, 0x20, 0x53, 0x52, 0x00, 0xFF #      510 S.5 SR..
-    .byte 0x15, 0x7C, 0x72, 0x4D, 0x00, 0x8B, 0xD8, 0x3B #      518 .|rM...;
-    .byte 0xDF, 0x0F, 0x84, 0xA4, 0x00, 0x00, 0x00, 0x57 #      520 .......W
-    .byte 0x8B, 0x3D, 0x30, 0x70, 0x4D, 0x00, 0xFF, 0x35 #      528 .=0pM..5
-    .byte 0x8C, 0x49, 0x52, 0x00, 0x53, 0xFF, 0xD7, 0x68 #      530 .IR.S..h
-    .byte 0x78, 0x41, 0x52, 0x00, 0x68, 0x00, 0x01, 0x00 #      538 xAR.h...
-    .byte 0x00, 0x6A, 0x00, 0x56, 0x89, 0x45, 0xFC, 0xE8 #      540 .j.V.E..
-    .byte 0x8A, 0x00, 0x00, 0x00, 0x83, 0xC4, 0x10, 0x53 #      548 .......S
-    .byte 0xFF, 0x15, 0x38, 0x70, 0x4D, 0x00, 0x8B, 0x45 #      550 ..8pM..E
-    .byte 0x0C, 0x68, 0x20, 0x00, 0xCC, 0x00, 0x6A, 0x00 #      558 .h ...j.
-    .byte 0x8B, 0x48, 0x0C, 0xFF, 0xB6, 0x98, 0x00, 0x00 #      560 .H......
-    .byte 0x00, 0x89, 0x4D, 0x08, 0x8B, 0x08, 0x89, 0x4D #      568 ..M....M
-    .byte 0x10, 0x8B, 0x4D, 0x14, 0xFF, 0xB6, 0x94, 0x00 #      570 ..M.....
-    .byte 0x00, 0x00, 0x8B, 0x11, 0x89, 0x55, 0x0C, 0x8B #      578 .....U..
-    .byte 0x55, 0x08, 0x2B, 0x50, 0x04, 0x8B, 0x40, 0x08 #      580 U.+P..@.
-    .byte 0x2B, 0x45, 0x10, 0x52, 0x8B, 0x51, 0x0C, 0x50 #      588 +E.R.Q.P
-    .byte 0x0F, 0xBF, 0x46, 0x08, 0x2B, 0x45, 0x08, 0x50 #      590 ..F.+E.P
-    .byte 0x8B, 0x41, 0x04, 0x8B, 0x49, 0x08, 0xFF, 0x75 #      598 .A..I..u
-    .byte 0x10, 0x2B, 0x4D, 0x0C, 0x2B, 0xD0, 0x52, 0x51 #      5A0 .+M.+.RQ
-    .byte 0x50, 0xFF, 0x75, 0x0C, 0x53, 0xFF, 0x15, 0x5C #      5A8 P.u.S...
-    .byte 0x70, 0x4D, 0x00, 0x6A, 0x01, 0xFF, 0x75, 0xFC #      5B0 pM.j..u.
-    .byte 0x53, 0xFF, 0xD7, 0x6A, 0x01, 0x5F, 0x53, 0xFF #      5B8 S..j._S.
-    .byte 0x35, 0x20, 0x53, 0x52, 0x00, 0xFF, 0x15, 0x80 #      5C0 5 SR....
-    .byte 0x72, 0x4D, 0x00, 0x8B, 0xC7, 0x5B, 0xEB, 0x02 #      5C8 rM...[..
-    .byte 0x33, 0xC0, 0x5F, 0x5E, 0xC9, 0xC3, 0x8B, 0x54 #      5D0 3._^...T
-    .byte 0x24, 0x08, 0x8B, 0x44, 0x24, 0x0C, 0x03, 0xC2 #      5D8 $..D$...
-    .byte 0x3B, 0xD0, 0x7D, 0x29, 0x56, 0x8D, 0x0C, 0x95 #      5E0 ;.})V...
-    .byte 0x28, 0x00, 0x00, 0x00, 0x2B, 0xC2, 0x8B, 0x54 #      5E8 (...+..T
-    .byte 0x24, 0x14, 0x57, 0x8B, 0x74, 0x24, 0x0C, 0x8B #      5F0 $.W.t$..
-    .byte 0x3A, 0x83, 0xC2, 0x04, 0x8B, 0xB6, 0x98, 0x00 #      5F8 :.......
-    .byte 0x00, 0x00, 0x89, 0x3C, 0x0E, 0x83, 0xC1, 0x04 #      600 ...<....
-    .byte 0x48, 0x75, 0xE8, 0x5F, 0x5E, 0xC3, 0x55, 0x8B #      608 Hu._^.U.
-    .byte 0xEC, 0x51, 0x56, 0x8B, 0x75, 0x08, 0x57, 0x33 #      610 .QV.u.W3
-    .byte 0xFF, 0x39, 0xBE, 0xA0, 0x00, 0x00, 0x00, 0x0F #      618 .9......
-    .byte 0x85, 0xB7, 0x00, 0x00, 0x00, 0x8B, 0x45, 0x10 #      620 ......E.
-    .byte 0x39, 0xB8, 0xA0, 0x00, 0x00, 0x00, 0x0F, 0x84 #      628 9.......
-    .byte 0xA8, 0x00, 0x00, 0x00, 0x53, 0xFF, 0x35, 0x20 #      630 ....S.5 
-    .byte 0x53, 0x52, 0x00, 0xFF, 0x15, 0x7C, 0x72, 0x4D #      638 SR...|rM
-    .byte 0x00, 0x8B, 0xD8, 0x3B, 0xDF, 0x0F, 0x84, 0x8C #      640 ...;....
-    .byte 0x00, 0x00, 0x00, 0x57, 0x8B, 0x3D, 0x30, 0x70 #      648 ...W.=0p
-    .byte 0x4D, 0x00, 0xFF, 0x35, 0x8C, 0x49, 0x52, 0x00 #      650 M..5.IR.
-    .byte 0x53, 0xFF, 0xD7, 0x68, 0x78, 0x41, 0x52, 0x00 #      658 S..hxAR.
-    .byte 0x68, 0x00, 0x01, 0x00, 0x00, 0x6A, 0x00, 0x56 #      660 h....j.V
-    .byte 0x89, 0x45, 0xFC, 0xE8, 0x66, 0xFF, 0xFF, 0xFF #      668 .E..f...
-    .byte 0x83, 0xC4, 0x10, 0x53, 0xFF, 0x15, 0x38, 0x70 #      670 ...S..8p
-    .byte 0x4D, 0x00, 0x8B, 0x45, 0x0C, 0x68, 0x20, 0x00 #      678 M..E.h .
-    .byte 0xCC, 0x00, 0x6A, 0x00, 0x8B, 0x48, 0x0C, 0x8B #      680 ..j..H..
-    .byte 0x10, 0xFF, 0xB6, 0x98, 0x00, 0x00, 0x00, 0x89 #      688 ........
-    .byte 0x4D, 0x08, 0x2B, 0x48, 0x04, 0x8B, 0x40, 0x08 #      690 M.+H..@.
-    .byte 0xFF, 0xB6, 0x94, 0x00, 0x00, 0x00, 0x89, 0x55 #      698 .......U
-    .byte 0x10, 0x2B, 0xC2, 0x0F, 0xBF, 0x56, 0x08, 0x2B #      6A0 .+...V.+
-    .byte 0x55, 0x08, 0x51, 0x50, 0x52, 0xFF, 0x75, 0x10 #      6A8 U.QPR.u.
-    .byte 0x51, 0x50, 0xFF, 0x75, 0x18, 0xFF, 0x75, 0x14 #      6B0 QP.u..u.
-    .byte 0x53, 0xFF, 0x15, 0x5C, 0x70, 0x4D, 0x00, 0x6A #      6B8 S...pM.j
-    .byte 0x01, 0xFF, 0x75, 0xFC, 0x53, 0xFF, 0xD7, 0x6A #      6C0 ..u.S..j
-    .byte 0x01, 0x5F, 0x53, 0xFF, 0x35, 0x20, 0x53, 0x52 #      6C8 ._S.5 SR
-    .byte 0x00, 0xFF, 0x15, 0x80, 0x72, 0x4D, 0x00, 0x8B #      6D0 ....rM..
-    .byte 0xC7, 0x5B, 0xEB, 0x02, 0x33, 0xC0, 0x5F, 0x5E #      6D8 .[..3._^
-    .byte 0xC9, 0xC3, 0x33, 0xC0, 0xC3, 0x83, 0x3D, 0x8C #      6E0 ..3...=.
-    .byte 0x49, 0x52, 0x00, 0x00, 0x56, 0x74, 0x43, 0xFF #      6E8 IR..VtC.
-    .byte 0x35, 0x20, 0x53, 0x52, 0x00, 0xFF, 0x15, 0x7C #      6F0 5 SR...|
-    .byte 0x72, 0x4D, 0x00, 0x8B, 0xF0, 0x85, 0xF6, 0x74 #      6F8 rM.....t
-    .byte 0x31, 0x53, 0x57, 0x8B, 0x3D, 0x30, 0x70, 0x4D #      700 1SW.=0pM
-    .byte 0x00, 0x6A, 0x00, 0xFF, 0x35, 0x8C, 0x49, 0x52 #      708 .j..5.IR
-    .byte 0x00, 0x56, 0xFF, 0xD7, 0x56, 0x8B, 0xD8, 0xFF #      710 .V..V...
-    .byte 0x15, 0x38, 0x70, 0x4D, 0x00, 0x6A, 0x01, 0x53 #      718 .8pM.j.S
-    .byte 0x56, 0xFF, 0xD7, 0x56, 0xFF, 0x35, 0x20, 0x53 #      720 V..V.5 S
-    .byte 0x52, 0x00, 0xFF, 0x15, 0x80, 0x72, 0x4D, 0x00 #      728 R....rM.
-    .byte 0x5F, 0x5B, 0x5E, 0xC3, 0x56, 0x57, 0x33, 0xFF #      730 _[^.VW3.
-    .byte 0x39, 0x3D, 0x90, 0x49, 0x52, 0x00, 0x0F, 0x85 #      738 9=.IR...
-    .byte 0x87, 0x00, 0x00, 0x00, 0x8B, 0x74, 0x24, 0x0C #      740 .....t$.
-    .byte 0x39, 0xBE, 0xA0, 0x00, 0x00, 0x00, 0x75, 0x7B #      748 9.....u{
-    .byte 0x8B, 0x44, 0x24, 0x10, 0x39, 0xB8, 0xA0, 0x00 #      750 .D$.9...
-    .byte 0x00, 0x00, 0x74, 0x6F, 0xFF, 0x35, 0x20, 0x53 #      758 ..to.5 S
-    .byte 0x52, 0x00, 0xFF, 0x15, 0x7C, 0x72, 0x4D, 0x00 #      760 R...|rM.
-    .byte 0x3B, 0xC7, 0xA3, 0x90, 0x49, 0x52, 0x00, 0x74 #      768 ;...IR.t
-    .byte 0x5A, 0x8B, 0x8E, 0x98, 0x00, 0x00, 0x00, 0x57 #      770 Z......W
-    .byte 0xFF, 0x35, 0x8C, 0x49, 0x52, 0x00, 0x89, 0x0D #      778 .5.IR...
-    .byte 0x94, 0x49, 0x52, 0x00, 0x8B, 0x8E, 0x94, 0x00 #      780 .IR.....
-    .byte 0x00, 0x00, 0x89, 0x0D, 0x98, 0x49, 0x52, 0x00 #      788 .....IR.
-    .byte 0x50, 0x0F, 0xBF, 0x4E, 0x08, 0x89, 0x0D, 0x9C #      790 P..N....
-    .byte 0x49, 0x52, 0x00, 0xFF, 0x15, 0x30, 0x70, 0x4D #      798 IR...0pM
-    .byte 0x00, 0x68, 0x78, 0x41, 0x52, 0x00, 0x68, 0x00 #      7A0 .hxAR.h.
-    .byte 0x01, 0x00, 0x00, 0x57, 0x56, 0xA3, 0x78, 0x45 #      7A8 ...WV.xE
-    .byte 0x52, 0x00, 0xE8, 0x1F, 0xFE, 0xFF, 0xFF, 0x83 #      7B0 R.......
-    .byte 0xC4, 0x10, 0xFF, 0x35, 0x90, 0x49, 0x52, 0x00 #      7B8 ...5.IR.
-    .byte 0xFF, 0x15, 0x38, 0x70, 0x4D, 0x00, 0x6A, 0x01 #      7C0 ..8pM.j.
-    .byte 0x58, 0xEB, 0x02, 0x33, 0xC0, 0x5F, 0x5E, 0xC3 #      7C8 X..3._^.
-    .byte 0xA1, 0x90, 0x49, 0x52, 0x00, 0x85, 0xC0, 0x74 #      7D0 ..IR...t
-    .byte 0x36, 0x6A, 0x01, 0xFF, 0x35, 0x78, 0x45, 0x52 #      7D8 6j..5xER
-    .byte 0x00, 0x50, 0xFF, 0x15, 0x30, 0x70, 0x4D, 0x00 #      7E0 .P..0pM.
-    .byte 0xFF, 0x35, 0x90, 0x49, 0x52, 0x00, 0xFF, 0x35 #      7E8 .5.IR..5
-    .byte 0x20, 0x53, 0x52, 0x00, 0xFF, 0x15, 0x80, 0x72 #      7F0  SR....r
-    .byte 0x4D, 0x00, 0x83, 0x25, 0x90, 0x49, 0x52, 0x00 #      7F8 M..%.IR.
-    .byte 0x00, 0x83, 0x25, 0x94, 0x49, 0x52, 0x00, 0x00 #      800 ..%.IR..
-    .byte 0x83, 0x25, 0x98, 0x49, 0x52, 0x00, 0x00, 0xC3 #      808 .%.IR...
-    .byte 0x55, 0x8B, 0xEC, 0x83, 0x3D, 0x90, 0x49, 0x52 #      810 U...=.IR
-    .byte 0x00, 0x00, 0x74, 0x63, 0x8B, 0x4D, 0x0C, 0x8B #      818 ..tc.M..
-    .byte 0x45, 0x08, 0x53, 0x56, 0x8B, 0x19, 0x8B, 0x50 #      820 E.SV...P
-    .byte 0x0C, 0x8B, 0x30, 0x57, 0x68, 0x20, 0x00, 0xCC #      828 ..0Wh ..
-    .byte 0x00, 0x6A, 0x00, 0xFF, 0x35, 0x94, 0x49, 0x52 #      830 .j..5.IR
-    .byte 0x00, 0x89, 0x5D, 0x08, 0x8B, 0xDA, 0x8B, 0x79 #      838 ..]....y
-    .byte 0x04, 0x2B, 0x58, 0x04, 0xFF, 0x35, 0x98, 0x49 #      840 .+X..5.I
-    .byte 0x52, 0x00, 0x8B, 0x40, 0x08, 0x2B, 0xC6, 0x53 #      848 R..@.+.S
-    .byte 0x50, 0xA1, 0x9C, 0x49, 0x52, 0x00, 0x2B, 0xC2 #      850 P..IR.+.
-    .byte 0x50, 0x8B, 0x41, 0x0C, 0x2B, 0xC7, 0x56, 0x50 #      858 P.A.+.VP
-    .byte 0x8B, 0x41, 0x08, 0x2B, 0x45, 0x08, 0x50, 0x57 #      860 .A.+E.PW
-    .byte 0xFF, 0x75, 0x08, 0xFF, 0x35, 0x90, 0x49, 0x52 #      868 .u..5.IR
-    .byte 0x00, 0xFF, 0x15, 0x5C, 0x70, 0x4D, 0x00, 0x6A #      870 ....pM.j
-    .byte 0x01, 0x58, 0x5F, 0x5E, 0x5B, 0x5D, 0xC3, 0x33 #      878 .X_^[].3
-    .byte 0xC0, 0x5D, 0xC3, 0x56, 0x8B, 0x35, 0x90, 0x49 #      880 .].V.5.I
-    .byte 0x52, 0x00, 0x85, 0xF6, 0x74, 0x62, 0x8B, 0x44 #      888 R...tb.D
-    .byte 0x24, 0x08, 0x53, 0x57, 0x68, 0x20, 0x00, 0xCC #      890 $.SWh ..
-    .byte 0x00, 0x8B, 0x58, 0x0C, 0x8B, 0x38, 0x8B, 0x48 #      898 ..X..8.H
-    .byte 0x08, 0x6A, 0x00, 0xFF, 0x35, 0x94, 0x49, 0x52 #      8A0 .j..5.IR
-    .byte 0x00, 0x8B, 0xD3, 0x2B, 0x50, 0x04, 0xA1, 0x9C #      8A8 ...+P...
-    .byte 0x49, 0x52, 0x00, 0xFF, 0x35, 0x98, 0x49, 0x52 #      8B0 IR..5.IR
-    .byte 0x00, 0x2B, 0xCF, 0x2B, 0xC3, 0x52, 0x51, 0x50 #      8B8 .+.+.RQP
-    .byte 0x57, 0x52, 0x51, 0xFF, 0x74, 0x24, 0x40, 0xFF #      8C0 WRQ.t$@.
-    .byte 0x74, 0x24, 0x40, 0x56, 0xFF, 0x15, 0x5C, 0x70 #      8C8 t$@V...p
-    .byte 0x4D, 0x00, 0x5F, 0x83, 0xF8, 0xFF, 0x5B, 0x75 #      8D0 M._...[u
-    .byte 0x12, 0x68, 0x6C, 0x60, 0x50, 0x00, 0xE8, 0xEF #      8D8 .hl`P...
-    .byte 0x39, 0x00, 0x00, 0x59, 0x6A, 0x00, 0xE8, 0x2C #      8E0 9..Yj..,
-    .byte 0xD3, 0x0C, 0x00, 0x6A, 0x01, 0x58, 0x5E, 0xC3 #      8E8 ...j.X^.
-    .byte 0x33, 0xC0, 0x5E, 0xC3, 0xA1, 0x8C, 0x49, 0x52 #      8F0 3.^...IR
-    .byte 0x00, 0x85, 0xC0, 0x74, 0x0E, 0x50, 0xFF, 0x15 #      8F8 ...t.P..
-    .byte 0x8C, 0x70, 0x4D, 0x00, 0x83, 0x25, 0x8C, 0x49 #      900 .pM..%.I
-    .byte 0x52, 0x00, 0x00, 0x56, 0x8B, 0x35, 0x84, 0x49 #      908 R..V.5.I
-    .byte 0x52, 0x00, 0x85, 0xF6, 0x74, 0x20, 0x57, 0xFF #      910 R...t W.
-    .byte 0x36, 0x8B, 0xFE, 0xE8, 0x91, 0xFB, 0xFF, 0xFF #      918 6.......
-    .byte 0x8B, 0x76, 0x04, 0x57, 0xE8, 0xA1, 0xD1, 0x0C #      920 .v.W....
-    .byte 0x00, 0x59, 0x85, 0xF6, 0x59, 0x75, 0xE8, 0x21 #      928 .Y..Yu.!
-    .byte 0x35, 0x84, 0x49, 0x52, 0x00, 0x5F, 0xA1, 0x20 #      930 5.IR._. 
-    .byte 0x53, 0x52, 0x00, 0x5E, 0x85, 0xC0, 0x74, 0x0E #      938 SR.^..t.
-    .byte 0x50, 0xFF, 0x15, 0x70, 0x72, 0x4D, 0x00, 0x83 #      940 P..prM..
-    .byte 0x25, 0x20, 0x53, 0x52, 0x00, 0x00, 0xC3       #      948 % SR...
 
+    .global _sub_40388B
+_sub_40388B:
+    push esi                                             # 0040388B
+    mov esi, dword ptr [esp + 8]                         # 0040388C
+    push 0xb8                                            # 00403890
+    push 0                                               # 00403895
+    push esi                                             # 00403897
+    call _sub_4D0FC0                                     # 00403898
+    add esp, 0xc                                         # 0040389D
+    push 1                                               # 004038A0
+    pop eax                                              # 004038A2
+    mov dword ptr [esi + 0xa0], eax                      # 004038A3
+    pop esi                                              # 004038A9
+    ret                                                  # 004038AA
+
+    .global _sub_4038AB
+_sub_4038AB:
+    mov eax, dword ptr [esp + 4]                         # 004038AB
+    cmp dword ptr [eax + 0xa0], 0                        # 004038AF
+    jne .L4038CB                                         # 004038B6
+    mov word ptr [eax + 4], 4                            # 004038B8
+    mov word ptr [eax + 0xa], 1                          # 004038BE
+    mov word ptr [eax + 0xc], 1                          # 004038C4
+    ret                                                  # 004038CA
+.L4038CB:
+    msvc_xor eax, eax                                    # 004038CB
+    ret                                                  # 004038CD
+
+    .global _sub_4038CE
+_sub_4038CE:
+    mov eax, dword ptr [esp + 4]                         # 004038CE
+    and word ptr [eax + 0xc], 0                          # 004038D2
+    ret                                                  # 004038D7
+
+    .global _sub_4038D8
+_sub_4038D8:
+    push ebp                                             # 004038D8
+    msvc_mov ebp, esp                                    # 004038D9
+    sub esp, 0xc                                         # 004038DB
+    cmp dword ptr [0x52498c], 0                          # 004038DE
+    push esi                                             # 004038E5
+    je .L4039EB                                          # 004038E6
+    mov esi, dword ptr [ebp + 0xc]                       # 004038EC
+    cmp esi, 0x100                                       # 004038EF
+    jge .L4039EB                                         # 004038F5
+    mov ecx, dword ptr [0x5251b0]                        # 004038FB
+    msvc_cmp esi, ecx                                    # 00403901
+    jge .L403907                                         # 00403903
+    msvc_mov esi, ecx                                    # 00403905
+.L403907:
+    mov eax, dword ptr [0x5251b4]                        # 00403907
+    mov edx, dword ptr [ebp + 0x10]                      # 0040390C
+    msvc_add ecx, eax                                    # 0040390F
+    msvc_add edx, esi                                    # 00403911
+    msvc_cmp edx, ecx                                    # 00403913
+    jle .L40391C                                         # 00403915
+    msvc_sub eax, esi                                    # 00403917
+    mov dword ptr [ebp + 0x10], eax                      # 00403919
+.L40391C:
+    mov eax, dword ptr [ebp + 0x10]                      # 0040391C
+    push ebx                                             # 0040391F
+    push edi                                             # 00403920
+    lea edx, [esi + eax]                                 # 00403921
+    msvc_cmp esi, edx                                    # 00403924
+    jge .L40399A                                         # 00403926
+    mov ecx, dword ptr [ebp + 8]                         # 00403928
+    mov dword ptr [ebp + 0xc], 0x524179                  # 0040392B
+    sub dword ptr [ebp + 0xc], ecx                       # 00403932
+    mov dword ptr [ebp + 8], 0x524583                    # 00403935
+    sub dword ptr [ebp + 8], ecx                         # 0040393C
+    mov dword ptr [ebp - 4], 0x524178                    # 0040393F
+    sub dword ptr [ebp - 4], ecx                         # 00403946
+    mov dword ptr [ebp - 8], 0x524584                    # 00403949
+    sub dword ptr [ebp - 8], ecx                         # 00403950
+    mov ebx, 0x524585                                    # 00403953
+    msvc_sub ebx, ecx                                    # 00403958
+    msvc_sub edx, esi                                    # 0040395A
+    lea edi, [esi*4 + 0x524178]                          # 0040395C
+    lea eax, [ecx + esi*4 + 1]                           # 00403963
+    mov dword ptr [ebp - 0xc], edx                       # 00403967
+.L40396A:
+    mov edx, dword ptr [ebp + 0xc]                       # 0040396A
+    mov cl, byte ptr [eax + 1]                           # 0040396D
+    mov byte ptr [edx + eax], cl                         # 00403970
+    mov edx, dword ptr [ebp + 8]                         # 00403973
+    mov byte ptr [edx + eax], cl                         # 00403976
+    mov edx, dword ptr [ebp - 4]                         # 00403979
+    mov cl, byte ptr [eax]                               # 0040397C
+    mov byte ptr [edx + eax], cl                         # 0040397E
+    mov edx, dword ptr [ebp - 8]                         # 00403981
+    mov byte ptr [edx + eax], cl                         # 00403984
+    mov cl, byte ptr [eax - 1]                           # 00403987
+    mov byte ptr [edi], cl                               # 0040398A
+    mov byte ptr [ebx + eax], cl                         # 0040398C
+    add eax, 4                                           # 0040398F
+    add edi, 4                                           # 00403992
+    dec dword ptr [ebp - 0xc]                            # 00403995
+    jne .L40396A                                         # 00403998
+.L40399A:
+    push dword ptr [0x525320]                            # 0040399A
+    msvc_abscall 0x4D727C                                # 004039A0
+    mov edi, dword ptr [0x4d7030]                        # 004039A6
+    push 0                                               # 004039AC
+    push dword ptr [0x52498c]                            # 004039AE
+    msvc_mov ebx, eax                                    # 004039B4
+    push ebx                                             # 004039B6
+    call edi                                             # 004039B7
+    mov dword ptr [ebp + 0xc], eax                       # 004039B9
+    lea eax, [esi*4 + 0x524584]                          # 004039BC
+    push eax                                             # 004039C3
+    push dword ptr [ebp + 0x10]                          # 004039C4
+    push esi                                             # 004039C7
+    push dword ptr [0x52498c]                            # 004039C8
+    msvc_abscall 0x4D7044                                # 004039CE
+    push 1                                               # 004039D4
+    push dword ptr [ebp + 0xc]                           # 004039D6
+    push ebx                                             # 004039D9
+    call edi                                             # 004039DA
+    push ebx                                             # 004039DC
+    push dword ptr [0x525320]                            # 004039DD
+    msvc_abscall 0x4D7280                                # 004039E3
+    pop edi                                              # 004039E9
+    pop ebx                                              # 004039EA
+.L4039EB:
+    pop esi                                              # 004039EB
+    leave                                                # 004039EC
+    ret                                                  # 004039ED
+
+    .global _sub_4039EE
+_sub_4039EE:
+    push dword ptr [esp + 8]                             # 004039EE
+    push 0                                               # 004039F2
+    push dword ptr [esp + 0xc]                           # 004039F4
+    call _sub_4038D8                                     # 004039F8
+    add esp, 0xc                                         # 004039FD
+    ret                                                  # 00403A00
+
+    .global _sub_403A01
+_sub_403A01:
+    ret                                                  # 00403A01
+
+    .global _sub_403A02
+_sub_403A02:
+    push ebx                                             # 00403A02
+    push esi                                             # 00403A03
+    mov esi, dword ptr [esp + 0xc]                       # 00403A04
+    msvc_xor ebx, ebx                                    # 00403A08
+    push edi                                             # 00403A0A
+    cmp dword ptr [esi + 0xa0], ebx                      # 00403A0B
+    je .L403A21                                          # 00403A11
+    push dword ptr [0x525320]                            # 00403A13
+    msvc_abscall 0x4D727C                                # 00403A19
+    jmp .L403A28                                         # 00403A1F
+.L403A21:
+    push ebx                                             # 00403A21
+    msvc_abscall 0x4D707C                                # 00403A22
+.L403A28:
+    msvc_mov edi, eax                                    # 00403A28
+    msvc_cmp edi, ebx                                    # 00403A2A
+    je .L403AAB                                          # 00403A2C
+    push edi                                             # 00403A2E
+    msvc_abscall 0x4D704C                                # 00403A2F
+    push edi                                             # 00403A35
+    mov dword ptr [esi + 0xa8], eax                      # 00403A36
+    msvc_abscall 0x4D7040                                # 00403A3C
+    push edi                                             # 00403A42
+    mov dword ptr [esi + 0xac], eax                      # 00403A43
+    msvc_abscall 0x4D703C                                # 00403A49
+    cmp dword ptr [esi + 0xa0], ebx                      # 00403A4F
+    mov dword ptr [esi + 0xb4], eax                      # 00403A55
+    mov dword ptr [esi + 0xb0], ebx                      # 00403A5B
+    mov word ptr [esi + 0xc], 1                          # 00403A61
+    je .L403A86                                          # 00403A67
+    push ebx                                             # 00403A69
+    push dword ptr [0x52498c]                            # 00403A6A
+    push edi                                             # 00403A70
+    msvc_abscall 0x4D7030                                # 00403A71
+    push edi                                             # 00403A77
+    mov dword ptr [esi + 0xa4], eax                      # 00403A78
+    msvc_abscall 0x4D7038                                # 00403A7E
+    jmp .L403AAB                                         # 00403A84
+.L403A86:
+    push dword ptr [esi + 0x9c]                          # 00403A86
+    push edi                                             # 00403A8C
+    msvc_abscall 0x4D709C                                # 00403A8D
+    push 0x524178                                        # 00403A93
+    push 0x100                                           # 00403A98
+    push ebx                                             # 00403A9D
+    push edi                                             # 00403A9E
+    mov dword ptr [esi + 0xa4], eax                      # 00403A9F
+    msvc_abscall 0x4D7034                                # 00403AA5
+.L403AAB:
+    msvc_mov eax, edi                                    # 00403AAB
+    pop edi                                              # 00403AAD
+    pop esi                                              # 00403AAE
+    pop ebx                                              # 00403AAF
+    ret                                                  # 00403AB0
+
+    .global _sub_403AB1
+_sub_403AB1:
+    push ebx                                             # 00403AB1
+    push esi                                             # 00403AB2
+    mov esi, dword ptr [esp + 0xc]                       # 00403AB3
+    push edi                                             # 00403AB7
+    msvc_xor edi, edi                                    # 00403AB8
+    cmp word ptr [esi + 0xc], di                         # 00403ABA
+    je .L403B39                                          # 00403ABE
+    push dword ptr [esi + 0xa8]                          # 00403AC0
+    mov ebx, dword ptr [esp + 0x18]                      # 00403AC6
+    mov word ptr [esi + 0xc], di                         # 00403ACA
+    push ebx                                             # 00403ACE
+    msvc_abscall 0x4D7054                                # 00403ACF
+    push dword ptr [esi + 0xac]                          # 00403AD5
+    push ebx                                             # 00403ADB
+    msvc_abscall 0x4D7098                                # 00403ADC
+    push dword ptr [esi + 0xb4]                          # 00403AE2
+    push ebx                                             # 00403AE8
+    msvc_abscall 0x4D7050                                # 00403AE9
+    cmp dword ptr [esi + 0xa0], edi                      # 00403AEF
+    je .L403B15                                          # 00403AF5
+    push 1                                               # 00403AF7
+    push dword ptr [esi + 0xa4]                          # 00403AF9
+    push ebx                                             # 00403AFF
+    msvc_abscall 0x4D7030                                # 00403B00
+    push ebx                                             # 00403B06
+    push dword ptr [0x525320]                            # 00403B07
+    msvc_abscall 0x4D7280                                # 00403B0D
+    jmp .L403B39                                         # 00403B13
+.L403B15:
+    push dword ptr [esi + 0xa4]                          # 00403B15
+    mov edi, dword ptr [0x4d709c]                        # 00403B1B
+    push ebx                                             # 00403B21
+    call edi                                             # 00403B22
+    mov esi, dword ptr [esi + 0xb0]                      # 00403B24
+    test esi, esi                                        # 00403B2A
+    je .L403B32                                          # 00403B2C
+    push esi                                             # 00403B2E
+    push ebx                                             # 00403B2F
+    call edi                                             # 00403B30
+.L403B32:
+    push ebx                                             # 00403B32
+    msvc_abscall 0x4D7094                                # 00403B33
+.L403B39:
+    pop edi                                              # 00403B39
+    pop esi                                              # 00403B3A
+    pop ebx                                              # 00403B3B
+    ret                                                  # 00403B3C
+
+    .global _sub_403B3D
+_sub_403B3D:
+    push esi                                             # 00403B3D
+    push edi                                             # 00403B3E
+    push 0xb8                                            # 00403B3F
+    call _sub_4D1401                                     # 00403B44
+    msvc_mov edi, eax                                    # 00403B49
+    pop ecx                                              # 00403B4B
+    test edi, edi                                        # 00403B4C
+    je .L403BB3                                          # 00403B4E
+    push 8                                               # 00403B50
+    call _sub_4D1401                                     # 00403B52
+    msvc_mov esi, eax                                    # 00403B57
+    pop ecx                                              # 00403B59
+    test esi, esi                                        # 00403B5A
+    je .L403BAC                                          # 00403B5C
+    movsx eax, word ptr [esp + 0x10]                     # 00403B5E
+    and dword ptr [esi + 4], 0                           # 00403B63
+    push eax                                             # 00403B67
+    movsx eax, word ptr [esp + 0x10]                     # 00403B68
+    push eax                                             # 00403B6D
+    push edi                                             # 00403B6E
+    mov dword ptr [esi], edi                             # 00403B6F
+    call _sub_403BB8                                     # 00403B71
+    add esp, 0xc                                         # 00403B76
+    test eax, eax                                        # 00403B79
+    je .L403BA5                                          # 00403B7B
+    mov eax, dword ptr [0x524984]                        # 00403B7D
+    test eax, eax                                        # 00403B82
+    msvc_mov ecx, eax                                    # 00403B84
+    jne .L403B90                                         # 00403B86
+    mov dword ptr [0x524984], esi                        # 00403B88
+    jmp .L403BA1                                         # 00403B8E
+.L403B90:
+    mov eax, dword ptr [eax + 4]                         # 00403B90
+.L403B93:
+    test eax, eax                                        # 00403B93
+    je .L403B9E                                          # 00403B95
+    msvc_mov ecx, eax                                    # 00403B97
+    mov eax, dword ptr [ecx + 4]                         # 00403B99
+    jmp .L403B93                                         # 00403B9C
+.L403B9E:
+    mov dword ptr [ecx + 4], esi                         # 00403B9E
+.L403BA1:
+    msvc_mov eax, edi                                    # 00403BA1
+    jmp .L403BB5                                         # 00403BA3
+.L403BA5:
+    push esi                                             # 00403BA5
+    call _sub_4D1355                                     # 00403BA6
+    pop ecx                                              # 00403BAB
+.L403BAC:
+    push edi                                             # 00403BAC
+    call _sub_4D1355                                     # 00403BAD
+    pop ecx                                              # 00403BB2
+.L403BB3:
+    msvc_xor eax, eax                                    # 00403BB3
+.L403BB5:
+    pop edi                                              # 00403BB5
+    pop esi                                              # 00403BB6
+    ret                                                  # 00403BB7
+
+    .global _sub_403BB8
+_sub_403BB8:
+    push ebp                                             # 00403BB8
+    msvc_mov ebp, esp                                    # 00403BB9
+    push ebx                                             # 00403BBB
+    push esi                                             # 00403BBC
+    mov esi, dword ptr [ebp + 8]                         # 00403BBD
+    push edi                                             # 00403BC0
+    push 0x428                                           # 00403BC1
+    and dword ptr [esi + 0xa0], 0                        # 00403BC6
+    call _sub_4D1401                                     # 00403BCD
+    test eax, eax                                        # 00403BD2
+    pop ecx                                              # 00403BD4
+    mov dword ptr [esi + 0x98], eax                      # 00403BD5
+    je .L403CEF                                          # 00403BDB
+    lea ecx, [eax + 0x28]                                # 00403BE1
+    mov edx, 0x524178                                    # 00403BE4
+    mov ebx, 0x524179                                    # 00403BE9
+    msvc_mov edi, edx                                    # 00403BEE
+    msvc_sub ebx, ecx                                    # 00403BF0
+    lea eax, [ecx + 1]                                   # 00403BF2
+    msvc_sub edx, ecx                                    # 00403BF5
+.L403BF7:
+    mov cl, byte ptr [ebx + eax]                         # 00403BF7
+    mov byte ptr [eax + 1], cl                           # 00403BFA
+    mov cl, byte ptr [edx + eax]                         # 00403BFD
+    mov byte ptr [eax], cl                               # 00403C00
+    mov cl, byte ptr [edi]                               # 00403C02
+    mov byte ptr [eax - 1], cl                           # 00403C04
+    and byte ptr [eax + 2], 0                            # 00403C07
+    add edi, 4                                           # 00403C0B
+    add eax, 4                                           # 00403C0E
+    cmp edi, 0x524578                                    # 00403C11
+    jl .L403BF7                                          # 00403C17
+    mov ebx, dword ptr [ebp + 0xc]                       # 00403C19
+    mov ecx, dword ptr [ebp + 0x10]                      # 00403C1C
+    mov eax, dword ptr [esi + 0x98]                      # 00403C1F
+    msvc_xor edx, edx                                    # 00403C25
+    lea edi, [ebx + 3]                                   # 00403C27
+    push edx                                             # 00403C2A
+    neg ecx                                              # 00403C2B
+    and edi, 0xfffffffc                                  # 00403C2D
+    mov dword ptr [eax + 8], ecx                         # 00403C30
+    msvc_mov ecx, edi                                    # 00403C33
+    and dword ptr [eax + 0x10], 0                        # 00403C35
+    imul ecx, dword ptr [ebp + 0x10]                     # 00403C39
+    mov dword ptr [eax + 0x14], ecx                      # 00403C3D
+    mov ecx, 0x100                                       # 00403C40
+    mov dword ptr [eax], 0x28                            # 00403C45
+    mov dword ptr [eax + 4], ebx                         # 00403C4B
+    mov word ptr [eax + 0xc], 1                          # 00403C4E
+    mov word ptr [eax + 0xe], 8                          # 00403C54
+    mov dword ptr [eax + 0x18], edx                      # 00403C5A
+    mov dword ptr [eax + 0x1c], edx                      # 00403C5D
+    mov dword ptr [eax + 0x20], ecx                      # 00403C60
+    mov dword ptr [eax + 0x24], ecx                      # 00403C63
+    msvc_abscall 0x4D707C                                # 00403C66
+    test eax, eax                                        # 00403C6C
+    mov dword ptr [ebp + 8], eax                         # 00403C6E
+    je .L403CEF                                          # 00403C71
+    mov eax, dword ptr [0x52498c]                        # 00403C73
+    test eax, eax                                        # 00403C78
+    je .L403C8D                                          # 00403C7A
+    push 1                                               # 00403C7C
+    push eax                                             # 00403C7E
+    push dword ptr [ebp + 8]                             # 00403C7F
+    msvc_abscall 0x4D7030                                # 00403C82
+    mov dword ptr [ebp + 0xc], eax                       # 00403C88
+    jmp .L403C91                                         # 00403C8B
+.L403C8D:
+    and dword ptr [ebp + 0xc], 0                         # 00403C8D
+.L403C91:
+    msvc_xor ecx, ecx                                    # 00403C91
+    lea eax, [esi + 0x94]                                # 00403C93
+    push ecx                                             # 00403C99
+    push ecx                                             # 00403C9A
+    push eax                                             # 00403C9B
+    push ecx                                             # 00403C9C
+    push dword ptr [esi + 0x98]                          # 00403C9D
+    push dword ptr [ebp + 8]                             # 00403CA3
+    msvc_abscall 0x4D7058                                # 00403CA6
+    cmp dword ptr [ebp + 0xc], 0                         # 00403CAC
+    mov dword ptr [esi + 0x9c], eax                      # 00403CB0
+    je .L403CC6                                          # 00403CB6
+    push 1                                               # 00403CB8
+    push dword ptr [ebp + 0xc]                           # 00403CBA
+    push dword ptr [ebp + 8]                             # 00403CBD
+    msvc_abscall 0x4D7030                                # 00403CC0
+.L403CC6:
+    push dword ptr [ebp + 8]                             # 00403CC6
+    msvc_abscall 0x4D7094                                # 00403CC9
+    mov eax, dword ptr [esi + 0x94]                      # 00403CCF
+    test eax, eax                                        # 00403CD5
+    je .L403CEF                                          # 00403CD7
+    mov cx, word ptr [ebp + 0x10]                        # 00403CD9
+    push 1                                               # 00403CDD
+    mov dword ptr [esi], eax                             # 00403CDF
+    mov word ptr [esi + 6], bx                           # 00403CE1
+    mov word ptr [esi + 8], cx                           # 00403CE5
+    mov dword ptr [esi + 0x10], edi                      # 00403CE9
+    pop eax                                              # 00403CEC
+    jmp .L403CF1                                         # 00403CED
+.L403CEF:
+    msvc_xor eax, eax                                    # 00403CEF
+.L403CF1:
+    pop edi                                              # 00403CF1
+    pop esi                                              # 00403CF2
+    pop ebx                                              # 00403CF3
+    pop ebp                                              # 00403CF4
+    ret                                                  # 00403CF5
+
+    .global _sub_403CF6
+_sub_403CF6:
+    push esi                                             # 00403CF6
+    mov esi, dword ptr [0x524984]                        # 00403CF7
+    msvc_xor eax, eax                                    # 00403CFD
+    test esi, esi                                        # 00403CFF
+    je .L403D3A                                          # 00403D01
+    mov ecx, dword ptr [esp + 8]                         # 00403D03
+.L403D07:
+    cmp dword ptr [esi], ecx                             # 00403D07
+    je .L403D14                                          # 00403D09
+    msvc_mov eax, esi                                    # 00403D0B
+    mov esi, dword ptr [esi + 4]                         # 00403D0D
+    test esi, esi                                        # 00403D10
+    jne .L403D07                                         # 00403D12
+.L403D14:
+    test esi, esi                                        # 00403D14
+    je .L403D3A                                          # 00403D16
+    test eax, eax                                        # 00403D18
+    je .L403D24                                          # 00403D1A
+    mov edx, dword ptr [esi + 4]                         # 00403D1C
+    mov dword ptr [eax + 4], edx                         # 00403D1F
+    jmp .L403D2C                                         # 00403D22
+.L403D24:
+    mov eax, dword ptr [esi + 4]                         # 00403D24
+    mov dword ptr [0x524984], eax                        # 00403D27
+.L403D2C:
+    push ecx                                             # 00403D2C
+    call _sub_403D3C                                     # 00403D2D
+    push esi                                             # 00403D32
+    call _sub_4D1355                                     # 00403D33
+    pop ecx                                              # 00403D38
+    pop ecx                                              # 00403D39
+.L403D3A:
+    pop esi                                              # 00403D3A
+    ret                                                  # 00403D3B
+
+    .global _sub_403D3C
+_sub_403D3C:
+    push esi                                             # 00403D3C
+    mov esi, dword ptr [esp + 8]                         # 00403D3D
+    cmp dword ptr [esi + 0xa0], 0                        # 00403D41
+    jne .L403D73                                         # 00403D48
+    mov eax, dword ptr [esi + 0x98]                      # 00403D4A
+    test eax, eax                                        # 00403D50
+    je .L403D5B                                          # 00403D52
+    push eax                                             # 00403D54
+    call _sub_4D1355                                     # 00403D55
+    pop ecx                                              # 00403D5A
+.L403D5B:
+    mov eax, dword ptr [esi + 0x9c]                      # 00403D5B
+    test eax, eax                                        # 00403D61
+    je .L403D6C                                          # 00403D63
+    push eax                                             # 00403D65
+    msvc_abscall 0x4D708C                                # 00403D66
+.L403D6C:
+    push esi                                             # 00403D6C
+    call _sub_4D1355                                     # 00403D6D
+    pop ecx                                              # 00403D72
+.L403D73:
+    pop esi                                              # 00403D73
+    ret                                                  # 00403D74
+
+    .global _sub_403D75
+_sub_403D75:
+    push ebp                                             # 00403D75
+    msvc_mov ebp, esp                                    # 00403D76
+    push ecx                                             # 00403D78
+    push esi                                             # 00403D79
+    mov esi, dword ptr [ebp + 8]                         # 00403D7A
+    push edi                                             # 00403D7D
+    msvc_xor edi, edi                                    # 00403D7E
+    cmp dword ptr [esi + 0xa0], edi                      # 00403D80
+    jne .L403E5B                                         # 00403D86
+    mov eax, dword ptr [ebp + 0x10]                      # 00403D8C
+    cmp dword ptr [eax + 0xa0], edi                      # 00403D8F
+    je .L403E5B                                          # 00403D95
+    push ebx                                             # 00403D9B
+    push dword ptr [0x525320]                            # 00403D9C
+    msvc_abscall 0x4D727C                                # 00403DA2
+    msvc_mov ebx, eax                                    # 00403DA8
+    msvc_cmp ebx, edi                                    # 00403DAA
+    je .L403E56                                          # 00403DAC
+    push edi                                             # 00403DB2
+    mov edi, dword ptr [0x4d7030]                        # 00403DB3
+    push dword ptr [0x52498c]                            # 00403DB9
+    push ebx                                             # 00403DBF
+    call edi                                             # 00403DC0
+    push 0x524178                                        # 00403DC2
+    push 0x100                                           # 00403DC7
+    push 0                                               # 00403DCC
+    push esi                                             # 00403DCE
+    mov dword ptr [ebp - 4], eax                         # 00403DCF
+    call _sub_403E61                                     # 00403DD2
+    add esp, 0x10                                        # 00403DD7
+    push ebx                                             # 00403DDA
+    msvc_abscall 0x4D7038                                # 00403DDB
+    mov eax, dword ptr [ebp + 0xc]                       # 00403DE1
+    push 0xcc0020                                        # 00403DE4
+    push 0                                               # 00403DE9
+    mov ecx, dword ptr [eax + 0xc]                       # 00403DEB
+    push dword ptr [esi + 0x98]                          # 00403DEE
+    mov dword ptr [ebp + 8], ecx                         # 00403DF4
+    mov ecx, dword ptr [eax]                             # 00403DF7
+    mov dword ptr [ebp + 0x10], ecx                      # 00403DF9
+    mov ecx, dword ptr [ebp + 0x14]                      # 00403DFC
+    push dword ptr [esi + 0x94]                          # 00403DFF
+    mov edx, dword ptr [ecx]                             # 00403E05
+    mov dword ptr [ebp + 0xc], edx                       # 00403E07
+    mov edx, dword ptr [ebp + 8]                         # 00403E0A
+    sub edx, dword ptr [eax + 4]                         # 00403E0D
+    mov eax, dword ptr [eax + 8]                         # 00403E10
+    sub eax, dword ptr [ebp + 0x10]                      # 00403E13
+    push edx                                             # 00403E16
+    mov edx, dword ptr [ecx + 0xc]                       # 00403E17
+    push eax                                             # 00403E1A
+    movsx eax, word ptr [esi + 8]                        # 00403E1B
+    sub eax, dword ptr [ebp + 8]                         # 00403E1F
+    push eax                                             # 00403E22
+    mov eax, dword ptr [ecx + 4]                         # 00403E23
+    mov ecx, dword ptr [ecx + 8]                         # 00403E26
+    push dword ptr [ebp + 0x10]                          # 00403E29
+    sub ecx, dword ptr [ebp + 0xc]                       # 00403E2C
+    msvc_sub edx, eax                                    # 00403E2F
+    push edx                                             # 00403E31
+    push ecx                                             # 00403E32
+    push eax                                             # 00403E33
+    push dword ptr [ebp + 0xc]                           # 00403E34
+    push ebx                                             # 00403E37
+    msvc_abscall 0x4D705C                                # 00403E38
+    push 1                                               # 00403E3E
+    push dword ptr [ebp - 4]                             # 00403E40
+    push ebx                                             # 00403E43
+    call edi                                             # 00403E44
+    push 1                                               # 00403E46
+    pop edi                                              # 00403E48
+    push ebx                                             # 00403E49
+    push dword ptr [0x525320]                            # 00403E4A
+    msvc_abscall 0x4D7280                                # 00403E50
+.L403E56:
+    msvc_mov eax, edi                                    # 00403E56
+    pop ebx                                              # 00403E58
+    jmp .L403E5D                                         # 00403E59
+.L403E5B:
+    msvc_xor eax, eax                                    # 00403E5B
+.L403E5D:
+    pop edi                                              # 00403E5D
+    pop esi                                              # 00403E5E
+    leave                                                # 00403E5F
+    ret                                                  # 00403E60
+
+    .global _sub_403E61
+_sub_403E61:
+    mov edx, dword ptr [esp + 8]                         # 00403E61
+    mov eax, dword ptr [esp + 0xc]                       # 00403E65
+    msvc_add eax, edx                                    # 00403E69
+    msvc_cmp edx, eax                                    # 00403E6B
+    jge .L403E98                                         # 00403E6D
+    push esi                                             # 00403E6F
+    lea ecx, [edx*4 + 0x28]                              # 00403E70
+    msvc_sub eax, edx                                    # 00403E77
+    mov edx, dword ptr [esp + 0x14]                      # 00403E79
+    push edi                                             # 00403E7D
+.L403E7E:
+    mov esi, dword ptr [esp + 0xc]                       # 00403E7E
+    mov edi, dword ptr [edx]                             # 00403E82
+    add edx, 4                                           # 00403E84
+    mov esi, dword ptr [esi + 0x98]                      # 00403E87
+    mov dword ptr [esi + ecx], edi                       # 00403E8D
+    add ecx, 4                                           # 00403E90
+    dec eax                                              # 00403E93
+    jne .L403E7E                                         # 00403E94
+    pop edi                                              # 00403E96
+    pop esi                                              # 00403E97
+.L403E98:
+    ret                                                  # 00403E98
+
+    .global _sub_403E99
+_sub_403E99:
+    push ebp                                             # 00403E99
+    msvc_mov ebp, esp                                    # 00403E9A
+    push ecx                                             # 00403E9C
+    push esi                                             # 00403E9D
+    mov esi, dword ptr [ebp + 8]                         # 00403E9E
+    push edi                                             # 00403EA1
+    msvc_xor edi, edi                                    # 00403EA2
+    cmp dword ptr [esi + 0xa0], edi                      # 00403EA4
+    jne .L403F67                                         # 00403EAA
+    mov eax, dword ptr [ebp + 0x10]                      # 00403EB0
+    cmp dword ptr [eax + 0xa0], edi                      # 00403EB3
+    je .L403F67                                          # 00403EB9
+    push ebx                                             # 00403EBF
+    push dword ptr [0x525320]                            # 00403EC0
+    msvc_abscall 0x4D727C                                # 00403EC6
+    msvc_mov ebx, eax                                    # 00403ECC
+    msvc_cmp ebx, edi                                    # 00403ECE
+    je .L403F62                                          # 00403ED0
+    push edi                                             # 00403ED6
+    mov edi, dword ptr [0x4d7030]                        # 00403ED7
+    push dword ptr [0x52498c]                            # 00403EDD
+    push ebx                                             # 00403EE3
+    call edi                                             # 00403EE4
+    push 0x524178                                        # 00403EE6
+    push 0x100                                           # 00403EEB
+    push 0                                               # 00403EF0
+    push esi                                             # 00403EF2
+    mov dword ptr [ebp - 4], eax                         # 00403EF3
+    call _sub_403E61                                     # 00403EF6
+    add esp, 0x10                                        # 00403EFB
+    push ebx                                             # 00403EFE
+    msvc_abscall 0x4D7038                                # 00403EFF
+    mov eax, dword ptr [ebp + 0xc]                       # 00403F05
+    push 0xcc0020                                        # 00403F08
+    push 0                                               # 00403F0D
+    mov ecx, dword ptr [eax + 0xc]                       # 00403F0F
+    mov edx, dword ptr [eax]                             # 00403F12
+    push dword ptr [esi + 0x98]                          # 00403F14
+    mov dword ptr [ebp + 8], ecx                         # 00403F1A
+    sub ecx, dword ptr [eax + 4]                         # 00403F1D
+    mov eax, dword ptr [eax + 8]                         # 00403F20
+    push dword ptr [esi + 0x94]                          # 00403F23
+    mov dword ptr [ebp + 0x10], edx                      # 00403F29
+    msvc_sub eax, edx                                    # 00403F2C
+    movsx edx, word ptr [esi + 8]                        # 00403F2E
+    sub edx, dword ptr [ebp + 8]                         # 00403F32
+    push ecx                                             # 00403F35
+    push eax                                             # 00403F36
+    push edx                                             # 00403F37
+    push dword ptr [ebp + 0x10]                          # 00403F38
+    push ecx                                             # 00403F3B
+    push eax                                             # 00403F3C
+    push dword ptr [ebp + 0x18]                          # 00403F3D
+    push dword ptr [ebp + 0x14]                          # 00403F40
+    push ebx                                             # 00403F43
+    msvc_abscall 0x4D705C                                # 00403F44
+    push 1                                               # 00403F4A
+    push dword ptr [ebp - 4]                             # 00403F4C
+    push ebx                                             # 00403F4F
+    call edi                                             # 00403F50
+    push 1                                               # 00403F52
+    pop edi                                              # 00403F54
+    push ebx                                             # 00403F55
+    push dword ptr [0x525320]                            # 00403F56
+    msvc_abscall 0x4D7280                                # 00403F5C
+.L403F62:
+    msvc_mov eax, edi                                    # 00403F62
+    pop ebx                                              # 00403F64
+    jmp .L403F69                                         # 00403F65
+.L403F67:
+    msvc_xor eax, eax                                    # 00403F67
+.L403F69:
+    pop edi                                              # 00403F69
+    pop esi                                              # 00403F6A
+    leave                                                # 00403F6B
+    ret                                                  # 00403F6C
+
+    .global _sub_403F6D
+_sub_403F6D:
+    msvc_xor eax, eax                                    # 00403F6D
+    ret                                                  # 00403F6F
+
+    .global _sub_403F70
+_sub_403F70:
+    cmp dword ptr [0x52498c], 0                          # 00403F70
+    push esi                                             # 00403F77
+    je .L403FBD                                          # 00403F78
+    push dword ptr [0x525320]                            # 00403F7A
+    msvc_abscall 0x4D727C                                # 00403F80
+    msvc_mov esi, eax                                    # 00403F86
+    test esi, esi                                        # 00403F88
+    je .L403FBD                                          # 00403F8A
+    push ebx                                             # 00403F8C
+    push edi                                             # 00403F8D
+    mov edi, dword ptr [0x4d7030]                        # 00403F8E
+    push 0                                               # 00403F94
+    push dword ptr [0x52498c]                            # 00403F96
+    push esi                                             # 00403F9C
+    call edi                                             # 00403F9D
+    push esi                                             # 00403F9F
+    msvc_mov ebx, eax                                    # 00403FA0
+    msvc_abscall 0x4D7038                                # 00403FA2
+    push 1                                               # 00403FA8
+    push ebx                                             # 00403FAA
+    push esi                                             # 00403FAB
+    call edi                                             # 00403FAC
+    push esi                                             # 00403FAE
+    push dword ptr [0x525320]                            # 00403FAF
+    msvc_abscall 0x4D7280                                # 00403FB5
+    pop edi                                              # 00403FBB
+    pop ebx                                              # 00403FBC
+.L403FBD:
+    pop esi                                              # 00403FBD
+    ret                                                  # 00403FBE
+
+    .global _sub_403FBF
+_sub_403FBF:
+    push esi                                             # 00403FBF
+    push edi                                             # 00403FC0
+    msvc_xor edi, edi                                    # 00403FC1
+    cmp dword ptr [0x524990], edi                        # 00403FC3
+    jne .L404056                                         # 00403FC9
+    mov esi, dword ptr [esp + 0xc]                       # 00403FCF
+    cmp dword ptr [esi + 0xa0], edi                      # 00403FD3
+    jne .L404056                                         # 00403FD9
+    mov eax, dword ptr [esp + 0x10]                      # 00403FDB
+    cmp dword ptr [eax + 0xa0], edi                      # 00403FDF
+    je .L404056                                          # 00403FE5
+    push dword ptr [0x525320]                            # 00403FE7
+    msvc_abscall 0x4D727C                                # 00403FED
+    msvc_cmp eax, edi                                    # 00403FF3
+    mov dword ptr [0x524990], eax                        # 00403FF5
+    je .L404056                                          # 00403FFA
+    mov ecx, dword ptr [esi + 0x98]                      # 00403FFC
+    push edi                                             # 00404002
+    push dword ptr [0x52498c]                            # 00404003
+    mov dword ptr [0x524994], ecx                        # 00404009
+    mov ecx, dword ptr [esi + 0x94]                      # 0040400F
+    mov dword ptr [0x524998], ecx                        # 00404015
+    push eax                                             # 0040401B
+    movsx ecx, word ptr [esi + 8]                        # 0040401C
+    mov dword ptr [0x52499c], ecx                        # 00404020
+    msvc_abscall 0x4D7030                                # 00404026
+    push 0x524178                                        # 0040402C
+    push 0x100                                           # 00404031
+    push edi                                             # 00404036
+    push esi                                             # 00404037
+    mov dword ptr [0x524578], eax                        # 00404038
+    call _sub_403E61                                     # 0040403D
+    add esp, 0x10                                        # 00404042
+    push dword ptr [0x524990]                            # 00404045
+    msvc_abscall 0x4D7038                                # 0040404B
+    push 1                                               # 00404051
+    pop eax                                              # 00404053
+    jmp .L404058                                         # 00404054
+.L404056:
+    msvc_xor eax, eax                                    # 00404056
+.L404058:
+    pop edi                                              # 00404058
+    pop esi                                              # 00404059
+    ret                                                  # 0040405A
+
+    .global _sub_40405B
+_sub_40405B:
+    mov eax, dword ptr [0x524990]                        # 0040405B
+    test eax, eax                                        # 00404060
+    je .L40409A                                          # 00404062
+    push 1                                               # 00404064
+    push dword ptr [0x524578]                            # 00404066
+    push eax                                             # 0040406C
+    msvc_abscall 0x4D7030                                # 0040406D
+    push dword ptr [0x524990]                            # 00404073
+    push dword ptr [0x525320]                            # 00404079
+    msvc_abscall 0x4D7280                                # 0040407F
+    and dword ptr [0x524990], 0                          # 00404085
+    and dword ptr [0x524994], 0                          # 0040408C
+    and dword ptr [0x524998], 0                          # 00404093
+.L40409A:
+    ret                                                  # 0040409A
+
+    .global _sub_40409B
+_sub_40409B:
+    push ebp                                             # 0040409B
+    msvc_mov ebp, esp                                    # 0040409C
+    cmp dword ptr [0x524990], 0                          # 0040409E
+    je .L40410A                                          # 004040A5
+    mov ecx, dword ptr [ebp + 0xc]                       # 004040A7
+    mov eax, dword ptr [ebp + 8]                         # 004040AA
+    push ebx                                             # 004040AD
+    push esi                                             # 004040AE
+    mov ebx, dword ptr [ecx]                             # 004040AF
+    mov edx, dword ptr [eax + 0xc]                       # 004040B1
+    mov esi, dword ptr [eax]                             # 004040B4
+    push edi                                             # 004040B6
+    push 0xcc0020                                        # 004040B7
+    push 0                                               # 004040BC
+    push dword ptr [0x524994]                            # 004040BE
+    mov dword ptr [ebp + 8], ebx                         # 004040C4
+    msvc_mov ebx, edx                                    # 004040C7
+    mov edi, dword ptr [ecx + 4]                         # 004040C9
+    sub ebx, dword ptr [eax + 4]                         # 004040CC
+    push dword ptr [0x524998]                            # 004040CF
+    mov eax, dword ptr [eax + 8]                         # 004040D5
+    msvc_sub eax, esi                                    # 004040D8
+    push ebx                                             # 004040DA
+    push eax                                             # 004040DB
+    mov eax, dword ptr [0x52499c]                        # 004040DC
+    msvc_sub eax, edx                                    # 004040E1
+    push eax                                             # 004040E3
+    mov eax, dword ptr [ecx + 0xc]                       # 004040E4
+    msvc_sub eax, edi                                    # 004040E7
+    push esi                                             # 004040E9
+    push eax                                             # 004040EA
+    mov eax, dword ptr [ecx + 8]                         # 004040EB
+    sub eax, dword ptr [ebp + 8]                         # 004040EE
+    push eax                                             # 004040F1
+    push edi                                             # 004040F2
+    push dword ptr [ebp + 8]                             # 004040F3
+    push dword ptr [0x524990]                            # 004040F6
+    msvc_abscall 0x4D705C                                # 004040FC
+    push 1                                               # 00404102
+    pop eax                                              # 00404104
+    pop edi                                              # 00404105
+    pop esi                                              # 00404106
+    pop ebx                                              # 00404107
+    pop ebp                                              # 00404108
+    ret                                                  # 00404109
+.L40410A:
+    msvc_xor eax, eax                                    # 0040410A
+    pop ebp                                              # 0040410C
+    ret                                                  # 0040410D
+
+    .global _sub_40410E
+_sub_40410E:
+    push esi                                             # 0040410E
+    mov esi, dword ptr [0x524990]                        # 0040410F
+    test esi, esi                                        # 00404115
+    je .L40417B                                          # 00404117
+    mov eax, dword ptr [esp + 8]                         # 00404119
+    push ebx                                             # 0040411D
+    push edi                                             # 0040411E
+    push 0xcc0020                                        # 0040411F
+    mov ebx, dword ptr [eax + 0xc]                       # 00404124
+    mov edi, dword ptr [eax]                             # 00404127
+    mov ecx, dword ptr [eax + 8]                         # 00404129
+    push 0                                               # 0040412C
+    push dword ptr [0x524994]                            # 0040412E
+    msvc_mov edx, ebx                                    # 00404134
+    sub edx, dword ptr [eax + 4]                         # 00404136
+    mov eax, dword ptr [0x52499c]                        # 00404139
+    push dword ptr [0x524998]                            # 0040413E
+    msvc_sub ecx, edi                                    # 00404144
+    msvc_sub eax, ebx                                    # 00404146
+    push edx                                             # 00404148
+    push ecx                                             # 00404149
+    push eax                                             # 0040414A
+    push edi                                             # 0040414B
+    push edx                                             # 0040414C
+    push ecx                                             # 0040414D
+    push dword ptr [esp + 0x40]                          # 0040414E
+    push dword ptr [esp + 0x40]                          # 00404152
+    push esi                                             # 00404156
+    msvc_abscall 0x4D705C                                # 00404157
+    pop edi                                              # 0040415D
+    cmp eax, -1                                          # 0040415E
+    pop ebx                                              # 00404161
+    jne .L404176                                         # 00404162
+    push 0x50606c                                        # 00404164
+    call _sub_407B5D                                     # 00404169
+    pop ecx                                              # 0040416E
+    push 0                                               # 0040416F
+    call _sub_4D14A2                                     # 00404171
+.L404176:
+    push 1                                               # 00404176
+    pop eax                                              # 00404178
+    pop esi                                              # 00404179
+    ret                                                  # 0040417A
+.L40417B:
+    msvc_xor eax, eax                                    # 0040417B
+    pop esi                                              # 0040417D
+    ret                                                  # 0040417E
+
+    .global _sub_40417F
+_sub_40417F:
+    mov eax, dword ptr [0x52498c]                        # 0040417F
+    test eax, eax                                        # 00404184
+    je .L404196                                          # 00404186
+    push eax                                             # 00404188
+    msvc_abscall 0x4D708C                                # 00404189
+    and dword ptr [0x52498c], 0                          # 0040418F
+.L404196:
+    push esi                                             # 00404196
+    mov esi, dword ptr [0x524984]                        # 00404197
+    test esi, esi                                        # 0040419D
+    je .L4041C1                                          # 0040419F
+    push edi                                             # 004041A1
+.L4041A2:
+    push dword ptr [esi]                                 # 004041A2
+    msvc_mov edi, esi                                    # 004041A4
+    call _sub_403D3C                                     # 004041A6
+    mov esi, dword ptr [esi + 4]                         # 004041AB
+    push edi                                             # 004041AE
+    call _sub_4D1355                                     # 004041AF
+    pop ecx                                              # 004041B4
+    test esi, esi                                        # 004041B5
+    pop ecx                                              # 004041B7
+    jne .L4041A2                                         # 004041B8
+    and dword ptr [0x524984], esi                        # 004041BA
+    pop edi                                              # 004041C0
+.L4041C1:
+    mov eax, dword ptr [0x525320]                        # 004041C1
+    pop esi                                              # 004041C6
+    test eax, eax                                        # 004041C7
+    je .L4041D9                                          # 004041C9
+    push eax                                             # 004041CB
+    msvc_abscall 0x4D7270                                # 004041CC
+    and dword ptr [0x525320], 0                          # 004041D2
+.L4041D9:
+    ret                                                  # 004041D9
 
     .global _sub_4041DA
 _sub_4041DA:
     mov eax, dword ptr [0x113e200]                       # 004041DA
     cmp eax, 1                                           # 004041DF
-    je _sub_4041E9                                       # 004041E2
+    je .L4041E9                                          # 004041E2
     cmp eax, 2                                           # 004041E4
-    jne _sub_4041F0                                      # 004041E7
-
-    .global _sub_4041E9
-_sub_4041E9:
+    jne .L4041F0                                         # 004041E7
+.L4041E9:
     or dword ptr [0x113ffec], 1                          # 004041E9
-
-    .global _sub_4041F0
-_sub_4041F0:
+.L4041F0:
     ret                                                  # 004041F0
 
     .global _sub_4041F1
@@ -3037,7 +4824,7 @@ _sub_4041F5:
     msvc_abscall 0x4D727C                                # 00404215
     msvc_mov ebx, eax                                    # 0040421B
     test ebx, ebx                                        # 0040421D
-    je _sub_40423E                                       # 0040421F
+    je .L40423E                                          # 0040421F
     push 0x6a                                            # 00404221
     push ebx                                             # 00404223
     msvc_abscall 0x4D7048                                # 00404224
@@ -3047,9 +4834,7 @@ _sub_4041F5:
     mov word ptr [esi + 8], ax                           # 00404230
     mov word ptr [esi + 0xa], ax                         # 00404234
     msvc_abscall 0x4D7280                                # 00404238
-
-    .global _sub_40423E
-_sub_40423E:
+.L40423E:
     lea eax, [edi + 1]                                   # 0040423E
     pop edi                                              # 00404241
     pop esi                                              # 00404242
@@ -3071,19 +4856,17 @@ _sub_404245:
     mov dword ptr [ebp - 4], eax                         # 00404256
     msvc_abscall 0x4D7064                                # 00404259
     cmp eax, 2                                           # 0040425F
-    jne _sub_4042FE                                      # 00404262
+    jne .L4042FE                                         # 00404262
     mov edx, dword ptr [ebp + 0xc]                       # 00404268
     mov esi, dword ptr [ebp + 0x10]                      # 0040426B
     msvc_cmp edx, edi                                    # 0040426E
-    jle _sub_4042A5                                      # 00404270
+    jle .L4042A5                                         # 00404270
     mov ecx, dword ptr [ebp + 8]                         # 00404272
     lea eax, [esi + 5]                                   # 00404275
     inc ecx                                              # 00404278
     mov dword ptr [ebp + 8], edx                         # 00404279
     msvc_mov edi, edx                                    # 0040427C
-
-    .global _sub_40427E
-_sub_40427E:
+.L40427E:
     mov bl, byte ptr [ecx + 1]                           # 0040427E
     mov byte ptr [eax - 1], bl                           # 00404281
     mov bl, byte ptr [ecx]                               # 00404284
@@ -3094,25 +4877,19 @@ _sub_40427E:
     add ecx, 4                                           # 00404292
     add eax, 4                                           # 00404295
     dec dword ptr [ebp + 8]                              # 00404298
-    jne _sub_40427E                                      # 0040429B
+    jne .L40427E                                         # 0040429B
     cmp edx, 0x100                                       # 0040429D
-    jge _sub_4042B9                                      # 004042A3
-
-    .global _sub_4042A5
-_sub_4042A5:
+    jge .L4042B9                                         # 004042A3
+.L4042A5:
     mov eax, 0x100                                       # 004042A5
     lea ecx, [esi + edi*4 + 7]                           # 004042AA
     msvc_sub eax, edi                                    # 004042AE
-
-    .global _sub_4042B0
-_sub_4042B0:
+.L4042B0:
     mov byte ptr [ecx], 1                                # 004042B0
     add ecx, 4                                           # 004042B3
     dec eax                                              # 004042B6
-    jne _sub_4042B0                                      # 004042B7
-
-    .global _sub_4042B9
-_sub_4042B9:
+    jne .L4042B0                                         # 004042B7
+.L4042B9:
     or byte ptr [esi + 0x400], 0xff                      # 004042B9
     or byte ptr [esi + 0x401], 0xff                      # 004042C0
     or byte ptr [esi + 0x402], 0xff                      # 004042C7
@@ -3123,17 +4900,15 @@ _sub_4042B9:
     and byte ptr [esi + 7], 0                            # 004042E1
     mov dword ptr [0x5251b0], 1                          # 004042E5
     mov dword ptr [0x5251b4], 0xfe                       # 004042EF
-    msvc_jmp _sub_40445D                                 # 004042F9
-
-    .global _sub_4042FE
-_sub_4042FE:
+    msvc_jmp .L40445D                                    # 004042F9
+.L4042FE:
     push 0x18                                            # 004042FE
     push dword ptr [ebp - 4]                             # 00404300
     msvc_abscall 0x4D7048                                # 00404303
     mov edi, dword ptr [ebp + 0xc]                       # 00404309
     msvc_mov ebx, eax                                    # 0040430C
     test ebx, ebx                                        # 0040430E
-    jle _sub_404421                                      # 00404310
+    jle .L404421                                         # 00404310
     mov esi, dword ptr [ebp + 0x10]                      # 00404316
     msvc_sub edi, ebx                                    # 00404319
     sar ebx, 1                                           # 0040431B
@@ -3148,15 +4923,13 @@ _sub_4042FE:
     msvc_xor eax, eax                                    # 00404339
     test ebx, ebx                                        # 0040433B
     mov dword ptr [ebp + 0xc], eax                       # 0040433D
-    jle _sub_404373                                      # 00404340
+    jle .L404373                                         # 00404340
     mov eax, dword ptr [ebp + 8]                         # 00404342
     mov dword ptr [ebp + 0x10], ebx                      # 00404345
     mov dword ptr [ebp + 0xc], ebx                       # 00404348
     lea ecx, [eax + 1]                                   # 0040434B
     lea eax, [esi + 5]                                   # 0040434E
-
-    .global _sub_404351
-_sub_404351:
+.L404351:
     mov dl, byte ptr [eax - 1]                           # 00404351
     mov byte ptr [ecx + 1], dl                           # 00404354
     mov dl, byte ptr [eax]                               # 00404357
@@ -3167,14 +4940,12 @@ _sub_404351:
     add ecx, 4                                           # 00404365
     add eax, 4                                           # 00404368
     dec dword ptr [ebp + 0x10]                           # 0040436B
-    jne _sub_404351                                      # 0040436E
+    jne .L404351                                         # 0040436E
     mov eax, dword ptr [ebp + 0xc]                       # 00404370
-
-    .global _sub_404373
-_sub_404373:
+.L404373:
     msvc_add edi, ebx                                    # 00404373
     msvc_cmp eax, edi                                    # 00404375
-    jge _sub_4043AF                                      # 00404377
+    jge .L4043AF                                         # 00404377
     mov edx, dword ptr [ebp + 8]                         # 00404379
     sub edi, dword ptr [ebp + 0xc]                       # 0040437C
     msvc_mov ecx, eax                                    # 0040437F
@@ -3182,9 +4953,7 @@ _sub_404373:
     add dword ptr [ebp + 0xc], edi                       # 00404384
     lea eax, [ecx + esi + 5]                             # 00404387
     lea ecx, [ecx + edx + 1]                             # 0040438B
-
-    .global _sub_40438F
-_sub_40438F:
+.L40438F:
     mov dl, byte ptr [ecx + 1]                           # 0040438F
     mov byte ptr [eax - 1], dl                           # 00404392
     mov dl, byte ptr [ecx]                               # 00404395
@@ -3195,29 +4964,23 @@ _sub_40438F:
     add ecx, 4                                           # 004043A3
     add eax, 4                                           # 004043A6
     dec edi                                              # 004043A9
-    jne _sub_40438F                                      # 004043AA
+    jne .L40438F                                         # 004043AA
     mov eax, dword ptr [ebp + 0xc]                       # 004043AC
-
-    .global _sub_4043AF
-_sub_4043AF:
+.L4043AF:
     mov edi, 0x100                                       # 004043AF
     msvc_sub edi, ebx                                    # 004043B4
     msvc_cmp eax, edi                                    # 004043B6
     mov dword ptr [ebp + 0xc], edi                       # 004043B8
-    jge _sub_4043CE                                      # 004043BB
+    jge .L4043CE                                         # 004043BB
     msvc_mov ecx, edi                                    # 004043BD
     lea edx, [esi + eax*4 + 7]                           # 004043BF
     msvc_sub ecx, eax                                    # 004043C3
-
-    .global _sub_4043C5
-_sub_4043C5:
+.L4043C5:
     mov byte ptr [edx], 1                                # 004043C5
     add edx, 4                                           # 004043C8
     dec ecx                                              # 004043CB
-    jne _sub_4043C5                                      # 004043CC
-
-    .global _sub_4043CE
-_sub_4043CE:
+    jne .L4043C5                                         # 004043CC
+.L4043CE:
     mov eax, 0x101                                       # 004043CE
     msvc_sub eax, ebx                                    # 004043D3
     lea eax, [esi + eax*4]                               # 004043D5
@@ -3228,7 +4991,7 @@ _sub_4043CE:
     msvc_abscall 0x4D7088                                # 004043DE
     mov edx, 0x100                                       # 004043E4
     msvc_cmp edi, edx                                    # 004043E9
-    jge _sub_40445D                                      # 004043EB
+    jge .L40445D                                         # 004043EB
     mov ecx, dword ptr [ebp + 8]                         # 004043ED
     msvc_mov eax, edi                                    # 004043F0
     shl eax, 2                                           # 004043F2
@@ -3236,9 +4999,7 @@ _sub_4043CE:
     sub edi, dword ptr [ebp + 0xc]                       # 004043F7
     lea ecx, [eax + ecx + 1]                             # 004043FA
     lea eax, [eax + esi + 5]                             # 004043FE
-
-    .global _sub_404402
-_sub_404402:
+.L404402:
     mov dl, byte ptr [eax - 1]                           # 00404402
     mov byte ptr [ecx + 1], dl                           # 00404405
     mov dl, byte ptr [eax]                               # 00404408
@@ -3249,20 +5010,16 @@ _sub_404402:
     add ecx, 4                                           # 00404416
     add eax, 4                                           # 00404419
     dec edi                                              # 0040441C
-    jne _sub_404402                                      # 0040441D
-    jmp _sub_40445D                                      # 0040441F
-
-    .global _sub_404421
-_sub_404421:
+    jne .L404402                                         # 0040441D
+    jmp .L40445D                                         # 0040441F
+.L404421:
     mov esi, dword ptr [ebp + 0x10]                      # 00404421
     test edi, edi                                        # 00404424
-    jle _sub_40444C                                      # 00404426
+    jle .L40444C                                         # 00404426
     mov ecx, dword ptr [ebp + 8]                         # 00404428
     lea eax, [esi + 5]                                   # 0040442B
     inc ecx                                              # 0040442E
-
-    .global _sub_40442F
-_sub_40442F:
+.L40442F:
     mov dl, byte ptr [ecx + 1]                           # 0040442F
     mov byte ptr [eax - 1], dl                           # 00404432
     mov dl, byte ptr [ecx]                               # 00404435
@@ -3273,15 +5030,11 @@ _sub_40442F:
     add ecx, 4                                           # 00404443
     add eax, 4                                           # 00404446
     dec edi                                              # 00404449
-    jne _sub_40442F                                      # 0040444A
-
-    .global _sub_40444C
-_sub_40444C:
+    jne .L40442F                                         # 0040444A
+.L40444C:
     and dword ptr [0x5251b0], 0                          # 0040444C
     mov dword ptr [0x5251b4], 0x100                      # 00404453
-
-    .global _sub_40445D
-_sub_40445D:
+.L40445D:
     push dword ptr [ebp - 4]                             # 0040445D
     push 0                                               # 00404460
     msvc_abscall 0x4D7280                                # 00404462
@@ -3355,12 +5108,10 @@ _sub_40447F:
     push dword ptr [0x113e0b4]                           # 00404536
     call _sub_4D0FA0                                     # 0040453C
     test eax, eax                                        # 00404541
-    je _sub_404549                                       # 00404543
+    je .L404549                                          # 00404543
     msvc_xor eax, eax                                    # 00404545
-    jmp _sub_4045BD                                      # 00404547
-
-    .global _sub_404549
-_sub_404549:
+    jmp .L4045BD                                         # 00404547
+.L404549:
     mov eax, dword ptr [0x5251dc]                        # 00404549
     push ebx                                             # 0040454E
     push 0x5251e0                                        # 0040454F
@@ -3369,19 +5120,17 @@ _sub_404549:
     push eax                                             # 0040455B
     call dword ptr [ecx + 0xc]                           # 0040455C
     test eax, eax                                        # 0040455F
-    jne _sub_404582                                      # 00404561
+    jne .L404582                                         # 00404561
     mov eax, dword ptr [0x5251e0]                        # 00404563
     push 0x504b88                                        # 00404568
     push eax                                             # 0040456D
     mov ecx, dword ptr [eax]                             # 0040456E
     call dword ptr [ecx + 0x2c]                          # 00404570
     test eax, eax                                        # 00404573
-    jne _sub_404582                                      # 00404575
+    jne .L404582                                         # 00404575
     call _sub_404642                                     # 00404577
     mov dword ptr [0x1140700], edi                       # 0040457C
-
-    .global _sub_404582
-_sub_404582:
+.L404582:
     mov eax, dword ptr [0x5251dc]                        # 00404582
     push ebx                                             # 00404587
     push 0x5251e4                                        # 00404588
@@ -3390,23 +5139,19 @@ _sub_404582:
     push eax                                             # 00404594
     call dword ptr [ecx + 0xc]                           # 00404595
     test eax, eax                                        # 00404598
-    jne _sub_4045BB                                      # 0040459A
+    jne .L4045BB                                         # 0040459A
     mov eax, dword ptr [0x5251e4]                        # 0040459C
     push 0x504b70                                        # 004045A1
     push eax                                             # 004045A6
     mov ecx, dword ptr [eax]                             # 004045A7
     call dword ptr [ecx + 0x2c]                          # 004045A9
     test eax, eax                                        # 004045AC
-    jne _sub_4045BB                                      # 004045AE
+    jne .L4045BB                                         # 004045AE
     call _sub_40468C                                     # 004045B0
     mov dword ptr [0x1140714], edi                       # 004045B5
-
-    .global _sub_4045BB
-_sub_4045BB:
+.L4045BB:
     msvc_mov eax, edi                                    # 004045BB
-
-    .global _sub_4045BD
-_sub_4045BD:
+.L4045BD:
     pop edi                                              # 004045BD
     pop esi                                              # 004045BE
     pop ebx                                              # 004045BF
@@ -3418,72 +5163,63 @@ _sub_4045C2:
     push esi                                             # 004045C2
     msvc_xor esi, esi                                    # 004045C3
     cmp dword ptr [0x5251e8], esi                        # 004045C5
-    je _sub_4045DE                                       # 004045CB
+    je .L4045DE                                          # 004045CB
     mov eax, dword ptr [0x5251e0]                        # 004045CD
     push eax                                             # 004045D2
     mov ecx, dword ptr [eax]                             # 004045D3
     call dword ptr [ecx + 0x20]                          # 004045D5
     mov dword ptr [0x5251e8], esi                        # 004045D8
-
-    .global _sub_4045DE
-_sub_4045DE:
+.L4045DE:
     mov eax, dword ptr [0x5251e0]                        # 004045DE
     msvc_cmp eax, esi                                    # 004045E3
-    je _sub_4045F3                                       # 004045E5
+    je .L4045F3                                          # 004045E5
     mov ecx, dword ptr [eax]                             # 004045E7
     push eax                                             # 004045E9
     call dword ptr [ecx + 8]                             # 004045EA
     mov dword ptr [0x5251e0], esi                        # 004045ED
-
-    .global _sub_4045F3
-_sub_4045F3:
+.L4045F3:
     cmp dword ptr [0x5251ec], esi                        # 004045F3
-    je _sub_40460C                                       # 004045F9
+    je .L40460C                                          # 004045F9
     mov eax, dword ptr [0x5251e4]                        # 004045FB
     push eax                                             # 00404600
     mov ecx, dword ptr [eax]                             # 00404601
     call dword ptr [ecx + 0x20]                          # 00404603
     mov dword ptr [0x5251ec], esi                        # 00404606
-
-    .global _sub_40460C
-_sub_40460C:
+.L40460C:
     mov eax, dword ptr [0x5251e4]                        # 0040460C
     msvc_cmp eax, esi                                    # 00404611
-    je _sub_404621                                       # 00404613
+    je .L404621                                          # 00404613
     mov ecx, dword ptr [eax]                             # 00404615
     push eax                                             # 00404617
     call dword ptr [ecx + 8]                             # 00404618
     mov dword ptr [0x5251e4], esi                        # 0040461B
-
-    .global _sub_404621
-_sub_404621:
+.L404621:
     mov eax, dword ptr [0x5251dc]                        # 00404621
     msvc_cmp eax, esi                                    # 00404626
-    je _sub_404636                                       # 00404628
+    je .L404636                                          # 00404628
     mov ecx, dword ptr [eax]                             # 0040462A
     push eax                                             # 0040462C
     call dword ptr [ecx + 8]                             # 0040462D
     mov dword ptr [0x5251dc], esi                        # 00404630
-
-    .global _sub_404636
-_sub_404636:
+.L404636:
     pop esi                                              # 00404636
     ret                                                  # 00404637
-# 0x404638
-    .byte 0xE8, 0x05, 0x00, 0x00, 0x00, 0xE9, 0x4A, 0x00 #        0 ......J.
-    .byte 0x00, 0x00                                     #        8 ..
 
+    .global _sub_404638
+_sub_404638:
+    call _sub_404642                                     # 00404638
+    msvc_jmp _sub_40468C                                 # 0040463D
 
     .global _sub_404642
 _sub_404642:
     cmp dword ptr [0x5251d8], 0                          # 00404642
-    je _sub_40468B                                       # 00404649
+    je .L40468B                                          # 00404649
     mov eax, dword ptr [0x5251e0]                        # 0040464B
     test eax, eax                                        # 00404650
-    je _sub_40468B                                       # 00404652
+    je .L40468B                                          # 00404652
     mov ecx, dword ptr [0x525320]                        # 00404654
     test ecx, ecx                                        # 0040465A
-    je _sub_40468B                                       # 0040465C
+    je .L40468B                                          # 0040465C
     and dword ptr [0x5251e8], 0                          # 0040465E
     mov edx, dword ptr [eax]                             # 00404665
     push 6                                               # 00404667
@@ -3491,27 +5227,25 @@ _sub_404642:
     push eax                                             # 0040466A
     call dword ptr [edx + 0x34]                          # 0040466B
     test eax, eax                                        # 0040466E
-    jne _sub_40468B                                      # 00404670
+    jne .L40468B                                         # 00404670
     mov eax, dword ptr [0x5251e0]                        # 00404672
     push eax                                             # 00404677
     mov ecx, dword ptr [eax]                             # 00404678
     call dword ptr [ecx + 0x1c]                          # 0040467A
     test eax, eax                                        # 0040467D
-    jne _sub_40468B                                      # 0040467F
+    jne .L40468B                                         # 0040467F
     mov dword ptr [0x5251e8], 1                          # 00404681
-
-    .global _sub_40468B
-_sub_40468B:
+.L40468B:
     ret                                                  # 0040468B
 
     .global _sub_40468C
 _sub_40468C:
     mov eax, dword ptr [0x5251e4]                        # 0040468C
     test eax, eax                                        # 00404691
-    je _sub_4046CC                                       # 00404693
+    je .L4046CC                                          # 00404693
     mov ecx, dword ptr [0x525320]                        # 00404695
     test ecx, ecx                                        # 0040469B
-    je _sub_4046CC                                       # 0040469D
+    je .L4046CC                                          # 0040469D
     and dword ptr [0x5251ec], 0                          # 0040469F
     mov edx, dword ptr [eax]                             # 004046A6
     push 6                                               # 004046A8
@@ -3519,17 +5253,15 @@ _sub_40468C:
     push eax                                             # 004046AB
     call dword ptr [edx + 0x34]                          # 004046AC
     test eax, eax                                        # 004046AF
-    jne _sub_4046CC                                      # 004046B1
+    jne .L4046CC                                         # 004046B1
     mov eax, dword ptr [0x5251e4]                        # 004046B3
     push eax                                             # 004046B8
     mov ecx, dword ptr [eax]                             # 004046B9
     call dword ptr [ecx + 0x1c]                          # 004046BB
     test eax, eax                                        # 004046BE
-    jne _sub_4046CC                                      # 004046C0
+    jne .L4046CC                                         # 004046C0
     mov dword ptr [0x5251ec], 1                          # 004046C2
-
-    .global _sub_4046CC
-_sub_4046CC:
+.L4046CC:
     ret                                                  # 004046CC
 
     .global _sub_4046CD
@@ -3556,7 +5288,7 @@ _sub_4046EA:
     and dword ptr [0x1140840], 0                         # 004046FC
     and dword ptr [0x114084c], 0                         # 00404703
     test eax, eax                                        # 0040470A
-    je _sub_404778                                       # 0040470C
+    je .L404778                                          # 0040470C
     mov ecx, dword ptr [eax]                             # 0040470E
     lea edx, [ebp - 0x10]                                # 00404710
     push edx                                             # 00404713
@@ -3564,19 +5296,15 @@ _sub_4046EA:
     push eax                                             # 00404716
     call dword ptr [ecx + 0x24]                          # 00404717
     test eax, eax                                        # 0040471A
-    je _sub_404733                                       # 0040471C
+    je .L404733                                          # 0040471C
     cmp eax, 0x8007001e                                  # 0040471E
-    je _sub_40472C                                       # 00404723
+    je .L40472C                                          # 00404723
     cmp eax, 0x8007000c                                  # 00404725
-    jne _sub_404778                                      # 0040472A
-
-    .global _sub_40472C
-_sub_40472C:
+    jne .L404778                                         # 0040472A
+.L40472C:
     call _sub_404642                                     # 0040472C
-    jmp _sub_404778                                      # 00404731
-
-    .global _sub_404733
-_sub_404733:
+    jmp .L404778                                         # 00404731
+.L404733:
     mov eax, dword ptr [ebp - 0x10]                      # 00404733
     mov dl, byte ptr [ebp - 2]                           # 00404736
     mov ecx, dword ptr [ebp - 4]                         # 00404739
@@ -3593,9 +5321,7 @@ _sub_404733:
     mov byte ptr [0x1140846], dl                         # 00404763
     mov byte ptr [0x1140848], al                         # 00404769
     mov dword ptr [0x5251c8], 1                          # 0040476E
-
-    .global _sub_404778
-_sub_404778:
+.L404778:
     mov eax, dword ptr [0x5251c8]                        # 00404778
     leave                                                # 0040477D
     ret                                                  # 0040477E
@@ -3605,30 +5331,24 @@ _sub_40477F:
     mov eax, dword ptr [0x5251e4]                        # 0040477F
     and dword ptr [0x5251cc], 0                          # 00404784
     test eax, eax                                        # 0040478B
-    je _sub_4047C2                                       # 0040478D
+    je .L4047C2                                          # 0040478D
     mov ecx, dword ptr [eax]                             # 0040478F
     push 0x1140740                                       # 00404791
     push 0x100                                           # 00404796
     push eax                                             # 0040479B
     call dword ptr [ecx + 0x24]                          # 0040479C
     test eax, eax                                        # 0040479F
-    je _sub_4047B8                                       # 004047A1
+    je .L4047B8                                          # 004047A1
     cmp eax, 0x8007001e                                  # 004047A3
-    je _sub_4047B1                                       # 004047A8
+    je .L4047B1                                          # 004047A8
     cmp eax, 0x8007000c                                  # 004047AA
-    jne _sub_4047C2                                      # 004047AF
-
-    .global _sub_4047B1
-_sub_4047B1:
+    jne .L4047C2                                         # 004047AF
+.L4047B1:
     call _sub_40468C                                     # 004047B1
-    jmp _sub_4047C2                                      # 004047B6
-
-    .global _sub_4047B8
-_sub_4047B8:
+    jmp .L4047C2                                         # 004047B6
+.L4047B8:
     mov dword ptr [0x5251cc], 1                          # 004047B8
-
-    .global _sub_4047C2
-_sub_4047C2:
+.L4047C2:
     mov eax, dword ptr [0x5251cc]                        # 004047C2
     ret                                                  # 004047C7
 
@@ -3669,20 +5389,16 @@ _sub_40482D:
     msvc_xor esi, esi                                    # 00404838
     msvc_cmp eax, esi                                    # 0040483A
     push edi                                             # 0040483C
-    jne _sub_404844                                      # 0040483D
+    jne .L404844                                         # 0040483D
     mov dword ptr [ebp + 0xc], esi                       # 0040483F
-    jmp _sub_40485F                                      # 00404842
-
-    .global _sub_404844
-_sub_404844:
+    jmp .L40485F                                         # 00404842
+.L404844:
     cmp eax, dword ptr [0x5251f0]                        # 00404844
-    jae _sub_404A1A                                      # 0040484A
+    jae .L404A1A                                         # 0040484A
     imul eax, eax, 0x210                                 # 00404850
     add eax, dword ptr [0x5251f4]                        # 00404856
     mov dword ptr [ebp + 0xc], eax                       # 0040485C
-
-    .global _sub_40485F
-_sub_40485F:
+.L40485F:
     push 0x12                                            # 0040485F
     mov edi, 0x1140680                                   # 00404861
     push esi                                             # 00404866
@@ -3718,22 +5434,20 @@ _sub_40485F:
     mov dword ptr [ebp - 0x4c], ebx                      # 004048CA
     mov dword ptr [ebp - 0x44], esi                      # 004048CD
     mov dword ptr [ebp - 0x3c], esi                      # 004048D0
-    je _sub_404A21                                       # 004048D3
+    je .L404A21                                          # 004048D3
     dec eax                                              # 004048D9
-    jne _sub_404A1A                                      # 004048DA
+    jne .L404A1A                                         # 004048DA
     cmp dword ptr [0x5251f8], esi                        # 004048E0
     mov dword ptr [ebp - 0x48], 0x11                     # 004048E6
-    je _sub_4048F6                                       # 004048ED
+    je .L4048F6                                          # 004048ED
     mov dword ptr [ebp - 0x48], 0x4011                   # 004048EF
-
-    .global _sub_4048F6
-_sub_4048F6:
+.L4048F6:
     push esi                                             # 004048F6
     push 0x525208                                        # 004048F7
     push dword ptr [ebp + 0xc]                           # 004048FC
     call _sub_4D0FA6                                     # 004048FF
     test eax, eax                                        # 00404904
-    jne _sub_404A1A                                      # 00404906
+    jne .L404A1A                                         # 00404906
     mov eax, dword ptr [0x525208]                        # 0040490C
     push 1                                               # 00404911
     push dword ptr [0x525320]                            # 00404913
@@ -3741,7 +5455,7 @@ _sub_4048F6:
     push eax                                             # 0040491B
     call dword ptr [ecx + 0x18]                          # 0040491C
     test eax, eax                                        # 0040491F
-    jne _sub_404A09                                      # 00404921
+    jne .L404A09                                         # 00404921
     mov eax, dword ptr [0x525208]                        # 00404927
     push esi                                             # 0040492C
     lea edx, [ebp - 0x4c]                                # 0040492D
@@ -3751,7 +5465,7 @@ _sub_4048F6:
     push eax                                             # 00404938
     call dword ptr [ecx + 0xc]                           # 00404939
     test eax, eax                                        # 0040493C
-    jne _sub_404A09                                      # 0040493E
+    jne .L404A09                                         # 0040493E
     mov eax, dword ptr [0x525210]                        # 00404944
     push 0x52520c                                        # 00404949
     push 0x504aa0                                        # 0040494E
@@ -3759,7 +5473,7 @@ _sub_4048F6:
     mov ecx, dword ptr [eax]                             # 00404954
     call dword ptr [ecx]                                 # 00404956
     test eax, eax                                        # 00404958
-    jne _sub_4049F8                                      # 0040495A
+    jne .L4049F8                                         # 0040495A
     push 0x40                                            # 00404960
     pop edi                                              # 00404962
     push edi                                             # 00404963
@@ -3771,13 +5485,11 @@ _sub_4048F6:
     mov dword ptr [eax], edi                             # 00404978
     call _sub_404E23                                     # 0040497A
     test eax, eax                                        # 0040497F
-    je _sub_40498D                                       # 00404981
+    je .L40498D                                          # 00404981
     mov eax, dword ptr [0x506084]                        # 00404983
     fldz                                                 # 00404988
     fstp dword ptr [eax + 4]                             # 0040498A
-
-    .global _sub_40498D
-_sub_40498D:
+.L40498D:
     mov eax, dword ptr [0x506084]                        # 0040498D
     fldz                                                 # 00404992
     fstp dword ptr [eax + 8]                             # 00404994
@@ -3792,73 +5504,59 @@ _sub_40498D:
     fstp dword ptr [eax + 0x38]                          # 004049BE
     call _sub_404E3A                                     # 004049C1
     test eax, eax                                        # 004049C6
-    je _sub_4049E7                                       # 004049C8
+    je .L4049E7                                          # 004049C8
     mov eax, dword ptr [0x52520c]                        # 004049CA
     push eax                                             # 004049CF
     mov ecx, dword ptr [eax]                             # 004049D0
     call dword ptr [ecx + 0x44]                          # 004049D2
     test eax, eax                                        # 004049D5
-    jne _sub_4049E7                                      # 004049D7
+    jne .L4049E7                                         # 004049D7
     call _sub_404E23                                     # 004049D9
     test eax, eax                                        # 004049DE
-    je _sub_4049E7                                       # 004049E0
+    je .L4049E7                                          # 004049E0
     push 1                                               # 004049E2
     pop eax                                              # 004049E4
-    jmp _sub_404A1C                                      # 004049E5
-
-    .global _sub_4049E7
-_sub_4049E7:
+    jmp .L404A1C                                         # 004049E5
+.L4049E7:
     mov eax, dword ptr [0x52520c]                        # 004049E7
     push eax                                             # 004049EC
     mov ecx, dword ptr [eax]                             # 004049ED
     call dword ptr [ecx + 8]                             # 004049EF
     mov dword ptr [0x52520c], esi                        # 004049F2
-
-    .global _sub_4049F8
-_sub_4049F8:
+.L4049F8:
     mov eax, dword ptr [0x525210]                        # 004049F8
     push eax                                             # 004049FD
     mov ecx, dword ptr [eax]                             # 004049FE
     call dword ptr [ecx + 8]                             # 00404A00
     mov dword ptr [0x525210], esi                        # 00404A03
-
-    .global _sub_404A09
-_sub_404A09:
+.L404A09:
     mov eax, dword ptr [0x525208]                        # 00404A09
     push eax                                             # 00404A0E
     mov ecx, dword ptr [eax]                             # 00404A0F
     call dword ptr [ecx + 8]                             # 00404A11
     mov dword ptr [0x525208], esi                        # 00404A14
-
-    .global _sub_404A1A
-_sub_404A1A:
+.L404A1A:
     msvc_xor eax, eax                                    # 00404A1A
-
-    .global _sub_404A1C
-_sub_404A1C:
+.L404A1C:
     pop edi                                              # 00404A1C
     pop esi                                              # 00404A1D
     pop ebx                                              # 00404A1E
     leave                                                # 00404A1F
     ret                                                  # 00404A20
-
-    .global _sub_404A21
-_sub_404A21:
+.L404A21:
     cmp dword ptr [0x5251f8], esi                        # 00404A21
     push 1                                               # 00404A27
     pop ebx                                              # 00404A29
     mov dword ptr [ebp - 0x48], ebx                      # 00404A2A
-    je _sub_404A36                                       # 00404A2D
+    je .L404A36                                          # 00404A2D
     mov dword ptr [ebp - 0x48], 0x4001                   # 00404A2F
-
-    .global _sub_404A36
-_sub_404A36:
+.L404A36:
     push esi                                             # 00404A36
     push 0x525208                                        # 00404A37
     push dword ptr [ebp + 0xc]                           # 00404A3C
     call _sub_4D0FA6                                     # 00404A3F
     test eax, eax                                        # 00404A44
-    jne _sub_404A1A                                      # 00404A46
+    jne .L404A1A                                         # 00404A46
     mov eax, dword ptr [0x525208]                        # 00404A48
     push 2                                               # 00404A4D
     push dword ptr [0x525320]                            # 00404A4F
@@ -3866,7 +5564,7 @@ _sub_404A36:
     push eax                                             # 00404A57
     call dword ptr [ecx + 0x18]                          # 00404A58
     test eax, eax                                        # 00404A5B
-    jne _sub_404A09                                      # 00404A5D
+    jne .L404A09                                         # 00404A5D
     mov eax, dword ptr [0x525208]                        # 00404A5F
     mov dword ptr [0x11406a0], 0x60                      # 00404A64
     push 0x11406a0                                       # 00404A6E
@@ -3882,7 +5580,7 @@ _sub_404A36:
     push eax                                             # 00404A8A
     call dword ptr [ecx + 0xc]                           # 00404A8B
     test eax, eax                                        # 00404A8E
-    jne _sub_4049F8                                      # 00404A90
+    jne .L4049F8                                         # 00404A90
     mov eax, dword ptr [0x525210]                        # 00404A96
     push esi                                             # 00404A9B
     lea edx, [ebp - 0x14]                                # 00404A9C
@@ -3905,52 +5603,44 @@ _sub_404A36:
     push eax                                             # 00404AC2
     call dword ptr [ecx + 0x14]                          # 00404AC3
     msvc_mov eax, ebx                                    # 00404AC6
-    msvc_jmp _sub_404A1C                                 # 00404AC8
+    msvc_jmp .L404A1C                                    # 00404AC8
 
     .global _sub_404ACD
 _sub_404ACD:
     call _sub_404CF0                                     # 00404ACD
     mov eax, dword ptr [0x52520c]                        # 00404AD2
     test eax, eax                                        # 00404AD7
-    je _sub_404AE8                                       # 00404AD9
+    je .L404AE8                                          # 00404AD9
     mov ecx, dword ptr [eax]                             # 00404ADB
     push eax                                             # 00404ADD
     call dword ptr [ecx + 8]                             # 00404ADE
     and dword ptr [0x52520c], 0                          # 00404AE1
-
-    .global _sub_404AE8
-_sub_404AE8:
+.L404AE8:
     mov eax, dword ptr [0x525210]                        # 00404AE8
     test eax, eax                                        # 00404AED
-    je _sub_404AFE                                       # 00404AEF
+    je .L404AFE                                          # 00404AEF
     mov ecx, dword ptr [eax]                             # 00404AF1
     push eax                                             # 00404AF3
     call dword ptr [ecx + 8]                             # 00404AF4
     and dword ptr [0x525210], 0                          # 00404AF7
-
-    .global _sub_404AFE
-_sub_404AFE:
+.L404AFE:
     mov eax, dword ptr [0x525208]                        # 00404AFE
     test eax, eax                                        # 00404B03
-    je _sub_404B14                                       # 00404B05
+    je .L404B14                                          # 00404B05
     mov ecx, dword ptr [eax]                             # 00404B07
     push eax                                             # 00404B09
     call dword ptr [ecx + 8]                             # 00404B0A
     and dword ptr [0x525208], 0                          # 00404B0D
-
-    .global _sub_404B14
-_sub_404B14:
+.L404B14:
     ret                                                  # 00404B14
 
     .global _sub_404B15
 _sub_404B15:
     cmp dword ptr [0x5251fc], 0                          # 00404B15
-    je _sub_404B21                                       # 00404B1C
+    je .L404B21                                          # 00404B1C
     msvc_xor eax, eax                                    # 00404B1E
     ret                                                  # 00404B20
-
-    .global _sub_404B21
-_sub_404B21:
+.L404B21:
     push 0                                               # 00404B21
     push 0                                               # 00404B23
     push dword ptr [esp + 0xc]                           # 00404B25
@@ -3966,12 +5656,10 @@ _sub_404B21:
     .global _sub_404B40
 _sub_404B40:
     cmp dword ptr [0x5251fc], 0                          # 00404B40
-    jne _sub_404B4C                                      # 00404B47
+    jne .L404B4C                                         # 00404B47
     msvc_xor eax, eax                                    # 00404B49
     ret                                                  # 00404B4B
-
-    .global _sub_404B4C
-_sub_404B4C:
+.L404B4C:
     call _sub_404CF0                                     # 00404B4C
     push dword ptr [0x5251fc]                            # 00404B51
     call _sub_4065DD                                     # 00404B57
@@ -4001,39 +5689,33 @@ _sub_404B68:
     mov esi, dword ptr [ebp + 0xc]                       # 00404B88
     msvc_mov edi, eax                                    # 00404B8B
     msvc_cmp edi, ebx                                    # 00404B8D
-    je _sub_404BBB                                       # 00404B8F
-
-    .global _sub_404B91
-_sub_404B91:
+    je .L404BBB                                          # 00404B8F
+.L404B91:
     cmp dword ptr [edi], ebx                             # 00404B91
-    je _sub_404BAE                                       # 00404B93
+    je .L404BAE                                          # 00404B93
     mov eax, dword ptr [ebp + 8]                         # 00404B95
     cmp dword ptr [edi + 4], eax                         # 00404B98
-    jne _sub_404BAE                                      # 00404B9B
+    jne .L404BAE                                         # 00404B9B
     push edi                                             # 00404B9D
     push esi                                             # 00404B9E
     call _sub_404C94                                     # 00404B9F
     pop ecx                                              # 00404BA4
     test eax, eax                                        # 00404BA5
     pop ecx                                              # 00404BA7
-    jne _sub_404C7C                                      # 00404BA8
-
-    .global _sub_404BAE
-_sub_404BAE:
+    jne .L404C7C                                         # 00404BA8
+.L404BAE:
     push edi                                             # 00404BAE
     call _sub_405004                                     # 00404BAF
     msvc_mov edi, eax                                    # 00404BB4
     pop ecx                                              # 00404BB6
     msvc_cmp edi, ebx                                    # 00404BB7
-    jne _sub_404B91                                      # 00404BB9
-
-    .global _sub_404BBB
-_sub_404BBB:
+    jne .L404B91                                         # 00404BB9
+.L404BBB:
     push dword ptr [ebp + 8]                             # 00404BBB
     call _sub_405101                                     # 00404BBE
     msvc_cmp eax, ebx                                    # 00404BC3
     pop ecx                                              # 00404BC5
-    je _sub_404C90                                       # 00404BC6
+    je .L404C90                                          # 00404BC6
     lea ecx, [ebp - 0x34]                                # 00404BCC
     push ecx                                             # 00404BCF
     lea ecx, [ebp - 4]                                   # 00404BD0
@@ -4044,38 +5726,30 @@ _sub_404BBB:
     call _sub_404F4F                                     # 00404BD9
     add esp, 0x10                                        # 00404BDE
     test eax, eax                                        # 00404BE1
-    je _sub_404C8E                                       # 00404BE3
+    je .L404C8E                                          # 00404BE3
     mov edi, dword ptr [ebp + 0x10]                      # 00404BE9
     mov dword ptr [ebp - 0x3c], 0x24                     # 00404BEC
     msvc_mov eax, edi                                    # 00404BF3
     mov dword ptr [ebp - 0x38], 0x10002                  # 00404BF5
     msvc_sub eax, ebx                                    # 00404BFC
-    je _sub_404C15                                       # 00404BFE
+    je .L404C15                                          # 00404BFE
     dec eax                                              # 00404C00
     dec eax                                              # 00404C01
-    je _sub_404C0E                                       # 00404C02
+    je .L404C0E                                          # 00404C02
     dec eax                                              # 00404C04
     mov dword ptr [ebp - 0x38], 0x100e2                  # 00404C05
-    jne _sub_404C15                                      # 00404C0C
-
-    .global _sub_404C0E
-_sub_404C0E:
+    jne .L404C15                                         # 00404C0C
+.L404C0E:
     mov dword ptr [ebp - 0x38], 0x10012                  # 00404C0E
-
-    .global _sub_404C15
-_sub_404C15:
+.L404C15:
     cmp dword ptr [0x5251f8], ebx                        # 00404C15
-    je _sub_404C21                                       # 00404C1B
+    je .L404C21                                          # 00404C1B
     or byte ptr [ebp - 0x37], 0x40                       # 00404C1D
-
-    .global _sub_404C21
-_sub_404C21:
+.L404C21:
     cmp dword ptr [ebp + 0x14], ebx                      # 00404C21
-    je _sub_404C2A                                       # 00404C24
+    je .L404C2A                                          # 00404C24
     or dword ptr [ebp - 0x38], 8                         # 00404C26
-
-    .global _sub_404C2A
-_sub_404C2A:
+.L404C2A:
     mov eax, dword ptr [0x525208]                        # 00404C2A
     push ebx                                             # 00404C2F
     lea edx, [ebp - 0x3c]                                # 00404C30
@@ -4085,14 +5759,14 @@ _sub_404C2A:
     push eax                                             # 00404C37
     call dword ptr [ecx + 0xc]                           # 00404C38
     test eax, eax                                        # 00404C3B
-    jne _sub_404C8E                                      # 00404C3D
+    jne .L404C8E                                         # 00404C3D
     push dword ptr [ebp - 0x34]                          # 00404C3F
     push dword ptr [ebp - 4]                             # 00404C42
     push dword ptr [esi]                                 # 00404C45
     call _sub_404F71                                     # 00404C47
     add esp, 0xc                                         # 00404C4C
     test eax, eax                                        # 00404C4F
-    je _sub_404C84                                       # 00404C51
+    je .L404C84                                          # 00404C51
     mov eax, dword ptr [ebp + 8]                         # 00404C53
     lea edx, [ebp - 0x18]                                # 00404C56
     mov dword ptr [esi + 4], eax                         # 00404C59
@@ -4108,36 +5782,26 @@ _sub_404C2A:
     mov dword ptr [esi + 0xc], eax                       # 00404C73
     call _sub_405017                                     # 00404C76
     pop ecx                                              # 00404C7B
-
-    .global _sub_404C7C
-_sub_404C7C:
+.L404C7C:
     push 1                                               # 00404C7C
     pop eax                                              # 00404C7E
-
-    .global _sub_404C7F
-_sub_404C7F:
+.L404C7F:
     pop edi                                              # 00404C7F
     pop esi                                              # 00404C80
     pop ebx                                              # 00404C81
     leave                                                # 00404C82
     ret                                                  # 00404C83
-
-    .global _sub_404C84
-_sub_404C84:
+.L404C84:
     mov eax, dword ptr [esi]                             # 00404C84
     push eax                                             # 00404C86
     mov ecx, dword ptr [eax]                             # 00404C87
     call dword ptr [ecx + 8]                             # 00404C89
     mov dword ptr [esi], ebx                             # 00404C8C
-
-    .global _sub_404C8E
-_sub_404C8E:
+.L404C8E:
     mov dword ptr [esi], ebx                             # 00404C8E
-
-    .global _sub_404C90
-_sub_404C90:
+.L404C90:
     msvc_xor eax, eax                                    # 00404C90
-    jmp _sub_404C7F                                      # 00404C92
+    jmp .L404C7F                                         # 00404C92
 
     .global _sub_404C94
 _sub_404C94:
@@ -4152,7 +5816,7 @@ _sub_404C94:
     push eax                                             # 00404CA8
     call dword ptr [ecx + 0x14]                          # 00404CA9
     test eax, eax                                        # 00404CAC
-    jne _sub_404CCE                                      # 00404CAE
+    jne .L404CCE                                         # 00404CAE
     mov eax, dword ptr [esi + 8]                         # 00404CB0
     push edi                                             # 00404CB3
     mov dword ptr [edi + 8], eax                         # 00404CB4
@@ -4164,14 +5828,10 @@ _sub_404C94:
     pop ecx                                              # 00404CC8
     push 1                                               # 00404CC9
     pop eax                                              # 00404CCB
-    jmp _sub_404CD0                                      # 00404CCC
-
-    .global _sub_404CCE
-_sub_404CCE:
+    jmp .L404CD0                                         # 00404CCC
+.L404CCE:
     msvc_xor eax, eax                                    # 00404CCE
-
-    .global _sub_404CD0
-_sub_404CD0:
+.L404CD0:
     pop edi                                              # 00404CD0
     pop esi                                              # 00404CD1
     ret                                                  # 00404CD2
@@ -4182,7 +5842,7 @@ _sub_404CD3:
     mov esi, dword ptr [esp + 8]                         # 00404CD4
     mov eax, dword ptr [esi]                             # 00404CD8
     test eax, eax                                        # 00404CDA
-    je _sub_404CEE                                       # 00404CDC
+    je .L404CEE                                          # 00404CDC
     mov ecx, dword ptr [eax]                             # 00404CDE
     push eax                                             # 00404CE0
     call dword ptr [ecx + 8]                             # 00404CE1
@@ -4190,35 +5850,61 @@ _sub_404CD3:
     push esi                                             # 00404CE7
     call _sub_40503E                                     # 00404CE8
     pop ecx                                              # 00404CED
-
-    .global _sub_404CEE
-_sub_404CEE:
+.L404CEE:
     pop esi                                              # 00404CEE
     ret                                                  # 00404CEF
 
     .global _sub_404CF0
 _sub_404CF0:
     cmp dword ptr [0x525200], 0                          # 00404CF0
-    je _sub_404D07                                       # 00404CF7
+    je .L404D07                                          # 00404CF7
     push dword ptr [0x525200]                            # 00404CF9
     call _sub_404CD3                                     # 00404CFF
     pop ecx                                              # 00404D04
     jmp _sub_404CF0                                      # 00404D05
-
-    .global _sub_404D07
-_sub_404D07:
+.L404D07:
     ret                                                  # 00404D07
-# 0x404D08
-    .byte 0x55, 0x8B, 0xEC, 0x51, 0x56, 0x8B, 0x35, 0x00 #        0 U..QV.5.
-    .byte 0x52, 0x52, 0x00, 0x85, 0xF6, 0x74, 0x34, 0x57 #        8 RR...t4W
-    .byte 0x3B, 0x35, 0x04, 0x52, 0x52, 0x00, 0x75, 0x04 #       10 ;5.RR.u.
-    .byte 0x33, 0xFF, 0xEB, 0x03, 0x8B, 0x7E, 0x10, 0x8B #       18 3....~..
-    .byte 0x06, 0x8D, 0x55, 0xFC, 0x52, 0x50, 0x8B, 0x08 #       20 ..U.RP..
-    .byte 0xFF, 0x51, 0x24, 0x85, 0xC0, 0x75, 0x0D, 0xF6 #       28 .Q$..u..
-    .byte 0x45, 0xFC, 0x02, 0x74, 0x07, 0x56, 0xE8, 0x51 #       30 E..t.V.Q
-    .byte 0x03, 0x00, 0x00, 0x59, 0x85, 0xFF, 0x8B, 0xF7 #       38 ...Y....
-    .byte 0x75, 0xCE, 0x5F, 0x5E, 0xC9, 0xC3             #       40 u._^..
 
+    .global _sub_404D08
+_sub_404D08:
+    push ebp                                             # 00404D08
+    msvc_mov ebp, esp                                    # 00404D09
+    push ecx                                             # 00404D0B
+    push esi                                             # 00404D0C
+    mov esi, dword ptr [0x525200]                        # 00404D0D
+    test esi, esi                                        # 00404D13
+    je .L404D4B                                          # 00404D15
+    push edi                                             # 00404D17
+.L404D18:
+    cmp esi, dword ptr [0x525204]                        # 00404D18
+    jne .L404D24                                         # 00404D1E
+    msvc_xor edi, edi                                    # 00404D20
+    jmp .L404D27                                         # 00404D22
+.L404D24:
+    mov edi, dword ptr [esi + 0x10]                      # 00404D24
+.L404D27:
+    mov eax, dword ptr [esi]                             # 00404D27
+    lea edx, [ebp - 4]                                   # 00404D29
+    push edx                                             # 00404D2C
+    push eax                                             # 00404D2D
+    mov ecx, dword ptr [eax]                             # 00404D2E
+    call dword ptr [ecx + 0x24]                          # 00404D30
+    test eax, eax                                        # 00404D33
+    jne .L404D44                                         # 00404D35
+    test byte ptr [ebp - 4], 2                           # 00404D37
+    je .L404D44                                          # 00404D3B
+    push esi                                             # 00404D3D
+    call _sub_405094                                     # 00404D3E
+    pop ecx                                              # 00404D43
+.L404D44:
+    test edi, edi                                        # 00404D44
+    msvc_mov esi, edi                                    # 00404D46
+    jne .L404D18                                         # 00404D48
+    pop edi                                              # 00404D4A
+.L404D4B:
+    pop esi                                              # 00404D4B
+    leave                                                # 00404D4C
+    ret                                                  # 00404D4D
 
     .global _sub_404D4E
 _sub_404D4E:
@@ -4227,27 +5913,23 @@ _sub_404D4E:
     mov eax, dword ptr [ebp + 8]                         # 00404D51
     mov eax, dword ptr [eax]                             # 00404D54
     test eax, eax                                        # 00404D56
-    je _sub_404D76                                       # 00404D58
+    je .L404D76                                          # 00404D58
     mov ecx, dword ptr [eax]                             # 00404D5A
     lea edx, [ebp + 8]                                   # 00404D5C
     push edx                                             # 00404D5F
     push eax                                             # 00404D60
     call dword ptr [ecx + 0x24]                          # 00404D61
     test eax, eax                                        # 00404D64
-    jne _sub_404D76                                      # 00404D66
+    jne .L404D76                                         # 00404D66
     push 1                                               # 00404D68
     pop eax                                              # 00404D6A
     test byte ptr [ebp + 8], al                          # 00404D6B
-    jne _sub_404D78                                      # 00404D6E
+    jne .L404D78                                         # 00404D6E
     test byte ptr [ebp + 8], 4                           # 00404D70
-    jne _sub_404D78                                      # 00404D74
-
-    .global _sub_404D76
-_sub_404D76:
+    jne .L404D78                                         # 00404D74
+.L404D76:
     msvc_xor eax, eax                                    # 00404D76
-
-    .global _sub_404D78
-_sub_404D78:
+.L404D78:
     pop ebp                                              # 00404D78
     ret                                                  # 00404D79
 
@@ -4260,7 +5942,7 @@ _sub_404D7A:
     push edi                                             # 00404D81
     msvc_xor edi, edi                                    # 00404D82
     cmp dword ptr [esi], edi                             # 00404D84
-    je _sub_404DCC                                       # 00404D86
+    je .L404DCC                                          # 00404D86
     push dword ptr [ebp + 0x18]                          # 00404D88
     push esi                                             # 00404D8B
     call _sub_404DD2                                     # 00404D8C
@@ -4273,41 +5955,31 @@ _sub_404D7A:
     mov eax, dword ptr [ebp + 0xc]                       # 00404DA3
     add esp, 0x18                                        # 00404DA6
     msvc_sub eax, edi                                    # 00404DA9
-    je _sub_404DB8                                       # 00404DAB
+    je .L404DB8                                          # 00404DAB
     dec eax                                              # 00404DAD
-    jne _sub_404DC7                                      # 00404DAE
+    jne .L404DC7                                         # 00404DAE
     mov esi, dword ptr [esi]                             # 00404DB0
     push 1                                               # 00404DB2
     mov eax, dword ptr [esi]                             # 00404DB4
-    jmp _sub_404DBD                                      # 00404DB6
-
-    .global _sub_404DB8
-_sub_404DB8:
+    jmp .L404DBD                                         # 00404DB6
+.L404DB8:
     mov esi, dword ptr [esi]                             # 00404DB8
     push edi                                             # 00404DBA
     mov eax, dword ptr [esi]                             # 00404DBB
-
-    .global _sub_404DBD
-_sub_404DBD:
+.L404DBD:
     push edi                                             # 00404DBD
     push edi                                             # 00404DBE
     push esi                                             # 00404DBF
     call dword ptr [eax + 0x30]                          # 00404DC0
     msvc_cmp eax, edi                                    # 00404DC3
-    jne _sub_404DCC                                      # 00404DC5
-
-    .global _sub_404DC7
-_sub_404DC7:
+    jne .L404DCC                                         # 00404DC5
+.L404DC7:
     push 1                                               # 00404DC7
     pop eax                                              # 00404DC9
-    jmp _sub_404DCE                                      # 00404DCA
-
-    .global _sub_404DCC
-_sub_404DCC:
+    jmp .L404DCE                                         # 00404DCA
+.L404DCC:
     msvc_xor eax, eax                                    # 00404DCC
-
-    .global _sub_404DCE
-_sub_404DCE:
+.L404DCE:
     pop edi                                              # 00404DCE
     pop esi                                              # 00404DCF
     pop ebp                                              # 00404DD0
@@ -4318,11 +5990,9 @@ _sub_404DD2:
     mov eax, dword ptr [esp + 4]                         # 00404DD2
     mov eax, dword ptr [eax]                             # 00404DD6
     test eax, eax                                        # 00404DD8
-    jne _sub_404DDD                                      # 00404DDA
+    jne .L404DDD                                         # 00404DDA
     ret                                                  # 00404DDC
-
-    .global _sub_404DDD
-_sub_404DDD:
+.L404DDD:
     push dword ptr [esp + 8]                             # 00404DDD
     mov ecx, dword ptr [eax]                             # 00404DE1
     push eax                                             # 00404DE3
@@ -4337,11 +6007,9 @@ _sub_404DED:
     mov eax, dword ptr [esp + 4]                         # 00404DED
     mov eax, dword ptr [eax]                             # 00404DF1
     test eax, eax                                        # 00404DF3
-    jne _sub_404DF8                                      # 00404DF5
+    jne .L404DF8                                         # 00404DF5
     ret                                                  # 00404DF7
-
-    .global _sub_404DF8
-_sub_404DF8:
+.L404DF8:
     push dword ptr [esp + 8]                             # 00404DF8
     mov ecx, dword ptr [eax]                             # 00404DFC
     push eax                                             # 00404DFE
@@ -4356,11 +6024,9 @@ _sub_404E08:
     mov eax, dword ptr [esp + 4]                         # 00404E08
     mov eax, dword ptr [eax]                             # 00404E0C
     test eax, eax                                        # 00404E0E
-    jne _sub_404E13                                      # 00404E10
+    jne .L404E13                                         # 00404E10
     ret                                                  # 00404E12
-
-    .global _sub_404E13
-_sub_404E13:
+.L404E13:
     push dword ptr [esp + 8]                             # 00404E13
     mov ecx, dword ptr [eax]                             # 00404E17
     push eax                                             # 00404E19
@@ -4403,21 +6069,22 @@ _sub_404E53:
 _sub_404E58:
     mov eax, dword ptr [0x5251f4]                        # 00404E58
     test eax, eax                                        # 00404E5D
-    je _sub_404E6F                                       # 00404E5F
+    je .L404E6F                                          # 00404E5F
     push eax                                             # 00404E61
     call _sub_4D1355                                     # 00404E62
     and dword ptr [0x5251f4], 0                          # 00404E67
     pop ecx                                              # 00404E6E
-
-    .global _sub_404E6F
-_sub_404E6F:
+.L404E6F:
     and dword ptr [0x5251f0], 0                          # 00404E6F
     call _sub_404ACD                                     # 00404E76
     msvc_jmp _sub_404B40                                 # 00404E7B
-# 0x404E80
-    .byte 0xFF, 0x05, 0x14, 0x52, 0x52, 0x00, 0x6A, 0x01 #        0 ...RR.j.
-    .byte 0x58, 0xC2, 0x10, 0x00                         #        8 X...
 
+    .global _sub_404E80
+_sub_404E80:
+    inc dword ptr [0x525214]                             # 00404E80
+    push 1                                               # 00404E86
+    pop eax                                              # 00404E88
+    ret 0x10                                             # 00404E89
 
     .global _sub_404E8C
 _sub_404E8C:
@@ -4430,20 +6097,40 @@ _sub_404E8C:
     not eax                                              # 00404EA3
     and eax, dword ptr [0x525214]                        # 00404EA5
     ret                                                  # 00404EAB
-# 0x404EAC
-    .byte 0x56, 0x8B, 0x35, 0x94, 0x06, 0x14, 0x01, 0x69 #        0 V.5....i
-    .byte 0xF6, 0x10, 0x02, 0x00, 0x00, 0x03, 0x35, 0xF4 #        8 ......5.
-    .byte 0x51, 0x52, 0x00, 0x83, 0x7C, 0x24, 0x08, 0x00 #       10 QR..|$..
-    .byte 0x6A, 0x10, 0x75, 0x0A, 0x6A, 0x00, 0x56, 0xE8 #       18 j.u.j.V.
-    .byte 0xF0, 0xC0, 0x0C, 0x00, 0xEB, 0x0A, 0xFF, 0x74 #       20 .......t
-    .byte 0x24, 0x0C, 0x56, 0xE8, 0x44, 0xC1, 0x0C, 0x00 #       28 $.V.D...
-    .byte 0x83, 0xC4, 0x0C, 0x8D, 0x46, 0x10, 0xFF, 0x74 #       30 ....F..t
-    .byte 0x24, 0x0C, 0x50, 0xE8, 0xE4, 0xC6, 0x0C, 0x00 #       38 $.P.....
-    .byte 0xFF, 0x74, 0x24, 0x18, 0x81, 0xC6, 0x10, 0x01 #       40 .t$.....
-    .byte 0x00, 0x00, 0x56, 0xE8, 0xD4, 0xC6, 0x0C, 0x00 #       48 ..V.....
-    .byte 0x83, 0xC4, 0x10, 0xFF, 0x05, 0x94, 0x06, 0x14 #       50 ........
-    .byte 0x01, 0x6A, 0x01, 0x58, 0x5E, 0xC2, 0x10, 0x00 #       58 .j.X^...
 
+    .global _sub_404EAC
+_sub_404EAC:
+    push esi                                             # 00404EAC
+    mov esi, dword ptr [0x1140694]                       # 00404EAD
+    imul esi, esi, 0x210                                 # 00404EB3
+    add esi, dword ptr [0x5251f4]                        # 00404EB9
+    cmp dword ptr [esp + 8], 0                           # 00404EBF
+    push 0x10                                            # 00404EC4
+    jne .L404ED2                                         # 00404EC6
+    push 0                                               # 00404EC8
+    push esi                                             # 00404ECA
+    call _sub_4D0FC0                                     # 00404ECB
+    jmp .L404EDC                                         # 00404ED0
+.L404ED2:
+    push dword ptr [esp + 0xc]                           # 00404ED2
+    push esi                                             # 00404ED6
+    call _sub_4D1020                                     # 00404ED7
+.L404EDC:
+    add esp, 0xc                                         # 00404EDC
+    lea eax, [esi + 0x10]                                # 00404EDF
+    push dword ptr [esp + 0xc]                           # 00404EE2
+    push eax                                             # 00404EE6
+    call _sub_4D15D0                                     # 00404EE7
+    push dword ptr [esp + 0x18]                          # 00404EEC
+    add esi, 0x110                                       # 00404EF0
+    push esi                                             # 00404EF6
+    call _sub_4D15D0                                     # 00404EF7
+    add esp, 0x10                                        # 00404EFC
+    inc dword ptr [0x1140694]                            # 00404EFF
+    push 1                                               # 00404F05
+    pop eax                                              # 00404F07
+    pop esi                                              # 00404F08
+    ret 0x10                                             # 00404F09
 
     .global _sub_404F0C
 _sub_404F0C:
@@ -4452,11 +6139,9 @@ _sub_404F0C:
     push 0x404eac                                        # 00404F15
     call _sub_4D0FAC                                     # 00404F1A
     test eax, eax                                        # 00404F1F
-    jne _sub_404F28                                      # 00404F21
+    jne .L404F28                                         # 00404F21
     mov eax, dword ptr [0x1140694]                       # 00404F23
-
-    .global _sub_404F28
-_sub_404F28:
+.L404F28:
     ret                                                  # 00404F28
 
     .global _sub_404F29
@@ -4469,11 +6154,9 @@ _sub_404F29:
     test eax, eax                                        # 00404F3F
     pop ecx                                              # 00404F41
     mov dword ptr [0x5251f4], eax                        # 00404F42
-    je _sub_404F4E                                       # 00404F47
+    je .L404F4E                                          # 00404F47
     msvc_jmp _sub_404F0C                                 # 00404F49
-
-    .global _sub_404F4E
-_sub_404F4E:
+.L404F4E:
     ret                                                  # 00404F4E
 
     .global _sub_404F4F
@@ -4503,12 +6186,12 @@ _sub_404F71:
     msvc_xor ebx, ebx                                    # 00404F7A
     msvc_cmp esi, ebx                                    # 00404F7C
     push edi                                             # 00404F7E
-    je _sub_404FF7                                       # 00404F7F
+    je .L404FF7                                          # 00404F7F
     mov edi, dword ptr [ebp + 0xc]                       # 00404F81
     msvc_cmp edi, ebx                                    # 00404F84
-    je _sub_404FF7                                       # 00404F86
+    je .L404FF7                                          # 00404F86
     cmp dword ptr [ebp + 0x10], ebx                      # 00404F88
-    je _sub_404FF7                                       # 00404F8B
+    je .L404FF7                                          # 00404F8B
     lea ecx, [ebp + 8]                                   # 00404F8D
     push ebx                                             # 00404F90
     push ecx                                             # 00404F91
@@ -4524,7 +6207,7 @@ _sub_404F71:
     push esi                                             # 00404FA4
     call dword ptr [eax + 0x2c]                          # 00404FA5
     test eax, eax                                        # 00404FA8
-    jl _sub_404FF7                                       # 00404FAA
+    jl .L404FF7                                          # 00404FAA
     push dword ptr [ebp + 0x10]                          # 00404FAC
     push ebx                                             # 00404FAF
     push dword ptr [ebp + 0xc]                           # 00404FB0
@@ -4535,7 +6218,7 @@ _sub_404F71:
     call _sub_4D1020                                     # 00404FBF
     add esp, 0x18                                        # 00404FC4
     cmp dword ptr [ebp + 8], ebx                         # 00404FC7
-    je _sub_404FE0                                       # 00404FCA
+    je .L404FE0                                          # 00404FCA
     mov eax, dword ptr [ebp + 0x10]                      # 00404FCC
     push dword ptr [ebp + 8]                             # 00404FCF
     msvc_add eax, edi                                    # 00404FD2
@@ -4543,9 +6226,7 @@ _sub_404F71:
     push dword ptr [ebp - 4]                             # 00404FD5
     call _sub_4D1020                                     # 00404FD8
     add esp, 0xc                                         # 00404FDD
-
-    .global _sub_404FE0
-_sub_404FE0:
+.L404FE0:
     push dword ptr [ebp + 8]                             # 00404FE0
     mov eax, dword ptr [esi]                             # 00404FE3
     push dword ptr [ebp - 4]                             # 00404FE5
@@ -4555,14 +6236,10 @@ _sub_404FE0:
     call dword ptr [eax + 0x4c]                          # 00404FEF
     push 1                                               # 00404FF2
     pop eax                                              # 00404FF4
-    jmp _sub_404FF9                                      # 00404FF5
-
-    .global _sub_404FF7
-_sub_404FF7:
+    jmp .L404FF9                                         # 00404FF5
+.L404FF7:
     msvc_xor eax, eax                                    # 00404FF7
-
-    .global _sub_404FF9
-_sub_404FF9:
+.L404FF9:
     pop edi                                              # 00404FF9
     pop esi                                              # 00404FFA
     pop ebx                                              # 00404FFB
@@ -4578,12 +6255,10 @@ _sub_404FFE:
 _sub_405004:
     mov eax, dword ptr [esp + 4]                         # 00405004
     cmp dword ptr [0x525204], eax                        # 00405008
-    jne _sub_405013                                      # 0040500E
+    jne .L405013                                         # 0040500E
     msvc_xor eax, eax                                    # 00405010
     ret                                                  # 00405012
-
-    .global _sub_405013
-_sub_405013:
+.L405013:
     mov eax, dword ptr [eax + 0x10]                      # 00405013
     ret                                                  # 00405016
 
@@ -4592,17 +6267,13 @@ _sub_405017:
     mov eax, dword ptr [esp + 4]                         # 00405017
     msvc_xor ecx, ecx                                    # 0040501B
     cmp dword ptr [0x525200], ecx                        # 0040501D
-    jne _sub_40502C                                      # 00405023
+    jne .L40502C                                         # 00405023
     mov dword ptr [0x525200], eax                        # 00405025
-    jmp _sub_405035                                      # 0040502A
-
-    .global _sub_40502C
-_sub_40502C:
+    jmp .L405035                                         # 0040502A
+.L40502C:
     mov edx, dword ptr [0x525204]                        # 0040502C
     mov dword ptr [edx + 0x10], eax                      # 00405032
-
-    .global _sub_405035
-_sub_405035:
+.L405035:
     mov dword ptr [0x525204], eax                        # 00405035
     mov dword ptr [eax + 0x10], ecx                      # 0040503A
     ret                                                  # 0040503D
@@ -4612,91 +6283,112 @@ _sub_40503E:
     mov edx, dword ptr [esp + 4]                         # 0040503E
     mov eax, dword ptr [0x525200]                        # 00405042
     msvc_cmp edx, eax                                    # 00405047
-    jne _sub_40506B                                      # 00405049
+    jne .L40506B                                         # 00405049
     cmp edx, dword ptr [0x525204]                        # 0040504B
-    jne _sub_405061                                      # 00405051
+    jne .L405061                                         # 00405051
     and dword ptr [0x525204], 0                          # 00405053
     and dword ptr [0x525200], 0                          # 0040505A
-
-    .global _sub_405061
-_sub_405061:
+.L405061:
     mov eax, dword ptr [edx + 0x10]                      # 00405061
     mov dword ptr [0x525200], eax                        # 00405064
-    jmp _sub_40508F                                      # 00405069
-
-    .global _sub_40506B
-_sub_40506B:
+    jmp .L40508F                                         # 00405069
+.L40506B:
     mov ecx, dword ptr [eax + 0x10]                      # 0040506B
     msvc_cmp ecx, edx                                    # 0040506E
-    je _sub_405076                                       # 00405070
+    je .L405076                                          # 00405070
     msvc_mov eax, ecx                                    # 00405072
-    jmp _sub_40506B                                      # 00405074
-
-    .global _sub_405076
-_sub_405076:
+    jmp .L40506B                                         # 00405074
+.L405076:
     cmp edx, dword ptr [0x525204]                        # 00405076
-    jne _sub_405089                                      # 0040507C
+    jne .L405089                                         # 0040507C
     mov dword ptr [0x525204], eax                        # 0040507E
     and dword ptr [eax + 0x10], 0                        # 00405083
-    jmp _sub_40508F                                      # 00405087
-
-    .global _sub_405089
-_sub_405089:
+    jmp .L40508F                                         # 00405087
+.L405089:
     mov ecx, dword ptr [edx + 0x10]                      # 00405089
     mov dword ptr [eax + 0x10], ecx                      # 0040508C
-
-    .global _sub_40508F
-_sub_40508F:
+.L40508F:
     and dword ptr [edx + 0x10], 0                        # 0040508F
     ret                                                  # 00405093
-# 0x405094
-    .byte 0x55, 0x8B, 0xEC, 0x83, 0xEC, 0x28, 0x83, 0x65 #        0 U....(.e
-    .byte 0xD8, 0x00, 0x56, 0x8B, 0x75, 0x08, 0x57, 0x6A #        8 ..V.u.Wj
-    .byte 0x08, 0x33, 0xC0, 0x21, 0x45, 0xFC, 0x59, 0x8D #       10 .3.!E.Y.
-    .byte 0x7D, 0xDC, 0xF3, 0xAB, 0x8B, 0x06, 0x85, 0xC0 #       18 }.......
-    .byte 0x74, 0x45, 0x8B, 0x08, 0x50, 0xFF, 0x51, 0x50 #       20 tE..P.QP
-    .byte 0xFF, 0x76, 0x04, 0xE8, 0x3D, 0x00, 0x00, 0x00 #       28 .v..=...
-    .byte 0x85, 0xC0, 0x59, 0x74, 0x32, 0x8D, 0x4D, 0xE0 #       30 ..Yt2.M.
-    .byte 0x51, 0x8D, 0x4D, 0xFC, 0x51, 0x8D, 0x4D, 0xE8 #       38 Q.M.Q.M.
-    .byte 0x51, 0x50, 0xE8, 0x74, 0xFE, 0xFF, 0xFF, 0x83 #       40 QP.t....
-    .byte 0xC4, 0x10, 0x85, 0xC0, 0x74, 0x19, 0xFF, 0x76 #       48 ....t..v
-    .byte 0x0C, 0xFF, 0x75, 0xFC, 0xFF, 0x36, 0xE8, 0x82 #       50 ..u..6..
-    .byte 0xFE, 0xFF, 0xFF, 0x83, 0xC4, 0x0C, 0x85, 0xC0 #       58 ........
-    .byte 0x74, 0x05, 0x6A, 0x01, 0x58, 0xEB, 0x02, 0x33 #       60 t.j.X..3
-    .byte 0xC0, 0x5F, 0x5E, 0xC9, 0xC3                   #       68 ._^..
 
+    .global _sub_405094
+_sub_405094:
+    push ebp                                             # 00405094
+    msvc_mov ebp, esp                                    # 00405095
+    sub esp, 0x28                                        # 00405097
+    and dword ptr [ebp - 0x28], 0                        # 0040509A
+    push esi                                             # 0040509E
+    mov esi, dword ptr [ebp + 8]                         # 0040509F
+    push edi                                             # 004050A2
+    push 8                                               # 004050A3
+    msvc_xor eax, eax                                    # 004050A5
+    and dword ptr [ebp - 4], eax                         # 004050A7
+    pop ecx                                              # 004050AA
+    lea edi, [ebp - 0x24]                                # 004050AB
+    rep stosd dword ptr es:[edi], eax                    # 004050AE
+    mov eax, dword ptr [esi]                             # 004050B0
+    test eax, eax                                        # 004050B2
+    je .L4050FB                                          # 004050B4
+    mov ecx, dword ptr [eax]                             # 004050B6
+    push eax                                             # 004050B8
+    call dword ptr [ecx + 0x50]                          # 004050B9
+    push dword ptr [esi + 4]                             # 004050BC
+    call _sub_405101                                     # 004050BF
+    test eax, eax                                        # 004050C4
+    pop ecx                                              # 004050C6
+    je .L4050FB                                          # 004050C7
+    lea ecx, [ebp - 0x20]                                # 004050C9
+    push ecx                                             # 004050CC
+    lea ecx, [ebp - 4]                                   # 004050CD
+    push ecx                                             # 004050D0
+    lea ecx, [ebp - 0x18]                                # 004050D1
+    push ecx                                             # 004050D4
+    push eax                                             # 004050D5
+    call _sub_404F4F                                     # 004050D6
+    add esp, 0x10                                        # 004050DB
+    test eax, eax                                        # 004050DE
+    je .L4050FB                                          # 004050E0
+    push dword ptr [esi + 0xc]                           # 004050E2
+    push dword ptr [ebp - 4]                             # 004050E5
+    push dword ptr [esi]                                 # 004050E8
+    call _sub_404F71                                     # 004050EA
+    add esp, 0xc                                         # 004050EF
+    test eax, eax                                        # 004050F2
+    je .L4050FB                                          # 004050F4
+    push 1                                               # 004050F6
+    pop eax                                              # 004050F8
+    jmp .L4050FD                                         # 004050F9
+.L4050FB:
+    msvc_xor eax, eax                                    # 004050FB
+.L4050FD:
+    pop edi                                              # 004050FD
+    pop esi                                              # 004050FE
+    leave                                                # 004050FF
+    ret                                                  # 00405100
 
     .global _sub_405101
 _sub_405101:
     mov eax, dword ptr [esp + 4]                         # 00405101
     test ah, 0x80                                        # 00405105
-    je _sub_405118                                       # 00405108
+    je .L405118                                          # 00405108
     push eax                                             # 0040510A
     call _sub_48AFFC                                     # 0040510B
     pop ecx                                              # 00405110
     msvc_mov ecx, eax                                    # 00405111
     mov eax, dword ptr [ecx + 4]                         # 00405113
-    jmp _sub_40512D                                      # 00405116
-
-    .global _sub_405118
-_sub_405118:
+    jmp .L40512D                                         # 00405116
+.L405118:
     mov ecx, dword ptr [0x5251fc]                        # 00405118
     test ecx, ecx                                        # 0040511E
-    je _sub_405126                                       # 00405120
+    je .L405126                                          # 00405120
     cmp eax, dword ptr [ecx]                             # 00405122
-    jb _sub_405129                                       # 00405124
-
-    .global _sub_405126
-_sub_405126:
+    jb .L405129                                          # 00405124
+.L405126:
     msvc_xor eax, eax                                    # 00405126
     ret                                                  # 00405128
-
-    .global _sub_405129
-_sub_405129:
+.L405129:
     mov eax, dword ptr [ecx + eax*4 + 4]                 # 00405129
-
-    .global _sub_40512D
-_sub_40512D:
+.L40512D:
     msvc_add eax, ecx                                    # 0040512D
     ret                                                  # 0040512F
 
@@ -4717,12 +6409,10 @@ _sub_405130:
     msvc_abscall 0x4D72C8                                # 00405149
     msvc_cmp eax, esi                                    # 0040514F
     mov dword ptr [ebp + 8], eax                         # 00405151
-    jne _sub_405160                                      # 00405154
+    jne .L405160                                         # 00405154
     mov ebx, 0xe100                                      # 00405156
-    msvc_jmp _sub_40525F                                 # 0040515B
-
-    .global _sub_405160
-_sub_405160:
+    msvc_jmp .L40525F                                    # 0040515B
+.L405160:
     push esi                                             # 00405160
     push esi                                             # 00405161
     push dword ptr [ebp + 0x14]                          # 00405162
@@ -4731,12 +6421,12 @@ _sub_405160:
     call esi                                             # 0040516C
     msvc_mov ebx, eax                                    # 0040516E
     test ebx, ebx                                        # 00405170
-    jne _sub_40525F                                      # 00405172
+    jne .L40525F                                         # 00405172
     mov eax, dword ptr [ebp + 0x14]                      # 00405178
     cmp dword ptr [eax], 0x46464952                      # 0040517B
-    jne _sub_40525A                                      # 00405181
+    jne .L40525A                                         # 00405181
     cmp dword ptr [eax + 8], 0x45564157                  # 00405187
-    jne _sub_40525A                                      # 0040518E
+    jne .L40525A                                         # 0040518E
     push 0x10                                            # 00405194
     push eax                                             # 00405196
     lea eax, [ebp - 0x24]                                # 00405197
@@ -4746,9 +6436,9 @@ _sub_405160:
     call esi                                             # 004051A5
     msvc_mov ebx, eax                                    # 004051A7
     test ebx, ebx                                        # 004051A9
-    jne _sub_40525F                                      # 004051AB
+    jne .L40525F                                         # 004051AB
     cmp dword ptr [ebp - 0x20], 0x10                     # 004051B1
-    jb _sub_40525A                                       # 004051B5
+    jb .L40525A                                          # 004051B5
     mov ebx, dword ptr [ebp + 8]                         # 004051BB
     mov esi, dword ptr [0x4d72a8]                        # 004051BE
     lea eax, [ebp - 0x10]                                # 004051C4
@@ -4757,13 +6447,11 @@ _sub_405160:
     push ebx                                             # 004051CA
     call esi                                             # 004051CB
     cmp eax, 0x10                                        # 004051CD
-    jne _sub_405208                                      # 004051D0
+    jne .L405208                                         # 004051D0
     cmp word ptr [ebp - 0x10], 1                         # 004051D2
-    jne _sub_4051FA                                      # 004051D7
+    jne .L4051FA                                         # 004051D7
     and dword ptr [ebp + 0x10], 0                        # 004051D9
-
-    .global _sub_4051DD
-_sub_4051DD:
+.L4051DD:
     movzx eax, word ptr [ebp + 0x10]                     # 004051DD
     add eax, 0x12                                        # 004051E1
     push eax                                             # 004051E4
@@ -4771,27 +6459,21 @@ _sub_4051DD:
     msvc_abscall 0x4D717C                                # 004051E7
     test eax, eax                                        # 004051ED
     mov dword ptr [edi], eax                             # 004051EF
-    jne _sub_40520F                                      # 004051F1
+    jne .L40520F                                         # 004051F1
     mov ebx, 0xe000                                      # 004051F3
-    jmp _sub_40525F                                      # 004051F8
-
-    .global _sub_4051FA
-_sub_4051FA:
+    jmp .L40525F                                         # 004051F8
+.L4051FA:
     lea eax, [ebp + 0x10]                                # 004051FA
     push 2                                               # 004051FD
     push eax                                             # 004051FF
     push ebx                                             # 00405200
     call esi                                             # 00405201
     cmp eax, 2                                           # 00405203
-    je _sub_4051DD                                       # 00405206
-
-    .global _sub_405208
-_sub_405208:
+    je .L4051DD                                          # 00405206
+.L405208:
     mov ebx, 0xe102                                      # 00405208
-    jmp _sub_40525F                                      # 0040520D
-
-    .global _sub_40520F
-_sub_40520F:
+    jmp .L40525F                                         # 0040520D
+.L40520F:
     lea ecx, [ebp - 0x10]                                # 0040520F
     push 0x10                                            # 00405212
     push ecx                                             # 00405214
@@ -4802,7 +6484,7 @@ _sub_40520F:
     add esp, 0xc                                         # 00405221
     mov word ptr [eax + 0x10], cx                        # 00405224
     cmp word ptr [ebp + 0x10], 0                         # 00405228
-    je _sub_405245                                       # 0040522D
+    je .L405245                                          # 0040522D
     movzx eax, word ptr [ebp + 0x10]                     # 0040522F
     push eax                                             # 00405233
     mov eax, dword ptr [edi]                             # 00405234
@@ -4812,10 +6494,8 @@ _sub_40520F:
     call esi                                             # 0040523B
     movzx ecx, word ptr [ebp + 0x10]                     # 0040523D
     msvc_cmp eax, ecx                                    # 00405241
-    jne _sub_40525A                                      # 00405243
-
-    .global _sub_405245
-_sub_405245:
+    jne .L40525A                                         # 00405243
+.L405245:
     lea eax, [ebp - 0x24]                                # 00405245
     push 0                                               # 00405248
     push eax                                             # 0040524A
@@ -4823,34 +6503,26 @@ _sub_405245:
     msvc_abscall 0x4D72A4                                # 0040524C
     msvc_mov ebx, eax                                    # 00405252
     test ebx, ebx                                        # 00405254
-    jne _sub_40525F                                      # 00405256
-    jmp _sub_405282                                      # 00405258
-
-    .global _sub_40525A
-_sub_40525A:
+    jne .L40525F                                         # 00405256
+    jmp .L405282                                         # 00405258
+.L40525A:
     mov ebx, 0xe101                                      # 0040525A
-
-    .global _sub_40525F
-_sub_40525F:
+.L40525F:
     mov eax, dword ptr [edi]                             # 0040525F
     msvc_xor esi, esi                                    # 00405261
     msvc_cmp eax, esi                                    # 00405263
-    je _sub_405270                                       # 00405265
+    je .L405270                                          # 00405265
     push eax                                             # 00405267
     msvc_abscall 0x4D7180                                # 00405268
     mov dword ptr [edi], esi                             # 0040526E
-
-    .global _sub_405270
-_sub_405270:
+.L405270:
     cmp dword ptr [ebp + 8], esi                         # 00405270
-    je _sub_405282                                       # 00405273
+    je .L405282                                          # 00405273
     push esi                                             # 00405275
     push dword ptr [ebp + 8]                             # 00405276
     msvc_abscall 0x4D72A0                                # 00405279
     mov dword ptr [ebp + 8], esi                         # 0040527F
-
-    .global _sub_405282
-_sub_405282:
+.L405282:
     mov eax, dword ptr [ebp + 0xc]                       # 00405282
     mov ecx, dword ptr [ebp + 8]                         # 00405285
     pop edi                                              # 00405288
@@ -4877,50 +6549,42 @@ _sub_405291:
     neg eax                                              # 004052A9
     msvc_sbb eax, eax                                    # 004052AB
     neg eax                                              # 004052AD
-    jne _sub_40532B                                      # 004052AF
+    jne .L40532B                                         # 004052AF
     mov ecx, dword ptr [ebp + 0x14]                      # 004052B1
     mov ebx, dword ptr [ebp + 0xc]                       # 004052B4
     mov eax, dword ptr [ecx + 4]                         # 004052B7
     msvc_cmp ebx, eax                                    # 004052BA
-    jbe _sub_4052C0                                      # 004052BC
+    jbe .L4052C0                                         # 004052BC
     msvc_mov ebx, eax                                    # 004052BE
-
-    .global _sub_4052C0
-_sub_4052C0:
+.L4052C0:
     msvc_sub eax, ebx                                    # 004052C0
     msvc_xor edi, edi                                    # 004052C2
     test ebx, ebx                                        # 004052C4
     mov dword ptr [ecx + 4], eax                         # 004052C6
-    jbe _sub_405318                                      # 004052C9
-
-    .global _sub_4052CB
-_sub_4052CB:
+    jbe .L405318                                         # 004052C9
+.L4052CB:
     mov eax, dword ptr [ebp - 0x28]                      # 004052CB
     cmp dword ptr [ebp - 0x2c], eax                      # 004052CE
-    jne _sub_4052EE                                      # 004052D1
+    jne .L4052EE                                         # 004052D1
     lea eax, [ebp - 0x48]                                # 004052D3
     push 0                                               # 004052D6
     push eax                                             # 004052D8
     push dword ptr [ebp + 8]                             # 004052D9
     msvc_abscall 0x4D72BC                                # 004052DC
     test eax, eax                                        # 004052E2
-    jne _sub_40532B                                      # 004052E4
+    jne .L40532B                                         # 004052E4
     mov eax, dword ptr [ebp - 0x28]                      # 004052E6
     cmp dword ptr [ebp - 0x2c], eax                      # 004052E9
-    je _sub_405333                                       # 004052EC
-
-    .global _sub_4052EE
-_sub_4052EE:
+    je .L405333                                          # 004052EC
+.L4052EE:
     sub eax, dword ptr [ebp - 0x2c]                      # 004052EE
     msvc_mov esi, eax                                    # 004052F1
     msvc_mov eax, ebx                                    # 004052F3
     msvc_sub eax, edi                                    # 004052F5
     msvc_cmp eax, esi                                    # 004052F7
-    jae _sub_4052FD                                      # 004052F9
+    jae .L4052FD                                         # 004052F9
     msvc_mov esi, eax                                    # 004052FB
-
-    .global _sub_4052FD
-_sub_4052FD:
+.L4052FD:
     mov eax, dword ptr [ebp + 0x10]                      # 004052FD
     push esi                                             # 00405300
     push dword ptr [ebp - 0x2c]                          # 00405301
@@ -4931,36 +6595,26 @@ _sub_4052FD:
     msvc_add edi, esi                                    # 0040530F
     add esp, 0xc                                         # 00405311
     msvc_cmp edi, ebx                                    # 00405314
-    jb _sub_4052CB                                       # 00405316
-
-    .global _sub_405318
-_sub_405318:
+    jb .L4052CB                                          # 00405316
+.L405318:
     lea eax, [ebp - 0x48]                                # 00405318
     push 0                                               # 0040531B
     push eax                                             # 0040531D
     push dword ptr [ebp + 8]                             # 0040531E
     msvc_abscall 0x4D72C0                                # 00405321
     test eax, eax                                        # 00405327
-    je _sub_40533A                                       # 00405329
-
-    .global _sub_40532B
-_sub_40532B:
+    je .L40533A                                          # 00405329
+.L40532B:
     mov ecx, dword ptr [ebp + 0x18]                      # 0040532B
     and dword ptr [ecx], 0                               # 0040532E
-    jmp _sub_40533F                                      # 00405331
-
-    .global _sub_405333
-_sub_405333:
+    jmp .L40533F                                         # 00405331
+.L405333:
     mov eax, 0xe103                                      # 00405333
-    jmp _sub_40532B                                      # 00405338
-
-    .global _sub_40533A
-_sub_40533A:
+    jmp .L40532B                                         # 00405338
+.L40533A:
     mov ecx, dword ptr [ebp + 0x18]                      # 0040533A
     mov dword ptr [ecx], ebx                             # 0040533D
-
-    .global _sub_40533F
-_sub_40533F:
+.L40533F:
     pop edi                                              # 0040533F
     pop esi                                              # 00405340
     pop ebx                                              # 00405341
@@ -4973,24 +6627,20 @@ _sub_405344:
     mov esi, dword ptr [esp + 0xc]                       # 00405345
     mov eax, dword ptr [esi]                             # 00405349
     test eax, eax                                        # 0040534B
-    je _sub_405359                                       # 0040534D
+    je .L405359                                          # 0040534D
     push eax                                             # 0040534F
     msvc_abscall 0x4D7180                                # 00405350
     and dword ptr [esi], 0                               # 00405356
-
-    .global _sub_405359
-_sub_405359:
+.L405359:
     mov esi, dword ptr [esp + 8]                         # 00405359
     mov eax, dword ptr [esi]                             # 0040535D
     test eax, eax                                        # 0040535F
-    je _sub_40536F                                       # 00405361
+    je .L40536F                                          # 00405361
     push 0                                               # 00405363
     push eax                                             # 00405365
     msvc_abscall 0x4D72A0                                # 00405366
     and dword ptr [esi], 0                               # 0040536C
-
-    .global _sub_40536F
-_sub_40536F:
+.L40536F:
     msvc_xor eax, eax                                    # 0040536F
     pop esi                                              # 00405371
     ret                                                  # 00405372
@@ -5017,31 +6667,48 @@ _sub_405373:
     push dword ptr [esi]                                 # 0040539F
     msvc_abscall 0x4D72AC                                # 004053A1
     test eax, eax                                        # 004053A7
-    jne _sub_4053B7                                      # 004053A9
+    jne .L4053B7                                         # 004053A9
     push 1                                               # 004053AB
     push dword ptr [esp + 0x20]                          # 004053AD
     push dword ptr [esi]                                 # 004053B1
     call edi                                             # 004053B3
     msvc_xor eax, eax                                    # 004053B5
-
-    .global _sub_4053B7
-_sub_4053B7:
+.L4053B7:
     pop edi                                              # 004053B7
     pop esi                                              # 004053B8
     pop ebx                                              # 004053B9
     ret                                                  # 004053BA
-# 0x4053BB
-    .byte 0x8B, 0x54, 0x24, 0x04, 0x8B, 0x0D, 0xE8, 0xFF #        0 .T$.....
-    .byte 0x13, 0x01, 0x56, 0x57, 0x8B, 0x72, 0x54, 0x8B #        8 ..VW.rT.
-    .byte 0x7A, 0x08, 0x81, 0xF9, 0x00, 0x01, 0x00, 0x00 #       10 z.......
-    .byte 0x7C, 0x04, 0x33, 0xC0, 0xEB, 0x2B, 0x85, 0xF6 #       18 |.3..+..
-    .byte 0x76, 0x24, 0x8B, 0x52, 0x0C, 0x8D, 0x04, 0x49 #       20 v$.R...I
-    .byte 0xD1, 0xE0, 0x41, 0x66, 0x89, 0x90, 0x20, 0x00 #       28 ..Af.. .
-    .byte 0x14, 0x01, 0x66, 0x89, 0xB8, 0x22, 0x00, 0x14 #       30 ..f.."..
-    .byte 0x01, 0x66, 0x89, 0xB0, 0x24, 0x00, 0x14, 0x01 #       38 .f..$...
-    .byte 0x89, 0x0D, 0xE8, 0xFF, 0x13, 0x01, 0x6A, 0x01 #       40 ......j.
-    .byte 0x58, 0x5F, 0x5E, 0xC2, 0x08, 0x00             #       48 X_^...
 
+    .global _sub_4053BB
+_sub_4053BB:
+    mov edx, dword ptr [esp + 4]                         # 004053BB
+    mov ecx, dword ptr [0x113ffe8]                       # 004053BF
+    push esi                                             # 004053C5
+    push edi                                             # 004053C6
+    mov esi, dword ptr [edx + 0x54]                      # 004053C7
+    mov edi, dword ptr [edx + 8]                         # 004053CA
+    cmp ecx, 0x100                                       # 004053CD
+    jl .L4053D9                                          # 004053D3
+    msvc_xor eax, eax                                    # 004053D5
+    jmp .L405404                                         # 004053D7
+.L4053D9:
+    test esi, esi                                        # 004053D9
+    jbe .L405401                                         # 004053DB
+    mov edx, dword ptr [edx + 0xc]                       # 004053DD
+    lea eax, [ecx + ecx*2]                               # 004053E0
+    shl eax, 1                                           # 004053E3
+    inc ecx                                              # 004053E5
+    mov word ptr [eax + 0x1140020], dx                   # 004053E6
+    mov word ptr [eax + 0x1140022], di                   # 004053ED
+    mov word ptr [eax + 0x1140024], si                   # 004053F4
+    mov dword ptr [0x113ffe8], ecx                       # 004053FB
+.L405401:
+    push 1                                               # 00405401
+    pop eax                                              # 00405403
+.L405404:
+    pop edi                                              # 00405404
+    pop esi                                              # 00405405
+    ret 8                                                # 00405406
 
     .global _sub_405409
 _sub_405409:
@@ -5134,15 +6801,13 @@ _sub_4054B9:
     msvc_xor eax, eax                                    # 004054D7
     msvc_cmp ebx, eax                                    # 004054D9
     mov edi, 0x7f00                                      # 004054DB
-    jne _sub_4054EA                                      # 004054E0
+    jne .L4054EA                                         # 004054E0
     push edi                                             # 004054E2
     push eax                                             # 004054E3
     call esi                                             # 004054E4
     msvc_mov ebx, eax                                    # 004054E6
     msvc_xor eax, eax                                    # 004054E8
-
-    .global _sub_4054EA
-_sub_4054EA:
+.L4054EA:
     mov ecx, dword ptr [0x113e0b4]                       # 004054EA
     push edi                                             # 004054F0
     push eax                                             # 004054F1
@@ -5218,9 +6883,9 @@ _sub_405542:
     mov dword ptr [0x113fff0], edi                       # 004055C3
     mov dword ptr [0x525224], edi                        # 004055C9
     mov dword ptr [0x525228], edi                        # 004055CF
-    je _sub_40566E                                       # 004055D5
+    je .L40566E                                          # 004055D5
     dec eax                                              # 004055DB
-    jne _sub_405664                                      # 004055DC
+    jne .L405664                                         # 004055DC
     mov eax, dword ptr [ebp + 0x20]                      # 004055E2
     push 0x4053bb                                        # 004055E5
     mov dword ptr [0x524164], eax                        # 004055EA
@@ -5234,63 +6899,49 @@ _sub_405542:
     mov dword ptr [ebp + 0xc], edi                       # 00405600
     call dword ptr [ecx + 0x20]                          # 00405603
     test eax, eax                                        # 00405606
-    jne _sub_405664                                      # 00405608
+    jne .L405664                                         # 00405608
     cmp dword ptr [0x113ffe8], edi                       # 0040560A
     mov dword ptr [ebp + 0x1c], edi                      # 00405610
-    jle _sub_405664                                      # 00405613
+    jle .L405664                                         # 00405613
     mov eax, 0x1140022                                   # 00405615
-
-    .global _sub_40561A
-_sub_40561A:
+.L40561A:
     cmp dword ptr [ebp + 0xc], edi                       # 0040561A
-    jne _sub_405656                                      # 0040561D
+    jne .L405656                                         # 0040561D
     movsx ecx, word ptr [eax - 2]                        # 0040561F
     msvc_cmp ecx, esi                                    # 00405623
-    jne _sub_405640                                      # 00405625
+    jne .L405640                                         # 00405625
     movsx ecx, word ptr [eax]                            # 00405627
     msvc_cmp ecx, ebx                                    # 0040562A
-    jne _sub_405640                                      # 0040562C
+    jne .L405640                                         # 0040562C
     movsx ecx, word ptr [eax + 2]                        # 0040562E
     cmp ecx, dword ptr [ebp + 0x14]                      # 00405632
-    jne _sub_405640                                      # 00405635
+    jne .L405640                                         # 00405635
     mov dword ptr [ebp + 0xc], 1                         # 00405637
-    jmp _sub_405646                                      # 0040563E
-
-    .global _sub_405640
-_sub_405640:
+    jmp .L405646                                         # 0040563E
+.L405640:
     inc dword ptr [ebp + 0x1c]                           # 00405640
     add eax, 6                                           # 00405643
-
-    .global _sub_405646
-_sub_405646:
+.L405646:
     mov ecx, dword ptr [0x113ffe8]                       # 00405646
     cmp dword ptr [ebp + 0x1c], ecx                      # 0040564C
-    jl _sub_40561A                                       # 0040564F
+    jl .L40561A                                          # 0040564F
     cmp dword ptr [ebp + 0xc], edi                       # 00405651
-    je _sub_405664                                       # 00405654
-
-    .global _sub_405656
-_sub_405656:
+    je .L405664                                          # 00405654
+.L405656:
     call _sub_4033A7                                     # 00405656
     test eax, eax                                        # 0040565B
-    je _sub_405664                                       # 0040565D
+    je .L405664                                          # 0040565D
     push 1                                               # 0040565F
     pop eax                                              # 00405661
-    jmp _sub_405679                                      # 00405662
-
-    .global _sub_405664
-_sub_405664:
+    jmp .L405679                                         # 00405662
+.L405664:
     mov dword ptr [0x525220], edi                        # 00405664
     msvc_xor eax, eax                                    # 0040566A
-    jmp _sub_405679                                      # 0040566C
-
-    .global _sub_40566E
-_sub_40566E:
+    jmp .L405679                                         # 0040566C
+.L40566E:
     mov dword ptr [0x524164], edi                        # 0040566E
     call _sub_403718                                     # 00405674
-
-    .global _sub_405679
-_sub_405679:
+.L405679:
     pop edi                                              # 00405679
     pop esi                                              # 0040567A
     pop ebx                                              # 0040567B
@@ -5301,12 +6952,10 @@ _sub_405679:
 _sub_40567E:
     mov eax, dword ptr [0x525230]                        # 0040567E
     test eax, eax                                        # 00405683
-    je _sub_405690                                       # 00405685
+    je .L405690                                          # 00405685
     call eax                                             # 00405687
     and dword ptr [0x525230], 0                          # 00405689
-
-    .global _sub_405690
-_sub_405690:
+.L405690:
     and dword ptr [0x525220], 0                          # 00405690
     ret                                                  # 00405697
 
@@ -5315,14 +6964,12 @@ _sub_405698:
     call _sub_401B57                                     # 00405698
     mov eax, dword ptr [0x52521c]                        # 0040569D
     test eax, eax                                        # 004056A2
-    je _sub_4056B4                                       # 004056A4
+    je .L4056B4                                          # 004056A4
     push eax                                             # 004056A6
     call _sub_4D1355                                     # 004056A7
     and dword ptr [0x52521c], 0                          # 004056AC
     pop ecx                                              # 004056B3
-
-    .global _sub_4056B4
-_sub_4056B4:
+.L4056B4:
     and dword ptr [0x525218], 0                          # 004056B4
     ret                                                  # 004056BB
 
@@ -5347,7 +6994,7 @@ _sub_4056CD:
     test eax, eax                                        # 004056EE
     pop ecx                                              # 004056F0
     mov dword ptr [0x52521c], eax                        # 004056F1
-    je _sub_40573D                                       # 004056F6
+    je .L40573D                                          # 004056F6
     msvc_mov esi, eax                                    # 004056F8
     push edi                                             # 004056FA
     push esi                                             # 004056FB
@@ -5357,7 +7004,7 @@ _sub_4056CD:
     msvc_abscall 0x4D727C                                # 00405704
     msvc_mov edi, eax                                    # 0040570A
     test edi, edi                                        # 0040570C
-    je _sub_40572D                                       # 0040570E
+    je .L40572D                                          # 0040570E
     push 0x6a                                            # 00405710
     push edi                                             # 00405712
     msvc_abscall 0x4D7048                                # 00405713
@@ -5367,9 +7014,7 @@ _sub_4056CD:
     mov word ptr [esi + 8], ax                           # 0040571F
     mov word ptr [esi + 0xa], ax                         # 00405723
     msvc_abscall 0x4D7280                                # 00405727
-
-    .global _sub_40572D
-_sub_40572D:
+.L40572D:
     push 1                                               # 0040572D
     call _sub_4041F5                                     # 0040572F
     push eax                                             # 00405734
@@ -5377,9 +7022,7 @@ _sub_40572D:
     pop ecx                                              # 0040573A
     pop ecx                                              # 0040573B
     pop edi                                              # 0040573C
-
-    .global _sub_40573D
-_sub_40573D:
+.L40573D:
     pop esi                                              # 0040573D
     ret                                                  # 0040573E
 
@@ -5393,13 +7036,11 @@ _sub_40573F:
     mov eax, dword ptr [0x5252a8]                        # 00405749
     msvc_xor esi, esi                                    # 0040574E
     msvc_cmp eax, esi                                    # 00405750
-    je _sub_40575C                                       # 00405752
+    je .L40575C                                          # 00405752
     push eax                                             # 00405754
     msvc_abscall 0x525270                                # 00405755
     pop ecx                                              # 0040575B
-
-    .global _sub_40575C
-_sub_40575C:
+.L40575C:
     push esi                                             # 0040575C
     push esi                                             # 0040575D
     push 1                                               # 0040575E
@@ -5416,21 +7057,17 @@ _sub_40575C:
     msvc_mov edi, eax                                    # 0040577D
     add esp, 0x24                                        # 0040577F
     msvc_cmp edi, esi                                    # 00405782
-    je _sub_4057F4                                       # 00405784
+    je .L4057F4                                          # 00405784
     mov eax, 0x640                                       # 00405786
     msvc_cmp edx, eax                                    # 0040578B
-    jle _sub_405791                                      # 0040578D
+    jle .L405791                                         # 0040578D
     msvc_mov edx, eax                                    # 0040578F
-
-    .global _sub_405791
-_sub_405791:
+.L405791:
     mov eax, 0x4b0                                       # 00405791
     cmp dword ptr [ebp + 0xc], eax                       # 00405796
-    jle _sub_40579D                                      # 00405799
+    jle .L40579D                                         # 00405799
     msvc_mov ecx, eax                                    # 0040579B
-
-    .global _sub_40579D
-_sub_40579D:
+.L40579D:
     push ecx                                             # 0040579D
     push edx                                             # 0040579E
     mov dword ptr [0x113e724], 0x140                     # 0040579F
@@ -5443,27 +7080,19 @@ _sub_40579D:
     pop ecx                                              # 004057CB
     call _sub_406185                                     # 004057CC
     test eax, eax                                        # 004057D1
-    je _sub_4057F0                                       # 004057D3
+    je .L4057F0                                          # 004057D3
     call _sub_4061F4                                     # 004057D5
     mov dword ptr [0x5252e0], 1                          # 004057DA
     mov dword ptr [0x5252b4], 3                          # 004057E4
-    jmp _sub_4057FA                                      # 004057EE
-
-    .global _sub_4057F0
-_sub_4057F0:
+    jmp .L4057FA                                         # 004057EE
+.L4057F0:
     msvc_xor eax, eax                                    # 004057F0
-    jmp _sub_4057FC                                      # 004057F2
-
-    .global _sub_4057F4
-_sub_4057F4:
+    jmp .L4057FC                                         # 004057F2
+.L4057F4:
     mov dword ptr [0x5252b4], esi                        # 004057F4
-
-    .global _sub_4057FA
-_sub_4057FA:
+.L4057FA:
     msvc_mov eax, edi                                    # 004057FA
-
-    .global _sub_4057FC
-_sub_4057FC:
+.L4057FC:
     pop edi                                              # 004057FC
     pop esi                                              # 004057FD
     pop ebp                                              # 004057FE
@@ -5479,64 +7108,52 @@ _sub_405800:
     push esi                                             # 0040580A
     msvc_cmp ebx, eax                                    # 0040580B
     push edi                                             # 0040580D
-    jge _sub_405816                                      # 0040580E
+    jge .L405816                                         # 0040580E
     msvc_mov ecx, ebx                                    # 00405810
     msvc_mov ebx, eax                                    # 00405812
     msvc_mov eax, ecx                                    # 00405814
-
-    .global _sub_405816
-_sub_405816:
+.L405816:
     mov esi, dword ptr [ebp + 0xc]                       # 00405816
     mov ecx, dword ptr [ebp + 0x14]                      # 00405819
     msvc_cmp ecx, esi                                    # 0040581C
-    jge _sub_405825                                      # 0040581E
+    jge .L405825                                         # 0040581E
     mov dword ptr [ebp + 0x14], esi                      # 00405820
     msvc_mov esi, ecx                                    # 00405823
-
-    .global _sub_405825
-_sub_405825:
+.L405825:
     mov ecx, dword ptr [0x113e2e4]                       # 00405825
     msvc_cmp eax, ecx                                    # 0040582B
-    jg _sub_4058F0                                       # 0040582D
+    jg .L4058F0                                          # 0040582D
     test ebx, ebx                                        # 00405833
-    jl _sub_4058F0                                       # 00405835
+    jl .L4058F0                                          # 00405835
     mov edx, dword ptr [0x113e84c]                       # 0040583B
     msvc_cmp esi, edx                                    # 00405841
-    jg _sub_4058F0                                       # 00405843
+    jg .L4058F0                                          # 00405843
     cmp dword ptr [ebp + 0x14], 0                        # 00405849
-    jl _sub_4058F0                                       # 0040584D
+    jl .L4058F0                                          # 0040584D
     test eax, eax                                        # 00405853
-    jge _sub_405859                                      # 00405855
+    jge .L405859                                         # 00405855
     msvc_xor eax, eax                                    # 00405857
-
-    .global _sub_405859
-_sub_405859:
+.L405859:
     msvc_cmp ebx, ecx                                    # 00405859
-    jle _sub_40585F                                      # 0040585B
+    jle .L40585F                                         # 0040585B
     msvc_mov ebx, ecx                                    # 0040585D
-
-    .global _sub_40585F
-_sub_40585F:
+.L40585F:
     test esi, esi                                        # 0040585F
-    jge _sub_405865                                      # 00405861
+    jge .L405865                                         # 00405861
     msvc_xor esi, esi                                    # 00405863
-
-    .global _sub_405865
-_sub_405865:
+.L405865:
     cmp dword ptr [ebp + 0x14], edx                      # 00405865
-    jle _sub_40586D                                      # 00405868
+    jle .L40586D                                         # 00405868
     mov dword ptr [ebp + 0x14], edx                      # 0040586A
-
-    .global _sub_40586D
-_sub_40586D:
+.L40586D:
     msvc_mov ecx, ebx                                    # 0040586D
     msvc_sub ecx, eax                                    # 0040586F
     test ecx, ecx                                        # 00405871
-    jle _sub_4058F0                                      # 00405873
+    jle .L4058F0                                         # 00405873
     mov ecx, dword ptr [ebp + 0x14]                      # 00405875
     msvc_sub ecx, esi                                    # 00405878
     test ecx, ecx                                        # 0040587A
-    jle _sub_4058F0                                      # 0040587C
+    jle .L4058F0                                         # 0040587C
     push 0x40                                            # 0040587E
     cdq                                                  # 00405880
     pop ecx                                              # 00405881
@@ -5571,13 +7188,11 @@ _sub_40586D:
     msvc_sub eax, edi                                    # 004058B5
     inc eax                                              # 004058B7
     test eax, eax                                        # 004058B8
-    jle _sub_4058F0                                      # 004058BA
+    jle .L4058F0                                         # 004058BA
     mov dword ptr [ebp + 0x14], eax                      # 004058BC
-
-    .global _sub_4058BF
-_sub_4058BF:
+.L4058BF:
     test ebx, ebx                                        # 004058BF
-    jle _sub_4058E9                                      # 004058C1
+    jle .L4058E9                                         # 004058C1
     msvc_mov ecx, ebx                                    # 004058C3
     lea edi, [esi + 0x113f140]                           # 004058C5
     msvc_mov edx, ecx                                    # 004058CB
@@ -5590,15 +7205,11 @@ _sub_4058BF:
     add dword ptr [0x5252e4], ebx                        # 004058DE
     rep stosb byte ptr es:[edi], al                      # 004058E4
     mov ecx, dword ptr [ebp + 0x10]                      # 004058E6
-
-    .global _sub_4058E9
-_sub_4058E9:
+.L4058E9:
     msvc_add esi, ecx                                    # 004058E9
     dec dword ptr [ebp + 0x14]                           # 004058EB
-    jne _sub_4058BF                                      # 004058EE
-
-    .global _sub_4058F0
-_sub_4058F0:
+    jne .L4058BF                                         # 004058EE
+.L4058F0:
     pop edi                                              # 004058F0
     pop esi                                              # 004058F1
     pop ebx                                              # 004058F2
@@ -5615,40 +7226,30 @@ _sub_4058F5:
     mov dword ptr [0x113ecf8], esi                       # 00405904
     mov dword ptr [0x113ecfc], eax                       # 0040590A
     mov dword ptr [0x113f124], esi                       # 0040590F
-    je _sub_40591C                                       # 00405915
+    je .L40591C                                          # 00405915
     call _sub_406217                                     # 00405917
-
-    .global _sub_40591C
-_sub_40591C:
+.L40591C:
     call _sub_4071E4                                     # 0040591C
     test eax, eax                                        # 00405921
-    jne _sub_405945                                      # 00405923
+    jne .L405945                                         # 00405923
     cmp dword ptr [0x5252dc], esi                        # 00405925
-    jne _sub_405945                                      # 0040592B
+    jne .L405945                                         # 0040592B
     cmp dword ptr [0x5060b4], esi                        # 0040592D
-    je _sub_405957                                       # 00405933
+    je .L405957                                          # 00405933
     cmp dword ptr [0x5252b4], 3                          # 00405935
-    jne _sub_405957                                      # 0040593C
+    jne .L405957                                         # 0040593C
     call _sub_405BA5                                     # 0040593E
-    jmp _sub_405953                                      # 00405943
-
-    .global _sub_405945
-_sub_405945:
+    jmp .L405953                                         # 00405943
+.L405945:
     cmp dword ptr [0x5252b4], 3                          # 00405945
-    jne _sub_405957                                      # 0040594C
+    jne .L405957                                         # 0040594C
     call _sub_405F75                                     # 0040594E
-
-    .global _sub_405953
-_sub_405953:
+.L405953:
     msvc_cmp eax, esi                                    # 00405953
-    jne _sub_40595C                                      # 00405955
-
-    .global _sub_405957
-_sub_405957:
+    jne .L40595C                                         # 00405955
+.L405957:
     call _sub_40598D                                     # 00405957
-
-    .global _sub_40595C
-_sub_40595C:
+.L40595C:
     mov ecx, 0x3a9                                       # 0040595C
     msvc_xor eax, eax                                    # 00405961
     mov edi, 0x113f140                                   # 00405963
@@ -5659,38 +7260,28 @@ _sub_40595C:
     mov dword ptr [0x5252e4], esi                        # 00405978
     pop edi                                              # 0040597E
     pop esi                                              # 0040597F
-    je _sub_405987                                       # 00405980
+    je .L405987                                          # 00405980
     call _sub_40628D                                     # 00405982
-
-    .global _sub_405987
-_sub_405987:
+.L405987:
     msvc_absjmp 0x4D706C                                 # 00405987
 
     .global _sub_40598D
 _sub_40598D:
     msvc_xor eax, eax                                    # 0040598D
     cmp dword ptr [0x5252e0], eax                        # 0040598F
-    je _sub_40599C                                       # 00405995
-    msvc_jmp _sub_4059B7                                 # 00405997
-
-    .global _sub_40599C
-_sub_40599C:
+    je .L40599C                                          # 00405995
+    msvc_jmp .L4059B7                                    # 00405997
+.L40599C:
     cmp dword ptr [0x5252e4], eax                        # 0040599C
-    jle _sub_4059B6                                      # 004059A2
+    jle .L4059B6                                         # 004059A2
     cmp dword ptr [0x5252d8], eax                        # 004059A4
-    je _sub_4059B1                                       # 004059AA
-    msvc_jmp _sub_405AE5                                 # 004059AC
-
-    .global _sub_4059B1
-_sub_4059B1:
-    msvc_jmp _sub_405A11                                 # 004059B1
-
-    .global _sub_4059B6
-_sub_4059B6:
+    je .L4059B1                                          # 004059AA
+    msvc_jmp .L405AE5                                    # 004059AC
+.L4059B1:
+    msvc_jmp .L405A11                                    # 004059B1
+.L4059B6:
     ret                                                  # 004059B6
-
-    .global _sub_4059B7
-_sub_4059B7:
+.L4059B7:
     push ebp                                             # 004059B7
     msvc_mov ebp, esp                                    # 004059B8
     sub esp, 0xc8                                        # 004059BA
@@ -5715,9 +7306,7 @@ _sub_4059B7:
     add esp, 0x18                                        # 00405A0C
     leave                                                # 00405A0F
     ret                                                  # 00405A10
-
-    .global _sub_405A11
-_sub_405A11:
+.L405A11:
     push ebp                                             # 00405A11
     msvc_mov ebp, esp                                    # 00405A12
     sub esp, 0xcc                                        # 00405A14
@@ -5731,50 +7320,40 @@ _sub_405A11:
     msvc_abscall 0x525284                                # 00405A3B
     add esp, 0xc                                         # 00405A41
     test eax, eax                                        # 00405A44
-    jne _sub_405A4A                                      # 00405A46
+    jne .L405A4A                                         # 00405A46
     leave                                                # 00405A48
     ret                                                  # 00405A49
-
-    .global _sub_405A4A
-_sub_405A4A:
+.L405A4A:
     push ebx                                             # 00405A4A
     msvc_xor ebx, ebx                                    # 00405A4B
     cmp dword ptr [0x113e2e4], ebx                       # 00405A4D
-    jle _sub_405ACF                                      # 00405A53
+    jle .L405ACF                                         # 00405A53
     push esi                                             # 00405A55
     push edi                                             # 00405A56
-
-    .global _sub_405A57
-_sub_405A57:
+.L405A57:
     msvc_xor esi, esi                                    # 00405A57
     msvc_xor edi, edi                                    # 00405A59
     cmp dword ptr [0x113e84c], esi                       # 00405A5B
-    jle _sub_405ABF                                      # 00405A61
-
-    .global _sub_405A63
-_sub_405A63:
+    jle .L405ABF                                         # 00405A61
+.L405A63:
     mov ecx, dword ptr [ebp - 4]                         # 00405A63
     cmp byte ptr [edi + ecx], 0                          # 00405A66
     lea eax, [edi + ecx]                                 # 00405A6A
-    je _sub_405AB1                                       # 00405A6D
+    je .L405AB1                                          # 00405A6D
     lea edx, [ebx + 0x40]                                # 00405A6F
     mov dword ptr [ebp - 0x14], ebx                      # 00405A72
     mov dword ptr [ebp - 0x10], esi                      # 00405A75
     mov dword ptr [ebp - 0xc], edx                       # 00405A78
-
-    .global _sub_405A7B
-_sub_405A7B:
+.L405A7B:
     and byte ptr [eax], 0                                # 00405A7B
     add esi, 8                                           # 00405A7E
     add edi, 0x19                                        # 00405A81
     cmp esi, dword ptr [0x113e84c]                       # 00405A84
-    jge _sub_405A95                                      # 00405A8A
+    jge .L405A95                                         # 00405A8A
     cmp byte ptr [edi + ecx], 0                          # 00405A8C
     lea eax, [edi + ecx]                                 # 00405A90
-    jne _sub_405A7B                                      # 00405A93
-
-    .global _sub_405A95
-_sub_405A95:
+    jne .L405A7B                                         # 00405A93
+.L405A95:
     push dword ptr [ebp - 0x10]                          # 00405A95
     lea eax, [ebp - 0x14]                                # 00405A98
     mov dword ptr [ebp - 8], esi                         # 00405A9B
@@ -5783,29 +7362,21 @@ _sub_405A95:
     msvc_abscall 0x525294                                # 00405AA0
     add esp, 0xc                                         # 00405AA6
     inc dword ptr [0x113f124]                            # 00405AA9
-    jmp _sub_405AB7                                      # 00405AAF
-
-    .global _sub_405AB1
-_sub_405AB1:
+    jmp .L405AB7                                         # 00405AAF
+.L405AB1:
     add edi, 0x19                                        # 00405AB1
     add esi, 8                                           # 00405AB4
-
-    .global _sub_405AB7
-_sub_405AB7:
+.L405AB7:
     cmp esi, dword ptr [0x113e84c]                       # 00405AB7
-    jl _sub_405A63                                       # 00405ABD
-
-    .global _sub_405ABF
-_sub_405ABF:
+    jl .L405A63                                          # 00405ABD
+.L405ABF:
     inc dword ptr [ebp - 4]                              # 00405ABF
     add ebx, 0x40                                        # 00405AC2
     cmp ebx, dword ptr [0x113e2e4]                       # 00405AC5
-    jl _sub_405A57                                       # 00405ACB
+    jl .L405A57                                          # 00405ACB
     pop edi                                              # 00405ACD
     pop esi                                              # 00405ACE
-
-    .global _sub_405ACF
-_sub_405ACF:
+.L405ACF:
     msvc_abscall 0x525288                                # 00405ACF
     push 1                                               # 00405AD5
     mov dword ptr [0x113ecf8], 6                         # 00405AD7
@@ -5813,9 +7384,7 @@ _sub_405ACF:
     pop ebx                                              # 00405AE2
     leave                                                # 00405AE3
     ret                                                  # 00405AE4
-
-    .global _sub_405AE5
-_sub_405AE5:
+.L405AE5:
     push ebp                                             # 00405AE5
     msvc_mov ebp, esp                                    # 00405AE6
     sub esp, 0xcc                                        # 00405AE8
@@ -5829,48 +7398,38 @@ _sub_405AE5:
     msvc_abscall 0x525284                                # 00405B0F
     add esp, 0xc                                         # 00405B15
     test eax, eax                                        # 00405B18
-    jne _sub_405B1E                                      # 00405B1A
+    jne .L405B1E                                         # 00405B1A
     leave                                                # 00405B1C
     ret                                                  # 00405B1D
-
-    .global _sub_405B1E
-_sub_405B1E:
+.L405B1E:
     push ebx                                             # 00405B1E
     msvc_xor ebx, ebx                                    # 00405B1F
     cmp dword ptr [0x113e84c], ebx                       # 00405B21
-    jle _sub_405B8F                                      # 00405B27
+    jle .L405B8F                                         # 00405B27
     push esi                                             # 00405B29
     push edi                                             # 00405B2A
     mov edi, 0x640                                       # 00405B2B
-
-    .global _sub_405B30
-_sub_405B30:
+.L405B30:
     msvc_xor esi, esi                                    # 00405B30
-
-    .global _sub_405B32
-_sub_405B32:
+.L405B32:
     mov eax, dword ptr [ebp - 4]                         # 00405B32
     cmp byte ptr [eax], 0                                # 00405B35
-    je _sub_405B77                                       # 00405B38
+    je .L405B77                                          # 00405B38
     lea ecx, [ebx + 8]                                   # 00405B3A
     mov dword ptr [ebp - 0x14], esi                      # 00405B3D
     mov dword ptr [ebp - 0x10], ebx                      # 00405B40
     mov dword ptr [ebp - 8], ecx                         # 00405B43
-
-    .global _sub_405B46
-_sub_405B46:
+.L405B46:
     msvc_cmp esi, edi                                    # 00405B46
-    jge _sub_405B5B                                      # 00405B48
+    jge .L405B5B                                         # 00405B48
     cmp byte ptr [eax], 0                                # 00405B4A
-    je _sub_405B5B                                       # 00405B4D
+    je .L405B5B                                          # 00405B4D
     and byte ptr [eax], 0                                # 00405B4F
     inc eax                                              # 00405B52
     mov dword ptr [ebp - 4], eax                         # 00405B53
     add esi, 0x40                                        # 00405B56
-    jmp _sub_405B46                                      # 00405B59
-
-    .global _sub_405B5B
-_sub_405B5B:
+    jmp .L405B46                                         # 00405B59
+.L405B5B:
     push ebx                                             # 00405B5B
     lea eax, [ebp - 0x14]                                # 00405B5C
     push dword ptr [ebp - 0x14]                          # 00405B5F
@@ -5879,26 +7438,20 @@ _sub_405B5B:
     msvc_abscall 0x525294                                # 00405B66
     add esp, 0xc                                         # 00405B6C
     inc dword ptr [0x113f124]                            # 00405B6F
-    jmp _sub_405B7E                                      # 00405B75
-
-    .global _sub_405B77
-_sub_405B77:
+    jmp .L405B7E                                         # 00405B75
+.L405B77:
     inc eax                                              # 00405B77
     add esi, 0x40                                        # 00405B78
     mov dword ptr [ebp - 4], eax                         # 00405B7B
-
-    .global _sub_405B7E
-_sub_405B7E:
+.L405B7E:
     msvc_cmp esi, edi                                    # 00405B7E
-    jl _sub_405B32                                       # 00405B80
+    jl .L405B32                                          # 00405B80
     add ebx, 8                                           # 00405B82
     cmp ebx, dword ptr [0x113e84c]                       # 00405B85
-    jl _sub_405B30                                       # 00405B8B
+    jl .L405B30                                          # 00405B8B
     pop edi                                              # 00405B8D
     pop esi                                              # 00405B8E
-
-    .global _sub_405B8F
-_sub_405B8F:
+.L405B8F:
     msvc_abscall 0x525288                                # 00405B8F
     push 1                                               # 00405B95
     mov dword ptr [0x113ecf8], 5                         # 00405B97
@@ -5911,38 +7464,26 @@ _sub_405B8F:
 _sub_405BA5:
     msvc_xor eax, eax                                    # 00405BA5
     cmp dword ptr [0x525328], eax                        # 00405BA7
-    jne _sub_405BB2                                      # 00405BAD
-
-    .global _sub_405BAF
-_sub_405BAF:
+    jne .L405BB2                                         # 00405BAD
+.L405BAF:
     msvc_xor eax, eax                                    # 00405BAF
-
-    .global _sub_405BB1
-_sub_405BB1:
+.L405BB1:
     ret                                                  # 00405BB1
-
-    .global _sub_405BB2
-_sub_405BB2:
+.L405BB2:
     cmp dword ptr [0x52532c], eax                        # 00405BB2
-    jne _sub_405BAF                                      # 00405BB8
+    jne .L405BAF                                         # 00405BB8
     cmp dword ptr [0x5252e0], eax                        # 00405BBA
-    je _sub_405BC7                                       # 00405BC0
-    msvc_jmp _sub_405BE1                                 # 00405BC2
-
-    .global _sub_405BC7
-_sub_405BC7:
+    je .L405BC7                                          # 00405BC0
+    msvc_jmp .L405BE1                                    # 00405BC2
+.L405BC7:
     cmp dword ptr [0x5252e4], eax                        # 00405BC7
-    jle _sub_405BB1                                      # 00405BCD
+    jle .L405BB1                                         # 00405BCD
     cmp dword ptr [0x5252d8], eax                        # 00405BCF
-    je _sub_405BDC                                       # 00405BD5
-    msvc_jmp _sub_405CA3                                 # 00405BD7
-
-    .global _sub_405BDC
-_sub_405BDC:
-    msvc_jmp _sub_405E00                                 # 00405BDC
-
-    .global _sub_405BE1
-_sub_405BE1:
+    je .L405BDC                                          # 00405BD5
+    msvc_jmp .L405CA3                                    # 00405BD7
+.L405BDC:
+    msvc_jmp .L405E00                                    # 00405BDC
+.L405BE1:
     push ebp                                             # 00405BE1
     msvc_mov ebp, esp                                    # 00405BE2
     sub esp, 0xcc                                        # 00405BE4
@@ -5954,28 +7495,24 @@ _sub_405BE1:
     msvc_abscall 0x525238                                # 00405BF4
     test eax, eax                                        # 00405BFA
     pop ecx                                              # 00405BFC
-    je _sub_405C28                                       # 00405BFD
+    je .L405C28                                          # 00405BFD
     lea eax, [ebp - 0xcc]                                # 00405BFF
     push eax                                             # 00405C05
     msvc_abscall 0x52523C                                # 00405C06
     test eax, eax                                        # 00405C0C
     pop ecx                                              # 00405C0E
-    je _sub_405C28                                       # 00405C0F
+    je .L405C28                                          # 00405C0F
     call _sub_406185                                     # 00405C11
     test eax, eax                                        # 00405C16
-    jne _sub_405C2C                                      # 00405C18
+    jne .L405C2C                                         # 00405C18
     lea eax, [ebp - 0xcc]                                # 00405C1A
     push eax                                             # 00405C20
     msvc_abscall 0x525240                                # 00405C21
     pop ecx                                              # 00405C27
-
-    .global _sub_405C28
-_sub_405C28:
+.L405C28:
     msvc_xor eax, eax                                    # 00405C28
-    jmp _sub_405C9E                                      # 00405C2A
-
-    .global _sub_405C2C
-_sub_405C2C:
+    jmp .L405C9E                                         # 00405C2A
+.L405C2C:
     mov eax, dword ptr [ebp - 0xcc]                      # 00405C2C
     mov ecx, dword ptr [ebp - 0xc4]                      # 00405C32
     mov dword ptr [ebp - 0x10], eax                      # 00405C38
@@ -5995,15 +7532,13 @@ _sub_405C2C:
     movzx ebx, word ptr [ebp - 8]                        # 00405C6A
     movzx edx, word ptr [ebp - 4]                        # 00405C6E
     shr edx, 2                                           # 00405C72
-
-    .global _sub_405C75
-_sub_405C75:
+.L405C75:
     msvc_mov ecx, edx                                    # 00405C75
     rep movsd dword ptr es:[edi], dword ptr [esi]        # 00405C77
     add edi, dword ptr [ebp - 0xc]                       # 00405C79
     add esi, dword ptr [ebp - 0x14]                      # 00405C7C
     dec ebx                                              # 00405C7F
-    jne _sub_405C75                                      # 00405C80
+    jne .L405C75                                         # 00405C80
     popal                                                # 00405C82
     call _sub_4061F4                                     # 00405C83
     lea eax, [ebp - 0xcc]                                # 00405C88
@@ -6013,17 +7548,13 @@ _sub_405C75:
     push 1                                               # 00405C96
     pop eax                                              # 00405C98
     mov dword ptr [0x113ecf8], eax                       # 00405C99
-
-    .global _sub_405C9E
-_sub_405C9E:
+.L405C9E:
     pop edi                                              # 00405C9E
     pop esi                                              # 00405C9F
     pop ebx                                              # 00405CA0
     leave                                                # 00405CA1
     ret                                                  # 00405CA2
-
-    .global _sub_405CA3
-_sub_405CA3:
+.L405CA3:
     push ebp                                             # 00405CA3
     msvc_mov ebp, esp                                    # 00405CA4
     sub esp, 0xe4                                        # 00405CA6
@@ -6036,28 +7567,24 @@ _sub_405CA3:
     msvc_abscall 0x525238                                # 00405CBD
     test eax, eax                                        # 00405CC3
     pop ecx                                              # 00405CC5
-    je _sub_405CF1                                       # 00405CC6
+    je .L405CF1                                          # 00405CC6
     lea eax, [ebp - 0xe4]                                # 00405CC8
     push eax                                             # 00405CCE
     msvc_abscall 0x52523C                                # 00405CCF
     test eax, eax                                        # 00405CD5
     pop ecx                                              # 00405CD7
-    je _sub_405CF1                                       # 00405CD8
+    je .L405CF1                                          # 00405CD8
     call _sub_406185                                     # 00405CDA
     test eax, eax                                        # 00405CDF
-    jne _sub_405CF8                                      # 00405CE1
+    jne .L405CF8                                         # 00405CE1
     lea eax, [ebp - 0xe4]                                # 00405CE3
     push eax                                             # 00405CE9
     msvc_abscall 0x525240                                # 00405CEA
     pop ecx                                              # 00405CF0
-
-    .global _sub_405CF1
-_sub_405CF1:
+.L405CF1:
     msvc_xor eax, eax                                    # 00405CF1
-    msvc_jmp _sub_405DFB                                 # 00405CF3
-
-    .global _sub_405CF8
-_sub_405CF8:
+    msvc_jmp .L405DFB                                    # 00405CF3
+.L405CF8:
     mov eax, dword ptr [ebp - 0xe4]                      # 00405CF8
     msvc_xor esi, esi                                    # 00405CFE
     cmp dword ptr [0x113e84c], esi                       # 00405D00
@@ -6065,36 +7592,28 @@ _sub_405CF8:
     mov eax, dword ptr [ebp - 0xd4]                      # 00405D09
     mov dword ptr [ebp - 0xc], esi                       # 00405D0F
     mov dword ptr [ebp - 0x10], eax                      # 00405D12
-    jle _sub_405DDB                                      # 00405D15
-
-    .global _sub_405D1B
-_sub_405D1B:
+    jle .L405DDB                                         # 00405D15
+.L405D1B:
     and dword ptr [ebp - 4], 0                           # 00405D1B
-
-    .global _sub_405D1F
-_sub_405D1F:
+.L405D1F:
     mov edi, dword ptr [ebp - 8]                         # 00405D1F
     cmp byte ptr [edi], 0                                # 00405D22
-    je _sub_405DB1                                       # 00405D25
+    je .L405DB1                                          # 00405D25
     mov edx, dword ptr [ebp - 4]                         # 00405D2B
     mov ecx, 0x640                                       # 00405D2E
     msvc_cmp edx, ecx                                    # 00405D33
     lea eax, [esi + 8]                                   # 00405D35
-    jge _sub_405D4F                                      # 00405D38
-
-    .global _sub_405D3A
-_sub_405D3A:
+    jge .L405D4F                                         # 00405D38
+.L405D3A:
     cmp byte ptr [edi], 0                                # 00405D3A
-    je _sub_405D4F                                       # 00405D3D
+    je .L405D4F                                          # 00405D3D
     and byte ptr [edi], 0                                # 00405D3F
     add dword ptr [ebp - 4], 0x40                        # 00405D42
     inc edi                                              # 00405D46
     cmp dword ptr [ebp - 4], ecx                         # 00405D47
     mov dword ptr [ebp - 8], edi                         # 00405D4A
-    jl _sub_405D3A                                       # 00405D4D
-
-    .global _sub_405D4F
-_sub_405D4F:
+    jl .L405D3A                                          # 00405D4D
+.L405D4F:
     msvc_sub eax, esi                                    # 00405D4F
     mov ecx, dword ptr [ebp - 4]                         # 00405D51
     mov dword ptr [ebp - 0x18], eax                      # 00405D54
@@ -6122,37 +7641,29 @@ _sub_405D4F:
     mov ebx, dword ptr [ebp - 0x18]                      # 00405D92
     mov edx, dword ptr [ebp - 0x24]                      # 00405D95
     shr edx, 2                                           # 00405D98
-
-    .global _sub_405D9B
-_sub_405D9B:
+.L405D9B:
     msvc_mov ecx, edx                                    # 00405D9B
     rep movsd dword ptr es:[edi], dword ptr [esi]        # 00405D9D
     add edi, dword ptr [ebp - 0x2c]                      # 00405D9F
     add esi, dword ptr [ebp - 0x14]                      # 00405DA2
     dec ebx                                              # 00405DA5
-    jne _sub_405D9B                                      # 00405DA6
+    jne .L405D9B                                         # 00405DA6
     popal                                                # 00405DA8
     inc dword ptr [0x113f124]                            # 00405DA9
-    jmp _sub_405DB9                                      # 00405DAF
-
-    .global _sub_405DB1
-_sub_405DB1:
+    jmp .L405DB9                                         # 00405DAF
+.L405DB1:
     inc edi                                              # 00405DB1
     add dword ptr [ebp - 4], 0x40                        # 00405DB2
     mov dword ptr [ebp - 8], edi                         # 00405DB6
-
-    .global _sub_405DB9
-_sub_405DB9:
+.L405DB9:
     cmp dword ptr [ebp - 4], 0x640                       # 00405DB9
     mov esi, dword ptr [ebp - 0xc]                       # 00405DC0
-    jl _sub_405D1F                                       # 00405DC3
+    jl .L405D1F                                          # 00405DC3
     add esi, 8                                           # 00405DC9
     cmp esi, dword ptr [0x113e84c]                       # 00405DCC
     mov dword ptr [ebp - 0xc], esi                       # 00405DD2
-    jl _sub_405D1B                                       # 00405DD5
-
-    .global _sub_405DDB
-_sub_405DDB:
+    jl .L405D1B                                          # 00405DD5
+.L405DDB:
     call _sub_4061F4                                     # 00405DDB
     lea eax, [ebp - 0xe4]                                # 00405DE0
     push eax                                             # 00405DE6
@@ -6161,17 +7672,13 @@ _sub_405DDB:
     mov dword ptr [0x113ecf8], 2                         # 00405DEE
     push 1                                               # 00405DF8
     pop eax                                              # 00405DFA
-
-    .global _sub_405DFB
-_sub_405DFB:
+.L405DFB:
     pop edi                                              # 00405DFB
     pop esi                                              # 00405DFC
     pop ebx                                              # 00405DFD
     leave                                                # 00405DFE
     ret                                                  # 00405DFF
-
-    .global _sub_405E00
-_sub_405E00:
+.L405E00:
     push ebp                                             # 00405E00
     msvc_mov ebp, esp                                    # 00405E01
     sub esp, 0xe8                                        # 00405E03
@@ -6184,69 +7691,57 @@ _sub_405E00:
     msvc_abscall 0x525238                                # 00405E1A
     test eax, eax                                        # 00405E20
     pop ecx                                              # 00405E22
-    je _sub_405E4E                                       # 00405E23
+    je .L405E4E                                          # 00405E23
     lea eax, [ebp - 0xe8]                                # 00405E25
     push eax                                             # 00405E2B
     msvc_abscall 0x52523C                                # 00405E2C
     test eax, eax                                        # 00405E32
     pop ecx                                              # 00405E34
-    je _sub_405E4E                                       # 00405E35
+    je .L405E4E                                          # 00405E35
     call _sub_406185                                     # 00405E37
     test eax, eax                                        # 00405E3C
-    jne _sub_405E55                                      # 00405E3E
+    jne .L405E55                                         # 00405E3E
     lea eax, [ebp - 0xe8]                                # 00405E40
     push eax                                             # 00405E46
     msvc_abscall 0x525240                                # 00405E47
     pop ecx                                              # 00405E4D
-
-    .global _sub_405E4E
-_sub_405E4E:
+.L405E4E:
     msvc_xor eax, eax                                    # 00405E4E
-    msvc_jmp _sub_405F70                                 # 00405E50
-
-    .global _sub_405E55
-_sub_405E55:
+    msvc_jmp .L405F70                                    # 00405E50
+.L405E55:
     mov eax, dword ptr [ebp - 0xe8]                      # 00405E55
     and dword ptr [ebp - 4], 0                           # 00405E5B
     cmp dword ptr [0x113e2e4], 0                         # 00405E5F
     mov dword ptr [ebp - 0x20], eax                      # 00405E66
     mov eax, dword ptr [ebp - 0xd8]                      # 00405E69
     mov dword ptr [ebp - 0x10], eax                      # 00405E6F
-    jle _sub_405F50                                      # 00405E72
-
-    .global _sub_405E78
-_sub_405E78:
+    jle .L405F50                                         # 00405E72
+.L405E78:
     msvc_xor esi, esi                                    # 00405E78
     msvc_xor edx, edx                                    # 00405E7A
     cmp dword ptr [0x113e84c], esi                       # 00405E7C
-    jle _sub_405F3A                                      # 00405E82
-
-    .global _sub_405E88
-_sub_405E88:
+    jle .L405F3A                                         # 00405E82
+.L405E88:
     mov eax, dword ptr [ebp - 8]                         # 00405E88
     cmp byte ptr [edx + eax], 0                          # 00405E8B
     lea ebx, [edx + eax]                                 # 00405E8F
-    je _sub_405F28                                       # 00405E92
+    je .L405F28                                          # 00405E92
     mov edi, dword ptr [ebp - 4]                         # 00405E98
     msvc_mov ecx, esi                                    # 00405E9B
     lea eax, [edi + 0x40]                                # 00405E9D
-
-    .global _sub_405EA0
-_sub_405EA0:
+.L405EA0:
     and byte ptr [ebx], 0                                # 00405EA0
     add esi, 8                                           # 00405EA3
     add edx, 0x19                                        # 00405EA6
     cmp esi, dword ptr [0x113e84c]                       # 00405EA9
     mov dword ptr [ebp - 0x24], edx                      # 00405EAF
     mov dword ptr [ebp - 0x2c], esi                      # 00405EB2
-    jge _sub_405EC1                                      # 00405EB5
+    jge .L405EC1                                         # 00405EB5
     mov ebx, dword ptr [ebp - 8]                         # 00405EB7
     msvc_add ebx, edx                                    # 00405EBA
     cmp byte ptr [ebx], 0                                # 00405EBC
-    jne _sub_405EA0                                      # 00405EBF
-
-    .global _sub_405EC1
-_sub_405EC1:
+    jne .L405EA0                                         # 00405EBF
+.L405EC1:
     msvc_sub eax, edi                                    # 00405EC1
     msvc_sub esi, ecx                                    # 00405EC3
     mov dword ptr [ebp - 0xc], eax                       # 00405EC5
@@ -6273,41 +7768,31 @@ _sub_405EC1:
     mov ebx, dword ptr [ebp - 0x30]                      # 00405F03
     mov edx, dword ptr [ebp - 0xc]                       # 00405F06
     shr edx, 2                                           # 00405F09
-
-    .global _sub_405F0C
-_sub_405F0C:
+.L405F0C:
     msvc_mov ecx, edx                                    # 00405F0C
     rep movsd dword ptr es:[edi], dword ptr [esi]        # 00405F0E
     add edi, dword ptr [ebp - 0x14]                      # 00405F10
     add esi, dword ptr [ebp - 0x28]                      # 00405F13
     dec ebx                                              # 00405F16
-    jne _sub_405F0C                                      # 00405F17
+    jne .L405F0C                                         # 00405F17
     popal                                                # 00405F19
     inc dword ptr [0x113f124]                            # 00405F1A
     mov edx, dword ptr [ebp - 0x24]                      # 00405F20
     mov esi, dword ptr [ebp - 0x2c]                      # 00405F23
-    jmp _sub_405F2E                                      # 00405F26
-
-    .global _sub_405F28
-_sub_405F28:
+    jmp .L405F2E                                         # 00405F26
+.L405F28:
     add edx, 0x19                                        # 00405F28
     add esi, 8                                           # 00405F2B
-
-    .global _sub_405F2E
-_sub_405F2E:
+.L405F2E:
     cmp esi, dword ptr [0x113e84c]                       # 00405F2E
-    jl _sub_405E88                                       # 00405F34
-
-    .global _sub_405F3A
-_sub_405F3A:
+    jl .L405E88                                          # 00405F34
+.L405F3A:
     add dword ptr [ebp - 4], 0x40                        # 00405F3A
     inc dword ptr [ebp - 8]                              # 00405F3E
     mov eax, dword ptr [ebp - 4]                         # 00405F41
     cmp eax, dword ptr [0x113e2e4]                       # 00405F44
-    jl _sub_405E78                                       # 00405F4A
-
-    .global _sub_405F50
-_sub_405F50:
+    jl .L405E78                                          # 00405F4A
+.L405F50:
     call _sub_4061F4                                     # 00405F50
     lea eax, [ebp - 0xe8]                                # 00405F55
     push eax                                             # 00405F5B
@@ -6316,9 +7801,7 @@ _sub_405F50:
     mov dword ptr [0x113ecf8], 3                         # 00405F63
     push 1                                               # 00405F6D
     pop eax                                              # 00405F6F
-
-    .global _sub_405F70
-_sub_405F70:
+.L405F70:
     pop edi                                              # 00405F70
     pop esi                                              # 00405F71
     pop ebx                                              # 00405F72
@@ -6330,43 +7813,31 @@ _sub_405F75:
     push ecx                                             # 00405F75
     call _sub_402C32                                     # 00405F76
     test eax, eax                                        # 00405F7B
-    jne _sub_405F81                                      # 00405F7D
+    jne .L405F81                                         # 00405F7D
     pop ecx                                              # 00405F7F
     ret                                                  # 00405F80
-
-    .global _sub_405F81
-_sub_405F81:
+.L405F81:
     msvc_xor eax, eax                                    # 00405F81
     push esi                                             # 00405F83
     cmp dword ptr [0x5252e0], eax                        # 00405F84
-    je _sub_405F93                                       # 00405F8A
+    je .L405F93                                          # 00405F8A
     call _sub_405FC1                                     # 00405F8C
-    jmp _sub_405FAF                                      # 00405F91
-
-    .global _sub_405F93
-_sub_405F93:
+    jmp .L405FAF                                         # 00405F91
+.L405F93:
     cmp dword ptr [0x5252e4], eax                        # 00405F93
-    jle _sub_405FB3                                      # 00405F99
+    jle .L405FB3                                         # 00405F99
     cmp dword ptr [0x5252d8], eax                        # 00405F9B
-    je _sub_405FAA                                       # 00405FA1
+    je .L405FAA                                          # 00405FA1
     call _sub_406019                                     # 00405FA3
-    jmp _sub_405FAF                                      # 00405FA8
-
-    .global _sub_405FAA
-_sub_405FAA:
+    jmp .L405FAF                                         # 00405FA8
+.L405FAA:
     call _sub_4060C3                                     # 00405FAA
-
-    .global _sub_405FAF
-_sub_405FAF:
+.L405FAF:
     msvc_mov esi, eax                                    # 00405FAF
-    jmp _sub_405FB7                                      # 00405FB1
-
-    .global _sub_405FB3
-_sub_405FB3:
+    jmp .L405FB7                                         # 00405FB1
+.L405FB3:
     mov esi, dword ptr [esp + 4]                         # 00405FB3
-
-    .global _sub_405FB7
-_sub_405FB7:
+.L405FB7:
     call _sub_402C60                                     # 00405FB7
     msvc_mov eax, esi                                    # 00405FBC
     pop esi                                              # 00405FBE
@@ -6414,37 +7885,29 @@ _sub_406019:
     pop ecx                                              # 00406037
     cmp dword ptr [0x113e84c], eax                       # 00406038
     mov dword ptr [ebp - 4], eax                         # 0040603E
-    jle _sub_4060B3                                      # 00406041
+    jle .L4060B3                                         # 00406041
     push esi                                             # 00406043
     push edi                                             # 00406044
     mov edi, 0x640                                       # 00406045
-
-    .global _sub_40604A
-_sub_40604A:
+.L40604A:
     msvc_xor esi, esi                                    # 0040604A
-
-    .global _sub_40604C
-_sub_40604C:
+.L40604C:
     cmp byte ptr [ebx], 0                                # 0040604C
-    je _sub_406098                                       # 0040604F
+    je .L406098                                          # 0040604F
     mov dword ptr [ebp - 0x10], eax                      # 00406051
     add eax, 8                                           # 00406054
     mov dword ptr [ebp - 0x14], esi                      # 00406057
     mov dword ptr [ebp - 8], eax                         # 0040605A
-
-    .global _sub_40605D
-_sub_40605D:
+.L40605D:
     msvc_cmp esi, edi                                    # 0040605D
-    jge _sub_40606F                                      # 0040605F
+    jge .L40606F                                         # 0040605F
     cmp byte ptr [ebx], 0                                # 00406061
-    je _sub_40606F                                       # 00406064
+    je .L40606F                                          # 00406064
     and byte ptr [ebx], 0                                # 00406066
     inc ebx                                              # 00406069
     add esi, 0x40                                        # 0040606A
-    jmp _sub_40605D                                      # 0040606D
-
-    .global _sub_40606F
-_sub_40606F:
+    jmp .L40605D                                         # 0040606D
+.L40606F:
     lea eax, [ebp - 0x14]                                # 0040606F
     mov dword ptr [ebp - 0xc], esi                       # 00406072
     push eax                                             # 00406075
@@ -6456,27 +7919,21 @@ _sub_40606F:
     msvc_abscall 0x525274                                # 00406087
     add esp, 0x10                                        # 0040608D
     inc dword ptr [0x113f124]                            # 00406090
-    jmp _sub_40609C                                      # 00406096
-
-    .global _sub_406098
-_sub_406098:
+    jmp .L40609C                                         # 00406096
+.L406098:
     inc ebx                                              # 00406098
     add esi, 0x40                                        # 00406099
-
-    .global _sub_40609C
-_sub_40609C:
+.L40609C:
     mov eax, dword ptr [ebp - 4]                         # 0040609C
     msvc_cmp esi, edi                                    # 0040609F
-    jl _sub_40604C                                       # 004060A1
+    jl .L40604C                                          # 004060A1
     add eax, 8                                           # 004060A3
     cmp eax, dword ptr [0x113e84c]                       # 004060A6
     mov dword ptr [ebp - 4], eax                         # 004060AC
-    jl _sub_40604A                                       # 004060AF
+    jl .L40604A                                          # 004060AF
     pop edi                                              # 004060B1
     pop esi                                              # 004060B2
-
-    .global _sub_4060B3
-_sub_4060B3:
+.L4060B3:
     push 1                                               # 004060B3
     mov dword ptr [0x113ecf8], 5                         # 004060B5
     pop eax                                              # 004060BF
@@ -6497,39 +7954,31 @@ _sub_4060C3:
     and dword ptr [ebp - 4], 0                           # 004060DF
     cmp dword ptr [0x113e2e4], 0                         # 004060E3
     pop ecx                                              # 004060EA
-    jle _sub_406175                                      # 004060EB
+    jle .L406175                                         # 004060EB
     push esi                                             # 004060F1
     push edi                                             # 004060F2
-
-    .global _sub_4060F3
-_sub_4060F3:
+.L4060F3:
     msvc_xor esi, esi                                    # 004060F3
     msvc_xor edi, edi                                    # 004060F5
     cmp dword ptr [0x113e84c], esi                       # 004060F7
-    jle _sub_406163                                      # 004060FD
-
-    .global _sub_4060FF
-_sub_4060FF:
+    jle .L406163                                         # 004060FD
+.L4060FF:
     cmp byte ptr [edi + ebx], 0                          # 004060FF
-    je _sub_406155                                       # 00406103
+    je .L406155                                          # 00406103
     mov eax, dword ptr [ebp - 4]                         # 00406105
     mov dword ptr [ebp - 0x10], esi                      # 00406108
     mov dword ptr [ebp - 0x14], eax                      # 0040610B
     add eax, 0x40                                        # 0040610E
     mov dword ptr [ebp - 0xc], eax                       # 00406111
-
-    .global _sub_406114
-_sub_406114:
+.L406114:
     and byte ptr [edi + ebx], 0                          # 00406114
     add esi, 8                                           # 00406118
     add edi, 0x19                                        # 0040611B
     cmp esi, dword ptr [0x113e84c]                       # 0040611E
-    jge _sub_40612C                                      # 00406124
+    jge .L40612C                                         # 00406124
     cmp byte ptr [edi + ebx], 0                          # 00406126
-    jne _sub_406114                                      # 0040612A
-
-    .global _sub_40612C
-_sub_40612C:
+    jne .L406114                                         # 0040612A
+.L40612C:
     lea eax, [ebp - 0x14]                                # 0040612C
     mov dword ptr [ebp - 8], esi                         # 0040612F
     push eax                                             # 00406132
@@ -6541,30 +7990,22 @@ _sub_40612C:
     msvc_abscall 0x525274                                # 00406144
     add esp, 0x10                                        # 0040614A
     inc dword ptr [0x113f124]                            # 0040614D
-    jmp _sub_40615B                                      # 00406153
-
-    .global _sub_406155
-_sub_406155:
+    jmp .L40615B                                         # 00406153
+.L406155:
     add edi, 0x19                                        # 00406155
     add esi, 8                                           # 00406158
-
-    .global _sub_40615B
-_sub_40615B:
+.L40615B:
     cmp esi, dword ptr [0x113e84c]                       # 0040615B
-    jl _sub_4060FF                                       # 00406161
-
-    .global _sub_406163
-_sub_406163:
+    jl .L4060FF                                          # 00406161
+.L406163:
     add dword ptr [ebp - 4], 0x40                        # 00406163
     inc ebx                                              # 00406167
     mov eax, dword ptr [ebp - 4]                         # 00406168
     cmp eax, dword ptr [0x113e2e4]                       # 0040616B
-    jl _sub_4060F3                                       # 00406171
+    jl .L4060F3                                          # 00406171
     pop edi                                              # 00406173
     pop esi                                              # 00406174
-
-    .global _sub_406175
-_sub_406175:
+.L406175:
     push 1                                               # 00406175
     mov dword ptr [0x113ecf8], 6                         # 00406177
     pop eax                                              # 00406181
@@ -6578,7 +8019,7 @@ _sub_406185:
     msvc_abscall 0x52523C                                # 0040618B
     test eax, eax                                        # 00406191
     pop ecx                                              # 00406193
-    je _sub_4061E3                                       # 00406194
+    je .L4061E3                                          # 00406194
     mov eax, dword ptr [0x5252a8]                        # 00406196
     cmp dword ptr [0x5252d4], 0                          # 0040619B
     push esi                                             # 004061A2
@@ -6594,17 +8035,13 @@ _sub_406185:
     mov word ptr [0x113ed08], ax                         # 004061C6
     mov dword ptr [0x5252ac], esi                        # 004061CC
     mov dword ptr [0x5252b0], esi                        # 004061D2
-    je _sub_4061DF                                       # 004061D8
+    je .L4061DF                                          # 004061D8
     call _sub_406217                                     # 004061DA
-
-    .global _sub_4061DF
-_sub_4061DF:
+.L4061DF:
     msvc_mov eax, esi                                    # 004061DF
     pop esi                                              # 004061E1
     ret                                                  # 004061E2
-
-    .global _sub_4061E3
-_sub_4061E3:
+.L4061E3:
     and dword ptr [0x5252ac], 0                          # 004061E3
     and dword ptr [0x5252b0], 0                          # 004061EA
     msvc_xor eax, eax                                    # 004061F1
@@ -6617,24 +8054,20 @@ _sub_4061F4:
     and dword ptr [0x5252b0], 0                          # 00406200
     cmp dword ptr [0x5252d4], 0                          # 00406207
     pop ecx                                              # 0040620E
-    je _sub_406216                                       # 0040620F
+    je .L406216                                          # 0040620F
     msvc_jmp _sub_40628D                                 # 00406211
-
-    .global _sub_406216
-_sub_406216:
+.L406216:
     ret                                                  # 00406216
 
     .global _sub_406217
 _sub_406217:
     cmp dword ptr [0x5060a0], 0                          # 00406217
-    je _sub_406287                                       # 0040621E
+    je .L406287                                          # 0040621E
     cmp dword ptr [0x5252d0], 0                          # 00406220
-    je _sub_406231                                       # 00406227
+    je .L406231                                          # 00406227
     inc dword ptr [0x5252e8]                             # 00406229
-    jmp _sub_406287                                      # 0040622F
-
-    .global _sub_406231
-_sub_406231:
+    jmp .L406287                                         # 0040622F
+.L406231:
     push ebx                                             # 00406231
     push esi                                             # 00406232
     mov esi, dword ptr [0x4d7158]                        # 00406233
@@ -6663,18 +8096,16 @@ _sub_406231:
     mov dword ptr [0x5252d0], ebx                        # 0040627F
     pop esi                                              # 00406285
     pop ebx                                              # 00406286
-
-    .global _sub_406287
-_sub_406287:
+.L406287:
     mov eax, dword ptr [0x5252e8]                        # 00406287
     ret                                                  # 0040628C
 
     .global _sub_40628D
 _sub_40628D:
     cmp dword ptr [0x5252d0], 0                          # 0040628D
-    je _sub_4062CB                                       # 00406294
+    je .L4062CB                                          # 00406294
     dec dword ptr [0x5252e8]                             # 00406296
-    jne _sub_4062CB                                      # 0040629C
+    jne .L4062CB                                         # 0040629C
     push dword ptr [0x113f128]                           # 0040629E
     msvc_abscall 0x4D7158                                # 004062A4
     push eax                                             # 004062AA
@@ -6684,9 +8115,7 @@ _sub_40628D:
     push eax                                             # 004062BD
     msvc_abscall 0x4D7170                                # 004062BE
     and dword ptr [0x5252d0], 0                          # 004062C4
-
-    .global _sub_4062CB
-_sub_4062CB:
+.L4062CB:
     mov eax, dword ptr [0x5252e8]                        # 004062CB
     ret                                                  # 004062D0
 
@@ -6702,16 +8131,14 @@ _sub_4062E0:
     msvc_xor ebx, ebx                                    # 004062E1
     cmp dword ptr [0x5060bc], ebx                        # 004062E3
     push edi                                             # 004062E9
-    je _sub_40630F                                       # 004062EA
+    je .L40630F                                          # 004062EA
     mov eax, dword ptr [0x5252c0]                        # 004062EC
     or dword ptr [0x5252a0], 0xffffffff                  # 004062F1
     mov dword ptr [0x52529c], eax                        # 004062F8
     mov dword ptr [0x5252a4], ebx                        # 004062FD
     mov dword ptr [0x5252cc], ebx                        # 00406303
     mov dword ptr [0x5060bc], ebx                        # 00406309
-
-    .global _sub_40630F
-_sub_40630F:
+.L40630F:
     push esi                                             # 0040630F
     call _sub_4078F8                                     # 00406310
     msvc_mov esi, eax                                    # 00406315
@@ -6723,32 +8150,26 @@ _sub_40630F:
     mov edi, 0x3e8                                       # 00406330
     msvc_cmp ecx, ebx                                    # 00406335
     mov dword ptr [0x5252bc], ecx                        # 00406337
-    je _sub_40634C                                       # 0040633D
+    je .L40634C                                          # 0040633D
     msvc_mov eax, edi                                    # 0040633F
     msvc_xor edx, edx                                    # 00406341
     div ecx                                              # 00406343
     mov dword ptr [0x5252c8], eax                        # 00406345
-    jmp _sub_406352                                      # 0040634A
-
-    .global _sub_40634C
-_sub_40634C:
+    jmp .L406352                                         # 0040634A
+.L40634C:
     mov dword ptr [0x5252c8], edi                        # 0040634C
-
-    .global _sub_406352
-_sub_406352:
+.L406352:
     add dword ptr [0x5252a4], ecx                        # 00406352
     inc dword ptr [0x5252a0]                             # 00406358
     cmp dword ptr [0x5252a4], edi                        # 0040635E
     mov dword ptr [0x52529c], esi                        # 00406364
     pop esi                                              # 0040636A
-    jb _sub_406383                                       # 0040636B
+    jb .L406383                                          # 0040636B
     mov eax, dword ptr [0x5252a0]                        # 0040636D
     sub dword ptr [0x5252a4], edi                        # 00406372
     mov dword ptr [0x5252cc], eax                        # 00406378
     mov dword ptr [0x5252a0], ebx                        # 0040637D
-
-    .global _sub_406383
-_sub_406383:
+.L406383:
     pop edi                                              # 00406383
     pop ebx                                              # 00406384
     ret                                                  # 00406385
@@ -6773,7 +8194,7 @@ _sub_406386:
     push 0x80000002                                      # 004063AC
     msvc_abscall 0x4D700C                                # 004063B1
     test eax, eax                                        # 004063B7
-    jne _sub_4063E7                                      # 004063B9
+    jne .L4063E7                                         # 004063B9
     lea eax, [ebp - 8]                                   # 004063BB
     mov dword ptr [ebp - 8], 0x100                       # 004063BE
     push eax                                             # 004063C5
@@ -6786,24 +8207,18 @@ _sub_406386:
     msvc_abscall 0x4D7008                                # 004063D8
     push dword ptr [ebp - 4]                             # 004063DE
     msvc_abscall 0x4D7004                                # 004063E1
-
-    .global _sub_4063E7
-_sub_4063E7:
+.L4063E7:
     call _sub_40726D                                     # 004063E7
     test eax, eax                                        # 004063EC
-    je _sub_406409                                       # 004063EE
+    je .L406409                                          # 004063EE
     cmp dword ptr [0x5252ac], esi                        # 004063F0
-    je _sub_4063FD                                       # 004063F6
+    je .L4063FD                                          # 004063F6
     call _sub_4058F5                                     # 004063F8
-
-    .global _sub_4063FD
-_sub_4063FD:
+.L4063FD:
     call _sub_4062E0                                     # 004063FD
     call _sub_46A794                                     # 00406402
-    jmp _sub_4063E7                                      # 00406407
-
-    .global _sub_406409
-_sub_406409:
+    jmp .L4063E7                                         # 00406407
+.L406409:
     call _sub_40567E                                     # 00406409
     msvc_abscall 0x4D72D8                                # 0040640E
     pop esi                                              # 00406414
@@ -6821,12 +8236,10 @@ _sub_406417:
     mov edi, dword ptr [ebp + 8]                         # 00406423
     msvc_xor ebx, ebx                                    # 00406426
     msvc_cmp edi, ebx                                    # 00406428
-    jne _sub_40643B                                      # 0040642A
+    jne .L40643B                                         # 0040642A
     mov dword ptr [0x5252e0], 1                          # 0040642C
-    msvc_jmp _sub_4064C7                                 # 00406436
-
-    .global _sub_40643B
-_sub_40643B:
+    msvc_jmp .L4064C7                                    # 00406436
+.L40643B:
     push 1                                               # 0040643B
     push 1                                               # 0040643D
     push ebx                                             # 0040643F
@@ -6834,16 +8247,16 @@ _sub_40643B:
     msvc_abscall 0x4D7078                                # 00406441
     msvc_mov esi, eax                                    # 00406447
     msvc_cmp esi, ebx                                    # 00406449
-    je _sub_4064C7                                       # 0040644B
+    je .L4064C7                                          # 0040644B
     push ebx                                             # 0040644D
     push esi                                             # 0040644E
     push dword ptr [0x525320]                            # 0040644F
     msvc_abscall 0x4D7248                                # 00406455
     dec eax                                              # 0040645B
     dec eax                                              # 0040645C
-    je _sub_4064B4                                       # 0040645D
+    je .L4064B4                                          # 0040645D
     dec eax                                              # 0040645F
-    jne _sub_4064C7                                      # 00406460
+    jne .L4064C7                                         # 00406460
     lea eax, [ebp - 0x120]                               # 00406462
     mov dword ptr [ebp - 0x120], 0x20                    # 00406468
     push eax                                             # 00406472
@@ -6851,14 +8264,12 @@ _sub_40643B:
     push esi                                             # 00406478
     msvc_abscall 0x4D7074                                # 00406479
     test eax, eax                                        # 0040647F
-    je _sub_4064C7                                       # 00406481
+    je .L4064C7                                          # 00406481
     msvc_xor edi, edi                                    # 00406483
     cmp dword ptr [ebp - 0x118], ebx                     # 00406485
-    jbe _sub_4064C7                                      # 0040648B
+    jbe .L4064C7                                         # 0040648B
     lea esi, [ebp - 0xf8]                                # 0040648D
-
-    .global _sub_406493
-_sub_406493:
+.L406493:
     push dword ptr [esi + 4]                             # 00406493
     push dword ptr [esi]                                 # 00406496
     push dword ptr [esi - 4]                             # 00406498
@@ -6868,39 +8279,36 @@ _sub_406493:
     inc edi                                              # 004064A6
     add esi, 0x10                                        # 004064A7
     cmp edi, dword ptr [ebp - 0x118]                     # 004064AA
-    jb _sub_406493                                       # 004064B0
-    jmp _sub_4064C7                                      # 004064B2
-
-    .global _sub_4064B4
-_sub_4064B4:
+    jb .L406493                                          # 004064B0
+    jmp .L4064C7                                         # 004064B2
+.L4064B4:
     push dword ptr [edi + 0xc]                           # 004064B4
     push dword ptr [edi + 8]                             # 004064B7
     push dword ptr [edi + 4]                             # 004064BA
     push dword ptr [edi]                                 # 004064BD
     call _sub_405800                                     # 004064BF
     add esp, 0x10                                        # 004064C4
-
-    .global _sub_4064C7
-_sub_4064C7:
+.L4064C7:
     cmp dword ptr [0x5252ac], ebx                        # 004064C7
-    je _sub_4064DC                                       # 004064CD
+    je .L4064DC                                          # 004064CD
     cmp dword ptr [0x5252a8], ebx                        # 004064CF
-    je _sub_4064DC                                       # 004064D5
+    je .L4064DC                                          # 004064D5
     call _sub_4058F5                                     # 004064D7
-
-    .global _sub_4064DC
-_sub_4064DC:
+.L4064DC:
     pop edi                                              # 004064DC
     pop esi                                              # 004064DD
     pop ebx                                              # 004064DE
     leave                                                # 004064DF
     ret                                                  # 004064E0
-# 0x4064E1
-    .byte 0x6A, 0x00, 0x68, 0x68, 0x62, 0x50, 0x00, 0x68 #        0 j.hhbP.h
-    .byte 0x50, 0x62, 0x50, 0x00, 0xFF, 0x35, 0x20, 0x53 #        8 PbP..5 S
-    .byte 0x52, 0x00, 0xFF, 0x15, 0x40, 0x72, 0x4D, 0x00 #       10 R...@rM.
-    .byte 0xC3                                           #       18 .
 
+    .global _sub_4064E1
+_sub_4064E1:
+    push 0                                               # 004064E1
+    push 0x506268                                        # 004064E3
+    push 0x506250                                        # 004064E8
+    push dword ptr [0x525320]                            # 004064ED
+    msvc_abscall 0x4D7240                                # 004064F3
+    ret                                                  # 004064F9
 
     .global _sub_4064FA
 _sub_4064FA:
@@ -6942,26 +8350,22 @@ _sub_406536:
     msvc_xor edi, edi                                    # 00406542
     msvc_sub eax, edi                                    # 00406544
     mov dword ptr [ebp - 0x10], edi                      # 00406546
-    je _sub_406567                                       # 00406549
+    je .L406567                                          # 00406549
     dec eax                                              # 0040654B
-    jne _sub_406583                                      # 0040654C
+    jne .L406583                                         # 0040654C
     push 4                                               # 0040654E
     mov dword ptr [ebp - 4], 0xc0000000                  # 00406550
     pop eax                                              # 00406557
     mov dword ptr [ebp - 0xc], 2                         # 00406558
     mov dword ptr [ebp - 8], eax                         # 0040655F
     mov dword ptr [ebp + 0xc], eax                       # 00406562
-    jmp _sub_406583                                      # 00406565
-
-    .global _sub_406567
-_sub_406567:
+    jmp .L406583                                         # 00406565
+.L406567:
     mov dword ptr [ebp - 4], 0x80000000                  # 00406567
     mov dword ptr [ebp - 8], 2                           # 0040656E
     mov dword ptr [ebp - 0xc], 4                         # 00406575
     mov dword ptr [ebp + 0xc], 3                         # 0040657C
-
-    .global _sub_406583
-_sub_406583:
+.L406583:
     push edi                                             # 00406583
     push 0x80                                            # 00406584
     push dword ptr [ebp + 0xc]                           # 00406589
@@ -6972,7 +8376,7 @@ _sub_406583:
     msvc_abscall 0x4D70FC                                # 00406594
     msvc_mov esi, eax                                    # 0040659A
     cmp esi, -1                                          # 0040659C
-    je _sub_4065D5                                       # 0040659F
+    je .L4065D5                                          # 0040659F
     push edi                                             # 004065A1
     push dword ptr [ebp + 0x10]                          # 004065A2
     push edi                                             # 004065A5
@@ -6985,7 +8389,7 @@ _sub_406583:
     msvc_mov ebx, eax                                    # 004065B8
     call esi                                             # 004065BA
     msvc_cmp ebx, edi                                    # 004065BC
-    je _sub_4065D5                                       # 004065BE
+    je .L4065D5                                          # 004065BE
     push dword ptr [ebp + 0x10]                          # 004065C0
     push edi                                             # 004065C3
     push edi                                             # 004065C4
@@ -6995,9 +8399,7 @@ _sub_406583:
     push ebx                                             # 004065CF
     mov dword ptr [ebp - 0x10], eax                      # 004065D0
     call esi                                             # 004065D3
-
-    .global _sub_4065D5
-_sub_4065D5:
+.L4065D5:
     mov eax, dword ptr [ebp - 0x10]                      # 004065D5
     pop edi                                              # 004065D8
     pop esi                                              # 004065D9
@@ -7008,12 +8410,10 @@ _sub_4065D5:
     .global _sub_4065DD
 _sub_4065DD:
     cmp dword ptr [esp + 4], 0                           # 004065DD
-    je _sub_4065EE                                       # 004065E2
+    je .L4065EE                                          # 004065E2
     push dword ptr [esp + 4]                             # 004065E4
     msvc_abscall 0x4D70A8                                # 004065E8
-
-    .global _sub_4065EE
-_sub_4065EE:
+.L4065EE:
     ret                                                  # 004065EE
 
     .global _sub_4065EF
@@ -7027,7 +8427,7 @@ _sub_4065EF:
     msvc_abscall 0x4D72D4                                # 00406603
     msvc_mov esi, eax                                    # 00406609
     test esi, esi                                        # 0040660B
-    jl _sub_406648                                       # 0040660D
+    jl .L406648                                          # 0040660D
     push 0x5252f0                                        # 0040660F
     msvc_abscall 0x4D70AC                                # 00406614
     mov eax, dword ptr [0x52530c]                        # 0040661A
@@ -7039,16 +8439,14 @@ _sub_4065EF:
     call dword ptr [ecx + 0xc]                           # 0040662B
     msvc_mov esi, eax                                    # 0040662E
     test esi, esi                                        # 00406630
-    jl _sub_406648                                       # 00406632
+    jl .L406648                                          # 00406632
     push 0x504ab0                                        # 00406634
     call _sub_40664C                                     # 00406639
     test eax, eax                                        # 0040663E
     pop ecx                                              # 00406640
-    jne _sub_406648                                      # 00406641
+    jne .L406648                                         # 00406641
     mov esi, 0x80004005                                  # 00406643
-
-    .global _sub_406648
-_sub_406648:
+.L406648:
     msvc_mov eax, esi                                    # 00406648
     pop esi                                              # 0040664A
     ret                                                  # 0040664B
@@ -7079,7 +8477,7 @@ _sub_40664C:
     call dword ptr [ecx + 0x10]                          # 00406676
     msvc_mov ebx, eax                                    # 00406679
     cmp ebx, 0x80158100                                  # 0040667B
-    jne _sub_4066C6                                      # 00406681
+    jne .L4066C6                                         # 00406681
     push dword ptr [ebp - 4]                             # 00406683
     call _sub_4D1746                                     # 00406686
     pop ecx                                              # 0040668B
@@ -7098,21 +8496,17 @@ _sub_40664C:
     call dword ptr [ecx + 0x10]                          # 004066A5
     msvc_mov ebx, eax                                    # 004066A8
     msvc_cmp ebx, edi                                    # 004066AA
-    jl _sub_4066B8                                       # 004066AC
+    jl .L4066B8                                          # 004066AC
     cmp dword ptr [ebp - 8], edi                         # 004066AE
-    jne _sub_4066B8                                      # 004066B1
+    jne .L4066B8                                         # 004066B1
     mov ebx, 0x80004005                                  # 004066B3
-
-    .global _sub_4066B8
-_sub_4066B8:
+.L4066B8:
     cmp dword ptr [ebp - 0xc], edi                       # 004066B8
-    je _sub_4066C6                                       # 004066BB
+    je .L4066C6                                          # 004066BB
     push dword ptr [ebp - 0xc]                           # 004066BD
     call _sub_4D173B                                     # 004066C0
     pop ecx                                              # 004066C5
-
-    .global _sub_4066C6
-_sub_4066C6:
+.L4066C6:
     msvc_xor eax, eax                                    # 004066C6
     msvc_cmp ebx, edi                                    # 004066C8
     pop edi                                              # 004066CA
@@ -7121,58 +8515,167 @@ _sub_4066C6:
     pop ebx                                              # 004066CF
     leave                                                # 004066D0
     ret                                                  # 004066D1
-# 0x4066D2
-    .byte 0x55, 0x8B, 0xEC, 0x51, 0x56, 0x57, 0x33, 0xFF #        0 U..QVW3.
-    .byte 0x81, 0x7D, 0x0C, 0x0A, 0x00, 0xFF, 0xFF, 0x89 #        8 .}......
-    .byte 0x7D, 0xFC, 0x0F, 0x84, 0x61, 0x01, 0x00, 0x00 #       10 }...a...
-    .byte 0x81, 0x7D, 0x0C, 0x0B, 0x00, 0xFF, 0xFF, 0x74 #       18 .}.....t
-    .byte 0x21, 0x81, 0x7D, 0x0C, 0x11, 0x00, 0xFF, 0xFF #       20 !.}.....
-    .byte 0x0F, 0x85, 0x57, 0x01, 0x00, 0x00, 0x8B, 0x45 #       28 ..W....E
-    .byte 0x10, 0xFF, 0x70, 0x10, 0xFF, 0x70, 0x0C, 0xE8 #       30 ..p..p..
-    .byte 0x49, 0x8C, 0x06, 0x00, 0x59, 0xE9, 0x34, 0x01 #       38 I...Y.4.
-    .byte 0x00, 0x00, 0x8B, 0x45, 0x10, 0x53, 0x68, 0xF0 #       40 ...E.Sh.
-    .byte 0x52, 0x52, 0x00, 0x89, 0x7D, 0x0C, 0x8B, 0x58 #       48 RR..}..X
-    .byte 0x0C, 0xFF, 0x15, 0xB4, 0x70, 0x4D, 0x00, 0x8B #       50 ....pM..
-    .byte 0x35, 0x18, 0x53, 0x52, 0x00, 0x3B, 0xF7, 0x74 #       58 5.SR.;.t
-    .byte 0x21, 0x8B, 0x06, 0x6A, 0x10, 0x83, 0xC0, 0x08 #       60 !..j....
-    .byte 0x50, 0x8D, 0x43, 0x08, 0x50, 0xE8, 0x5C, 0xB0 #       68 P.C.P...
-    .byte 0x0C, 0x00, 0x83, 0xC4, 0x0C, 0x85, 0xC0, 0x0F #       70 ........
-    .byte 0x84, 0xC2, 0x00, 0x00, 0x00, 0x8B, 0x76, 0x0C #       78 ......v.
-    .byte 0xEB, 0xDB, 0x6A, 0x10, 0xE8, 0xEB, 0xAF, 0x0C #       80 ..j.....
-    .byte 0x00, 0x8B, 0xF0, 0x59, 0x3B, 0xF7, 0x0F, 0x84 #       88 ...Y;...
-    .byte 0xAD, 0x00, 0x00, 0x00, 0x6A, 0x10, 0x57, 0x56 #       90 ....j.WV
-    .byte 0xE8, 0x51, 0xA8, 0x0C, 0x00, 0x8B, 0x45, 0x10 #       98 .Q....E.
-    .byte 0x83, 0xC4, 0x0C, 0x8D, 0x56, 0x04, 0x8B, 0x40 #       A0 ....V..@
-    .byte 0x04, 0x52, 0x50, 0x8B, 0x08, 0xFF, 0x51, 0x14 #       A8 .RP...Q.
-    .byte 0x85, 0xC0, 0x0F, 0x8C, 0x89, 0x00, 0x00, 0x00 #       B0 ........
-    .byte 0x6A, 0x48, 0xE8, 0xB5, 0xAF, 0x0C, 0x00, 0x6A #       B8 jH.....j
-    .byte 0x48, 0x57, 0x50, 0x89, 0x06, 0xE8, 0x24, 0xA8 #       C0 HWP...$.
-    .byte 0x0C, 0x00, 0x6A, 0x48, 0x53, 0xFF, 0x36, 0xE8 #       C8 ..jHS.6.
-    .byte 0x7A, 0xA8, 0x0C, 0x00, 0x8B, 0x06, 0x83, 0xC4 #       D0 z.......
-    .byte 0x1C, 0x89, 0x78, 0x30, 0x8B, 0x06, 0x89, 0x78 #       D8 ..x0...x
-    .byte 0x34, 0x8B, 0x06, 0x89, 0x78, 0x38, 0x8B, 0x06 #       E0 4...x8..
-    .byte 0x89, 0x78, 0x3C, 0x8B, 0x06, 0x89, 0x78, 0x40 #       E8 .x<...x@
-    .byte 0x8B, 0x06, 0x89, 0x78, 0x44, 0x8B, 0x43, 0x30 #       F0 ...xD.C0
-    .byte 0x3B, 0xC7, 0x74, 0x24, 0x50, 0xE8, 0xA5, 0xAF #       F8 ;.t$P...
-    .byte 0x0C, 0x00, 0x8D, 0x44, 0x00, 0x02, 0x50, 0xE8 #      100 ...D..P.
-    .byte 0x68, 0xAF, 0x0C, 0x00, 0x59, 0x3B, 0xC7, 0x59 #      108 h...Y;.Y
-    .byte 0x89, 0x45, 0x0C, 0x74, 0x0B, 0xFF, 0x73, 0x30 #      110 .E.t..s0
-    .byte 0x50, 0xE8, 0x64, 0xAF, 0x0C, 0x00, 0x59, 0x59 #      118 P.d...YY
-    .byte 0x8B, 0x45, 0x0C, 0x89, 0x46, 0x08, 0xA1, 0x18 #      120 .E..F...
-    .byte 0x53, 0x52, 0x00, 0x3B, 0xC7, 0x74, 0x05, 0x8B #      128 SR.;.t..
-    .byte 0x40, 0x0C, 0xEB, 0x02, 0x33, 0xC0, 0x89, 0x46 #      130 @...3..F
-    .byte 0x0C, 0x89, 0x35, 0x18, 0x53, 0x52, 0x00, 0x33 #      138 ..5.SR.3
-    .byte 0xF6, 0x68, 0xF0, 0x52, 0x52, 0x00, 0xFF, 0x15 #      140 .h.RR...
-    .byte 0xB0, 0x70, 0x4D, 0x00, 0x3B, 0xF7, 0x5B, 0x74 #      148 .pM.;.[t
-    .byte 0x34, 0x8B, 0x46, 0x04, 0x3B, 0xC7, 0x74, 0x09 #      150 4.F.;.t.
-    .byte 0x8B, 0x08, 0x50, 0xFF, 0x51, 0x08, 0x89, 0x7E #      158 ..P.Q..~
-    .byte 0x04, 0x8B, 0x06, 0x3B, 0xC7, 0x74, 0x09, 0x50 #      160 ...;.t.P
-    .byte 0xE8, 0xFC, 0xAE, 0x0C, 0x00, 0x59, 0x89, 0x3E #      168 .....Y.>
-    .byte 0x56, 0xE8, 0xF3, 0xAE, 0x0C, 0x00, 0x59, 0xEB #      170 V.....Y.
-    .byte 0x0C, 0xA1, 0x28, 0x54, 0xF2, 0x00, 0xF7, 0xD8 #      178 ..(T....
-    .byte 0x1B, 0xC0, 0x89, 0x45, 0xFC, 0x8B, 0x45, 0xFC #      180 ...E..E.
-    .byte 0x5F, 0x5E, 0xC9, 0xC2, 0x0C, 0x00             #      188 _^....
 
+    .global _sub_4066D2
+_sub_4066D2:
+    push ebp                                             # 004066D2
+    msvc_mov ebp, esp                                    # 004066D3
+    push ecx                                             # 004066D5
+    push esi                                             # 004066D6
+    push edi                                             # 004066D7
+    msvc_xor edi, edi                                    # 004066D8
+    cmp dword ptr [ebp + 0xc], 0xffff000a                # 004066DA
+    mov dword ptr [ebp - 4], edi                         # 004066E1
+    je .L40684B                                          # 004066E4
+    cmp dword ptr [ebp + 0xc], 0xffff000b                # 004066EA
+    je .L406714                                          # 004066F1
+    cmp dword ptr [ebp + 0xc], 0xffff0011                # 004066F3
+    jne .L406857                                         # 004066FA
+    mov eax, dword ptr [ebp + 0x10]                      # 00406700
+    push dword ptr [eax + 0x10]                          # 00406703
+    push dword ptr [eax + 0xc]                           # 00406706
+    call _sub_46F357                                     # 00406709
+    pop ecx                                              # 0040670E
+    msvc_jmp .L406848                                    # 0040670F
+.L406714:
+    mov eax, dword ptr [ebp + 0x10]                      # 00406714
+    push ebx                                             # 00406717
+    push 0x5252f0                                        # 00406718
+    mov dword ptr [ebp + 0xc], edi                       # 0040671D
+    mov ebx, dword ptr [eax + 0xc]                       # 00406720
+    msvc_abscall 0x4D70B4                                # 00406723
+    mov esi, dword ptr [0x525318]                        # 00406729
+.L40672F:
+    msvc_cmp esi, edi                                    # 0040672F
+    je .L406754                                          # 00406731
+    mov eax, dword ptr [esi]                             # 00406733
+    push 0x10                                            # 00406735
+    add eax, 8                                           # 00406737
+    push eax                                             # 0040673A
+    lea eax, [ebx + 8]                                   # 0040673B
+    push eax                                             # 0040673E
+    call _sub_4D17A0                                     # 0040673F
+    add esp, 0xc                                         # 00406744
+    test eax, eax                                        # 00406747
+    je .L406811                                          # 00406749
+    mov esi, dword ptr [esi + 0xc]                       # 0040674F
+    jmp .L40672F                                         # 00406752
+.L406754:
+    push 0x10                                            # 00406754
+    call _sub_4D1746                                     # 00406756
+    msvc_mov esi, eax                                    # 0040675B
+    pop ecx                                              # 0040675D
+    msvc_cmp esi, edi                                    # 0040675E
+    je .L406813                                          # 00406760
+    push 0x10                                            # 00406766
+    push edi                                             # 00406768
+    push esi                                             # 00406769
+    call _sub_4D0FC0                                     # 0040676A
+    mov eax, dword ptr [ebp + 0x10]                      # 0040676F
+    add esp, 0xc                                         # 00406772
+    lea edx, [esi + 4]                                   # 00406775
+    mov eax, dword ptr [eax + 4]                         # 00406778
+    push edx                                             # 0040677B
+    push eax                                             # 0040677C
+    mov ecx, dword ptr [eax]                             # 0040677D
+    call dword ptr [ecx + 0x14]                          # 0040677F
+    test eax, eax                                        # 00406782
+    jl .L406813                                          # 00406784
+    push 0x48                                            # 0040678A
+    call _sub_4D1746                                     # 0040678C
+    push 0x48                                            # 00406791
+    push edi                                             # 00406793
+    push eax                                             # 00406794
+    mov dword ptr [esi], eax                             # 00406795
+    call _sub_4D0FC0                                     # 00406797
+    push 0x48                                            # 0040679C
+    push ebx                                             # 0040679E
+    push dword ptr [esi]                                 # 0040679F
+    call _sub_4D1020                                     # 004067A1
+    mov eax, dword ptr [esi]                             # 004067A6
+    add esp, 0x1c                                        # 004067A8
+    mov dword ptr [eax + 0x30], edi                      # 004067AB
+    mov eax, dword ptr [esi]                             # 004067AE
+    mov dword ptr [eax + 0x34], edi                      # 004067B0
+    mov eax, dword ptr [esi]                             # 004067B3
+    mov dword ptr [eax + 0x38], edi                      # 004067B5
+    mov eax, dword ptr [esi]                             # 004067B8
+    mov dword ptr [eax + 0x3c], edi                      # 004067BA
+    mov eax, dword ptr [esi]                             # 004067BD
+    mov dword ptr [eax + 0x40], edi                      # 004067BF
+    mov eax, dword ptr [esi]                             # 004067C2
+    mov dword ptr [eax + 0x44], edi                      # 004067C4
+    mov eax, dword ptr [ebx + 0x30]                      # 004067C7
+    msvc_cmp eax, edi                                    # 004067CA
+    je .L4067F2                                          # 004067CC
+    push eax                                             # 004067CE
+    call _sub_4D1779                                     # 004067CF
+    lea eax, [eax + eax + 2]                             # 004067D4
+    push eax                                             # 004067D8
+    call _sub_4D1746                                     # 004067D9
+    pop ecx                                              # 004067DE
+    msvc_cmp eax, edi                                    # 004067DF
+    pop ecx                                              # 004067E1
+    mov dword ptr [ebp + 0xc], eax                       # 004067E2
+    je .L4067F2                                          # 004067E5
+    push dword ptr [ebx + 0x30]                          # 004067E7
+    push eax                                             # 004067EA
+    call _sub_4D1754                                     # 004067EB
+    pop ecx                                              # 004067F0
+    pop ecx                                              # 004067F1
+.L4067F2:
+    mov eax, dword ptr [ebp + 0xc]                       # 004067F2
+    mov dword ptr [esi + 8], eax                         # 004067F5
+    mov eax, dword ptr [0x525318]                        # 004067F8
+    msvc_cmp eax, edi                                    # 004067FD
+    je .L406806                                          # 004067FF
+    mov eax, dword ptr [eax + 0xc]                       # 00406801
+    jmp .L406808                                         # 00406804
+.L406806:
+    msvc_xor eax, eax                                    # 00406806
+.L406808:
+    mov dword ptr [esi + 0xc], eax                       # 00406808
+    mov dword ptr [0x525318], esi                        # 0040680B
+.L406811:
+    msvc_xor esi, esi                                    # 00406811
+.L406813:
+    push 0x5252f0                                        # 00406813
+    msvc_abscall 0x4D70B0                                # 00406818
+    msvc_cmp esi, edi                                    # 0040681E
+    pop ebx                                              # 00406820
+    je .L406857                                          # 00406821
+    mov eax, dword ptr [esi + 4]                         # 00406823
+    msvc_cmp eax, edi                                    # 00406826
+    je .L406833                                          # 00406828
+    mov ecx, dword ptr [eax]                             # 0040682A
+    push eax                                             # 0040682C
+    call dword ptr [ecx + 8]                             # 0040682D
+    mov dword ptr [esi + 4], edi                         # 00406830
+.L406833:
+    mov eax, dword ptr [esi]                             # 00406833
+    msvc_cmp eax, edi                                    # 00406835
+    je .L406842                                          # 00406837
+    push eax                                             # 00406839
+    call _sub_4D173B                                     # 0040683A
+    pop ecx                                              # 0040683F
+    mov dword ptr [esi], edi                             # 00406840
+.L406842:
+    push esi                                             # 00406842
+    call _sub_4D173B                                     # 00406843
+.L406848:
+    pop ecx                                              # 00406848
+    jmp .L406857                                         # 00406849
+.L40684B:
+    mov eax, dword ptr [0xf25428]                        # 0040684B
+    neg eax                                              # 00406850
+    msvc_sbb eax, eax                                    # 00406852
+    mov dword ptr [ebp - 4], eax                         # 00406854
+.L406857:
+    mov eax, dword ptr [ebp - 4]                         # 00406857
+    pop edi                                              # 0040685A
+    pop esi                                              # 0040685B
+    leave                                                # 0040685C
+    ret 0xc                                              # 0040685D
 
     .global _sub_406860
 _sub_406860:
@@ -7191,7 +8694,7 @@ _sub_406860:
     msvc_xor ebx, ebx                                    # 0040688A
     add esp, 0x10                                        # 0040688C
     msvc_cmp eax, ebx                                    # 0040688F
-    jl _sub_4068DF                                       # 00406891
+    jl .L4068DF                                          # 00406891
     push esi                                             # 00406893
     push edi                                             # 00406894
     push 0x48                                            # 00406895
@@ -7227,9 +8730,7 @@ _sub_406860:
     call dword ptr [ecx + 0x64]                          # 004068DA
     pop edi                                              # 004068DD
     pop esi                                              # 004068DE
-
-    .global _sub_4068DF
-_sub_4068DF:
+.L4068DF:
     pop ebx                                              # 004068DF
     leave                                                # 004068E0
     ret                                                  # 004068E1
@@ -7243,15 +8744,13 @@ _sub_4068E2:
     push 0x504af0                                        # 004068F0
     msvc_abscall 0x4D72D4                                # 004068F5
     test eax, eax                                        # 004068FB
-    jl _sub_40690F                                       # 004068FD
+    jl .L40690F                                          # 004068FD
     mov eax, dword ptr [0x525310]                        # 004068FF
     push 0x504ab0                                        # 00406904
     push eax                                             # 00406909
     mov ecx, dword ptr [eax]                             # 0040690A
     call dword ptr [ecx + 0x34]                          # 0040690C
-
-    .global _sub_40690F
-_sub_40690F:
+.L40690F:
     ret                                                  # 0040690F
 
     .global _sub_406910
@@ -7266,7 +8765,7 @@ _sub_406910:
     msvc_abscall 0x4D72D4                                # 00406925
     msvc_mov esi, eax                                    # 0040692B
     test esi, esi                                        # 0040692D
-    jl _sub_40697C                                       # 0040692F
+    jl .L40697C                                          # 0040692F
     mov eax, dword ptr [0x525314]                        # 00406931
     push 0x504ab0                                        # 00406936
     push eax                                             # 0040693B
@@ -7274,13 +8773,13 @@ _sub_406910:
     call dword ptr [ecx + 0x34]                          # 0040693E
     msvc_mov esi, eax                                    # 00406941
     test esi, esi                                        # 00406943
-    jl _sub_40697C                                       # 00406945
+    jl .L40697C                                          # 00406945
     mov edi, dword ptr [esp + 0xc]                       # 00406947
     push edi                                             # 0040694B
     call _sub_4D1779                                     # 0040694C
     test eax, eax                                        # 00406951
     pop ecx                                              # 00406953
-    je _sub_40697C                                       # 00406954
+    je .L40697C                                          # 00406954
     mov eax, dword ptr [0x525314]                        # 00406956
     push 1                                               # 0040695B
     push edi                                             # 0040695D
@@ -7294,9 +8793,7 @@ _sub_406910:
     push dword ptr [0x525314]                            # 00406971
     call dword ptr [esi + 0x48]                          # 00406977
     msvc_mov esi, eax                                    # 0040697A
-
-    .global _sub_40697C
-_sub_40697C:
+.L40697C:
     msvc_mov eax, esi                                    # 0040697C
     pop edi                                              # 0040697E
     pop esi                                              # 0040697F
@@ -7383,7 +8880,7 @@ _sub_4069F2:
     msvc_abscall 0x4D70B4                                # 00406A2D
     mov eax, dword ptr [0x525318]                        # 00406A33
     msvc_cmp eax, ebx                                    # 00406A38
-    je _sub_406A77                                       # 00406A3A
+    je .L406A77                                          # 00406A3A
     mov eax, dword ptr [eax + 4]                         # 00406A3C
     lea edx, [ebp - 4]                                   # 00406A3F
     push edx                                             # 00406A42
@@ -7392,7 +8889,7 @@ _sub_4069F2:
     call dword ptr [ecx + 0x14]                          # 00406A46
     msvc_cmp eax, ebx                                    # 00406A49
     mov dword ptr [ebp - 8], eax                         # 00406A4B
-    jl _sub_406A77                                       # 00406A4E
+    jl .L406A77                                          # 00406A4E
     push 0x80000000                                      # 00406A50
     push ebx                                             # 00406A55
     push ebx                                             # 00406A56
@@ -7410,9 +8907,7 @@ _sub_4069F2:
     push eax                                             # 00406A70
     call dword ptr [ecx + 0x18]                          # 00406A71
     mov dword ptr [ebp - 8], eax                         # 00406A74
-
-    .global _sub_406A77
-_sub_406A77:
+.L406A77:
     push esi                                             # 00406A77
     msvc_abscall 0x4D70B0                                # 00406A78
     mov eax, dword ptr [ebp - 4]                         # 00406A7E
@@ -7420,13 +8915,11 @@ _sub_406A77:
     pop esi                                              # 00406A82
     msvc_cmp eax, ebx                                    # 00406A83
     pop ebx                                              # 00406A85
-    je _sub_406A8E                                       # 00406A86
+    je .L406A8E                                          # 00406A86
     mov ecx, dword ptr [eax]                             # 00406A88
     push eax                                             # 00406A8A
     call dword ptr [ecx + 8]                             # 00406A8B
-
-    .global _sub_406A8E
-_sub_406A8E:
+.L406A8E:
     mov eax, dword ptr [ebp - 8]                         # 00406A8E
     leave                                                # 00406A91
     ret                                                  # 00406A92
@@ -7491,20 +8984,16 @@ _sub_406AC6:
 _sub_406AF9:
     cmp dword ptr [esp + 4], 0                           # 00406AF9
     mov eax, dword ptr [0x525318]                        # 00406AFE
-    je _sub_406B12                                       # 00406B03
-
-    .global _sub_406B05
-_sub_406B05:
+    je .L406B12                                          # 00406B03
+.L406B05:
     test eax, eax                                        # 00406B05
-    je _sub_406B2C                                       # 00406B07
+    je .L406B2C                                          # 00406B07
     dec dword ptr [esp + 4]                              # 00406B09
     mov eax, dword ptr [eax + 0xc]                       # 00406B0D
-    jne _sub_406B05                                      # 00406B10
-
-    .global _sub_406B12
-_sub_406B12:
+    jne .L406B05                                         # 00406B10
+.L406B12:
     test eax, eax                                        # 00406B12
-    je _sub_406B2C                                       # 00406B14
+    je .L406B2C                                          # 00406B14
     push 0x40                                            # 00406B16
     push dword ptr [eax + 8]                             # 00406B18
     push dword ptr [0xf25424]                            # 00406B1B
@@ -7512,9 +9001,7 @@ _sub_406B12:
     add esp, 0xc                                         # 00406B26
     mov al, 1                                            # 00406B29
     ret                                                  # 00406B2B
-
-    .global _sub_406B2C
-_sub_406B2C:
+.L406B2C:
     msvc_xor al, al                                      # 00406B2C
     ret                                                  # 00406B2E
 
@@ -7524,7 +9011,7 @@ _sub_406B2F:
     push edi                                             # 00406B34
     msvc_xor edi, edi                                    # 00406B35
     msvc_cmp eax, edi                                    # 00406B37
-    je _sub_406BF5                                       # 00406B39
+    je .L406BF5                                          # 00406B39
     mov ecx, dword ptr [eax]                             # 00406B3F
     push ebx                                             # 00406B41
     push esi                                             # 00406B42
@@ -7535,92 +9022,74 @@ _sub_406B2F:
     push ebx                                             # 00406B4D
     msvc_abscall 0x4D70B4                                # 00406B4E
     mov esi, dword ptr [0x525318]                        # 00406B54
-
-    .global _sub_406B5A
-_sub_406B5A:
+.L406B5A:
     msvc_cmp esi, edi                                    # 00406B5A
-    je _sub_406BA0                                       # 00406B5C
+    je .L406BA0                                          # 00406B5C
     mov eax, dword ptr [esi + 4]                         # 00406B5E
     msvc_cmp eax, edi                                    # 00406B61
-    je _sub_406B6E                                       # 00406B63
+    je .L406B6E                                          # 00406B63
     mov ecx, dword ptr [eax]                             # 00406B65
     push eax                                             # 00406B67
     call dword ptr [ecx + 8]                             # 00406B68
     mov dword ptr [esi + 4], edi                         # 00406B6B
-
-    .global _sub_406B6E
-_sub_406B6E:
+.L406B6E:
     mov eax, dword ptr [esi]                             # 00406B6E
     msvc_cmp eax, edi                                    # 00406B70
-    je _sub_406B7D                                       # 00406B72
+    je .L406B7D                                          # 00406B72
     push eax                                             # 00406B74
     call _sub_4D173B                                     # 00406B75
     pop ecx                                              # 00406B7A
     mov dword ptr [esi], edi                             # 00406B7B
-
-    .global _sub_406B7D
-_sub_406B7D:
+.L406B7D:
     mov eax, dword ptr [esi + 8]                         # 00406B7D
     msvc_cmp eax, edi                                    # 00406B80
-    je _sub_406B8E                                       # 00406B82
+    je .L406B8E                                          # 00406B82
     push eax                                             # 00406B84
     call _sub_4D173B                                     # 00406B85
     pop ecx                                              # 00406B8A
     mov dword ptr [esi + 8], edi                         # 00406B8B
-
-    .global _sub_406B8E
-_sub_406B8E:
+.L406B8E:
     msvc_mov eax, esi                                    # 00406B8E
     mov esi, dword ptr [esi + 0xc]                       # 00406B90
     msvc_cmp eax, edi                                    # 00406B93
-    je _sub_406B5A                                       # 00406B95
+    je .L406B5A                                          # 00406B95
     push eax                                             # 00406B97
     call _sub_4D173B                                     # 00406B98
     pop ecx                                              # 00406B9D
-    jmp _sub_406B5A                                      # 00406B9E
-
-    .global _sub_406BA0
-_sub_406BA0:
+    jmp .L406B5A                                         # 00406B9E
+.L406BA0:
     push ebx                                             # 00406BA0
     mov dword ptr [0x525318], edi                        # 00406BA1
     msvc_abscall 0x4D70B0                                # 00406BA7
     mov eax, dword ptr [0x525310]                        # 00406BAD
     msvc_cmp eax, edi                                    # 00406BB2
-    je _sub_406BC2                                       # 00406BB4
+    je .L406BC2                                          # 00406BB4
     mov ecx, dword ptr [eax]                             # 00406BB6
     push eax                                             # 00406BB8
     call dword ptr [ecx + 8]                             # 00406BB9
     mov dword ptr [0x525310], edi                        # 00406BBC
-
-    .global _sub_406BC2
-_sub_406BC2:
+.L406BC2:
     mov eax, dword ptr [0x525314]                        # 00406BC2
     msvc_cmp eax, edi                                    # 00406BC7
-    je _sub_406BD7                                       # 00406BC9
+    je .L406BD7                                          # 00406BC9
     mov ecx, dword ptr [eax]                             # 00406BCB
     push eax                                             # 00406BCD
     call dword ptr [ecx + 8]                             # 00406BCE
     mov dword ptr [0x525314], edi                        # 00406BD1
-
-    .global _sub_406BD7
-_sub_406BD7:
+.L406BD7:
     mov eax, dword ptr [0x52530c]                        # 00406BD7
     msvc_cmp eax, edi                                    # 00406BDC
-    je _sub_406BEC                                       # 00406BDE
+    je .L406BEC                                          # 00406BDE
     mov ecx, dword ptr [eax]                             # 00406BE0
     push eax                                             # 00406BE2
     call dword ptr [ecx + 8]                             # 00406BE3
     mov dword ptr [0x52530c], edi                        # 00406BE6
-
-    .global _sub_406BEC
-_sub_406BEC:
+.L406BEC:
     push ebx                                             # 00406BEC
     msvc_abscall 0x4D70B8                                # 00406BED
     pop esi                                              # 00406BF3
     pop ebx                                              # 00406BF4
-
-    .global _sub_406BF5
-_sub_406BF5:
+.L406BF5:
     pop edi                                              # 00406BF5
     ret                                                  # 00406BF6
 
@@ -7643,13 +9112,11 @@ _sub_406C02:
     .global _sub_406C12
 _sub_406C12:
     cmp dword ptr [esp + 4], 0                           # 00406C12
-    je _sub_406C23                                       # 00406C17
+    je .L406C23                                          # 00406C17
     push dword ptr [esp + 4]                             # 00406C19
     call _sub_4D1355                                     # 00406C1D
     pop ecx                                              # 00406C22
-
-    .global _sub_406C23
-_sub_406C23:
+.L406C23:
     ret                                                  # 00406C23
 
     .global _sub_406C24
@@ -7663,53 +9130,41 @@ _sub_406C2A:
     push edi                                             # 00406C32
     mov edi, dword ptr [0x4d728c]                        # 00406C33
     mov esi, 0x113e740                                   # 00406C39
-    je _sub_406C7C                                       # 00406C3E
+    je .L406C7C                                          # 00406C3E
     mov eax, dword ptr [0x113e87c]                       # 00406C40
     dec eax                                              # 00406C45
-    je _sub_406C70                                       # 00406C46
+    je .L406C70                                          # 00406C46
     dec eax                                              # 00406C48
-    je _sub_406C68                                       # 00406C49
+    je .L406C68                                          # 00406C49
     dec eax                                              # 00406C4B
-    je _sub_406C60                                       # 00406C4C
+    je .L406C60                                          # 00406C4C
     dec eax                                              # 00406C4E
     push esi                                             # 00406C4F
-    je _sub_406C59                                       # 00406C50
+    je .L406C59                                          # 00406C50
     push 0x508a30                                        # 00406C52
-    jmp _sub_406C76                                      # 00406C57
-
-    .global _sub_406C59
-_sub_406C59:
+    jmp .L406C76                                         # 00406C57
+.L406C59:
     push 0x508a04                                        # 00406C59
-    jmp _sub_406C76                                      # 00406C5E
-
-    .global _sub_406C60
-_sub_406C60:
+    jmp .L406C76                                         # 00406C5E
+.L406C60:
     push esi                                             # 00406C60
     push 0x5089dc                                        # 00406C61
-    jmp _sub_406C76                                      # 00406C66
-
-    .global _sub_406C68
-_sub_406C68:
+    jmp .L406C76                                         # 00406C66
+.L406C68:
     push esi                                             # 00406C68
     push 0x5089b0                                        # 00406C69
-    jmp _sub_406C76                                      # 00406C6E
-
-    .global _sub_406C70
-_sub_406C70:
+    jmp .L406C76                                         # 00406C6E
+.L406C70:
     push esi                                             # 00406C70
     push 0x508988                                        # 00406C71
-
-    .global _sub_406C76
-_sub_406C76:
+.L406C76:
     push esi                                             # 00406C76
     call edi                                             # 00406C77
     add esp, 0xc                                         # 00406C79
-
-    .global _sub_406C7C
-_sub_406C7C:
+.L406C7C:
     mov eax, dword ptr [0x113e860]                       # 00406C7C
     test eax, eax                                        # 00406C81
-    je _sub_406CBC                                       # 00406C83
+    je .L406CBC                                          # 00406C83
     push dword ptr [0x113e87c]                           # 00406C85
     push dword ptr [0x113e878]                           # 00406C8B
     push dword ptr [0x113e874]                           # 00406C91
@@ -7723,9 +9178,7 @@ _sub_406C7C:
     push esi                                             # 00406CB6
     call edi                                             # 00406CB7
     add esp, 0x2c                                        # 00406CB9
-
-    .global _sub_406CBC
-_sub_406CBC:
+.L406CBC:
     call _sub_444491                                     # 00406CBC
     push 0x10                                            # 00406CC1
     push 0x113e520                                       # 00406CC3
@@ -7746,15 +9199,13 @@ _sub_406CD8:
     push eax                                             # 00406CE5
     msvc_abscall 0x4D70C0                                # 00406CE6
     cmp dword ptr [ebp - 0x10], 0x182                    # 00406CEC
-    je _sub_406D08                                       # 00406CF3
+    je .L406D08                                          # 00406CF3
     cmp dword ptr [ebp - 0x10], 0x1e6                    # 00406CF5
-    je _sub_406D08                                       # 00406CFC
+    je .L406D08                                          # 00406CFC
     mov eax, 1                                           # 00406CFE
     cpuid                                                # 00406D03
     mov dword ptr [ebp - 4], edx                         # 00406D05
-
-    .global _sub_406D08
-_sub_406D08:
+.L406D08:
     mov eax, dword ptr [ebp - 4]                         # 00406D08
     shr eax, 0x17                                        # 00406D0B
     and eax, 1                                           # 00406D0E
@@ -7825,21 +9276,17 @@ _sub_406D13:
     call _sub_4045C2                                     # 00406E04
     mov eax, dword ptr [0x52539c]                        # 00406E09
     msvc_cmp eax, esi                                    # 00406E0E
-    je _sub_406E1F                                       # 00406E10
+    je .L406E1F                                          # 00406E10
     push eax                                             # 00406E12
     msvc_abscall 0x4D708C                                # 00406E13
     mov dword ptr [0x52539c], esi                        # 00406E19
-
-    .global _sub_406E1F
-_sub_406E1F:
+.L406E1F:
     call _sub_405698                                     # 00406E1F
     cmp dword ptr [ebp - 0x24], esi                      # 00406E24
-    jne _sub_406E31                                      # 00406E27
+    jne .L406E31                                         # 00406E27
     push 1                                               # 00406E29
     msvc_abscall 0x4D7298                                # 00406E2B
-
-    .global _sub_406E31
-_sub_406E31:
+.L406E31:
     cmp dword ptr [0x52534c], esi                        # 00406E31
     je _sub_406F3A                                       # 00406E37
     call _sub_406C2A                                     # 00406E3D
@@ -7941,35 +9388,91 @@ _sub_406F3A:
     pop ebx                                              # 00406F4C
     leave                                                # 00406F4D
     ret 0x10                                             # 00406F4E
-# 0x406F51
-    .byte 0x8B, 0x4C, 0x24, 0x04, 0x8B, 0x54, 0x24, 0x08 #        0 .L$..T$.
-    .byte 0x8B, 0xC1, 0x83, 0xE1, 0x07, 0xC1, 0xF8, 0x03 #        8 ........
-    .byte 0x89, 0x02, 0xB0, 0x01, 0xD2, 0xE0, 0x8B, 0x4C #       10 .......L
-    .byte 0x24, 0x0C, 0x88, 0x01, 0xC3, 0x55, 0x8B, 0xEC #       18 $....U..
-    .byte 0x51, 0x8D, 0x45, 0x0B, 0x50, 0x8D, 0x45, 0xFC #       20 Q.E.P.E.
-    .byte 0x50, 0xFF, 0x75, 0x08, 0xE8, 0xCF, 0xFF, 0xFF #       28 P.u.....
-    .byte 0xFF, 0x8B, 0x45, 0xFC, 0x8A, 0x4D, 0x0B, 0x83 #       30 ..E..M..
-    .byte 0xC4, 0x0C, 0x08, 0x88, 0x80, 0xE8, 0x13, 0x01 #       38 ........
-    .byte 0xC9, 0xC3, 0x55, 0x8B, 0xEC, 0x51, 0x8D, 0x45 #       40 ..U..Q.E
-    .byte 0x0B, 0x50, 0x8D, 0x45, 0xFC, 0x50, 0xFF, 0x75 #       48 .P.E.P.u
-    .byte 0x08, 0xE8, 0xAA, 0xFF, 0xFF, 0xFF, 0x8A, 0x4D #       50 .......M
-    .byte 0x0B, 0x8B, 0x45, 0xFC, 0xF6, 0xD1, 0x83, 0xC4 #       58 ..E.....
-    .byte 0x0C, 0x20, 0x88, 0x80, 0xE8, 0x13, 0x01, 0xC9 #       60 . ......
-    .byte 0xC3, 0xA1, 0x80, 0x53, 0x52, 0x00, 0x8D, 0x48 #       68 ...SR..H
-    .byte 0x01, 0x83, 0xE1, 0x3F, 0x3B, 0x0D, 0x84, 0x53 #       70 ...?;..S
-    .byte 0x52, 0x00, 0x74, 0x1E, 0x8B, 0x54, 0x24, 0x04 #       78 R.t..T$.
-    .byte 0xA3, 0x88, 0x53, 0x52, 0x00, 0x89, 0x14, 0xC5 #       80 ..SR....
-    .byte 0x00, 0xE3, 0x13, 0x01, 0x83, 0x24, 0xC5, 0x04 #       88 .....$..
-    .byte 0xE3, 0x13, 0x01, 0x00, 0x89, 0x0D, 0x80, 0x53 #       90 .......S
-    .byte 0x52, 0x00, 0xC3, 0xA1, 0x94, 0x53, 0x52, 0x00 #       98 R....SR.
-    .byte 0x8D, 0x48, 0x01, 0x83, 0xE1, 0x3F, 0x3B, 0x0D #       A0 .H...?;.
-    .byte 0x98, 0x53, 0x52, 0x00, 0x74, 0x28, 0x8B, 0x15 #       A8 .SR.t(..
-    .byte 0xD4, 0xE9, 0x13, 0x01, 0x8D, 0x04, 0x40, 0x8D #       B0 ......@.
-    .byte 0x04, 0x85, 0xE0, 0xE9, 0x13, 0x01, 0x89, 0x10 #       B8 ........
-    .byte 0x8B, 0x15, 0xD8, 0xE9, 0x13, 0x01, 0x89, 0x50 #       C0 .......P
-    .byte 0x04, 0x8B, 0x54, 0x24, 0x04, 0x89, 0x50, 0x08 #       C8 ..T$..P.
-    .byte 0x89, 0x0D, 0x94, 0x53, 0x52, 0x00, 0xC3       #       D0 ...SR..
 
+    .global _sub_406F51
+_sub_406F51:
+    mov ecx, dword ptr [esp + 4]                         # 00406F51
+    mov edx, dword ptr [esp + 8]                         # 00406F55
+    msvc_mov eax, ecx                                    # 00406F59
+    and ecx, 7                                           # 00406F5B
+    sar eax, 3                                           # 00406F5E
+    mov dword ptr [edx], eax                             # 00406F61
+    mov al, 1                                            # 00406F63
+    shl al, cl                                           # 00406F65
+    mov ecx, dword ptr [esp + 0xc]                       # 00406F67
+    mov byte ptr [ecx], al                               # 00406F6B
+    ret                                                  # 00406F6D
+
+    .global _sub_406F6E
+_sub_406F6E:
+    push ebp                                             # 00406F6E
+    msvc_mov ebp, esp                                    # 00406F6F
+    push ecx                                             # 00406F71
+    lea eax, [ebp + 0xb]                                 # 00406F72
+    push eax                                             # 00406F75
+    lea eax, [ebp - 4]                                   # 00406F76
+    push eax                                             # 00406F79
+    push dword ptr [ebp + 8]                             # 00406F7A
+    call _sub_406F51                                     # 00406F7D
+    mov eax, dword ptr [ebp - 4]                         # 00406F82
+    mov cl, byte ptr [ebp + 0xb]                         # 00406F85
+    add esp, 0xc                                         # 00406F88
+    or byte ptr [eax + 0x113e880], cl                    # 00406F8B
+    leave                                                # 00406F91
+    ret                                                  # 00406F92
+
+    .global _sub_406F93
+_sub_406F93:
+    push ebp                                             # 00406F93
+    msvc_mov ebp, esp                                    # 00406F94
+    push ecx                                             # 00406F96
+    lea eax, [ebp + 0xb]                                 # 00406F97
+    push eax                                             # 00406F9A
+    lea eax, [ebp - 4]                                   # 00406F9B
+    push eax                                             # 00406F9E
+    push dword ptr [ebp + 8]                             # 00406F9F
+    call _sub_406F51                                     # 00406FA2
+    mov cl, byte ptr [ebp + 0xb]                         # 00406FA7
+    mov eax, dword ptr [ebp - 4]                         # 00406FAA
+    not cl                                               # 00406FAD
+    add esp, 0xc                                         # 00406FAF
+    and byte ptr [eax + 0x113e880], cl                   # 00406FB2
+    leave                                                # 00406FB8
+    ret                                                  # 00406FB9
+
+    .global _sub_406FBA
+_sub_406FBA:
+    mov eax, dword ptr [0x525380]                        # 00406FBA
+    lea ecx, [eax + 1]                                   # 00406FBF
+    and ecx, 0x3f                                        # 00406FC2
+    cmp ecx, dword ptr [0x525384]                        # 00406FC5
+    je .L406FEB                                          # 00406FCB
+    mov edx, dword ptr [esp + 4]                         # 00406FCD
+    mov dword ptr [0x525388], eax                        # 00406FD1
+    mov dword ptr [eax*8 + 0x113e300], edx               # 00406FD6
+    and dword ptr [eax*8 + 0x113e304], 0                 # 00406FDD
+    mov dword ptr [0x525380], ecx                        # 00406FE5
+.L406FEB:
+    ret                                                  # 00406FEB
+
+    .global _sub_406FEC
+_sub_406FEC:
+    mov eax, dword ptr [0x525394]                        # 00406FEC
+    lea ecx, [eax + 1]                                   # 00406FF1
+    and ecx, 0x3f                                        # 00406FF4
+    cmp ecx, dword ptr [0x525398]                        # 00406FF7
+    je .L407027                                          # 00406FFD
+    mov edx, dword ptr [0x113e9d4]                       # 00406FFF
+    lea eax, [eax + eax*2]                               # 00407005
+    lea eax, [eax*4 + 0x113e9e0]                         # 00407008
+    mov dword ptr [eax], edx                             # 0040700F
+    mov edx, dword ptr [0x113e9d8]                       # 00407011
+    mov dword ptr [eax + 4], edx                         # 00407017
+    mov edx, dword ptr [esp + 4]                         # 0040701A
+    mov dword ptr [eax + 8], edx                         # 0040701E
+    mov dword ptr [0x525394], ecx                        # 00407021
+.L407027:
+    ret                                                  # 00407027
 
     .global _sub_407028
 _sub_407028:
@@ -7984,51 +9487,138 @@ _sub_407028:
 .L407048:
     msvc_xor eax, eax                                    # 00407048
     ret                                                  # 0040704A
-# 0x40704B
-    .byte 0x8B, 0x44, 0x24, 0x08, 0x2D, 0x10, 0x01, 0x00 #        0 .D$.-...
-    .byte 0x00, 0x74, 0x3E, 0x48, 0x75, 0x34, 0x8B, 0x44 #        8 .t>Hu4.D
-    .byte 0x24, 0x0C, 0x48, 0x74, 0x05, 0x48, 0x74, 0x1C #       10 $.Ht.Ht.
-    .byte 0xEB, 0x28, 0x68, 0x04, 0x01, 0x00, 0x00, 0xFF #       18 .(h.....
-    .byte 0x35, 0xAC, 0xE0, 0x13, 0x01, 0x68, 0xE8, 0x03 #       20 5....h..
-    .byte 0x00, 0x00, 0xFF, 0x74, 0x24, 0x10, 0xFF, 0x15 #       28 ...t$...
-    .byte 0x14, 0x72, 0x4D, 0x00, 0xFF, 0x74, 0x24, 0x0C #       30 .rM..t$.
-    .byte 0xFF, 0x74, 0x24, 0x08, 0xFF, 0x15, 0x18, 0x72 #       38 .t$....r
-    .byte 0x4D, 0x00, 0x33, 0xC0, 0xE9, 0x05, 0x01, 0x00 #       40 M.3.....
-    .byte 0x00, 0xA1, 0x9C, 0x53, 0x52, 0x00, 0x53, 0x55 #       48 ...SR.SU
-    .byte 0x56, 0x8B, 0x74, 0x24, 0x10, 0x57, 0x8B, 0x3D #       50 V.t$.W.=
-    .byte 0x1C, 0x72, 0x4D, 0x00, 0xBD, 0xE8, 0x03, 0x00 #       58 .rM.....
-    .byte 0x00, 0x85, 0xC0, 0xBB, 0xEA, 0x03, 0x00, 0x00 #       60 ........
-    .byte 0x74, 0x46, 0x6A, 0x01, 0x50, 0x6A, 0x30, 0x56 #       68 tFj.Pj0V
-    .byte 0xFF, 0x15, 0x20, 0x72, 0x4D, 0x00, 0x6A, 0x01 #       70 .. rM.j.
-    .byte 0xFF, 0x35, 0x9C, 0x53, 0x52, 0x00, 0x6A, 0x30 #       78 .5.SR.j0
-    .byte 0x53, 0x56, 0xFF, 0xD7, 0x6A, 0x01, 0xFF, 0x35 #       80 SV..j..5
-    .byte 0x9C, 0x53, 0x52, 0x00, 0x6A, 0x30, 0x55, 0x56 #       88 .SR.j0UV
-    .byte 0xFF, 0xD7, 0x6A, 0x01, 0xFF, 0x35, 0x9C, 0x53 #       90 ..j..5.S
-    .byte 0x52, 0x00, 0x6A, 0x30, 0x6A, 0x01, 0x56, 0xFF #       98 R.j0j.V.
-    .byte 0xD7, 0x6A, 0x01, 0xFF, 0x35, 0x9C, 0x53, 0x52 #       A0 .j..5.SR
-    .byte 0x00, 0x6A, 0x30, 0x6A, 0x02, 0x56, 0xFF, 0xD7 #       A8 .j0j.V..
-    .byte 0xFF, 0x35, 0xEC, 0xEC, 0x13, 0x01, 0x56, 0xFF #       B0 .5....V.
-    .byte 0x15, 0x34, 0x72, 0x4D, 0x00, 0xFF, 0x35, 0xE4 #       B8 .4rM..5.
-    .byte 0xEC, 0x13, 0x01, 0x53, 0x8B, 0x1D, 0x24, 0x72 #       C0 ...S..$r
-    .byte 0x4D, 0x00, 0x56, 0xFF, 0xD3, 0xFF, 0x35, 0x00 #       C8 M.V...5.
-    .byte 0xE5, 0x13, 0x01, 0x6A, 0x01, 0x56, 0xFF, 0xD3 #       D0 ...j.V..
-    .byte 0xFF, 0x35, 0xC8, 0xE9, 0x13, 0x01, 0x6A, 0x02 #       D8 .5....j.
-    .byte 0x56, 0xFF, 0xD3, 0xFF, 0x35, 0xAC, 0xE0, 0x13 #       E0 V...5...
-    .byte 0x01, 0xE8, 0x87, 0xA5, 0x0C, 0x00, 0x85, 0xC0 #       E8 ........
-    .byte 0x59, 0x76, 0x17, 0xFF, 0x35, 0xAC, 0xE0, 0x13 #       F0 Yv..5...
-    .byte 0x01, 0x55, 0x56, 0xFF, 0xD3, 0x6A, 0xFF, 0x6A #       F8 .UV..j.j
-    .byte 0x00, 0x68, 0xB1, 0x00, 0x00, 0x00, 0x55, 0x56 #      100 .h....UV
-    .byte 0xFF, 0xD7, 0x55, 0x56, 0xFF, 0x15, 0x28, 0x72 #      108 ..UV..(r
-    .byte 0x4D, 0x00, 0x50, 0xFF, 0x15, 0x2C, 0x72, 0x4D #      110 M.P..,rM
-    .byte 0x00, 0xA1, 0x4C, 0xE8, 0x13, 0x01, 0x33, 0xC9 #      118 ..L...3.
-    .byte 0x99, 0x2B, 0xC2, 0x68, 0x05, 0x02, 0x00, 0x00 #      120 .+.h....
-    .byte 0xD1, 0xF8, 0x51, 0x83, 0xE8, 0x40, 0x51, 0x50 #      128 ..Q..@QP
-    .byte 0xA1, 0xE4, 0xE2, 0x13, 0x01, 0x99, 0x2B, 0xC2 #      130 ......+.
-    .byte 0xD1, 0xF8, 0x2D, 0x80, 0x00, 0x00, 0x00, 0x50 #      138 ..-....P
-    .byte 0x51, 0x56, 0xFF, 0x15, 0x3C, 0x72, 0x4D, 0x00 #      140 QV..<rM.
-    .byte 0x5F, 0x5E, 0x5D, 0x33, 0xC0, 0x5B, 0xC2, 0x10 #      148 _^]3.[..
-    .byte 0x00                                           #      150 .
 
+    .global _sub_40704B
+_sub_40704B:
+    mov eax, dword ptr [esp + 8]                         # 0040704B
+    sub eax, 0x110                                       # 0040704F
+    je .L407094                                          # 00407054
+    dec eax                                              # 00407056
+    jne .L40708D                                         # 00407057
+    mov eax, dword ptr [esp + 0xc]                       # 00407059
+    dec eax                                              # 0040705D
+    je .L407065                                          # 0040705E
+    dec eax                                              # 00407060
+    je .L40707F                                          # 00407061
+    jmp .L40708D                                         # 00407063
+.L407065:
+    push 0x104                                           # 00407065
+    push dword ptr [0x113e0ac]                           # 0040706A
+    push 0x3e8                                           # 00407070
+    push dword ptr [esp + 0x10]                          # 00407075
+    msvc_abscall 0x4D7214                                # 00407079
+.L40707F:
+    push dword ptr [esp + 0xc]                           # 0040707F
+    push dword ptr [esp + 8]                             # 00407083
+    msvc_abscall 0x4D7218                                # 00407087
+.L40708D:
+    msvc_xor eax, eax                                    # 0040708D
+    msvc_jmp .L407199                                    # 0040708F
+.L407094:
+    mov eax, dword ptr [0x52539c]                        # 00407094
+    push ebx                                             # 00407099
+    push ebp                                             # 0040709A
+    push esi                                             # 0040709B
+    mov esi, dword ptr [esp + 0x10]                      # 0040709C
+    push edi                                             # 004070A0
+    mov edi, dword ptr [0x4d721c]                        # 004070A1
+    mov ebp, 0x3e8                                       # 004070A7
+    test eax, eax                                        # 004070AC
+    mov ebx, 0x3ea                                       # 004070AE
+    je .L4070FB                                          # 004070B3
+    push 1                                               # 004070B5
+    push eax                                             # 004070B7
+    push 0x30                                            # 004070B8
+    push esi                                             # 004070BA
+    msvc_abscall 0x4D7220                                # 004070BB
+    push 1                                               # 004070C1
+    push dword ptr [0x52539c]                            # 004070C3
+    push 0x30                                            # 004070C9
+    push ebx                                             # 004070CB
+    push esi                                             # 004070CC
+    call edi                                             # 004070CD
+    push 1                                               # 004070CF
+    push dword ptr [0x52539c]                            # 004070D1
+    push 0x30                                            # 004070D7
+    push ebp                                             # 004070D9
+    push esi                                             # 004070DA
+    call edi                                             # 004070DB
+    push 1                                               # 004070DD
+    push dword ptr [0x52539c]                            # 004070DF
+    push 0x30                                            # 004070E5
+    push 1                                               # 004070E7
+    push esi                                             # 004070E9
+    call edi                                             # 004070EA
+    push 1                                               # 004070EC
+    push dword ptr [0x52539c]                            # 004070EE
+    push 0x30                                            # 004070F4
+    push 2                                               # 004070F6
+    push esi                                             # 004070F8
+    call edi                                             # 004070F9
+.L4070FB:
+    push dword ptr [0x113ecec]                           # 004070FB
+    push esi                                             # 00407101
+    msvc_abscall 0x4D7234                                # 00407102
+    push dword ptr [0x113ece4]                           # 00407108
+    push ebx                                             # 0040710E
+    mov ebx, dword ptr [0x4d7224]                        # 0040710F
+    push esi                                             # 00407115
+    call ebx                                             # 00407116
+    push dword ptr [0x113e500]                           # 00407118
+    push 1                                               # 0040711E
+    push esi                                             # 00407120
+    call ebx                                             # 00407121
+    push dword ptr [0x113e9c8]                           # 00407123
+    push 2                                               # 00407129
+    push esi                                             # 0040712B
+    call ebx                                             # 0040712C
+    push dword ptr [0x113e0ac]                           # 0040712E
+    call _sub_4D16C0                                     # 00407134
+    test eax, eax                                        # 00407139
+    pop ecx                                              # 0040713B
+    jbe .L407155                                         # 0040713C
+    push dword ptr [0x113e0ac]                           # 0040713E
+    push ebp                                             # 00407144
+    push esi                                             # 00407145
+    call ebx                                             # 00407146
+    push -1                                              # 00407148
+    push 0                                               # 0040714A
+    push 0xb1                                            # 0040714C
+    push ebp                                             # 00407151
+    push esi                                             # 00407152
+    call edi                                             # 00407153
+.L407155:
+    push ebp                                             # 00407155
+    push esi                                             # 00407156
+    msvc_abscall 0x4D7228                                # 00407157
+    push eax                                             # 0040715D
+    msvc_abscall 0x4D722C                                # 0040715E
+    mov eax, dword ptr [0x113e84c]                       # 00407164
+    msvc_xor ecx, ecx                                    # 00407169
+    cdq                                                  # 0040716B
+    msvc_sub eax, edx                                    # 0040716C
+    push 0x205                                           # 0040716E
+    sar eax, 1                                           # 00407173
+    push ecx                                             # 00407175
+    sub eax, 0x40                                        # 00407176
+    push ecx                                             # 00407179
+    push eax                                             # 0040717A
+    mov eax, dword ptr [0x113e2e4]                       # 0040717B
+    cdq                                                  # 00407180
+    msvc_sub eax, edx                                    # 00407181
+    sar eax, 1                                           # 00407183
+    sub eax, 0x80                                        # 00407185
+    push eax                                             # 0040718A
+    push ecx                                             # 0040718B
+    push esi                                             # 0040718C
+    msvc_abscall 0x4D723C                                # 0040718D
+    pop edi                                              # 00407193
+    pop esi                                              # 00407194
+    pop ebp                                              # 00407195
+    msvc_xor eax, eax                                    # 00407196
+    pop ebx                                              # 00407198
+.L407199:
+    ret 0x10                                             # 00407199
 
     .global _sub_40719C
 _sub_40719C:
@@ -8233,178 +9823,422 @@ _sub_4072EC:
     pop ebx                                              # 00407363
     leave                                                # 00407364
     ret                                                  # 00407365
-# 0x407366
-    .byte 0x55, 0x8B, 0xEC, 0x83, 0xEC, 0x10, 0x53, 0x8B #        0 U.....S.
-    .byte 0x5D, 0x10, 0x33, 0xD2, 0x56, 0x39, 0x15, 0x1C #        8 ].3.V9..
-    .byte 0x53, 0x52, 0x00, 0x8B, 0x75, 0x14, 0x57, 0x8B #       10 SR..u.W.
-    .byte 0x7D, 0x0C, 0x74, 0x0D, 0x56, 0x53, 0x57, 0xE8 #       18 }.t.VSW.
-    .byte 0xD8, 0x0C, 0x00, 0x00, 0x83, 0xC4, 0x0C, 0x33 #       20 .......3
-    .byte 0xD2, 0xB8, 0x04, 0x01, 0x00, 0x00, 0x3B, 0xF8 #       28 ......;.
-    .byte 0x0F, 0x87, 0x7B, 0x02, 0x00, 0x00, 0x0F, 0x84 #       30 ..{.....
-    .byte 0x33, 0x02, 0x00, 0x00, 0x83, 0xFF, 0x16, 0x0F #       38 3.......
-    .byte 0x87, 0xD8, 0x00, 0x00, 0x00, 0x0F, 0x84, 0xBE #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x8B, 0xC7, 0x48, 0x0F, 0x84 #       48 .....H..
-    .byte 0xF4, 0x04, 0x00, 0x00, 0x48, 0x48, 0x0F, 0x84 #       50 ....HH..
-    .byte 0x8B, 0x00, 0x00, 0x00, 0x48, 0x48, 0x74, 0x5A #       58 ....HHtZ
-    .byte 0x48, 0x0F, 0x84, 0xE1, 0x04, 0x00, 0x00, 0x83 #       60 H.......
-    .byte 0xE8, 0x09, 0x74, 0x23, 0x48, 0x74, 0x11, 0x83 #       68 ..t#Ht..
-    .byte 0xE8, 0x04, 0x0F, 0x85, 0xE0, 0x03, 0x00, 0x00 #       70 ........
-    .byte 0x6A, 0x01, 0x58, 0xE9, 0xC8, 0x04, 0x00, 0x00 #       78 j.X.....
-    .byte 0xC7, 0x05, 0x40, 0x53, 0x52, 0x00, 0x01, 0x00 #       80 ..@SR...
-    .byte 0x00, 0x00, 0xE9, 0xB9, 0x04, 0x00, 0x00, 0x8D #       88 ........
-    .byte 0x45, 0xF0, 0x52, 0x50, 0xFF, 0x35, 0x20, 0x53 #       90 E.RP.5 S
-    .byte 0x52, 0x00, 0xFF, 0x15, 0xEC, 0x71, 0x4D, 0x00 #       98 R....qM.
-    .byte 0x8D, 0x45, 0xF0, 0x50, 0xE8, 0x08, 0xF0, 0xFF #       A0 .E.P....
-    .byte 0xFF, 0x59, 0x6A, 0x00, 0xFF, 0x35, 0x20, 0x53 #       A8 .Yj..5 S
-    .byte 0x52, 0x00, 0xFF, 0x15, 0xF0, 0x71, 0x4D, 0x00 #       B0 R....qM.
-    .byte 0xEB, 0xBE, 0x0F, 0xBF, 0xC6, 0xC1, 0xEE, 0x10 #       B8 ........
-    .byte 0xA3, 0xE4, 0xE2, 0x13, 0x01, 0x6A, 0x01, 0x0F #       C0 .....j..
-    .byte 0xBF, 0xC6, 0xA3, 0x4C, 0xE8, 0x13, 0x01, 0x5F #       C8 ...L..._
-    .byte 0x33, 0xC0, 0x3B, 0xDF, 0x0F, 0x94, 0xC0, 0x89 #       D0 3.;.....
-    .byte 0x3D, 0x34, 0x53, 0x52, 0x00, 0xA3, 0x2C, 0x53 #       D8 =4SR..,S
-    .byte 0x52, 0x00, 0xE9, 0x5F, 0x04, 0x00, 0x00, 0x0F #       E0 R.._....
-    .byte 0xBF, 0xC6, 0xC1, 0xEE, 0x10, 0xA3, 0xCC, 0xE9 #       E8 ........
-    .byte 0x13, 0x01, 0xC7, 0x05, 0x38, 0x53, 0x52, 0x00 #       F0 ....8SR.
-    .byte 0x01, 0x00, 0x00, 0x00, 0x0F, 0xBF, 0xC6, 0xA3 #       F8 ........
-    .byte 0xD0, 0xE9, 0x13, 0x01, 0xE9, 0x3D, 0x04, 0x00 #      100 .....=..
-    .byte 0x00, 0xC7, 0x05, 0x44, 0x53, 0x52, 0x00, 0x01 #      108 ...DSR..
-    .byte 0x00, 0x00, 0x00, 0xE8, 0x63, 0xF0, 0xFF, 0xFF #      110 ....c...
-    .byte 0xE9, 0x29, 0x04, 0x00, 0x00, 0x8B, 0xC7, 0x83 #      118 .)......
-    .byte 0xE8, 0x1C, 0x0F, 0x84, 0x12, 0x01, 0x00, 0x00 #      120 ........
-    .byte 0x83, 0xE8, 0x04, 0x0F, 0x84, 0xD6, 0x00, 0x00 #      128 ........
-    .byte 0x00, 0x83, 0xE8, 0x04, 0x0F, 0x84, 0xA8, 0x00 #      130 ........
-    .byte 0x00, 0x00, 0x83, 0xE8, 0x5A, 0x74, 0x4C, 0x2D #      138 ....ZtL-
-    .byte 0x82, 0x00, 0x00, 0x00, 0x74, 0x33, 0x48, 0x74 #      140 ....t3Ht
-    .byte 0x1E, 0x48, 0x0F, 0x85, 0x08, 0x03, 0x00, 0x00 #      148 .H......
-    .byte 0xA1, 0x88, 0x53, 0x52, 0x00, 0x89, 0x1D, 0xF0 #      150 ..SR....
-    .byte 0xEC, 0x13, 0x01, 0x89, 0x1C, 0xC5, 0x04, 0xE3 #      158 ........
-    .byte 0x13, 0x01, 0xE9, 0xDF, 0x03, 0x00, 0x00, 0x53 #      160 .......S
-    .byte 0xE8, 0xC0, 0xFA, 0xFF, 0xFF, 0x59, 0x89, 0x1D #      168 .....Y..
-    .byte 0x28, 0xE7, 0x13, 0x01, 0xE9, 0xCD, 0x03, 0x00 #      170 (.......
-    .byte 0x00, 0x53, 0xE8, 0x89, 0xFA, 0xFF, 0xFF, 0x89 #      178 .S......
-    .byte 0x1D, 0x48, 0xE8, 0x13, 0x01, 0x53, 0xE9, 0x09 #      180 .H...S..
-    .byte 0x01, 0x00, 0x00, 0x0F, 0xB7, 0xC6, 0xC1, 0xEE #      188 ........
-    .byte 0x10, 0x52, 0xA3, 0xC8, 0xE2, 0x13, 0x01, 0x89 #      190 .R......
-    .byte 0x35, 0xCC, 0xE2, 0x13, 0x01, 0x89, 0x1D, 0xD0 #      198 5.......
-    .byte 0xE2, 0x13, 0x01, 0xFF, 0x15, 0x7C, 0x72, 0x4D #      1A0 .....|rM
-    .byte 0x00, 0x8B, 0xF0, 0x6A, 0x01, 0x85, 0xF6, 0x5F #      1A8 ...j..._
-    .byte 0x74, 0x1E, 0x6A, 0x26, 0x56, 0xFF, 0x15, 0x48 #      1B0 t.j&V..H
-    .byte 0x70, 0x4D, 0x00, 0xC1, 0xE8, 0x08, 0x23, 0xC7 #      1B8 pM....#.
-    .byte 0x56, 0x6A, 0x00, 0xA3, 0xD4, 0xE2, 0x13, 0x01 #      1C0 Vj......
-    .byte 0xFF, 0x15, 0x80, 0x72, 0x4D, 0x00, 0xEB, 0x07 #      1C8 ...rM...
-    .byte 0x83, 0x25, 0xD4, 0xE2, 0x13, 0x01, 0x00, 0x89 #      1D0 .%......
-    .byte 0x3D, 0x3C, 0x53, 0x52, 0x00, 0xE9, 0x64, 0x03 #      1D8 =<SR..d.
-    .byte 0x00, 0x00, 0xA1, 0x24, 0xE7, 0x13, 0x01, 0x89 #      1E0 ...$....
-    .byte 0x46, 0x18, 0xA1, 0xB8, 0xE0, 0x13, 0x01, 0x89 #      1E8 F.......
-    .byte 0x46, 0x1C, 0xA1, 0xE0, 0xEC, 0x13, 0x01, 0x89 #      1F0 F.......
-    .byte 0x46, 0x20, 0xA1, 0x44, 0xE8, 0x13, 0x01, 0x89 #      1F8 F .D....
-    .byte 0x46, 0x24, 0xE9, 0x3F, 0x03, 0x00, 0x00, 0x0F #      200 F$.?....
-    .byte 0xB7, 0xC6, 0x6A, 0x01, 0x5F, 0x3B, 0xC7, 0x74 #      208 ..j._;.t
-    .byte 0x09, 0x56, 0x53, 0x6A, 0x20, 0xE9, 0x89, 0x00 #      210 .VSj ...
-    .byte 0x00, 0x00, 0x83, 0x3D, 0x88, 0x60, 0x50, 0x00 #      218 ...=.`P.
-    .byte 0x00, 0x74, 0x08, 0xFF, 0x35, 0x78, 0x53, 0x52 #      220 .t..5xSR
-    .byte 0x00, 0xEB, 0x02, 0x6A, 0x00, 0xFF, 0x15, 0xF4 #      228 ...j....
-    .byte 0x71, 0x4D, 0x00, 0x8B, 0xC7, 0xE9, 0x0E, 0x03 #      230 qM......
-    .byte 0x00, 0x00, 0x3B, 0xDA, 0x89, 0x1D, 0x28, 0x53 #      238 ..;...(S
-    .byte 0x52, 0x00, 0x0F, 0x84, 0x00, 0x03, 0x00, 0x00 #      240 R.......
-    .byte 0xE8, 0x85, 0xD0, 0xFF, 0xFF, 0xE8, 0x50, 0xD7 #      248 ......P.
-    .byte 0xFF, 0xFF, 0xFF, 0x35, 0xF4, 0xFF, 0x13, 0x01 #      250 ...5....
-    .byte 0xFF, 0x35, 0x04, 0x00, 0x14, 0x01, 0x6A, 0x00 #      258 .5....j.
-    .byte 0x6A, 0x00, 0xE8, 0x33, 0xE2, 0xFF, 0xFF, 0x83 #      260 j..3....
-    .byte 0xC4, 0x10, 0xE9, 0xD9, 0x02, 0x00, 0x00, 0x3B #      268 .......;
-    .byte 0xDA, 0x0F, 0x84, 0xCF, 0x02, 0x00, 0x00, 0x83 #      270 ........
-    .byte 0xFB, 0x73, 0x74, 0x23, 0x6A, 0x79, 0x5F, 0x3B #      278 .st#jy_;
-    .byte 0xDF, 0x0F, 0x85, 0xBF, 0x02, 0x00, 0x00, 0x57 #      280 .......W
-    .byte 0xE8, 0x7B, 0xF9, 0xFF, 0xFF, 0x89, 0x3D, 0x48 #      288 .{....=H
-    .byte 0xE8, 0x13, 0x01, 0x57, 0xE8, 0xBB, 0xF9, 0xFF #      290 ...W....
-    .byte 0xFF, 0x59, 0xE9, 0xA6, 0x02, 0x00, 0x00, 0x56 #      298 .Y.....V
-    .byte 0x6A, 0x73, 0x50, 0xFF, 0x75, 0x08, 0xFF, 0x15 #      2A0 jsP.u...
-    .byte 0xF8, 0x71, 0x4D, 0x00, 0xE9, 0x97, 0x02, 0x00 #      2A8 .qM.....
-    .byte 0x00, 0xB9, 0x07, 0x02, 0x00, 0x00, 0x3B, 0xF9 #      2B0 ......;.
-    .byte 0x0F, 0x87, 0x60, 0x01, 0x00, 0x00, 0x0F, 0x84 #      2B8 ..`.....
-    .byte 0x26, 0x01, 0x00, 0x00, 0x8B, 0xCF, 0xB8, 0x05 #      2C0 &.......
-    .byte 0x01, 0x00, 0x00, 0x2B, 0xC8, 0x0F, 0x84, 0xEF #      2C8 ...+....
-    .byte 0x00, 0x00, 0x00, 0x83, 0xE9, 0x0E, 0x0F, 0x84 #      2D0 ........
-    .byte 0xC7, 0x00, 0x00, 0x00, 0x81, 0xE9, 0xED, 0x00 #      2D8 ........
-    .byte 0x00, 0x00, 0x74, 0x7E, 0x49, 0x0F, 0x84, 0xFF #      2E0 ..t~I...
-    .byte 0x00, 0x00, 0x00, 0x49, 0x0F, 0x84, 0x23, 0x02 #      2E8 ...I..#.
-    .byte 0x00, 0x00, 0x49, 0x49, 0x74, 0x37, 0x49, 0x0F #      2F0 ..IIt7I.
-    .byte 0x85, 0x5B, 0x01, 0x00, 0x00, 0x0F, 0xBF, 0xC6 #      2F8 .[......
-    .byte 0xC1, 0xEE, 0x10, 0xA3, 0xD4, 0xE9, 0x13, 0x01 #      300 ........
-    .byte 0xC7, 0x05, 0x24, 0x53, 0x52, 0x00, 0x01, 0x00 #      308 ..$SR...
-    .byte 0x00, 0x00, 0x0F, 0xBF, 0xC6, 0x89, 0x15, 0xC0 #      310 ........
-    .byte 0xE0, 0x13, 0x01, 0xA3, 0xD8, 0xE9, 0x13, 0x01 #      318 ........
-    .byte 0xFF, 0x15, 0x38, 0x72, 0x4D, 0x00, 0x6A, 0x04 #      320 ..8rM.j.
-    .byte 0xE9, 0x13, 0x02, 0x00, 0x00, 0x0F, 0xBF, 0xC6 #      328 ........
-    .byte 0x6A, 0x01, 0xA3, 0xD4, 0xE9, 0x13, 0x01, 0xC1 #      330 j.......
-    .byte 0xEE, 0x10, 0x5F, 0xFF, 0x35, 0x20, 0x53, 0x52 #      338 .._.5 SR
-    .byte 0x00, 0x89, 0x3D, 0x24, 0x53, 0x52, 0x00, 0x0F #      340 ..=$SR..
-    .byte 0xBF, 0xC6, 0x89, 0x3D, 0xC0, 0xE0, 0x13, 0x01 #      348 ...=....
-    .byte 0xA3, 0xD8, 0xE9, 0x13, 0x01, 0xFF, 0x15, 0xFC #      350 ........
-    .byte 0x71, 0x4D, 0x00, 0x6A, 0x02, 0xE9, 0xDE, 0x01 #      358 qM.j....
-    .byte 0x00, 0x00, 0x39, 0x15, 0x88, 0x60, 0x50, 0x00 #      360 ..9..`P.
-    .byte 0x0F, 0x84, 0xDA, 0x01, 0x00, 0x00, 0x0F, 0xBF #      368 ........
-    .byte 0xC6, 0xC1, 0xEE, 0x10, 0x8B, 0xD0, 0x2B, 0x15 #      370 ......+.
-    .byte 0x2C, 0xE7, 0x13, 0x01, 0xA3, 0x2C, 0xE7, 0x13 #      378 ,....,..
-    .byte 0x01, 0x0F, 0xBF, 0xCE, 0x89, 0x15, 0xE4, 0xE1 #      380 ........
-    .byte 0x13, 0x01, 0x8B, 0xD1, 0x2B, 0x15, 0x30, 0xE7 #      388 ....+.0.
-    .byte 0x13, 0x01, 0x89, 0x0D, 0x30, 0xE7, 0x13, 0x01 #      390 ....0...
-    .byte 0x89, 0x15, 0x40, 0xE8, 0x13, 0x01, 0xE9, 0xA5 #      398 ..@.....
-    .byte 0x01, 0x00, 0x00, 0x81, 0xFB, 0xE8, 0x03, 0x00 #      3A0 ........
-    .byte 0x00, 0x0F, 0x85, 0x97, 0x01, 0x00, 0x00, 0x6A #      3A8 .......j
-    .byte 0x01, 0xFF, 0x35, 0x20, 0x53, 0x52, 0x00, 0xFF #      3B0 ..5 SR..
-    .byte 0x15, 0x30, 0x72, 0x4D, 0x00, 0xE9, 0x84, 0x01 #      3B8 .0rM....
-    .byte 0x00, 0x00, 0x3B, 0xDA, 0x0F, 0x84, 0x7C, 0x01 #      3C0 ..;...|.
-    .byte 0x00, 0x00, 0x6A, 0x79, 0x5F, 0x3B, 0xDF, 0x74 #      3C8 ..jy_;.t
-    .byte 0x07, 0x56, 0x53, 0xE9, 0xCA, 0xFE, 0xFF, 0xFF #      3D0 .VS.....
-    .byte 0x57, 0xE8, 0x4F, 0xF8, 0xFF, 0xFF, 0x59, 0x89 #      3D8 W.O...Y.
-    .byte 0x3D, 0x28, 0xE7, 0x13, 0x01, 0xE9, 0x5C, 0x01 #      3E0 =(......
-    .byte 0x00, 0x00, 0x0F, 0xBF, 0xC6, 0x6A, 0x01, 0xA3 #      3E8 .....j..
-    .byte 0xD4, 0xE9, 0x13, 0x01, 0xC1, 0xEE, 0x10, 0x5F #      3F0 ......._
-    .byte 0xFF, 0x35, 0x20, 0x53, 0x52, 0x00, 0x89, 0x3D #      3F8 .5 SR..=
-    .byte 0x24, 0x53, 0x52, 0x00, 0x0F, 0xBF, 0xC6, 0x89 #      400 $SR.....
-    .byte 0x3D, 0xA0, 0xE8, 0x13, 0x01, 0xA3, 0xD8, 0xE9 #      408 =.......
-    .byte 0x13, 0x01, 0xFF, 0x15, 0xFC, 0x71, 0x4D, 0x00 #      410 .....qM.
-    .byte 0x57, 0xE9, 0x22, 0x01, 0x00, 0x00, 0x8B, 0xCF #      418 W.".....
-    .byte 0x81, 0xE9, 0x08, 0x02, 0x00, 0x00, 0x0F, 0x84 #      420 ........
-    .byte 0xE9, 0x00, 0x00, 0x00, 0x6A, 0x02, 0x5A, 0x2B #      428 ....j.Z+
-    .byte 0xCA, 0x0F, 0x84, 0xD0, 0x00, 0x00, 0x00, 0x83 #      430 ........
-    .byte 0xE9, 0x29, 0x0F, 0x84, 0xAC, 0x00, 0x00, 0x00 #      438 .)......
-    .byte 0x81, 0xE9, 0xDC, 0x00, 0x00, 0x00, 0x0F, 0x84 #      440 ........
-    .byte 0x88, 0x00, 0x00, 0x00, 0x2B, 0xCA, 0x74, 0x7F #      448 ....+.t.
-    .byte 0x81, 0xE9, 0xEF, 0x00, 0x00, 0x00, 0x74, 0x08 #      450 ......t.
-    .byte 0x56, 0x53, 0x57, 0xE9, 0x43, 0xFE, 0xFF, 0xFF #      458 VSW.C...
-    .byte 0x81, 0xEE, 0x01, 0x02, 0x00, 0x00, 0x74, 0x56 #      460 ......tV
-    .byte 0x2B, 0xF2, 0x74, 0x39, 0x4E, 0x74, 0x21, 0x2B #      468 +.t9Nt!+
-    .byte 0xF2, 0x0F, 0x85, 0xCF, 0x00, 0x00, 0x00, 0xC7 #      470 ........
-    .byte 0x05, 0xA4, 0x53, 0x52, 0x00, 0x01, 0x00, 0x00 #      478 ..SR....
-    .byte 0x00, 0xC7, 0x05, 0xC4, 0xE0, 0x13, 0x01, 0x06 #      480 ........
-    .byte 0x00, 0x00, 0x00, 0xE9, 0xB6, 0x00, 0x00, 0x00 #      488 ........
-    .byte 0xC7, 0x05, 0xA4, 0x53, 0x52, 0x00, 0x01, 0x00 #      490 ...SR...
-    .byte 0x00, 0x00, 0x89, 0x15, 0xC4, 0xE0, 0x13, 0x01 #      498 ........
-    .byte 0xE9, 0xA1, 0x00, 0x00, 0x00, 0xC7, 0x05, 0xA4 #      4A0 ........
-    .byte 0x53, 0x52, 0x00, 0x01, 0x00, 0x00, 0x00, 0xC7 #      4A8 SR......
-    .byte 0x05, 0xC4, 0xE0, 0x13, 0x01, 0x05, 0x00, 0x00 #      4B0 ........
-    .byte 0x00, 0xE9, 0x88, 0x00, 0x00, 0x00, 0x6A, 0x01 #      4B8 ......j.
-    .byte 0x5F, 0x89, 0x3D, 0xA4, 0x53, 0x52, 0x00, 0x89 #      4C0 _.=.SR..
-    .byte 0x3D, 0xC4, 0xE0, 0x13, 0x01, 0xEB, 0x77, 0x3B #      4C8 =.....w;
-    .byte 0x5D, 0x08, 0x74, 0x74, 0xA1, 0x7C, 0x53, 0x52 #      4D0 ].tt.|SR
-    .byte 0x00, 0x85, 0xC0, 0x74, 0x02, 0xFF, 0xD0, 0x6A #      4D8 ...t...j
-    .byte 0x00, 0xE8, 0xCB, 0xEB, 0xFF, 0xFF, 0x59, 0xE9 #      4E0 ......Y.
-    .byte 0x8C, 0xFB, 0xFF, 0xFF, 0x50, 0x68, 0x20, 0xE6 #      4E8 ....Ph .
-    .byte 0x13, 0x01, 0x6A, 0x00, 0x53, 0xC7, 0x05, 0xE8 #      4F0 ..j.S...
-    .byte 0xEC, 0x13, 0x01, 0x01, 0x00, 0x00, 0x00, 0xFF #      4F8 ........
-    .byte 0x15, 0xE0, 0x71, 0x4D, 0x00, 0xEB, 0x3F, 0xC1 #      500 ..qM..?.
-    .byte 0xEB, 0x10, 0x0F, 0xBF, 0xC3, 0x01, 0x05, 0x30 #      508 .......0
-    .byte 0x53, 0x52, 0x00, 0xEB, 0x31, 0x0F, 0xBF, 0xC6 #      510 SR..1...
-    .byte 0xC1, 0xEE, 0x10, 0xA3, 0xD4, 0xE9, 0x13, 0x01 #      518 ........
-    .byte 0xC7, 0x05, 0x24, 0x53, 0x52, 0x00, 0x01, 0x00 #      520 ..$SR...
-    .byte 0x00, 0x00, 0x0F, 0xBF, 0xC6, 0x89, 0x15, 0xA0 #      528 ........
-    .byte 0xE8, 0x13, 0x01, 0xA3, 0xD8, 0xE9, 0x13, 0x01 #      530 ........
-    .byte 0xFF, 0x15, 0x38, 0x72, 0x4D, 0x00, 0x6A, 0x03 #      538 ..8rM.j.
-    .byte 0xE8, 0x41, 0xF7, 0xFF, 0xFF, 0x59, 0x33, 0xC0 #      540 .A...Y3.
-    .byte 0x5F, 0x5E, 0x5B, 0xC9, 0xC2, 0x10, 0x00       #      548 _^[....
 
+    .global _sub_407366
+_sub_407366:
+    push ebp                                             # 00407366
+    msvc_mov ebp, esp                                    # 00407367
+    sub esp, 0x10                                        # 00407369
+    push ebx                                             # 0040736C
+    mov ebx, dword ptr [ebp + 0x10]                      # 0040736D
+    msvc_xor edx, edx                                    # 00407370
+    push esi                                             # 00407372
+    cmp dword ptr [0x52531c], edx                        # 00407373
+    mov esi, dword ptr [ebp + 0x14]                      # 00407379
+    push edi                                             # 0040737C
+    mov edi, dword ptr [ebp + 0xc]                       # 0040737D
+    je .L40738F                                          # 00407380
+    push esi                                             # 00407382
+    push ebx                                             # 00407383
+    push edi                                             # 00407384
+    call _sub_408062                                     # 00407385
+    add esp, 0xc                                         # 0040738A
+    msvc_xor edx, edx                                    # 0040738D
+.L40738F:
+    mov eax, 0x104                                       # 0040738F
+    msvc_cmp edi, eax                                    # 00407394
+    ja .L407617                                          # 00407396
+    je .L4075D5                                          # 0040739C
+    cmp edi, 0x16                                        # 004073A2
+    ja .L407483                                          # 004073A5
+    je .L40746F                                          # 004073AB
+    msvc_mov eax, edi                                    # 004073B1
+    dec eax                                              # 004073B3
+    je .L4078AE                                          # 004073B4
+    dec eax                                              # 004073BA
+    dec eax                                              # 004073BB
+    je .L40744D                                          # 004073BC
+    dec eax                                              # 004073C2
+    dec eax                                              # 004073C3
+    je .L407420                                          # 004073C4
+    dec eax                                              # 004073C6
+    je .L4078AE                                          # 004073C7
+    sub eax, 9                                           # 004073CD
+    je .L4073F5                                          # 004073D0
+    dec eax                                              # 004073D2
+    je .L4073E6                                          # 004073D3
+    sub eax, 4                                           # 004073D5
+    jne .L4077BE                                         # 004073D8
+.L4073DE:
+    push 1                                               # 004073DE
+    pop eax                                              # 004073E0
+    msvc_jmp .L4078AE                                    # 004073E1
+.L4073E6:
+    mov dword ptr [0x525340], 1                          # 004073E6
+    msvc_jmp .L4078AE                                    # 004073F0
+.L4073F5:
+    lea eax, [ebp - 0x10]                                # 004073F5
+    push edx                                             # 004073F8
+    push eax                                             # 004073F9
+    push dword ptr [0x525320]                            # 004073FA
+    msvc_abscall 0x4D71EC                                # 00407400
+    lea eax, [ebp - 0x10]                                # 00407406
+    push eax                                             # 00407409
+    call _sub_406417                                     # 0040740A
+    pop ecx                                              # 0040740F
+    push 0                                               # 00407410
+    push dword ptr [0x525320]                            # 00407412
+    msvc_abscall 0x4D71F0                                # 00407418
+    jmp .L4073DE                                         # 0040741E
+.L407420:
+    movsx eax, si                                        # 00407420
+    shr esi, 0x10                                        # 00407423
+    mov dword ptr [0x113e2e4], eax                       # 00407426
+    push 1                                               # 0040742B
+    movsx eax, si                                        # 0040742D
+    mov dword ptr [0x113e84c], eax                       # 00407430
+    pop edi                                              # 00407435
+    msvc_xor eax, eax                                    # 00407436
+    msvc_cmp ebx, edi                                    # 00407438
+    sete al                                              # 0040743A
+    mov dword ptr [0x525334], edi                        # 0040743D
+    mov dword ptr [0x52532c], eax                        # 00407443
+    msvc_jmp .L4078AC                                    # 00407448
+.L40744D:
+    movsx eax, si                                        # 0040744D
+    shr esi, 0x10                                        # 00407450
+    mov dword ptr [0x113e9cc], eax                       # 00407453
+    mov dword ptr [0x525338], 1                          # 00407458
+    movsx eax, si                                        # 00407462
+    mov dword ptr [0x113e9d0], eax                       # 00407465
+    msvc_jmp .L4078AC                                    # 0040746A
+.L40746F:
+    mov dword ptr [0x525344], 1                          # 0040746F
+    call _sub_4064E1                                     # 00407479
+    msvc_jmp .L4078AC                                    # 0040747E
+.L407483:
+    msvc_mov eax, edi                                    # 00407483
+    sub eax, 0x1c                                        # 00407485
+    je .L4075A0                                          # 00407488
+    sub eax, 4                                           # 0040748E
+    je .L40756D                                          # 00407491
+    sub eax, 4                                           # 00407497
+    je .L407548                                          # 0040749A
+    sub eax, 0x5a                                        # 004074A0
+    je .L4074F1                                          # 004074A3
+    sub eax, 0x82                                        # 004074A5
+    je .L4074DF                                          # 004074AA
+    dec eax                                              # 004074AC
+    je .L4074CD                                          # 004074AD
+    dec eax                                              # 004074AF
+    jne .L4077BE                                         # 004074B0
+    mov eax, dword ptr [0x525388]                        # 004074B6
+    mov dword ptr [0x113ecf0], ebx                       # 004074BB
+    mov dword ptr [eax*8 + 0x113e304], ebx               # 004074C1
+    msvc_jmp .L4078AC                                    # 004074C8
+.L4074CD:
+    push ebx                                             # 004074CD
+    call _sub_406F93                                     # 004074CE
+    pop ecx                                              # 004074D3
+    mov dword ptr [0x113e728], ebx                       # 004074D4
+    msvc_jmp .L4078AC                                    # 004074DA
+.L4074DF:
+    push ebx                                             # 004074DF
+    call _sub_406F6E                                     # 004074E0
+    mov dword ptr [0x113e848], ebx                       # 004074E5
+    push ebx                                             # 004074EB
+    msvc_jmp .L4075FA                                    # 004074EC
+.L4074F1:
+    movzx eax, si                                        # 004074F1
+    shr esi, 0x10                                        # 004074F4
+    push edx                                             # 004074F7
+    mov dword ptr [0x113e2c8], eax                       # 004074F8
+    mov dword ptr [0x113e2cc], esi                       # 004074FD
+    mov dword ptr [0x113e2d0], ebx                       # 00407503
+    msvc_abscall 0x4D727C                                # 00407509
+    msvc_mov esi, eax                                    # 0040750F
+    push 1                                               # 00407511
+    test esi, esi                                        # 00407513
+    pop edi                                              # 00407515
+    je .L407536                                          # 00407516
+    push 0x26                                            # 00407518
+    push esi                                             # 0040751A
+    msvc_abscall 0x4D7048                                # 0040751B
+    shr eax, 8                                           # 00407521
+    msvc_and eax, edi                                    # 00407524
+    push esi                                             # 00407526
+    push 0                                               # 00407527
+    mov dword ptr [0x113e2d4], eax                       # 00407529
+    msvc_abscall 0x4D7280                                # 0040752E
+    jmp .L40753D                                         # 00407534
+.L407536:
+    and dword ptr [0x113e2d4], 0                         # 00407536
+.L40753D:
+    mov dword ptr [0x52533c], edi                        # 0040753D
+    msvc_jmp .L4078AC                                    # 00407543
+.L407548:
+    mov eax, dword ptr [0x113e724]                       # 00407548
+    mov dword ptr [esi + 0x18], eax                      # 0040754D
+    mov eax, dword ptr [0x113e0b8]                       # 00407550
+    mov dword ptr [esi + 0x1c], eax                      # 00407555
+    mov eax, dword ptr [0x113ece0]                       # 00407558
+    mov dword ptr [esi + 0x20], eax                      # 0040755D
+    mov eax, dword ptr [0x113e844]                       # 00407560
+    mov dword ptr [esi + 0x24], eax                      # 00407565
+    msvc_jmp .L4078AC                                    # 00407568
+.L40756D:
+    movzx eax, si                                        # 0040756D
+    push 1                                               # 00407570
+    pop edi                                              # 00407572
+    msvc_cmp eax, edi                                    # 00407573
+    je .L407580                                          # 00407575
+    push esi                                             # 00407577
+    push ebx                                             # 00407578
+    push 0x20                                            # 00407579
+    msvc_jmp .L407609                                    # 0040757B
+.L407580:
+    cmp dword ptr [0x506088], 0                          # 00407580
+    je .L407591                                          # 00407587
+    push dword ptr [0x525378]                            # 00407589
+    jmp .L407593                                         # 0040758F
+.L407591:
+    push 0                                               # 00407591
+.L407593:
+    msvc_abscall 0x4D71F4                                # 00407593
+    msvc_mov eax, edi                                    # 00407599
+    msvc_jmp .L4078AE                                    # 0040759B
+.L4075A0:
+    msvc_cmp ebx, edx                                    # 004075A0
+    mov dword ptr [0x525328], ebx                        # 004075A2
+    je .L4078AE                                          # 004075A8
+    call _sub_404638                                     # 004075AE
+    call _sub_404D08                                     # 004075B3
+    push dword ptr [0x113fff4]                           # 004075B8
+    push dword ptr [0x1140004]                           # 004075BE
+    push 0                                               # 004075C4
+    push 0                                               # 004075C6
+    call _sub_405800                                     # 004075C8
+    add esp, 0x10                                        # 004075CD
+    msvc_jmp .L4078AE                                    # 004075D0
+.L4075D5:
+    msvc_cmp ebx, edx                                    # 004075D5
+    je .L4078AC                                          # 004075D7
+    cmp ebx, 0x73                                        # 004075DD
+    je .L407605                                          # 004075E0
+    push 0x79                                            # 004075E2
+    pop edi                                              # 004075E4
+    msvc_cmp ebx, edi                                    # 004075E5
+    jne .L4078AC                                         # 004075E7
+    push edi                                             # 004075ED
+    call _sub_406F6E                                     # 004075EE
+    mov dword ptr [0x113e848], edi                       # 004075F3
+    push edi                                             # 004075F9
+.L4075FA:
+    call _sub_406FBA                                     # 004075FA
+    pop ecx                                              # 004075FF
+    msvc_jmp .L4078AB                                    # 00407600
+.L407605:
+    push esi                                             # 00407605
+    push 0x73                                            # 00407606
+.L407608:
+    push eax                                             # 00407608
+.L407609:
+    push dword ptr [ebp + 8]                             # 00407609
+    msvc_abscall 0x4D71F8                                # 0040760C
+    msvc_jmp .L4078AE                                    # 00407612
+.L407617:
+    mov ecx, 0x207                                       # 00407617
+    msvc_cmp edi, ecx                                    # 0040761C
+    ja .L407784                                          # 0040761E
+    je .L407750                                          # 00407624
+    msvc_mov ecx, edi                                    # 0040762A
+    mov eax, 0x105                                       # 0040762C
+    msvc_sub ecx, eax                                    # 00407631
+    je .L407728                                          # 00407633
+    sub ecx, 0xe                                         # 00407639
+    je .L407709                                          # 0040763C
+    sub ecx, 0xed                                        # 00407642
+    je .L4076C8                                          # 00407648
+    dec ecx                                              # 0040764A
+    je .L407750                                          # 0040764B
+    dec ecx                                              # 00407651
+    je .L40787B                                          # 00407652
+    dec ecx                                              # 00407658
+    dec ecx                                              # 00407659
+    je .L407693                                          # 0040765A
+    dec ecx                                              # 0040765C
+    jne .L4077BE                                         # 0040765D
+    movsx eax, si                                        # 00407663
+    shr esi, 0x10                                        # 00407666
+    mov dword ptr [0x113e9d4], eax                       # 00407669
+    mov dword ptr [0x525324], 1                          # 0040766E
+    movsx eax, si                                        # 00407678
+    mov dword ptr [0x113e0c0], edx                       # 0040767B
+    mov dword ptr [0x113e9d8], eax                       # 00407681
+    msvc_abscall 0x4D7238                                # 00407686
+    push 4                                               # 0040768C
+    msvc_jmp .L4078A6                                    # 0040768E
+.L407693:
+    movsx eax, si                                        # 00407693
+    push 1                                               # 00407696
+    mov dword ptr [0x113e9d4], eax                       # 00407698
+    shr esi, 0x10                                        # 0040769D
+    pop edi                                              # 004076A0
+    push dword ptr [0x525320]                            # 004076A1
+    mov dword ptr [0x525324], edi                        # 004076A7
+    movsx eax, si                                        # 004076AD
+    mov dword ptr [0x113e0c0], edi                       # 004076B0
+    mov dword ptr [0x113e9d8], eax                       # 004076B6
+    msvc_abscall 0x4D71FC                                # 004076BB
+    push 2                                               # 004076C1
+    msvc_jmp .L4078A6                                    # 004076C3
+.L4076C8:
+    cmp dword ptr [0x506088], edx                        # 004076C8
+    je .L4078AE                                          # 004076CE
+    movsx eax, si                                        # 004076D4
+    shr esi, 0x10                                        # 004076D7
+    msvc_mov edx, eax                                    # 004076DA
+    sub edx, dword ptr [0x113e72c]                       # 004076DC
+    mov dword ptr [0x113e72c], eax                       # 004076E2
+    movsx ecx, si                                        # 004076E7
+    mov dword ptr [0x113e1e4], edx                       # 004076EA
+    msvc_mov edx, ecx                                    # 004076F0
+    sub edx, dword ptr [0x113e730]                       # 004076F2
+    mov dword ptr [0x113e730], ecx                       # 004076F8
+    mov dword ptr [0x113e840], edx                       # 004076FE
+    msvc_jmp .L4078AE                                    # 00407704
+.L407709:
+    cmp ebx, 0x3e8                                       # 00407709
+    jne .L4078AC                                         # 0040770F
+    push 1                                               # 00407715
+    push dword ptr [0x525320]                            # 00407717
+    msvc_abscall 0x4D7230                                # 0040771D
+    msvc_jmp .L4078AC                                    # 00407723
+.L407728:
+    msvc_cmp ebx, edx                                    # 00407728
+    je .L4078AC                                          # 0040772A
+    push 0x79                                            # 00407730
+    pop edi                                              # 00407732
+    msvc_cmp ebx, edi                                    # 00407733
+    je .L40773E                                          # 00407735
+    push esi                                             # 00407737
+    push ebx                                             # 00407738
+    msvc_jmp .L407608                                    # 00407739
+.L40773E:
+    push edi                                             # 0040773E
+    call _sub_406F93                                     # 0040773F
+    pop ecx                                              # 00407744
+    mov dword ptr [0x113e728], edi                       # 00407745
+    msvc_jmp .L4078AC                                    # 0040774B
+.L407750:
+    movsx eax, si                                        # 00407750
+    push 1                                               # 00407753
+    mov dword ptr [0x113e9d4], eax                       # 00407755
+    shr esi, 0x10                                        # 0040775A
+    pop edi                                              # 0040775D
+    push dword ptr [0x525320]                            # 0040775E
+    mov dword ptr [0x525324], edi                        # 00407764
+    movsx eax, si                                        # 0040776A
+    mov dword ptr [0x113e8a0], edi                       # 0040776D
+    mov dword ptr [0x113e9d8], eax                       # 00407773
+    msvc_abscall 0x4D71FC                                # 00407778
+    push edi                                             # 0040777E
+    msvc_jmp .L4078A6                                    # 0040777F
+.L407784:
+    msvc_mov ecx, edi                                    # 00407784
+    sub ecx, 0x208                                       # 00407786
+    je .L40787B                                          # 0040778C
+    push 2                                               # 00407792
+    pop edx                                              # 00407794
+    msvc_sub ecx, edx                                    # 00407795
+    je .L40786D                                          # 00407797
+    sub ecx, 0x29                                        # 0040779D
+    je .L407852                                          # 004077A0
+    sub ecx, 0xdc                                        # 004077A6
+    je .L40783A                                          # 004077AC
+    msvc_sub ecx, edx                                    # 004077B2
+    je .L407835                                          # 004077B4
+    sub ecx, 0xef                                        # 004077B6
+    je .L4077C6                                          # 004077BC
+.L4077BE:
+    push esi                                             # 004077BE
+    push ebx                                             # 004077BF
+    push edi                                             # 004077C0
+    msvc_jmp .L407609                                    # 004077C1
+.L4077C6:
+    sub esi, 0x201                                       # 004077C6
+    je .L407824                                          # 004077CC
+    msvc_sub esi, edx                                    # 004077CE
+    je .L40780B                                          # 004077D0
+    dec esi                                              # 004077D2
+    je .L4077F6                                          # 004077D3
+    msvc_sub esi, edx                                    # 004077D5
+    jne .L4078AC                                         # 004077D7
+    mov dword ptr [0x5253a4], 1                          # 004077DD
+    mov dword ptr [0x113e0c4], 6                         # 004077E7
+    msvc_jmp .L4078AC                                    # 004077F1
+.L4077F6:
+    mov dword ptr [0x5253a4], 1                          # 004077F6
+    mov dword ptr [0x113e0c4], edx                       # 00407800
+    msvc_jmp .L4078AC                                    # 00407806
+.L40780B:
+    mov dword ptr [0x5253a4], 1                          # 0040780B
+    mov dword ptr [0x113e0c4], 5                         # 00407815
+    msvc_jmp .L4078AC                                    # 0040781F
+.L407824:
+    push 1                                               # 00407824
+    pop edi                                              # 00407826
+    mov dword ptr [0x5253a4], edi                        # 00407827
+    mov dword ptr [0x113e0c4], edi                       # 0040782D
+    jmp .L4078AC                                         # 00407833
+.L407835:
+    cmp ebx, dword ptr [ebp + 8]                         # 00407835
+    je .L4078AE                                          # 00407838
+.L40783A:
+    mov eax, dword ptr [0x52537c]                        # 0040783A
+    test eax, eax                                        # 0040783F
+    je .L407845                                          # 00407841
+    call eax                                             # 00407843
+.L407845:
+    push 0                                               # 00407845
+    call _sub_406417                                     # 00407847
+    pop ecx                                              # 0040784C
+    msvc_jmp .L4073DE                                    # 0040784D
+.L407852:
+    push eax                                             # 00407852
+    push 0x113e620                                       # 00407853
+    push 0                                               # 00407858
+    push ebx                                             # 0040785A
+    mov dword ptr [0x113ece8], 1                         # 0040785B
+    msvc_abscall 0x4D71E0                                # 00407865
+    jmp .L4078AC                                         # 0040786B
+.L40786D:
+    shr ebx, 0x10                                        # 0040786D
+    movsx eax, bx                                        # 00407870
+    add dword ptr [0x525330], eax                        # 00407873
+    jmp .L4078AC                                         # 00407879
+.L40787B:
+    movsx eax, si                                        # 0040787B
+    shr esi, 0x10                                        # 0040787E
+    mov dword ptr [0x113e9d4], eax                       # 00407881
+    mov dword ptr [0x525324], 1                          # 00407886
+    movsx eax, si                                        # 00407890
+    mov dword ptr [0x113e8a0], edx                       # 00407893
+    mov dword ptr [0x113e9d8], eax                       # 00407899
+    msvc_abscall 0x4D7238                                # 0040789E
+    push 3                                               # 004078A4
+.L4078A6:
+    call _sub_406FEC                                     # 004078A6
+.L4078AB:
+    pop ecx                                              # 004078AB
+.L4078AC:
+    msvc_xor eax, eax                                    # 004078AC
+.L4078AE:
+    pop edi                                              # 004078AE
+    pop esi                                              # 004078AF
+    pop ebx                                              # 004078B0
+    leave                                                # 004078B1
+    ret 0x10                                             # 004078B2
 
     .global _sub_4078B5
 _sub_4078B5:
@@ -8639,17 +10473,30 @@ _sub_407B26:
     call _sub_4056CD                                     # 00407B56
     pop esi                                              # 00407B5B
     ret                                                  # 00407B5C
-# 0x407B5D
-    .byte 0x55, 0x8B, 0xEC, 0x81, 0xEC, 0x04, 0x01, 0x00 #        0 U.......
-    .byte 0x00, 0x6A, 0x00, 0x8D, 0x85, 0xFC, 0xFE, 0xFF #        8 .j......
-    .byte 0xFF, 0x68, 0x04, 0x01, 0x00, 0x00, 0x50, 0x68 #       10 .h....Ph
-    .byte 0x00, 0x04, 0x00, 0x00, 0xFF, 0x15, 0xDC, 0x70 #       18 .......p
-    .byte 0x4D, 0x00, 0x50, 0x6A, 0x00, 0x68, 0x00, 0x10 #       20 M.Pj.h..
-    .byte 0x00, 0x00, 0xFF, 0x15, 0xD8, 0x70, 0x4D, 0x00 #       28 .....pM.
-    .byte 0x6A, 0x40, 0x8D, 0x85, 0xFC, 0xFE, 0xFF, 0xFF #       30 j@......
-    .byte 0xFF, 0x75, 0x08, 0x50, 0x6A, 0x00, 0xFF, 0x15 #       38 .u.Pj...
-    .byte 0x40, 0x72, 0x4D, 0x00, 0xC9, 0xC3             #       40 @rM...
 
+    .global _sub_407B5D
+_sub_407B5D:
+    push ebp                                             # 00407B5D
+    msvc_mov ebp, esp                                    # 00407B5E
+    sub esp, 0x104                                       # 00407B60
+    push 0                                               # 00407B66
+    lea eax, [ebp - 0x104]                               # 00407B68
+    push 0x104                                           # 00407B6E
+    push eax                                             # 00407B73
+    push 0x400                                           # 00407B74
+    msvc_abscall 0x4D70DC                                # 00407B79
+    push eax                                             # 00407B7F
+    push 0                                               # 00407B80
+    push 0x1000                                          # 00407B82
+    msvc_abscall 0x4D70D8                                # 00407B87
+    push 0x40                                            # 00407B8D
+    lea eax, [ebp - 0x104]                               # 00407B8F
+    push dword ptr [ebp + 8]                             # 00407B95
+    push eax                                             # 00407B98
+    push 0                                               # 00407B99
+    msvc_abscall 0x4D7240                                # 00407B9B
+    leave                                                # 00407BA1
+    ret                                                  # 00407BA2
 
     .global _sub_407BA3
 _sub_407BA3:
@@ -9093,20 +10940,40 @@ _sub_407FFD:
     msvc_xor eax, eax                                    # 0040805E
     leave                                                # 00408060
     ret                                                  # 00408061
-# 0x408062
-    .byte 0x55, 0x8B, 0xEC, 0x81, 0xEC, 0x00, 0x04, 0x00 #        0 U.......
-    .byte 0x00, 0x8B, 0x55, 0x08, 0xB8, 0x88, 0x62, 0x50 #        8 ..U...bP
-    .byte 0x00, 0x39, 0x15, 0xB8, 0x62, 0x50, 0x00, 0x74 #       10 .9..bP.t
-    .byte 0x12, 0x8B, 0x48, 0x64, 0x83, 0xC0, 0x34, 0x81 #       18 ..Hd..4.
-    .byte 0xF9, 0xFF, 0xFF, 0x00, 0x00, 0x74, 0x04, 0x3B #       20 .....t.;
-    .byte 0xCA, 0x75, 0xEE, 0xFF, 0x75, 0x10, 0xFF, 0x75 #       28 .u..u..u
-    .byte 0x0C, 0x52, 0x50, 0x8D, 0x85, 0x00, 0xFC, 0xFF #       30 .RP.....
-    .byte 0xFF, 0x68, 0x44, 0x8C, 0x50, 0x00, 0x50, 0xE8 #       38 .hD.P.P.
-    .byte 0x78, 0x9E, 0x0C, 0x00, 0x83, 0xC4, 0x18, 0x8D #       40 x.......
-    .byte 0x85, 0x00, 0xFC, 0xFF, 0xFF, 0x50, 0xFF, 0x15 #       48 .....P..
-    .byte 0x90, 0x71, 0x4D, 0x00, 0x6A, 0x01, 0x58, 0xC9 #       50 .qM.j.X.
-    .byte 0xC3                                           #       58 .
 
+    .global _sub_408062
+_sub_408062:
+    push ebp                                             # 00408062
+    msvc_mov ebp, esp                                    # 00408063
+    sub esp, 0x400                                       # 00408065
+    mov edx, dword ptr [ebp + 8]                         # 0040806B
+    mov eax, 0x506288                                    # 0040806E
+    cmp dword ptr [0x5062b8], edx                        # 00408073
+    je .L40808D                                          # 00408079
+.L40807B:
+    mov ecx, dword ptr [eax + 0x64]                      # 0040807B
+    add eax, 0x34                                        # 0040807E
+    cmp ecx, 0xffff                                      # 00408081
+    je .L40808D                                          # 00408087
+    msvc_cmp ecx, edx                                    # 00408089
+    jne .L40807B                                         # 0040808B
+.L40808D:
+    push dword ptr [ebp + 0x10]                          # 0040808D
+    push dword ptr [ebp + 0xc]                           # 00408090
+    push edx                                             # 00408093
+    push eax                                             # 00408094
+    lea eax, [ebp - 0x400]                               # 00408095
+    push 0x508c44                                        # 0040809B
+    push eax                                             # 004080A0
+    call _sub_4D1F1E                                     # 004080A1
+    add esp, 0x18                                        # 004080A6
+    lea eax, [ebp - 0x400]                               # 004080A9
+    push eax                                             # 004080AF
+    msvc_abscall 0x4D7190                                # 004080B0
+    push 1                                               # 004080B6
+    pop eax                                              # 004080B8
+    leave                                                # 004080B9
+    ret                                                  # 004080BA
 
     .global _sub_4080BB
 _sub_4080BB:
@@ -9411,16 +11278,35 @@ _sub_408347:
     push 0x200                                           # 0040834B
     msvc_abscall 0x4D710C                                # 00408350
     ret                                                  # 00408356
-# 0x408357
-    .byte 0xA1, 0xDC, 0x52, 0x52, 0x00, 0x83, 0x3D, 0x20 #        0 ..RR..= 
-    .byte 0x52, 0x52, 0x00, 0x02, 0xA3, 0xA8, 0xE0, 0x13 #        8 RR......
-    .byte 0x01, 0x75, 0x1B, 0x83, 0x3D, 0x64, 0x41, 0x52 #       10 .u..=dAR
-    .byte 0x00, 0x01, 0x75, 0x12, 0x6A, 0x00, 0xE8, 0x81 #       18 ..u.j...
-    .byte 0xB1, 0xFF, 0xFF, 0x59, 0xC7, 0x05, 0xDC, 0x52 #       20 ...Y...R
-    .byte 0x52, 0x00, 0x01, 0x00, 0x00, 0x00, 0xC3, 0x83 #       28 R.......
-    .byte 0x3D, 0x20, 0x52, 0x52, 0x00, 0x02, 0x75, 0x11 #       30 = RR..u.
-    .byte 0x83, 0x3D, 0x64, 0x41, 0x52, 0x00, 0x01, 0x75 #       38 .=dAR..u
-    .byte 0x08, 0x6A, 0x01, 0xE8, 0x5C, 0xB1, 0xFF, 0xFF #       40 .j......
-    .byte 0x59, 0xA1, 0xA8, 0xE0, 0x13, 0x01, 0xA3, 0xDC #       48 Y.......
-    .byte 0x52, 0x52, 0x00, 0xC3, 0xCC                   #       50 RR...
+
+    .global _sub_408357
+_sub_408357:
+    mov eax, dword ptr [0x5252dc]                        # 00408357
+    cmp dword ptr [0x525220], 2                          # 0040835C
+    mov dword ptr [0x113e0a8], eax                       # 00408363
+    jne .L408385                                         # 00408368
+    cmp dword ptr [0x524164], 1                          # 0040836A
+    jne .L408385                                         # 00408371
+    push 0                                               # 00408373
+    call _sub_4034FB                                     # 00408375
+    pop ecx                                              # 0040837A
+    mov dword ptr [0x5252dc], 1                          # 0040837B
+.L408385:
+    ret                                                  # 00408385
+
+    .global _sub_408386
+_sub_408386:
+    cmp dword ptr [0x525220], 2                          # 00408386
+    jne .L4083A0                                         # 0040838D
+    cmp dword ptr [0x524164], 1                          # 0040838F
+    jne .L4083A0                                         # 00408396
+    push 1                                               # 00408398
+    call _sub_4034FB                                     # 0040839A
+    pop ecx                                              # 0040839F
+.L4083A0:
+    mov eax, dword ptr [0x113e0a8]                       # 004083A0
+    mov dword ptr [0x5252dc], eax                        # 004083A5
+    ret                                                  # 004083AA
+# 0x4083AB
+    .byte 0xCC                                           #        0 .
 

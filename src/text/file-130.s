@@ -559,10 +559,9 @@ _sub_439268:
     cmp dx, 0                                            # 00439271
     je .L439282                                          # 00439275
     ret                                                  # 00439277
-# 0x439278
-    .byte 0x66, 0xC7, 0x05, 0x8A, 0x33, 0x52, 0x00, 0xD0 #        0 f...3R..
-    .byte 0x07, 0xC3                                     #        8 ..
-
+.L439278:
+    mov word ptr [0x52338a], 0x7d0                       # 00439278
+    ret                                                  # 00439281
 .L439282:
     push esi                                             # 00439282
     mov bl, 1                                            # 00439283
@@ -1279,9 +1278,10 @@ _sub_439BA5:
     call _sub_4C87B5                                     # 00439BC4
 .L439BC9:
     ret                                                  # 00439BC9
-# 0x439BCA
-    .byte 0xC3                                           #        0 .
 
+    .global _sub_439BCA
+_sub_439BCA:
+    ret                                                  # 00439BCA
 
     .global _sub_439BCB
 _sub_439BCB:
@@ -2686,23 +2686,25 @@ _sub_43AF37:
     mov ax, word ptr [0x113d84e]                         # 0043AF3D
 .L43AF43:
     cmp ax, 0                                            # 0043AF43
-    je .L43AF84                                          # 0043AF47
+    je _sub_43AF84                                       # 0043AF47
     cmp ax, 1                                            # 0043AF49
-    je .L43AFA3                                          # 0043AF4D
+    je _sub_43AFA3                                       # 0043AF4D
     cmp ax, 2                                            # 0043AF4F
-    je .L43AFBB                                          # 0043AF53
+    je _sub_43AFBB                                       # 0043AF53
     cmp ax, 4                                            # 0043AF55
-    je .L43AFEB                                          # 0043AF59
+    je _sub_43AFEB                                       # 0043AF59
     cmp ax, 5                                            # 0043AF5F
-    je .L43AFD3                                          # 0043AF63
+    je _sub_43AFD3                                       # 0043AF63
     cmp ax, 6                                            # 0043AF65
-    je .L43B003                                          # 0043AF69
+    je _sub_43B003                                       # 0043AF69
     cmp ax, 8                                            # 0043AF6F
-    je .L43B01B                                          # 0043AF73
+    je _sub_43B01B                                       # 0043AF73
     cmp ax, 9                                            # 0043AF79
-    je .L43B033                                          # 0043AF7D
+    je _sub_43B033                                       # 0043AF7D
     ret                                                  # 0043AF83
-.L43AF84:
+
+    .global _sub_43AF84
+_sub_43AF84:
     push esi                                             # 0043AF84
     call _sub_4CE438                                     # 0043AF85
     jb .L43AF9A                                          # 0043AF8A
@@ -2712,10 +2714,13 @@ _sub_43AF37:
 .L43AF9A:
     pop esi                                              # 0043AF9A
     ret                                                  # 0043AF9B
-# 0x43AF9C
-    .byte 0xE8, 0x17, 0x6C, 0x00, 0x00, 0x5E, 0xC3       #        0 ..l..^.
+.L43AF9C:
+    call _sub_441BB8                                     # 0043AF9C
+    pop esi                                              # 0043AFA1
+    ret                                                  # 0043AFA2
 
-.L43AFA3:
+    .global _sub_43AFA3
+_sub_43AFA3:
     push esi                                             # 0043AFA3
     call _sub_4CE438                                     # 0043AFA4
     jb .L43AFB9                                          # 0043AFA9
@@ -2725,7 +2730,9 @@ _sub_43AF37:
 .L43AFB9:
     pop esi                                              # 0043AFB9
     ret                                                  # 0043AFBA
-.L43AFBB:
+
+    .global _sub_43AFBB
+_sub_43AFBB:
     push esi                                             # 0043AFBB
     call _sub_4CE438                                     # 0043AFBC
     jb .L43AFD1                                          # 0043AFC1
@@ -2735,7 +2742,9 @@ _sub_43AF37:
 .L43AFD1:
     pop esi                                              # 0043AFD1
     ret                                                  # 0043AFD2
-.L43AFD3:
+
+    .global _sub_43AFD3
+_sub_43AFD3:
     push esi                                             # 0043AFD3
     call _sub_4CE438                                     # 0043AFD4
     jb .L43AFE9                                          # 0043AFD9
@@ -2745,7 +2754,9 @@ _sub_43AF37:
 .L43AFE9:
     pop esi                                              # 0043AFE9
     ret                                                  # 0043AFEA
-.L43AFEB:
+
+    .global _sub_43AFEB
+_sub_43AFEB:
     push esi                                             # 0043AFEB
     call _sub_4CE438                                     # 0043AFEC
     jb .L43B001                                          # 0043AFF1
@@ -2755,7 +2766,9 @@ _sub_43AF37:
 .L43B001:
     pop esi                                              # 0043B001
     ret                                                  # 0043B002
-.L43B003:
+
+    .global _sub_43B003
+_sub_43B003:
     push esi                                             # 0043B003
     call _sub_4CE438                                     # 0043B004
     jb .L43B019                                          # 0043B009
@@ -2765,7 +2778,9 @@ _sub_43AF37:
 .L43B019:
     pop esi                                              # 0043B019
     ret                                                  # 0043B01A
-.L43B01B:
+
+    .global _sub_43B01B
+_sub_43B01B:
     push esi                                             # 0043B01B
     call _sub_4CE438                                     # 0043B01C
     jb .L43B031                                          # 0043B021
@@ -2775,7 +2790,9 @@ _sub_43AF37:
 .L43B031:
     pop esi                                              # 0043B031
     ret                                                  # 0043B032
-.L43B033:
+
+    .global _sub_43B033
+_sub_43B033:
     push esi                                             # 0043B033
     call _sub_4CE438                                     # 0043B034
     jb .L43B049                                          # 0043B039
@@ -4983,9 +5000,9 @@ _sub_43C823:
 .L43C860:
     msvc_and eax, eax                                    # 0043C860
     ret                                                  # 0043C862
-# 0x43C863
-    .byte 0xF9, 0xC3                                     #        0 ..
-
+.L43C863:
+    stc                                                  # 0043C863
+    ret                                                  # 0043C864
 .L43C865:
     push esi                                             # 0043C865
     msvc_or ah, ah                                       # 0043C866
