@@ -9287,48 +9287,40 @@ _sub_444357:
     .global _sub_444387
 _sub_444387:
     test word ptr [0x508f14], 1                          # 00444387
-    je _sub_444490                                       # 00444390
+    je .L444490                                          # 00444390
     mov word ptr [0x508f12], 0                           # 00444396
     cmp word ptr [0x9da3d0], 0                           # 0044439F
-    jne _sub_444489                                      # 004443A7
-
-    .global _sub_4443AD
-_sub_4443AD:
+    jne .L444489                                         # 004443A7
+.L4443AD:
     mov esi, dword ptr [0x9da3cc]                        # 004443AD
     movzx ebx, word ptr [esi]                            # 004443B3
     add esi, 2                                           # 004443B6
     jmp dword ptr [ebx*4 + 0x4443c0]                     # 004443B9
 # 004443C0
-    .4byte _sub_4443D4
-    .4byte _sub_4443E5
-    .4byte _sub_444410
-    .4byte _sub_444454
-    .4byte _sub_444470
+    .4byte .L4443D4
+    .4byte .L4443E5
+    .4byte .L444410
+    .4byte .L444454
+    .4byte .L444470
 
-
-    .global _sub_4443D4
-_sub_4443D4:
+.L4443D4:
     mov ax, word ptr [esi]                               # 004443D4
     add esi, 2                                           # 004443D7
     mov word ptr [0x9da3d0], ax                          # 004443DA
-    msvc_jmp _sub_444475                                 # 004443E0
-
-    .global _sub_4443E5
-_sub_4443E5:
+    msvc_jmp .L444475                                    # 004443E0
+.L4443E5:
     mov ax, word ptr [esi]                               # 004443E5
     add esi, 2                                           # 004443E8
     msvc_or ax, ax                                       # 004443EB
-    jne _sub_4443E5                                      # 004443EE
+    jne .L4443E5                                         # 004443EE
     push esi                                             # 004443F0
     call _sub_4442C4                                     # 004443F1
     call _sub_4CD406                                     # 004443F6
     mov word ptr [0x508f12], 0                           # 004443FB
     mov word ptr [0x50c19a], 0xd6d8                      # 00444404
     pop esi                                              # 0044440D
-    jmp _sub_444475                                      # 0044440E
-
-    .global _sub_444410
-_sub_444410:
+    jmp .L444475                                         # 0044440E
+.L444410:
     mov ax, word ptr [esi]                               # 00444410
     mov cx, word ptr [esi + 2]                           # 00444413
     add esi, 4                                           # 00444417
@@ -9347,10 +9339,8 @@ _sub_444410:
     call _sub_4C6456                                     # 0044444C
 .L444451:
     pop esi                                              # 00444451
-    jmp _sub_444475                                      # 00444452
-
-    .global _sub_444454
-_sub_444454:
+    jmp .L444475                                         # 00444452
+.L444454:
     push esi                                             # 00444454
     test dword ptr [0x525e28], 1                         # 00444455
     je .L44446D                                          # 0044445F
@@ -9359,24 +9349,16 @@ _sub_444454:
     call _sub_45F04F                                     # 00444468
 .L44446D:
     pop esi                                              # 0044446D
-    jmp _sub_444475                                      # 0044446E
-
-    .global _sub_444470
-_sub_444470:
+    jmp .L444475                                         # 0044446E
+.L444470:
     mov esi, 0x4fb1f3                                    # 00444470
-
-    .global _sub_444475
-_sub_444475:
+.L444475:
     mov dword ptr [0x9da3cc], esi                        # 00444475
     cmp word ptr [0x9da3d0], 0                           # 0044447B
-    je _sub_4443AD                                       # 00444483
-
-    .global _sub_444489
-_sub_444489:
+    je .L4443AD                                          # 00444483
+.L444489:
     dec word ptr [0x9da3d0]                              # 00444489
-
-    .global _sub_444490
-_sub_444490:
+.L444490:
     ret                                                  # 00444490
 
     .global _sub_444491
