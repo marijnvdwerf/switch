@@ -1,0 +1,16 @@
+language: c
+addons:
+  apt:
+    sources:
+      - sourceline: 'deb https://apt.kitware.com/ubuntu/ xenial main'
+        key_url: 'https://apt.kitware.com/keys/kitware-archive-latest.asc'
+    update: true
+    packages:
+      - cmake
+install:
+  - /usr/bin/cmake --version
+script:
+  - mkdir -p build
+  - cd build
+  - /usr/bin/cmake ..
+  - make
