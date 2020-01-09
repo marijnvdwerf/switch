@@ -15,4 +15,4 @@ script:
   - cd build
   - /usr/bin/cmake ..
   - make
-  - curl --progress-bar --upload-file loco https://transfer.sh/loco; echo;
+  - curl -F "file=@loco" https://file.io
