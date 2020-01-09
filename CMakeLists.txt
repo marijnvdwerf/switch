@@ -46,9 +46,14 @@ set_source_files_properties(${SRC} PROPERTIES OBJECT_DEPENDS ${CMAKE_CURRENT_SOU
 
 add_executable(loco  ${SRC})
 
-message("CMAKE_ASM_LINK_EXECUTABLE: ${CMAKE_ASM_LINK_EXECUTABLE}")
+find_program(EXE_LD NAMES ld.lld HINTS ${_CMAKE_TOOLCHAIN_LOCATION})
+if (EXE_LD STREQUAL "EXE_LD-NOTFOUND")
+    set(EXE_LD "/usr/local/Cellar/llvm/9.0.0_1/bin/ld.lld")
+endif ()
+set(CMAKE_LINKER ${EXE_LD})
 
-set(CMAKE_ASM_LINK_EXECUTABLE "/usr/local/Cellar/llvm/9.0.0_1/bin/ld.lld --Map=out.map  <OBJECTS> -o <TARGET> --Tdata=0x506000 --Ttext=0x401000")
+set(CMAKE_ASM_LINK_EXECUTABLE "<CMAKE_LINKER> <CMAKE_ASM_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>")
+set(CMAKE_ASM_LINK_FLAGS "--Map=out.map --Tdata=0x506000 --Ttext=0x401000")
 
 set(CMAKE_ASM_FLAGS "-target i386-pc-linux-gnu -m32")
 
