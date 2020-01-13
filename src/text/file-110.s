@@ -13,7 +13,7 @@ _sub_42F23C:
     push edi                                             # 0042F23F
     push esi                                             # 0042F240
     push ebp                                             # 0042F241
-    mov esi, dword ptr [eax*4 + 0x50c700]                # 0042F242
+    mov esi, dword ptr [eax*4 + _cargoObjects]           # 0042F242
     movzx ebp, word ptr [esi + 0x1b]                     # 0042F249
     msvc_mov edi, ebp                                    # 0042F24D
     shl ebp, 0x10                                        # 0042F24F
@@ -50,7 +50,7 @@ _sub_42F23C:
 .L42F29B:
     shr ebp, 0x10                                        # 0042F29B
     movzx eax, byte ptr [esi + 0x1d]                     # 0042F29E
-    mov eax, dword ptr [eax*4 + 0x525e5e]                # 0042F2A2
+    mov eax, dword ptr [eax*4 + _scenarioChunk3+70]      # 0042F2A2
     mul ebp                                              # 0042F2A9
     shrd eax, edx, 8                                     # 0042F2AB
     imul ebx, ecx                                        # 0042F2AF
@@ -72,16 +72,16 @@ _sub_42F2BF:
     push esi                                             # 0042F2C2
     push ebp                                             # 0042F2C3
     movzx edi, bh                                        # 0042F2C4
-    mov word ptr [0x525de6], 0                           # 0042F2C7
+    mov word ptr [__525DE6], 0                           # 0042F2C7
     imul edi, edi, 0xd                                   # 0042F2D0
     msvc_xor esi, esi                                    # 0042F2D3
 .L42F2D5:
-    movzx ecx, word ptr [esi*2 + 0x525de8]               # 0042F2D5
+    movzx ecx, word ptr [esi*2 + __525DE8]               # 0042F2D5
     cmp cx, -1                                           # 0042F2DD
     je .L42F2F9                                          # 0042F2E1
     imul ecx, ecx, 0x3d2                                 # 0042F2E3
-    mov al, byte ptr [edi + ecx + 0x5e6f10]              # 0042F2E9
-    mov byte ptr [esi + 0x525e08], al                    # 0042F2F0
+    mov al, byte ptr [edi + ecx + _stations+52]          # 0042F2E9
+    mov byte ptr [esi + __525E08], al                    # 0042F2F0
     inc esi                                              # 0042F2F6
     jmp .L42F2D5                                         # 0042F2F7
 .L42F2F9:
@@ -97,9 +97,9 @@ _sub_42F2FE:
     sub ax, 0x80                                         # 0042F303
     sub cx, 0x80                                         # 0042F307
     add dx, 0x808                                        # 0042F30C
-    mov word ptr [0x525de8], 0xffff                      # 0042F311
+    mov word ptr [__525DE8], 0xffff                      # 0042F311
     movzx edi, bh                                        # 0042F31A
-    mov word ptr [0x525de6], 0                           # 0042F31D
+    mov word ptr [__525DE6], 0                           # 0042F31D
     imul edi, edi, 0xd                                   # 0042F326
 .L42F329:
     push ecx                                             # 0042F329
@@ -114,7 +114,7 @@ _sub_42F2FE:
     shl esi, 9                                           # 0042F346
     msvc_or si, ax                                       # 0042F349
     shr esi, 3                                           # 0042F34C
-    mov esi, dword ptr [esi + 0xe40134]                  # 0042F34F
+    mov esi, dword ptr [esi + __E40134]                  # 0042F34F
 .L42F355:
     mov dl, byte ptr [esi]                               # 0042F355
     and dl, 0x3c                                         # 0042F357
@@ -126,7 +126,7 @@ _sub_42F2FE:
     and ebp, 0x3ff                                       # 0042F369
     msvc_xor ebx, ebx                                    # 0042F36F
 .L42F371:
-    mov dx, word ptr [ebx*2 + 0x525de8]                  # 0042F371
+    mov dx, word ptr [ebx*2 + __525DE8]                  # 0042F371
     cmp dx, -1                                           # 0042F379
     je .L42F387                                          # 0042F37D
     msvc_cmp bp, dx                                      # 0042F37F
@@ -137,14 +137,14 @@ _sub_42F2FE:
     cmp ebx, 0xf                                         # 0042F387
     jae .L42F3C5                                         # 0042F38A
     imul ebp, ebp, 0x3d2                                 # 0042F38C
-    test byte ptr [edi + ebp + 0x5e6f0e], 2              # 0042F392
+    test byte ptr [edi + ebp + _stations+50], 2          # 0042F392
     je .L42F3C5                                          # 0042F39A
-    mov dl, byte ptr [edi + ebp + 0x5e6f10]              # 0042F39C
-    mov byte ptr [ebx + 0x525e08], dl                    # 0042F3A3
+    mov dl, byte ptr [edi + ebp + _stations+52]          # 0042F39C
+    mov byte ptr [ebx + __525E08], dl                    # 0042F3A3
     mov bp, word ptr [esi + 6]                           # 0042F3A9
     and ebp, 0x3ff                                       # 0042F3AD
-    mov word ptr [ebx*2 + 0x525de8], bp                  # 0042F3B3
-    mov word ptr [ebx*2 + 0x525dea], 0xffff              # 0042F3BB
+    mov word ptr [ebx*2 + __525DE8], bp                  # 0042F3B3
+    mov word ptr [ebx*2 + __525DEA], 0xffff              # 0042F3BB
 .L42F3C5:
     add esi, 8                                           # 0042F3C5
     test byte ptr [esi - 7], 0x80                        # 0042F3C8
@@ -159,51 +159,51 @@ _sub_42F2FE:
     dec dl                                               # 0042F3E0
     jne .L42F329                                         # 0042F3E2
 .L42F3E8:
-    cmp word ptr [0x525de8], -1                          # 0042F3E8
+    cmp word ptr [__525DE8], -1                          # 0042F3E8
     je .L42F470                                          # 0042F3F0
     msvc_xor ebp, ebp                                    # 0042F3F2
     msvc_xor ecx, ecx                                    # 0042F3F4
 .L42F3F6:
-    movzx eax, byte ptr [ebp + 0x525e08]                 # 0042F3F6
+    movzx eax, byte ptr [ebp + __525E08]                 # 0042F3F6
     imul eax, eax                                        # 0042F3FD
     msvc_add ecx, eax                                    # 0042F400
     inc ebp                                              # 0042F402
-    cmp word ptr [ebp*2 + 0x525de8], -1                  # 0042F403
+    cmp word ptr [ebp*2 + __525DE8], -1                  # 0042F403
     jne .L42F3F6                                         # 0042F40C
     msvc_or ecx, ecx                                     # 0042F40E
     je .L42F470                                          # 0042F410
     movzx ebx, bl                                        # 0042F412
     msvc_xor esi, esi                                    # 0042F415
 .L42F417:
-    movzx ebp, word ptr [esi*2 + 0x525de8]               # 0042F417
+    movzx ebp, word ptr [esi*2 + __525DE8]               # 0042F417
     cmp bp, -1                                           # 0042F41F
     je .L42F470                                          # 0042F423
     imul ebp, ebp, 0x3d2                                 # 0042F425
-    add ebp, 0x5e6edc                                    # 0042F42B
-    movzx eax, byte ptr [esi + 0x525e08]                 # 0042F431
+    add_offset ebp, _stations                            # 0042F42B
+    movzx eax, byte ptr [esi + __525E08]                 # 0042F431
     imul eax, eax                                        # 0042F438
     movzx edx, bl                                        # 0042F43B
     mul edx                                              # 0042F43E
     div ecx                                              # 0042F440
-    movzx edx, byte ptr [esi + 0x525e08]                 # 0042F442
+    movzx edx, byte ptr [esi + __525E08]                 # 0042F442
     imul edx, ebx                                        # 0042F449
     shr edx, 8                                           # 0042F44C
     msvc_cmp eax, edx                                    # 0042F44F
     jbe .L42F455                                         # 0042F451
     msvc_mov eax, edx                                    # 0042F453
 .L42F455:
-    cmp byte ptr [esi + 0x525e08], 0x42                  # 0042F455
+    cmp byte ptr [esi + __525E08], 0x42                  # 0042F455
     jbe .L42F45F                                         # 0042F45C
     inc eax                                              # 0042F45E
 .L42F45F:
-    add word ptr [0x525de6], ax                          # 0042F45F
+    add word ptr [__525DE6], ax                          # 0042F45F
     msvc_mov ah, al                                      # 0042F466
     call _sub_42F489                                     # 0042F468
     inc esi                                              # 0042F46D
     jmp .L42F417                                         # 0042F46E
 .L42F470:
     movzx ax, bl                                         # 0042F470
-    mov bx, word ptr [0x525de6]                          # 0042F474
+    mov bx, word ptr [__525DE6]                          # 0042F474
     msvc_cmp bx, ax                                      # 0042F47B
     jbe .L42F483                                         # 0042F47E
     msvc_mov bx, ax                                      # 0042F480
@@ -229,7 +229,7 @@ _sub_42F489:
     mov word ptr [edi + ebp + 0x2e], cx                  # 0042F49E
     mov byte ptr [edi + ebp + 0x35], 0                   # 0042F4A3
     msvc_mov eax, ebp                                    # 0042F4A8
-    sub eax, 0x5e6edc                                    # 0042F4AA
+    sub_offset eax, _stations                            # 0042F4AA
     msvc_xor edx, edx                                    # 0042F4AF
     mov ecx, 0x3d2                                       # 0042F4B1
     div ecx                                              # 0042F4B6
@@ -262,7 +262,7 @@ _sub_42F4C6:
     mov word ptr [esi + 0xa], ax                         # 0042F4F7
     call _sub_47221F                                     # 0042F4FB
     mov dword ptr [esi + 0xc], eax                       # 0042F500
-    mov edi, dword ptr [0x50d158]                        # 0042F503
+    mov edi, dword ptr [__50D158]                        # 0042F503
     cmp edi, -1                                          # 0042F509
     je .L42F513                                          # 0042F50C
     mov word ptr [edi], 0                                # 0042F50E
@@ -302,7 +302,7 @@ _sub_42F550:
     push edx                                             # 0042F552
     push edi                                             # 0042F553
     push esi                                             # 0042F554
-    mov edi, dword ptr [0xe0c3e0]                        # 0042F555
+    mov edi, dword ptr [__E0C3E0]                        # 0042F555
     test byte ptr [ebp + 1], 0x10                        # 0042F55B
     jne .L42F6B0                                         # 0042F55F
     mov bp, word ptr [ebp + 6]                           # 0042F565
@@ -310,35 +310,35 @@ _sub_42F550:
     ja .L42F6B0                                          # 0042F56E
     and ebp, 0x3ff                                       # 0042F574
     imul ebp, ebp, 0x3d2                                 # 0042F57A
-    mov ax, word ptr [0xe3f092]                          # 0042F580
-    add ax, word ptr [0xe3f098]                          # 0042F586
+    mov ax, word ptr [__E3F092]                          # 0042F580
+    add ax, word ptr [__E3F098]                          # 0042F586
     shr ax, 5                                            # 0042F58D
-    mov word ptr [0x525de4], ax                          # 0042F591
+    mov word ptr [__525DE4], ax                          # 0042F591
     and eax, 3                                           # 0042F597
     mov ebx, dword ptr [ebx + eax*4]                     # 0042F59A
     movzx ax, byte ptr [ebx]                             # 0042F59D
     msvc_add dx, ax                                      # 0042F5A1
     inc ebx                                              # 0042F5A4
-    mov byte ptr [0x525e17], 0                           # 0042F5A5
+    mov byte ptr [__525E17], 0                           # 0042F5A5
     msvc_xor esi, esi                                    # 0042F5AC
 .L42F5AE:
-    cmp byte ptr [ebp + 0x5e6f16], 0                     # 0042F5AE
+    cmp byte ptr [ebp + _stations+58], 0                 # 0042F5AE
     je .L42F6A3                                          # 0042F5B5
     bt dword ptr [esp + 0xc], esi                        # 0042F5BB
     jae .L42F6A3                                         # 0042F5C0
     push esi                                             # 0042F5C6
     push ebp                                             # 0042F5C7
-    mov esi, dword ptr [esi*4 + 0x50c700]                # 0042F5C8
+    mov esi, dword ptr [esi*4 + _cargoObjects]           # 0042F5C8
     cmp byte ptr [esi + 0x13], 0                         # 0042F5CF
     je .L42F6A1                                          # 0042F5D3
-    movzx ecx, byte ptr [ebp + 0x5e6f16]                 # 0042F5D9
+    movzx ecx, byte ptr [ebp + _stations+58]             # 0042F5D9
     movzx eax, byte ptr [esi + 0x13]                     # 0042F5E0
     dec eax                                              # 0042F5E4
-    and ax, word ptr [0x525de4]                          # 0042F5E5
+    and ax, word ptr [__525DE4]                          # 0042F5E5
 .L42F5EC:
     cmp byte ptr [ebx], 0xff                             # 0042F5EC
     je .L42F6A1                                          # 0042F5EF
-    test byte ptr [0x525e17], 1                          # 0042F5F5
+    test byte ptr [__525E17], 1                          # 0042F5F5
     jne .L42F60B                                         # 0042F5FC
     test byte ptr [esp + 0x18], 1                        # 0042F5FE
     je .L42F689                                          # 0042F603
@@ -364,8 +364,8 @@ _sub_42F550:
     mov di, word ptr [esp + 0x1c]                        # 0042F632
     mov si, word ptr [esp + 0x18]                        # 0042F637
     mov ah, byte ptr [esp + 0x29]                        # 0042F63C
-    mov ebp, dword ptr [0xe3f0b8]                        # 0042F640
-    call dword ptr [ebp*4 + 0x4fd1e0]                    # 0042F646
+    mov ebp, dword ptr [__E3F0B8]                        # 0042F640
+    call dword ptr [ebp*4 + __4FD1E0]                    # 0042F646
 .L42F64D:
     pop esi                                              # 0042F64D
     pop ecx                                              # 0042F64E
@@ -384,8 +384,8 @@ _sub_42F550:
     mov di, word ptr [esp + 0x1c]                        # 0042F66A
     mov si, word ptr [esp + 0x18]                        # 0042F66F
     mov ah, byte ptr [esp + 0x29]                        # 0042F674
-    mov ebp, dword ptr [0xe3f0b8]                        # 0042F678
-    call dword ptr [ebp*4 + 0x4fd1e0]                    # 0042F67E
+    mov ebp, dword ptr [__E3F0B8]                        # 0042F678
+    call dword ptr [ebp*4 + __4FD1E0]                    # 0042F67E
 .L42F685:
     pop esi                                              # 0042F685
     pop ecx                                              # 0042F686
@@ -393,7 +393,7 @@ _sub_42F550:
     pop eax                                              # 0042F688
 .L42F689:
     inc eax                                              # 0042F689
-    inc byte ptr [0x525e17]                              # 0042F68A
+    inc byte ptr [__525E17]                              # 0042F68A
     cmp al, byte ptr [esi + 0x13]                        # 0042F690
     jb .L42F697                                          # 0042F693
     msvc_xor al, al                                      # 0042F695
@@ -423,8 +423,8 @@ _sub_42F6B6:
     push esi                                             # 0042F6B7
     movzx edi, bl                                        # 0042F6B8
     movzx esi, cl                                        # 0042F6BB
-    mov edi, dword ptr [edi*4 + 0x50c700]                # 0042F6BE
-    mov esi, dword ptr [esi*4 + 0x50c700]                # 0042F6C5
+    mov edi, dword ptr [edi*4 + _cargoObjects]           # 0042F6BE
+    mov esi, dword ptr [esi*4 + _cargoObjects]           # 0042F6C5
     movzx ecx, byte ptr [edi + 0x1e]                     # 0042F6CC
     mul ecx                                              # 0042F6D0
     movzx ecx, byte ptr [esi + 0x1e]                     # 0042F6D2
@@ -435,10 +435,10 @@ _sub_42F6B6:
 
     .global _sub_42F6DB
 _sub_42F6DB:
-    mov byte ptr [0x9c68ea], 4                           # 0042F6DB
+    mov byte ptr [__9C68EA], 4                           # 0042F6DB
     movzx esi, di                                        # 0042F6E2
     shl esi, 7                                           # 0042F6E5
-    add esi, 0x6db6dc                                    # 0042F6E8
+    add_offset esi, _things                              # 0042F6E8
     call _sub_4B0BDD                                     # 0042F6EE
     jb .L42F7F1                                          # 0042F6F3
     mov al, byte ptr [esi + 0x21]                        # 0042F6F9
@@ -449,25 +449,25 @@ _sub_42F6DB:
     jb .L42F7F1                                          # 0042F708
     movzx edi, word ptr [esi + 0x3a]                     # 0042F70E
     shl edi, 7                                           # 0042F712
-    add edi, 0x6db6dc                                    # 0042F715
+    add_offset edi, _things                              # 0042F715
     movzx edi, word ptr [edi + 0x3a]                     # 0042F71B
     shl edi, 7                                           # 0042F71F
-    add edi, 0x6db6dc                                    # 0042F722
+    add_offset edi, _things                              # 0042F722
     movzx edi, word ptr [edi + 0x3a]                     # 0042F728
     shl edi, 7                                           # 0042F72C
-    add edi, 0x6db6dc                                    # 0042F72F
+    add_offset edi, _things                              # 0042F72F
     cmp byte ptr [edi + 1], 6                            # 0042F735
     je .L42F7E8                                          # 0042F739
     movzx ebp, word ptr [edi + 0x40]                     # 0042F73F
-    mov ebp, dword ptr [ebp*4 + 0x50c9e4]                # 0042F743
+    mov ebp, dword ptr [ebp*4 + _vehicleObjects]         # 0042F743
     test word ptr [ebp + 0xe0], 0x4000                   # 0042F74A
     je .L42F7E8                                          # 0042F753
     movzx edi, word ptr [edi + 0x3a]                     # 0042F759
     shl edi, 7                                           # 0042F75D
-    add edi, 0x6db6dc                                    # 0042F760
+    add_offset edi, _things                              # 0042F760
     movzx edi, word ptr [edi + 0x3a]                     # 0042F766
     shl edi, 7                                           # 0042F76A
-    add edi, 0x6db6dc                                    # 0042F76D
+    add_offset edi, _things                              # 0042F76D
     test bl, 1                                           # 0042F773
     je .L42F7E5                                          # 0042F776
     movzx eax, byte ptr [ebp + 0xe2]                     # 0042F778
@@ -484,12 +484,12 @@ _sub_42F6DB:
     mov byte ptr [edi + 0x4d], al                        # 0042F79E
     mov byte ptr [edi + 0x51], 0                         # 0042F7A1
     movzx ecx, cl                                        # 0042F7A5
-    mov ecx, dword ptr [ecx*4 + 0x50c700]                # 0042F7A8
+    mov ecx, dword ptr [ecx*4 + _cargoObjects]           # 0042F7A8
     mov ax, word ptr [ecx + 0x10]                        # 0042F7AF
     msvc_xor ecx, ecx                                    # 0042F7B3
     msvc_xor edx, edx                                    # 0042F7B5
 .L42F7B7:
-    mov ebx, dword ptr [ecx*4 + 0x50c700]                # 0042F7B7
+    mov ebx, dword ptr [ecx*4 + _cargoObjects]           # 0042F7B7
     cmp ebx, -1                                          # 0042F7BE
     je .L42F7CC                                          # 0042F7C1
     cmp ax, word ptr [ebx + 0x10]                        # 0042F7C3
@@ -508,7 +508,7 @@ _sub_42F6DB:
     msvc_xor ebx, ebx                                    # 0042F7E5
     ret                                                  # 0042F7E7
 .L42F7E8:
-    mov word ptr [0x9c68e6], 0                           # 0042F7E8
+    mov word ptr [__9C68E6], 0                           # 0042F7E8
 .L42F7F1:
     mov ebx, 0x80000000                                  # 0042F7F1
     ret                                                  # 0042F7F6

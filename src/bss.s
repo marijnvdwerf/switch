@@ -1,0 +1,11628 @@
+.include "macros.s"
+
+.bss
+
+# 0x524120
+variable __524120
+
+# 0x524120
+.skip 0x4
+
+# 0x524124
+variable __524124
+
+# 0x524124
+.skip 0x4
+
+# 0x524128
+variable __524128
+
+# 0x524128
+.skip 0x8
+
+# 0x524130
+variable __524130
+
+# 0x524130
+.skip 0x10
+
+# 0x524140
+variable __524140
+
+# 0x524140
+.skip 0x4
+
+# 0x524144
+variable __524144
+
+# 0x524144
+.skip 0x4
+
+# 0x524148
+variable __524148
+
+# 0x524148
+.skip 0x4
+
+# 0x52414C
+variable __52414C
+
+# 0x52414C
+.skip 0x4
+
+# 0x524150
+variable __524150
+
+# 0x524150
+.skip 0x4
+
+# 0x524154
+variable __524154
+
+# 0x524154
+.skip 0x4
+
+# 0x524158
+variable __524158
+
+# 0x524158
+.skip 0x4
+
+# 0x52415C
+variable __52415C
+
+# 0x52415C
+.skip 0x4
+
+# 0x524160
+variable __524160
+
+# 0x524160
+.skip 0x4
+
+# 0x524164
+variable __524164
+
+# 0x524164
+.skip 0x4
+
+# 0x524168
+variable __524168
+
+# 0x524168
+.skip 0x4
+
+# 0x52416C
+variable __52416C
+
+# 0x52416C
+.skip 0x4
+
+# 0x524170
+variable __524170
+
+# 0x524170
+.skip 0x4
+
+# 0x524174
+variable __524174
+
+# 0x524174
+.skip 0x4
+
+# 0x524178
+variable __524178
+
+# 0x524178
+.skip 0x400
+
+# 0x524578
+variable __524578
+
+# 0x524578
+.skip 0xC
+
+# 0x524584
+variable __524584
+
+# 0x524584
+.skip 0x400
+
+# 0x524984
+variable __524984
+
+# 0x524984
+.skip 0x8
+
+# 0x52498C
+variable __52498C
+
+# 0x52498C
+.skip 0x4
+
+# 0x524990
+variable __524990
+
+# 0x524990
+.skip 0x4
+
+# 0x524994
+variable __524994
+
+# 0x524994
+.skip 0x4
+
+# 0x524998
+variable __524998
+
+# 0x524998
+.skip 0x4
+
+# 0x52499C
+variable __52499C
+
+# 0x52499C
+.skip 0x814
+
+# 0x5251B0
+variable __5251B0
+
+# 0x5251B0
+.skip 0x4
+
+# 0x5251B4
+variable __5251B4
+
+# 0x5251B4
+.skip 0xC
+
+# 0x5251C0
+variable __5251C0
+
+# 0x5251C0
+.skip 0x4
+
+# 0x5251C4
+variable __5251C4
+
+# 0x5251C4
+.skip 0x4
+
+# 0x5251C8
+variable __5251C8
+
+# 0x5251C8
+.skip 0x4
+
+# 0x5251CC
+variable __5251CC
+
+# 0x5251CC
+.skip 0xC
+
+# 0x5251D8
+variable __5251D8
+
+# 0x5251D8
+.skip 0x4
+
+# 0x5251DC
+variable __5251DC
+
+# 0x5251DC
+.skip 0x4
+
+# 0x5251E0
+variable __5251E0
+
+# 0x5251E0
+.skip 0x4
+
+# 0x5251E4
+variable __5251E4
+
+# 0x5251E4
+.skip 0x4
+
+# 0x5251E8
+variable __5251E8
+
+# 0x5251E8
+.skip 0x4
+
+# 0x5251EC
+variable __5251EC
+
+# 0x5251EC
+.skip 0x4
+
+# 0x5251F0
+variable __5251F0
+
+# 0x5251F0
+.skip 0x4
+
+# 0x5251F4
+variable __5251F4
+
+# 0x5251F4
+.skip 0x4
+
+# 0x5251F8
+variable __5251F8
+
+# 0x5251F8
+.skip 0x4
+
+# 0x5251FC
+variable __5251FC
+
+# 0x5251FC
+.skip 0x4
+
+# 0x525200
+variable __525200
+
+# 0x525200
+.skip 0x4
+
+# 0x525204
+variable __525204
+
+# 0x525204
+.skip 0x4
+
+# 0x525208
+variable __525208
+
+# 0x525208
+.skip 0x4
+
+# 0x52520C
+variable __52520C
+
+# 0x52520C
+.skip 0x4
+
+# 0x525210
+variable __525210
+
+# 0x525210
+.skip 0x4
+
+# 0x525214
+variable __525214
+
+# 0x525214
+.skip 0x4
+
+# 0x525218
+variable __525218
+
+# 0x525218
+.skip 0x4
+
+# 0x52521C
+variable __52521C
+
+# 0x52521C
+.skip 0x4
+
+# 0x525220
+variable __525220
+
+# 0x525220
+.skip 0x4
+
+# 0x525224
+variable __525224
+
+# 0x525224
+.skip 0x4
+
+# 0x525228
+variable __525228
+
+# 0x525228
+.skip 0x8
+
+# 0x525230
+variable __525230
+
+# 0x525230
+.skip 0x6C
+
+# 0x52529C
+variable __52529C
+
+# 0x52529C
+.skip 0x4
+
+# 0x5252A0
+variable __5252A0
+
+# 0x5252A0
+.skip 0x4
+
+# 0x5252A4
+variable __5252A4
+
+# 0x5252A4
+.skip 0x4
+
+# 0x5252A8
+variable __5252A8
+
+# 0x5252A8
+.skip 0x4
+
+# 0x5252AC
+variable __5252AC
+
+# 0x5252AC
+.skip 0x4
+
+# 0x5252B0
+variable __5252B0
+
+# 0x5252B0
+.skip 0x4
+
+# 0x5252B4
+variable __5252B4
+
+# 0x5252B4
+.skip 0x4
+
+# 0x5252B8
+variable __5252B8
+
+# 0x5252B8
+.skip 0x4
+
+# 0x5252BC
+variable __5252BC
+
+# 0x5252BC
+.skip 0x4
+
+# 0x5252C0
+variable __5252C0
+
+# 0x5252C0
+.skip 0x4
+
+# 0x5252C4
+variable __5252C4
+
+# 0x5252C4
+.skip 0x4
+
+# 0x5252C8
+variable __5252C8
+
+# 0x5252C8
+.skip 0x4
+
+# 0x5252CC
+variable __5252CC
+
+# 0x5252CC
+.skip 0x4
+
+# 0x5252D0
+variable __5252D0
+
+# 0x5252D0
+.skip 0x4
+
+# 0x5252D4
+variable __5252D4
+
+# 0x5252D4
+.skip 0x4
+
+# 0x5252D8
+variable __5252D8
+
+# 0x5252D8
+.skip 0x4
+
+# 0x5252DC
+variable __5252DC
+
+# 0x5252DC
+.skip 0x4
+
+# 0x5252E0
+variable __5252E0
+
+# 0x5252E0
+.skip 0x4
+
+# 0x5252E4
+variable __5252E4
+
+# 0x5252E4
+.skip 0x4
+
+# 0x5252E8
+variable __5252E8
+
+# 0x5252E8
+.skip 0x24
+
+# 0x52530C
+variable __52530C
+
+# 0x52530C
+.skip 0x4
+
+# 0x525310
+variable __525310
+
+# 0x525310
+.skip 0x4
+
+# 0x525314
+variable __525314
+
+# 0x525314
+.skip 0x4
+
+# 0x525318
+variable __525318
+
+# 0x525318
+.skip 0x4
+
+# 0x52531C
+variable __52531C
+
+# 0x52531C
+.skip 0x4
+
+# 0x525320
+variable __525320
+
+# 0x525320
+.skip 0x4
+
+# 0x525324
+variable __525324
+
+# 0x525324
+.skip 0x4
+
+# 0x525328
+variable __525328
+
+# 0x525328
+.skip 0x4
+
+# 0x52532C
+variable __52532C
+
+# 0x52532C
+.skip 0x4
+
+# 0x525330
+variable __525330
+
+# 0x525330
+.skip 0x4
+
+# 0x525334
+variable __525334
+
+# 0x525334
+.skip 0x4
+
+# 0x525338
+variable __525338
+
+# 0x525338
+.skip 0x4
+
+# 0x52533C
+variable __52533C
+
+# 0x52533C
+.skip 0x4
+
+# 0x525340
+variable __525340
+
+# 0x525340
+.skip 0x4
+
+# 0x525344
+variable __525344
+
+# 0x525344
+.skip 0x4
+
+# 0x525348
+variable __525348
+
+# 0x525348
+.skip 0x4
+
+# 0x52534C
+variable __52534C
+
+# 0x52534C
+.skip 0x4
+
+# 0x525350
+variable __525350
+
+# 0x525350
+.skip 0x24
+
+# 0x525374
+variable __525374
+
+# 0x525374
+.skip 0x4
+
+# 0x525378
+variable __525378
+
+# 0x525378
+.skip 0x4
+
+# 0x52537C
+variable __52537C
+
+# 0x52537C
+.skip 0x4
+
+# 0x525380
+variable __525380
+
+# 0x525380
+.skip 0x4
+
+# 0x525384
+variable __525384
+
+# 0x525384
+.skip 0x4
+
+# 0x525388
+variable __525388
+
+# 0x525388
+.skip 0x8
+
+# 0x525390
+variable __525390
+
+# 0x525390
+.skip 0x4
+
+# 0x525394
+variable __525394
+
+# 0x525394
+.skip 0x4
+
+# 0x525398
+variable __525398
+
+# 0x525398
+.skip 0x4
+
+# 0x52539C
+variable __52539C
+
+# 0x52539C
+.skip 0x8
+
+# 0x5253A4
+variable __5253A4
+
+# 0x5253A4
+.skip 0x4
+
+# 0x5253A8
+variable __5253A8
+
+# 0x5253A8
+.skip 0x4
+
+# 0x5253AC
+variable __5253AC
+
+# 0x5253AC
+.skip 0x4
+
+# 0x5253B0
+variable __5253B0
+
+# 0x5253B0
+.skip 0x800
+
+# 0x525BB0
+variable __525BB0
+
+# 0x525BB0
+.skip 0x4
+
+# 0x525BB4
+variable __525BB4
+
+# 0x525BB4
+.skip 0x2
+
+# 0x525BB6
+variable __525BB6
+
+# 0x525BB6
+.skip 0x2
+
+# 0x525BB8
+variable __525BB8
+
+# 0x525BB8
+.skip 0x2
+
+# 0x525BBA
+variable __525BBA
+
+# 0x525BBA
+.skip 0x2
+
+# 0x525BBC
+variable __525BBC
+
+# 0x525BBC
+.skip 0x2
+
+# 0x525BBE
+variable __525BBE
+
+# 0x525BBE
+.skip 0x2
+
+# 0x525BC0
+variable __525BC0
+
+# 0x525BC0
+.skip 0x2
+
+# 0x525BC2
+variable __525BC2
+
+# 0x525BC2
+.skip 0x2
+
+# 0x525BC4
+variable __525BC4
+
+# 0x525BC4
+.skip 0x2
+
+# 0x525BC6
+variable __525BC6
+
+# 0x525BC6
+.skip 0x2
+
+# 0x525BC8
+variable __525BC8
+
+# 0x525BC8
+.skip 0x2
+
+# 0x525BCA
+variable __525BCA
+
+# 0x525BCA
+.skip 0x2
+
+# 0x525BCC
+variable __525BCC
+
+# 0x525BCC
+.skip 0x2
+
+# 0x525BCE
+variable __525BCE
+
+# 0x525BCE
+.skip 0x2
+
+# 0x525BD0
+variable __525BD0
+
+# 0x525BD0
+.skip 0x2
+
+# 0x525BD2
+variable __525BD2
+
+# 0x525BD2
+.skip 0x2
+
+# 0x525BD4
+variable __525BD4
+
+# 0x525BD4
+.skip 0x2
+
+# 0x525BD6
+variable __525BD6
+
+# 0x525BD6
+.skip 0x2
+
+# 0x525BD8
+variable __525BD8
+
+# 0x525BD8
+.skip 0x2
+
+# 0x525BDA
+variable __525BDA
+
+# 0x525BDA
+.skip 0x2
+
+# 0x525BDC
+variable __525BDC
+
+# 0x525BDC
+.skip 0x2
+
+# 0x525BDE
+variable __525BDE
+
+# 0x525BDE
+.skip 0x1
+
+# 0x525BDF
+variable __525BDF
+
+# 0x525BDF
+.skip 0x1
+
+# 0x525BE0
+variable __525BE0
+
+# 0x525BE0
+.skip 0x1
+
+# 0x525BE1
+variable __525BE1
+
+# 0x525BE1
+.skip 0x1
+
+# 0x525BE2
+variable __525BE2
+
+# 0x525BE2
+.skip 0x1
+
+# 0x525BE3
+variable __525BE3
+
+# 0x525BE3
+.skip 0x1
+
+# 0x525BE4
+variable __525BE4
+
+# 0x525BE4
+.skip 0x4
+
+# 0x525BE8
+variable __525BE8
+
+# 0x525BE8
+.skip 0x2
+
+# 0x525BEA
+variable __525BEA
+
+# 0x525BEA
+.skip 0x2
+
+# 0x525BEC
+variable __525BEC
+
+# 0x525BEC
+.skip 0xE4
+
+# 0x525CD0
+variable __525CD0
+
+# 0x525CD0
+.skip 0x4
+
+# 0x525CD4
+variable __525CD4
+
+# 0x525CD4
+.skip 0x4
+
+# 0x525CD8
+variable __525CD8
+
+# 0x525CD8
+.skip 0x4
+
+# 0x525CDC
+variable __525CDC
+
+# 0x525CDC
+.skip 0x4
+
+# 0x525CE0
+variable __525CE0
+
+# 0x525CE0
+.skip 0x2
+
+# 0x525CE2
+variable __525CE2
+
+# 0x525CE2
+.skip 0x2
+
+# 0x525CE4
+variable __525CE4
+
+# 0x525CE4
+.skip 0x2
+
+# 0x525CE6
+variable __525CE6
+
+# 0x525CE6
+.skip 0x2
+
+# 0x525CE8
+variable __525CE8
+
+# 0x525CE8
+.skip 0x4
+
+# 0x525CEC
+variable __525CEC
+
+# 0x525CEC
+.skip 0x4
+
+# 0x525CF0
+variable __525CF0
+
+# 0x525CF0
+.skip 0x1
+
+# 0x525CF1
+variable __525CF1
+
+# 0x525CF1
+.skip 0x1
+
+# 0x525CF2
+variable __525CF2
+
+# 0x525CF2
+.skip 0x4
+
+# 0x525CF6
+variable __525CF6
+
+# 0x525CF6
+.skip 0x1
+
+# 0x525CF7
+variable __525CF7
+
+# 0x525CF7
+.skip 0x1
+
+# 0x525CF8
+variable __525CF8
+
+# 0x525CF8
+.skip 0x4
+
+# 0x525CFC
+variable __525CFC
+
+# 0x525CFC
+.skip 0x2
+
+# 0x525CFE
+variable __525CFE
+
+# 0x525CFE
+.skip 0x2
+
+# 0x525D00
+variable __525D00
+
+# 0x525D00
+.skip 0x2
+
+# 0x525D02
+variable __525D02
+
+# 0x525D02
+.skip 0x2
+
+# 0x525D04
+variable __525D04
+
+# 0x525D04
+.skip 0x2
+
+# 0x525D06
+variable __525D06
+
+# 0x525D06
+.skip 0x2
+
+# 0x525D08
+variable __525D08
+
+# 0x525D08
+.skip 0x4
+
+# 0x525D0C
+variable __525D0C
+
+# 0x525D0C
+.skip 0x4
+
+# 0x525D10
+variable __525D10
+
+# 0x525D10
+.skip 0x4
+
+# 0x525D14
+variable __525D14
+
+# 0x525D14
+.skip 0x4
+
+# 0x525D18
+variable __525D18
+
+# 0x525D18
+.skip 0x4
+
+# 0x525D1C
+variable __525D1C
+
+# 0x525D1C
+.skip 0x4
+
+# 0x525D20
+variable __525D20
+
+# 0x525D20
+.skip 0x4
+
+# 0x525D24
+variable __525D24
+
+# 0x525D24
+.skip 0x4
+
+# 0x525D28
+variable __525D28
+
+# 0x525D28
+.skip 0x4
+
+# 0x525D2C
+variable __525D2C
+
+# 0x525D2C
+.skip 0x4
+
+# 0x525D30
+variable __525D30
+
+# 0x525D30
+.skip 0x4
+
+# 0x525D34
+variable __525D34
+
+# 0x525D34
+.skip 0x2
+
+# 0x525D36
+variable __525D36
+
+# 0x525D36
+.skip 0x2
+
+# 0x525D38
+variable __525D38
+
+# 0x525D38
+.skip 0x2
+
+# 0x525D3A
+variable __525D3A
+
+# 0x525D3A
+.skip 0x2
+
+# 0x525D3C
+variable __525D3C
+
+# 0x525D3C
+.skip 0x2
+
+# 0x525D3E
+variable __525D3E
+
+# 0x525D3E
+.skip 0x2
+
+# 0x525D40
+variable __525D40
+
+# 0x525D40
+.skip 0x2
+
+# 0x525D42
+variable __525D42
+
+# 0x525D42
+.skip 0x2
+
+# 0x525D44
+variable __525D44
+
+# 0x525D44
+.skip 0x2
+
+# 0x525D46
+variable __525D46
+
+# 0x525D46
+.skip 0x2
+
+# 0x525D48
+variable __525D48
+
+# 0x525D48
+.skip 0x2
+
+# 0x525D4A
+variable __525D4A
+
+# 0x525D4A
+.skip 0x2
+
+# 0x525D4C
+variable __525D4C
+
+# 0x525D4C
+.skip 0x1
+
+# 0x525D4D
+variable __525D4D
+
+# 0x525D4D
+.skip 0x1
+
+# 0x525D4E
+variable __525D4E
+
+# 0x525D4E
+.skip 0x1
+
+# 0x525D4F
+variable __525D4F
+
+# 0x525D4F
+.skip 0x1
+
+# 0x525D50
+variable __525D50
+
+# 0x525D50
+.skip 0x1
+
+# 0x525D51
+variable __525D51
+
+# 0x525D51
+.skip 0x1
+
+# 0x525D52
+variable __525D52
+
+# 0x525D52
+.skip 0x1
+
+# 0x525D53
+variable __525D53
+
+# 0x525D53
+.skip 0x1
+
+# 0x525D54
+variable __525D54
+
+# 0x525D54
+.skip 0x1
+
+# 0x525D55
+variable __525D55
+
+# 0x525D55
+.skip 0x1
+
+# 0x525D56
+variable __525D56
+
+# 0x525D56
+.skip 0x1
+
+# 0x525D57
+variable __525D57
+
+# 0x525D57
+.skip 0x1
+
+# 0x525D58
+variable __525D58
+
+# 0x525D58
+.skip 0x1
+
+# 0x525D59
+variable __525D59
+
+# 0x525D59
+.skip 0x2
+
+# 0x525D5B
+variable __525D5B
+
+# 0x525D5B
+.skip 0x1
+
+# 0x525D5C
+variable __525D5C
+
+# 0x525D5C
+.skip 0x2
+
+# 0x525D5E
+variable __525D5E
+
+# 0x525D5E
+.skip 0x1
+
+# 0x525D5F
+variable __525D5F
+
+# 0x525D5F
+.skip 0x80
+
+# 0x525DDF
+variable __525DDF
+
+# 0x525DDF
+.skip 0x1
+
+# 0x525DE0
+variable __525DE0
+
+# 0x525DE0
+.skip 0x1
+
+# 0x525DE1
+variable __525DE1
+
+# 0x525DE1
+.skip 0x1
+
+# 0x525DE2
+variable __525DE2
+
+# 0x525DE2
+.skip 0x1
+
+# 0x525DE3
+variable __525DE3
+
+# 0x525DE3
+.skip 0x1
+
+# 0x525DE4
+variable __525DE4
+
+# 0x525DE4
+.skip 0x2
+
+# 0x525DE6
+variable __525DE6
+
+# 0x525DE6
+.skip 0x2
+
+# 0x525DE8
+variable __525DE8
+
+# 0x525DE8
+.skip 0x2
+
+# 0x525DEA
+variable __525DEA
+
+# 0x525DEA
+.skip 0x1E
+
+# 0x525E08
+variable __525E08
+
+# 0x525E08
+.skip 0xF
+
+# 0x525E17
+variable __525E17
+
+# 0x525E17
+.skip 0x1
+
+# 0x525E18
+variable _scenarioChunk3, 0xB96C
+# 0x531784
+variable _companies, 0x86AD8
+# 0x5B825C
+variable _towns, 0xC300
+# 0x5C455C
+variable _industries, 0x22980
+# 0x5E6EDC
+variable _stations, 0xF4800
+# 0x6DB6DC
+variable _things, 0x271000
+# 0x94C6DC
+variable _mapAnimations, 0xC000
+# 0x9586DC
+variable __9586DC
+
+# 0x9586DC
+.skip 0x2
+
+# 0x9586DE
+variable __9586DE
+
+# 0x9586DE
+.skip 0x2
+
+# 0x9586E0
+variable __9586E0
+
+# 0x9586E0
+.skip 0x17C
+
+# 0x95885C
+variable __95885C
+
+# 0x95885C
+.skip 0x10000
+
+# 0x96885C
+variable __96885C
+
+# 0x96885C
+.skip 0x1F400
+
+# 0x987C5C
+variable __987C5C, 0x3E800
+# 0x9C645C
+variable __9C645C
+
+# 0x9C645C
+.skip 0xF
+
+# 0x9C646B
+variable __9C646B
+
+# 0x9C646B
+.skip 0x1
+
+# 0x9C646C
+variable __9C646C
+
+# 0x9C646C
+.skip 0x2
+
+# 0x9C646E
+variable __9C646E
+
+# 0x9C646E
+.skip 0x4
+
+# 0x9C6472
+variable __9C6472
+
+# 0x9C6472
+.skip 0x4
+
+# 0x9C6476
+variable __9C6476
+
+# 0x9C6476
+.skip 0x3D
+
+# 0x9C64B3
+variable __9C64B3
+
+# 0x9C64B3
+.skip 0x200
+
+# 0x9C66B3
+variable __9C66B3
+
+# 0x9C66B3
+.skip 0x2
+
+# 0x9C66B5
+variable __9C66B5
+
+# 0x9C66B5
+.skip 0x200
+
+# 0x9C68B5
+variable __9C68B5
+
+# 0x9C68B5
+.skip 0x2
+
+# 0x9C68B7
+variable __9C68B7
+
+# 0x9C68B7
+.skip 0x4
+
+# 0x9C68BB
+variable __9C68BB
+
+# 0x9C68BB
+.skip 0x4
+
+# 0x9C68BF
+variable __9C68BF
+
+# 0x9C68BF
+.skip 0x4
+
+# 0x9C68C3
+variable __9C68C3
+
+# 0x9C68C3
+.skip 0x4
+
+# 0x9C68C7
+variable __9C68C7
+
+# 0x9C68C7
+.skip 0x5
+
+# 0x9C68CC
+variable __9C68CC
+
+# 0x9C68CC
+.skip 0x4
+
+# 0x9C68D0
+variable __9C68D0
+
+# 0x9C68D0
+.skip 0x4
+
+# 0x9C68D4
+variable __9C68D4
+
+# 0x9C68D4
+.skip 0x2
+
+# 0x9C68D6
+variable __9C68D6
+
+# 0x9C68D6
+.skip 0x2
+
+# 0x9C68D8
+variable __9C68D8
+
+# 0x9C68D8
+.skip 0x2
+
+# 0x9C68DA
+variable __9C68DA
+
+# 0x9C68DA
+.skip 0x6
+
+# 0x9C68E0
+variable __9C68E0
+
+# 0x9C68E0
+.skip 0x2
+
+# 0x9C68E2
+variable __9C68E2
+
+# 0x9C68E2
+.skip 0x2
+
+# 0x9C68E4
+variable __9C68E4
+
+# 0x9C68E4
+.skip 0x2
+
+# 0x9C68E6
+variable __9C68E6
+
+# 0x9C68E6
+.skip 0x2
+
+# 0x9C68E8
+variable __9C68E8
+
+# 0x9C68E8
+.skip 0x2
+
+# 0x9C68EA
+variable __9C68EA
+
+# 0x9C68EA
+.skip 0x1
+
+# 0x9C68EB
+variable __9C68EB
+
+# 0x9C68EB
+.skip 0x1
+
+# 0x9C68EC
+variable __9C68EC
+
+# 0x9C68EC
+.skip 0x1
+
+# 0x9C68ED
+variable __9C68ED
+
+# 0x9C68ED
+.skip 0x1
+
+# 0x9C68EE
+variable __9C68EE
+
+# 0x9C68EE
+.skip 0x1
+
+# 0x9C68EF
+variable __9C68EF
+
+# 0x9C68EF
+.skip 0x1
+
+# 0x9C68F0
+variable __9C68F0
+
+# 0x9C68F0
+.skip 0x1
+
+# 0x9C68F1
+variable __9C68F1
+
+# 0x9C68F1
+.skip 0x1
+
+# 0x9C68F2
+variable __9C68F2
+
+# 0x9C68F2
+.skip 0x1
+
+# 0x9C68F3
+variable __9C68F3
+
+# 0x9C68F3
+.skip 0x1
+
+# 0x9C68F4
+variable __9C68F4
+
+# 0x9C68F4
+.skip 0x1
+
+# 0x9C68F5
+variable __9C68F5
+
+# 0x9C68F5
+.skip 0x3
+
+# 0x9C68F8
+variable __9C68F8
+
+# 0x9C68F8
+.skip 0x1E00
+
+# 0x9C86F8
+variable __9C86F8
+
+# 0x9C86F8
+.skip 0x4
+
+# 0x9C86FC
+variable __9C86FC
+
+# 0x9C86FC
+.skip 0x4
+
+# 0x9C8700
+variable __9C8700
+
+# 0x9C8700
+.skip 0x4
+
+# 0x9C8704
+variable __9C8704
+
+# 0x9C8704
+.skip 0x4
+
+# 0x9C8708
+variable __9C8708
+
+# 0x9C8708
+.skip 0x2
+
+# 0x9C870A
+variable __9C870A
+
+# 0x9C870A
+.skip 0x2
+
+# 0x9C870C
+variable __9C870C
+
+# 0x9C870C
+.skip 0x1
+
+# 0x9C870D
+variable __9C870D
+
+# 0x9C870D
+.skip 0x1
+
+# 0x9C870E
+variable __9C870E
+
+# 0x9C870E
+.skip 0x1
+
+# 0x9C870F
+variable __9C870F
+
+# 0x9C870F
+.skip 0x1
+
+# 0x9C8710
+variable __9C8710
+
+# 0x9C8710
+.skip 0x4
+
+# 0x9C8714
+variable _scenarioChunk1, 0x431A
+
+# 0x9CCA2E
+.skip 0x2
+
+# 0x9CCA30
+variable __9CCA30
+
+# 0x9CCA30
+.skip 0x4
+
+# 0x9CCA34
+variable _scenarioHeader, 0x20
+
+# 0x9CCA54
+.skip 0x6
+
+# 0x9CCA5A
+variable __9CCA5A
+
+# 0x9CCA5A
+.skip 0x184
+
+# 0x9CCBDE
+variable __9CCBDE
+
+# 0x9CCBDE
+.skip 0x4190
+
+# 0x9D0D6E
+variable __9D0D6E
+
+# 0x9D0D6E
+.skip 0x30A
+
+# 0x9D1078
+variable __9D1078
+
+# 0x9D1078
+.skip 0x4
+
+# 0x9D107C
+variable __9D107C
+
+# 0x9D107C
+.skip 0x4
+
+# 0x9D1080
+variable __9D1080
+
+# 0x9D1080
+.skip 0x4
+
+# 0x9D1084
+variable __9D1084
+
+# 0x9D1084
+.skip 0x2
+
+# 0x9D1086
+variable __9D1086
+
+# 0x9D1086
+.skip 0x20C
+
+# 0x9D1292
+variable __9D1292
+
+# 0x9D1292
+.skip 0xA08
+
+# 0x9D1C9A
+variable __9D1C9A
+
+# 0x9D1C9A
+.skip 0x2
+
+# 0x9D1C9C
+variable __9D1C9C
+
+# 0x9D1C9C
+.skip 0x4
+
+# 0x9D1CA0
+variable __9D1CA0
+
+# 0x9D1CA0
+.skip 0x4
+
+# 0x9D1CA4
+variable __9D1CA4
+
+# 0x9D1CA4
+.skip 0x4
+
+# 0x9D1CA8
+variable __9D1CA8
+
+# 0x9D1CA8
+.skip 0x4
+
+# 0x9D1CAC
+variable __9D1CAC
+
+# 0x9D1CAC
+.skip 0x4
+
+# 0x9D1CB0
+variable __9D1CB0
+
+# 0x9D1CB0
+.skip 0x4
+
+# 0x9D1CB4
+variable __9D1CB4
+
+# 0x9D1CB4
+.skip 0x4
+
+# 0x9D1CB8
+variable __9D1CB8
+
+# 0x9D1CB8
+.skip 0x4
+
+# 0x9D1CBC
+variable __9D1CBC
+
+# 0x9D1CBC
+.skip 0x4
+
+# 0x9D1CC0
+variable __9D1CC0
+
+# 0x9D1CC0
+.skip 0x4
+
+# 0x9D1CC4
+variable __9D1CC4
+
+# 0x9D1CC4
+.skip 0x2
+
+# 0x9D1CC6
+variable __9D1CC6
+
+# 0x9D1CC6
+.skip 0x1
+
+# 0x9D1CC7
+variable __9D1CC7
+
+# 0x9D1CC7
+.skip 0x1
+
+# 0x9D1CC8
+variable __9D1CC8
+
+# 0x9D1CC8
+.skip 0x8000
+
+# 0x9D9CC8
+variable __9D9CC8
+
+# 0x9D9CC8
+.skip 0x4
+
+# 0x9D9CCC
+variable __9D9CCC
+
+# 0x9D9CCC
+.skip 0x1
+
+# 0x9D9CCD
+variable __9D9CCD
+
+# 0x9D9CCD
+.skip 0x7F
+
+# 0x9D9D4C
+variable __9D9D4C
+
+# 0x9D9D4C
+.skip 0x1
+
+# 0x9D9D4D
+variable __9D9D4D
+
+# 0x9D9D4D
+.skip 0x1
+
+# 0x9D9D4E
+variable __9D9D4E
+
+# 0x9D9D4E
+.skip 0x4
+
+# 0x9D9D52
+variable __9D9D52
+
+# 0x9D9D52
+.skip 0x4
+
+# 0x9D9D56
+variable __9D9D56
+
+# 0x9D9D56
+.skip 0x4
+
+# 0x9D9D5A
+variable __9D9D5A
+
+# 0x9D9D5A
+.skip 0x4
+
+# 0x9D9D5E
+variable __9D9D5E
+
+# 0x9D9D5E
+.skip 0x4
+
+# 0x9D9D62
+variable __9D9D62
+
+# 0x9D9D62
+.skip 0x1
+
+# 0x9D9D63
+variable __9D9D63
+
+# 0x9D9D63
+.skip 0x121
+
+# 0x9D9E84
+variable __9D9E84
+
+# 0x9D9E84
+.skip 0x400
+
+# 0x9DA284
+variable __9DA284
+
+# 0x9DA284
+.skip 0x1
+
+# 0x9DA285
+variable __9DA285
+
+# 0x9DA285
+.skip 0x1
+
+# 0x9DA286
+variable __9DA286
+
+# 0x9DA286
+.skip 0x14
+
+# 0x9DA29A
+variable __9DA29A
+
+# 0x9DA29A
+.skip 0x4
+
+# 0x9DA29E
+variable __9DA29E
+
+# 0x9DA29E
+.skip 0x4
+
+# 0x9DA2A2
+variable __9DA2A2
+
+# 0x9DA2A2
+.skip 0x4
+
+# 0x9DA2A6
+variable __9DA2A6
+
+# 0x9DA2A6
+.skip 0xC
+
+# 0x9DA2B2
+variable __9DA2B2
+
+# 0x9DA2B2
+.skip 0x114
+
+# 0x9DA3C6
+variable __9DA3C6
+
+# 0x9DA3C6
+.skip 0x6
+
+# 0x9DA3CC
+variable __9DA3CC
+
+# 0x9DA3CC
+.skip 0x4
+
+# 0x9DA3D0
+variable __9DA3D0
+
+# 0x9DA3D0
+.skip 0x4
+
+# 0x9DA3D4
+variable __9DA3D4
+
+# 0x9DA3D4
+.skip 0x4
+
+# 0x9DA3D8
+variable __9DA3D8
+
+# 0x9DA3D8
+.skip 0x4
+
+# 0x9DA3DC
+variable __9DA3DC
+
+# 0x9DA3DC
+.skip 0x4
+
+# 0x9DA3E0
+variable __9DA3E0
+
+# 0x9DA3E0
+.skip 0x20
+
+# 0x9DA400
+variable __9DA400
+
+# 0x9DA400
+.skip 0x4
+
+# 0x9DA404
+variable __9DA404
+
+# 0x9DA404
+.skip 0x4
+
+# 0x9DA408
+variable __9DA408
+
+# 0x9DA408
+.skip 0x2
+
+# 0x9DA40A
+variable __9DA40A
+
+# 0x9DA40A
+.skip 0x2
+
+# 0x9DA40C
+variable __9DA40C
+
+# 0x9DA40C
+.skip 0x2
+
+# 0x9DA40E
+variable __9DA40E
+
+# 0x9DA40E
+.skip 0x2
+
+# 0x9DA410
+variable __9DA410
+
+# 0x9DA410
+.skip 0x4
+
+# 0x9DA414
+variable __9DA414
+
+# 0x9DA414
+.skip 0x8000
+
+# 0x9E2414
+variable __9E2414
+
+# 0x9E2414
+.skip 0x4
+
+# 0x9E2418
+variable __9E2418
+
+# 0x9E2418
+.skip 0x2
+
+# 0x9E241A
+variable __9E241A
+
+# 0x9E241A
+.skip 0x2
+
+# 0x9E241C
+variable __9E241C
+
+# 0x9E241C
+.skip 0x2
+
+# 0x9E241E
+variable __9E241E
+
+# 0x9E241E
+.skip 0x2
+
+# 0x9E2420
+variable __9E2420
+
+# 0x9E2420
+.skip 0x2
+
+# 0x9E2422
+variable __9E2422
+
+# 0x9E2422
+.skip 0x2
+
+# 0x9E2424
+variable __g1Data, 0x4201A0
+
+# 0xE025C4
+.skip 0x1D4C
+
+# 0xE04310
+variable __E04310
+
+# 0xE04310
+.skip 0x4
+
+# 0xE04314
+variable __E04314
+
+# 0xE04314
+.skip 0x4
+
+# 0xE04318
+variable __E04318
+
+# 0xE04318
+.skip 0x4
+
+# 0xE0431C
+variable __E0431C
+
+# 0xE0431C
+.skip 0x4
+
+# 0xE04320
+variable __E04320
+
+# 0xE04320
+.skip 0x4
+
+# 0xE04324
+variable __E04324
+
+# 0xE04324
+.skip 0x4
+
+# 0xE04328
+variable __E04328
+
+# 0xE04328
+.skip 0x4
+
+# 0xE0432C
+variable __E0432C
+
+# 0xE0432C
+.skip 0x4
+
+# 0xE04330
+variable __E04330
+
+# 0xE04330
+.skip 0x4
+
+# 0xE04334
+variable __E04334
+
+# 0xE04334
+.skip 0x4
+
+# 0xE04338
+variable __E04338
+
+# 0xE04338
+.skip 0x4
+
+# 0xE0433C
+variable __E0433C
+
+# 0xE0433C
+.skip 0x4
+
+# 0xE04340
+variable __E04340
+
+# 0xE04340
+.skip 0x4
+
+# 0xE04344
+variable __E04344
+
+# 0xE04344
+.skip 0x4
+
+# 0xE04348
+variable __E04348
+
+# 0xE04348
+.skip 0x2
+
+# 0xE0434A
+variable __E0434A
+
+# 0xE0434A
+.skip 0x2
+
+# 0xE0434C
+variable __E0434C
+
+# 0xE0434C
+.skip 0x2
+
+# 0xE0434E
+variable __E0434E
+
+# 0xE0434E
+.skip 0x2
+
+# 0xE04350
+variable __E04350
+
+# 0xE04350
+.skip 0x2
+
+# 0xE04352
+variable __E04352
+
+# 0xE04352
+.skip 0x8006
+
+# 0xE0C358
+variable __E0C358
+
+# 0xE0C358
+.skip 0x4
+
+# 0xE0C35C
+variable __E0C35C
+
+# 0xE0C35C
+.skip 0x4
+
+# 0xE0C360
+variable __E0C360
+
+# 0xE0C360
+.skip 0x4
+
+# 0xE0C364
+variable __E0C364
+
+# 0xE0C364
+.skip 0x4
+
+# 0xE0C368
+variable __E0C368
+
+# 0xE0C368
+.skip 0x4
+
+# 0xE0C36C
+variable __E0C36C
+
+# 0xE0C36C
+.skip 0x4
+
+# 0xE0C370
+variable __E0C370
+
+# 0xE0C370
+.skip 0x4
+
+# 0xE0C374
+variable __E0C374
+
+# 0xE0C374
+.skip 0x4
+
+# 0xE0C378
+variable __E0C378
+
+# 0xE0C378
+.skip 0x4
+
+# 0xE0C37C
+variable __E0C37C
+
+# 0xE0C37C
+.skip 0x4
+
+# 0xE0C380
+variable __E0C380
+
+# 0xE0C380
+.skip 0x4
+
+# 0xE0C384
+variable __E0C384
+
+# 0xE0C384
+.skip 0x4
+
+# 0xE0C388
+variable __E0C388
+
+# 0xE0C388
+.skip 0x4
+
+# 0xE0C38C
+variable __E0C38C
+
+# 0xE0C38C
+.skip 0x4
+
+# 0xE0C390
+variable __E0C390
+
+# 0xE0C390
+.skip 0x4
+
+# 0xE0C394
+variable __E0C394
+
+# 0xE0C394
+.skip 0x4
+
+# 0xE0C398
+variable __E0C398
+
+# 0xE0C398
+.skip 0x4
+
+# 0xE0C39C
+variable __E0C39C
+
+# 0xE0C39C
+.skip 0x4
+
+# 0xE0C3A0
+variable __E0C3A0
+
+# 0xE0C3A0
+.skip 0x4
+
+# 0xE0C3A4
+variable __E0C3A4
+
+# 0xE0C3A4
+.skip 0x4
+
+# 0xE0C3A8
+variable __E0C3A8
+
+# 0xE0C3A8
+.skip 0x4
+
+# 0xE0C3AC
+variable __E0C3AC
+
+# 0xE0C3AC
+.skip 0x4
+
+# 0xE0C3B0
+variable __E0C3B0
+
+# 0xE0C3B0
+.skip 0x4
+
+# 0xE0C3B4
+variable __E0C3B4
+
+# 0xE0C3B4
+.skip 0x2
+
+# 0xE0C3B6
+variable __E0C3B6
+
+# 0xE0C3B6
+.skip 0x2
+
+# 0xE0C3B8
+variable __E0C3B8
+
+# 0xE0C3B8
+.skip 0x2
+
+# 0xE0C3BA
+variable __E0C3BA
+
+# 0xE0C3BA
+.skip 0x2
+
+# 0xE0C3BC
+variable __E0C3BC
+
+# 0xE0C3BC
+.skip 0x2
+
+# 0xE0C3BE
+variable __E0C3BE
+
+# 0xE0C3BE
+.skip 0x2
+
+# 0xE0C3C0
+variable __E0C3C0
+
+# 0xE0C3C0
+.skip 0x2
+
+# 0xE0C3C2
+variable __E0C3C2
+
+# 0xE0C3C2
+.skip 0x2
+
+# 0xE0C3C4
+variable __E0C3C4
+
+# 0xE0C3C4
+.skip 0x2
+
+# 0xE0C3C6
+variable __E0C3C6
+
+# 0xE0C3C6
+.skip 0x2
+
+# 0xE0C3C8
+variable __E0C3C8
+
+# 0xE0C3C8
+.skip 0x1
+
+# 0xE0C3C9
+variable __E0C3C9
+
+# 0xE0C3C9
+.skip 0x1
+
+# 0xE0C3CA
+variable __E0C3CA
+
+# 0xE0C3CA
+.skip 0x1
+
+# 0xE0C3CB
+variable __E0C3CB
+
+# 0xE0C3CB
+.skip 0x1
+
+# 0xE0C3CC
+variable __E0C3CC
+
+# 0xE0C3CC
+.skip 0x1
+
+# 0xE0C3CD
+variable __E0C3CD
+
+# 0xE0C3CD
+.skip 0x1
+
+# 0xE0C3CE
+variable __E0C3CE
+
+# 0xE0C3CE
+.skip 0x1
+
+# 0xE0C3CF
+variable __E0C3CF
+
+# 0xE0C3CF
+.skip 0x1
+
+# 0xE0C3D0
+variable __E0C3D0
+
+# 0xE0C3D0
+.skip 0x1
+
+# 0xE0C3D1
+variable __E0C3D1
+
+# 0xE0C3D1
+.skip 0x1
+
+# 0xE0C3D2
+variable __E0C3D2
+
+# 0xE0C3D2
+.skip 0x1
+
+# 0xE0C3D3
+variable __E0C3D3
+
+# 0xE0C3D3
+.skip 0x1
+
+# 0xE0C3D4
+variable __E0C3D4
+
+# 0xE0C3D4
+.skip 0x4
+
+# 0xE0C3D8
+variable __E0C3D8
+
+# 0xE0C3D8
+.skip 0x1
+
+# 0xE0C3D9
+variable __E0C3D9
+
+# 0xE0C3D9
+.skip 0x1
+
+# 0xE0C3DA
+variable __E0C3DA
+
+# 0xE0C3DA
+.skip 0x1
+
+# 0xE0C3DB
+variable __E0C3DB
+
+# 0xE0C3DB
+.skip 0x1
+
+# 0xE0C3DC
+variable __E0C3DC
+
+# 0xE0C3DC
+.skip 0x1
+
+# 0xE0C3DD
+variable __E0C3DD
+
+# 0xE0C3DD
+.skip 0x3
+
+# 0xE0C3E0
+variable __E0C3E0
+
+# 0xE0C3E0
+.skip 0x4
+
+# 0xE0C3E4
+variable __E0C3E4
+
+# 0xE0C3E4
+.skip 0x4
+
+# 0xE0C3E8
+variable __E0C3E8
+
+# 0xE0C3E8
+.skip 0x2
+
+# 0xE0C3EA
+variable __E0C3EA
+
+# 0xE0C3EA
+.skip 0x2
+
+# 0xE0C3EC
+variable __E0C3EC
+
+# 0xE0C3EC
+.skip 0x2
+
+# 0xE0C3EE
+variable __E0C3EE
+
+# 0xE0C3EE
+.skip 0x2
+
+# 0xE0C3F0
+variable __E0C3F0
+
+# 0xE0C3F0
+.skip 0x2
+
+# 0xE0C3F2
+variable __E0C3F2
+
+# 0xE0C3F2
+.skip 0x12
+
+# 0xE0C404
+variable __E0C404
+
+# 0xE0C404
+.skip 0x4
+
+# 0xE0C408
+variable __E0C408
+
+# 0xE0C408
+.skip 0x4
+
+# 0xE0C40C
+variable __E0C40C
+
+# 0xE0C40C
+.skip 0x32C84
+
+# 0xE3F090
+variable __E3F090
+
+# 0xE3F090
+.skip 0x2
+
+# 0xE3F092
+variable __E3F092
+
+# 0xE3F092
+.skip 0x2
+
+# 0xE3F094
+variable __E3F094
+
+# 0xE3F094
+.skip 0x2
+
+# 0xE3F096
+variable __E3F096
+
+# 0xE3F096
+.skip 0x2
+
+# 0xE3F098
+variable __E3F098
+
+# 0xE3F098
+.skip 0x2
+
+# 0xE3F09A
+variable __E3F09A
+
+# 0xE3F09A
+.skip 0x2
+
+# 0xE3F09C
+variable __E3F09C
+
+# 0xE3F09C
+.skip 0x2
+
+# 0xE3F09E
+variable __E3F09E
+
+# 0xE3F09E
+.skip 0x2
+
+# 0xE3F0A0
+variable __E3F0A0
+
+# 0xE3F0A0
+.skip 0x2
+
+# 0xE3F0A2
+variable __E3F0A2
+
+# 0xE3F0A2
+.skip 0x2
+
+# 0xE3F0A4
+variable __E3F0A4
+
+# 0xE3F0A4
+.skip 0x2
+
+# 0xE3F0A6
+variable __E3F0A6
+
+# 0xE3F0A6
+.skip 0x2
+
+# 0xE3F0A8
+variable __E3F0A8
+
+# 0xE3F0A8
+.skip 0x4
+
+# 0xE3F0AC
+variable __E3F0AC
+
+# 0xE3F0AC
+.skip 0x1
+
+# 0xE3F0AD
+variable __E3F0AD
+
+# 0xE3F0AD
+.skip 0x3
+
+# 0xE3F0B0
+variable __E3F0B0
+
+# 0xE3F0B0
+.skip 0x2
+
+# 0xE3F0B2
+variable __E3F0B2
+
+# 0xE3F0B2
+.skip 0x2
+
+# 0xE3F0B4
+variable __E3F0B4
+
+# 0xE3F0B4
+.skip 0x4
+
+# 0xE3F0B8
+variable __E3F0B8
+
+# 0xE3F0B8
+.skip 0x4
+
+# 0xE3F0BC
+variable __E3F0BC
+
+# 0xE3F0BC
+.skip 0x4
+
+# 0xE3F0C0
+variable __E3F0C0, 0x1000
+# 0xE400C0
+variable __E400C0
+
+# 0xE400C0
+.skip 0x4
+
+# 0xE400C4
+variable __E400C4
+
+# 0xE400C4
+.skip 0x4
+
+# 0xE400C8
+variable __E400C8
+
+# 0xE400C8
+.skip 0x4
+
+# 0xE400CC
+variable __E400CC
+
+# 0xE400CC
+.skip 0x4
+
+# 0xE400D0
+variable __E400D0
+
+# 0xE400D0
+.skip 0x4
+
+# 0xE400D4
+variable __E400D4
+
+# 0xE400D4
+.skip 0x4
+
+# 0xE400D8
+variable __E400D8
+
+# 0xE400D8
+.skip 0x4
+
+# 0xE400DC
+variable __E400DC
+
+# 0xE400DC
+.skip 0x4
+
+# 0xE400E0
+variable __E400E0
+
+# 0xE400E0
+.skip 0x4
+
+# 0xE400E4
+variable __E400E4
+
+# 0xE400E4
+.skip 0x4
+
+# 0xE400E8
+variable __E400E8
+
+# 0xE400E8
+.skip 0x4
+
+# 0xE400EC
+variable __E400EC
+
+# 0xE400EC
+.skip 0x4
+
+# 0xE400F0
+variable __E400F0
+
+# 0xE400F0
+.skip 0x2
+
+# 0xE400F2
+variable __E400F2
+
+# 0xE400F2
+.skip 0x12
+
+# 0xE40104
+variable __E40104
+
+# 0xE40104
+.skip 0x1
+
+# 0xE40105
+variable __E40105
+
+# 0xE40105
+.skip 0x3
+
+# 0xE40108
+variable __E40108
+
+# 0xE40108
+.skip 0x2
+
+# 0xE4010A
+variable __E4010A
+
+# 0xE4010A
+.skip 0x2
+
+# 0xE4010C
+variable __E4010C
+
+# 0xE4010C
+.skip 0x4
+
+# 0xE40110
+variable __E40110
+
+# 0xE40110
+.skip 0x4
+
+# 0xE40114
+variable __E40114
+
+# 0xE40114
+.skip 0x4
+
+# 0xE40118
+variable __E40118
+
+# 0xE40118
+.skip 0x4
+
+# 0xE4011C
+variable __E4011C
+
+# 0xE4011C
+.skip 0x4
+
+# 0xE40120
+variable __E40120
+
+# 0xE40120
+.skip 0x4
+
+# 0xE40124
+variable __E40124
+
+# 0xE40124
+.skip 0x4
+
+# 0xE40128
+variable __E40128
+
+# 0xE40128
+.skip 0x2
+
+# 0xE4012A
+variable __E4012A
+
+# 0xE4012A
+.skip 0x2
+
+# 0xE4012C
+variable __E4012C
+
+# 0xE4012C
+.skip 0x2
+
+# 0xE4012E
+variable __E4012E
+
+# 0xE4012E
+.skip 0x2
+
+# 0xE40130
+variable __E40130
+
+# 0xE40130
+.skip 0x2
+
+# 0xE40132
+variable __E40132
+
+# 0xE40132
+.skip 0x2
+
+# 0xE40134
+variable __E40134
+
+# 0xE40134
+.skip 0xC0000
+
+# 0xF00134
+variable __F00134
+
+# 0xF00134
+.skip 0x4
+
+# 0xF00138
+variable __F00138
+
+# 0xF00138
+.skip 0x4
+
+# 0xF0013C
+variable __F0013C
+
+# 0xF0013C
+.skip 0x2
+
+# 0xF0013E
+variable __F0013E
+
+# 0xF0013E
+.skip 0x2
+
+# 0xF00140
+variable __F00140
+
+# 0xF00140
+.skip 0x2
+
+# 0xF00142
+variable __F00142
+
+# 0xF00142
+.skip 0x2
+
+# 0xF00144
+variable __F00144
+
+# 0xF00144
+.skip 0x2
+
+# 0xF00146
+variable __F00146
+
+# 0xF00146
+.skip 0x2
+
+# 0xF00148
+variable __F00148
+
+# 0xF00148
+.skip 0x2
+
+# 0xF0014A
+variable __F0014A
+
+# 0xF0014A
+.skip 0x2
+
+# 0xF0014C
+variable __F0014C
+
+# 0xF0014C
+.skip 0x2
+
+# 0xF0014E
+variable __F0014E
+
+# 0xF0014E
+.skip 0x4
+
+# 0xF00152
+variable __F00152
+
+# 0xF00152
+.skip 0x2
+
+# 0xF00154
+variable __F00154
+
+# 0xF00154
+.skip 0x1
+
+# 0xF00155
+variable __F00155
+
+# 0xF00155
+.skip 0x1
+
+# 0xF00156
+variable __F00156
+
+# 0xF00156
+.skip 0x2
+
+# 0xF00158
+variable __F00158
+
+# 0xF00158
+.skip 0x4
+
+# 0xF0015C
+variable __F0015C
+
+# 0xF0015C
+.skip 0x4
+
+# 0xF00160
+variable __F00160
+
+# 0xF00160
+.skip 0x4
+
+# 0xF00164
+variable __F00164
+
+# 0xF00164
+.skip 0x2
+
+# 0xF00166
+variable __F00166
+
+# 0xF00166
+.skip 0x1
+
+# 0xF00167
+variable __F00167
+
+# 0xF00167
+.skip 0x1
+
+# 0xF00168
+variable __F00168
+
+# 0xF00168
+.skip 0x4
+
+# 0xF0016C
+variable __F0016C
+
+# 0xF0016C
+.skip 0x4
+
+# 0xF00170
+variable __F00170
+
+# 0xF00170
+.skip 0x6
+
+# 0xF00176
+variable __F00176
+
+# 0xF00176
+.skip 0x258
+
+# 0xF003CE
+variable __F003CE
+
+# 0xF003CE
+.skip 0x2
+
+# 0xF003D0
+variable __F003D0
+
+# 0xF003D0
+.skip 0x2
+
+# 0xF003D2
+variable __F003D2
+
+# 0xF003D2
+.skip 0x1
+
+# 0xF003D3
+variable __F003D3
+
+# 0xF003D3
+.skip 0x21
+
+# 0xF003F4
+variable __F003F4
+
+# 0xF003F4
+.skip 0x2
+
+# 0xF003F6
+variable __F003F6
+
+# 0xF003F6
+.skip 0x2
+
+# 0xF003F8
+variable __F003F8
+
+# 0xF003F8
+.skip 0x4
+
+# 0xF003FC
+variable __F003FC
+
+# 0xF003FC
+.skip 0x4
+
+# 0xF00400
+variable __F00400
+
+# 0xF00400
+.skip 0x4
+
+# 0xF00404
+variable __F00404
+
+# 0xF00404
+.skip 0x4
+
+# 0xF00408
+variable __F00408
+
+# 0xF00408
+.skip 0x4
+
+# 0xF0040C
+variable __F0040C
+
+# 0xF0040C
+.skip 0x4
+
+# 0xF00410
+variable __F00410
+
+# 0xF00410
+.skip 0x4
+
+# 0xF00414
+variable __F00414
+
+# 0xF00414
+.skip 0x4
+
+# 0xF00418
+variable __F00418
+
+# 0xF00418
+.skip 0x4
+
+# 0xF0041C
+variable __F0041C
+
+# 0xF0041C
+.skip 0x1
+
+# 0xF0041D
+variable __F0041D
+
+# 0xF0041D
+.skip 0x1
+
+# 0xF0041E
+variable __F0041E
+
+# 0xF0041E
+.skip 0x1
+
+# 0xF0041F
+variable __F0041F
+
+# 0xF0041F
+.skip 0x2
+
+# 0xF00421
+variable __F00421
+
+# 0xF00421
+.skip 0x1
+
+# 0xF00422
+variable __F00422
+
+# 0xF00422
+.skip 0x1
+
+# 0xF00423
+variable __F00423
+
+# 0xF00423
+.skip 0x1
+
+# 0xF00424
+variable __F00424
+
+# 0xF00424
+.skip 0x1
+
+# 0xF00425
+variable __F00425
+
+# 0xF00425
+.skip 0x1
+
+# 0xF00426
+variable __F00426
+
+# 0xF00426
+.skip 0x1
+
+# 0xF00427
+variable __F00427
+
+# 0xF00427
+.skip 0x1
+
+# 0xF00428
+variable __F00428
+
+# 0xF00428
+.skip 0x2
+
+# 0xF0042A
+variable __F0042A
+
+# 0xF0042A
+.skip 0x1
+
+# 0xF0042B
+variable __F0042B
+
+# 0xF0042B
+.skip 0x1
+
+# 0xF0042C
+variable __F0042C
+
+# 0xF0042C
+.skip 0x1
+
+# 0xF0042D
+variable __F0042D
+
+# 0xF0042D
+.skip 0x1
+
+# 0xF0042E
+variable __F0042E
+
+# 0xF0042E
+.skip 0x4
+
+# 0xF00432
+variable __F00432
+
+# 0xF00432
+.skip 0x4
+
+# 0xF00436
+variable __F00436
+
+# 0xF00436
+.skip 0x4
+
+# 0xF0043A
+variable __F0043A
+
+# 0xF0043A
+.skip 0x8
+
+# 0xF00442
+variable __F00442
+
+# 0xF00442
+.skip 0x4
+
+# 0xF00446
+variable __F00446
+
+# 0xF00446
+.skip 0x4
+
+# 0xF0044A
+variable __F0044A
+
+# 0xF0044A
+.skip 0x4
+
+# 0xF0044E
+variable __F0044E
+
+# 0xF0044E
+.skip 0x6
+
+# 0xF00454
+variable __F00454
+
+# 0xF00454
+.skip 0x4
+
+# 0xF00458
+variable __F00458
+
+# 0xF00458
+.skip 0x2
+
+# 0xF0045A
+variable __F0045A
+
+# 0xF0045A
+.skip 0x2
+
+# 0xF0045C
+variable __F0045C
+
+# 0xF0045C
+.skip 0x2
+
+# 0xF0045E
+variable __F0045E
+
+# 0xF0045E
+.skip 0x2
+
+# 0xF00460
+variable __F00460
+
+# 0xF00460
+.skip 0x2
+
+# 0xF00462
+variable __F00462
+
+# 0xF00462
+.skip 0x2
+
+# 0xF00464
+variable __F00464
+
+# 0xF00464
+.skip 0x2
+
+# 0xF00466
+variable __F00466
+
+# 0xF00466
+.skip 0x2
+
+# 0xF00468
+variable __F00468
+
+# 0xF00468
+.skip 0x2
+
+# 0xF0046A
+variable __F0046A
+
+# 0xF0046A
+.skip 0x2
+
+# 0xF0046C
+variable __F0046C
+
+# 0xF0046C
+.skip 0x2
+
+# 0xF0046E
+variable __F0046E
+
+# 0xF0046E
+.skip 0x2
+
+# 0xF00470
+variable __F00470
+
+# 0xF00470
+.skip 0x2
+
+# 0xF00472
+variable __F00472
+
+# 0xF00472
+.skip 0x2
+
+# 0xF00474
+variable __F00474
+
+# 0xF00474
+.skip 0x2
+
+# 0xF00476
+variable __F00476
+
+# 0xF00476
+.skip 0x2
+
+# 0xF00478
+variable __F00478
+
+# 0xF00478
+.skip 0x2
+
+# 0xF0047A
+variable __F0047A
+
+# 0xF0047A
+.skip 0x2
+
+# 0xF0047C
+variable __F0047C
+
+# 0xF0047C
+.skip 0x2
+
+# 0xF0047E
+variable __F0047E
+
+# 0xF0047E
+.skip 0x1
+
+# 0xF0047F
+variable __F0047F
+
+# 0xF0047F
+.skip 0x1
+
+# 0xF00480
+variable __F00480
+
+# 0xF00480
+.skip 0x4
+
+# 0xF00484
+variable __F00484
+
+# 0xF00484
+.skip 0x24000
+
+# 0xF24484
+variable __F24484
+
+# 0xF24484
+.skip 0x2
+
+# 0xF24486
+variable __F24486
+
+# 0xF24486
+.skip 0x2
+
+# 0xF24488
+variable __F24488
+
+# 0xF24488
+.skip 0x2
+
+# 0xF2448A
+variable __F2448A
+
+# 0xF2448A
+.skip 0x2
+
+# 0xF2448C
+variable __F2448C
+
+# 0xF2448C
+.skip 0x2
+
+# 0xF2448E
+variable __F2448E
+
+# 0xF2448E
+.skip 0x2
+
+# 0xF24490
+variable __F24490
+
+# 0xF24490
+.skip 0x2
+
+# 0xF24492
+variable __F24492
+
+# 0xF24492
+.skip 0x2
+
+# 0xF24494
+variable __F24494
+
+# 0xF24494
+.skip 0x4AE
+
+# 0xF24942
+variable __F24942
+
+# 0xF24942
+.skip 0x2
+
+# 0xF24944
+variable __F24944
+
+# 0xF24944
+.skip 0x2
+
+# 0xF24946
+variable __F24946
+
+# 0xF24946
+.skip 0x2
+
+# 0xF24948
+variable __F24948
+
+# 0xF24948
+.skip 0x2
+
+# 0xF2494A
+variable __F2494A
+
+# 0xF2494A
+.skip 0x24
+
+# 0xF2496E
+variable __F2496E
+
+# 0xF2496E
+.skip 0x936
+
+# 0xF252A4
+variable __F252A4
+
+# 0xF252A4
+.skip 0x4
+
+# 0xF252A8
+variable __F252A8
+
+# 0xF252A8
+.skip 0x4
+
+# 0xF252AC
+variable __F252AC
+
+# 0xF252AC
+.skip 0x4
+
+# 0xF252B0
+variable __F252B0
+
+# 0xF252B0
+.skip 0x4
+
+# 0xF252B4
+variable __F252B4
+
+# 0xF252B4
+.skip 0x4
+
+# 0xF252B8
+variable __F252B8
+
+# 0xF252B8
+.skip 0x4
+
+# 0xF252BC
+variable __F252BC
+
+# 0xF252BC
+.skip 0x4
+
+# 0xF252C0
+variable __F252C0
+
+# 0xF252C0
+.skip 0x4
+
+# 0xF252C4
+variable __F252C4
+
+# 0xF252C4
+.skip 0x4
+
+# 0xF252C8
+variable __F252C8
+
+# 0xF252C8
+.skip 0x4
+
+# 0xF252CC
+variable __F252CC
+
+# 0xF252CC
+.skip 0x4
+
+# 0xF252D0
+variable __F252D0
+
+# 0xF252D0
+.skip 0x4
+
+# 0xF252D4
+variable __F252D4
+
+# 0xF252D4
+.skip 0x4
+
+# 0xF252D8
+variable __F252D8
+
+# 0xF252D8
+.skip 0x4
+
+# 0xF252DC
+variable __F252DC
+
+# 0xF252DC
+.skip 0x4
+
+# 0xF252E0
+variable __F252E0
+
+# 0xF252E0
+.skip 0x4
+
+# 0xF252E4
+variable __F252E4
+
+# 0xF252E4
+.skip 0x4
+
+# 0xF252E8
+variable __F252E8
+
+# 0xF252E8
+.skip 0x4
+
+# 0xF252EC
+variable __F252EC
+
+# 0xF252EC
+.skip 0x4
+
+# 0xF252F0
+variable __F252F0
+
+# 0xF252F0
+.skip 0x4
+
+# 0xF252F4
+variable __F252F4
+
+# 0xF252F4
+.skip 0x4
+
+# 0xF252F8
+variable __F252F8
+
+# 0xF252F8
+.skip 0x4
+
+# 0xF252FC
+variable __F252FC
+
+# 0xF252FC
+.skip 0x4
+
+# 0xF25300
+variable __F25300
+
+# 0xF25300
+.skip 0x4
+
+# 0xF25304
+variable __F25304
+
+# 0xF25304
+.skip 0x4
+
+# 0xF25308
+variable __F25308
+
+# 0xF25308
+.skip 0x4
+
+# 0xF2530C
+variable __F2530C
+
+# 0xF2530C
+.skip 0x4
+
+# 0xF25310
+variable __F25310
+
+# 0xF25310
+.skip 0x4
+
+# 0xF25314
+variable __F25314
+
+# 0xF25314
+.skip 0x4
+
+# 0xF25318
+variable __F25318
+
+# 0xF25318
+.skip 0x4
+
+# 0xF2531C
+variable __F2531C
+
+# 0xF2531C
+.skip 0x4
+
+# 0xF25320
+variable __F25320
+
+# 0xF25320
+.skip 0x2
+
+# 0xF25322
+variable __F25322
+
+# 0xF25322
+.skip 0x2
+
+# 0xF25324
+variable __F25324
+
+# 0xF25324
+.skip 0x2
+
+# 0xF25326
+variable __F25326
+
+# 0xF25326
+.skip 0x2
+
+# 0xF25328
+variable __F25328
+
+# 0xF25328
+.skip 0x2
+
+# 0xF2532A
+variable __F2532A
+
+# 0xF2532A
+.skip 0x2
+
+# 0xF2532C
+variable __F2532C
+
+# 0xF2532C
+.skip 0x2
+
+# 0xF2532E
+variable __F2532E
+
+# 0xF2532E
+.skip 0x2
+
+# 0xF25330
+variable __F25330
+
+# 0xF25330
+.skip 0x2
+
+# 0xF25332
+variable __F25332
+
+# 0xF25332
+.skip 0x2
+
+# 0xF25334
+variable __F25334
+
+# 0xF25334
+.skip 0x2
+
+# 0xF25336
+variable __F25336
+
+# 0xF25336
+.skip 0x2
+
+# 0xF25338
+variable __F25338
+
+# 0xF25338
+.skip 0x2
+
+# 0xF2533A
+variable __F2533A
+
+# 0xF2533A
+.skip 0x1
+
+# 0xF2533B
+variable __F2533B
+
+# 0xF2533B
+.skip 0x1
+
+# 0xF2533C
+variable __F2533C
+
+# 0xF2533C
+.skip 0x1
+
+# 0xF2533D
+variable __F2533D
+
+# 0xF2533D
+.skip 0x1
+
+# 0xF2533E
+variable __F2533E
+
+# 0xF2533E
+.skip 0x1
+
+# 0xF2533F
+variable __F2533F
+
+# 0xF2533F
+.skip 0x1
+
+# 0xF25340
+variable __F25340
+
+# 0xF25340
+.skip 0x4
+
+# 0xF25344
+variable __F25344
+
+# 0xF25344
+.skip 0x4
+
+# 0xF25348
+variable __F25348
+
+# 0xF25348
+.skip 0x4
+
+# 0xF2534C
+variable __F2534C
+
+# 0xF2534C
+.skip 0x2
+
+# 0xF2534E
+variable __F2534E
+
+# 0xF2534E
+.skip 0x2
+
+# 0xF25350
+variable __F25350
+
+# 0xF25350
+.skip 0x24
+
+# 0xF25374
+variable __F25374
+
+# 0xF25374
+.skip 0x18
+
+# 0xF2538C
+variable __F2538C
+
+# 0xF2538C
+.skip 0x4
+
+# 0xF25390
+variable __F25390
+
+# 0xF25390
+.skip 0x4
+
+# 0xF25394
+variable __F25394
+
+# 0xF25394
+.skip 0x4
+
+# 0xF25398
+variable __F25398
+
+# 0xF25398
+.skip 0x4
+
+# 0xF2539C
+variable __F2539C
+
+# 0xF2539C
+.skip 0x4
+
+# 0xF253A0
+variable __F253A0
+
+# 0xF253A0
+.skip 0x2
+
+# 0xF253A2
+variable __F253A2
+
+# 0xF253A2
+.skip 0x2
+
+# 0xF253A4
+variable __F253A4
+
+# 0xF253A4
+.skip 0x4
+
+# 0xF253A8
+variable __F253A8
+
+# 0xF253A8
+.skip 0x4
+
+# 0xF253AC
+variable __F253AC
+
+# 0xF253AC
+.skip 0x4
+
+# 0xF253B0
+variable __F253B0
+
+# 0xF253B0
+.skip 0x4
+
+# 0xF253B4
+variable __F253B4
+
+# 0xF253B4
+.skip 0x2
+
+# 0xF253B6
+variable __F253B6
+
+# 0xF253B6
+.skip 0x2
+
+# 0xF253B8
+variable __F253B8
+
+# 0xF253B8
+.skip 0x2
+
+# 0xF253BA
+variable __F253BA
+
+# 0xF253BA
+.skip 0xC
+
+# 0xF253C6
+variable __F253C6
+
+# 0xF253C6
+.skip 0x4
+
+# 0xF253CA
+variable __F253CA
+
+# 0xF253CA
+.skip 0x4
+
+# 0xF253CE
+variable __F253CE
+
+# 0xF253CE
+.skip 0x10
+
+# 0xF253DE
+variable __F253DE
+
+# 0xF253DE
+.skip 0x1
+
+# 0xF253DF
+variable __F253DF
+
+# 0xF253DF
+.skip 0x1
+
+# 0xF253E0
+variable __F253E0
+
+# 0xF253E0
+.skip 0x1
+
+# 0xF253E1
+variable __F253E1
+
+# 0xF253E1
+.skip 0x11
+
+# 0xF253F2
+variable __F253F2
+
+# 0xF253F2
+.skip 0x1
+
+# 0xF253F3
+variable __F253F3
+
+# 0xF253F3
+.skip 0x11
+
+# 0xF25404
+variable __F25404
+
+# 0xF25404
+.skip 0x8
+
+# 0xF2540C
+variable __F2540C
+
+# 0xF2540C
+.skip 0x8
+
+# 0xF25414
+variable __F25414
+
+# 0xF25414
+.skip 0x1
+
+# 0xF25415
+variable __F25415
+
+# 0xF25415
+.skip 0x2
+
+# 0xF25417
+variable __F25417
+
+# 0xF25417
+.skip 0x2
+
+# 0xF25419
+variable __F25419
+
+# 0xF25419
+.skip 0x2
+
+# 0xF2541B
+variable __F2541B
+
+# 0xF2541B
+.skip 0x2
+
+# 0xF2541D
+variable __F2541D
+
+# 0xF2541D
+.skip 0x3
+
+# 0xF25420
+variable __F25420
+
+# 0xF25420
+.skip 0x4
+
+# 0xF25424
+variable __F25424
+
+# 0xF25424
+.skip 0x4
+
+# 0xF25428
+variable __F25428
+
+# 0xF25428
+.skip 0x4
+
+# 0xF2542C
+variable __F2542C
+
+# 0xF2542C
+.skip 0x1
+
+# 0xF2542D
+variable __F2542D
+
+# 0xF2542D
+.skip 0x40
+
+# 0xF2546D
+variable __F2546D
+
+# 0xF2546D
+.skip 0x105
+
+# 0xF25572
+variable __F25572
+
+# 0xF25572
+.skip 0x2
+
+# 0xF25574
+variable __F25574
+
+# 0xF25574
+.skip 0x2
+
+# 0xF25576
+variable __F25576
+
+# 0xF25576
+.skip 0x2
+
+# 0xF25578
+variable __F25578
+
+# 0xF25578
+.skip 0x2
+
+# 0xF2557A
+variable __F2557A
+
+# 0xF2557A
+.skip 0x2
+
+# 0xF2557C
+variable __F2557C
+
+# 0xF2557C
+.skip 0x4
+
+# 0xF25580
+variable __F25580
+
+# 0xF25580
+.skip 0x4
+
+# 0xF25584
+variable __F25584
+
+# 0xF25584
+.skip 0x4
+
+# 0xF25588
+variable __F25588
+
+# 0xF25588
+.skip 0x35
+
+# 0xF255BD
+variable __F255BD
+
+# 0xF255BD
+.skip 0xB7
+
+# 0xF25674
+variable __F25674
+
+# 0xF25674
+.skip 0x4
+
+# 0xF25678
+variable __F25678
+
+# 0xF25678
+.skip 0x4
+
+# 0xF2567C
+variable __F2567C
+
+# 0xF2567C
+.skip 0x2
+
+# 0xF2567E
+variable __F2567E
+
+# 0xF2567E
+.skip 0x2
+
+# 0xF25680
+variable __F25680
+
+# 0xF25680
+.skip 0x80100
+
+# 0xFA5780
+variable __FA5780
+
+# 0xFA5780
+.skip 0x100
+
+# 0xFA5880
+variable __FA5880
+
+# 0xFA5880
+.skip 0x2
+
+# 0xFA5882
+variable __FA5882
+
+# 0xFA5882
+.skip 0x2
+
+# 0xFA5884
+variable __FA5884
+
+# 0xFA5884
+.skip 0x80100
+
+# 0x1025984
+variable __1025984
+
+# 0x1025984
+.skip 0x100
+
+# 0x1025A84
+variable __1025A84
+
+# 0x1025A84
+.skip 0x2
+
+# 0x1025A86
+variable __1025A86
+
+# 0x1025A86
+.skip 0x2
+
+# 0x1025A88
+variable __1025A88
+
+# 0x1025A88
+.skip 0x4
+
+# 0x1025A8C
+variable __1025A8C, 0x80002
+# 0x10A5A8E
+variable __10A5A8E, 0x80002
+# 0x1125A90
+variable _interfaceSkinMeta
+
+# 0x1125A90
+.skip 0x14
+
+# 0x1125AA4
+variable _soundMeta
+
+# 0x1125AA4
+.skip 0xA00
+
+# 0x11264A4
+variable _currencyMeta
+
+# 0x11264A4
+.skip 0x14
+
+# 0x11264B8
+variable _steamMeta
+
+# 0x11264B8
+.skip 0x280
+
+# 0x1126738
+variable _rockMeta
+
+# 0x1126738
+.skip 0xA0
+
+# 0x11267D8
+variable _waterMeta
+
+# 0x11267D8
+.skip 0x14
+
+# 0x11267EC
+variable _landMeta
+
+# 0x11267EC
+.skip 0x280
+
+# 0x1126A6C
+variable _townNamesMeta
+
+# 0x1126A6C
+.skip 0x14
+
+# 0x1126A80
+variable _cargoMeta
+
+# 0x1126A80
+.skip 0x280
+
+# 0x1126D00
+variable _wallMeta
+
+# 0x1126D00
+.skip 0x280
+
+# 0x1126F80
+variable _trackSignalMeta
+
+# 0x1126F80
+.skip 0x140
+
+# 0x11270C0
+variable _levelCrossingMeta
+
+# 0x11270C0
+.skip 0x50
+
+# 0x1127110
+variable _streetLightMeta
+
+# 0x1127110
+.skip 0x14
+
+# 0x1127124
+variable _tunnelMeta
+
+# 0x1127124
+.skip 0x140
+
+# 0x1127264
+variable _bridgeMeta
+
+# 0x1127264
+.skip 0xA0
+
+# 0x1127304
+variable _trackStationMeta
+
+# 0x1127304
+.skip 0x140
+
+# 0x1127444
+variable _trackExtraMeta
+
+# 0x1127444
+.skip 0xA0
+
+# 0x11274E4
+variable _trackMeta
+
+# 0x11274E4
+.skip 0xA0
+
+# 0x1127584
+variable _roadStationMeta
+
+# 0x1127584
+.skip 0x140
+
+# 0x11276C4
+variable _roadExtraMeta
+
+# 0x11276C4
+.skip 0x50
+
+# 0x1127714
+variable _roadMeta
+
+# 0x1127714
+.skip 0xA0
+
+# 0x11277B4
+variable _airportMeta
+
+# 0x11277B4
+.skip 0xA0
+
+# 0x1127854
+variable _dockMeta
+
+# 0x1127854
+.skip 0xA0
+
+# 0x11278F4
+variable _vehicleMeta
+
+# 0x11278F4
+.skip 0x1180
+
+# 0x1128A74
+variable _treeMeta
+
+# 0x1128A74
+.skip 0x500
+
+# 0x1128F74
+variable _snowMeta
+
+# 0x1128F74
+.skip 0x14
+
+# 0x1128F88
+variable _climateMeta
+
+# 0x1128F88
+.skip 0x14
+
+# 0x1128F9C
+variable _hillShapesMeta
+
+# 0x1128F9C
+.skip 0x14
+
+# 0x1128FB0
+variable _buildingMeta
+
+# 0x1128FB0
+.skip 0xA00
+
+# 0x11299B0
+variable _scaffoldingMeta
+
+# 0x11299B0
+.skip 0x14
+
+# 0x11299C4
+variable _industryMeta
+
+# 0x11299C4
+.skip 0x140
+
+# 0x1129B04
+variable _regionMeta
+
+# 0x1129B04
+.skip 0x14
+
+# 0x1129B18
+variable _competitorMeta
+
+# 0x1129B18
+.skip 0x280
+
+# 0x1129D98
+variable _scenarioTextMeta
+
+# 0x1129D98
+.skip 0x14
+
+# 0x1129DAC
+variable _interfaceSkinUnk1, 0x1
+# 0x1129DAD
+variable _soundUnk1, 0x80
+# 0x1129E2D
+variable _currencyUnk1, 0x1
+# 0x1129E2E
+variable _steamUnk1, 0x20
+# 0x1129E4E
+variable _rockUnk1, 0x8
+# 0x1129E56
+variable _waterUnk1, 0x1
+# 0x1129E57
+variable _landUnk1, 0x20
+# 0x1129E77
+variable _townNamesUnk1, 0x1
+# 0x1129E78
+variable _cargoUnk1, 0x20
+# 0x1129E98
+variable _wallUnk1, 0x20
+# 0x1129EB8
+variable _trackSignalUnk1, 0x10
+# 0x1129EC8
+variable _levelCrossingUnk1, 0x4
+# 0x1129ECC
+variable _streetLightUnk1, 0x1
+# 0x1129ECD
+variable _tunnelUnk1, 0x10
+# 0x1129EDD
+variable _bridgeUnk1, 0x8
+# 0x1129EE5
+variable _trackStationUnk1, 0x10
+# 0x1129EF5
+variable _trackExtraUnk1, 0x8
+# 0x1129EFD
+variable _trackUnk1, 0x8
+# 0x1129F05
+variable _roadStationUnk1, 0x10
+# 0x1129F15
+variable _roadExtraUnk1, 0x4
+# 0x1129F19
+variable _roadUnk1, 0x8
+# 0x1129F21
+variable _airportUnk1, 0x8
+# 0x1129F29
+variable _dockUnk1, 0x8
+# 0x1129F31
+variable _vehicleUnk1, 0xE0
+# 0x112A011
+variable _treeUnk1, 0x40
+# 0x112A051
+variable _snowUnk1, 0x1
+# 0x112A052
+variable _climateUnk1, 0x1
+# 0x112A053
+variable _hillShapesUnk1, 0x1
+# 0x112A054
+variable _buildingUnk1, 0x80
+# 0x112A0D4
+variable _scaffoldingUnk1, 0x1
+# 0x112A0D5
+variable _industryUnk1, 0x10
+# 0x112A0E5
+variable _regionUnk1, 0x1
+# 0x112A0E6
+variable _competitorUnk1, 0x20
+# 0x112A106
+variable _scenarioTextUnk1, 0x1
+
+# 0x112A107
+.skip 0x1
+
+# 0x112A108
+variable __112A108
+
+# 0x112A108
+.skip 0x4
+
+# 0x112A10C
+variable __112A10C
+
+# 0x112A10C
+.skip 0x4
+
+# 0x112A110
+variable __112A110
+
+# 0x112A110
+.skip 0x4
+
+# 0x112A114
+variable __112A114
+
+# 0x112A114
+.skip 0x4
+
+# 0x112A118
+variable __112A118
+
+# 0x112A118
+.skip 0x10
+
+# 0x112A128
+variable __112A128
+
+# 0x112A128
+.skip 0x4
+
+# 0x112A12C
+variable __112A12C
+
+# 0x112A12C
+.skip 0x4
+
+# 0x112A130
+variable __112A130
+
+# 0x112A130
+.skip 0x4
+
+# 0x112A134
+variable __112A134
+
+# 0x112A134
+.skip 0x4
+
+# 0x112A138
+variable __112A138
+
+# 0x112A138
+.skip 0x4
+
+# 0x112A13C
+variable __112A13C
+
+# 0x112A13C
+.skip 0x4
+
+# 0x112A140
+variable __112A140
+
+# 0x112A140
+.skip 0x4
+
+# 0x112A144
+variable __112A144
+
+# 0x112A144
+.skip 0x4
+
+# 0x112A148
+variable __112A148
+
+# 0x112A148
+.skip 0x4
+
+# 0x112A14C
+variable __112A14C
+
+# 0x112A14C
+.skip 0x4
+
+# 0x112A150
+variable __112A150
+
+# 0x112A150
+.skip 0x4
+
+# 0x112A154
+variable __112A154
+
+# 0x112A154
+.skip 0x4
+
+# 0x112A158
+variable __112A158
+
+# 0x112A158
+.skip 0x4
+
+# 0x112A15C
+variable __112A15C
+
+# 0x112A15C
+.skip 0x4
+
+# 0x112A160
+variable __112A160
+
+# 0x112A160
+.skip 0x4
+
+# 0x112A164
+variable __112A164
+
+# 0x112A164
+.skip 0x4
+
+# 0x112A168
+variable __112A168
+
+# 0x112A168
+.skip 0x4
+
+# 0x112A16C
+variable __112A16C
+
+# 0x112A16C
+.skip 0x10
+
+# 0x112A17C
+variable __112A17C
+
+# 0x112A17C
+.skip 0x1
+
+# 0x112A17D
+variable __112A17D
+
+# 0x112A17D
+.skip 0x1
+
+# 0x112A17E
+variable __112A17E
+
+# 0x112A17E
+.skip 0x1
+
+# 0x112A17F
+variable __112A17F
+
+# 0x112A17F
+.skip 0x2002
+
+# 0x112C181
+variable __112C181
+
+# 0x112C181
+.skip 0x4
+
+# 0x112C185
+variable __112C185
+
+# 0x112C185
+.skip 0x3C
+
+# 0x112C1C1
+variable __112C1C1
+
+# 0x112C1C1
+.skip 0x4
+
+# 0x112C1C5
+variable __112C1C5
+
+# 0x112C1C5
+.skip 0x2E
+
+# 0x112C1F3
+variable __112C1F3
+
+# 0x112C1F3
+.skip 0x16
+
+# 0x112C209
+variable __112C209
+
+# 0x112C209
+.skip 0x4
+
+# 0x112C20D
+variable __112C20D
+
+# 0x112C20D
+.skip 0x4
+
+# 0x112C211
+variable __112C211
+
+# 0x112C211
+.skip 0x1
+
+# 0x112C212
+variable __112C212
+
+# 0x112C212
+.skip 0x1
+
+# 0x112C213
+variable __112C213
+
+# 0x112C213
+.skip 0x2
+
+# 0x112C215
+variable __112C215
+
+# 0x112C215
+.skip 0x7
+
+# 0x112C21C
+variable __112C21C
+
+# 0x112C21C
+.skip 0x48
+
+# 0x112C264
+variable __112C264
+
+# 0x112C264
+.skip 0x4
+
+# 0x112C268
+variable __112C268
+
+# 0x112C268
+.skip 0x4
+
+# 0x112C26C
+variable __112C26C
+
+# 0x112C26C
+.skip 0x4
+
+# 0x112C270
+variable __112C270
+
+# 0x112C270
+.skip 0x4
+
+# 0x112C274
+variable __112C274
+
+# 0x112C274
+.skip 0x4
+
+# 0x112C278
+variable __112C278
+
+# 0x112C278
+.skip 0x4
+
+# 0x112C27C
+variable __112C27C
+
+# 0x112C27C
+.skip 0x4
+
+# 0x112C280
+variable __112C280
+
+# 0x112C280
+.skip 0x4
+
+# 0x112C284
+variable __112C284
+
+# 0x112C284
+.skip 0x4
+
+# 0x112C288
+variable __112C288
+
+# 0x112C288
+.skip 0x4
+
+# 0x112C28C
+variable __112C28C
+
+# 0x112C28C
+.skip 0x4
+
+# 0x112C290
+variable __112C290
+
+# 0x112C290
+.skip 0x4
+
+# 0x112C294
+variable __112C294
+
+# 0x112C294
+.skip 0x4
+
+# 0x112C298
+variable __112C298
+
+# 0x112C298
+.skip 0x4
+
+# 0x112C29C
+variable __112C29C
+
+# 0x112C29C
+.skip 0x4
+
+# 0x112C2A0
+variable __112C2A0
+
+# 0x112C2A0
+.skip 0x4
+
+# 0x112C2A4
+variable __112C2A4
+
+# 0x112C2A4
+.skip 0x4
+
+# 0x112C2A8
+variable __112C2A8
+
+# 0x112C2A8
+.skip 0x2
+
+# 0x112C2AA
+variable __112C2AA
+
+# 0x112C2AA
+.skip 0x2
+
+# 0x112C2AC
+variable __112C2AC
+
+# 0x112C2AC
+.skip 0x2
+
+# 0x112C2AE
+variable __112C2AE
+
+# 0x112C2AE
+.skip 0x2
+
+# 0x112C2B0
+variable __112C2B0
+
+# 0x112C2B0
+.skip 0x2
+
+# 0x112C2B2
+variable __112C2B2
+
+# 0x112C2B2
+.skip 0x2
+
+# 0x112C2B4
+variable __112C2B4
+
+# 0x112C2B4
+.skip 0x2
+
+# 0x112C2B6
+variable __112C2B6
+
+# 0x112C2B6
+.skip 0x2
+
+# 0x112C2B8
+variable __112C2B8
+
+# 0x112C2B8
+.skip 0x2
+
+# 0x112C2BA
+variable __112C2BA
+
+# 0x112C2BA
+.skip 0x2
+
+# 0x112C2BC
+variable __112C2BC
+
+# 0x112C2BC
+.skip 0x2
+
+# 0x112C2BE
+variable __112C2BE
+
+# 0x112C2BE
+.skip 0x2
+
+# 0x112C2C0
+variable __112C2C0
+
+# 0x112C2C0
+.skip 0x2
+
+# 0x112C2C2
+variable __112C2C2
+
+# 0x112C2C2
+.skip 0x2
+
+# 0x112C2C4
+variable __112C2C4
+
+# 0x112C2C4
+.skip 0x2
+
+# 0x112C2C6
+variable __112C2C6
+
+# 0x112C2C6
+.skip 0x2
+
+# 0x112C2C8
+variable __112C2C8
+
+# 0x112C2C8
+.skip 0x2
+
+# 0x112C2CA
+variable __112C2CA
+
+# 0x112C2CA
+.skip 0x2
+
+# 0x112C2CC
+variable __112C2CC
+
+# 0x112C2CC
+.skip 0x1
+
+# 0x112C2CD
+variable __112C2CD
+
+# 0x112C2CD
+.skip 0x1
+
+# 0x112C2CE
+variable __112C2CE
+
+# 0x112C2CE
+.skip 0x1
+
+# 0x112C2CF
+variable __112C2CF
+
+# 0x112C2CF
+.skip 0x1
+
+# 0x112C2D0
+variable __112C2D0
+
+# 0x112C2D0
+.skip 0x1
+
+# 0x112C2D1
+variable __112C2D1
+
+# 0x112C2D1
+.skip 0x1
+
+# 0x112C2D2
+variable __112C2D2
+
+# 0x112C2D2
+.skip 0x1
+
+# 0x112C2D3
+variable __112C2D3
+
+# 0x112C2D3
+.skip 0xE
+
+# 0x112C2E1
+variable __112C2E1
+
+# 0x112C2E1
+.skip 0x1
+
+# 0x112C2E2
+variable __112C2E2
+
+# 0x112C2E2
+.skip 0x1
+
+# 0x112C2E3
+variable __112C2E3
+
+# 0x112C2E3
+.skip 0x1
+
+# 0x112C2E4
+variable __112C2E4
+
+# 0x112C2E4
+.skip 0x1
+
+# 0x112C2E5
+variable __112C2E5
+
+# 0x112C2E5
+.skip 0x1
+
+# 0x112C2E6
+variable __112C2E6
+
+# 0x112C2E6
+.skip 0x1
+
+# 0x112C2E7
+variable __112C2E7
+
+# 0x112C2E7
+.skip 0x1
+
+# 0x112C2E8
+variable __112C2E8
+
+# 0x112C2E8
+.skip 0x1
+
+# 0x112C2E9
+variable __112C2E9
+
+# 0x112C2E9
+.skip 0x1
+
+# 0x112C2EA
+variable __112C2EA
+
+# 0x112C2EA
+.skip 0x2
+
+# 0x112C2EC
+variable __112C2EC
+
+# 0x112C2EC
+.skip 0x1
+
+# 0x112C2ED
+variable __112C2ED
+
+# 0x112C2ED
+.skip 0x1
+
+# 0x112C2EE
+variable __112C2EE
+
+# 0x112C2EE
+.skip 0x1
+
+# 0x112C2EF
+variable __112C2EF
+
+# 0x112C2EF
+.skip 0x1
+
+# 0x112C2F0
+variable __112C2F0
+
+# 0x112C2F0
+.skip 0x1
+
+# 0x112C2F1
+variable __112C2F1
+
+# 0x112C2F1
+.skip 0x1
+
+# 0x112C2F2
+variable __112C2F2
+
+# 0x112C2F2
+.skip 0x1
+
+# 0x112C2F3
+variable __112C2F3
+
+# 0x112C2F3
+.skip 0x1
+
+# 0x112C2F4
+variable __112C2F4
+
+# 0x112C2F4
+.skip 0x1
+
+# 0x112C2F5
+variable __112C2F5
+
+# 0x112C2F5
+.skip 0x1
+
+# 0x112C2F6
+variable __112C2F6
+
+# 0x112C2F6
+.skip 0x1
+
+# 0x112C2F7
+variable __112C2F7
+
+# 0x112C2F7
+.skip 0x1
+
+# 0x112C2F8
+variable __112C2F8
+
+# 0x112C2F8
+.skip 0x1
+
+# 0x112C2F9
+variable __112C2F9
+
+# 0x112C2F9
+.skip 0x3
+
+# 0x112C2FC
+variable __112C2FC
+
+# 0x112C2FC
+.skip 0x4
+
+# 0x112C300
+variable __112C300
+
+# 0x112C300
+.skip 0x4
+
+# 0x112C304
+variable __112C304
+
+# 0x112C304
+.skip 0x2
+
+# 0x112C306
+variable __112C306
+
+# 0x112C306
+.skip 0x2
+
+# 0x112C308
+variable __112C308
+
+# 0x112C308
+.skip 0x4
+
+# 0x112C30C
+variable __112C30C
+
+# 0x112C30C
+.skip 0x4
+
+# 0x112C310
+variable __112C310
+
+# 0x112C310
+.skip 0x4
+
+# 0x112C314
+variable __112C314
+
+# 0x112C314
+.skip 0x4
+
+# 0x112C318
+variable __112C318
+
+# 0x112C318
+.skip 0x4
+
+# 0x112C31C
+variable __112C31C
+
+# 0x112C31C
+.skip 0x2
+
+# 0x112C31E
+variable __112C31E
+
+# 0x112C31E
+.skip 0x2
+
+# 0x112C320
+variable __112C320
+
+# 0x112C320
+.skip 0x2
+
+# 0x112C322
+variable __112C322
+
+# 0x112C322
+.skip 0x2
+
+# 0x112C324
+variable __112C324
+
+# 0x112C324
+.skip 0x2
+
+# 0x112C326
+variable __112C326
+
+# 0x112C326
+.skip 0x1
+
+# 0x112C327
+variable __112C327
+
+# 0x112C327
+.skip 0x1
+
+# 0x112C328
+variable __112C328
+
+# 0x112C328
+.skip 0x1
+
+# 0x112C329
+variable __112C329
+
+# 0x112C329
+.skip 0x1
+
+# 0x112C32A
+variable __112C32A
+
+# 0x112C32A
+.skip 0x1
+
+# 0x112C32B
+variable __112C32B
+
+# 0x112C32B
+.skip 0x1
+
+# 0x112C32C
+variable __112C32C
+
+# 0x112C32C
+.skip 0x10
+
+# 0x112C33C
+variable __112C33C
+
+# 0x112C33C
+.skip 0x10
+
+# 0x112C34C
+variable __112C34C
+
+# 0x112C34C
+.skip 0x4
+
+# 0x112C350
+variable __112C350
+
+# 0x112C350
+.skip 0x4
+
+# 0x112C354
+variable __112C354
+
+# 0x112C354
+.skip 0x4
+
+# 0x112C358
+variable __112C358
+
+# 0x112C358
+.skip 0x4
+
+# 0x112C35C
+variable __112C35C
+
+# 0x112C35C
+.skip 0x4
+
+# 0x112C360
+variable __112C360
+
+# 0x112C360
+.skip 0x4
+
+# 0x112C364
+variable __112C364
+
+# 0x112C364
+.skip 0x4
+
+# 0x112C368
+variable __112C368
+
+# 0x112C368
+.skip 0x4
+
+# 0x112C36C
+variable __112C36C
+
+# 0x112C36C
+.skip 0x4
+
+# 0x112C370
+variable __112C370
+
+# 0x112C370
+.skip 0x4
+
+# 0x112C374
+variable __112C374
+
+# 0x112C374
+.skip 0x4
+
+# 0x112C378
+variable __112C378
+
+# 0x112C378
+.skip 0x4
+
+# 0x112C37C
+variable __112C37C
+
+# 0x112C37C
+.skip 0x4
+
+# 0x112C380
+variable __112C380
+
+# 0x112C380
+.skip 0x4
+
+# 0x112C384
+variable __112C384
+
+# 0x112C384
+.skip 0x4
+
+# 0x112C388
+variable __112C388
+
+# 0x112C388
+.skip 0x4
+
+# 0x112C38C
+variable __112C38C
+
+# 0x112C38C
+.skip 0x4
+
+# 0x112C390
+variable __112C390
+
+# 0x112C390
+.skip 0x4
+
+# 0x112C394
+variable __112C394
+
+# 0x112C394
+.skip 0x4
+
+# 0x112C398
+variable __112C398
+
+# 0x112C398
+.skip 0x4
+
+# 0x112C39C
+variable __112C39C
+
+# 0x112C39C
+.skip 0x4
+
+# 0x112C3A0
+variable __112C3A0
+
+# 0x112C3A0
+.skip 0x4
+
+# 0x112C3A4
+variable __112C3A4
+
+# 0x112C3A4
+.skip 0x4
+
+# 0x112C3A8
+variable __112C3A8
+
+# 0x112C3A8
+.skip 0x2
+
+# 0x112C3AA
+variable __112C3AA
+
+# 0x112C3AA
+.skip 0x2
+
+# 0x112C3AC
+variable __112C3AC
+
+# 0x112C3AC
+.skip 0x2
+
+# 0x112C3AE
+variable __112C3AE
+
+# 0x112C3AE
+.skip 0x2
+
+# 0x112C3B0
+variable __112C3B0
+
+# 0x112C3B0
+.skip 0x2
+
+# 0x112C3B2
+variable __112C3B2
+
+# 0x112C3B2
+.skip 0x2
+
+# 0x112C3B4
+variable __112C3B4
+
+# 0x112C3B4
+.skip 0x2
+
+# 0x112C3B6
+variable __112C3B6
+
+# 0x112C3B6
+.skip 0x2
+
+# 0x112C3B8
+variable __112C3B8
+
+# 0x112C3B8
+.skip 0x2
+
+# 0x112C3BA
+variable __112C3BA
+
+# 0x112C3BA
+.skip 0x2
+
+# 0x112C3BC
+variable __112C3BC
+
+# 0x112C3BC
+.skip 0x2
+
+# 0x112C3BE
+variable __112C3BE
+
+# 0x112C3BE
+.skip 0x2
+
+# 0x112C3C0
+variable __112C3C0
+
+# 0x112C3C0
+.skip 0x2
+
+# 0x112C3C2
+variable __112C3C2
+
+# 0x112C3C2
+.skip 0x2
+
+# 0x112C3C4
+variable __112C3C4
+
+# 0x112C3C4
+.skip 0x2
+
+# 0x112C3C6
+variable __112C3C6
+
+# 0x112C3C6
+.skip 0x2
+
+# 0x112C3C8
+variable __112C3C8
+
+# 0x112C3C8
+.skip 0x2
+
+# 0x112C3CA
+variable __112C3CA
+
+# 0x112C3CA
+.skip 0x2
+
+# 0x112C3CC
+variable __112C3CC
+
+# 0x112C3CC
+.skip 0x2
+
+# 0x112C3CE
+variable __112C3CE
+
+# 0x112C3CE
+.skip 0x2
+
+# 0x112C3D0
+variable __112C3D0
+
+# 0x112C3D0
+.skip 0x2
+
+# 0x112C3D2
+variable __112C3D2
+
+# 0x112C3D2
+.skip 0x2
+
+# 0x112C3D4
+variable __112C3D4
+
+# 0x112C3D4
+.skip 0x80
+
+# 0x112C454
+variable __112C454
+
+# 0x112C454
+.skip 0x80
+
+# 0x112C4D4
+variable __112C4D4
+
+# 0x112C4D4
+.skip 0x2
+
+# 0x112C4D6
+variable __112C4D6
+
+# 0x112C4D6
+.skip 0x2
+
+# 0x112C4D8
+variable __112C4D8
+
+# 0x112C4D8
+.skip 0x11
+
+# 0x112C4E9
+variable __112C4E9
+
+# 0x112C4E9
+.skip 0x1
+
+# 0x112C4EA
+variable __112C4EA
+
+# 0x112C4EA
+.skip 0x11
+
+# 0x112C4FB
+variable __112C4FB
+
+# 0x112C4FB
+.skip 0x11
+
+# 0x112C50C
+variable __112C50C
+
+# 0x112C50C
+.skip 0x9
+
+# 0x112C515
+variable __112C515
+
+# 0x112C515
+.skip 0x1
+
+# 0x112C516
+variable __112C516
+
+# 0x112C516
+.skip 0x1
+
+# 0x112C517
+variable __112C517
+
+# 0x112C517
+.skip 0x1
+
+# 0x112C518
+variable __112C518
+
+# 0x112C518
+.skip 0x1
+
+# 0x112C519
+variable __112C519
+
+# 0x112C519
+.skip 0x1
+
+# 0x112C51A
+variable __112C51A
+
+# 0x112C51A
+.skip 0x41
+
+# 0x112C55B
+variable __112C55B
+
+# 0x112C55B
+.skip 0x40
+
+# 0x112C59B
+variable __112C59B
+
+# 0x112C59B
+.skip 0x1
+
+# 0x112C59C
+variable __112C59C
+
+# 0x112C59C
+.skip 0x1
+
+# 0x112C59D
+variable __112C59D
+
+# 0x112C59D
+.skip 0x1
+
+# 0x112C59E
+variable __112C59E
+
+# 0x112C59E
+.skip 0x1
+
+# 0x112C59F
+variable __112C59F
+
+# 0x112C59F
+.skip 0x1
+
+# 0x112C5A0
+variable __112C5A0
+
+# 0x112C5A0
+.skip 0x1
+
+# 0x112C5A1
+variable __112C5A1
+
+# 0x112C5A1
+.skip 0x1
+
+# 0x112C5A2
+variable __112C5A2
+
+# 0x112C5A2
+.skip 0x1
+
+# 0x112C5A3
+variable __112C5A3
+
+# 0x112C5A3
+.skip 0x1
+
+# 0x112C5A4
+variable __112C5A4
+
+# 0x112C5A4
+.skip 0x1
+
+# 0x112C5A5
+variable __112C5A5
+
+# 0x112C5A5
+.skip 0x1
+
+# 0x112C5A6
+variable __112C5A6
+
+# 0x112C5A6
+.skip 0x1
+
+# 0x112C5A7
+variable __112C5A7
+
+# 0x112C5A7
+.skip 0x4
+
+# 0x112C5AB
+variable __112C5AB
+
+# 0x112C5AB
+.skip 0x2D
+
+# 0x112C5D8
+variable __112C5D8
+
+# 0x112C5D8
+.skip 0x4
+
+# 0x112C5DC
+variable __112C5DC
+
+# 0x112C5DC
+.skip 0x4
+
+# 0x112C5E0
+variable __112C5E0
+
+# 0x112C5E0
+.skip 0x2
+
+# 0x112C5E2
+variable __112C5E2
+
+# 0x112C5E2
+.skip 0x2
+
+# 0x112C5E4
+variable __112C5E4
+
+# 0x112C5E4
+.skip 0x2
+
+# 0x112C5E6
+variable __112C5E6
+
+# 0x112C5E6
+.skip 0x2
+
+# 0x112C5E8
+variable __112C5E8
+
+# 0x112C5E8
+.skip 0x2
+
+# 0x112C5EA
+variable __112C5EA
+
+# 0x112C5EA
+.skip 0x2
+
+# 0x112C5EC
+variable __112C5EC
+
+# 0x112C5EC
+.skip 0x2
+
+# 0x112C5EE
+variable __112C5EE
+
+# 0x112C5EE
+.skip 0x1
+
+# 0x112C5EF
+variable __112C5EF
+
+# 0x112C5EF
+.skip 0x1
+
+# 0x112C5F0
+variable __112C5F0
+
+# 0x112C5F0
+.skip 0x32
+
+# 0x112C622
+variable __112C622
+
+# 0x112C622
+.skip 0x4
+
+# 0x112C626
+variable __112C626
+
+# 0x112C626
+.skip 0x2A
+
+# 0x112C650
+variable __112C650
+
+# 0x112C650
+.skip 0x4
+
+# 0x112C654
+variable __112C654
+
+# 0x112C654
+.skip 0x4
+
+# 0x112C658
+variable __112C658
+
+# 0x112C658
+.skip 0xC
+
+# 0x112C664
+variable __112C664
+
+# 0x112C664
+.skip 0x1
+
+# 0x112C665
+variable __112C665
+
+# 0x112C665
+.skip 0x1
+
+# 0x112C666
+variable __112C666
+
+# 0x112C666
+.skip 0x2
+
+# 0x112C668
+variable __112C668
+
+# 0x112C668
+.skip 0x2
+
+# 0x112C66A
+variable __112C66A
+
+# 0x112C66A
+.skip 0x6
+
+# 0x112C670
+variable __112C670
+
+# 0x112C670
+.skip 0x4
+
+# 0x112C674
+variable __112C674
+
+# 0x112C674
+.skip 0x4
+
+# 0x112C678
+variable __112C678
+
+# 0x112C678
+.skip 0x4
+
+# 0x112C67C
+variable __112C67C
+
+# 0x112C67C
+.skip 0x4
+
+# 0x112C680
+variable __112C680
+
+# 0x112C680
+.skip 0x4
+
+# 0x112C684
+variable __112C684
+
+# 0x112C684
+.skip 0x4
+
+# 0x112C688
+variable __112C688
+
+# 0x112C688
+.skip 0x4
+
+# 0x112C68C
+variable __112C68C
+
+# 0x112C68C
+.skip 0x4
+
+# 0x112C690
+variable __112C690
+
+# 0x112C690
+.skip 0x80
+
+# 0x112C710
+variable __112C710
+
+# 0x112C710
+.skip 0x4
+
+# 0x112C714
+variable __112C714
+
+# 0x112C714
+.skip 0x4
+
+# 0x112C718
+variable __112C718
+
+# 0x112C718
+.skip 0x4
+
+# 0x112C71C
+variable __112C71C
+
+# 0x112C71C
+.skip 0x4
+
+# 0x112C720
+variable __112C720
+
+# 0x112C720
+.skip 0x4
+
+# 0x112C724
+variable __112C724
+
+# 0x112C724
+.skip 0x4
+
+# 0x112C728
+variable __112C728
+
+# 0x112C728
+.skip 0x4
+
+# 0x112C72C
+variable __112C72C
+
+# 0x112C72C
+.skip 0x4
+
+# 0x112C730
+variable __112C730
+
+# 0x112C730
+.skip 0x4
+
+# 0x112C734
+variable __112C734
+
+# 0x112C734
+.skip 0x4
+
+# 0x112C738
+variable __112C738
+
+# 0x112C738
+.skip 0x4
+
+# 0x112C73C
+variable __112C73C
+
+# 0x112C73C
+.skip 0x4
+
+# 0x112C740
+variable __112C740
+
+# 0x112C740
+.skip 0x4
+
+# 0x112C744
+variable __112C744
+
+# 0x112C744
+.skip 0x4
+
+# 0x112C748
+variable __112C748
+
+# 0x112C748
+.skip 0x4
+
+# 0x112C74C
+variable __112C74C
+
+# 0x112C74C
+.skip 0x2
+
+# 0x112C74E
+variable __112C74E
+
+# 0x112C74E
+.skip 0x2
+
+# 0x112C750
+variable __112C750
+
+# 0x112C750
+.skip 0x2
+
+# 0x112C752
+variable __112C752
+
+# 0x112C752
+.skip 0x2
+
+# 0x112C754
+variable __112C754
+
+# 0x112C754
+.skip 0x2
+
+# 0x112C756
+variable __112C756
+
+# 0x112C756
+.skip 0x2
+
+# 0x112C758
+variable __112C758
+
+# 0x112C758
+.skip 0x2
+
+# 0x112C75A
+variable __112C75A
+
+# 0x112C75A
+.skip 0x2
+
+# 0x112C75C
+variable __112C75C
+
+# 0x112C75C
+.skip 0x2
+
+# 0x112C75E
+variable __112C75E
+
+# 0x112C75E
+.skip 0x2
+
+# 0x112C760
+variable __112C760
+
+# 0x112C760
+.skip 0x2
+
+# 0x112C762
+variable __112C762
+
+# 0x112C762
+.skip 0x2
+
+# 0x112C764
+variable __112C764
+
+# 0x112C764
+.skip 0x2
+
+# 0x112C766
+variable __112C766
+
+# 0x112C766
+.skip 0x2
+
+# 0x112C768
+variable __112C768
+
+# 0x112C768
+.skip 0x2
+
+# 0x112C76A
+variable __112C76A
+
+# 0x112C76A
+.skip 0x2
+
+# 0x112C76C
+variable __112C76C
+
+# 0x112C76C
+.skip 0x2
+
+# 0x112C76E
+variable __112C76E
+
+# 0x112C76E
+.skip 0x2
+
+# 0x112C770
+variable __112C770
+
+# 0x112C770
+.skip 0x2
+
+# 0x112C772
+variable __112C772
+
+# 0x112C772
+.skip 0x2
+
+# 0x112C774
+variable __112C774
+
+# 0x112C774
+.skip 0x2
+
+# 0x112C776
+variable __112C776
+
+# 0x112C776
+.skip 0x2
+
+# 0x112C778
+variable __112C778
+
+# 0x112C778
+.skip 0x2
+
+# 0x112C77A
+variable __112C77A
+
+# 0x112C77A
+.skip 0x2
+
+# 0x112C77C
+variable __112C77C
+
+# 0x112C77C
+.skip 0x2
+
+# 0x112C77E
+variable __112C77E
+
+# 0x112C77E
+.skip 0x2
+
+# 0x112C780
+variable __112C780
+
+# 0x112C780
+.skip 0x2
+
+# 0x112C782
+variable __112C782
+
+# 0x112C782
+.skip 0x2
+
+# 0x112C784
+variable __112C784
+
+# 0x112C784
+.skip 0x2
+
+# 0x112C786
+variable __112C786
+
+# 0x112C786
+.skip 0x2
+
+# 0x112C788
+variable __112C788
+
+# 0x112C788
+.skip 0x2
+
+# 0x112C78A
+variable __112C78A
+
+# 0x112C78A
+.skip 0x2
+
+# 0x112C78C
+variable __112C78C
+
+# 0x112C78C
+.skip 0x2
+
+# 0x112C78E
+variable __112C78E
+
+# 0x112C78E
+.skip 0x2
+
+# 0x112C790
+variable __112C790
+
+# 0x112C790
+.skip 0x2
+
+# 0x112C792
+variable __112C792
+
+# 0x112C792
+.skip 0x2
+
+# 0x112C794
+variable __112C794
+
+# 0x112C794
+.skip 0x2
+
+# 0x112C796
+variable __112C796
+
+# 0x112C796
+.skip 0x2
+
+# 0x112C798
+variable __112C798
+
+# 0x112C798
+.skip 0x2
+
+# 0x112C79A
+variable __112C79A
+
+# 0x112C79A
+.skip 0x2
+
+# 0x112C79C
+variable __112C79C
+
+# 0x112C79C
+.skip 0x2
+
+# 0x112C79E
+variable __112C79E
+
+# 0x112C79E
+.skip 0x2
+
+# 0x112C7A0
+variable __112C7A0
+
+# 0x112C7A0
+.skip 0x2
+
+# 0x112C7A2
+variable __112C7A2
+
+# 0x112C7A2
+.skip 0x2
+
+# 0x112C7A4
+variable __112C7A4
+
+# 0x112C7A4
+.skip 0x2
+
+# 0x112C7A6
+variable __112C7A6
+
+# 0x112C7A6
+.skip 0x1
+
+# 0x112C7A7
+variable __112C7A7
+
+# 0x112C7A7
+.skip 0x1
+
+# 0x112C7A8
+variable __112C7A8
+
+# 0x112C7A8
+.skip 0x1
+
+# 0x112C7A9
+variable __112C7A9
+
+# 0x112C7A9
+.skip 0x1
+
+# 0x112C7AA
+variable __112C7AA
+
+# 0x112C7AA
+.skip 0x1
+
+# 0x112C7AB
+variable __112C7AB
+
+# 0x112C7AB
+.skip 0x1
+
+# 0x112C7AC
+variable __112C7AC
+
+# 0x112C7AC
+.skip 0x1
+
+# 0x112C7AD
+variable __112C7AD
+
+# 0x112C7AD
+.skip 0x4
+
+# 0x112C7B1
+variable __112C7B1
+
+# 0x112C7B1
+.skip 0x4
+
+# 0x112C7B5
+variable __112C7B5
+
+# 0x112C7B5
+.skip 0x1D
+
+# 0x112C7D2
+variable __112C7D2
+
+# 0x112C7D2
+.skip 0x20
+
+# 0x112C7F2
+variable __112C7F2
+
+# 0x112C7F2
+.skip 0x1
+
+# 0x112C7F3
+variable __112C7F3
+
+# 0x112C7F3
+.skip 0x1
+
+# 0x112C7F4
+variable __112C7F4
+
+# 0x112C7F4
+.skip 0x1
+
+# 0x112C7F5
+variable __112C7F5
+
+# 0x112C7F5
+.skip 0x1
+
+# 0x112C7F6
+variable __112C7F6
+
+# 0x112C7F6
+.skip 0x1
+
+# 0x112C7F7
+variable __112C7F7
+
+# 0x112C7F7
+.skip 0x1
+
+# 0x112C7F8
+variable __112C7F8
+
+# 0x112C7F8
+.skip 0x1
+
+# 0x112C7F9
+variable __112C7F9
+
+# 0x112C7F9
+.skip 0x1
+
+# 0x112C7FA
+variable __112C7FA
+
+# 0x112C7FA
+.skip 0x1
+
+# 0x112C7FB
+variable __112C7FB
+
+# 0x112C7FB
+.skip 0x1
+
+# 0x112C7FC
+variable __112C7FC
+
+# 0x112C7FC
+.skip 0x1
+
+# 0x112C7FD
+variable __112C7FD
+
+# 0x112C7FD
+.skip 0x1
+
+# 0x112C7FE
+variable __112C7FE
+
+# 0x112C7FE
+.skip 0x1
+
+# 0x112C7FF
+variable __112C7FF
+
+# 0x112C7FF
+.skip 0x1
+
+# 0x112C800
+variable __112C800
+
+# 0x112C800
+.skip 0x1
+
+# 0x112C801
+variable __112C801
+
+# 0x112C801
+.skip 0x1
+
+# 0x112C802
+variable __112C802
+
+# 0x112C802
+.skip 0x1
+
+# 0x112C803
+variable __112C803
+
+# 0x112C803
+.skip 0x1
+
+# 0x112C804
+variable __112C804
+
+# 0x112C804
+.skip 0x1
+
+# 0x112C805
+variable __112C805
+
+# 0x112C805
+.skip 0x1
+
+# 0x112C806
+variable __112C806
+
+# 0x112C806
+.skip 0x1
+
+# 0x112C807
+variable __112C807
+
+# 0x112C807
+.skip 0x1
+
+# 0x112C808
+variable __112C808
+
+# 0x112C808
+.skip 0x1
+
+# 0x112C809
+variable __112C809
+
+# 0x112C809
+.skip 0x1
+
+# 0x112C80A
+variable __112C80A
+
+# 0x112C80A
+.skip 0x1
+
+# 0x112C80B
+variable __112C80B
+
+# 0x112C80B
+.skip 0x1
+
+# 0x112C80C
+variable __112C80C
+
+# 0x112C80C
+.skip 0x4
+
+# 0x112C810
+variable __112C810
+
+# 0x112C810
+.skip 0x4
+
+# 0x112C814
+variable __112C814
+
+# 0x112C814
+.skip 0x4
+
+# 0x112C818
+variable __112C818
+
+# 0x112C818
+.skip 0x2
+
+# 0x112C81A
+variable __112C81A
+
+# 0x112C81A
+.skip 0x2
+
+# 0x112C81C
+variable __112C81C
+
+# 0x112C81C
+.skip 0x6
+
+# 0x112C822
+variable __112C822
+
+# 0x112C822
+.skip 0x2
+
+# 0x112C824
+variable __112C824
+
+# 0x112C824
+.skip 0x2
+
+# 0x112C826
+variable __112C826
+
+# 0x112C826
+.skip 0x2
+
+# 0x112C828
+variable __112C828
+
+# 0x112C828
+.skip 0x2
+
+# 0x112C82A
+variable __112C82A
+
+# 0x112C82A
+.skip 0x2
+
+# 0x112C82C
+variable __112C82C
+
+# 0x112C82C
+.skip 0x2
+
+# 0x112C82E
+variable __112C82E
+
+# 0x112C82E
+.skip 0x2
+
+# 0x112C830
+variable __112C830
+
+# 0x112C830
+.skip 0x2
+
+# 0x112C832
+variable __112C832
+
+# 0x112C832
+.skip 0x2
+
+# 0x112C834
+variable __112C834
+
+# 0x112C834
+.skip 0x2
+
+# 0x112C836
+variable __112C836
+
+# 0x112C836
+.skip 0x2
+
+# 0x112C838
+variable __112C838
+
+# 0x112C838
+.skip 0x3E
+
+# 0x112C876
+variable __112C876
+
+# 0x112C876
+.skip 0x2
+
+# 0x112C878
+variable __112C878
+
+# 0x112C878
+.skip 0x2
+
+# 0x112C87A
+variable __112C87A
+
+# 0x112C87A
+.skip 0x2
+
+# 0x112C87C
+variable __112C87C
+
+# 0x112C87C
+.skip 0x2
+
+# 0x112C87E
+variable __112C87E
+
+# 0x112C87E
+.skip 0x2
+
+# 0x112C880
+variable __112C880
+
+# 0x112C880
+.skip 0x2
+
+# 0x112C882
+variable __112C882
+
+# 0x112C882
+.skip 0x2
+
+# 0x112C884
+variable __112C884
+
+# 0x112C884
+.skip 0xE
+
+# 0x112C892
+variable __112C892
+
+# 0x112C892
+.skip 0x1B2
+
+# 0x112CA44
+variable __112CA44
+
+# 0x112CA44
+.skip 0x163
+
+# 0x112CBA7
+variable __112CBA7
+
+# 0x112CBA7
+.skip 0x5D
+
+# 0x112CC04
+variable __112CC04
+
+# 0x112CC04
+.skip 0x1
+
+# 0x112CC05
+variable __112CC05
+
+# 0x112CC05
+.skip 0x1
+
+# 0x112CC06
+variable __112CC06
+
+# 0x112CC06
+.skip 0x3
+
+# 0x112CC09
+variable __112CC09
+
+# 0x112CC09
+.skip 0x1
+
+# 0x112CC0A
+variable __112CC0A
+
+# 0x112CC0A
+.skip 0x6
+
+# 0x112CC10
+variable __112CC10
+
+# 0x112CC10
+.skip 0x3
+
+# 0x112CC13
+variable __112CC13
+
+# 0x112CC13
+.skip 0x10
+
+# 0x112CC23
+variable __112CC23
+
+# 0x112CC23
+.skip 0xE1
+
+# 0x112CD04
+variable __112CD04
+
+# 0x112CD04
+.skip 0xFF
+
+# 0x112CE03
+variable __112CE03
+
+# 0x112CE03
+.skip 0x1
+
+# 0x112CE04
+variable __112CE04
+
+# 0x112CE04
+.skip 0x2
+
+# 0x112CE06
+variable __112CE06
+
+# 0x112CE06
+.skip 0x1FE
+
+# 0x112D004
+variable __112D004
+
+# 0x112D004
+.skip 0x200
+
+# 0x112D204
+variable __112D204
+
+# 0x112D204
+.skip 0x200
+
+# 0x112D404
+variable __112D404
+
+# 0x112D404
+.skip 0x4
+
+# 0x112D408
+variable __112D408
+
+# 0x112D408
+.skip 0x700
+
+# 0x112DB08
+variable __112DB08
+
+# 0x112DB08
+.skip 0x12
+
+# 0x112DB1A
+variable __112DB1A
+
+# 0x112DB1A
+.skip 0x810E
+
+# 0x1135C28
+variable __1135C28
+
+# 0x1135C28
+.skip 0x4
+
+# 0x1135C2C
+variable __1135C2C
+
+# 0x1135C2C
+.skip 0x4
+
+# 0x1135C30
+variable __1135C30
+
+# 0x1135C30
+.skip 0x4
+
+# 0x1135C34
+variable __1135C34
+
+# 0x1135C34
+.skip 0x4
+
+# 0x1135C38
+variable __1135C38
+
+# 0x1135C38
+.skip 0x4
+
+# 0x1135C3C
+variable __1135C3C
+
+# 0x1135C3C
+.skip 0x4
+
+# 0x1135C40
+variable __1135C40
+
+# 0x1135C40
+.skip 0x4
+
+# 0x1135C44
+variable __1135C44
+
+# 0x1135C44
+.skip 0x4
+
+# 0x1135C48
+variable __1135C48
+
+# 0x1135C48
+.skip 0x4
+
+# 0x1135C4C
+variable __1135C4C
+
+# 0x1135C4C
+.skip 0x2
+
+# 0x1135C4E
+variable __1135C4E
+
+# 0x1135C4E
+.skip 0x2
+
+# 0x1135C50
+variable __1135C50
+
+# 0x1135C50
+.skip 0x2
+
+# 0x1135C52
+variable __1135C52
+
+# 0x1135C52
+.skip 0x2
+
+# 0x1135C54
+variable __1135C54
+
+# 0x1135C54
+.skip 0x2
+
+# 0x1135C56
+variable __1135C56
+
+# 0x1135C56
+.skip 0x2
+
+# 0x1135C58
+variable __1135C58
+
+# 0x1135C58
+.skip 0x2
+
+# 0x1135C5A
+variable __1135C5A
+
+# 0x1135C5A
+.skip 0x2
+
+# 0x1135C5C
+variable __1135C5C
+
+# 0x1135C5C
+.skip 0x1
+
+# 0x1135C5D
+variable __1135C5D
+
+# 0x1135C5D
+.skip 0x1
+
+# 0x1135C5E
+variable __1135C5E
+
+# 0x1135C5E
+.skip 0x1
+
+# 0x1135C5F
+variable __1135C5F
+
+# 0x1135C5F
+.skip 0x1
+
+# 0x1135C60
+variable __1135C60
+
+# 0x1135C60
+.skip 0x1
+
+# 0x1135C61
+variable __1135C61
+
+# 0x1135C61
+.skip 0x1
+
+# 0x1135C62
+variable __1135C62
+
+# 0x1135C62
+.skip 0x1
+
+# 0x1135C63
+variable __1135C63
+
+# 0x1135C63
+.skip 0x1
+
+# 0x1135C64
+variable __1135C64
+
+# 0x1135C64
+.skip 0x1
+
+# 0x1135C65
+variable __1135C65
+
+# 0x1135C65
+.skip 0x1
+
+# 0x1135C66
+variable __1135C66
+
+# 0x1135C66
+.skip 0x2
+
+# 0x1135C68
+variable __1135C68
+
+# 0x1135C68
+.skip 0x4
+
+# 0x1135C6C
+variable __1135C6C
+
+# 0x1135C6C
+.skip 0x4
+
+# 0x1135C70
+variable __1135C70
+
+# 0x1135C70
+.skip 0x3
+
+# 0x1135C73
+variable __1135C73
+
+# 0x1135C73
+.skip 0x1
+
+# 0x1135C74
+variable __1135C74
+
+# 0x1135C74
+.skip 0x4
+
+# 0x1135C78
+variable __1135C78
+
+# 0x1135C78
+.skip 0x4
+
+# 0x1135C7C
+variable __1135C7C
+
+# 0x1135C7C
+.skip 0x6
+
+# 0x1135C82
+variable __1135C82
+
+# 0x1135C82
+.skip 0x258
+
+# 0x1135EDA
+variable __1135EDA
+
+# 0x1135EDA
+.skip 0x4
+
+# 0x1135EDE
+variable __1135EDE
+
+# 0x1135EDE
+.skip 0x4
+
+# 0x1135EE2
+variable __1135EE2
+
+# 0x1135EE2
+.skip 0x4
+
+# 0x1135EE6
+variable __1135EE6
+
+# 0x1135EE6
+.skip 0x4
+
+# 0x1135EEA
+variable __1135EEA
+
+# 0x1135EEA
+.skip 0x4
+
+# 0x1135EEE
+variable __1135EEE
+
+# 0x1135EEE
+.skip 0x4
+
+# 0x1135EF2
+variable __1135EF2
+
+# 0x1135EF2
+.skip 0x4
+
+# 0x1135EF6
+variable __1135EF6
+
+# 0x1135EF6
+.skip 0x4
+
+# 0x1135EFA
+variable __1135EFA
+
+# 0x1135EFA
+.skip 0x4
+
+# 0x1135EFE
+variable __1135EFE
+
+# 0x1135EFE
+.skip 0x4
+
+# 0x1135F02
+variable __1135F02
+
+# 0x1135F02
+.skip 0x4
+
+# 0x1135F06
+variable __1135F06
+
+# 0x1135F06
+.skip 0x4
+
+# 0x1135F0A
+variable __1135F0A
+
+# 0x1135F0A
+.skip 0x4
+
+# 0x1135F0E
+variable __1135F0E
+
+# 0x1135F0E
+.skip 0x4
+
+# 0x1135F12
+variable __1135F12
+
+# 0x1135F12
+.skip 0x4
+
+# 0x1135F16
+variable __1135F16
+
+# 0x1135F16
+.skip 0x4
+
+# 0x1135F1A
+variable __1135F1A
+
+# 0x1135F1A
+.skip 0x4
+
+# 0x1135F1E
+variable __1135F1E
+
+# 0x1135F1E
+.skip 0x4
+
+# 0x1135F22
+variable __1135F22
+
+# 0x1135F22
+.skip 0x4
+
+# 0x1135F26
+variable __1135F26
+
+# 0x1135F26
+.skip 0x4
+
+# 0x1135F2A
+variable __1135F2A
+
+# 0x1135F2A
+.skip 0x4
+
+# 0x1135F2E
+variable __1135F2E
+
+# 0x1135F2E
+.skip 0x4
+
+# 0x1135F32
+variable __1135F32
+
+# 0x1135F32
+.skip 0x4
+
+# 0x1135F36
+variable __1135F36
+
+# 0x1135F36
+.skip 0x8
+
+# 0x1135F3E
+variable __1135F3E
+
+# 0x1135F3E
+.skip 0x4
+
+# 0x1135F42
+variable __1135F42
+
+# 0x1135F42
+.skip 0x4
+
+# 0x1135F46
+variable __1135F46
+
+# 0x1135F46
+.skip 0x4
+
+# 0x1135F4A
+variable __1135F4A
+
+# 0x1135F4A
+.skip 0x4
+
+# 0x1135F4E
+variable __1135F4E
+
+# 0x1135F4E
+.skip 0x4
+
+# 0x1135F52
+variable __1135F52
+
+# 0x1135F52
+.skip 0x8
+
+# 0x1135F5A
+variable __1135F5A
+
+# 0x1135F5A
+.skip 0x4
+
+# 0x1135F5E
+variable __1135F5E
+
+# 0x1135F5E
+.skip 0x4
+
+# 0x1135F62
+variable __1135F62
+
+# 0x1135F62
+.skip 0x2
+
+# 0x1135F64
+variable __1135F64
+
+# 0x1135F64
+.skip 0x2
+
+# 0x1135F66
+variable __1135F66
+
+# 0x1135F66
+.skip 0x2
+
+# 0x1135F68
+variable __1135F68
+
+# 0x1135F68
+.skip 0x2
+
+# 0x1135F6A
+variable __1135F6A
+
+# 0x1135F6A
+.skip 0x2
+
+# 0x1135F6C
+variable __1135F6C
+
+# 0x1135F6C
+.skip 0x4
+
+# 0x1135F70
+variable __1135F70
+
+# 0x1135F70
+.skip 0x4
+
+# 0x1135F74
+variable __1135F74
+
+# 0x1135F74
+.skip 0x4
+
+# 0x1135F78
+variable __1135F78
+
+# 0x1135F78
+.skip 0x4
+
+# 0x1135F7C
+variable __1135F7C
+
+# 0x1135F7C
+.skip 0x2
+
+# 0x1135F7E
+variable __1135F7E
+
+# 0x1135F7E
+.skip 0x2
+
+# 0x1135F80
+variable __1135F80
+
+# 0x1135F80
+.skip 0x2
+
+# 0x1135F82
+variable __1135F82
+
+# 0x1135F82
+.skip 0x2
+
+# 0x1135F84
+variable __1135F84
+
+# 0x1135F84
+.skip 0x2
+
+# 0x1135F86
+variable __1135F86
+
+# 0x1135F86
+.skip 0x2
+
+# 0x1135F88
+variable __1135F88
+
+# 0x1135F88
+.skip 0x2
+
+# 0x1135F8A
+variable __1135F8A
+
+# 0x1135F8A
+.skip 0x2
+
+# 0x1135F8C
+variable __1135F8C
+
+# 0x1135F8C
+.skip 0x2
+
+# 0x1135F8E
+variable __1135F8E
+
+# 0x1135F8E
+.skip 0x2
+
+# 0x1135F90
+variable __1135F90
+
+# 0x1135F90
+.skip 0x2
+
+# 0x1135F92
+variable __1135F92
+
+# 0x1135F92
+.skip 0x2
+
+# 0x1135F94
+variable __1135F94
+
+# 0x1135F94
+.skip 0x2
+
+# 0x1135F96
+variable __1135F96
+
+# 0x1135F96
+.skip 0x2
+
+# 0x1135F98
+variable __1135F98
+
+# 0x1135F98
+.skip 0x2
+
+# 0x1135F9A
+variable __1135F9A
+
+# 0x1135F9A
+.skip 0x2
+
+# 0x1135F9C
+variable __1135F9C
+
+# 0x1135F9C
+.skip 0x2
+
+# 0x1135F9E
+variable __1135F9E
+
+# 0x1135F9E
+.skip 0x2
+
+# 0x1135FA0
+variable __1135FA0
+
+# 0x1135FA0
+.skip 0x2
+
+# 0x1135FA2
+variable __1135FA2
+
+# 0x1135FA2
+.skip 0x2
+
+# 0x1135FA4
+variable __1135FA4
+
+# 0x1135FA4
+.skip 0x2
+
+# 0x1135FA6
+variable __1135FA6
+
+# 0x1135FA6
+.skip 0x8
+
+# 0x1135FAE
+variable __1135FAE
+
+# 0x1135FAE
+.skip 0x2
+
+# 0x1135FB0
+variable __1135FB0
+
+# 0x1135FB0
+.skip 0x2
+
+# 0x1135FB2
+variable __1135FB2
+
+# 0x1135FB2
+.skip 0x2
+
+# 0x1135FB4
+variable __1135FB4
+
+# 0x1135FB4
+.skip 0x2
+
+# 0x1135FB6
+variable __1135FB6
+
+# 0x1135FB6
+.skip 0x2
+
+# 0x1135FB8
+variable __1135FB8
+
+# 0x1135FB8
+.skip 0x2
+
+# 0x1135FBA
+variable __1135FBA
+
+# 0x1135FBA
+.skip 0x2
+
+# 0x1135FBC
+variable __1135FBC
+
+# 0x1135FBC
+.skip 0x2
+
+# 0x1135FBE
+variable __1135FBE
+
+# 0x1135FBE
+.skip 0x2
+
+# 0x1135FC0
+variable __1135FC0
+
+# 0x1135FC0
+.skip 0x2
+
+# 0x1135FC2
+variable __1135FC2
+
+# 0x1135FC2
+.skip 0x2
+
+# 0x1135FC4
+variable __1135FC4
+
+# 0x1135FC4
+.skip 0x2
+
+# 0x1135FC6
+variable __1135FC6
+
+# 0x1135FC6
+.skip 0x2
+
+# 0x1135FC8
+variable __1135FC8
+
+# 0x1135FC8
+.skip 0x2
+
+# 0x1135FCA
+variable __1135FCA
+
+# 0x1135FCA
+.skip 0x2
+
+# 0x1135FCC
+variable __1135FCC
+
+# 0x1135FCC
+.skip 0x2
+
+# 0x1135FCE
+variable __1135FCE
+
+# 0x1135FCE
+.skip 0x2
+
+# 0x1135FD0
+variable __1135FD0
+
+# 0x1135FD0
+.skip 0x2
+
+# 0x1135FD2
+variable __1135FD2
+
+# 0x1135FD2
+.skip 0x2
+
+# 0x1135FD4
+variable __1135FD4
+
+# 0x1135FD4
+.skip 0x2
+
+# 0x1135FD6
+variable __1135FD6
+
+# 0x1135FD6
+.skip 0x2
+
+# 0x1135FD8
+variable __1135FD8
+
+# 0x1135FD8
+.skip 0x2
+
+# 0x1135FDA
+variable __1135FDA
+
+# 0x1135FDA
+.skip 0x2
+
+# 0x1135FDC
+variable __1135FDC
+
+# 0x1135FDC
+.skip 0x2
+
+# 0x1135FDE
+variable __1135FDE
+
+# 0x1135FDE
+.skip 0x2
+
+# 0x1135FE0
+variable __1135FE0
+
+# 0x1135FE0
+.skip 0x2
+
+# 0x1135FE2
+variable __1135FE2
+
+# 0x1135FE2
+.skip 0x2
+
+# 0x1135FE4
+variable __1135FE4
+
+# 0x1135FE4
+.skip 0x2
+
+# 0x1135FE6
+variable __1135FE6
+
+# 0x1135FE6
+.skip 0x2
+
+# 0x1135FE8
+variable __1135FE8
+
+# 0x1135FE8
+.skip 0x2
+
+# 0x1135FEA
+variable __1135FEA
+
+# 0x1135FEA
+.skip 0x2
+
+# 0x1135FEC
+variable __1135FEC
+
+# 0x1135FEC
+.skip 0x2
+
+# 0x1135FEE
+variable __1135FEE
+
+# 0x1135FEE
+.skip 0x2
+
+# 0x1135FF0
+variable __1135FF0
+
+# 0x1135FF0
+.skip 0x2
+
+# 0x1135FF2
+variable __1135FF2
+
+# 0x1135FF2
+.skip 0x6
+
+# 0x1135FF8
+variable __1135FF8
+
+# 0x1135FF8
+.skip 0x2
+
+# 0x1135FFA
+variable __1135FFA
+
+# 0x1135FFA
+.skip 0x2
+
+# 0x1135FFC
+variable __1135FFC
+
+# 0x1135FFC
+.skip 0x2
+
+# 0x1135FFE
+variable __1135FFE
+
+# 0x1135FFE
+.skip 0x2
+
+# 0x1136000
+variable __1136000
+
+# 0x1136000
+.skip 0x2
+
+# 0x1136002
+variable __1136002
+
+# 0x1136002
+.skip 0x2
+
+# 0x1136004
+variable __1136004
+
+# 0x1136004
+.skip 0x2
+
+# 0x1136006
+variable __1136006
+
+# 0x1136006
+.skip 0x2
+
+# 0x1136008
+variable __1136008
+
+# 0x1136008
+.skip 0x2
+
+# 0x113600A
+variable __113600A
+
+# 0x113600A
+.skip 0x2
+
+# 0x113600C
+variable __113600C
+
+# 0x113600C
+.skip 0x2
+
+# 0x113600E
+variable __113600E
+
+# 0x113600E
+.skip 0x2
+
+# 0x1136010
+variable __1136010
+
+# 0x1136010
+.skip 0x2
+
+# 0x1136012
+variable __1136012
+
+# 0x1136012
+.skip 0x2
+
+# 0x1136014
+variable __1136014
+
+# 0x1136014
+.skip 0x2
+
+# 0x1136016
+variable __1136016
+
+# 0x1136016
+.skip 0x2
+
+# 0x1136018
+variable __1136018
+
+# 0x1136018
+.skip 0x2
+
+# 0x113601A
+variable __113601A
+
+# 0x113601A
+.skip 0x1
+
+# 0x113601B
+variable __113601B
+
+# 0x113601B
+.skip 0x1
+
+# 0x113601C
+variable __113601C
+
+# 0x113601C
+.skip 0x1
+
+# 0x113601D
+variable __113601D
+
+# 0x113601D
+.skip 0x11
+
+# 0x113602E
+variable __113602E
+
+# 0x113602E
+.skip 0x1
+
+# 0x113602F
+variable __113602F
+
+# 0x113602F
+.skip 0x1
+
+# 0x1136030
+variable __1136030
+
+# 0x1136030
+.skip 0x9
+
+# 0x1136039
+variable __1136039
+
+# 0x1136039
+.skip 0x1
+
+# 0x113603A
+variable __113603A
+
+# 0x113603A
+.skip 0x1
+
+# 0x113603B
+variable __113603B
+
+# 0x113603B
+.skip 0x11
+
+# 0x113604C
+variable __113604C
+
+# 0x113604C
+.skip 0x1
+
+# 0x113604D
+variable __113604D
+
+# 0x113604D
+.skip 0x1
+
+# 0x113604E
+variable __113604E
+
+# 0x113604E
+.skip 0x1
+
+# 0x113604F
+variable __113604F
+
+# 0x113604F
+.skip 0x1
+
+# 0x1136050
+variable __1136050
+
+# 0x1136050
+.skip 0x1
+
+# 0x1136051
+variable __1136051
+
+# 0x1136051
+.skip 0x1
+
+# 0x1136052
+variable __1136052
+
+# 0x1136052
+.skip 0x1
+
+# 0x1136053
+variable __1136053
+
+# 0x1136053
+.skip 0x1
+
+# 0x1136054
+variable __1136054
+
+# 0x1136054
+.skip 0x1
+
+# 0x1136055
+variable __1136055
+
+# 0x1136055
+.skip 0x1
+
+# 0x1136056
+variable __1136056
+
+# 0x1136056
+.skip 0x1
+
+# 0x1136057
+variable __1136057
+
+# 0x1136057
+.skip 0x1
+
+# 0x1136058
+variable __1136058
+
+# 0x1136058
+.skip 0x1
+
+# 0x1136059
+variable __1136059
+
+# 0x1136059
+.skip 0x1
+
+# 0x113605A
+variable __113605A
+
+# 0x113605A
+.skip 0x1
+
+# 0x113605B
+variable __113605B
+
+# 0x113605B
+.skip 0x1
+
+# 0x113605C
+variable __113605C
+
+# 0x113605C
+.skip 0x1
+
+# 0x113605D
+variable __113605D
+
+# 0x113605D
+.skip 0x1
+
+# 0x113605E
+variable __113605E
+
+# 0x113605E
+.skip 0x1
+
+# 0x113605F
+variable __113605F
+
+# 0x113605F
+.skip 0x1
+
+# 0x1136060
+variable __1136060
+
+# 0x1136060
+.skip 0x1
+
+# 0x1136061
+variable __1136061
+
+# 0x1136061
+.skip 0x1
+
+# 0x1136062
+variable __1136062
+
+# 0x1136062
+.skip 0x1
+
+# 0x1136063
+variable __1136063
+
+# 0x1136063
+.skip 0x1
+
+# 0x1136064
+variable __1136064
+
+# 0x1136064
+.skip 0x1
+
+# 0x1136065
+variable __1136065
+
+# 0x1136065
+.skip 0x1
+
+# 0x1136066
+variable __1136066
+
+# 0x1136066
+.skip 0x1
+
+# 0x1136067
+variable __1136067
+
+# 0x1136067
+.skip 0x1
+
+# 0x1136068
+variable __1136068
+
+# 0x1136068
+.skip 0x1
+
+# 0x1136069
+variable __1136069
+
+# 0x1136069
+.skip 0x1
+
+# 0x113606A
+variable __113606A
+
+# 0x113606A
+.skip 0x1
+
+# 0x113606B
+variable __113606B
+
+# 0x113606B
+.skip 0x1
+
+# 0x113606C
+variable __113606C
+
+# 0x113606C
+.skip 0x1
+
+# 0x113606D
+variable __113606D
+
+# 0x113606D
+.skip 0x1
+
+# 0x113606E
+variable __113606E
+
+# 0x113606E
+.skip 0x1
+
+# 0x113606F
+variable __113606F
+
+# 0x113606F
+.skip 0x1
+
+# 0x1136070
+variable __1136070
+
+# 0x1136070
+.skip 0x1
+
+# 0x1136071
+variable __1136071
+
+# 0x1136071
+.skip 0x1
+
+# 0x1136072
+variable __1136072
+
+# 0x1136072
+.skip 0x1
+
+# 0x1136073
+variable __1136073
+
+# 0x1136073
+.skip 0x1
+
+# 0x1136074
+variable __1136074
+
+# 0x1136074
+.skip 0x1
+
+# 0x1136075
+variable __1136075
+
+# 0x1136075
+.skip 0x1
+
+# 0x1136076
+variable __1136076
+
+# 0x1136076
+.skip 0x1
+
+# 0x1136077
+variable __1136077
+
+# 0x1136077
+.skip 0x1
+
+# 0x1136078
+variable __1136078
+
+# 0x1136078
+.skip 0x1
+
+# 0x1136079
+variable __1136079
+
+# 0x1136079
+.skip 0x1
+
+# 0x113607A
+variable __113607A
+
+# 0x113607A
+.skip 0x1
+
+# 0x113607B
+variable __113607B
+
+# 0x113607B
+.skip 0x1
+
+# 0x113607C
+variable __113607C
+
+# 0x113607C
+.skip 0x1
+
+# 0x113607D
+variable __113607D
+
+# 0x113607D
+.skip 0x1
+
+# 0x113607E
+variable __113607E
+
+# 0x113607E
+.skip 0x1
+
+# 0x113607F
+variable __113607F
+
+# 0x113607F
+.skip 0x1
+
+# 0x1136080
+variable __1136080
+
+# 0x1136080
+.skip 0x1
+
+# 0x1136081
+variable __1136081
+
+# 0x1136081
+.skip 0x1
+
+# 0x1136082
+variable __1136082
+
+# 0x1136082
+.skip 0x1
+
+# 0x1136083
+variable __1136083
+
+# 0x1136083
+.skip 0x1
+
+# 0x1136084
+variable __1136084
+
+# 0x1136084
+.skip 0x1
+
+# 0x1136085
+variable __1136085
+
+# 0x1136085
+.skip 0x1
+
+# 0x1136086
+variable __1136086
+
+# 0x1136086
+.skip 0x1
+
+# 0x1136087
+variable __1136087
+
+# 0x1136087
+.skip 0x1
+
+# 0x1136088
+variable __1136088
+
+# 0x1136088
+.skip 0x1
+
+# 0x1136089
+variable __1136089
+
+# 0x1136089
+.skip 0x1
+
+# 0x113608A
+variable __113608A
+
+# 0x113608A
+.skip 0x1
+
+# 0x113608B
+variable __113608B
+
+# 0x113608B
+.skip 0x4
+
+# 0x113608F
+variable __113608F
+
+# 0x113608F
+.skip 0x1
+
+# 0x1136090
+variable __1136090
+
+# 0x1136090
+.skip 0x4
+
+# 0x1136094
+variable __1136094
+
+# 0x1136094
+.skip 0x4
+
+# 0x1136098
+variable __1136098
+
+# 0x1136098
+.skip 0x4
+
+# 0x113609C
+variable __113609C
+
+# 0x113609C
+.skip 0x4
+
+# 0x11360A0
+variable __11360A0
+
+# 0x11360A0
+.skip 0x2C
+
+# 0x11360CC
+variable __11360CC
+
+# 0x11360CC
+.skip 0x4
+
+# 0x11360D0
+variable __11360D0
+
+# 0x11360D0
+.skip 0x4
+
+# 0x11360D4
+variable __11360D4
+
+# 0x11360D4
+.skip 0x4
+
+# 0x11360D8
+variable __11360D8
+
+# 0x11360D8
+.skip 0x4
+
+# 0x11360DC
+variable __11360DC
+
+# 0x11360DC
+.skip 0x4
+
+# 0x11360E0
+variable __11360E0
+
+# 0x11360E0
+.skip 0x4
+
+# 0x11360E4
+variable __11360E4
+
+# 0x11360E4
+.skip 0x4
+
+# 0x11360E8
+variable __11360E8
+
+# 0x11360E8
+.skip 0x4
+
+# 0x11360EC
+variable __11360EC
+
+# 0x11360EC
+.skip 0x4
+
+# 0x11360F0
+variable __11360F0
+
+# 0x11360F0
+.skip 0x4
+
+# 0x11360F4
+variable __11360F4
+
+# 0x11360F4
+.skip 0x4
+
+# 0x11360F8
+variable __11360F8
+
+# 0x11360F8
+.skip 0x4
+
+# 0x11360FC
+variable __11360FC
+
+# 0x11360FC
+.skip 0x4
+
+# 0x1136100
+variable __1136100
+
+# 0x1136100
+.skip 0x4
+
+# 0x1136104
+variable __1136104
+
+# 0x1136104
+.skip 0x4
+
+# 0x1136108
+variable __1136108
+
+# 0x1136108
+.skip 0x2
+
+# 0x113610A
+variable __113610A
+
+# 0x113610A
+.skip 0x2
+
+# 0x113610C
+variable __113610C
+
+# 0x113610C
+.skip 0x2
+
+# 0x113610E
+variable __113610E
+
+# 0x113610E
+.skip 0x2
+
+# 0x1136110
+variable __1136110
+
+# 0x1136110
+.skip 0x4
+
+# 0x1136114
+variable __1136114
+
+# 0x1136114
+.skip 0x4
+
+# 0x1136118
+variable __1136118
+
+# 0x1136118
+.skip 0x4
+
+# 0x113611C
+variable __113611C
+
+# 0x113611C
+.skip 0x4
+
+# 0x1136120
+variable __1136120
+
+# 0x1136120
+.skip 0x4
+
+# 0x1136124
+variable __1136124
+
+# 0x1136124
+.skip 0x4
+
+# 0x1136128
+variable __1136128
+
+# 0x1136128
+.skip 0x4
+
+# 0x113612C
+variable __113612C
+
+# 0x113612C
+.skip 0x4
+
+# 0x1136130
+variable __1136130
+
+# 0x1136130
+.skip 0x4
+
+# 0x1136134
+variable __1136134
+
+# 0x1136134
+.skip 0x4
+
+# 0x1136138
+variable __1136138
+
+# 0x1136138
+.skip 0x4
+
+# 0x113613C
+variable __113613C
+
+# 0x113613C
+.skip 0x4
+
+# 0x1136140
+variable __1136140
+
+# 0x1136140
+.skip 0x1
+
+# 0x1136141
+variable __1136141
+
+# 0x1136141
+.skip 0x1
+
+# 0x1136142
+variable __1136142
+
+# 0x1136142
+.skip 0x4
+
+# 0x1136146
+variable __1136146
+
+# 0x1136146
+.skip 0x4
+
+# 0x113614A
+variable __113614A
+
+# 0x113614A
+.skip 0x4
+
+# 0x113614E
+variable __113614E
+
+# 0x113614E
+.skip 0x4
+
+# 0x1136152
+variable __1136152
+
+# 0x1136152
+.skip 0x2
+
+# 0x1136154
+variable __1136154
+
+# 0x1136154
+.skip 0x2
+
+# 0x1136156
+variable __1136156
+
+# 0x1136156
+.skip 0x6
+
+# 0x113615C
+variable __113615C
+
+# 0x113615C
+.skip 0x4
+
+# 0x1136160
+variable __1136160
+
+# 0x1136160
+.skip 0x8
+
+# 0x1136168
+variable __1136168
+
+# 0x1136168
+.skip 0x2
+
+# 0x113616A
+variable __113616A
+
+# 0x113616A
+.skip 0x2
+
+# 0x113616C
+variable __113616C
+
+# 0x113616C
+.skip 0x2
+
+# 0x113616E
+variable __113616E
+
+# 0x113616E
+.skip 0x2
+
+# 0x1136170
+variable __1136170
+
+# 0x1136170
+.skip 0x2
+
+# 0x1136172
+variable __1136172
+
+# 0x1136172
+.skip 0x2
+
+# 0x1136174
+variable __1136174
+
+# 0x1136174
+.skip 0x2
+
+# 0x1136176
+variable __1136176
+
+# 0x1136176
+.skip 0x80
+
+# 0x11361F6
+variable __11361F6
+
+# 0x11361F6
+.skip 0x2
+
+# 0x11361F8
+variable __11361F8
+
+# 0x11361F8
+.skip 0x4
+
+# 0x11361FC
+variable __11361FC
+
+# 0x11361FC
+.skip 0x4
+
+# 0x1136200
+variable __1136200
+
+# 0x1136200
+.skip 0x1D
+
+# 0x113621D
+variable __113621D
+
+# 0x113621D
+.skip 0x2
+
+# 0x113621F
+variable __113621F
+
+# 0x113621F
+.skip 0x15
+
+# 0x1136234
+variable __1136234
+
+# 0x1136234
+.skip 0x1
+
+# 0x1136235
+variable __1136235
+
+# 0x1136235
+.skip 0x1
+
+# 0x1136236
+variable __1136236
+
+# 0x1136236
+.skip 0x1
+
+# 0x1136237
+variable __1136237
+
+# 0x1136237
+.skip 0x1
+
+# 0x1136238
+variable __1136238
+
+# 0x1136238
+.skip 0x1
+
+# 0x1136239
+variable __1136239
+
+# 0x1136239
+.skip 0x1
+
+# 0x113623A
+variable __113623A
+
+# 0x113623A
+.skip 0x1
+
+# 0x113623B
+variable __113623B
+
+# 0x113623B
+.skip 0x1
+
+# 0x113623C
+variable __113623C
+
+# 0x113623C
+.skip 0x2
+
+# 0x113623E
+variable __113623E
+
+# 0x113623E
+.skip 0x2
+
+# 0x1136240
+variable __1136240
+
+# 0x1136240
+.skip 0x4
+
+# 0x1136244
+variable __1136244
+
+# 0x1136244
+.skip 0x4
+
+# 0x1136248
+variable __1136248
+
+# 0x1136248
+.skip 0x2
+
+# 0x113624A
+variable __113624A
+
+# 0x113624A
+.skip 0x2
+
+# 0x113624C
+variable __113624C
+
+# 0x113624C
+.skip 0x2
+
+# 0x113624E
+variable __113624E
+
+# 0x113624E
+.skip 0x2
+
+# 0x1136250
+variable __1136250
+
+# 0x1136250
+.skip 0x2
+
+# 0x1136252
+variable __1136252
+
+# 0x1136252
+.skip 0x2
+
+# 0x1136254
+variable __1136254
+
+# 0x1136254
+.skip 0x2
+
+# 0x1136256
+variable __1136256
+
+# 0x1136256
+.skip 0x2
+
+# 0x1136258
+variable __1136258
+
+# 0x1136258
+.skip 0x1
+
+# 0x1136259
+variable __1136259
+
+# 0x1136259
+.skip 0x1
+
+# 0x113625A
+variable __113625A
+
+# 0x113625A
+.skip 0x4
+
+# 0x113625E
+variable __113625E
+
+# 0x113625E
+.skip 0x2
+
+# 0x1136260
+variable __1136260
+
+# 0x1136260
+.skip 0x2
+
+# 0x1136262
+variable __1136262
+
+# 0x1136262
+.skip 0x2
+
+# 0x1136264
+variable __1136264
+
+# 0x1136264
+.skip 0x4
+
+# 0x1136268
+variable __1136268
+
+# 0x1136268
+.skip 0x2
+
+# 0x113626A
+variable __113626A
+
+# 0x113626A
+.skip 0x1C0
+
+# 0x113642A
+variable __113642A
+
+# 0x113642A
+.skip 0x2
+
+# 0x113642C
+variable __113642C
+
+# 0x113642C
+.skip 0x2
+
+# 0x113642E
+variable __113642E
+
+# 0x113642E
+.skip 0x2
+
+# 0x1136430
+variable __1136430
+
+# 0x1136430
+.skip 0x4
+
+# 0x1136434
+variable __1136434
+
+# 0x1136434
+.skip 0x4
+
+# 0x1136438
+variable __1136438
+
+# 0x1136438
+.skip 0x4
+
+# 0x113643C
+variable __113643C
+
+# 0x113643C
+.skip 0x4
+
+# 0x1136440
+variable __1136440
+
+# 0x1136440
+.skip 0x4
+
+# 0x1136444
+variable __1136444
+
+# 0x1136444
+.skip 0x4
+
+# 0x1136448
+variable __1136448
+
+# 0x1136448
+.skip 0x2
+
+# 0x113644A
+variable __113644A
+
+# 0x113644A
+.skip 0x2
+
+# 0x113644C
+variable __113644C
+
+# 0x113644C
+.skip 0x4
+
+# 0x1136450
+variable __1136450
+
+# 0x1136450
+.skip 0x6
+
+# 0x1136456
+variable __1136456
+
+# 0x1136456
+.skip 0x2
+
+# 0x1136458
+variable __1136458
+
+# 0x1136458
+.skip 0x2
+
+# 0x113645A
+variable __113645A
+
+# 0x113645A
+.skip 0x2
+
+# 0x113645C
+variable __113645C
+
+# 0x113645C
+.skip 0x2
+
+# 0x113645E
+variable __113645E
+
+# 0x113645E
+.skip 0x2
+
+# 0x1136460
+variable __1136460
+
+# 0x1136460
+.skip 0x2
+
+# 0x1136462
+variable __1136462
+
+# 0x1136462
+.skip 0x2
+
+# 0x1136464
+variable __1136464
+
+# 0x1136464
+.skip 0x2
+
+# 0x1136466
+variable __1136466
+
+# 0x1136466
+.skip 0x2
+
+# 0x1136468
+variable __1136468
+
+# 0x1136468
+.skip 0x2
+
+# 0x113646A
+variable __113646A
+
+# 0x113646A
+.skip 0x1
+
+# 0x113646B
+variable __113646B
+
+# 0x113646B
+.skip 0x1
+
+# 0x113646C
+variable __113646C
+
+# 0x113646C
+.skip 0x1
+
+# 0x113646D
+variable __113646D
+
+# 0x113646D
+.skip 0x3
+
+# 0x1136470
+variable __1136470
+
+# 0x1136470
+.skip 0x4
+
+# 0x1136474
+variable __1136474
+
+# 0x1136474
+.skip 0x4
+
+# 0x1136478
+variable __1136478
+
+# 0x1136478
+.skip 0x4
+
+# 0x113647C
+variable __113647C
+
+# 0x113647C
+.skip 0x4
+
+# 0x1136480
+variable __1136480
+
+# 0x1136480
+.skip 0x4
+
+# 0x1136484
+variable __1136484
+
+# 0x1136484
+.skip 0x4
+
+# 0x1136488
+variable __1136488
+
+# 0x1136488
+.skip 0x2
+
+# 0x113648A
+variable __113648A
+
+# 0x113648A
+.skip 0x2
+
+# 0x113648C
+variable __113648C
+
+# 0x113648C
+.skip 0x2
+
+# 0x113648E
+variable __113648E
+
+# 0x113648E
+.skip 0x2
+
+# 0x1136490
+variable __1136490
+
+# 0x1136490
+.skip 0x2
+
+# 0x1136492
+variable __1136492
+
+# 0x1136492
+.skip 0x2
+
+# 0x1136494
+variable __1136494
+
+# 0x1136494
+.skip 0x2
+
+# 0x1136496
+variable __1136496
+
+# 0x1136496
+.skip 0x1
+
+# 0x1136497
+variable __1136497
+
+# 0x1136497
+.skip 0x1
+
+# 0x1136498
+variable __1136498
+
+# 0x1136498
+.skip 0x1
+
+# 0x1136499
+variable __1136499
+
+# 0x1136499
+.skip 0x1
+
+# 0x113649A
+variable __113649A
+
+# 0x113649A
+.skip 0x1
+
+# 0x113649B
+variable __113649B
+
+# 0x113649B
+.skip 0x1
+
+# 0x113649C
+variable __113649C
+
+# 0x113649C
+.skip 0x1
+
+# 0x113649D
+variable __113649D
+
+# 0x113649D
+.skip 0x1
+
+# 0x113649E
+variable __113649E
+
+# 0x113649E
+.skip 0x2
+
+# 0x11364A0
+variable __11364A0
+
+# 0x11364A0
+.skip 0x4
+
+# 0x11364A4
+variable __11364A4
+
+# 0x11364A4
+.skip 0x1
+
+# 0x11364A5
+variable __11364A5
+
+# 0x11364A5
+.skip 0x20
+
+# 0x11364C5
+variable __11364C5
+
+# 0x11364C5
+.skip 0x23
+
+# 0x11364E8
+variable __11364E8
+
+# 0x11364E8
+.skip 0x4
+
+# 0x11364EC
+variable __11364EC
+
+# 0x11364EC
+.skip 0x3
+
+# 0x11364EF
+variable __11364EF
+
+# 0x11364EF
+.skip 0x1
+
+# 0x11364F0
+variable __11364F0
+
+# 0x11364F0
+.skip 0x8
+
+# 0x11364F8
+variable __11364F8
+
+# 0x11364F8
+.skip 0x4
+
+# 0x11364FC
+variable __11364FC
+
+# 0x11364FC
+.skip 0x4
+
+# 0x1136500
+variable __1136500
+
+# 0x1136500
+.skip 0x4
+
+# 0x1136504
+variable __1136504
+
+# 0x1136504
+.skip 0x4
+
+# 0x1136508
+variable __1136508
+
+# 0x1136508
+.skip 0x4
+
+# 0x113650C
+variable __113650C
+
+# 0x113650C
+.skip 0x4
+
+# 0x1136510
+variable __1136510
+
+# 0x1136510
+.skip 0x4
+
+# 0x1136514
+variable __1136514
+
+# 0x1136514
+.skip 0x1
+
+# 0x1136515
+variable __1136515
+
+# 0x1136515
+.skip 0x1
+
+# 0x1136516
+variable __1136516
+
+# 0x1136516
+.skip 0x1
+
+# 0x1136517
+variable __1136517
+
+# 0x1136517
+.skip 0x2
+
+# 0x1136519
+variable __1136519
+
+# 0x1136519
+.skip 0x1
+
+# 0x113651A
+variable __113651A
+
+# 0x113651A
+.skip 0x2
+
+# 0x113651C
+variable __113651C
+
+# 0x113651C
+.skip 0x4
+
+# 0x1136520
+variable __1136520
+
+# 0x1136520
+.skip 0x4
+
+# 0x1136524
+variable __1136524
+
+# 0x1136524
+.skip 0x4
+
+# 0x1136528
+variable __1136528
+
+# 0x1136528
+.skip 0x4
+
+# 0x113652C
+variable __113652C
+
+# 0x113652C
+.skip 0x4
+
+# 0x1136530
+variable __1136530
+
+# 0x1136530
+.skip 0x2
+
+# 0x1136532
+variable __1136532
+
+# 0x1136532
+.skip 0x2
+
+# 0x1136534
+variable __1136534
+
+# 0x1136534
+.skip 0x2
+
+# 0x1136536
+variable __1136536
+
+# 0x1136536
+.skip 0x2
+
+# 0x1136538
+variable __1136538
+
+# 0x1136538
+.skip 0x2
+
+# 0x113653A
+variable __113653A
+
+# 0x113653A
+.skip 0x2
+
+# 0x113653C
+variable __113653C
+
+# 0x113653C
+.skip 0x4
+
+# 0x1136540
+variable __1136540
+
+# 0x1136540
+.skip 0x4
+
+# 0x1136544
+variable __1136544
+
+# 0x1136544
+.skip 0x4
+
+# 0x1136548
+variable __1136548
+
+# 0x1136548
+.skip 0x44
+
+# 0x113658C
+variable __113658C
+
+# 0x113658C
+.skip 0x4
+
+# 0x1136590
+variable __1136590
+
+# 0x1136590
+.skip 0x4
+
+# 0x1136594
+variable __1136594
+
+# 0x1136594
+.skip 0x1
+
+# 0x1136595
+variable __1136595
+
+# 0x1136595
+.skip 0x1
+
+# 0x1136596
+variable __1136596
+
+# 0x1136596
+.skip 0x2
+
+# 0x1136598
+variable __1136598
+
+# 0x1136598
+.skip 0x2
+
+# 0x113659A
+variable __113659A
+
+# 0x113659A
+.skip 0x2
+
+# 0x113659C
+variable __113659C
+
+# 0x113659C
+.skip 0x2
+
+# 0x113659E
+variable __113659E
+
+# 0x113659E
+.skip 0x2
+
+# 0x11365A0
+variable __11365A0
+
+# 0x11365A0
+.skip 0x100
+
+# 0x11366A0
+variable __11366A0
+
+# 0x11366A0
+.skip 0x100
+
+# 0x11367A0
+variable __11367A0
+
+# 0x11367A0
+.skip 0x100
+
+# 0x11368A0
+variable __11368A0
+
+# 0x11368A0
+.skip 0x100
+
+# 0x11369A0
+variable __11369A0
+
+# 0x11369A0
+.skip 0x4F
+
+# 0x11369EF
+variable __11369EF
+
+# 0x11369EF
+.skip 0x78
+
+# 0x1136A67
+variable __1136A67
+
+# 0x1136A67
+.skip 0x139
+
+# 0x1136BA0
+variable __1136BA0
+
+# 0x1136BA0
+.skip 0x1
+
+# 0x1136BA1
+variable __1136BA1
+
+# 0x1136BA1
+.skip 0x1
+
+# 0x1136BA2
+variable __1136BA2
+
+# 0x1136BA2
+.skip 0x1
+
+# 0x1136BA3
+variable __1136BA3
+
+# 0x1136BA3
+.skip 0x1
+
+# 0x1136BA4
+variable __1136BA4
+
+# 0x1136BA4
+.skip 0x1
+
+# 0x1136BA5
+variable __1136BA5
+
+# 0x1136BA5
+.skip 0x1
+
+# 0x1136BA6
+variable __1136BA6
+
+# 0x1136BA6
+.skip 0x1
+
+# 0x1136BA7
+variable __1136BA7
+
+# 0x1136BA7
+.skip 0x52
+
+# 0x1136BF9
+variable __1136BF9
+
+# 0x1136BF9
+.skip 0x74
+
+# 0x1136C6D
+variable __1136C6D
+
+# 0x1136C6D
+.skip 0x2B
+
+# 0x1136C98
+variable __1136C98
+
+# 0x1136C98
+.skip 0x1
+
+# 0x1136C99
+variable __1136C99
+
+# 0x1136C99
+.skip 0xF7
+
+# 0x1136D90
+variable __1136D90
+
+# 0x1136D90
+.skip 0x200
+
+# 0x1136F90
+variable __1136F90
+
+# 0x1136F90
+.skip 0x2
+
+# 0x1136F92
+variable __1136F92
+
+# 0x1136F92
+.skip 0x2
+
+# 0x1136F94
+variable __1136F94
+
+# 0x1136F94
+.skip 0x2
+
+# 0x1136F96
+variable __1136F96
+
+# 0x1136F96
+.skip 0x2
+
+# 0x1136F98
+variable __1136F98
+
+# 0x1136F98
+.skip 0x4
+
+# 0x1136F9C
+variable __1136F9C
+
+# 0x1136F9C
+.skip 0x2
+
+# 0x1136F9E
+variable __1136F9E
+
+# 0x1136F9E
+.skip 0x2
+
+# 0x1136FA0
+variable __1136FA0
+
+# 0x1136FA0
+.skip 0x2
+
+# 0x1136FA2
+variable __1136FA2
+
+# 0x1136FA2
+.skip 0x2
+
+# 0x1136FA4
+variable __1136FA4
+
+# 0x1136FA4
+.skip 0x2
+
+# 0x1136FA6
+variable __1136FA6
+
+# 0x1136FA6
+.skip 0x1
+
+# 0x1136FA7
+variable __1136FA7
+
+# 0x1136FA7
+.skip 0x1
+
+# 0x1136FA8
+variable __1136FA8
+
+# 0x1136FA8
+.skip 0x100
+
+# 0x11370A8
+variable __11370A8
+
+# 0x11370A8
+.skip 0x1
+
+# 0x11370A9
+variable __11370A9
+
+# 0x11370A9
+.skip 0x3
+
+# 0x11370AC
+variable __11370AC
+
+# 0x11370AC
+.skip 0x66A8
+
+# 0x113D754
+variable __113D754
+
+# 0x113D754
+.skip 0x4
+
+# 0x113D758
+variable __113D758
+
+# 0x113D758
+.skip 0xC8
+
+# 0x113D820
+variable __113D820
+
+# 0x113D820
+.skip 0x2C
+
+# 0x113D84C
+variable __113D84C
+
+# 0x113D84C
+.skip 0x2
+
+# 0x113D84E
+variable __113D84E
+
+# 0x113D84E
+.skip 0x2
+
+# 0x113D850
+variable __113D850
+
+# 0x113D850
+.skip 0x2
+
+# 0x113D852
+variable __113D852
+
+# 0x113D852
+.skip 0x2
+
+# 0x113D854
+variable __113D854
+
+# 0x113D854
+.skip 0x2
+
+# 0x113D856
+variable __113D856
+
+# 0x113D856
+.skip 0x2
+
+# 0x113D858
+variable __113D858
+
+# 0x113D858
+.skip 0x2
+
+# 0x113D85A
+variable __113D85A
+
+# 0x113D85A
+.skip 0x2
+
+# 0x113D85C
+variable __113D85C
+
+# 0x113D85C
+.skip 0x2
+
+# 0x113D85E
+variable __113D85E
+
+# 0x113D85E
+.skip 0x2
+
+# 0x113D860
+variable __113D860
+
+# 0x113D860
+.skip 0x2
+
+# 0x113D862
+variable __113D862
+
+# 0x113D862
+.skip 0x3E
+
+# 0x113D8A0
+variable __113D8A0
+
+# 0x113D8A0
+.skip 0x2
+
+# 0x113D8A2
+variable __113D8A2
+
+# 0x113D8A2
+.skip 0x2
+
+# 0x113D8A4
+variable __113D8A4
+
+# 0x113D8A4
+.skip 0x2
+
+# 0x113D8A6
+variable __113D8A6
+
+# 0x113D8A6
+.skip 0x2
+
+# 0x113D8A8
+variable __113D8A8
+
+# 0x113D8A8
+.skip 0x4
+
+# 0x113D8AC
+variable __113D8AC
+
+# 0x113D8AC
+.skip 0x4
+
+# 0x113D8B0
+variable __113D8B0
+
+# 0x113D8B0
+.skip 0x4
+
+# 0x113D8B4
+variable __113D8B4
+
+# 0x113D8B4
+.skip 0x4
+
+# 0x113D8B8
+variable __113D8B8
+
+# 0x113D8B8
+.skip 0x4
+
+# 0x113D8BC
+variable __113D8BC
+
+# 0x113D8BC
+.skip 0x4
+
+# 0x113D8C0
+variable __113D8C0
+
+# 0x113D8C0
+.skip 0x4
+
+# 0x113D8C4
+variable __113D8C4
+
+# 0x113D8C4
+.skip 0x4
+
+# 0x113D8C8
+variable __113D8C8
+
+# 0x113D8C8
+.skip 0x8
+
+# 0x113D8D0
+variable __113D8D0
+
+# 0x113D8D0
+.skip 0x10
+
+# 0x113D8E0
+variable __113D8E0
+
+# 0x113D8E0
+.skip 0x8
+
+# 0x113D8E8
+variable __113D8E8
+
+# 0x113D8E8
+.skip 0xF8
+
+# 0x113D9E0
+variable __113D9E0
+
+# 0x113D9E0
+.skip 0x2
+
+# 0x113D9E2
+variable __113D9E2
+
+# 0x113D9E2
+.skip 0x2
+
+# 0x113D9E4
+variable __113D9E4
+
+# 0x113D9E4
+.skip 0x13C
+
+# 0x113DB20
+variable __113DB20
+
+# 0x113DB20
+.skip 0x140
+
+# 0x113DC60
+variable __113DC60
+
+# 0x113DC60
+.skip 0x4
+
+# 0x113DC64
+variable __113DC64
+
+# 0x113DC64
+.skip 0x4
+
+# 0x113DC68
+variable __113DC68
+
+# 0x113DC68
+.skip 0x4
+
+# 0x113DC6C
+variable __113DC6C
+
+# 0x113DC6C
+.skip 0x4
+
+# 0x113DC70
+variable __113DC70
+
+# 0x113DC70
+.skip 0x4
+
+# 0x113DC74
+variable __113DC74
+
+# 0x113DC74
+.skip 0x4
+
+# 0x113DC78
+variable __113DC78
+
+# 0x113DC78
+.skip 0x2
+
+# 0x113DC7A
+variable __113DC7A
+
+# 0x113DC7A
+.skip 0x2
+
+# 0x113DC7C
+variable __113DC7C
+
+# 0x113DC7C
+.skip 0x2
+
+# 0x113DC7E
+variable __113DC7E
+
+# 0x113DC7E
+.skip 0x2
+
+# 0x113DC80
+variable __113DC80
+
+# 0x113DC80
+.skip 0x2
+
+# 0x113DC82
+variable __113DC82
+
+# 0x113DC82
+.skip 0x2
+
+# 0x113DC84
+variable __113DC84
+
+# 0x113DC84
+.skip 0x2
+
+# 0x113DC86
+variable __113DC86
+
+# 0x113DC86
+.skip 0x4
+
+# 0x113DC8A
+variable __113DC8A
+
+# 0x113DC8A
+.skip 0x2
+
+# 0x113DC8C
+variable __113DC8C
+
+# 0x113DC8C
+.skip 0x80
+
+# 0x113DD0C
+variable __113DD0C
+
+# 0x113DD0C
+.skip 0x4
+
+# 0x113DD10
+variable __113DD10
+
+# 0x113DD10
+.skip 0x40
+
+# 0x113DD50
+variable __113DD50
+
+# 0x113DD50
+.skip 0x4
+
+# 0x113DD54
+variable __113DD54
+
+# 0x113DD54
+.skip 0x20
+
+# 0x113DD74
+variable __113DD74
+
+# 0x113DD74
+.skip 0x2
+
+# 0x113DD76
+variable __113DD76
+
+# 0x113DD76
+.skip 0x2
+
+# 0x113DD78
+variable __113DD78
+
+# 0x113DD78
+.skip 0x4
+
+# 0x113DD7C
+variable __113DD7C
+
+# 0x113DD7C
+.skip 0x4
+
+# 0x113DD80
+variable __113DD80
+
+# 0x113DD80
+.skip 0x2
+
+# 0x113DD82
+variable __113DD82
+
+# 0x113DD82
+.skip 0x2
+
+# 0x113DD84
+variable __113DD84
+
+# 0x113DD84
+.skip 0x2
+
+# 0x113DD86
+variable __113DD86
+
+# 0x113DD86
+.skip 0x4
+
+# 0x113DD8A
+variable __113DD8A
+
+# 0x113DD8A
+.skip 0x4
+
+# 0x113DD8E
+variable __113DD8E
+
+# 0x113DD8E
+.skip 0x4
+
+# 0x113DD92
+variable __113DD92
+
+# 0x113DD92
+.skip 0x2
+
+# 0x113DD94
+variable __113DD94
+
+# 0x113DD94
+.skip 0x2
+
+# 0x113DD96
+variable __113DD96
+
+# 0x113DD96
+.skip 0x2
+
+# 0x113DD98
+variable __113DD98
+
+# 0x113DD98
+.skip 0x1
+
+# 0x113DD99
+variable __113DD99
+
+# 0x113DD99
+.skip 0x1
+
+# 0x113DD9A
+variable __113DD9A
+
+# 0x113DD9A
+.skip 0x42
+
+# 0x113DDDC
+variable __113DDDC
+
+# 0x113DDDC
+.skip 0x4
+
+# 0x113DDE0
+variable __113DDE0
+
+# 0x113DDE0
+.skip 0x4
+
+# 0x113DDE4
+variable __113DDE4
+
+# 0x113DDE4
+.skip 0x4
+
+# 0x113DDE8
+variable __113DDE8
+
+# 0x113DDE8
+.skip 0x4
+
+# 0x113DDEC
+variable __113DDEC
+
+# 0x113DDEC
+.skip 0x4
+
+# 0x113DDF0
+variable __113DDF0
+
+# 0x113DDF0
+.skip 0x4
+
+# 0x113DDF4
+variable __113DDF4
+
+# 0x113DDF4
+.skip 0x2
+
+# 0x113DDF6
+variable __113DDF6
+
+# 0x113DDF6
+.skip 0x2
+
+# 0x113DDF8
+variable __113DDF8
+
+# 0x113DDF8
+.skip 0x2
+
+# 0x113DDFA
+variable __113DDFA
+
+# 0x113DDFA
+.skip 0x6
+
+# 0x113DE00
+variable __113DE00
+
+# 0x113DE00
+.skip 0x4
+
+# 0x113DE04
+variable __113DE04
+
+# 0x113DE04
+.skip 0x4
+
+# 0x113DE08
+variable __113DE08
+
+# 0x113DE08
+.skip 0x4
+
+# 0x113DE0C
+variable __113DE0C
+
+# 0x113DE0C
+.skip 0x4
+
+# 0x113DE10
+variable __113DE10
+
+# 0x113DE10
+.skip 0x4
+
+# 0x113DE14
+variable __113DE14
+
+# 0x113DE14
+.skip 0x4
+
+# 0x113DE18
+variable __113DE18
+
+# 0x113DE18
+.skip 0x4
+
+# 0x113DE1C
+variable __113DE1C
+
+# 0x113DE1C
+.skip 0x4
+
+# 0x113DE20
+variable __113DE20
+
+# 0x113DE20
+.skip 0x4
+
+# 0x113DE24
+variable __113DE24
+
+# 0x113DE24
+.skip 0x4
+
+# 0x113DE28
+variable __113DE28
+
+# 0x113DE28
+.skip 0x4
+
+# 0x113DE2C
+variable __113DE2C
+
+# 0x113DE2C
+.skip 0x4
+
+# 0x113DE30
+variable __113DE30
+
+# 0x113DE30
+.skip 0x4
+
+# 0x113DE34
+variable __113DE34
+
+# 0x113DE34
+.skip 0x4
+
+# 0x113DE38
+variable __113DE38
+
+# 0x113DE38
+.skip 0x4
+
+# 0x113DE3C
+variable __113DE3C
+
+# 0x113DE3C
+.skip 0x4
+
+# 0x113DE40
+variable __113DE40
+
+# 0x113DE40
+.skip 0x4
+
+# 0x113DE44
+variable __113DE44
+
+# 0x113DE44
+.skip 0x4
+
+# 0x113DE48
+variable __113DE48
+
+# 0x113DE48
+.skip 0x4
+
+# 0x113DE4C
+variable __113DE4C
+
+# 0x113DE4C
+.skip 0x4
+
+# 0x113DE50
+variable __113DE50
+
+# 0x113DE50
+.skip 0x4
+
+# 0x113DE54
+variable __113DE54
+
+# 0x113DE54
+.skip 0x4
+
+# 0x113DE58
+variable __113DE58
+
+# 0x113DE58
+.skip 0x4
+
+# 0x113DE5C
+variable __113DE5C
+
+# 0x113DE5C
+.skip 0x4
+
+# 0x113DE60
+variable __113DE60
+
+# 0x113DE60
+.skip 0x4
+
+# 0x113DE64
+variable __113DE64
+
+# 0x113DE64
+.skip 0x4
+
+# 0x113DE68
+variable __113DE68
+
+# 0x113DE68
+.skip 0x4
+
+# 0x113DE6C
+variable __113DE6C
+
+# 0x113DE6C
+.skip 0x4
+
+# 0x113DE70
+variable __113DE70
+
+# 0x113DE70
+.skip 0x4
+
+# 0x113DE74
+variable __113DE74
+
+# 0x113DE74
+.skip 0x4
+
+# 0x113DE78
+variable __113DE78
+
+# 0x113DE78
+.skip 0x4
+
+# 0x113DE7C
+variable __113DE7C
+
+# 0x113DE7C
+.skip 0x4
+
+# 0x113DE80
+variable __113DE80
+
+# 0x113DE80
+.skip 0x4
+
+# 0x113DE84
+variable __113DE84
+
+# 0x113DE84
+.skip 0x4
+
+# 0x113DE88
+variable __113DE88
+
+# 0x113DE88
+.skip 0x4
+
+# 0x113DE8C
+variable __113DE8C
+
+# 0x113DE8C
+.skip 0x4
+
+# 0x113DE90
+variable __113DE90
+
+# 0x113DE90
+.skip 0x4
+
+# 0x113DE94
+variable __113DE94
+
+# 0x113DE94
+.skip 0x4
+
+# 0x113DE98
+variable __113DE98
+
+# 0x113DE98
+.skip 0x4
+
+# 0x113DE9C
+variable __113DE9C
+
+# 0x113DE9C
+.skip 0x4
+
+# 0x113DEA0
+variable __113DEA0
+
+# 0x113DEA0
+.skip 0x4
+
+# 0x113DEA4
+variable __113DEA4
+
+# 0x113DEA4
+.skip 0x4
+
+# 0x113DEA8
+variable __113DEA8
+
+# 0x113DEA8
+.skip 0x4
+
+# 0x113DEAC
+variable __113DEAC
+
+# 0x113DEAC
+.skip 0x4
+
+# 0x113DEB0
+variable __113DEB0
+
+# 0x113DEB0
+.skip 0x4
+
+# 0x113DEB4
+variable __113DEB4
+
+# 0x113DEB4
+.skip 0x4
+
+# 0x113DEB8
+variable __113DEB8
+
+# 0x113DEB8
+.skip 0x8
+
+# 0x113DEC0
+variable __113DEC0
+
+# 0x113DEC0
+.skip 0x4
+
+# 0x113DEC4
+variable __113DEC4
+
+# 0x113DEC4
+.skip 0x4
+
+# 0x113DEC8
+variable __113DEC8
+
+# 0x113DEC8
+.skip 0x4
+
+# 0x113DECC
+variable __113DECC
+
+# 0x113DECC
+.skip 0x4
+
+# 0x113DED0
+variable __113DED0
+
+# 0x113DED0
+.skip 0x4
+
+# 0x113DED4
+variable __113DED4
+
+# 0x113DED4
+.skip 0x8
+
+# 0x113DEDC
+variable __113DEDC
+
+# 0x113DEDC
+.skip 0x10
+
+# 0x113DEEC
+variable __113DEEC
+
+# 0x113DEEC
+.skip 0x8
+
+# 0x113DEF4
+variable __113DEF4
+
+# 0x113DEF4
+.skip 0x4
+
+# 0x113DEF8
+variable __113DEF8
+
+# 0x113DEF8
+.skip 0x4
+
+# 0x113DEFC
+variable __113DEFC
+
+# 0x113DEFC
+.skip 0x8
+
+# 0x113DF04
+variable __113DF04
+
+# 0x113DF04
+.skip 0x4
+
+# 0x113DF08
+variable __113DF08
+
+# 0x113DF08
+.skip 0x8
+
+# 0x113DF10
+variable __113DF10
+
+# 0x113DF10
+.skip 0x4
+
+# 0x113DF14
+variable __113DF14
+
+# 0x113DF14
+.skip 0x4
+
+# 0x113DF18
+variable __113DF18
+
+# 0x113DF18
+.skip 0x4
+
+# 0x113DF1C
+variable __113DF1C
+
+# 0x113DF1C
+.skip 0x4
+
+# 0x113DF20
+variable __113DF20
+
+# 0x113DF20
+.skip 0x4
+
+# 0x113DF24
+variable __113DF24
+
+# 0x113DF24
+.skip 0x4
+
+# 0x113DF28
+variable __113DF28
+
+# 0x113DF28
+.skip 0xC
+
+# 0x113DF34
+variable __113DF34
+
+# 0x113DF34
+.skip 0x10
+
+# 0x113DF44
+variable __113DF44
+
+# 0x113DF44
+.skip 0x8
+
+# 0x113DF4C
+variable __113DF4C
+
+# 0x113DF4C
+.skip 0x4
+
+# 0x113DF50
+variable __113DF50
+
+# 0x113DF50
+.skip 0x4
+
+# 0x113DF54
+variable __113DF54
+
+# 0x113DF54
+.skip 0x104
+
+# 0x113E058
+variable __113E058
+
+# 0x113E058
+.skip 0x4
+
+# 0x113E05C
+variable __113E05C
+
+# 0x113E05C
+.skip 0x4
+
+# 0x113E060
+variable __113E060
+
+# 0x113E060
+.skip 0x2
+
+# 0x113E062
+variable __113E062
+
+# 0x113E062
+.skip 0x2
+
+# 0x113E064
+variable __113E064
+
+# 0x113E064
+.skip 0x1C
+
+# 0x113E080
+variable __113E080
+
+# 0x113E080
+.skip 0x4
+
+# 0x113E084
+variable __113E084
+
+# 0x113E084
+.skip 0x4
+
+# 0x113E088
+variable __113E088
+
+# 0x113E088
+.skip 0x4
+
+# 0x113E08C
+variable __113E08C
+
+# 0x113E08C
+.skip 0x4
+
+# 0x113E090
+variable __113E090
+
+# 0x113E090
+.skip 0x4
+
+# 0x113E094
+variable __113E094
+
+# 0x113E094
+.skip 0x4
+
+# 0x113E098
+variable __113E098
+
+# 0x113E098
+.skip 0x4
+
+# 0x113E09C
+variable __113E09C
+
+# 0x113E09C
+.skip 0x4
+
+# 0x113E0A0
+variable __113E0A0
+
+# 0x113E0A0
+.skip 0x4
+
+# 0x113E0A4
+variable __113E0A4
+
+# 0x113E0A4
+.skip 0x4
+
+# 0x113E0A8
+variable __113E0A8
+
+# 0x113E0A8
+.skip 0x4
+
+# 0x113E0AC
+variable __113E0AC
+
+# 0x113E0AC
+.skip 0x4
+
+# 0x113E0B0
+variable __113E0B0
+
+# 0x113E0B0
+.skip 0x4
+
+# 0x113E0B4
+variable __113E0B4
+
+# 0x113E0B4
+.skip 0x4
+
+# 0x113E0B8
+variable __113E0B8
+
+# 0x113E0B8
+.skip 0x4
+
+# 0x113E0BC
+variable __113E0BC
+
+# 0x113E0BC
+.skip 0x4
+
+# 0x113E0C0
+variable __113E0C0
+
+# 0x113E0C0
+.skip 0x4
+
+# 0x113E0C4
+variable __113E0C4
+
+# 0x113E0C4
+.skip 0x1C
+
+# 0x113E0E0
+variable __113E0E0
+
+# 0x113E0E0
+.skip 0x100
+
+# 0x113E1E0
+variable __113E1E0
+
+# 0x113E1E0
+.skip 0x4
+
+# 0x113E1E4
+variable __113E1E4
+
+# 0x113E1E4
+.skip 0x1C
+
+# 0x113E200
+variable __113E200
+
+# 0x113E200
+.skip 0x4
+
+# 0x113E204
+variable __113E204
+
+# 0x113E204
+.skip 0x4
+
+# 0x113E208
+variable __113E208
+
+# 0x113E208
+.skip 0x4
+
+# 0x113E20C
+variable __113E20C
+
+# 0x113E20C
+.skip 0x4
+
+# 0x113E210
+variable __113E210
+
+# 0x113E210
+.skip 0x2
+
+# 0x113E212
+variable __113E212
+
+# 0x113E212
+.skip 0x2
+
+# 0x113E214
+variable __113E214
+
+# 0x113E214
+.skip 0x4
+
+# 0x113E218
+variable __113E218
+
+# 0x113E218
+.skip 0x4
+
+# 0x113E21C
+variable __113E21C
+
+# 0x113E21C
+.skip 0x4
+
+# 0x113E220
+variable __113E220
+
+# 0x113E220
+.skip 0x4
+
+# 0x113E224
+variable __113E224
+
+# 0x113E224
+.skip 0x4
+
+# 0x113E228
+variable __113E228
+
+# 0x113E228
+.skip 0x50
+
+# 0x113E278
+variable __113E278
+
+# 0x113E278
+.skip 0x50
+
+# 0x113E2C8
+variable __113E2C8
+
+# 0x113E2C8
+.skip 0x4
+
+# 0x113E2CC
+variable __113E2CC
+
+# 0x113E2CC
+.skip 0x4
+
+# 0x113E2D0
+variable __113E2D0
+
+# 0x113E2D0
+.skip 0x4
+
+# 0x113E2D4
+variable __113E2D4
+
+# 0x113E2D4
+.skip 0x4
+
+# 0x113E2D8
+variable __113E2D8
+
+# 0x113E2D8
+.skip 0x4
+
+# 0x113E2DC
+variable __113E2DC
+
+# 0x113E2DC
+.skip 0x4
+
+# 0x113E2E0
+variable __113E2E0
+
+# 0x113E2E0
+.skip 0x4
+
+# 0x113E2E4
+variable __113E2E4
+
+# 0x113E2E4
+.skip 0x1C
+
+# 0x113E300
+variable __113E300
+
+# 0x113E300
+.skip 0x4
+
+# 0x113E304
+variable __113E304
+
+# 0x113E304
+.skip 0x1FC
+
+# 0x113E500
+variable __113E500
+
+# 0x113E500
+.skip 0x20
+
+# 0x113E520
+variable __113E520
+
+# 0x113E520
+.skip 0x100
+
+# 0x113E620
+variable __113E620
+
+# 0x113E620
+.skip 0x104
+
+# 0x113E724
+variable __113E724
+
+# 0x113E724
+.skip 0x4
+
+# 0x113E728
+variable __113E728
+
+# 0x113E728
+.skip 0x4
+
+# 0x113E72C
+variable __113E72C
+
+# 0x113E72C
+.skip 0x4
+
+# 0x113E730
+variable __113E730
+
+# 0x113E730
+.skip 0x10
+
+# 0x113E740
+variable __113E740
+
+# 0x113E740
+.skip 0x100
+
+# 0x113E840
+variable __113E840
+
+# 0x113E840
+.skip 0x4
+
+# 0x113E844
+variable __113E844
+
+# 0x113E844
+.skip 0x4
+
+# 0x113E848
+variable __113E848
+
+# 0x113E848
+.skip 0x4
+
+# 0x113E84C
+variable __113E84C
+
+# 0x113E84C
+.skip 0x14
+
+# 0x113E860
+variable __113E860
+
+# 0x113E860
+.skip 0x4
+
+# 0x113E864
+variable __113E864
+
+# 0x113E864
+.skip 0x4
+
+# 0x113E868
+variable __113E868
+
+# 0x113E868
+.skip 0x4
+
+# 0x113E86C
+variable __113E86C
+
+# 0x113E86C
+.skip 0x4
+
+# 0x113E870
+variable __113E870
+
+# 0x113E870
+.skip 0x4
+
+# 0x113E874
+variable __113E874
+
+# 0x113E874
+.skip 0x4
+
+# 0x113E878
+variable __113E878
+
+# 0x113E878
+.skip 0x4
+
+# 0x113E87C
+variable __113E87C
+
+# 0x113E87C
+.skip 0x4
+
+# 0x113E880
+variable __113E880, 0x20
+# 0x113E8A0
+variable __113E8A0
+
+# 0x113E8A0
+.skip 0x20
+
+# 0x113E8C0
+variable __113E8C0
+
+# 0x113E8C0
+.skip 0x104
+
+# 0x113E9C4
+variable __113E9C4
+
+# 0x113E9C4
+.skip 0x4
+
+# 0x113E9C8
+variable __113E9C8
+
+# 0x113E9C8
+.skip 0x4
+
+# 0x113E9CC
+variable __113E9CC
+
+# 0x113E9CC
+.skip 0x4
+
+# 0x113E9D0
+variable __113E9D0
+
+# 0x113E9D0
+.skip 0x4
+
+# 0x113E9D4
+variable __113E9D4
+
+# 0x113E9D4
+.skip 0x4
+
+# 0x113E9D8
+variable __113E9D8
+
+# 0x113E9D8
+.skip 0x4
+
+# 0x113E9DC
+variable __113E9DC
+
+# 0x113E9DC
+.skip 0x4
+
+# 0x113E9E0
+variable __113E9E0
+
+# 0x113E9E0
+.skip 0x300
+
+# 0x113ECE0
+variable __113ECE0
+
+# 0x113ECE0
+.skip 0x4
+
+# 0x113ECE4
+variable __113ECE4
+
+# 0x113ECE4
+.skip 0x4
+
+# 0x113ECE8
+variable __113ECE8
+
+# 0x113ECE8
+.skip 0x4
+
+# 0x113ECEC
+variable __113ECEC
+
+# 0x113ECEC
+.skip 0x4
+
+# 0x113ECF0
+variable __113ECF0
+
+# 0x113ECF0
+.skip 0x4
+
+# 0x113ECF4
+variable __113ECF4
+
+# 0x113ECF4
+.skip 0x2
+
+# 0x113ECF6
+variable __113ECF6
+
+# 0x113ECF6
+.skip 0x2
+
+# 0x113ECF8
+variable __113ECF8
+
+# 0x113ECF8
+.skip 0x4
+
+# 0x113ECFC
+variable __113ECFC
+
+# 0x113ECFC
+.skip 0x4
+
+# 0x113ED00
+variable __113ED00
+
+# 0x113ED00
+.skip 0x4
+
+# 0x113ED04
+variable __113ED04
+
+# 0x113ED04
+.skip 0x4
+
+# 0x113ED08
+variable __113ED08
+
+# 0x113ED08
+.skip 0x4
+
+# 0x113ED0C
+variable __113ED0C
+
+# 0x113ED0C
+.skip 0x14
+
+# 0x113ED20
+variable __113ED20
+
+# 0x113ED20
+.skip 0x400
+
+# 0x113F120
+variable __113F120
+
+# 0x113F120
+.skip 0x4
+
+# 0x113F124
+variable __113F124
+
+# 0x113F124
+.skip 0x4
+
+# 0x113F128
+variable __113F128
+
+# 0x113F128
+.skip 0x18
+
+# 0x113F140
+variable __113F140
+
+# 0x113F140
+.skip 0xEA8
+
+# 0x113FFE8
+variable __113FFE8
+
+# 0x113FFE8
+.skip 0x4
+
+# 0x113FFEC
+variable __113FFEC
+
+# 0x113FFEC
+.skip 0x4
+
+# 0x113FFF0
+variable __113FFF0
+
+# 0x113FFF0
+.skip 0x4
+
+# 0x113FFF4
+variable __113FFF4
+
+# 0x113FFF4
+.skip 0x4
+
+# 0x113FFF8
+variable __113FFF8
+
+# 0x113FFF8
+.skip 0x4
+
+# 0x113FFFC
+variable __113FFFC
+
+# 0x113FFFC
+.skip 0x4
+
+# 0x1140000
+variable __1140000
+
+# 0x1140000
+.skip 0x4
+
+# 0x1140004
+variable __1140004
+
+# 0x1140004
+.skip 0x4
+
+# 0x1140008
+variable __1140008
+
+# 0x1140008
+.skip 0x18
+
+# 0x1140020
+variable __1140020
+
+# 0x1140020
+.skip 0x2
+
+# 0x1140022
+variable __1140022
+
+# 0x1140022
+.skip 0x2
+
+# 0x1140024
+variable __1140024
+
+# 0x1140024
+.skip 0x5FC
+
+# 0x1140620
+variable __1140620
+
+# 0x1140620
+.skip 0x4
+
+# 0x1140624
+variable __1140624
+
+# 0x1140624
+.skip 0x4
+
+# 0x1140628
+variable __1140628
+
+# 0x1140628
+.skip 0x4
+
+# 0x114062C
+variable __114062C
+
+# 0x114062C
+.skip 0x14
+
+# 0x1140640
+variable __1140640
+
+# 0x1140640
+.skip 0x40
+
+# 0x1140680
+variable __1140680
+
+# 0x1140680
+.skip 0x2
+
+# 0x1140682
+variable __1140682
+
+# 0x1140682
+.skip 0x2
+
+# 0x1140684
+variable __1140684
+
+# 0x1140684
+.skip 0x4
+
+# 0x1140688
+variable __1140688
+
+# 0x1140688
+.skip 0x4
+
+# 0x114068C
+variable __114068C
+
+# 0x114068C
+.skip 0x2
+
+# 0x114068E
+variable __114068E
+
+# 0x114068E
+.skip 0x2
+
+# 0x1140690
+variable __1140690
+
+# 0x1140690
+.skip 0x4
+
+# 0x1140694
+variable __1140694
+
+# 0x1140694
+.skip 0xC
+
+# 0x11406A0
+variable __11406A0
+
+# 0x11406A0
+.skip 0x14
+
+# 0x11406B4
+variable __11406B4
+
+# 0x11406B4
+.skip 0x4
+
+# 0x11406B8
+variable __11406B8
+
+# 0x11406B8
+.skip 0x4
+
+# 0x11406BC
+variable __11406BC
+
+# 0x11406BC
+.skip 0x44
+
+# 0x1140700
+variable __1140700
+
+# 0x1140700
+.skip 0x4
+
+# 0x1140704
+variable __1140704
+
+# 0x1140704
+.skip 0x4
+
+# 0x1140708
+variable __1140708
+
+# 0x1140708
+.skip 0x4
+
+# 0x114070C
+variable __114070C
+
+# 0x114070C
+.skip 0x4
+
+# 0x1140710
+variable __1140710
+
+# 0x1140710
+.skip 0x4
+
+# 0x1140714
+variable __1140714
+
+# 0x1140714
+.skip 0x4
+
+# 0x1140718
+variable __1140718
+
+# 0x1140718
+.skip 0x4
+
+# 0x114071C
+variable __114071C
+
+# 0x114071C
+.skip 0x4
+
+# 0x1140720
+variable __1140720
+
+# 0x1140720
+.skip 0x20
+
+# 0x1140740
+variable __1140740
+
+# 0x1140740
+.skip 0x1D
+
+# 0x114075D
+variable __114075D
+
+# 0x114075D
+.skip 0xD
+
+# 0x114076A
+variable __114076A
+
+# 0x114076A
+.skip 0xC
+
+# 0x1140776
+variable __1140776
+
+# 0x1140776
+.skip 0x67
+
+# 0x11407DD
+variable __11407DD
+
+# 0x11407DD
+.skip 0x2B
+
+# 0x1140808
+variable __1140808
+
+# 0x1140808
+.skip 0x3
+
+# 0x114080B
+variable __114080B
+
+# 0x114080B
+.skip 0x2
+
+# 0x114080D
+variable __114080D
+
+# 0x114080D
+.skip 0x3
+
+# 0x1140810
+variable __1140810
+
+# 0x1140810
+.skip 0x2
+
+# 0x1140812
+variable __1140812
+
+# 0x1140812
+.skip 0x2E
+
+# 0x1140840
+variable __1140840
+
+# 0x1140840
+.skip 0x4
+
+# 0x1140844
+variable __1140844
+
+# 0x1140844
+.skip 0x1
+
+# 0x1140845
+variable __1140845
+
+# 0x1140845
+.skip 0x1
+
+# 0x1140846
+variable __1140846
+
+# 0x1140846
+.skip 0x1
+
+# 0x1140847
+variable __1140847
+
+# 0x1140847
+.skip 0x1
+
+# 0x1140848
+variable __1140848
+
+# 0x1140848
+.skip 0x4
+
+# 0x114084C
+variable __114084C
+
+# 0x114084C
+.skip 0x4
+
+# 0x1140850
+variable __1140850
+
+# 0x1140850
+.skip 0x4
+
+# 0x1140854
+variable __1140854
+
+# 0x1140854
+.skip 0xC
+
+# 0x1140860
+variable __1140860
+
+# 0x1140860
+.skip 0x1
+
+# 0x1140861
+variable __1140861
+
+# 0x1140861
+.skip 0x1
+
+# 0x1140862
+variable __1140862
+
+# 0x1140862
+.skip 0x3FE
+
+# 0x1140C60
+variable __1140C60
+
+# 0x1140C60
+.skip 0x180
+
+# 0x1140DE0
+variable __1140DE0
+
+# 0x1140DE0
+.skip 0x4
+
+# 0x1140DE4
+variable __1140DE4
+
+# 0x1140DE4
+.skip 0x4
+
+# 0x1140DE8
+variable __1140DE8
+
+# 0x1140DE8
+.skip 0x18
+
+# 0x1140E00
+variable __1140E00
+
+# 0x1140E00
+.skip 0x24
+
+# 0x1140E24
+variable __1140E24
+
+# 0x1140E24
+.skip 0x2
+
+# 0x1140E26
+variable __1140E26
+
+# 0x1140E26
+.skip 0x42
+
+# 0x1140E68
+variable __1140E68
+
+# 0x1140E68
+.skip 0x4
+
+# 0x1140E6C
+variable __1140E6C
+
+# 0x1140E6C
+.skip 0x4
+
+# 0x1140E70
+variable __1140E70
+
+# 0x1140E70
+.skip 0x24
+
+# 0x1140E94
+variable __1140E94
+
+# 0x1140E94
+.skip 0x4
+
+# 0x1140E98
+variable __1140E98
+
+# 0x1140E98
+.skip 0x8
+
+# 0x1140EA0
+variable __1140EA0
+
+# 0x1140EA0
+.skip 0x4
+
+# 0x1140EA4
+variable __1140EA4
+
+# 0x1140EA4
+.skip 0x4
+
+# 0x1140EA8
+variable __1140EA8
+
+# 0x1140EA8
+.skip 0x4
+
+# 0x1140EAC
+variable __1140EAC
+
+# 0x1140EAC
+.skip 0x14
+
+# 0x1140EC0
+variable __1140EC0
+
+# 0x1140EC0
+.skip 0x4
+
+# 0x1140EC4
+variable __1140EC4
+
+# 0x1140EC4
+.skip 0x4
+
+# 0x1140EC8
+variable __1140EC8
+
+# 0x1140EC8
+.skip 0x108
+
+# 0x1140FD0
+variable __1140FD0
+
+# 0x1140FD0
+.skip 0x4
+
+# 0x1140FD4
+variable __1140FD4
+
+# 0x1140FD4
+.skip 0x4
+
+# 0x1140FD8
+variable __1140FD8
+
+# 0x1140FD8
+.skip 0x4
+
+# 0x1140FDC
+variable __1140FDC
+
+# 0x1140FDC
+.skip 0x4
+
+# 0x1140FE0
+variable __1140FE0
+
+# 0x1140FE0
+.skip 0x4
+
+# 0x1140FE4
+variable __1140FE4
+
+# 0x1140FE4
+.skip 0x14
+
+# 0x1140FF8
+variable __1140FF8
+
+# 0x1140FF8
+.skip 0x14
+
+# 0x114100C
+variable __114100C
+
+# 0x114100C
+.skip 0x4
+
+# 0x1141010
+variable __1141010
+
+# 0x1141010
+.skip 0x4
+
+# 0x1141014
+variable __1141014
+
+# 0x1141014
+.skip 0x4
+
+# 0x1141018
+variable __1141018
+
+# 0x1141018
+.skip 0x4
+
+# 0x114101C
+variable __114101C
+
+# 0x114101C
+.skip 0x4
+
+# 0x1141020
+variable __1141020
+
+# 0x1141020
+.skip 0x4
+
+# 0x1141024
+variable __1141024
+
+# 0x1141024
+.skip 0x4
+
+# 0x1141028
+variable __1141028
+
+# 0x1141028
+.skip 0x448
+
+# 0x1141470
+variable __1141470
+
+# 0x1141470
+.skip 0x10
+
+# 0x1141480
+variable __1141480
+
+# 0x1141480
+.skip 0xC
+
+# 0x114148C
+variable __114148C
+
+# 0x114148C
+.skip 0x14
+
+# 0x11414A0
+variable __11414A0
+
+# 0x11414A0
+.skip 0x100
+
+# 0x11415A0
+variable __11415A0
+
+# 0x11415A0
+.skip 0x1
+
+# 0x11415A1
+variable __11415A1
+
+# 0x11415A1
+.skip 0x103
+
+# 0x11416A4
+variable __11416A4
+
+# 0x11416A4
+.skip 0x4
+
+# 0x11416A8
+variable __11416A8
+
+# 0x11416A8
+.skip 0x1018
+
+# 0x11426C0
+variable __11426C0
+
+# 0x11426C0
+.skip 0x20
+
+# 0x11426E0
+variable __11426E0
+
+# 0x11426E0
+.skip 0x4
+
+# 0x11426E4
+variable __11426E4
+
+# 0x11426E4
+.skip 0xFC
+
+# 0x11427E0
+variable __11427E0
+
+# 0x11427E0
+.skip 0x4
+
+# 0x11427E4
+variable __11427E4
+
+# 0x11427E4
+.skip 0x4
+
+# 0x11427E8
+variable __11427E8
+
+# 0x11427E8
+.skip 0x4
+
+# 0x11427EC
+variable __11427EC
+
+# 0x11427EC
+.skip 0x4
+
+# 0x11427F0
+variable __11427F0
+
+# 0x11427F0
+.skip 0x4
+
+# 0x11427F4
+variable __11427F4
+
+# 0x11427F4
+.skip 0x4
+
+# 0x11427F8
+variable __11427F8
+
+# 0x11427F8
+.skip 0x4
+
+# 0x11427FC
+variable __11427FC
+
+# 0x11427FC
+.skip 0x4
+
+# 0x1142800
+variable __1142800
+
+# 0x1142800
+.skip 0x4
+
+# 0x1142804
+variable __1142804
+
+# 0x1142804
+.skip 0x4
+
+# 0x1142808
+variable __1142808
+
+# 0x1142808
+.skip 0x4
+
+# 0x114280C
+variable __114280C
+
+# 0x114280C
+.skip 0x4
+
+# 0x1142810
+variable __1142810

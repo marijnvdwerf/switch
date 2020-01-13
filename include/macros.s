@@ -52,8 +52,64 @@
 .set size_esi, 32
 .set size_edi, 32
 
-.macro modrm a, b, c
-    .byte (\a << 6) | (\b << 3) | \c
+.equ image_base, 0x400000
+.set EOS, 0x00
+
+.macro modrm mod, b, c
+    .byte (\mod << 6) | (\b << 3) | \c
+.endm
+
+.macro mov_dword_ptr dest, imm
+    .byte 0xC7
+    modrm 0, 0, 5
+    .4byte \dest
+    .4byte \imm
+.endm
+
+.macro mov_dword_ptr_reg dest, disp, imm
+    .byte 0xC7
+    modrm 1, 0, mod_\dest
+    .byte \disp
+    .4byte \imm
+.endm
+
+.macro push_dword imm
+    .byte 0x68
+    .4byte \imm
+.endm
+
+.macro mov_offset reg, imm
+    .byte 0xB8 + mod_\reg
+    .4byte \imm
+.endm
+
+.macro op81 aVar, mod, dest, imm
+    .ifeqs "\dest", "eax"
+        .byte \aVar
+    .else
+        .byte 0x81
+        modrm 3, \mod, mod_\dest
+    .endif
+    .4byte \imm
+.endm
+
+.macro add_offset dest, imm
+    op81 0x05, 0, \dest, \imm
+.endm
+
+.macro sub_offset dest, imm
+    op81 0x2D, 5, \dest, \imm
+.endm
+
+.macro cmp_offset dest, imm
+    op81 0x3D, 7, \dest, \imm
+.endm
+
+.macro cmp_dword_ptr_reg dest, disp, imm
+    .byte 0x81
+    modrm 1, 7, mod_\dest
+    .byte \disp
+    .4byte \imm
 .endm
 
 .macro mvcc_opcode op, op8, op32, dest, src
@@ -175,4 +231,41 @@
     .byte 0x66, 0x81, 0x7d
     .byte -0x1a
     .2byte 0xffff
+.endm
+
+.macro  DEFINE_GUID a, b, c, d1, d2, d3, d4, d5, d6, d7, d8
+    .4byte \a
+    .2byte \b, \c
+    .byte \d1, \d2, \d3, \d4, \d5, \d6, \d7, \d8
+.endm
+
+.macro  widget a, b, c, d, e, f, g, h
+    .byte \a, \b
+    .2byte \c, \d, \e, \f
+    .4byte \g
+    .2byte \h
+.endm
+
+.macro DATE a
+    .byte 123 + 11, \a
+.endm
+
+.macro MOVE_X a
+    .byte 0x01, \a
+.endm
+
+.macro FORMAT_NEWLINE_X_Y a, b
+    .byte 0x11, \a, \b
+.endm
+
+.macro FORMAT_INLINE_SPRITE a
+    .byte 23
+    .4byte \a
+.endm
+
+.macro variable name, size=0
+    .global \name
+\name:
+    .skip \size
+    .size  \name, \size
 .endm
