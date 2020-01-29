@@ -162,6 +162,10 @@
     mvcc_opcode cmp, 0x3a, 0x3b, \dest, \src
 .endm
 
+.macro msvc_xchg src, dest
+    mvcc_opcode xchg, 0x86, 0x87, \dest, \src
+.endm
+
 .macro msvc_mov dest, src
     mvcc_opcode mov, 0x8a, 0x8b, \dest, \src
 .endm

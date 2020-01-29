@@ -3268,7 +3268,7 @@ _sub_4723BD:
     mov ax, word ptr [ebx + edi - 1]                     # 004723D5
     cmp al, ah                                           # 004723DA
     jbe .L4723E5                                         # 004723DC
-    xchg ah, al                                          # 004723DE
+    msvc_xchg ah, al                                     # 004723DE
     mov word ptr [ebx + edi - 1], ax                     # 004723E0
 .L4723E5:
     inc ebx                                              # 004723E5
@@ -10327,7 +10327,7 @@ _sub_4775A5:
     jne .L47784A                                         # 00477872
 .L477874:
     msvc_mov bl, dl                                      # 00477874
-    xchg di, dx                                          # 00477876
+    msvc_xchg di, dx                                     # 00477876
     and edi, 0xff                                        # 00477879
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0047787F
     mov bp, word ptr [esi + 5]                           # 00477886
@@ -14035,7 +14035,7 @@ _sub_47A21E:
     pop eax                                              # 0047A2E8
     jb _sub_47A428                                       # 0047A2E9
     msvc_mov bl, dl                                      # 0047A2EF
-    xchg di, dx                                          # 0047A2F1
+    msvc_xchg di, dx                                     # 0047A2F1
     and edi, 0xff                                        # 0047A2F4
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0047A2FA
     mov bp, word ptr [esi + 5]                           # 0047A301
@@ -14194,7 +14194,7 @@ _sub_47A42F:
     pop eax                                              # 0047A4F9
     jb _sub_47A5DF                                       # 0047A4FA
     msvc_mov bl, dl                                      # 0047A500
-    xchg di, dx                                          # 0047A502
+    msvc_xchg di, dx                                     # 0047A502
     and edi, 0xff                                        # 0047A505
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0047A50B
     mov bp, word ptr [esi + 5]                           # 0047A512
@@ -15381,7 +15381,7 @@ _sub_47B336:
     test byte ptr [esi + 4], 0x80                        # 0047B3F5
     je _sub_47B60F                                       # 0047B3F9
     msvc_mov bl, dl                                      # 0047B3FF
-    xchg di, dx                                          # 0047B401
+    msvc_xchg di, dx                                     # 0047B401
     and edi, 0xff                                        # 0047B404
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0047B40A
     mov bp, word ptr [esi + 5]                           # 0047B411
@@ -15685,7 +15685,7 @@ _sub_47B615:
     cmp dh, byte ptr [0x112c2f3]                         # 0047B6AF
     jne .L47B69A                                         # 0047B6B5
     msvc_mov bl, dl                                      # 0047B6B7
-    xchg di, dx                                          # 0047B6B9
+    msvc_xchg di, dx                                     # 0047B6B9
     and edi, 0xff                                        # 0047B6BC
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0047B6C2
     mov bp, word ptr [esi + 5]                           # 0047B6C9
@@ -15888,7 +15888,7 @@ _sub_47B7CC:
     cmp dh, byte ptr [0x112c2f3]                         # 0047B866
     jne .L47B851                                         # 0047B86C
     msvc_mov bl, dl                                      # 0047B86E
-    xchg di, dx                                          # 0047B870
+    msvc_xchg di, dx                                     # 0047B870
     and edi, 0xff                                        # 0047B873
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0047B879
     mov bp, word ptr [esi + 5]                           # 0047B880
@@ -16522,7 +16522,7 @@ _sub_47BD6D:
     push ebx                                             # 0047BEF4
     push ecx                                             # 0047BEF5
     msvc_mov bl, dl                                      # 0047BEF6
-    xchg di, dx                                          # 0047BEF8
+    msvc_xchg di, dx                                     # 0047BEF8
     and edi, 0xff                                        # 0047BEFB
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0047BF01
     mov bp, word ptr [esi + 5]                           # 0047BF08
@@ -19110,8 +19110,8 @@ _sub_47DA8D:
     shr ax, 5                                            # 0047DE6D
     shr cx, 5                                            # 0047DE71
     shr dx, 3                                            # 0047DE75
-    xchg ah, al                                          # 0047DE79
-    xchg ch, cl                                          # 0047DE7B
+    msvc_xchg ah, al                                     # 0047DE79
+    msvc_xchg ch, cl                                     # 0047DE7B
     shl al, 7                                            # 0047DE7D
     shl cl, 7                                            # 0047DE80
     msvc_or cl, dl                                       # 0047DE83
@@ -19139,8 +19139,8 @@ _sub_47DA8D:
     shr ax, 5                                            # 0047DEDC
     shr cx, 5                                            # 0047DEE0
     shr dx, 3                                            # 0047DEE4
-    xchg ah, al                                          # 0047DEE8
-    xchg ch, cl                                          # 0047DEEA
+    msvc_xchg ah, al                                     # 0047DEE8
+    msvc_xchg ch, cl                                     # 0047DEEA
     shl al, 7                                            # 0047DEEC
     shl cl, 7                                            # 0047DEEF
     msvc_or cl, dl                                       # 0047DEF2

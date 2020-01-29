@@ -763,7 +763,7 @@ _sub_447A5F:
     add esi, 2                                           # 00447BF0
     msvc_sub ebx, eax                                    # 00447BF3
     msvc_xor eax, eax                                    # 00447BF5
-    xchg esi, ebx                                        # 00447BF7
+    msvc_xchg esi, ebx                                   # 00447BF7
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 00447BF9
     msvc_mov esi, ebx                                    # 00447BFB
     jmp .L447BC8                                         # 00447BFD
@@ -871,7 +871,7 @@ _sub_447D26:
     mov byte ptr [0x50b870], cl                          # 00447D56
     and cl, 0x7f                                         # 00447D5C
     msvc_xor edx, edx                                    # 00447D5F
-    xchg ch, dl                                          # 00447D61
+    msvc_xchg ch, dl                                     # 00447D61
     msvc_add ebx, ecx                                    # 00447D63
     sub edx, dword ptr [0xe04314]                        # 00447D65
     jle .L447D6F                                         # 00447D6B
@@ -906,7 +906,7 @@ _sub_447D26:
     mov byte ptr [0x50b870], cl                          # 00447DAF
     and cl, 0x7f                                         # 00447DB5
     msvc_xor edx, edx                                    # 00447DB8
-    xchg ch, dl                                          # 00447DBA
+    msvc_xchg ch, dl                                     # 00447DBA
     msvc_add ebx, ecx                                    # 00447DBC
     sub edx, dword ptr [0xe04314]                        # 00447DBE
     jle .L447DC8                                         # 00447DC4
@@ -941,7 +941,7 @@ _sub_447D26:
     mov byte ptr [0x50b870], cl                          # 00447E08
     and cl, 0x7f                                         # 00447E0E
     msvc_xor edx, edx                                    # 00447E11
-    xchg ch, dl                                          # 00447E13
+    msvc_xchg ch, dl                                     # 00447E13
     msvc_add ebx, ecx                                    # 00447E15
     sub edx, dword ptr [0xe04314]                        # 00447E17
     jle .L447E21                                         # 00447E1D
@@ -1097,7 +1097,7 @@ _sub_447D26:
     add esi, 2                                           # 0044801C
     msvc_sub ebx, eax                                    # 0044801F
     msvc_xor eax, eax                                    # 00448021
-    xchg esi, ebx                                        # 00448023
+    msvc_xchg esi, ebx                                   # 00448023
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 00448025
     msvc_mov esi, ebx                                    # 00448027
     jmp .L447FF4                                         # 00448029
@@ -1216,7 +1216,7 @@ _sub_448173:
     mov byte ptr [0x50b870], cl                          # 004481A3
     and cl, 0x7f                                         # 004481A9
     msvc_xor edx, edx                                    # 004481AC
-    xchg ch, dl                                          # 004481AE
+    msvc_xchg ch, dl                                     # 004481AE
     msvc_add ebx, ecx                                    # 004481B0
     test dl, 1                                           # 004481B2
     je .L4481BD                                          # 004481B5
@@ -1263,7 +1263,7 @@ _sub_448173:
     mov byte ptr [0x50b870], cl                          # 00448214
     and cl, 0x7f                                         # 0044821A
     msvc_xor edx, edx                                    # 0044821D
-    xchg ch, dl                                          # 0044821F
+    msvc_xchg ch, dl                                     # 0044821F
     msvc_add ebx, ecx                                    # 00448221
     test dl, 1                                           # 00448223
     je .L44822E                                          # 00448226
@@ -1310,7 +1310,7 @@ _sub_448173:
     mov byte ptr [0x50b870], cl                          # 00448285
     and cl, 0x7f                                         # 0044828B
     msvc_xor edx, edx                                    # 0044828E
-    xchg ch, dl                                          # 00448290
+    msvc_xchg ch, dl                                     # 00448290
     msvc_add ebx, ecx                                    # 00448292
     test dl, 1                                           # 00448294
     je .L44829F                                          # 00448297
@@ -1485,7 +1485,7 @@ _sub_448173:
     add esi, 2                                           # 004484C7
     msvc_sub ebx, eax                                    # 004484CA
     msvc_xor eax, eax                                    # 004484CC
-    xchg esi, ebx                                        # 004484CE
+    msvc_xchg esi, ebx                                   # 004484CE
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 004484D0
     msvc_mov esi, ebx                                    # 004484D2
     jmp .L44849F                                         # 004484D4
@@ -1610,7 +1610,7 @@ _sub_448635:
     mov byte ptr [0x50b870], cl                          # 00448669
     and cl, 0x7f                                         # 0044866F
     msvc_xor edx, edx                                    # 00448672
-    xchg ch, dl                                          # 00448674
+    msvc_xchg ch, dl                                     # 00448674
     msvc_add ebx, ecx                                    # 00448676
     test dl, 1                                           # 00448678
     je .L448683                                          # 0044867B
@@ -1663,7 +1663,7 @@ _sub_448635:
     mov byte ptr [0x50b870], cl                          # 004486EB
     and cl, 0x7f                                         # 004486F1
     msvc_xor edx, edx                                    # 004486F4
-    xchg ch, dl                                          # 004486F6
+    msvc_xchg ch, dl                                     # 004486F6
     msvc_add ebx, ecx                                    # 004486F8
     test dl, 1                                           # 004486FA
     je .L448705                                          # 004486FD
@@ -1716,7 +1716,7 @@ _sub_448635:
     mov byte ptr [0x50b870], cl                          # 0044876D
     and cl, 0x7f                                         # 00448773
     msvc_xor edx, edx                                    # 00448776
-    xchg ch, dl                                          # 00448778
+    msvc_xchg ch, dl                                     # 00448778
     msvc_add ebx, ecx                                    # 0044877A
     test dl, 1                                           # 0044877C
     je .L448787                                          # 0044877F
@@ -1890,7 +1890,7 @@ _sub_448635:
     add esi, 2                                           # 004489AB
     msvc_sub ebx, eax                                    # 004489AE
     msvc_xor eax, eax                                    # 004489B0
-    xchg esi, ebx                                        # 004489B2
+    msvc_xchg esi, ebx                                   # 004489B2
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 004489B4
     msvc_mov esi, ebx                                    # 004489B6
     jmp .L448983                                         # 004489B8
@@ -2009,7 +2009,7 @@ _sub_448B02:
     mov byte ptr [0x50b870], cl                          # 00448B36
     and cl, 0x7f                                         # 00448B3C
     msvc_xor edx, edx                                    # 00448B3F
-    xchg ch, dl                                          # 00448B41
+    msvc_xchg ch, dl                                     # 00448B41
     msvc_add ebx, ecx                                    # 00448B43
     test dl, 1                                           # 00448B45
     je .L448B50                                          # 00448B48
@@ -2056,7 +2056,7 @@ _sub_448B02:
     mov byte ptr [0x50b870], cl                          # 00448BA9
     and cl, 0x7f                                         # 00448BAF
     msvc_xor edx, edx                                    # 00448BB2
-    xchg ch, dl                                          # 00448BB4
+    msvc_xchg ch, dl                                     # 00448BB4
     msvc_add ebx, ecx                                    # 00448BB6
     test dl, 1                                           # 00448BB8
     je .L448BC3                                          # 00448BBB
@@ -2103,7 +2103,7 @@ _sub_448B02:
     mov byte ptr [0x50b870], cl                          # 00448C1C
     and cl, 0x7f                                         # 00448C22
     msvc_xor edx, edx                                    # 00448C25
-    xchg ch, dl                                          # 00448C27
+    msvc_xchg ch, dl                                     # 00448C27
     msvc_add ebx, ecx                                    # 00448C29
     test dl, 1                                           # 00448C2B
     je .L448C36                                          # 00448C2E
@@ -2336,7 +2336,7 @@ _sub_448D90:
     add esi, 2                                           # 00448F7A
     msvc_sub ebx, eax                                    # 00448F7D
     msvc_xor eax, eax                                    # 00448F7F
-    xchg esi, ebx                                        # 00448F81
+    msvc_xchg esi, ebx                                   # 00448F81
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 00448F83
     msvc_mov esi, ebx                                    # 00448F85
     jmp .L448F52                                         # 00448F87
@@ -2763,7 +2763,7 @@ _sub_44933B:
     add ebx, 2                                           # 00449376
     and cl, 0x7f                                         # 00449379
     msvc_mov esi, ebx                                    # 0044937C
-    xchg ch, dl                                          # 0044937E
+    msvc_xchg ch, dl                                     # 0044937E
     msvc_add ebx, ecx                                    # 00449380
     sub edx, dword ptr [0xe04314]                        # 00449382
     msvc_mov edi, ebp                                    # 00449388
@@ -2818,7 +2818,7 @@ _sub_4493F8:
     add ebx, 2                                           # 00449403
     and cl, 0x7f                                         # 00449406
     msvc_mov esi, ebx                                    # 00449409
-    xchg ch, dl                                          # 0044940B
+    msvc_xchg ch, dl                                     # 0044940B
     msvc_add ebx, ecx                                    # 0044940D
     sub edx, dword ptr [0xe04314]                        # 0044940F
     msvc_mov edi, ebp                                    # 00449415
@@ -3640,7 +3640,7 @@ _sub_44990D:
     add ebx, 2                                           # 00449918
     and cl, 0x7f                                         # 0044991B
     msvc_mov esi, ebx                                    # 0044991E
-    xchg ch, dl                                          # 00449920
+    msvc_xchg ch, dl                                     # 00449920
     msvc_add ebx, ecx                                    # 00449922
     sub edx, dword ptr [0xe04314]                        # 00449924
     msvc_mov edi, ebp                                    # 0044992A
@@ -4462,7 +4462,7 @@ _sub_449E22:
     add ebx, 2                                           # 00449E2D
     and cl, 0x7f                                         # 00449E30
     msvc_mov esi, ebx                                    # 00449E33
-    xchg ch, dl                                          # 00449E35
+    msvc_xchg ch, dl                                     # 00449E35
     msvc_add ebx, ecx                                    # 00449E37
     sub edx, dword ptr [0xe04314]                        # 00449E39
     msvc_mov edi, ebp                                    # 00449E3F
@@ -5546,7 +5546,7 @@ _sub_44A6A4:
     add esi, 2                                           # 0044A8B9
     msvc_sub ebx, eax                                    # 0044A8BC
     msvc_xor eax, eax                                    # 0044A8BE
-    xchg esi, ebx                                        # 0044A8C0
+    msvc_xchg esi, ebx                                   # 0044A8C0
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 0044A8C2
     msvc_mov esi, ebx                                    # 0044A8C4
     jmp .L44A891                                         # 0044A8C6
@@ -6029,7 +6029,7 @@ _sub_44AD5D:
     add ebx, 2                                           # 0044ADB6
     and cl, 0x7f                                         # 0044ADB9
     msvc_mov esi, ebx                                    # 0044ADBC
-    xchg ch, dl                                          # 0044ADBE
+    msvc_xchg ch, dl                                     # 0044ADBE
     msvc_add ebx, ecx                                    # 0044ADC0
     sub edx, dword ptr [0xe04314]                        # 0044ADC2
     test dl, 1                                           # 0044ADC8
@@ -6083,7 +6083,7 @@ _sub_44AD5D:
     mov byte ptr [0x50b870], cl                          # 0044AE34
     add ebx, 2                                           # 0044AE3A
     and cl, 0x7f                                         # 0044AE3D
-    xchg ch, dl                                          # 0044AE40
+    msvc_xchg ch, dl                                     # 0044AE40
     msvc_add ebx, ecx                                    # 0044AE42
     test byte ptr [0x50b870], 0x80                       # 0044AE44
     je .L44AE2F                                          # 0044AE4B
@@ -6120,7 +6120,7 @@ _sub_44AEA2:
     add ebx, 2                                           # 0044AEAD
     and cl, 0x7f                                         # 0044AEB0
     msvc_mov esi, ebx                                    # 0044AEB3
-    xchg ch, dl                                          # 0044AEB5
+    msvc_xchg ch, dl                                     # 0044AEB5
     msvc_add ebx, ecx                                    # 0044AEB7
     sub edx, dword ptr [0xe04314]                        # 0044AEB9
     test dl, 1                                           # 0044AEBF
@@ -6943,7 +6943,7 @@ _sub_44B464:
     mov byte ptr [0x50b870], cl                          # 0044B488
     add ebx, 2                                           # 0044B48E
     and cl, 0x7f                                         # 0044B491
-    xchg ch, dl                                          # 0044B494
+    msvc_xchg ch, dl                                     # 0044B494
     msvc_add ebx, ecx                                    # 0044B496
     test byte ptr [0x50b870], 0x80                       # 0044B498
     je .L44B483                                          # 0044B49F
@@ -6982,7 +6982,7 @@ _sub_44B4E6:
     add ebx, 2                                           # 0044B4F1
     and cl, 0x7f                                         # 0044B4F4
     msvc_mov esi, ebx                                    # 0044B4F7
-    xchg ch, dl                                          # 0044B4F9
+    msvc_xchg ch, dl                                     # 0044B4F9
     msvc_add ebx, ecx                                    # 0044B4FB
     sub edx, dword ptr [0xe04314]                        # 0044B4FD
     test dl, 1                                           # 0044B503
@@ -7805,7 +7805,7 @@ _sub_44B9E8:
     mov byte ptr [0x50b870], cl                          # 0044BA0C
     add ebx, 2                                           # 0044BA12
     and cl, 0x7f                                         # 0044BA15
-    xchg ch, dl                                          # 0044BA18
+    msvc_xchg ch, dl                                     # 0044BA18
     msvc_add ebx, ecx                                    # 0044BA1A
     test byte ptr [0x50b870], 0x80                       # 0044BA1C
     je .L44BA07                                          # 0044BA23
@@ -7844,7 +7844,7 @@ _sub_44BA6A:
     add ebx, 2                                           # 0044BA75
     and cl, 0x7f                                         # 0044BA78
     msvc_mov esi, ebx                                    # 0044BA7B
-    xchg ch, dl                                          # 0044BA7D
+    msvc_xchg ch, dl                                     # 0044BA7D
     msvc_add ebx, ecx                                    # 0044BA7F
     sub edx, dword ptr [0xe04314]                        # 0044BA81
     test dl, 1                                           # 0044BA87
@@ -8795,7 +8795,7 @@ _sub_44C3AB:
     mov byte ptr [0x50b870], cl                          # 0044C3CF
     add ebx, 2                                           # 0044C3D5
     and cl, 0x7f                                         # 0044C3D8
-    xchg ch, dl                                          # 0044C3DB
+    msvc_xchg ch, dl                                     # 0044C3DB
     msvc_add ebx, ecx                                    # 0044C3DD
     test byte ptr [0x50b870], 0x80                       # 0044C3DF
     je .L44C3CA                                          # 0044C3E6
@@ -8960,7 +8960,7 @@ _sub_44C3FD:
     add esi, 2                                           # 0044C616
     msvc_sub ebx, eax                                    # 0044C619
     msvc_xor eax, eax                                    # 0044C61B
-    xchg esi, ebx                                        # 0044C61D
+    msvc_xchg esi, ebx                                   # 0044C61D
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 0044C61F
     msvc_mov esi, ebx                                    # 0044C621
     jmp .L44C5EE                                         # 0044C623
@@ -9446,7 +9446,7 @@ _sub_44CACD:
     add ebx, 2                                           # 0044CB26
     and cl, 0x7f                                         # 0044CB29
     msvc_mov esi, ebx                                    # 0044CB2C
-    xchg ch, dl                                          # 0044CB2E
+    msvc_xchg ch, dl                                     # 0044CB2E
     msvc_add ebx, ecx                                    # 0044CB30
     sub edx, dword ptr [0xe04314]                        # 0044CB32
     test dl, 1                                           # 0044CB38
@@ -9507,7 +9507,7 @@ _sub_44CACD:
     mov byte ptr [0x50b870], cl                          # 0044CBBF
     add ebx, 2                                           # 0044CBC5
     and cl, 0x7f                                         # 0044CBC8
-    xchg ch, dl                                          # 0044CBCB
+    msvc_xchg ch, dl                                     # 0044CBCB
     msvc_add ebx, ecx                                    # 0044CBCD
     test byte ptr [0x50b870], 0x80                       # 0044CBCF
     je .L44CBBA                                          # 0044CBD6
@@ -9519,7 +9519,7 @@ _sub_44CACD:
     mov byte ptr [0x50b870], cl                          # 0044CBE6
     add ebx, 2                                           # 0044CBEC
     and cl, 0x7f                                         # 0044CBEF
-    xchg ch, dl                                          # 0044CBF2
+    msvc_xchg ch, dl                                     # 0044CBF2
     msvc_add ebx, ecx                                    # 0044CBF4
     test byte ptr [0x50b870], 0x80                       # 0044CBF6
     je .L44CBE1                                          # 0044CBFD
@@ -9531,7 +9531,7 @@ _sub_44CACD:
     mov byte ptr [0x50b870], cl                          # 0044CC0D
     add ebx, 2                                           # 0044CC13
     and cl, 0x7f                                         # 0044CC16
-    xchg ch, dl                                          # 0044CC19
+    msvc_xchg ch, dl                                     # 0044CC19
     msvc_add ebx, ecx                                    # 0044CC1B
     test byte ptr [0x50b870], 0x80                       # 0044CC1D
     je .L44CC08                                          # 0044CC24
@@ -9568,7 +9568,7 @@ _sub_44CC7B:
     add ebx, 2                                           # 0044CC86
     and cl, 0x7f                                         # 0044CC89
     msvc_mov esi, ebx                                    # 0044CC8C
-    xchg ch, dl                                          # 0044CC8E
+    msvc_xchg ch, dl                                     # 0044CC8E
     msvc_add ebx, ecx                                    # 0044CC90
     sub edx, dword ptr [0xe04314]                        # 0044CC92
     test dl, 1                                           # 0044CC98
@@ -10398,7 +10398,7 @@ _sub_44D2B4:
     mov byte ptr [0x50b870], cl                          # 0044D2DC
     add ebx, 2                                           # 0044D2E2
     and cl, 0x7f                                         # 0044D2E5
-    xchg ch, dl                                          # 0044D2E8
+    msvc_xchg ch, dl                                     # 0044D2E8
     msvc_add ebx, ecx                                    # 0044D2EA
     test byte ptr [0x50b870], 0x80                       # 0044D2EC
     je .L44D2D7                                          # 0044D2F3
@@ -10410,7 +10410,7 @@ _sub_44D2B4:
     mov byte ptr [0x50b870], cl                          # 0044D303
     add ebx, 2                                           # 0044D309
     and cl, 0x7f                                         # 0044D30C
-    xchg ch, dl                                          # 0044D30F
+    msvc_xchg ch, dl                                     # 0044D30F
     msvc_add ebx, ecx                                    # 0044D311
     test byte ptr [0x50b870], 0x80                       # 0044D313
     je .L44D2FE                                          # 0044D31A
@@ -10422,7 +10422,7 @@ _sub_44D2B4:
     mov byte ptr [0x50b870], cl                          # 0044D32A
     add ebx, 2                                           # 0044D330
     and cl, 0x7f                                         # 0044D333
-    xchg ch, dl                                          # 0044D336
+    msvc_xchg ch, dl                                     # 0044D336
     msvc_add ebx, ecx                                    # 0044D338
     test byte ptr [0x50b870], 0x80                       # 0044D33A
     je .L44D325                                          # 0044D341
@@ -10461,7 +10461,7 @@ _sub_44D388:
     add ebx, 2                                           # 0044D393
     and cl, 0x7f                                         # 0044D396
     msvc_mov esi, ebx                                    # 0044D399
-    xchg ch, dl                                          # 0044D39B
+    msvc_xchg ch, dl                                     # 0044D39B
     msvc_add ebx, ecx                                    # 0044D39D
     sub edx, dword ptr [0xe04314]                        # 0044D39F
     test dl, 1                                           # 0044D3A5
@@ -11291,7 +11291,7 @@ _sub_44D8A1:
     mov byte ptr [0x50b870], cl                          # 0044D8C9
     add ebx, 2                                           # 0044D8CF
     and cl, 0x7f                                         # 0044D8D2
-    xchg ch, dl                                          # 0044D8D5
+    msvc_xchg ch, dl                                     # 0044D8D5
     msvc_add ebx, ecx                                    # 0044D8D7
     test byte ptr [0x50b870], 0x80                       # 0044D8D9
     je .L44D8C4                                          # 0044D8E0
@@ -11303,7 +11303,7 @@ _sub_44D8A1:
     mov byte ptr [0x50b870], cl                          # 0044D8F0
     add ebx, 2                                           # 0044D8F6
     and cl, 0x7f                                         # 0044D8F9
-    xchg ch, dl                                          # 0044D8FC
+    msvc_xchg ch, dl                                     # 0044D8FC
     msvc_add ebx, ecx                                    # 0044D8FE
     test byte ptr [0x50b870], 0x80                       # 0044D900
     je .L44D8EB                                          # 0044D907
@@ -11315,7 +11315,7 @@ _sub_44D8A1:
     mov byte ptr [0x50b870], cl                          # 0044D917
     add ebx, 2                                           # 0044D91D
     and cl, 0x7f                                         # 0044D920
-    xchg ch, dl                                          # 0044D923
+    msvc_xchg ch, dl                                     # 0044D923
     msvc_add ebx, ecx                                    # 0044D925
     test byte ptr [0x50b870], 0x80                       # 0044D927
     je .L44D912                                          # 0044D92E
@@ -11354,7 +11354,7 @@ _sub_44D975:
     add ebx, 2                                           # 0044D980
     and cl, 0x7f                                         # 0044D983
     msvc_mov esi, ebx                                    # 0044D986
-    xchg ch, dl                                          # 0044D988
+    msvc_xchg ch, dl                                     # 0044D988
     msvc_add ebx, ecx                                    # 0044D98A
     sub edx, dword ptr [0xe04314]                        # 0044D98C
     test dl, 1                                           # 0044D992
@@ -12312,7 +12312,7 @@ _sub_44E32D:
     mov byte ptr [0x50b870], cl                          # 0044E355
     add ebx, 2                                           # 0044E35B
     and cl, 0x7f                                         # 0044E35E
-    xchg ch, dl                                          # 0044E361
+    msvc_xchg ch, dl                                     # 0044E361
     msvc_add ebx, ecx                                    # 0044E363
     test byte ptr [0x50b870], 0x80                       # 0044E365
     je .L44E350                                          # 0044E36C
@@ -12324,7 +12324,7 @@ _sub_44E32D:
     mov byte ptr [0x50b870], cl                          # 0044E37C
     add ebx, 2                                           # 0044E382
     and cl, 0x7f                                         # 0044E385
-    xchg ch, dl                                          # 0044E388
+    msvc_xchg ch, dl                                     # 0044E388
     msvc_add ebx, ecx                                    # 0044E38A
     test byte ptr [0x50b870], 0x80                       # 0044E38C
     je .L44E377                                          # 0044E393
@@ -12336,7 +12336,7 @@ _sub_44E32D:
     mov byte ptr [0x50b870], cl                          # 0044E3A3
     add ebx, 2                                           # 0044E3A9
     and cl, 0x7f                                         # 0044E3AC
-    xchg ch, dl                                          # 0044E3AF
+    msvc_xchg ch, dl                                     # 0044E3AF
     msvc_add ebx, ecx                                    # 0044E3B1
     test byte ptr [0x50b870], 0x80                       # 0044E3B3
     je .L44E39E                                          # 0044E3BA
@@ -12501,7 +12501,7 @@ _sub_44E3D1:
     add esi, 2                                           # 0044E5EA
     msvc_sub ebx, eax                                    # 0044E5ED
     msvc_xor eax, eax                                    # 0044E5EF
-    xchg esi, ebx                                        # 0044E5F1
+    msvc_xchg esi, ebx                                   # 0044E5F1
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 0044E5F3
     msvc_mov esi, ebx                                    # 0044E5F5
     jmp .L44E5C2                                         # 0044E5F7
@@ -12987,7 +12987,7 @@ _sub_44EAA1:
     add ebx, 2                                           # 0044EAFA
     and cl, 0x7f                                         # 0044EAFD
     msvc_mov esi, ebx                                    # 0044EB00
-    xchg ch, dl                                          # 0044EB02
+    msvc_xchg ch, dl                                     # 0044EB02
     msvc_add ebx, ecx                                    # 0044EB04
     sub edx, dword ptr [0xe04314]                        # 0044EB06
     test dl, 1                                           # 0044EB0C
@@ -13055,7 +13055,7 @@ _sub_44EAA1:
     mov byte ptr [0x50b870], cl                          # 0044EBA4
     add ebx, 2                                           # 0044EBAA
     and cl, 0x7f                                         # 0044EBAD
-    xchg ch, dl                                          # 0044EBB0
+    msvc_xchg ch, dl                                     # 0044EBB0
     msvc_add ebx, ecx                                    # 0044EBB2
     test byte ptr [0x50b870], 0x80                       # 0044EBB4
     je .L44EB9F                                          # 0044EBBB
@@ -13067,7 +13067,7 @@ _sub_44EAA1:
     mov byte ptr [0x50b870], cl                          # 0044EBCF
     add ebx, 2                                           # 0044EBD5
     and cl, 0x7f                                         # 0044EBD8
-    xchg ch, dl                                          # 0044EBDB
+    msvc_xchg ch, dl                                     # 0044EBDB
     msvc_add ebx, ecx                                    # 0044EBDD
     test byte ptr [0x50b870], 0x80                       # 0044EBDF
     je .L44EBCA                                          # 0044EBE6
@@ -13079,7 +13079,7 @@ _sub_44EAA1:
     mov byte ptr [0x50b870], cl                          # 0044EBFA
     add ebx, 2                                           # 0044EC00
     and cl, 0x7f                                         # 0044EC03
-    xchg ch, dl                                          # 0044EC06
+    msvc_xchg ch, dl                                     # 0044EC06
     msvc_add ebx, ecx                                    # 0044EC08
     test byte ptr [0x50b870], 0x80                       # 0044EC0A
     je .L44EBF5                                          # 0044EC11
@@ -13091,7 +13091,7 @@ _sub_44EAA1:
     mov byte ptr [0x50b870], cl                          # 0044EC25
     add ebx, 2                                           # 0044EC2B
     and cl, 0x7f                                         # 0044EC2E
-    xchg ch, dl                                          # 0044EC31
+    msvc_xchg ch, dl                                     # 0044EC31
     msvc_add ebx, ecx                                    # 0044EC33
     test byte ptr [0x50b870], 0x80                       # 0044EC35
     je .L44EC20                                          # 0044EC3C
@@ -13103,7 +13103,7 @@ _sub_44EAA1:
     mov byte ptr [0x50b870], cl                          # 0044EC50
     add ebx, 2                                           # 0044EC56
     and cl, 0x7f                                         # 0044EC59
-    xchg ch, dl                                          # 0044EC5C
+    msvc_xchg ch, dl                                     # 0044EC5C
     msvc_add ebx, ecx                                    # 0044EC5E
     test byte ptr [0x50b870], 0x80                       # 0044EC60
     je .L44EC4B                                          # 0044EC67
@@ -13115,7 +13115,7 @@ _sub_44EAA1:
     mov byte ptr [0x50b870], cl                          # 0044EC77
     add ebx, 2                                           # 0044EC7D
     and cl, 0x7f                                         # 0044EC80
-    xchg ch, dl                                          # 0044EC83
+    msvc_xchg ch, dl                                     # 0044EC83
     msvc_add ebx, ecx                                    # 0044EC85
     test byte ptr [0x50b870], 0x80                       # 0044EC87
     je .L44EC72                                          # 0044EC8E
@@ -13127,7 +13127,7 @@ _sub_44EAA1:
     mov byte ptr [0x50b870], cl                          # 0044EC9E
     add ebx, 2                                           # 0044ECA4
     and cl, 0x7f                                         # 0044ECA7
-    xchg ch, dl                                          # 0044ECAA
+    msvc_xchg ch, dl                                     # 0044ECAA
     msvc_add ebx, ecx                                    # 0044ECAC
     test byte ptr [0x50b870], 0x80                       # 0044ECAE
     je .L44EC99                                          # 0044ECB5
@@ -13164,7 +13164,7 @@ _sub_44ED0C:
     add ebx, 2                                           # 0044ED17
     and cl, 0x7f                                         # 0044ED1A
     msvc_mov esi, ebx                                    # 0044ED1D
-    xchg ch, dl                                          # 0044ED1F
+    msvc_xchg ch, dl                                     # 0044ED1F
     msvc_add ebx, ecx                                    # 0044ED21
     sub edx, dword ptr [0xe04314]                        # 0044ED23
     test dl, 1                                           # 0044ED29
@@ -14001,7 +14001,7 @@ _sub_44F38A:
     mov byte ptr [0x50b870], cl                          # 0044F3B2
     add ebx, 2                                           # 0044F3B8
     and cl, 0x7f                                         # 0044F3BB
-    xchg ch, dl                                          # 0044F3BE
+    msvc_xchg ch, dl                                     # 0044F3BE
     msvc_add ebx, ecx                                    # 0044F3C0
     test byte ptr [0x50b870], 0x80                       # 0044F3C2
     je .L44F3AD                                          # 0044F3C9
@@ -14013,7 +14013,7 @@ _sub_44F38A:
     mov byte ptr [0x50b870], cl                          # 0044F3DD
     add ebx, 2                                           # 0044F3E3
     and cl, 0x7f                                         # 0044F3E6
-    xchg ch, dl                                          # 0044F3E9
+    msvc_xchg ch, dl                                     # 0044F3E9
     msvc_add ebx, ecx                                    # 0044F3EB
     test byte ptr [0x50b870], 0x80                       # 0044F3ED
     je .L44F3D8                                          # 0044F3F4
@@ -14025,7 +14025,7 @@ _sub_44F38A:
     mov byte ptr [0x50b870], cl                          # 0044F408
     add ebx, 2                                           # 0044F40E
     and cl, 0x7f                                         # 0044F411
-    xchg ch, dl                                          # 0044F414
+    msvc_xchg ch, dl                                     # 0044F414
     msvc_add ebx, ecx                                    # 0044F416
     test byte ptr [0x50b870], 0x80                       # 0044F418
     je .L44F403                                          # 0044F41F
@@ -14037,7 +14037,7 @@ _sub_44F38A:
     mov byte ptr [0x50b870], cl                          # 0044F433
     add ebx, 2                                           # 0044F439
     and cl, 0x7f                                         # 0044F43C
-    xchg ch, dl                                          # 0044F43F
+    msvc_xchg ch, dl                                     # 0044F43F
     msvc_add ebx, ecx                                    # 0044F441
     test byte ptr [0x50b870], 0x80                       # 0044F443
     je .L44F42E                                          # 0044F44A
@@ -14049,7 +14049,7 @@ _sub_44F38A:
     mov byte ptr [0x50b870], cl                          # 0044F45E
     add ebx, 2                                           # 0044F464
     and cl, 0x7f                                         # 0044F467
-    xchg ch, dl                                          # 0044F46A
+    msvc_xchg ch, dl                                     # 0044F46A
     msvc_add ebx, ecx                                    # 0044F46C
     test byte ptr [0x50b870], 0x80                       # 0044F46E
     je .L44F459                                          # 0044F475
@@ -14061,7 +14061,7 @@ _sub_44F38A:
     mov byte ptr [0x50b870], cl                          # 0044F485
     add ebx, 2                                           # 0044F48B
     and cl, 0x7f                                         # 0044F48E
-    xchg ch, dl                                          # 0044F491
+    msvc_xchg ch, dl                                     # 0044F491
     msvc_add ebx, ecx                                    # 0044F493
     test byte ptr [0x50b870], 0x80                       # 0044F495
     je .L44F480                                          # 0044F49C
@@ -14073,7 +14073,7 @@ _sub_44F38A:
     mov byte ptr [0x50b870], cl                          # 0044F4AC
     add ebx, 2                                           # 0044F4B2
     and cl, 0x7f                                         # 0044F4B5
-    xchg ch, dl                                          # 0044F4B8
+    msvc_xchg ch, dl                                     # 0044F4B8
     msvc_add ebx, ecx                                    # 0044F4BA
     test byte ptr [0x50b870], 0x80                       # 0044F4BC
     je .L44F4A7                                          # 0044F4C3
@@ -14112,7 +14112,7 @@ _sub_44F50A:
     add ebx, 2                                           # 0044F515
     and cl, 0x7f                                         # 0044F518
     msvc_mov esi, ebx                                    # 0044F51B
-    xchg ch, dl                                          # 0044F51D
+    msvc_xchg ch, dl                                     # 0044F51D
     msvc_add ebx, ecx                                    # 0044F51F
     sub edx, dword ptr [0xe04314]                        # 0044F521
     test dl, 1                                           # 0044F527
@@ -14949,7 +14949,7 @@ _sub_44FA38:
     mov byte ptr [0x50b870], cl                          # 0044FA60
     add ebx, 2                                           # 0044FA66
     and cl, 0x7f                                         # 0044FA69
-    xchg ch, dl                                          # 0044FA6C
+    msvc_xchg ch, dl                                     # 0044FA6C
     msvc_add ebx, ecx                                    # 0044FA6E
     test byte ptr [0x50b870], 0x80                       # 0044FA70
     je .L44FA5B                                          # 0044FA77
@@ -14961,7 +14961,7 @@ _sub_44FA38:
     mov byte ptr [0x50b870], cl                          # 0044FA8B
     add ebx, 2                                           # 0044FA91
     and cl, 0x7f                                         # 0044FA94
-    xchg ch, dl                                          # 0044FA97
+    msvc_xchg ch, dl                                     # 0044FA97
     msvc_add ebx, ecx                                    # 0044FA99
     test byte ptr [0x50b870], 0x80                       # 0044FA9B
     je .L44FA86                                          # 0044FAA2
@@ -14973,7 +14973,7 @@ _sub_44FA38:
     mov byte ptr [0x50b870], cl                          # 0044FAB6
     add ebx, 2                                           # 0044FABC
     and cl, 0x7f                                         # 0044FABF
-    xchg ch, dl                                          # 0044FAC2
+    msvc_xchg ch, dl                                     # 0044FAC2
     msvc_add ebx, ecx                                    # 0044FAC4
     test byte ptr [0x50b870], 0x80                       # 0044FAC6
     je .L44FAB1                                          # 0044FACD
@@ -14985,7 +14985,7 @@ _sub_44FA38:
     mov byte ptr [0x50b870], cl                          # 0044FAE1
     add ebx, 2                                           # 0044FAE7
     and cl, 0x7f                                         # 0044FAEA
-    xchg ch, dl                                          # 0044FAED
+    msvc_xchg ch, dl                                     # 0044FAED
     msvc_add ebx, ecx                                    # 0044FAEF
     test byte ptr [0x50b870], 0x80                       # 0044FAF1
     je .L44FADC                                          # 0044FAF8
@@ -14997,7 +14997,7 @@ _sub_44FA38:
     mov byte ptr [0x50b870], cl                          # 0044FB0C
     add ebx, 2                                           # 0044FB12
     and cl, 0x7f                                         # 0044FB15
-    xchg ch, dl                                          # 0044FB18
+    msvc_xchg ch, dl                                     # 0044FB18
     msvc_add ebx, ecx                                    # 0044FB1A
     test byte ptr [0x50b870], 0x80                       # 0044FB1C
     je .L44FB07                                          # 0044FB23
@@ -15009,7 +15009,7 @@ _sub_44FA38:
     mov byte ptr [0x50b870], cl                          # 0044FB33
     add ebx, 2                                           # 0044FB39
     and cl, 0x7f                                         # 0044FB3C
-    xchg ch, dl                                          # 0044FB3F
+    msvc_xchg ch, dl                                     # 0044FB3F
     msvc_add ebx, ecx                                    # 0044FB41
     test byte ptr [0x50b870], 0x80                       # 0044FB43
     je .L44FB2E                                          # 0044FB4A
@@ -15021,7 +15021,7 @@ _sub_44FA38:
     mov byte ptr [0x50b870], cl                          # 0044FB5A
     add ebx, 2                                           # 0044FB60
     and cl, 0x7f                                         # 0044FB63
-    xchg ch, dl                                          # 0044FB66
+    msvc_xchg ch, dl                                     # 0044FB66
     msvc_add ebx, ecx                                    # 0044FB68
     test byte ptr [0x50b870], 0x80                       # 0044FB6A
     je .L44FB55                                          # 0044FB71
@@ -15060,7 +15060,7 @@ _sub_44FBB8:
     add ebx, 2                                           # 0044FBC3
     and cl, 0x7f                                         # 0044FBC6
     msvc_mov esi, ebx                                    # 0044FBC9
-    xchg ch, dl                                          # 0044FBCB
+    msvc_xchg ch, dl                                     # 0044FBCB
     msvc_add ebx, ecx                                    # 0044FBCD
     sub edx, dword ptr [0xe04314]                        # 0044FBCF
     test dl, 1                                           # 0044FBD5
@@ -16025,7 +16025,7 @@ _sub_4505B5:
     mov byte ptr [0x50b870], cl                          # 004505DD
     add ebx, 2                                           # 004505E3
     and cl, 0x7f                                         # 004505E6
-    xchg ch, dl                                          # 004505E9
+    msvc_xchg ch, dl                                     # 004505E9
     msvc_add ebx, ecx                                    # 004505EB
     test byte ptr [0x50b870], 0x80                       # 004505ED
     je .L4505D8                                          # 004505F4
@@ -16037,7 +16037,7 @@ _sub_4505B5:
     mov byte ptr [0x50b870], cl                          # 00450608
     add ebx, 2                                           # 0045060E
     and cl, 0x7f                                         # 00450611
-    xchg ch, dl                                          # 00450614
+    msvc_xchg ch, dl                                     # 00450614
     msvc_add ebx, ecx                                    # 00450616
     test byte ptr [0x50b870], 0x80                       # 00450618
     je .L450603                                          # 0045061F
@@ -16049,7 +16049,7 @@ _sub_4505B5:
     mov byte ptr [0x50b870], cl                          # 00450633
     add ebx, 2                                           # 00450639
     and cl, 0x7f                                         # 0045063C
-    xchg ch, dl                                          # 0045063F
+    msvc_xchg ch, dl                                     # 0045063F
     msvc_add ebx, ecx                                    # 00450641
     test byte ptr [0x50b870], 0x80                       # 00450643
     je .L45062E                                          # 0045064A
@@ -16061,7 +16061,7 @@ _sub_4505B5:
     mov byte ptr [0x50b870], cl                          # 0045065E
     add ebx, 2                                           # 00450664
     and cl, 0x7f                                         # 00450667
-    xchg ch, dl                                          # 0045066A
+    msvc_xchg ch, dl                                     # 0045066A
     msvc_add ebx, ecx                                    # 0045066C
     test byte ptr [0x50b870], 0x80                       # 0045066E
     je .L450659                                          # 00450675
@@ -16073,7 +16073,7 @@ _sub_4505B5:
     mov byte ptr [0x50b870], cl                          # 00450689
     add ebx, 2                                           # 0045068F
     and cl, 0x7f                                         # 00450692
-    xchg ch, dl                                          # 00450695
+    msvc_xchg ch, dl                                     # 00450695
     msvc_add ebx, ecx                                    # 00450697
     test byte ptr [0x50b870], 0x80                       # 00450699
     je .L450684                                          # 004506A0
@@ -16085,7 +16085,7 @@ _sub_4505B5:
     mov byte ptr [0x50b870], cl                          # 004506B0
     add ebx, 2                                           # 004506B6
     and cl, 0x7f                                         # 004506B9
-    xchg ch, dl                                          # 004506BC
+    msvc_xchg ch, dl                                     # 004506BC
     msvc_add ebx, ecx                                    # 004506BE
     test byte ptr [0x50b870], 0x80                       # 004506C0
     je .L4506AB                                          # 004506C7
@@ -16097,7 +16097,7 @@ _sub_4505B5:
     mov byte ptr [0x50b870], cl                          # 004506D7
     add ebx, 2                                           # 004506DD
     and cl, 0x7f                                         # 004506E0
-    xchg ch, dl                                          # 004506E3
+    msvc_xchg ch, dl                                     # 004506E3
     msvc_add ebx, ecx                                    # 004506E5
     test byte ptr [0x50b870], 0x80                       # 004506E7
     je .L4506D2                                          # 004506EE

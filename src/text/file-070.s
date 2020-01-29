@@ -1177,7 +1177,7 @@ _sub_427612:
 
     .global _sub_427685
 _sub_427685:
-    xchg di, bx                                          # 00427685
+    msvc_xchg di, bx                                     # 00427685
     neg di                                               # 00427688
     jmp _sub_42769B                                      # 0042768B
 
@@ -1189,7 +1189,7 @@ _sub_42768D:
 
     .global _sub_427695
 _sub_427695:
-    xchg di, bx                                          # 00427695
+    msvc_xchg di, bx                                     # 00427695
     neg bx                                               # 00427698
 
     .global _sub_42769B
@@ -1755,8 +1755,8 @@ _sub_427C05:
     mov cx, word ptr [esi + 0x10]                        # 00427D64
     shr ax, 5                                            # 00427D68
     shr cx, 5                                            # 00427D6C
-    xchg ah, al                                          # 00427D70
-    xchg ch, cl                                          # 00427D72
+    msvc_xchg ah, al                                     # 00427D70
+    msvc_xchg ch, cl                                     # 00427D72
     shl al, 7                                            # 00427D74
     shl cl, 7                                            # 00427D77
     or al, 3                                             # 00427D7A
@@ -2162,7 +2162,7 @@ _sub_428237:
 .L4282EB:
     msvc_cmp di, si                                      # 004282EB
     ja .L4282F3                                          # 004282EE
-    xchg si, di                                          # 004282F0
+    msvc_xchg si, di                                     # 004282F0
 .L4282F3:
     shr si, 4                                            # 004282F3
     msvc_add di, si                                      # 004282F7

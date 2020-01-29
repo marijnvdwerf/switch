@@ -869,7 +869,7 @@ _sub_4BB982:
     msvc_mov cx, dx                                      # 004BB9ED
     add dx, 0x65                                         # 004BB9F0
     movzx esi, byte ptr [esi + 0x887]                    # 004BB9F4
-    xchg ebp, esi                                        # 004BB9FB
+    msvc_xchg ebp, esi                                   # 004BB9FB
     mov word ptr [0x1136490], si                         # 004BB9FD
     call _sub_4C58C7                                     # 004BBA04
 .L4BBA09:
@@ -1466,7 +1466,7 @@ _sub_4BC11C:
     msvc_mov cx, dx                                      # 004BC17E
     add dx, 0x2f                                         # 004BC181
     movzx esi, byte ptr [esi + 0x887]                    # 004BC185
-    xchg ebp, esi                                        # 004BC18C
+    msvc_xchg ebp, esi                                   # 004BC18C
     call _sub_4C58C7                                     # 004BC18E
 .L4BC193:
     pop edx                                              # 004BC193
@@ -2297,7 +2297,7 @@ _sub_4BCB47:
     cmp ebp, 0x20                                        # 004BCB58
     jb .L4BCB4C                                          # 004BCB5B
     mov bh, byte ptr [ebx + 0x5046fa]                    # 004BCB5D
-    xchg bh, bl                                          # 004BCB63
+    msvc_xchg bh, bl                                     # 004BCB63
     mov bp, 0x14                                         # 004BCB65
     mov ah, 0x14                                         # 004BCB69
     mov cx, word ptr [edi + 2]                           # 004BCB6B

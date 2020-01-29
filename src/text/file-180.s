@@ -1683,7 +1683,7 @@ _sub_4626B7:
     mov ch, byte ptr [ebx + 0x9e242a]                    # 00462707
     test byte ptr [0xf00164], 1                          # 0046270D
     je .L462718                                          # 00462714
-    xchg ch, cl                                          # 00462716
+    msvc_xchg ch, cl                                     # 00462716
 .L462718:
     msvc_mov eax, edx                                    # 00462718
     and edx, 0x1ff                                       # 0046271A
@@ -3524,7 +3524,7 @@ _sub_463C1D:
     push edi                                             # 00463C1E
     mov ax, word ptr [0xf2532c]                          # 00463C1F
     mov cx, word ptr [0xf25334]                          # 00463C25
-    xchg ch, al                                          # 00463C2C
+    msvc_xchg ch, al                                     # 00463C2C
     mov esi, dword ptr [0xf252fc]                        # 00463C2E
     msvc_cmp ax, cx                                      # 00463C34
     jne .L463D6E                                         # 00463C37
@@ -3629,7 +3629,7 @@ _sub_463D71:
     push edi                                             # 00463D72
     mov ax, word ptr [0xf2532a]                          # 00463D73
     mov cx, word ptr [0xf25332]                          # 00463D79
-    xchg ch, al                                          # 00463D80
+    msvc_xchg ch, al                                     # 00463D80
     mov esi, dword ptr [0xf252f8]                        # 00463D82
     msvc_cmp ax, cx                                      # 00463D88
     jne .L463EC2                                         # 00463D8B
@@ -3734,7 +3734,7 @@ _sub_463EC5:
     push edi                                             # 00463EC6
     mov ax, word ptr [0xf2532e]                          # 00463EC7
     mov cx, word ptr [0xf25336]                          # 00463ECD
-    xchg ch, al                                          # 00463ED4
+    msvc_xchg ch, al                                     # 00463ED4
     mov esi, dword ptr [0xf25300]                        # 00463ED6
     msvc_cmp ax, cx                                      # 00463EDC
     jne .L464016                                         # 00463EDF
@@ -3839,7 +3839,7 @@ _sub_464019:
     push edi                                             # 0046401A
     mov ax, word ptr [0xf25328]                          # 0046401B
     mov cx, word ptr [0xf25330]                          # 00464021
-    xchg ch, al                                          # 00464028
+    msvc_xchg ch, al                                     # 00464028
     mov esi, dword ptr [0xf252f4]                        # 0046402A
     msvc_cmp ax, cx                                      # 00464030
     jne .L46416A                                         # 00464033
@@ -8347,7 +8347,7 @@ _sub_467DF5:
     mov ax, word ptr [ebx*2 + 0x4fd47c]                  # 00467F94
     movzx ebx, word ptr [edi*4 + 0x4fd6a8]               # 00467F9C
     msvc_add bx, cx                                      # 00467FA4
-    xchg cl, ah                                          # 00467FA7
+    msvc_xchg cl, ah                                     # 00467FA7
     msvc_xor di, di                                      # 00467FA9
     msvc_mov si, di                                      # 00467FAC
     msvc_or ebx, ebp                                     # 00467FAF
@@ -8380,7 +8380,7 @@ _sub_467DF5:
     mov ax, word ptr [ebx*2 + 0x4fd47c]                  # 00467FE7
     movzx ebx, word ptr [edi*4 + 0x4fd6a8]               # 00467FEF
     msvc_add bx, cx                                      # 00467FF7
-    xchg cl, ah                                          # 00467FFA
+    msvc_xchg cl, ah                                     # 00467FFA
     msvc_xor di, di                                      # 00467FFC
     msvc_mov si, di                                      # 00467FFF
     msvc_or ebx, ebp                                     # 00468002
@@ -8411,7 +8411,7 @@ _sub_467DF5:
     mov ax, word ptr [ebx*2 + 0x4fd47c]                  # 0046803A
     movzx ebx, word ptr [edi*4 + 0x4fd6a8]               # 00468042
     msvc_add bx, cx                                      # 0046804A
-    xchg cl, ah                                          # 0046804D
+    msvc_xchg cl, ah                                     # 0046804D
     msvc_xor di, di                                      # 0046804F
     msvc_mov si, di                                      # 00468052
     msvc_or ebx, ebp                                     # 00468055
@@ -8442,7 +8442,7 @@ _sub_467DF5:
     mov ax, word ptr [ebx*2 + 0x4fd47c]                  # 0046808D
     movzx ebx, word ptr [edi*4 + 0x4fd6a8]               # 00468095
     msvc_add bx, cx                                      # 0046809D
-    xchg cl, ah                                          # 004680A0
+    msvc_xchg cl, ah                                     # 004680A0
     msvc_xor di, di                                      # 004680A2
     msvc_mov si, di                                      # 004680A5
     msvc_or ebx, ebp                                     # 004680A8
@@ -8477,7 +8477,7 @@ _sub_467DF5:
     jne .L4680F7                                         # 004680F3
     inc bx                                               # 004680F5
 .L4680F7:
-    xchg cl, ah                                          # 004680F7
+    msvc_xchg cl, ah                                     # 004680F7
     msvc_xor di, di                                      # 004680F9
     msvc_mov si, di                                      # 004680FC
     msvc_or ebx, ebp                                     # 004680FF
@@ -8738,7 +8738,7 @@ _sub_468265:
     mov ax, word ptr [ebx*2 + 0x4fd47c]                  # 00468411
     movzx ebx, word ptr [edi*4 + 0x4fd6a8]               # 00468419
     msvc_add bx, cx                                      # 00468421
-    xchg cl, ah                                          # 00468424
+    msvc_xchg cl, ah                                     # 00468424
     msvc_xor di, di                                      # 00468426
     msvc_mov si, di                                      # 00468429
     msvc_or ebx, ebp                                     # 0046842C
@@ -8771,7 +8771,7 @@ _sub_468265:
     mov ax, word ptr [ebx*2 + 0x4fd47c]                  # 00468464
     movzx ebx, word ptr [edi*4 + 0x4fd6a8]               # 0046846C
     msvc_add bx, cx                                      # 00468474
-    xchg cl, ah                                          # 00468477
+    msvc_xchg cl, ah                                     # 00468477
     msvc_xor di, di                                      # 00468479
     msvc_mov si, di                                      # 0046847C
     msvc_or ebx, ebp                                     # 0046847F
@@ -8802,7 +8802,7 @@ _sub_468265:
     mov ax, word ptr [ebx*2 + 0x4fd47c]                  # 004684B7
     movzx ebx, word ptr [edi*4 + 0x4fd6a8]               # 004684BF
     msvc_add bx, cx                                      # 004684C7
-    xchg cl, ah                                          # 004684CA
+    msvc_xchg cl, ah                                     # 004684CA
     msvc_xor di, di                                      # 004684CC
     msvc_mov si, di                                      # 004684CF
     msvc_or ebx, ebp                                     # 004684D2
@@ -8833,7 +8833,7 @@ _sub_468265:
     mov ax, word ptr [ebx*2 + 0x4fd47c]                  # 0046850A
     movzx ebx, word ptr [edi*4 + 0x4fd6a8]               # 00468512
     msvc_add bx, cx                                      # 0046851A
-    xchg cl, ah                                          # 0046851D
+    msvc_xchg cl, ah                                     # 0046851D
     msvc_xor di, di                                      # 0046851F
     msvc_mov si, di                                      # 00468522
     msvc_or ebx, ebp                                     # 00468525
@@ -8868,7 +8868,7 @@ _sub_468265:
     jne .L468574                                         # 00468570
     inc bx                                               # 00468572
 .L468574:
-    xchg cl, ah                                          # 00468574
+    msvc_xchg cl, ah                                     # 00468574
     msvc_xor di, di                                      # 00468576
     msvc_mov si, di                                      # 00468579
     msvc_or ebx, ebp                                     # 0046857C

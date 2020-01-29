@@ -2405,9 +2405,9 @@ _sub_496052:
     push ecx                                             # 00496052
     push ebx                                             # 00496053
     mov ecx, 0x4924924                                   # 00496054
-    xchg ecx, ebx                                        # 00496059
+    msvc_xchg ecx, ebx                                   # 00496059
     ror ebx, cl                                          # 0049605B
-    xchg ecx, ebx                                        # 0049605D
+    msvc_xchg ecx, ebx                                   # 0049605D
     mov bl, byte ptr [0x5215b4]                          # 0049605F
     msvc_or dx, dx                                       # 00496065
     jns .L49607A                                         # 00496068

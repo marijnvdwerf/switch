@@ -6427,7 +6427,7 @@ _sub_458352:
     msvc_mov cx, dx                                      # 004583BD
     add dx, 0x6f                                         # 004583C0
     movzx esi, byte ptr [esi + 0x887]                    # 004583C4
-    xchg ebp, esi                                        # 004583CB
+    msvc_xchg ebp, esi                                   # 004583CB
     mov word ptr [0xe0c3c6], si                          # 004583CD
     call _sub_4C58C7                                     # 004583D4
 .L4583D9:

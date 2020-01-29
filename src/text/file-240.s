@@ -5379,7 +5379,7 @@ _sub_49AA1C:
     msvc_mov cx, dx                                      # 0049AA87
     add dx, 0x6f                                         # 0049AA8A
     movzx esi, byte ptr [esi + 0x887]                    # 0049AA8E
-    xchg ebp, esi                                        # 0049AA95
+    msvc_xchg ebp, esi                                   # 0049AA95
     mov word ptr [0x1135c58], si                         # 0049AA97
     call _sub_4C58C7                                     # 0049AA9E
 .L49AAA3:

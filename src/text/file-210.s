@@ -5097,7 +5097,7 @@ _sub_482662:
 .L48286A:
     msvc_cmp cx, dx                                      # 0048286A
     jb .L482872                                          # 0048286D
-    xchg dx, cx                                          # 0048286F
+    msvc_xchg dx, cx                                     # 0048286F
 .L482872:
     cmp bx, 0x2fff                                       # 00482872
     ja .L4834B2                                          # 00482877
@@ -5608,7 +5608,7 @@ _sub_482662:
     jmp dword ptr [edx*4 + 0x4fe810]                     # 00482ED1
 .L482ED8:
     xchg ax, cx                                          # 00482ED8
-    xchg bx, bp                                          # 00482EDA
+    msvc_xchg bx, bp                                     # 00482EDA
     neg cx                                               # 00482EDD
     neg bx                                               # 00482EE0
     jmp .L482EFE                                         # 00482EE3
@@ -5620,7 +5620,7 @@ _sub_482662:
     jmp .L482EFE                                         # 00482EF1
 .L482EF3:
     xchg ax, cx                                          # 00482EF3
-    xchg bx, bp                                          # 00482EF5
+    msvc_xchg bx, bp                                     # 00482EF5
     neg ax                                               # 00482EF8
     neg bp                                               # 00482EFB
 .L482EFE:
@@ -5634,7 +5634,7 @@ _sub_482662:
 .L482F19:
     msvc_cmp cx, bx                                      # 00482F19
     jl .L482F21                                          # 00482F1C
-    xchg bx, cx                                          # 00482F1E
+    msvc_xchg bx, cx                                     # 00482F1E
 .L482F21:
     mov word ptr [0x1135f7c], ax                         # 00482F21
     mov word ptr [0x1135f7e], cx                         # 00482F27
@@ -12661,7 +12661,7 @@ _sub_488BDB:
     pop eax                                              # 00488CAA
     jb _sub_4891DB                                       # 00488CAB
     msvc_mov bl, dl                                      # 00488CB1
-    xchg di, dx                                          # 00488CB3
+    msvc_xchg di, dx                                     # 00488CB3
     and edi, 0xff                                        # 00488CB6
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 00488CBC
     mov bp, word ptr [esi + 5]                           # 00488CC3
@@ -13176,7 +13176,7 @@ _sub_4891E4:
     pop eax                                              # 004892A7
     jb _sub_489506                                       # 004892A8
     msvc_mov bl, dl                                      # 004892AE
-    xchg di, dx                                          # 004892B0
+    msvc_xchg di, dx                                     # 004892B0
     and edi, 0xff                                        # 004892B3
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 004892B9
     mov bp, word ptr [esi + 5]                           # 004892C0

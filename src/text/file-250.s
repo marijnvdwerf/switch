@@ -1660,7 +1660,7 @@ _sub_49C7F2:
     jne .L49CA9A                                         # 0049CAC2
 .L49CAC4:
     msvc_mov bl, dl                                      # 0049CAC4
-    xchg di, dx                                          # 0049CAC6
+    msvc_xchg di, dx                                     # 0049CAC6
     and edi, 0xff                                        # 0049CAC9
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 0049CACF
     mov bp, word ptr [esi + 5]                           # 0049CAD6
@@ -4610,7 +4610,7 @@ _sub_49F210:
 
     .global _sub_49F22A
 _sub_49F22A:
-    xchg si, bp                                          # 0049F22A
+    msvc_xchg si, bp                                     # 0049F22A
     neg si                                               # 0049F22D
     jmp _sub_49F240                                      # 0049F230
 
@@ -4622,7 +4622,7 @@ _sub_49F232:
 
     .global _sub_49F23A
 _sub_49F23A:
-    xchg si, bp                                          # 0049F23A
+    msvc_xchg si, bp                                     # 0049F23A
     neg bp                                               # 0049F23D
 
     .global _sub_49F240
@@ -4837,7 +4837,7 @@ _sub_49F620:
 
     .global _sub_49F63A
 _sub_49F63A:
-    xchg si, bp                                          # 0049F63A
+    msvc_xchg si, bp                                     # 0049F63A
     neg si                                               # 0049F63D
     jmp _sub_49F650                                      # 0049F640
 
@@ -4849,7 +4849,7 @@ _sub_49F642:
 
     .global _sub_49F64A
 _sub_49F64A:
-    xchg si, bp                                          # 0049F64A
+    msvc_xchg si, bp                                     # 0049F64A
     neg bp                                               # 0049F64D
 
     .global _sub_49F650
@@ -11164,7 +11164,7 @@ _sub_4A47D9:
     .global _sub_4A4839
 _sub_4A4839:
     xchg ax, cx                                          # 004A4839
-    xchg bx, bp                                          # 004A483B
+    msvc_xchg bx, bp                                     # 004A483B
     neg cx                                               # 004A483E
     neg bx                                               # 004A4841
     jmp _sub_4A485F                                      # 004A4844
@@ -11180,7 +11180,7 @@ _sub_4A4846:
     .global _sub_4A4854
 _sub_4A4854:
     xchg ax, cx                                          # 004A4854
-    xchg bx, bp                                          # 004A4856
+    msvc_xchg bx, bp                                     # 004A4856
     neg ax                                               # 004A4859
     neg bp                                               # 004A485C
 
@@ -11196,7 +11196,7 @@ _sub_4A485F:
 .L4A4878:
     msvc_cmp cx, bx                                      # 004A4878
     jl .L4A4880                                          # 004A487B
-    xchg bx, cx                                          # 004A487D
+    msvc_xchg bx, cx                                     # 004A487D
 .L4A4880:
     mov word ptr [0x1135f7c], ax                         # 004A4880
     mov word ptr [0x1135f7e], cx                         # 004A4886
@@ -13230,7 +13230,7 @@ _sub_4A6479:
     pop eax                                              # 004A6543
     jb _sub_4A6683                                       # 004A6544
     msvc_mov bl, dl                                      # 004A654A
-    xchg di, dx                                          # 004A654C
+    msvc_xchg di, dx                                     # 004A654C
     and edi, 0xff                                        # 004A654F
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 004A6555
     mov bp, word ptr [esi + 5]                           # 004A655C
@@ -13389,7 +13389,7 @@ _sub_4A668A:
     pop eax                                              # 004A6754
     jb _sub_4A683A                                       # 004A6755
     msvc_mov bl, dl                                      # 004A675B
-    xchg di, dx                                          # 004A675D
+    msvc_xchg di, dx                                     # 004A675D
     and edi, 0xff                                        # 004A6760
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 004A6766
     mov bp, word ptr [esi + 5]                           # 004A676D
@@ -14679,7 +14679,7 @@ _sub_4A734F:
     push ebx                                             # 004A762E
     push ecx                                             # 004A762F
     msvc_mov bl, dl                                      # 004A7630
-    xchg di, dx                                          # 004A7632
+    msvc_xchg di, dx                                     # 004A7632
     and edi, 0xff                                        # 004A7635
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 004A763B
     mov bp, word ptr [esi + 5]                           # 004A7642
@@ -15401,7 +15401,7 @@ _sub_4A7E86:
     cmp dh, byte ptr [0x1136083]                         # 004A7F20
     jne .L4A7F0B                                         # 004A7F26
     msvc_mov bl, dl                                      # 004A7F28
-    xchg di, dx                                          # 004A7F2A
+    msvc_xchg di, dx                                     # 004A7F2A
     and edi, 0xff                                        # 004A7F2D
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 004A7F33
     mov bp, word ptr [esi + 5]                           # 004A7F3A
@@ -15678,7 +15678,7 @@ _sub_4A80E1:
     test byte ptr [esi + 4], 0x80                        # 004A81A0
     je _sub_4A83BA                                       # 004A81A4
     msvc_mov bl, dl                                      # 004A81AA
-    xchg di, dx                                          # 004A81AC
+    msvc_xchg di, dx                                     # 004A81AC
     and edi, 0xff                                        # 004A81AF
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 004A81B5
     mov bp, word ptr [esi + 5]                           # 004A81BC

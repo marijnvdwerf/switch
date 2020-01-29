@@ -975,7 +975,7 @@ _sub_429264:
     mov cx, word ptr [eax + 0x5c4560]                    # 0042926A
     mov ax, word ptr [eax + 0x5c455e]                    # 00429271
     call _sub_467297                                     # 00429278
-    xchg dx, cx                                          # 0042927D
+    msvc_xchg dx, cx                                     # 0042927D
     shl ecx, 0x10                                        # 00429280
     shl edx, 0x10                                        # 00429283
     msvc_mov dx, ax                                      # 00429286
@@ -1003,7 +1003,7 @@ _sub_4292D0:
     mov cx, word ptr [eax + 0x5b8260]                    # 004292D6
     mov ax, word ptr [eax + 0x5b825e]                    # 004292DD
     call _sub_467297                                     # 004292E4
-    xchg dx, cx                                          # 004292E9
+    msvc_xchg dx, cx                                     # 004292E9
     shl ecx, 0x10                                        # 004292EC
     shl edx, 0x10                                        # 004292EF
     msvc_mov dx, ax                                      # 004292F2
@@ -1062,7 +1062,7 @@ _sub_42938C:
 _sub_429398:
     mov cx, word ptr [ebp + 0xcc]                        # 00429398
     call _sub_467297                                     # 0042939F
-    xchg dx, cx                                          # 004293A4
+    msvc_xchg dx, cx                                     # 004293A4
     shl ecx, 0x10                                        # 004293A7
     shl edx, 0x10                                        # 004293AA
     msvc_mov dx, ax                                      # 004293AD
@@ -1161,7 +1161,7 @@ _sub_42950D:
     mov cx, word ptr [eax + 0x5c4560]                    # 00429513
     mov ax, word ptr [eax + 0x5c455e]                    # 0042951A
     call _sub_467297                                     # 00429521
-    xchg dx, cx                                          # 00429526
+    msvc_xchg dx, cx                                     # 00429526
     shl ecx, 0x10                                        # 00429529
     shl edx, 0x10                                        # 0042952C
     msvc_mov dx, ax                                      # 0042952F
@@ -1189,7 +1189,7 @@ _sub_429579:
     mov cx, word ptr [eax + 0x5b8260]                    # 0042957F
     mov ax, word ptr [eax + 0x5b825e]                    # 00429586
     call _sub_467297                                     # 0042958D
-    xchg dx, cx                                          # 00429592
+    msvc_xchg dx, cx                                     # 00429592
     shl ecx, 0x10                                        # 00429595
     shl edx, 0x10                                        # 00429598
     msvc_mov dx, ax                                      # 0042959B
@@ -1248,7 +1248,7 @@ _sub_429635:
 _sub_429641:
     mov cx, word ptr [ebp + 0xcc]                        # 00429641
     call _sub_467297                                     # 00429648
-    xchg dx, cx                                          # 0042964D
+    msvc_xchg dx, cx                                     # 0042964D
     shl ecx, 0x10                                        # 00429650
     shl edx, 0x10                                        # 00429653
     msvc_mov dx, ax                                      # 00429656
