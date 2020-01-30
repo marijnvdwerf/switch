@@ -1,1 +1,3 @@
 0cbedd955451f32d7a3f741669663896 text.bin
+caa94ee8537cb57300be78bffa6f0338 rodata.bin
+27eaecb192f086ec6654b795b58df9c2 data.bin
