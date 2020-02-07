@@ -93,7 +93,7 @@ _sub_4C4C28:
 .L4C4CD1:
     cmp dl, dh                                           # 004C4CD1
     jbe .L4C4CD7                                         # 004C4CD3
-    xchg dh, dl                                          # 004C4CD5
+    msvc_xchg dh, dl                                     # 004C4CD5
 .L4C4CD7:
     mov bl, 0xf                                          # 004C4CD7
     mov word ptr [0x1136538], ax                         # 004C4CD9

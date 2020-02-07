@@ -753,7 +753,7 @@ _sub_45A892:
     movsx ax, al                                         # 0045A8C1
     movsx cx, cl                                         # 0045A8C5
     dec di                                               # 0045A8C9
-    xchg si, di                                          # 0045A8CB
+    msvc_xchg si, di                                     # 0045A8CB
     xchg ax, cx                                          # 0045A8CE
     neg di                                               # 0045A8D0
     neg ax                                               # 0045A8D3
@@ -949,7 +949,7 @@ _sub_45ABB2:
     movsx ax, al                                         # 0045ABE1
     movsx cx, cl                                         # 0045ABE5
     dec si                                               # 0045ABE9
-    xchg si, di                                          # 0045ABEB
+    msvc_xchg si, di                                     # 0045ABEB
     xchg ax, cx                                          # 0045ABEE
     neg si                                               # 0045ABF0
     neg cx                                               # 0045ABF3
@@ -1190,7 +1190,7 @@ _sub_45AEE5:
     mov cx, word ptr [0xe3f0a0]                          # 0045AFCD
     mov ax, word ptr [0xe3f0a2]                          # 0045AFD4
     dec di                                               # 0045AFDA
-    xchg si, di                                          # 0045AFDC
+    msvc_xchg si, di                                     # 0045AFDC
     neg di                                               # 0045AFDF
     neg ax                                               # 0045AFE2
     add ax, word ptr [0xe3f090]                          # 0045AFE5
@@ -1399,7 +1399,7 @@ _sub_45B250:
     mov cx, word ptr [0xe3f0a0]                          # 0045B338
     mov ax, word ptr [0xe3f0a2]                          # 0045B33F
     dec si                                               # 0045B345
-    xchg si, di                                          # 0045B347
+    msvc_xchg si, di                                     # 0045B347
     neg si                                               # 0045B34A
     neg cx                                               # 0045B34D
     add ax, word ptr [0xe3f090]                          # 0045B350
@@ -1587,7 +1587,7 @@ _sub_45B58D:
     mov cx, word ptr [0xe3f0a0]                          # 0045B656
     mov ax, word ptr [0xe3f0a2]                          # 0045B65D
     dec di                                               # 0045B663
-    xchg si, di                                          # 0045B665
+    msvc_xchg si, di                                     # 0045B665
     neg di                                               # 0045B668
     neg ax                                               # 0045B66B
     add ax, word ptr [0xe3f090]                          # 0045B66E
@@ -1774,7 +1774,7 @@ _sub_45B8B9:
     mov cx, word ptr [0xe3f0a0]                          # 0045B982
     mov ax, word ptr [0xe3f0a2]                          # 0045B989
     dec si                                               # 0045B98F
-    xchg si, di                                          # 0045B991
+    msvc_xchg si, di                                     # 0045B991
     neg si                                               # 0045B994
     neg cx                                               # 0045B997
     add ax, word ptr [0xe3f090]                          # 0045B99A
@@ -1944,7 +1944,7 @@ _sub_45BB9D:
     mov cx, word ptr [0xe3f0a0]                          # 0045BC69
     mov ax, word ptr [0xe3f0a2]                          # 0045BC70
     dec di                                               # 0045BC76
-    xchg si, di                                          # 0045BC78
+    msvc_xchg si, di                                     # 0045BC78
     neg di                                               # 0045BC7B
     neg ax                                               # 0045BC7E
     add ax, word ptr [0xe3f090]                          # 0045BC81
@@ -2090,7 +2090,7 @@ _sub_45BE48:
     mov cx, word ptr [0xe3f0a0]                          # 0045BF14
     mov ax, word ptr [0xe3f0a2]                          # 0045BF1B
     dec si                                               # 0045BF21
-    xchg si, di                                          # 0045BF23
+    msvc_xchg si, di                                     # 0045BF23
     neg si                                               # 0045BF26
     neg cx                                               # 0045BF29
     add ax, word ptr [0xe3f090]                          # 0045BF2C
@@ -2240,7 +2240,7 @@ _sub_45C0F2:
     mov cx, word ptr [0xe3f0a0]                          # 0045C1C1
     mov ax, word ptr [0xe3f0a2]                          # 0045C1C8
     dec di                                               # 0045C1CE
-    xchg si, di                                          # 0045C1D0
+    msvc_xchg si, di                                     # 0045C1D0
     neg di                                               # 0045C1D3
     neg ax                                               # 0045C1D6
     add ax, word ptr [0xe3f090]                          # 0045C1D9
@@ -2388,7 +2388,7 @@ _sub_45C3A7:
     mov cx, word ptr [0xe3f0a0]                          # 0045C476
     mov ax, word ptr [0xe3f0a2]                          # 0045C47D
     dec si                                               # 0045C483
-    xchg si, di                                          # 0045C485
+    msvc_xchg si, di                                     # 0045C485
     neg si                                               # 0045C488
     neg cx                                               # 0045C48B
     add ax, word ptr [0xe3f090]                          # 0045C48E
@@ -2539,7 +2539,7 @@ _sub_45C656:
     mov cx, word ptr [0xe3f0a0]                          # 0045C725
     mov ax, word ptr [0xe3f0a2]                          # 0045C72C
     dec di                                               # 0045C732
-    xchg si, di                                          # 0045C734
+    msvc_xchg si, di                                     # 0045C734
     neg di                                               # 0045C737
     neg ax                                               # 0045C73A
     add ax, word ptr [0xe3f090]                          # 0045C73D
@@ -2687,7 +2687,7 @@ _sub_45C90B:
     mov cx, word ptr [0xe3f0a0]                          # 0045C9DA
     mov ax, word ptr [0xe3f0a2]                          # 0045C9E1
     dec si                                               # 0045C9E7
-    xchg si, di                                          # 0045C9E9
+    msvc_xchg si, di                                     # 0045C9E9
     neg si                                               # 0045C9EC
     neg cx                                               # 0045C9EF
     add ax, word ptr [0xe3f090]                          # 0045C9F2
@@ -3237,7 +3237,7 @@ _sub_45CF2B:
     mov cx, word ptr [0xe3f0a0]                          # 0045D013
     mov ax, word ptr [0xe3f0a2]                          # 0045D01A
     dec di                                               # 0045D020
-    xchg si, di                                          # 0045D022
+    msvc_xchg si, di                                     # 0045D022
     neg di                                               # 0045D025
     neg ax                                               # 0045D028
     add ax, word ptr [0xe3f090]                          # 0045D02B
@@ -3399,7 +3399,7 @@ _sub_45D1FD:
     mov cx, word ptr [0xe3f0a0]                          # 0045D2E5
     mov ax, word ptr [0xe3f0a2]                          # 0045D2EC
     dec si                                               # 0045D2F2
-    xchg si, di                                          # 0045D2F4
+    msvc_xchg si, di                                     # 0045D2F4
     neg si                                               # 0045D2F7
     neg cx                                               # 0045D2FA
     add ax, word ptr [0xe3f090]                          # 0045D2FD
@@ -3566,7 +3566,7 @@ _sub_45D4CF:
     mov cx, word ptr [0xe3f0a0]                          # 0045D5BA
     mov ax, word ptr [0xe3f0a2]                          # 0045D5C1
     dec di                                               # 0045D5C7
-    xchg si, di                                          # 0045D5C9
+    msvc_xchg si, di                                     # 0045D5C9
     neg di                                               # 0045D5CC
     neg ax                                               # 0045D5CF
     add ax, word ptr [0xe3f090]                          # 0045D5D2
@@ -3734,7 +3734,7 @@ _sub_45D7B9:
     mov cx, word ptr [0xe3f0a0]                          # 0045D8A4
     mov ax, word ptr [0xe3f0a2]                          # 0045D8AB
     dec si                                               # 0045D8B1
-    xchg si, di                                          # 0045D8B3
+    msvc_xchg si, di                                     # 0045D8B3
     neg si                                               # 0045D8B6
     neg cx                                               # 0045D8B9
     add ax, word ptr [0xe3f090]                          # 0045D8BC
@@ -3924,7 +3924,7 @@ _sub_45DADC:
     mov cx, word ptr [0xe3f0a0]                          # 0045DBC4
     mov ax, word ptr [0xe3f0a2]                          # 0045DBCB
     dec di                                               # 0045DBD1
-    xchg si, di                                          # 0045DBD3
+    msvc_xchg si, di                                     # 0045DBD3
     neg di                                               # 0045DBD6
     neg ax                                               # 0045DBD9
     add ax, word ptr [0xe3f090]                          # 0045DBDC
@@ -4139,7 +4139,7 @@ _sub_45DE5D:
     mov cx, word ptr [0xe3f0a0]                          # 0045DF45
     mov ax, word ptr [0xe3f0a2]                          # 0045DF4C
     dec si                                               # 0045DF52
-    xchg si, di                                          # 0045DF54
+    msvc_xchg si, di                                     # 0045DF54
     neg si                                               # 0045DF57
     neg cx                                               # 0045DF5A
     add ax, word ptr [0xe3f090]                          # 0045DF5D
@@ -4364,7 +4364,7 @@ _sub_45E1E4:
     mov cx, word ptr [0xe3f0a0]                          # 0045E2CC
     mov ax, word ptr [0xe3f0a2]                          # 0045E2D3
     dec di                                               # 0045E2D9
-    xchg si, di                                          # 0045E2DB
+    msvc_xchg si, di                                     # 0045E2DB
     neg di                                               # 0045E2DE
     neg ax                                               # 0045E2E1
     add ax, word ptr [0xe3f090]                          # 0045E2E4
@@ -4603,7 +4603,7 @@ _sub_45E59F:
     mov cx, word ptr [0xe3f0a0]                          # 0045E687
     mov ax, word ptr [0xe3f0a2]                          # 0045E68E
     dec si                                               # 0045E694
-    xchg si, di                                          # 0045E696
+    msvc_xchg si, di                                     # 0045E696
     neg si                                               # 0045E699
     neg cx                                               # 0045E69C
     add ax, word ptr [0xe3f090]                          # 0045E69F

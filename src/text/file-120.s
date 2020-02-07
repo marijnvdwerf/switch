@@ -5712,7 +5712,7 @@ _sub_4340B3:
     add dx, 0x10                                         # 0043410A
     shl ecx, 0x10                                        # 0043410E
     msvc_mov cx, ax                                      # 00434111
-    xchg edx, ecx                                        # 00434114
+    msvc_xchg edx, ecx                                   # 00434114
     shl ecx, 0x10                                        # 00434116
     mov cl, 1                                            # 00434119
     or edx, 0x40000000                                   # 0043411B
@@ -5726,7 +5726,7 @@ _sub_4340B3:
     mov dword ptr [esi + 0x848], edx                     # 0043414E
     mov dword ptr [esi + 0x84c], ecx                     # 00434154
     and edx, 0x3fffffff                                  # 0043415A
-    xchg edx, ecx                                        # 00434160
+    msvc_xchg edx, ecx                                   # 00434160
     msvc_mov ax, cx                                      # 00434162
     shr ecx, 0x10                                        # 00434165
     shr edx, 0x10                                        # 00434168

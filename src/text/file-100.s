@@ -2906,7 +2906,7 @@ _sub_42E893:
     msvc_cmp ax, dx                                      # 0042E912
     ja .L42E91B                                          # 0042E915
     xchg ax, dx                                          # 0042E917
-    xchg bh, bl                                          # 0042E919
+    msvc_xchg bh, bl                                     # 0042E919
 .L42E91B:
     shr ax, 5                                            # 0042E91B
     shr dx, 5                                            # 0042E91F

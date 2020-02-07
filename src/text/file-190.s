@@ -653,14 +653,14 @@ _sub_46BAD5:
     .global _sub_46BE34
 _sub_46BE34:
     mov ebp, 0xa                                         # 0046BE34
-    xchg cx, bx                                          # 0046BE39
+    msvc_xchg cx, bx                                     # 0046BE39
     msvc_cmp ax, bx                                      # 0046BE3C
     jle .L46BE43                                         # 0046BE3F
     xchg ax, bx                                          # 0046BE41
 .L46BE43:
     msvc_cmp cx, dx                                      # 0046BE43
     jle .L46BE4B                                         # 0046BE46
-    xchg dx, cx                                          # 0046BE48
+    msvc_xchg dx, cx                                     # 0046BE48
 .L46BE4B:
     call _sub_4474BA                                     # 0046BE4B
     ret                                                  # 0046BE50
@@ -668,14 +668,14 @@ _sub_46BE34:
     .global _sub_46BE51
 _sub_46BE51:
     mov ebp, 0x100000a                                   # 0046BE51
-    xchg cx, bx                                          # 0046BE56
+    msvc_xchg cx, bx                                     # 0046BE56
     msvc_cmp ax, bx                                      # 0046BE59
     jle .L46BE60                                         # 0046BE5C
     xchg ax, bx                                          # 0046BE5E
 .L46BE60:
     msvc_cmp cx, dx                                      # 0046BE60
     jle .L46BE68                                         # 0046BE63
-    xchg dx, cx                                          # 0046BE65
+    msvc_xchg dx, cx                                     # 0046BE65
 .L46BE68:
     call _sub_4474BA                                     # 0046BE68
     ret                                                  # 0046BE6D
@@ -1332,7 +1332,7 @@ _sub_46C5BC:
 
     .global _sub_46C5D5
 _sub_46C5D5:
-    xchg esi, edi                                        # 0046C5D5
+    msvc_xchg esi, edi                                   # 0046C5D5
     movzx edi, word ptr [edi + 0x870]                    # 0046C5D7
     jmp dword ptr [edi*4 + 0x4fdeac]                     # 0046C5DE
 

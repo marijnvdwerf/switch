@@ -4939,7 +4939,7 @@ _sub_4AC94F:
 .L4AC9A9:
     msvc_cmp si, di                                      # 004AC9A9
     jae .L4AC9B1                                         # 004AC9AC
-    xchg di, si                                          # 004AC9AE
+    msvc_xchg di, si                                     # 004AC9AE
 .L4AC9B1:
     shr di, 2                                            # 004AC9B1
     msvc_add si, di                                      # 004AC9B5
@@ -5837,8 +5837,8 @@ _sub_4ACEE7:
     shr ax, 5                                            # 004AD660
     shr cx, 5                                            # 004AD664
     shr dx, 3                                            # 004AD668
-    xchg ah, al                                          # 004AD66C
-    xchg ch, cl                                          # 004AD66E
+    msvc_xchg ah, al                                     # 004AD66C
+    msvc_xchg ch, cl                                     # 004AD66E
     shl al, 7                                            # 004AD670
     shl cl, 7                                            # 004AD673
     msvc_or cl, dl                                       # 004AD676
@@ -5871,8 +5871,8 @@ _sub_4ACEE7:
     shr ax, 5                                            # 004AD6E9
     shr cx, 5                                            # 004AD6ED
     shr dx, 3                                            # 004AD6F1
-    xchg ah, al                                          # 004AD6F5
-    xchg ch, cl                                          # 004AD6F7
+    msvc_xchg ah, al                                     # 004AD6F5
+    msvc_xchg ch, cl                                     # 004AD6F7
     shl al, 7                                            # 004AD6F9
     shl cl, 7                                            # 004AD6FC
     msvc_or cl, dl                                       # 004AD6FF
@@ -8457,7 +8457,7 @@ _sub_4AF7A4:
     cmp edx, 2                                           # 004AFA79
     jb .L4AFAAC                                          # 004AFA7C
 .L4AFA7E:
-    xchg esi, edi                                        # 004AFA7E
+    msvc_xchg esi, edi                                   # 004AFA7E
     movzx ecx, word ptr [esi + 0x3a]                     # 004AFA80
     shl ecx, 7                                           # 004AFA84
     add ecx, 0x6db6dc                                    # 004AFA87
@@ -13601,7 +13601,7 @@ _sub_4B3F62:
     call _sub_494B3F                                     # 004B40AB
     msvc_jmp .L4B41A9                                    # 004B40B0
 .L4B40B5:
-    xchg ebp, ebx                                        # 004B40B5
+    msvc_xchg ebp, ebx                                   # 004B40B5
     cmp byte ptr [ebp + 0x51], 0                         # 004B40B7
     je .L4B40C3                                          # 004B40BB
     cmp byte ptr [ebx + 0x51], 0                         # 004B40BD
@@ -14883,13 +14883,13 @@ _sub_4B50DE:
     shr edx, 0x10                                        # 004B511F
 .L4B5122:
     shr cx, 5                                            # 004B5122
-    xchg ch, cl                                          # 004B5126
+    msvc_xchg ch, cl                                     # 004B5126
     shl cl, 7                                            # 004B5128
     shr dx, 3                                            # 004B512B
     msvc_or cl, dl                                       # 004B512F
     shl ecx, 0x10                                        # 004B5131
     shr ax, 5                                            # 004B5134
-    xchg ah, al                                          # 004B5138
+    msvc_xchg ah, al                                     # 004B5138
     shl al, 7                                            # 004B513A
     movzx eax, ax                                        # 004B513D
     msvc_or eax, ecx                                     # 004B5140
@@ -14950,13 +14950,13 @@ _sub_4B51CC:
     pop esi                                              # 004B51D1
     pop edi                                              # 004B51D2
     shr cx, 5                                            # 004B51D3
-    xchg ch, cl                                          # 004B51D7
+    msvc_xchg ch, cl                                     # 004B51D7
     shl cl, 7                                            # 004B51D9
     shr dx, 3                                            # 004B51DC
     msvc_or cl, dl                                       # 004B51E0
     shl ecx, 0x10                                        # 004B51E2
     shr ax, 5                                            # 004B51E5
-    xchg ah, al                                          # 004B51E9
+    msvc_xchg ah, al                                     # 004B51E9
     shl al, 7                                            # 004B51EB
     movzx eax, ax                                        # 004B51EE
     msvc_or eax, ecx                                     # 004B51F1
@@ -15025,13 +15025,13 @@ _sub_4B528F:
     pop esi                                              # 004B5294
     pop edi                                              # 004B5295
     shr cx, 5                                            # 004B5296
-    xchg ch, cl                                          # 004B529A
+    msvc_xchg ch, cl                                     # 004B529A
     shl cl, 7                                            # 004B529C
     shr dx, 3                                            # 004B529F
     msvc_or cl, dl                                       # 004B52A3
     shl ecx, 0x10                                        # 004B52A5
     shr ax, 5                                            # 004B52A8
-    xchg ah, al                                          # 004B52AC
+    msvc_xchg ah, al                                     # 004B52AC
     shl al, 7                                            # 004B52AE
     movzx eax, ax                                        # 004B52B1
     msvc_or eax, ecx                                     # 004B52B4
@@ -15055,7 +15055,7 @@ _sub_4B528F:
     .global _sub_4B52E6
 _sub_4B52E6:
     msvc_mov ax, dx                                      # 004B52E6
-    xchg ah, al                                          # 004B52E9
+    msvc_xchg ah, al                                     # 004B52E9
     shl al, 6                                            # 004B52EB
     or al, 1                                             # 004B52EE
     movsx ebp, word ptr [0x523378]                       # 004B52F0
@@ -16644,12 +16644,12 @@ _sub_4B6669:
     push esi                                             # 004B6669
     push ebp                                             # 004B666A
     sub esp, 0x80                                        # 004B666B
-    xchg ebp, edi                                        # 004B6671
+    msvc_xchg ebp, edi                                   # 004B6671
     msvc_mov edi, esp                                    # 004B6673
     mov ecx, 0x20                                        # 004B6675
     msvc_xor eax, eax                                    # 004B667A
     rep stosd dword ptr es:[edi], eax                    # 004B667C
-    xchg ebp, edi                                        # 004B667E
+    msvc_xchg ebp, edi                                   # 004B667E
     movzx esi, word ptr [esi + 0x3a]                     # 004B6680
     shl esi, 7                                           # 004B6684
     add esi, 0x6db6dc                                    # 004B6687

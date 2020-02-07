@@ -819,7 +819,7 @@ _sub_48BB20:
     push ebx                                             # 0048BC51
     push ecx                                             # 0048BC52
     msvc_mov bl, dl                                      # 0048BC53
-    xchg di, dx                                          # 0048BC55
+    msvc_xchg di, dx                                     # 0048BC55
     and edi, 0xff                                        # 0048BC58
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 0048BC5E
     msvc_xor ebp, ebp                                    # 0048BC65
@@ -836,7 +836,7 @@ _sub_48BB20:
     pop eax                                              # 0048BC8A
     jb _sub_48C381                                       # 0048BC8B
     msvc_mov bl, dl                                      # 0048BC91
-    xchg di, dx                                          # 0048BC93
+    msvc_xchg di, dx                                     # 0048BC93
     and edi, 0xff                                        # 0048BC96
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 0048BC9C
     mov bp, word ptr [esi + 5]                           # 0048BCA3
@@ -1548,7 +1548,7 @@ _sub_48C402:
     pop eax                                              # 0048C4C2
     jb _sub_48C6FF                                       # 0048C4C3
     msvc_mov bl, dl                                      # 0048C4C9
-    xchg di, dx                                          # 0048C4CB
+    msvc_xchg di, dx                                     # 0048C4CB
     and edi, 0xff                                        # 0048C4CE
     mov edi, dword ptr [edi*4 + 0x4f73d8]                # 0048C4D4
     mov bp, word ptr [esi + 5]                           # 0048C4DB
@@ -1888,7 +1888,7 @@ _sub_48C708:
     push ebx                                             # 0048C8C4
     push ecx                                             # 0048C8C5
     msvc_mov bl, dl                                      # 0048C8C6
-    xchg di, dx                                          # 0048C8C8
+    msvc_xchg di, dx                                     # 0048C8C8
     and edi, 0xff                                        # 0048C8CB
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0048C8D1
     msvc_xor ebp, ebp                                    # 0048C8D8
@@ -1916,7 +1916,7 @@ _sub_48C708:
     test byte ptr [esi], 0x80                            # 0048C914
     jne _sub_48D1A4                                      # 0048C917
     msvc_mov bl, dl                                      # 0048C91D
-    xchg di, dx                                          # 0048C91F
+    msvc_xchg di, dx                                     # 0048C91F
     and edi, 0xff                                        # 0048C922
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0048C928
     mov bp, word ptr [esi + 5]                           # 0048C92F
@@ -2838,7 +2838,7 @@ _sub_48D2AC:
     jb _sub_48D5DB                                       # 0048D389
 .L48D38F:
     msvc_mov bl, dl                                      # 0048D38F
-    xchg di, dx                                          # 0048D391
+    msvc_xchg di, dx                                     # 0048D391
     and edi, 0xff                                        # 0048D394
     mov edi, dword ptr [edi*4 + 0x4f6d1c]                # 0048D39A
     mov bp, word ptr [esi + 5]                           # 0048D3A1
@@ -6945,7 +6945,7 @@ _sub_490372:
     .global _sub_4903C1
 _sub_4903C1:
     xchg ax, cx                                          # 004903C1
-    xchg si, di                                          # 004903C3
+    msvc_xchg si, di                                     # 004903C3
     neg cx                                               # 004903C6
     neg si                                               # 004903C9
     jmp _sub_4903E7                                      # 004903CC
@@ -6961,7 +6961,7 @@ _sub_4903CE:
     .global _sub_4903DC
 _sub_4903DC:
     xchg ax, cx                                          # 004903DC
-    xchg si, di                                          # 004903DE
+    msvc_xchg si, di                                     # 004903DE
     neg ax                                               # 004903E1
     neg di                                               # 004903E4
 
@@ -6977,7 +6977,7 @@ _sub_4903E7:
 .L490402:
     msvc_cmp cx, si                                      # 00490402
     jl .L49040A                                          # 00490405
-    xchg si, cx                                          # 00490407
+    msvc_xchg si, cx                                     # 00490407
 .L49040A:
     sub ax, 0x40                                         # 0049040A
     jns .L490413                                         # 0049040E
@@ -9148,7 +9148,7 @@ _sub_491C6F:
     .global _sub_491CB7
 _sub_491CB7:
     xchg ax, cx                                          # 00491CB7
-    xchg si, di                                          # 00491CB9
+    msvc_xchg si, di                                     # 00491CB9
     neg cx                                               # 00491CBC
     neg si                                               # 00491CBF
     jmp _sub_491CDD                                      # 00491CC2
@@ -9164,7 +9164,7 @@ _sub_491CC4:
     .global _sub_491CD2
 _sub_491CD2:
     xchg ax, cx                                          # 00491CD2
-    xchg si, di                                          # 00491CD4
+    msvc_xchg si, di                                     # 00491CD4
     neg ax                                               # 00491CD7
     neg di                                               # 00491CDA
 
@@ -9182,7 +9182,7 @@ _sub_491CDD:
 .L491CF2:
     msvc_cmp cx, si                                      # 00491CF2
     jl .L491CFA                                          # 00491CF5
-    xchg si, cx                                          # 00491CF7
+    msvc_xchg si, cx                                     # 00491CF7
 .L491CFA:
     sar ax, 5                                            # 00491CFA
     sar cx, 5                                            # 00491CFE
@@ -9294,7 +9294,7 @@ _sub_491DA1:
     .global _sub_491E4D
 _sub_491E4D:
     xchg ax, cx                                          # 00491E4D
-    xchg si, di                                          # 00491E4F
+    msvc_xchg si, di                                     # 00491E4F
     neg cx                                               # 00491E52
     neg si                                               # 00491E55
     jmp _sub_491E73                                      # 00491E58
@@ -9310,7 +9310,7 @@ _sub_491E5A:
     .global _sub_491E68
 _sub_491E68:
     xchg ax, cx                                          # 00491E68
-    xchg si, di                                          # 00491E6A
+    msvc_xchg si, di                                     # 00491E6A
     neg ax                                               # 00491E6D
     neg di                                               # 00491E70
 
@@ -9328,7 +9328,7 @@ _sub_491E73:
 .L491E8C:
     msvc_cmp cx, si                                      # 00491E8C
     jl .L491E94                                          # 00491E8F
-    xchg si, cx                                          # 00491E91
+    msvc_xchg si, cx                                     # 00491E91
 .L491E94:
     sar ax, 5                                            # 00491E94
     sar cx, 5                                            # 00491E98
@@ -11173,7 +11173,7 @@ _sub_4935FB:
     .global _sub_4936A7
 _sub_4936A7:
     xchg ax, cx                                          # 004936A7
-    xchg bx, bp                                          # 004936A9
+    msvc_xchg bx, bp                                     # 004936A9
     neg cx                                               # 004936AC
     neg bx                                               # 004936AF
     jmp _sub_4936CD                                      # 004936B2
@@ -11189,7 +11189,7 @@ _sub_4936B4:
     .global _sub_4936C2
 _sub_4936C2:
     xchg ax, cx                                          # 004936C2
-    xchg bx, bp                                          # 004936C4
+    msvc_xchg bx, bp                                     # 004936C4
     neg ax                                               # 004936C7
     neg bp                                               # 004936CA
 
@@ -11205,7 +11205,7 @@ _sub_4936CD:
 .L4936E2:
     msvc_cmp cx, bx                                      # 004936E2
     jb .L4936EA                                          # 004936E5
-    xchg bx, cx                                          # 004936E7
+    msvc_xchg bx, cx                                     # 004936E7
 .L4936EA:
     cmp ax, word ptr [0x112c75e]                         # 004936EA
     ja .L49370E                                          # 004936F1

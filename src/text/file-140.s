@@ -1848,7 +1848,7 @@ _sub_43E1CF:
     add cx, word ptr [esi + 0x32]                        # 0043E208
     mov dx, word ptr [0x50a3a6]                          # 0043E20C
     add dx, word ptr [esi + 0x30]                        # 0043E213
-    xchg dx, cx                                          # 0043E217
+    msvc_xchg dx, cx                                     # 0043E217
     add dx, 6                                            # 0043E21A
     add cx, 0x97                                         # 0043E21E
     sub dx, word ptr [esi + 0x50]                        # 0043E223
@@ -9859,7 +9859,7 @@ _sub_444C35:
     inc ebx                                              # 00444C47
     dec ecx                                              # 00444C48
     jne .L444C3E                                         # 00444C49
-    xchg esi, edi                                        # 00444C4B
+    msvc_xchg esi, edi                                   # 00444C4B
     ret                                                  # 00444C4D
 
     .global _sub_444C4E
@@ -12933,7 +12933,7 @@ _sub_4471A4:
     je .L447281                                          # 0044727C
     shr edx, 0x10                                        # 0044727E
 .L447281:
-    xchg dx, cx                                          # 00447281
+    msvc_xchg dx, cx                                     # 00447281
     shl ecx, 0x10                                        # 00447284
     shl edx, 0x10                                        # 00447287
     msvc_mov dx, ax                                      # 0044728A

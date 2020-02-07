@@ -1409,7 +1409,7 @@ _sub_4C68E3:
 
     .global _sub_4C68E4
 _sub_4C68E4:
-    xchg esi, edi                                        # 004C68E4
+    msvc_xchg esi, edi                                   # 004C68E4
     mov dx, word ptr [esi + 8]                           # 004C68E6
     mov bp, word ptr [esi + 0xa]                         # 004C68EA
     mov word ptr [esi + 8], ax                           # 004C68EE
@@ -1811,7 +1811,7 @@ _sub_4C6B09:
     mov bx, word ptr [esi + 6]                           # 004C6DA4
     mov cx, word ptr [esi]                               # 004C6DA8
     mov di, word ptr [esi + 2]                           # 004C6DAB
-    xchg dx, di                                          # 004C6DAF
+    msvc_xchg dx, di                                     # 004C6DAF
     msvc_mov si, bp                                      # 004C6DB2
     call _sub_451DCB                                     # 004C6DB5
     pop ebp                                              # 004C6DBA
@@ -9693,7 +9693,7 @@ _sub_4CCF8C:
     jmp .L4CCF95                                         # 004CCF9F
 .L4CCFA1:
     mov bh, byte ptr [ebx + 0x5046fa]                    # 004CCFA1
-    xchg bh, bl                                          # 004CCFA7
+    msvc_xchg bh, bl                                     # 004CCFA7
     or bl, 0x80                                          # 004CCFA9
     mov bp, 0x10                                         # 004CCFAC
     mov ah, 0x10                                         # 004CCFB0
@@ -17587,7 +17587,7 @@ _sub_4D2D3F:
     test cl, cl                                          # 004D2D4B
     je .L4D2D5B                                          # 004D2D4D
 .L4D2D4F:
-    cmp cl, dl                                           # 004D2D4F
+    msvc_cmp cl, dl                                      # 004D2D4F
     je .L4D2D5B                                          # 004D2D51
     mov cl, byte ptr [eax + 1]                           # 004D2D53
     inc eax                                              # 004D2D56
@@ -17810,7 +17810,7 @@ _sub_4D2EE7:
     cmp dword ptr [esi], 0x2d                            # 004D2F0D
     sete cl                                              # 004D2F10
     msvc_add ecx, eax                                    # 004D2F13
-    add ecx, ebp                                         # 004D2F15
+    msvc_add ecx, ebp                                    # 004D2F15
     msvc_mov eax, ecx                                    # 004D2F17
     mov byte ptr [eax], 0x30                             # 004D2F19
     and byte ptr [eax + 1], 0                            # 004D2F1C
@@ -17831,7 +17831,7 @@ _sub_4D2EE7:
     msvc_xor eax, eax                                    # 004D2F3F
     cmp dword ptr [esi], 0x2d                            # 004D2F41
     sete al                                              # 004D2F44
-    add eax, ebp                                         # 004D2F47
+    msvc_add eax, ebp                                    # 004D2F47
     push eax                                             # 004D2F49
     call _sub_4D4FA2                                     # 004D2F4A
     add esp, 0x14                                        # 004D2F4F
