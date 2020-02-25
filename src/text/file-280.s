@@ -379,7 +379,7 @@ _sub_4BE8DF:
     push esi                                             # 004BE8E4
     mov cx, word ptr [esi + 0x30]                        # 004BE8E5
     mov dx, word ptr [esi + 0x32]                        # 004BE8E9
-    add cx, 0x8c                                         # 004BE8ED
+    add cx, 0x7d                                       # 004BE8ED
     add dx, 0x20                                         # 004BE8F2
     movzx ax, byte ptr [__11364A4]                       # 004BE8F6
     add ax, 0x2c1                                        # 004BE8FE
@@ -1734,7 +1734,7 @@ _sub_4BF7B9:
     .global _sub_4BF823
 _sub_4BF823:
     call _sub_4BF7B9                                     # 004BF823
-    mov edx, 6                                           # 004BF828
+    mov dx, 6                                           # 004BF828
     mov ebp, dword ptr [esi]                             # 004BF82D
     call dword ptr [ebp + 4]                             # 004BF82F
     ret                                                  # 004BF832
@@ -1793,6 +1793,7 @@ _sub_4BF8CD:
     popal                                                # 004BF900
     ret                                                  # 004BF901
 .L4BF902:
+    DebugStamp 0x0
     mov eax, 0xff000002                                  # 004BF902
     mov bx, 0xffff                                       # 004BF907
     msvc_jmp _sub_4BE5EB                                 # 004BF90B
@@ -2940,9 +2941,6 @@ _sub_4C0875:
     add ebp, 0xe                                         # 004C08A7
     cmp_offset ebp, __4FEAA6                             # 004C08AA
     jb .L4C089A                                          # 004C08B0
-    msvc_or ebx, ebx                                     # 004C08B2
-    jne .L4C08DA                                         # 004C08B4
-    mov ebx, 0x1d                                        # 004C08B6
     jmp .L4C08DA                                         # 004C08BB
 .L4C08BD:
     msvc_xor ebx, ebx                                    # 004C08BD
@@ -2955,9 +2953,6 @@ _sub_4C0875:
     inc ebp                                              # 004C08CB
     cmp ebp, 0x1d                                        # 004C08CC
     jb .L4C08C1                                          # 004C08CF
-    msvc_or ebx, ebx                                     # 004C08D1
-    jne .L4C08DA                                         # 004C08D3
-    mov ebx, 0x1d                                        # 004C08D5
 .L4C08DA:
     mov al, byte ptr [esi + 0x887]                       # 004C08DA
     mov bp, word ptr [edi - 0xc]                         # 004C08E0
@@ -3020,8 +3015,6 @@ _sub_4C0875:
     pop esi                                              # 004C09AB
     ret                                                  # 004C09AC
 .L4C09AD:
-    cmp word ptr [__113D84C], 0x1d                       # 004C09AD
-    je .L4C097A                                          # 004C09B5
     msvc_xor ecx, ecx                                    # 004C09B7
     msvc_xor edx, edx                                    # 004C09B9
 .L4C09BB:
@@ -4227,17 +4220,6 @@ _sub_4C1799:
     jae _sub_4C1802                                      # 004C17AC
     movzx eax, ax                                        # 004C17AE
     xor byte ptr [eax + __50AF40], 1                     # 004C17B1
-    msvc_xor edx, edx                                    # 004C17B8
-    msvc_xor cl, cl                                      # 004C17BA
-.L4C17BC:
-    or cl, byte ptr [edx + __50AF40]                     # 004C17BC
-    inc edx                                              # 004C17C2
-    cmp edx, 0x1d                                        # 004C17C3
-    jb .L4C17BC                                          # 004C17C6
-    test cl, 1                                           # 004C17C8
-    jne .L4C17D4                                         # 004C17CB
-    xor byte ptr [eax + __50AF40], 1                     # 004C17CD
-.L4C17D4:
     call _sub_441BB8                                     # 004C17D4
     call _sub_48AA0C                                     # 004C17D9
     msvc_jmp _sub_4CA4BD                                 # 004C17DE
@@ -4416,5 +4398,4 @@ __4C19C3:
 # 0x4C19CA
     .byte 0x52, 0x47, 0x54, 0x4D, 0x53, 0xFF, 0x45, 0x51 #        0 RGTMS.EQ
     .byte 0x44, 0x44, 0x42, 0x40, 0x52, 0x47, 0xFF, 0xFF #        8 DDB@RG..
-    .byte 0xCC, 0xCC                                     #       10 ..
 

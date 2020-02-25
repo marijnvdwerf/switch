@@ -18,5 +18,5 @@ script:
   - objcopy --dump-section .text=text.bin --dump-section .rodata=rodata.bin --dump-section .data=data.bin loco
   - truncate -s %4096 text.bin
   - truncate -s %4096 data.bin
-  - md5sum -c ../md5-gog.txt
+  - md5sum -c ../md5-gbr-169.txt
   - curl -F "file=@loco" https://file.io

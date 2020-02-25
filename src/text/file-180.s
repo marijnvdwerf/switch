@@ -146,6 +146,7 @@ _sub_4612A6:
 
     .global _sub_4612EC
 _sub_4612EC:
+DebugStamp
     test dword ptr [_scenarioChunk3+16], 1               # 004612EC
     je .L461347                                          # 004612F6
     movzx ecx, word ptr [_scenarioChunk3+340]            # 004612F8
@@ -323,6 +324,7 @@ _sub_46148F:
     mov dword ptr [__113E87C], 0                         # 004614D5
     cmp eax, -1                                          # 004614DF
     jne .L4614F2                                         # 004614E2
+    DebugStamp
     mov eax, 0x1112                                      # 004614E4
     mov bx, 0xffff                                       # 004614E9
     msvc_jmp _sub_4BE5EB                                 # 004614ED
@@ -383,6 +385,7 @@ _sub_461578:
     push edi                                             # 00461579
     push ebp                                             # 0046157A
     msvc_mov ebp, esi                                    # 0046157B
+    call _sub_461393
     movzx edi, cx                                        # 0046157D
     shl edi, 9                                           # 00461580
     msvc_or di, ax                                       # 00461583
@@ -3379,6 +3382,7 @@ _sub_4638CF:
 
     .global _sub_463ABA
 _sub_463ABA:
+    DebugStamp
     test dword ptr [_scenarioChunk3+16], 1               # 00463ABA
     je _sub_463B65                                       # 00463AC4
     mov byte ptr [__9C68EB], 0xf                         # 00463ACA
@@ -3430,6 +3434,7 @@ _sub_463ABA:
 
     .global _sub_463B65
 _sub_463B65:
+    DebugStamp
     ret                                                  # 00463B65
 
     .global _sub_463B66
@@ -9296,8 +9301,6 @@ _sub_468949:
     movzx di, byte ptr [esi + 2]                         # 00468A52
     shl di, 2                                            # 00468A57
     mov bl, byte ptr [ebp + 8]                           # 00468A5B
-    test bl, 1                                           # 00468A5E
-    jne .L468A6D                                         # 00468A61
     cmp word ptr [__F00176], -1                          # 00468A63
     je .L468A70                                          # 00468A6B
 .L468A6D:
@@ -9764,13 +9767,6 @@ _sub_46902E:
     call _sub_4CC098                                     # 00469073
     pop esi                                              # 00469078
     pop edi                                              # 00469079
-    pushal                                               # 0046907A
-    msvc_xor edi, edi                                    # 0046907B
-    msvc_xor esi, esi                                    # 0046907D
-    msvc_xor ebp, ebp                                    # 0046907F
-    mov bp, 0xffe2                                       # 00469081
-    call _sub_497DC1                                     # 00469085
-    popal                                                # 0046908A
 .L46908B:
     pop esi                                              # 0046908B
     ret                                                  # 0046908C
@@ -9811,13 +9807,6 @@ _sub_46908D:
     call _sub_4CC098                                     # 004690E1
     pop esi                                              # 004690E6
     pop edi                                              # 004690E7
-    pushal                                               # 004690E8
-    msvc_xor edi, edi                                    # 004690E9
-    msvc_xor esi, esi                                    # 004690EB
-    msvc_xor ebp, ebp                                    # 004690ED
-    mov bp, 0xffe2                                       # 004690EF
-    call _sub_497DC1                                     # 004690F3
-    popal                                                # 004690F8
 .L4690F9:
     pop esi                                              # 004690F9
     pop edx                                              # 004690FA
@@ -11022,6 +11011,7 @@ _sub_469D76:
     mov dword ptr [__F25308], 0                          # 00469D83
     test bl, 1                                           # 00469D8D
     je .L469DAE                                          # 00469D90
+    call _sub_46902E
     test word ptr [__508F14], 2                          # 00469D92
     jne .L469DA2                                         # 00469D9B
     call _sub_4690FC                                     # 00469D9D
@@ -11144,8 +11134,6 @@ _sub_469E07:
     movzx di, byte ptr [esi + 2]                         # 00469F20
     shl di, 2                                            # 00469F25
     mov bl, byte ptr [ebp + 8]                           # 00469F29
-    test bl, 1                                           # 00469F2C
-    jne .L469F3B                                         # 00469F2F
     cmp word ptr [__F00176], -1                          # 00469F31
     je .L469F3E                                          # 00469F39
 .L469F3B:
@@ -11876,36 +11864,8 @@ _sub_46A66D:
 
     .global _sub_46A747
 _sub_46A747:
-    msvc_xor ax, ax                                      # 0046A747
-    msvc_xor cx, cx                                      # 0046A74A
-.L46A74D:
-    msvc_mov si, cx                                      # 0046A74D
-    movzx esi, si                                        # 0046A750
-    shl esi, 9                                           # 0046A753
-    msvc_or si, ax                                       # 0046A756
-    shr esi, 3                                           # 0046A759
-    mov esi, dword ptr [esi + __E40134]                  # 0046A75C
-    test byte ptr [esi], 0x3c                            # 0046A762
-    je .L46A76F                                          # 0046A765
-.L46A767:
-    add esi, 8                                           # 0046A767
-    test byte ptr [esi], 0x3c                            # 0046A76A
-    jne .L46A767                                         # 0046A76D
-.L46A76F:
-    test byte ptr [esi + 4], 0x1f                        # 0046A76F
-    jne .L46A77B                                         # 0046A773
-    mov dl, byte ptr [esi + 2]                           # 0046A775
-    mov byte ptr [esi + 3], dl                           # 0046A778
-.L46A77B:
-    add cx, 0x20                                         # 0046A77B
-    cmp cx, 0x2fff                                       # 0046A77F
-    jb .L46A74D                                          # 0046A784
-    msvc_xor cx, cx                                      # 0046A786
-    add ax, 0x20                                         # 0046A789
-    cmp ax, 0x2fff                                       # 0046A78D
-    jb .L46A74D                                          # 0046A791
-    ret                                                  # 0046A793
 
+    .align 4
     .global _sub_46A794
 _sub_46A794:
     push ebp                                             # 0046A794
@@ -12062,7 +12022,6 @@ _sub_46A794:
 .L46AAB0:
     call _sub_4BE92A                                     # 0046AAB0
     call _sub_48A18C                                     # 0046AAB5
-    inc dword ptr [__50C1AE]                             # 0046AABA
     cmp byte ptr [__50C195], 0                           # 0046AAC0
     je .L46AAD3                                          # 0046AAC7
     call _sub_46AE0C                                     # 0046AAC9
@@ -12132,7 +12091,6 @@ _sub_46A794:
     imul ax, ax, 3                                       # 0046ABAD
 .L46ABB1:
     mov word ptr [__F253A2], ax                          # 0046ABB1
-    call _sub_46FFCA                                     # 0046ABB7
     mov ax, word ptr [__F253A2]                          # 0046ABBC
     msvc_or ax, ax                                       # 0046ABC2
     je .L46AC99                                          # 0046ABC5
@@ -12154,10 +12112,8 @@ _sub_46A794:
     call _sub_496B6D                                     # 0046AC11
     call _sub_453234                                     # 0046AC16
     call _sub_4A8826                                     # 0046AC1B
-    call _sub_46FFCA                                     # 0046AC20
     call _sub_48B1FA                                     # 0046AC25
     call _sub_4402F4                                     # 0046AC2A
-    call _sub_46FFCA                                     # 0046AC2F
     call _sub_430319                                     # 0046AC34
     call _sub_4612EC                                     # 0046AC39
     call _sub_48A73B                                     # 0046AC3E
@@ -12198,7 +12154,6 @@ _sub_46A794:
 .L46ACD4:
     call _sub_431695                                     # 0046ACD4
     call _sub_452B5F                                     # 0046ACD9
-    call _sub_46FFCA                                     # 0046ACDE
     cmp byte ptr [__50AEC0], 0xff                        # 0046ACE3
     je .L46AD00                                          # 0046ACEA
     inc byte ptr [__50AEC0]                              # 0046ACEC
@@ -12235,6 +12190,7 @@ _sub_46AD71:
 
     .global _sub_46AD7D
 _sub_46AD7D:
+    DebugStamp 0x5021215
     mov al, byte ptr [_scenarioChunk3+36]                # 0046AD7D
     mov byte ptr [__9C68EB], al                          # 0046AD82
     test byte ptr [__508F17], 1                          # 0046AD87
@@ -12272,11 +12228,10 @@ _sub_46AE0C:
     movzx ebx, byte ptr [__50C195]                       # 0046AE16
     cmp bl, 0xfe                                         # 0046AE1D
     je .L46B40E                                          # 0046AE20
-    mov dword ptr [__50C1AE], 0                          # 0046AE26
-    cmp bl, 0xfe                                         # 0046AE30
     ja .L46B460                                          # 0046AE33
     jmp dword ptr [ebx*4 + __46AE40]                     # 0046AE39
 
+    .align 4
     .global __46AE40
 __46AE40:
 # 0046AE40
@@ -12299,9 +12254,6 @@ __46AE40:
     mov byte ptr [__50C195], 0xa                         # 0046AE78
     msvc_jmp .L46B48A                                    # 0046AE7F
 .L46AE84:
-    mov dword ptr [__50C190], 0                          # 0046AE84
-    mov byte ptr [__50C195], 9                           # 0046AE8E
-.L46AE95:
     mov_offset edi, __50B884                             # 0046AE95
     mov ebp, 0xa0a0a0a                                   # 0046AE9A
     call _sub_447485                                     # 0046AE9F
@@ -12376,6 +12328,10 @@ __46AE40:
     pop ebx                                              # 0046AF5A
     add dx, 0xa                                          # 0046AF5B
     inc bx                                               # 0046AF5F
+    mov dword ptr [__50C190], 0                       
+    mov byte ptr [__50C195], 9                        
+    jmp .L46B48A
+.L46AE95:
     cmp dword ptr [__50C190], 0                          # 0046AF61
     jne .L46AF76                                         # 0046AF68
     mov ebx, 0x130                                       # 0046AF6A
@@ -12383,20 +12339,12 @@ __46AE40:
     call _sub_452457                                     # 0046AF71
 .L46AF76:
     inc dword ptr [__50C190]                             # 0046AF76
-    test word ptr [__508F10], 0x300                      # 0046AF7C
-    je .L46AFA3                                          # 0046AF85
-    cmp dword ptr [__50C190], 0xa0                       # 0046AF87
-    jb .L46B48A                                          # 0046AF91
-    mov byte ptr [__50C195], 0xfe                        # 0046AF97
-    msvc_jmp .L46B48A                                    # 0046AF9E
 .L46AFA3:
     cmp dword ptr [__50C190], 0x5a0                      # 0046AFA3
     jb .L46B48A                                          # 0046AFAD
     mov byte ptr [__50C195], 0xfe                        # 0046AFB3
     msvc_jmp .L46B48A                                    # 0046AFBA
 .L46AFBF:
-    test word ptr [__508F10], 0x300                      # 0046AFBF
-    jne .L46AE6C                                         # 0046AFC8
     mov ebx, 0xe26                                       # 0046AFCE
     msvc_xor cl, cl                                      # 0046AFD3
     call _sub_452457                                     # 0046AFD5

@@ -13,6 +13,7 @@ _sub_4284C8:
 
     .global _sub_4284DB
 _sub_4284DB:
+    DebugStamp 0x12052109
     mov_offset esi, _scenarioChunk3+5050                 # 004284DB
     movzx ebp, word ptr [_scenarioChunk3+5046]           # 004284E0
     msvc_or ebp, ebp                                     # 004284E7
@@ -1395,14 +1396,11 @@ _sub_429739:
     push esi                                             # 004298A8
     mov_offset ebx, _str_2039                            # 004298A9
     lea edx, [ebp + 1]                                   # 004298AE
-    movzx eax, byte ptr [ebp]                            # 004298B1
-    test word ptr [eax*2 + __4F8BE4], 0x20               # 004298B5
-    jne .L4298C5                                         # 004298BF
+laebl:
     mov byte ptr [ebx], 8                                # 004298C1
-    inc ebx                                              # 004298C4
 .L4298C5:
-    mov byte ptr [ebx], 0x90                             # 004298C5
-    inc ebx                                              # 004298C8
+    mov byte ptr [ebx+1], 0x90                             # 004298C5
+    add ebx, 2                                              # 004298C8
 .L4298C9:
     mov al, byte ptr [edx]                               # 004298C9
     mov byte ptr [ebx], al                               # 004298CB
@@ -1506,14 +1504,10 @@ _sub_429739:
     push esi                                             # 00429A1D
     mov_offset ebx, _str_2039                            # 00429A1E
     lea edx, [ebp + 1]                                   # 00429A23
-    movzx eax, byte ptr [ebp]                            # 00429A26
-    test word ptr [eax*2 + __4F8BE4], 0x20               # 00429A2A
-    jne .L429A3A                                         # 00429A34
     mov byte ptr [ebx], 8                                # 00429A36
-    inc ebx                                              # 00429A39
 .L429A3A:
-    mov byte ptr [ebx], 0x90                             # 00429A3A
-    inc ebx                                              # 00429A3D
+    mov byte ptr [ebx+1], 0x90                             # 00429A3A
+    add ebx    , 2                                          # 00429A3D
 .L429A3E:
     mov al, byte ptr [edx]                               # 00429A3E
     mov byte ptr [ebx], al                               # 00429A40

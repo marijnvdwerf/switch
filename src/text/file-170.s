@@ -373,9 +373,13 @@ _sub_45A1A4:
     mov dword ptr [__E0C3E0], edi                        # 0045A335
     mov_offset ebp, __E0C410                             # 0045A33B
     call _sub_45A6CA                                     # 0045A340
+    DebugStamp 0x7021441
     call _sub_4622A2                                     # 0045A345
+    DebugStamp 0x7021442
     call _sub_45E7B5                                     # 0045A34A
+    DebugStamp 0x7021443
     call _sub_45EA23                                     # 0045A34F
+    DebugStamp 0x7021444
     movzx ebp, byte ptr [_scenarioChunk3+47462]          # 0045A354
     mov ebp, dword ptr [ebp*4 + __50BF58]                # 0045A35B
     cmp ebp, -1                                          # 0045A362
@@ -412,6 +416,7 @@ _sub_45A1A4:
     add ax, word ptr [__E0C3EC]                          # 0045A3D8
     msvc_cmp cx, ax                                      # 0045A3DF
     jl .L45A2A5                                          # 0045A3E2
+    DebugStamp 0x7021445
     pop esi                                              # 0045A3E8
     pop edi                                              # 0045A3E9
     ret                                                  # 0045A3EA
@@ -5027,17 +5032,11 @@ _sub_45EB14:
     je _sub_45EB60                                       # 0045EB46
     cmp byte ptr [ebp + 0x28], 0x11                      # 0045EB48
     je _sub_45EB60                                       # 0045EB4C
-    cmp byte ptr [ebp + 0x28], 9                         # 0045EB4E
-    je _sub_45EB60                                       # 0045EB52
-    cmp byte ptr [ebp + 0x28], 0xa                       # 0045EB54
-    je _sub_45EB60                                       # 0045EB58
     cmp byte ptr [ebp + 0x28], 0x12                      # 0045EB5A
     jne _sub_45EB7F                                      # 0045EB5E
 
     .global _sub_45EB60
 _sub_45EB60:
-    test word ptr [__E3F0BC], 1                          # 0045EB60
-    jne _sub_45EBC7                                      # 0045EB69
     test ebx, 0x40000000                                 # 0045EB6B
     jne _sub_45EBC7                                      # 0045EB71
     and ebx, 0x7ffff                                     # 0045EB73
@@ -5210,8 +5209,6 @@ _sub_45ECDA:
 
     .global _sub_45ED1A
 _sub_45ED1A:
-    test word ptr [__E3F0BC], 1                          # 0045ED1A
-    jne _sub_45ED63                                      # 0045ED23
     test ebx, 0x40000000                                 # 0045ED25
     jne _sub_45ED63                                      # 0045ED2B
     and ebx, 0x7ffff                                     # 0045ED2D
@@ -8203,6 +8200,4 @@ _sub_46112C:
 .L461158:
     popal                                                # 00461158
     ret                                                  # 00461159
-# 0x46115A
-    .byte 0xCC, 0xCC                                     #        0 ..
 

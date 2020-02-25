@@ -14,6 +14,7 @@ _sub_4BAEC4:
 
     .global _sub_4BAEDA
 _sub_4BAEDA:
+DebugStamp 0x27011923
     mov byte ptr [__E3F0AC], 0xc                         # 004BAEDA
     mov dword ptr [__1136480], ecx                       # 004BAEE1
     movzx edi, byte ptr [esi + 4]                        # 004BAEE7
@@ -191,6 +192,7 @@ _sub_4BB116:
 
     .global _sub_4BB138
 _sub_4BB138:
+DebugStamp
     mov byte ptr [__9C68EA], 0x30                        # 004BB138
     push edx                                             # 004BB13F
     call _sub_467297                                     # 004BB140
@@ -3068,6 +3070,7 @@ _sub_4BD528:
 
     .global _sub_4BD52B
 _sub_4BD52B:
+DebugStamp
     mov dl, byte ptr [esi + 7]                           # 004BD52B
     and dl, 7                                            # 004BD52E
     cmp dl, 7                                            # 004BD531
@@ -3430,6 +3433,7 @@ _loc_4BD805:
     mov bl, 1                                            # 004BD981
     mov esi, 0x17                                        # 004BD983
     call _sub_431315                                     # 004BD988
+    DebugStamp
     popal                                                # 004BD98D
     pop esi                                              # 004BD98E
     pop ecx                                              # 004BD98F

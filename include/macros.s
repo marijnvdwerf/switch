@@ -269,3 +269,19 @@
     .skip \size
     .size  \name, \size
 .endm
+
+
+.macro DebugStamp arg=0xDEADBEEF
+DebugStamp\@:
+    push   eax
+    mov    eax,\arg
+    xchg   DWORD PTR [0x10c0560],eax
+    xchg   DWORD PTR [0x10c0564],eax
+    xchg   DWORD PTR [0x10c0568],eax
+    xchg   DWORD PTR [0x10c056c],eax
+    xchg   DWORD PTR [0x10c0570],eax
+    xchg   DWORD PTR [0x10c0574],eax
+    mov    [0x10c0578],eax
+    pop    eax
+.endm
+

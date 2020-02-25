@@ -352,7 +352,6 @@ _sub_438EC7:
     mov bx, 0x621                                        # 0043907E
 .L439082:
     msvc_xor al, al                                      # 00439082
-    mov bp, 0x124                                        # 00439084
     mov_offset esi, __112C826                            # 00439088
     call _sub_494C36                                     # 0043908D
     pop esi                                              # 00439092
@@ -509,12 +508,8 @@ _sub_4391E2:
     .global _sub_4391F6
 _sub_4391F6:
     inc word ptr [esi + 0x846]                           # 004391F6
-    cmp byte ptr [__50C195], 0                           # 004391FD
-    jne .L43922F                                         # 00439204
     test word ptr [__508F10], 0x300                      # 00439206
     je .L43922F                                          # 0043920F
-    cmp dword ptr [__50C1AE], 0x14                       # 00439211
-    jb .L43922F                                          # 00439218
     push esi                                             # 0043921A
     mov cl, 0x27                                         # 0043921B
     msvc_xor dx, dx                                      # 0043921D
@@ -4487,10 +4482,6 @@ _sub_43BFE3:
 
     .global _sub_43C0FD
 _sub_43C0FD:
-    test word ptr [__508F14], 4                          # 0043C0FD
-    jne .L43C10D                                         # 0043C106
-    call _sub_4CF456                                     # 0043C108
-.L43C10D:
     mov cl, 0x28                                         # 0043C10D
     msvc_xor dx, dx                                      # 0043C10F
     call _sub_4CC692                                     # 0043C112
@@ -4500,9 +4491,6 @@ _sub_43C0FD:
     mov cl, 0x1f                                         # 0043C121
     msvc_xor dx, dx                                      # 0043C123
     call _sub_4CC692                                     # 0043C126
-    mov cl, 0xe                                          # 0043C12B
-    msvc_xor dx, dx                                      # 0043C12D
-    call _sub_4CC692                                     # 0043C130
     and word ptr [__508F14], 0xfffd                      # 0043C135
     call _sub_489C34                                     # 0043C13D
     call _sub_489C58                                     # 0043C142
@@ -4519,17 +4507,8 @@ _sub_43C0FD:
 
     .global _sub_43C182
 _sub_43C182:
-    mov byte ptr [__508F08], 0                           # 0043C182
     test word ptr [__508F14], 4                          # 0043C189
     je .L43C1C8                                          # 0043C192
-    and word ptr [__508F14], 0xfffb                      # 0043C194
-    mov al, byte ptr [_scenarioChunk3+36]                # 0043C19C
-    xchg byte ptr [__9C68EB], al                         # 0043C1A1
-    push eax                                             # 0043C1A7
-    call _sub_4CF456                                     # 0043C1A8
-    pop eax                                              # 0043C1AD
-    mov byte ptr [__9C68EB], al                          # 0043C1AE
-    or word ptr [__508F14], 4                            # 0043C1B3
     mov al, byte ptr [__9C68EB]                          # 0043C1BB
     cmp al, byte ptr [_scenarioChunk3+36]                # 0043C1C0
     jne .L43C1CD                                         # 0043C1C6
@@ -4573,7 +4552,6 @@ _sub_43C182:
     .global _sub_43C27E
 _sub_43C27E:
     mov word ptr [__50A002], di                          # 0043C27E
-    call _sub_4CE6F2                                     # 0043C285
     mov cl, 0xe                                          # 0043C28A
     msvc_xor dx, dx                                      # 0043C28C
     call _sub_4CD3A9                                     # 0043C28F
@@ -4624,10 +4602,6 @@ _sub_43C27E:
     jne _sub_43BFE3                                      # 0043C363
     cmp byte ptr [__508F19], 0                           # 0043C369
     jne .L43C3C6                                         # 0043C370
-    test word ptr [__508F14], 4                          # 0043C372
-    je .L43C38B                                          # 0043C37B
-    cmp word ptr [__50A002], 2                           # 0043C37D
-    je _sub_43BFE3                                       # 0043C385
 .L43C38B:
     cmp word ptr [__508F12], 0xf00                       # 0043C38B
     jb _sub_43BFE3                                       # 0043C394

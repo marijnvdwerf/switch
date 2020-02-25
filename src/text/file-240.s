@@ -83,6 +83,7 @@ _sub_496BBC:
 
     .global _sub_496C22
 _sub_496C22:
+    DebugStamp
     cmp ax, -1                                           # 00496C22
     je .L496D94                                          # 00496C26
     push eax                                             # 00496C2C
@@ -760,6 +761,7 @@ _sub_49742F:
 
     .global _sub_49748C
 _sub_49748C:
+DebugStamp
     mov_offset esi, _towns                               # 0049748C
 .L497491:
     cmp word ptr [esi], -1                               # 00497491
@@ -1297,7 +1299,6 @@ _sub_4978B7:
     .global _sub_497A6A
 _sub_497A6A:
     push 0                                               # 00497A6A
-    mov dword ptr [__1135C28], edi                       # 00497A6C
     push eax                                             # 00497A72
     push ebx                                             # 00497A73
     push ecx                                             # 00497A74
@@ -1443,173 +1444,6 @@ _sub_497A6A:
     pop eax                                              # 00497C0E
     pop edx                                              # 00497C0F
     ret                                                  # 00497C10
-
-    .global _sub_497C11
-_sub_497C11:
-    pushal                                               # 00497C11
-.L497C12:
-    mov al, byte ptr [edi]                               # 00497C12
-    msvc_or al, al                                       # 00497C14
-    je .L497D6E                                          # 00497C16
-    cmp al, 0xff                                         # 00497C1C
-    je .L497D66                                          # 00497C1E
-    cmp al, 0xbf                                         # 00497C24
-    je .L497D61                                          # 00497C26
-    cmp al, 0xc0                                         # 00497C2C
-    jb .L497C38                                          # 00497C2E
-    cmp al, 0xc5                                         # 00497C30
-    jbe .L497D57                                         # 00497C32
-.L497C38:
-    cmp al, 0xc6                                         # 00497C38
-    je .L497D4D                                          # 00497C3A
-    cmp al, 0xc7                                         # 00497C40
-    je .L497D43                                          # 00497C42
-    cmp al, 0xc8                                         # 00497C48
-    jb .L497C54                                          # 00497C4A
-    cmp al, 0xcb                                         # 00497C4C
-    jbe .L497D39                                         # 00497C4E
-.L497C54:
-    cmp al, 0xcc                                         # 00497C54
-    jb .L497C60                                          # 00497C56
-    cmp al, 0xcf                                         # 00497C58
-    jbe .L497D2F                                         # 00497C5A
-.L497C60:
-    cmp al, 0xd0                                         # 00497C60
-    je .L497D25                                          # 00497C62
-    cmp al, 0xd1                                         # 00497C68
-    je .L497D4D                                          # 00497C6A
-    cmp al, 0xd2                                         # 00497C70
-    jb .L497C7C                                          # 00497C72
-    cmp al, 0xd6                                         # 00497C74
-    jbe .L497D1B                                         # 00497C76
-.L497C7C:
-    cmp al, 0xd7                                         # 00497C7C
-    jb .L497C88                                          # 00497C7E
-    cmp al, 0xd8                                         # 00497C80
-    jbe .L497D11                                         # 00497C82
-.L497C88:
-    cmp al, 0xd9                                         # 00497C88
-    jb .L497C90                                          # 00497C8A
-    cmp al, 0xdc                                         # 00497C8C
-    jbe .L497D07                                         # 00497C8E
-.L497C90:
-    cmp al, 0xdd                                         # 00497C90
-    je .L497D5C                                          # 00497C92
-    cmp al, 0xde                                         # 00497C98
-    je .L497D48                                          # 00497C9A
-    cmp al, 0xdf                                         # 00497CA0
-    je .L497D2A                                          # 00497CA2
-    cmp al, 0xe0                                         # 00497CA8
-    jb .L497CB4                                          # 00497CAA
-    cmp al, 0xe5                                         # 00497CAC
-    jbe .L497D5C                                         # 00497CAE
-.L497CB4:
-    cmp al, 0xe6                                         # 00497CB4
-    je .L497D3E                                          # 00497CB6
-    cmp al, 0xe7                                         # 00497CBC
-    je .L497D48                                          # 00497CBE
-    cmp al, 0xe8                                         # 00497CC4
-    jb .L497CCC                                          # 00497CC6
-    cmp al, 0xeb                                         # 00497CC8
-    jbe .L497D3E                                         # 00497CCA
-.L497CCC:
-    cmp al, 0xec                                         # 00497CCC
-    jb .L497CD4                                          # 00497CCE
-    cmp al, 0xef                                         # 00497CD0
-    jbe .L497D34                                         # 00497CD2
-.L497CD4:
-    cmp al, 0xf0                                         # 00497CD4
-    jb .L497CDC                                          # 00497CD6
-    cmp al, 0xf1                                         # 00497CD8
-    jbe .L497D52                                         # 00497CDA
-.L497CDC:
-    cmp al, 0xf2                                         # 00497CDC
-    jb .L497CE4                                          # 00497CDE
-    cmp al, 0xf6                                         # 00497CE0
-    jbe .L497D20                                         # 00497CE2
-.L497CE4:
-    cmp al, 0xf7                                         # 00497CE4
-    je .L497D02                                          # 00497CE6
-    cmp al, 0xf8                                         # 00497CE8
-    je .L497D2A                                          # 00497CEA
-    cmp al, 0xf9                                         # 00497CEC
-    jb .L497CF4                                          # 00497CEE
-    cmp al, 0xfc                                         # 00497CF0
-    jbe .L497D0C                                         # 00497CF2
-.L497CF4:
-    cmp al, 0xfd                                         # 00497CF4
-    jb .L497CFC                                          # 00497CF6
-    cmp al, 0xfe                                         # 00497CF8
-    jbe .L497D16                                         # 00497CFA
-.L497CFC:
-    inc edi                                              # 00497CFC
-    msvc_jmp .L497C12                                    # 00497CFD
-.L497D02:
-    mov byte ptr [edi], 0x6c                             # 00497D02
-    jmp .L497CFC                                         # 00497D05
-.L497D07:
-    mov byte ptr [edi], 0x55                             # 00497D07
-    jmp .L497CFC                                         # 00497D0A
-.L497D0C:
-    mov byte ptr [edi], 0x75                             # 00497D0C
-    jmp .L497CFC                                         # 00497D0F
-.L497D11:
-    mov byte ptr [edi], 0x5a                             # 00497D11
-    jmp .L497CFC                                         # 00497D14
-.L497D16:
-    mov byte ptr [edi], 0x7a                             # 00497D16
-    jmp .L497CFC                                         # 00497D19
-.L497D1B:
-    mov byte ptr [edi], 0x4f                             # 00497D1B
-    jmp .L497CFC                                         # 00497D1E
-.L497D20:
-    mov byte ptr [edi], 0x6f                             # 00497D20
-    jmp .L497CFC                                         # 00497D23
-.L497D25:
-    mov byte ptr [edi], 0x53                             # 00497D25
-    jmp .L497CFC                                         # 00497D28
-.L497D2A:
-    mov byte ptr [edi], 0x73                             # 00497D2A
-    jmp .L497CFC                                         # 00497D2D
-.L497D2F:
-    mov byte ptr [edi], 0x49                             # 00497D2F
-    jmp .L497CFC                                         # 00497D32
-.L497D34:
-    mov byte ptr [edi], 0x69                             # 00497D34
-    jmp .L497CFC                                         # 00497D37
-.L497D39:
-    mov byte ptr [edi], 0x45                             # 00497D39
-    jmp .L497CFC                                         # 00497D3C
-.L497D3E:
-    mov byte ptr [edi], 0x65                             # 00497D3E
-    jmp .L497CFC                                         # 00497D41
-.L497D43:
-    mov byte ptr [edi], 0x43                             # 00497D43
-    jmp .L497CFC                                         # 00497D46
-.L497D48:
-    mov byte ptr [edi], 0x63                             # 00497D48
-    jmp .L497CFC                                         # 00497D4B
-.L497D4D:
-    mov byte ptr [edi], 0x4e                             # 00497D4D
-    jmp .L497CFC                                         # 00497D50
-.L497D52:
-    mov byte ptr [edi], 0x6e                             # 00497D52
-    jmp .L497CFC                                         # 00497D55
-.L497D57:
-    mov byte ptr [edi], 0x41                             # 00497D57
-    jmp .L497CFC                                         # 00497D5A
-.L497D5C:
-    mov byte ptr [edi], 0x61                             # 00497D5C
-    jmp .L497CFC                                         # 00497D5F
-.L497D61:
-    mov byte ptr [edi], 0x3f                             # 00497D61
-    jmp .L497CFC                                         # 00497D64
-.L497D66:
-    add edi, 3                                           # 00497D66
-    msvc_jmp .L497C12                                    # 00497D69
-.L497D6E:
-    popal                                                # 00497D6E
-    ret                                                  # 00497D6F
 
     .global _sub_497D70
 _sub_497D70:
@@ -2055,21 +1889,12 @@ _sub_4981C4:
     and ebx, 0xfffcffff                                  # 00498269
     msvc_or ebx, edi                                     # 0049826F
     call _sub_47AD83                                     # 00498271
-    msvc_jmp .L498301                                    # 00498276
+    jmp .L498301                                    # 00498276
 .L49827B:
     movzx edi, bh                                        # 0049827B
     mov edi, dword ptr [edi*4 + _roadObjects]            # 0049827E
     test word ptr [edi + 0x12], 1                        # 00498285
     jne .L498301                                         # 0049828B
-    push eax                                             # 0049828D
-    push edi                                             # 0049828E
-    mov ax, word ptr [edi + 0xc]                         # 0049828F
-    movzx edi, byte ptr [__1135C5C]                      # 00498293
-    mov edi, dword ptr [edi*4 + _roadObjects]            # 0049829A
-    cmp ax, word ptr [edi + 0xc]                         # 004982A1
-    pop edi                                              # 004982A5
-    pop eax                                              # 004982A6
-    ja .L498301                                          # 004982A7
     test dword ptr [__1135C40], 2                        # 004982A9
     je .L498301                                          # 004982B3
     test word ptr [__1135C5A], 0x1000                    # 004982B5
@@ -4315,7 +4140,7 @@ _sub_499C83:
     msvc_xor dx, dx                                      # 00499C85
     call _sub_4CD3A9                                     # 00499C88
     je .L499C9A                                          # 00499C8D
-    mov edx, 4                                           # 00499C8F
+    mov dx, 4                                           # 00499C8F
     mov ebp, dword ptr [esi]                             # 00499C94
     call dword ptr [ebp + 4]                             # 00499C96
     ret                                                  # 00499C99
@@ -4703,8 +4528,6 @@ _sub_49A0F8:
     mov bx, 0x1c9                                        # 0049A18E
 .L49A192:
     imul ebp, ebp, 0x270                                 # 0049A192
-    cmp word ptr [ebp + _towns], -1                      # 0049A198
-    je .L49A273                                          # 0049A1A0
     push eax                                             # 0049A1A6
     push ebx                                             # 0049A1A7
     push edx                                             # 0049A1A8
@@ -6292,6 +6115,4 @@ _sub_49B4E0:
 .L49B508:
     pop ebp                                              # 0049B508
     ret                                                  # 0049B509
-# 0x49B50A
-    .byte 0xCC, 0xCC                                     #        0 ..
 

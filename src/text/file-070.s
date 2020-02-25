@@ -23,6 +23,7 @@ _sub_426790:
 
     .global _sub_4267BE
 _sub_4267BE:
+    DebugStamp 0x19110818
     mov byte ptr [__9C68EA], 0x24                        # 004267BE
     movzx esi, bp                                        # 004267C5
     imul esi, esi, 0x3d2                                 # 004267C8
@@ -1216,6 +1217,7 @@ _loc_42769B:
 
     .global _sub_42773C
 _sub_42773C:
+    DebugStamp 0x19120921
     mov byte ptr [__9C68EA], 0x2c                        # 0042773C
     mov word ptr [__9C68E0], ax                          # 00427743
     mov word ptr [__9C68E2], cx                          # 00427749
@@ -2185,8 +2187,6 @@ _sub_428379:
     je .L4283D6                                          # 004283C9
 .L4283CB:
     add esi, 8                                           # 004283CB
-    test byte ptr [esi - 7], 0x80                        # 004283CE
-    je .L4283B6                                          # 004283D2
     jmp .L4283E7                                         # 004283D4
 .L4283D6:
     mov dh, byte ptr [esi + 5]                           # 004283D6
@@ -2270,6 +2270,3 @@ _sub_42843E:
     call _sub_489F1B                                     # 004284BF
 .L4284C4:
     ret                                                  # 004284C4
-# 0x4284C5
-    .byte 0xCC, 0xCC, 0xCC                               #        0 ...
-

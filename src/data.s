@@ -2,6 +2,9 @@
 
 .data
 
+.global __5060D0
+__5060D0:
+
 # 0x506000
     .global __506000
 __506000:
@@ -97,91 +100,44 @@ __5060BC:
 # 0x5060BC
     .byte 0x01, 0x00, 0x00, 0x00                         #        0 ....
 
+    .global __5061D0
+__5061D0:
+    .asciz "Chris Sawyer's Locomotion"
+    
 # 0x5060C0
+    .align 0x10
     .global __5060C0
 __5060C0:
 # 0x5060C0
     .byte 0x60, 0xF6, 0xC5, 0xB8, 0x41, 0x12, 0xD0, 0x11 #        0 `...A...
     .byte 0x89, 0xC5, 0x54, 0x54, 0x54, 0x57, 0x4F, 0x00 #        8 ..TTTWO.
 
-# 0x5060D0
-    .global __5060D0
-__5060D0:
-# 0x5060D0
-    .byte 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0  .......
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       50 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       58 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       60 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       70 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       78 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       80 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       88 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       90 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       98 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F8 ........
-
-# 0x5061D0
-    .global __5061D0
-__5061D0:
-    .asciz "Chris Sawyer's Locomotion"
-
-# 0x5061EA
-    .byte 0x00, 0x00                                     #        0 ..
-
 # 0x5061EC
+    .align 4
     .global __5061EC
 __5061EC:
     .asciz "CDKey"
 
-# 0x5061F2
-    .byte 0x00, 0x00                                     #        0 ..
-
 # 0x5061F4
+    .align 4
     .global __5061F4
 __5061F4:
-    .asciz "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{77F45E76-E897-42CA-A9FE-5F56817D875C}"
-
-# 0x50624F
-    .byte 0x00                                           #        0 .
+    .asciz "Software\\Chris Sawyer\\Locomotion Setup"
 
 # 0x506250
+    .align 4
     .global __506250
 __506250:
     .asciz "Shut Down occurring..."
 
-# 0x506267
-    .byte 0x00                                           #        0 .
-
 # 0x506268
+    .align 4
     .global __506268
 __506268:
     .asciz "Shut Down"
 
-# 0x506272
-    .byte 0x00, 0x00                                     #        0 ..
-
 # 0x506274
+    .align 4
     .global __506274
 __506274:
 # 0x506274
@@ -1494,17 +1450,14 @@ __508A30:
 # 0x508A4C
     .global __508A4C
 __508A4C:
-    .asciz "%s: %08X\n%s"
+    .asciz "Exception Raised - %s\n%s"
 
 # 0x508A58
     .global __508A58
-__508A58:
-    .asciz "Error"
-
-# 0x508A5E
-    .byte 0x00, 0x00                                     #        0 ..
+__508A58:                                #        0 ..
 
 # 0x508A60
+    .align 4
     .global __508A60
 __508A60:
     .asciz "Integer Overflow"
@@ -1978,9 +1931,9 @@ _ui_company___widgets_1:
 # 0x509170
     .global _ui_company___widgets_3
 _ui_company___widgets_3:
-    widget 0x02, 0, 0, 635, 0, 318, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 634, 1, 13, 0x000000F8, 65535
-    widget 0x09, 0, 621, 633, 2, 14, 0x00000911, 60
+    widget 0x02, 0, 0, 0x226, 0, 0x137, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 0x225, 1, 13, 0x000000F8, 65535
+    widget 0x09, 0, 0x218, 0x224, 2, 14, 0x00000911, 60
     widget 0x01, 1, 0, 269, 41, 181, 0xFFFFFFFF, 65535
     widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1113
     widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1112
@@ -1989,7 +1942,6 @@ _ui_company___widgets_3:
     widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1115
     widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1117
     widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
-    widget 0x1A, 1, 133, 631, 45, 259, 0x00000001, 65535
     widget 0x11, 1, 87, 186, 264, 275, 0x00000261, 65535
     widget 0x0B, 1, 175, 185, 265, 269, 0x000001E6, 65535
     widget 0x0B, 1, 175, 185, 270, 274, 0x000001E7, 65535
@@ -2773,25 +2725,6 @@ _ui_scenario_options___widgets_0:
 # 0x50AC71
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
-# 0x50AC74
-    .global __50AC74
-__50AC74:
-# 0x50AC74
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00       #       38 .......
-
-# 0x50ACB3
-    .global __50ACB3
-__50ACB3:
-# 0x50ACB3
-    .byte 0x00                                           #        0 .
-
 # 0x50ACB4
     .global _ui__scenario_select___widgets___widgets
 _ui__scenario_select___widgets___widgets:
@@ -3065,7 +2998,7 @@ __50AEDB:
     .global __50AEDC
 __50AEDC:
 # 0x50AEDC
-    .byte 0x00, 0x01                                     #        0 ..
+    .byte 0x00, 0x00                                     #        0 ..
 
 # 0x50AEDE
     .global __50AEDE
@@ -3929,10 +3862,11 @@ __50B84C:
 # 0x50B84D
     .global __50B84D
 __50B84D:
-    .asciz "1.DAT"
+     .asciz "CRASH_DUMP"
+     .asciz ".SV5"
 
 # 0x50B853
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00                   #        0 .....
+    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 
 # 0x50B858
     .global __50B858
@@ -4411,8 +4345,10 @@ __50BC1C:
     .global __50BC60
 __50BC60:
 # 0x50BC60
-    .byte 0xFF, 0xFF, 0xFF, 0xFF, 0x5B, 0x2A, 0x45, 0x00 #        0 ....[*E.
-    .byte 0xB4, 0x2A, 0x45, 0x00, 0xFF, 0xFF, 0xFF, 0xFF #        8 .*E.....
+    .byte 0xFF, 0xFF, 0xFF, 0xFF
+    .4byte _sub_452A5B
+    .4byte _sub_452AB4
+    .byte 0xFF, 0xFF, 0xFF, 0xFF #        8 .*E.....
     .byte 0x00, 0x00, 0x00, 0x00                         #       10 ....
 
 # 0x50BC74
@@ -4991,7 +4927,7 @@ __50C1A6:
     .global __50C1AE
 __50C1AE:
 # 0x50C1AE
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00             #        0 ......
+    .byte 0x00, 0x00             #        0 ......
 
 # 0x50C1B4
     .global _ui_map
@@ -5049,6 +4985,10 @@ _ui_multiplayer___widgets_1:
 
 # 0x50C3CD
     .byte 0x00, 0x00, 0x00                               #        0 ...
+
+    .global _unkFn
+_unkFn:
+.4byte 0
 
 # 0x50C3D0
     .global _interfaceSkinObjects
@@ -6832,7 +6772,7 @@ _str_68:
     .global _str_69
 _str_69:
     .byte 0x0E
-    .asciz "Version 4.02.176 (US English)"
+    .asciz "Version 4.02.169 (UK English)"
 
 # 0x50DBC2
     .global _str_70
@@ -7982,7 +7922,7 @@ _str_249:
     .global _str_250
 _str_250:
     .byte 0x83
-    .asciz " - Color Scheme"
+    .asciz " - color Scheme"
 
 # 0x50E806
     .global _str_251
@@ -9556,7 +9496,6 @@ _str_460:
 _str_461:
     .ascii "at "
     .byte 0x87
-    .byte 0x88
     .byte EOS
 
 # 0x50FCB3
@@ -10453,7 +10392,6 @@ _str_608:
 # 0x5103C5
     .global _str_609
 _str_609:
-    .byte 0x88
     .byte 0x88
     .byte 0x88
     .byte 0x88
@@ -12363,7 +12301,7 @@ _str_961:
 # 0x511145
     .global _str_962
 _str_962:
-    .asciz "\""
+    .asciz "#"
 
 # 0x511147
     .global _str_963
@@ -13285,7 +13223,7 @@ _str_1120:
 _str_1121:
     .byte 0x0A
     .byte 0x90
-    .asciz "Select whether to use a different color scheme for this type of vehicle"
+   .asciz "Select whether to use a different color scheme for this type of vehicle"
 
 # 0x511DFD
     .global _str_1122
@@ -13886,7 +13824,7 @@ _str_1209:
 _str_1210:
     .byte 0x0A
     .byte 0x90
-    .asciz "Select object color"
+   .asciz "Select object color"
 
 # 0x5123EA
     .global _str_1211
@@ -17776,7 +17714,7 @@ _str_1804:
 # 0x515591
     .global _str_1805
 _str_1805:
-    .asciz "Railroads"
+   .asciz "Railroads"
 
 # 0x51559B
     .global _str_1806
@@ -17918,7 +17856,7 @@ _str_1825:
     MOVE_X 10
     .ascii "(not starting for "
     .byte 0x7F
-    .asciz " month)"
+    .asciz " month"
 
 # 0x515708
     .global _str_1826
@@ -17927,7 +17865,7 @@ _str_1826:
     MOVE_X 10
     .ascii "(not starting for "
     .byte 0x7F
-    .asciz " months)"
+    .asciz " months"
 
 # 0x515727
     .global _str_1827
@@ -18843,51 +18781,49 @@ _str_1959:
     .global _str_1960
 _str_1960:
     .byte 0x0E
-    .asciz "Assistant Lead Tester:  Sean McLaren"
+    .asciz "Testers:  John Hockaday, Tony Hsu, Sean McLaren, Brandon Reed, Nessie Rilveria"
 
-# 0x5172A8
-    .global _str_1961
-_str_1961:
-    .byte 0x0E
-    .ascii "Testers:  Randy Alfonso, Leticia Due"
-    .byte 0xF1
-    .asciz "as, John Hockaday, Tony Hsu, Brandon Reed, Nessie Rilveria"
 
 # 0x517309
-    .global _str_1962
-_str_1962:
+    .global _str_1961
+_str_1961:
     .byte 0x0E
     .asciz "Compatibility Lab Supervisor:  Dave Strang "
 
 # 0x517336
-    .global _str_1963
-_str_1963:
+    .global _str_1962
+_str_1962:
     .byte 0x0E
     .asciz "Compatibility Test Lead:  Cuong Vu"
 
 # 0x51735A
-    .global _str_1964
-_str_1964:
+    .global _str_1963
+_str_1963:
     .byte 0x0E
     .asciz "Compatibility Analysts:  Randy Buchholz, Mark Florentino, Chris McQuinn, Scotte Kramer, Patricia-Jean Cody"
 
 # 0x5173C6
-    .global _str_1965
-_str_1965:
+    .global _str_1964
+_str_1964:
     .byte 0x0E
     .asciz "Engineering Services Specialist:  Ken Edwards"
 
 # 0x5173F5
-    .global _str_1966
-_str_1966:
+    .global _str_1965
+_str_1965:
     .byte 0x0E
     .asciz "Engineering Services Technicians:  Eugene Lai, Dan Burkhead"
 
 # 0x517432
+    .global _str_1966
+_str_1966:
+    .byte 0x0E
+    .asciz "Special Thanks:  John Billington, Cecelia Hernandez"
+
     .global _str_1967
 _str_1967:
     .byte 0x0E
-    .asciz "Special Thanks:  John Billington, Cecelia Hernandez"
+    .byte EOS
 
 # 0x517467
     .global _str_1968
@@ -19125,7 +19061,7 @@ _str_2004:
     .global _str_2005
 _str_2005:
     .byte 0x0E
-    .ascii "Folder:  "
+   .ascii "Folder:  "
     .byte 0x90
     .byte 0x83
     .byte EOS
@@ -19245,91 +19181,70 @@ _str_2020:
 # 0x51775D
     .global _str_2021
 _str_2021:
-    .asciz "Duplicate CD Keys found - Unable to connect!"
 
 # 0x51778A
     .global _str_2022
 _str_2022:
-    .byte 0x90
-    .byte 0x0A
-    .ascii "(Computer Name = "
-    .byte 0x83
-    .asciz ")"
 
 # 0x5177A0
     .global _str_2023
 _str_2023:
-    .asciz "1st"
 
 # 0x5177A4
     .global _str_2024
 _str_2024:
-    .asciz "2nd"
 
 # 0x5177A8
     .global _str_2025
 _str_2025:
-    .asciz "3rd"
 
 # 0x5177AC
     .global _str_2026
 _str_2026:
-    .asciz "4th"
 
 # 0x5177B0
     .global _str_2027
 _str_2027:
-    .asciz "5th"
 
 # 0x5177B4
     .global _str_2028
 _str_2028:
-    .asciz "6th"
 
 # 0x5177B8
     .global _str_2029
 _str_2029:
-    .asciz "7th"
 
 # 0x5177BC
     .global _str_2030
 _str_2030:
-    .asciz "8th"
 
 # 0x5177C0
     .global _str_2031
 _str_2031:
-    .asciz "9th"
 
 # 0x5177C4
     .global _str_2032
 _str_2032:
-    .asciz "10th"
 
 # 0x5177C9
     .global _str_2033
 _str_2033:
-    .asciz "11th"
 
 # 0x5177CE
     .global _str_2034
 _str_2034:
-    .asciz "12th"
 
 # 0x5177D3
     .global _str_2035
 _str_2035:
-    .asciz "13th"
 
 # 0x5177D8
     .global _str_2036
 _str_2036:
-    .asciz "14th"
 
 # 0x5177DD
     .global _str_2037
 _str_2037:
-    .asciz "15th"
 
 # 0x5177E2
     .global _str_2038
@@ -19929,10 +19844,9 @@ _strHP:
 _strKW:
     .asciz "kW"
 
-# 0x5183FA
-    .byte 0x00, 0x00                                     #        0 ..
 
 # 0x5183FC
+    .align 4
     .global __5183FC
 __5183FC:
     .4byte _str_0
@@ -28727,15 +28641,20 @@ __5215C0:
 # 0x5215C0
     .byte 0x00, 0x00, 0x00, 0x00                         #        0 ....
 
+.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+
+    .asciz "DEBUG_AUTO_DUMP.SV5"
+
 # 0x5215C4
     .global __5215C4
 __5215C4:
 # 0x5215C4
-    .byte 0x00, 0x00, 0x00, 0x00, 0x1F, 0x00, 0x1E, 0x00 #        0 ........
+    .byte 0x1F, 0x00, 0x1E, 0x00 #        0 ........
     .byte 0x1F, 0x00, 0x1E, 0x00, 0x1F, 0x00, 0x1F, 0x00 #        8 ........
     .byte 0x1E, 0x00, 0x1F, 0x00                         #       10 ....
 
 # 0x5215D8
+.align 4
     .global __5215D8
 __5215D8:
     .4byte __5215E4
@@ -30353,8 +30272,7 @@ _ui_text_input_widgets:
     .byte 0x1E
 
 # 0x5235A1
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x75 #        8 .......u
+    .byte 0x00, 0x00, 0x00, 0x75 #        8 .......u
     .byte 0x98, 0x00, 0x00, 0x73, 0x98, 0x00, 0x00       #       10 ...s...
 
 # 0x5235B8

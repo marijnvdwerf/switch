@@ -183,14 +183,11 @@ _sub_4C1AF7:
 
     .global _sub_4C1C64
 _sub_4C1C64:
-    push eax                                             # 004C1C64
     mov ecx, 0x8001c                                     # 004C1C65
     mov ebx, 0xe9017c                                    # 004C1C6A
     mov_offset edx, _ui_build_vehicle___events_0         # 004C1C6F
     call _sub_4C9C68                                     # 004C1C74
     mov_dword_ptr_reg esi, 0x2c, _ui_build_vehicle___widgets_0 # 004C1C79
-    pop eax                                              # 004C1C80
-    mov word ptr [esi + 0x40], ax                        # 004C1C81
     mov eax, dword ptr [__504410]                        # 004C1C85
     mov dword ptr [esi + 0xc], eax                       # 004C1C8A
     mov eax, dword ptr [__504410+4]                      # 004C1C8D

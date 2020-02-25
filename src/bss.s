@@ -1460,7 +1460,7 @@ variable __9C6472
 variable __9C6476
 
 # 0x9C6476
-.skip 0x3D
+.skip 0x3D-0x20
 
 # 0x9C64B3
 variable __9C64B3
@@ -1539,12 +1539,6 @@ variable __9C68D0
 
 # 0x9C68D0
 .skip 0x4
-
-# 0x9C68D4
-variable __9C68D4
-
-# 0x9C68D4
-.skip 0x2
 
 # 0x9C68D6
 variable __9C68D6
@@ -1664,9 +1658,10 @@ variable __9C68F4
 variable __9C68F5
 
 # 0x9C68F5
-.skip 0x3
+.skip 0x1
 
 # 0x9C68F8
+.align 4
 variable __9C68F8
 
 # 0x9C68F8
@@ -2226,7 +2221,7 @@ variable __g1Data, 0x4201A0
 variable __E025C4
 
 # 0xE025C4
-.skip 0x1D4C
+.skip 0x1D4C - 0xe20
 
 # 0xE04310
 variable __E04310
@@ -3210,15 +3205,9 @@ variable __F00170
 
 # 0xF00176
 variable __F00176
-
-# 0xF00176
-.skip 0x126
-
-# 0xF0029C
 variable __F0029C
 
-# 0xF0029C
-.skip 0x132
+.skip 0xc0
 
 # 0xF003CE
 variable __F003CE
@@ -4484,13 +4473,12 @@ variable __1025A86
 variable __1025A88
 
 # 0x1025A88
-.skip 0x4
 
 # 0x1025A8C
 variable __1025A8C, 0x80002
-# 0x10A5A8E
-variable __10A5A8E, 0x80002
+
 # 0x1125A90
+.align 4
 variable _interfaceSkinMeta
 
 # 0x1125A90
@@ -7034,11 +7022,6 @@ variable __112DB1A
 # 0x112DB1A
 .skip 0x810E
 
-# 0x1135C28
-variable __1135C28
-
-# 0x1135C28
-.skip 0x4
 
 # 0x1135C2C
 variable __1135C2C
@@ -7248,7 +7231,7 @@ variable __1135C7C
 variable __1135C82
 
 # 0x1135C82
-.skip 0x258
+.skip 0x180
 
 # 0x1135EDA
 variable __1135EDA
@@ -8380,11 +8363,6 @@ variable __113608A
 
 # 0x113608B
 variable __113608B
-
-# 0x113608B
-.skip 0x4
-
-# 0x113608F
 variable __113608F
 
 # 0x113608F
@@ -8402,11 +8380,6 @@ variable __1136094
 # 0x1136094
 .skip 0x4
 
-# 0x1136098
-variable __1136098
-
-# 0x1136098
-.skip 0x4
 
 # 0x113609C
 variable __113609C
@@ -8419,12 +8392,6 @@ variable __11360A0
 
 # 0x11360A0
 .skip 0x2C
-
-# 0x11360CC
-variable __11360CC
-
-# 0x11360CC
-.skip 0x4
 
 # 0x11360D0
 variable __11360D0
@@ -10764,7 +10731,7 @@ variable __113E0C0
 variable __113E0C4
 
 # 0x113E0C4
-.skip 0x1C
+.skip 0x1C-0x18
 
 # 0x113E0E0
 variable __113E0E0

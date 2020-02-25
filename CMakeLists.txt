@@ -55,7 +55,7 @@ endif ()
 set(CMAKE_LINKER ${EXE_LD})
 
 set(CMAKE_ASM_LINK_EXECUTABLE "<CMAKE_LINKER> <CMAKE_ASM_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>")
-set(CMAKE_ASM_LINK_FLAGS "--Map=out.map --Ttext=0x401000")
+set(CMAKE_ASM_LINK_FLAGS "--Map=out.map --Ttext=0x401000 --section-start=.rodata=0x4DA000  -Tdata=0x509000")
 
 set(CMAKE_ASM_FLAGS "-target i386-pc-linux-gnu -m32")
 

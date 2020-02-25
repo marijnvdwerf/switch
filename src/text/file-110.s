@@ -50,12 +50,12 @@ _sub_42F23C:
 .L42F29B:
     shr ebp, 0x10                                        # 0042F29B
     movzx eax, byte ptr [esi + 0x1d]                     # 0042F29E
-    mov eax, dword ptr [eax*4 + _scenarioChunk3+70]      # 0042F2A2
-    mul ebp                                              # 0042F2A9
-    shrd eax, edx, 8                                     # 0042F2AB
-    imul ebx, ecx                                        # 0042F2AF
-    mul ebx                                              # 0042F2B2
-    shrd eax, edx, 0xc                                   # 0042F2B4
+    imul ebp, dword ptr [eax*4 + _scenarioChunk3+70]      # 0042F2A2
+    shr    ebp,0x8
+    imul   ebp,ebx
+    imul   ebp,ecx
+    shr    ebp,0xc
+    mov    eax,ebp
     pop ebp                                              # 0042F2B8
     pop esi                                              # 0042F2B9
     pop edi                                              # 0042F2BA
@@ -66,29 +66,10 @@ _sub_42F23C:
 
     .global _sub_42F2BF
 _sub_42F2BF:
-    push eax                                             # 0042F2BF
-    push ecx                                             # 0042F2C0
-    push edi                                             # 0042F2C1
-    push esi                                             # 0042F2C2
-    push ebp                                             # 0042F2C3
-    movzx edi, bh                                        # 0042F2C4
-    mov word ptr [__525DE6], 0                           # 0042F2C7
-    imul edi, edi, 0xd                                   # 0042F2D0
-    msvc_xor esi, esi                                    # 0042F2D3
-.L42F2D5:
-    movzx ecx, word ptr [esi*2 + __525DE8]               # 0042F2D5
-    cmp cx, -1                                           # 0042F2DD
-    je .L42F2F9                                          # 0042F2E1
-    imul ecx, ecx, 0x3d2                                 # 0042F2E3
-    mov al, byte ptr [edi + ecx + _stations+52]          # 0042F2E9
-    mov byte ptr [esi + __525E08], al                    # 0042F2F0
-    inc esi                                              # 0042F2F6
-    jmp .L42F2D5                                         # 0042F2F7
-.L42F2F9:
-    msvc_jmp .L42F3E8                                    # 0042F2F9
 
     .global _sub_42F2FE
 _sub_42F2FE:
+    DebugStamp 0x4121606
     push eax                                             # 0042F2FE
     push ecx                                             # 0042F2FF
     push edi                                             # 0042F300
@@ -512,6 +493,3 @@ _sub_42F6DB:
 .L42F7F1:
     mov ebx, 0x80000000                                  # 0042F7F1
     ret                                                  # 0042F7F6
-# 0x42F7F7
-    .byte 0xCC                                           #        0 .
-

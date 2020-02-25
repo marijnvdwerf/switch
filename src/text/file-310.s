@@ -240,8 +240,6 @@ _sub_4C4DAD:
     movzx di, byte ptr [esi + 2]                         # 004C4EB6
     shl di, 2                                            # 004C4EBB
     mov bl, byte ptr [ebp + 4]                           # 004C4EBF
-    test bl, 1                                           # 004C4EC2
-    jne .L4C4ED1                                         # 004C4EC5
     cmp word ptr [__F00176], -1                          # 004C4EC7
     je .L4C4ED4                                          # 004C4ECF
 .L4C4ED1:
@@ -928,6 +926,7 @@ _sub_4C56F6:
     je .L4C57A5                                          # 004C5700
     test dword ptr [_scenarioChunk3+326], 3              # 004C5706
     jne .L4C57A5                                         # 004C5710
+    DebugStamp
     mov_offset ebp, __9586DC                             # 004C5716
 .L4C571B:
     cmp word ptr [ebp], 0x8000                           # 004C571B
@@ -986,6 +985,4 @@ _sub_4C57A6:
     mov dword ptr [__50B948], eax                        # 004C57B7
 .L4C57BC:
     ret                                                  # 004C57BC
-# 0x4C57BD
-    .byte 0xCC, 0xCC, 0xCC                               #        0 ...
 

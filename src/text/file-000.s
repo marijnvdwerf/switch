@@ -3782,7 +3782,7 @@ _sub_40364A:
     msvc_cmp eax, edi                                    # 004036D5
     mov dword ptr [ebp + 0xc], eax                       # 004036D7
     jne .L403702                                         # 004036DA
-    push_dword __g1Data+3005436                          # 004036DC
+    push_dword 0xcc0020                          # 004036DC
     push dword ptr [ebp + 0x14]                          # 004036E1
     push dword ptr [ebp + 0x10]                          # 004036E4
     push ebx                                             # 004036E7
@@ -4388,7 +4388,7 @@ _sub_403D75:
     push ebx                                             # 00403DDA
     msvc_abscall _RealizePalette                         # 00403DDB
     mov eax, dword ptr [ebp + 0xc]                       # 00403DE1
-    push_dword __g1Data+3005436                          # 00403DE4
+    push_dword 0xcc0020                          # 00403DE4
     push 0                                               # 00403DE9
     mov ecx, dword ptr [eax + 0xc]                       # 00403DEB
     push dword ptr [esi + 0x98]                          # 00403DEE
@@ -4502,7 +4502,7 @@ _sub_403E99:
     push ebx                                             # 00403EFE
     msvc_abscall _RealizePalette                         # 00403EFF
     mov eax, dword ptr [ebp + 0xc]                       # 00403F05
-    push_dword __g1Data+3005436                          # 00403F08
+    push_dword 0xcc0020                          # 00403F08
     push 0                                               # 00403F0D
     mov ecx, dword ptr [eax + 0xc]                       # 00403F0F
     mov edx, dword ptr [eax]                             # 00403F12
@@ -4663,7 +4663,7 @@ _sub_40409B:
     mov edx, dword ptr [eax + 0xc]                       # 004040B1
     mov esi, dword ptr [eax]                             # 004040B4
     push edi                                             # 004040B6
-    push_dword __g1Data+3005436                          # 004040B7
+    push_dword 0xcc0020                          # 004040B7
     push 0                                               # 004040BC
     push dword ptr [__524994]                            # 004040BE
     mov dword ptr [ebp + 8], ebx                         # 004040C4
@@ -4710,7 +4710,7 @@ _sub_40410E:
     mov eax, dword ptr [esp + 8]                         # 00404119
     push ebx                                             # 0040411D
     push edi                                             # 0040411E
-    push_dword __g1Data+3005436                          # 0040411F
+    push_dword 0xcc0020                          # 0040411F
     mov ebx, dword ptr [eax + 0xc]                       # 00404124
     mov edi, dword ptr [eax]                             # 00404127
     mov ecx, dword ptr [eax + 8]                         # 00404129
@@ -8198,13 +8198,20 @@ _sub_406386:
     lea eax, [ebp - 8]                                   # 004063BB
     mov dword ptr [ebp - 8], 0x100                       # 004063BE
     push eax                                             # 004063C5
-    lea eax, [ebp - 0xc]                                 # 004063C6
-    push_dword __5060D0                                  # 004063C9
+    lea    eax,[ebp-0x4]
+    push   eax
+    lea    eax,[ebp-0x10]                                   # 004063C9
     push eax                                             # 004063CE
     push esi                                             # 004063CF
     push_dword __5061EC                                  # 004063D0
-    push dword ptr [ebp - 4]                             # 004063D5
+    mov    DWORD PTR [ebp-0x4],esi
+    push dword ptr [ebp - 8]                             # 004063D5
     msvc_abscall _RegQueryValueExA                       # 004063D8
+  test   eax,eax
+    jne    .0x4063ec
+    mov    eax,DWORD PTR [ebp-0x4]
+    mov    [0x5280cc],eax
+.0x4063ec:
     push dword ptr [ebp - 4]                             # 004063DE
     msvc_abscall _RegCloseKey                            # 004063E1
 .L4063E7:
@@ -9304,9 +9311,6 @@ _sub_406E47:
 _sub_406E51:
     mov esp, dword ptr [ebp - 0x18]                      # 00406E51
     mov eax, dword ptr [ebp - 0x1c]                      # 00406E54
-    mov ecx, dword ptr [eax]                             # 00406E57
-    mov ecx, dword ptr [ecx + 0xc]                       # 00406E59
-    mov dword ptr [__113E0BC], ecx                       # 00406E5C
     mov eax, dword ptr [eax]                             # 00406E62
     mov eax, dword ptr [eax]                             # 00406E64
     mov ecx, 0xc0000094                                  # 00406E66
@@ -9364,7 +9368,6 @@ _sub_406E51:
     call _sub_4D15D0                                     # 00406EFF
     mov_offset edi, __113E740                            # 00406F04
     push edi                                             # 00406F09
-    push dword ptr [__113E0BC]                           # 00406F0A
     push_dword __525354                                  # 00406F10
     push_dword __508A4C                                  # 00406F15
     mov_offset esi, __113E0E0                            # 00406F1A
@@ -11307,6 +11310,3 @@ _sub_408386:
     mov eax, dword ptr [__113E0A8]                       # 004083A0
     mov dword ptr [__5252DC], eax                        # 004083A5
     ret                                                  # 004083AA
-# 0x4083AB
-    .byte 0xCC                                           #        0 .
-
