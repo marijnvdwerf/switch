@@ -4484,13 +4484,12 @@ variable __1025A86
 variable __1025A88
 
 # 0x1025A88
-.skip 0x4
 
 # 0x1025A8C
 variable __1025A8C, 0x80002
-# 0x10A5A8E
-variable __10A5A8E, 0x80002
+
 # 0x1125A90
+.align 4
 variable _interfaceSkinMeta
 
 # 0x1125A90
@@ -8420,12 +8419,6 @@ variable __11360A0
 # 0x11360A0
 .skip 0x2C
 
-# 0x11360CC
-variable __11360CC
-
-# 0x11360CC
-.skip 0x4
-
 # 0x11360D0
 variable __11360D0
 
@@ -10764,7 +10757,7 @@ variable __113E0C0
 variable __113E0C4
 
 # 0x113E0C4
-.skip 0x1C
+.skip 0x1C-0x18
 
 # 0x113E0E0
 variable __113E0E0

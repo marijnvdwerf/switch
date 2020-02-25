@@ -4454,7 +4454,7 @@ _sub_46EC67:
     ret                                                  # 0046ED48
 .L46ED49:
     mov byte ptr [__F2542D], 0                           # 0046ED49
-    cmp word ptr [esi], 0x87f                            # 0046ED50
+    cmp word ptr [esi], 0x876                            # 0046ED50
     je .L46ED5D                                          # 0046ED55
     inc byte ptr [__F2542D]                              # 0046ED57
 .L46ED5D:
@@ -4478,7 +4478,7 @@ _sub_46EC67:
     mov dword ptr [__F25428], 0xffffffff                 # 0046ED8D
     call _sub_46F7AA                                     # 0046ED97
     pop eax                                              # 0046ED9C
-    cmp ax, 0x87f                                        # 0046ED9D
+    cmp ax, 0x876                                        # 0046ED9D
     jne .L46F023                                         # 0046EDA1
     mov_offset esi, __112CC04                            # 0046EDA7
     mov_offset edi, __5060D0                             # 0046EDAC
@@ -4619,14 +4619,14 @@ _sub_46EC67:
     cmp esi, -1                                          # 0046EF7B
     je .L46EF76                                          # 0046EF7E
     mov byte ptr [__F2542D], 0                           # 0046EF80
-    cmp word ptr [esi], 0x87f                            # 0046EF87
+    cmp word ptr [esi], 0x876                            # 0046EF87
     je .L46EF94                                          # 0046EF8C
     inc byte ptr [__F2542D]                              # 0046EF8E
 .L46EF94:
     mov eax, dword ptr [esi + 4]                         # 0046EF94
     and eax, 0                                           # 0046EF97
     mov dword ptr [__508F0C], eax                        # 0046EF9A
-    cmp word ptr [esi + 2], 0x87f                        # 0046EF9F
+    cmp word ptr [esi + 2], 0x876                        # 0046EF9F
     jne .L46F023                                         # 0046EFA5
     add esi, 0x4c                                        # 0046EFA7
     mov_offset edi, __5060D0                             # 0046EFAA
@@ -5277,8 +5277,8 @@ _sub_46F67E:
     .global _sub_46F7AA
 _sub_46F7AA:
     pushal                                               # 0046F7AA
-    mov word ptr [__F25572], 0x87f                       # 0046F7AB
-    mov word ptr [__F25574], 0x87f                       # 0046F7B4
+    mov word ptr [__F25572], 0x876                       # 0046F7AB
+    mov word ptr [__F25574], 0x876                       # 0046F7B4
     mov dword ptr [__F25576], 0                          # 0046F7BD
     mov dword ptr [__F2557A], 0                          # 0046F7C7
     cmp byte ptr [__50AC74], 0                           # 0046F7D1

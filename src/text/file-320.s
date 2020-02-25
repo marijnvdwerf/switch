@@ -13297,7 +13297,6 @@ _sub_4CFF1E:
     msvc_absjmp _DirectDrawCreateEx                      # 004CFF1E
 # 0x4CFF24
     .byte 0xCC, 0xCC, 0xCC, 0xCC, 0xCC, 0xCC, 0xCC, 0xCC #        0 ........
-    .byte 0xCC, 0xCC, 0xCC, 0xCC                         #        8 ....
 
 
     .global _dfDIKeyboard
@@ -14461,7 +14460,7 @@ _sub_4D1020:
     jb .L4D1074                                          # 004D1066
     and eax, 3                                           # 004D1068
     msvc_add ecx, eax                                    # 004D106B
-    jmp dword ptr [eax*4 + 0x4d1080]                     # 004D106D
+    jmp dword ptr [eax*4 + __4D1084-4]                     # 004D106D
 .L4D1074:
     jmp dword ptr [ecx*4 + .L4D1178]                     # 004D1074
 # 0x4D107B
@@ -14656,7 +14655,7 @@ __4D1168:
     jb .L4D1204                                          # 004D11F6
     and eax, 3                                           # 004D11F8
     msvc_sub ecx, eax                                    # 004D11FB
-    jmp dword ptr [eax*4 + 0x4d1208]                     # 004D11FD
+    jmp dword ptr [eax*4 + __4D120C-4]                     # 004D11FD
 .L4D1204:
     jmp dword ptr [ecx*4 + __4D1300]                     # 004D1204
 # 0x4D120B
@@ -20387,7 +20386,7 @@ _sub_4D4650:
     jb .L4D46A4                                          # 004D4696
     and eax, 3                                           # 004D4698
     msvc_add ecx, eax                                    # 004D469B
-    jmp dword ptr [eax*4 + 0x4d46b0]                     # 004D469D
+    jmp dword ptr [eax*4 + __4D46B4-4]                     # 004D469D
 .L4D46A4:
     jmp dword ptr [ecx*4 + .L4D47A8]                     # 004D46A4
 # 0x4D46AB
@@ -20582,7 +20581,7 @@ __4D4798:
     jb .L4D4834                                          # 004D4826
     and eax, 3                                           # 004D4828
     msvc_sub ecx, eax                                    # 004D482B
-    jmp dword ptr [eax*4 + 0x4d4838]                     # 004D482D
+    jmp dword ptr [eax*4 + __4D483C-4]                     # 004D482D
 .L4D4834:
     jmp dword ptr [ecx*4 + __4D4930]                     # 004D4834
 # 0x4D483B

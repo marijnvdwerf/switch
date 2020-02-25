@@ -3065,7 +3065,7 @@ __50AEDB:
     .global __50AEDC
 __50AEDC:
 # 0x50AEDC
-    .byte 0x00, 0x01                                     #        0 ..
+    .byte 0x00, 0x00                                     #        0 ..
 
 # 0x50AEDE
     .global __50AEDE
@@ -4411,8 +4411,10 @@ __50BC1C:
     .global __50BC60
 __50BC60:
 # 0x50BC60
-    .byte 0xFF, 0xFF, 0xFF, 0xFF, 0x5B, 0x2A, 0x45, 0x00 #        0 ....[*E.
-    .byte 0xB4, 0x2A, 0x45, 0x00, 0xFF, 0xFF, 0xFF, 0xFF #        8 .*E.....
+    .byte 0xFF, 0xFF, 0xFF, 0xFF
+    .4byte _sub_452A5B
+    .4byte _sub_452AB4
+    .byte 0xFF, 0xFF, 0xFF, 0xFF #        8 .*E.....
     .byte 0x00, 0x00, 0x00, 0x00                         #       10 ....
 
 # 0x50BC74
@@ -5049,6 +5051,10 @@ _ui_multiplayer___widgets_1:
 
 # 0x50C3CD
     .byte 0x00, 0x00, 0x00                               #        0 ...
+
+    .global _unkFn
+_unkFn:
+.4byte 0
 
 # 0x50C3D0
     .global _interfaceSkinObjects
@@ -6832,7 +6838,7 @@ _str_68:
     .global _str_69
 _str_69:
     .byte 0x0E
-    .asciz "Version 4.02.176 (US English)"
+    .asciz "Version 4.02.169 (UK English)"
 
 # 0x50DBC2
     .global _str_70
@@ -7805,7 +7811,7 @@ _str_221:
 # 0x50E728
     .global _str_222
 _str_222:
-    .asciz "Can't change color scheme..."
+    .asciz "Can't change colour scheme..."
 
 # 0x50E745
     .global _str_223
@@ -7982,7 +7988,7 @@ _str_249:
     .global _str_250
 _str_250:
     .byte 0x83
-    .asciz " - Color Scheme"
+    .asciz " - Colour Scheme"
 
 # 0x50E806
     .global _str_251
@@ -9654,7 +9660,7 @@ _str_473:
 # 0x50FD54
     .global _str_474
 _str_474:
-    .ascii "Traveling"
+    .ascii "Travelling"
     .byte 0x88
     .byte 0x88
     .byte EOS
@@ -12363,7 +12369,7 @@ _str_961:
 # 0x511145
     .global _str_962
 _str_962:
-    .asciz "\""
+    .asciz "#"
 
 # 0x511147
     .global _str_963
@@ -13156,7 +13162,7 @@ _str_1100:
     .global _str_1101
 _str_1101:
     .byte 0x0E
-    .asciz "Main color scheme:"
+    .asciz "Main colour scheme:"
 
 # 0x511C0A
     .global _str_1102
@@ -13251,7 +13257,7 @@ _str_1115:
 _str_1116:
     .byte 0x0A
     .byte 0x90
-    .asciz "Company color scheme"
+    .asciz "Company colour scheme"
 
 # 0x511D21
     .global _str_1117
@@ -13264,28 +13270,28 @@ _str_1117:
     .global _str_1118
 _str_1118:
     .byte 0x0E
-    .asciz "Special color schemes used for:"
+    .asciz "Special colour schemes used for:"
 
 # 0x511D64
     .global _str_1119
 _str_1119:
     .byte 0x0A
     .byte 0x90
-    .asciz "Select main color"
+    .asciz "Select main colour"
 
 # 0x511D78
     .global _str_1120
 _str_1120:
     .byte 0x0A
     .byte 0x90
-    .asciz "Select secondary color (used only on some vehicle types)"
+    .asciz "Select secondary colour (used only on some vehicle types)"
 
 # 0x511DB3
     .global _str_1121
 _str_1121:
     .byte 0x0A
     .byte 0x90
-    .asciz "Select whether to use a different color scheme for this type of vehicle"
+   .asciz "Select whether to use a different colour scheme for this type of vehicle"
 
 # 0x511DFD
     .global _str_1122
@@ -13886,7 +13892,7 @@ _str_1209:
 _str_1210:
     .byte 0x0A
     .byte 0x90
-    .asciz "Select object color"
+   .asciz "Select object colour"
 
 # 0x5123EA
     .global _str_1211
@@ -17776,7 +17782,7 @@ _str_1804:
 # 0x515591
     .global _str_1805
 _str_1805:
-    .asciz "Railroads"
+   .asciz "Railways"
 
 # 0x51559B
     .global _str_1806
@@ -19125,7 +19131,7 @@ _str_2004:
     .global _str_2005
 _str_2005:
     .byte 0x0E
-    .ascii "Folder:  "
+   .ascii "Folder: "
     .byte 0x90
     .byte 0x83
     .byte EOS
@@ -30353,8 +30359,7 @@ _ui_text_input_widgets:
     .byte 0x1E
 
 # 0x5235A1
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x75 #        8 .......u
+    .byte 0x00, 0x00, 0x00, 0x75 #        8 .......u
     .byte 0x98, 0x00, 0x00, 0x73, 0x98, 0x00, 0x00       #       10 ...s...
 
 # 0x5235B8

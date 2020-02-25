@@ -5991,8 +5991,6 @@ _sub_457D2A:
     mov bx, 0x1c9                                        # 00457DC0
 .L457DC4:
     imul ebp, ebp, 0x453                                 # 00457DC4
-    cmp word ptr [ebp + _industries], -1                 # 00457DCA
-    je .L457EB8                                          # 00457DD2
     push eax                                             # 00457DD8
     push ebx                                             # 00457DD9
     push edx                                             # 00457DDA
@@ -8564,89 +8562,3 @@ _sub_4599B3:
     pop ebx                                              # 00459D2B
     ret                                                  # 00459D2C
 
-    .global _sub_459D2D
-_sub_459D2D:
-    pushal                                               # 00459D2D
-    test dword ptr [_scenarioChunk3+16], 1               # 00459D2E
-    je .L459E52                                          # 00459D38
-    mov_offset esi, _industries                          # 00459D3E
-.L459D43:
-    cmp word ptr [esi], -1                               # 00459D43
-    je .L459E40                                          # 00459D47
-    mov cl, byte ptr [esi + 0x14]                        # 00459D4D
-    msvc_xor ebp, ebp                                    # 00459D50
-.L459D52:
-    msvc_or cl, cl                                       # 00459D52
-    je .L459E40                                          # 00459D54
-    push ecx                                             # 00459D5A
-    push esi                                             # 00459D5B
-    push ebp                                             # 00459D5C
-    mov ax, word ptr [ebp + esi + 0x15]                  # 00459D5D
-    mov cx, word ptr [ebp + esi + 0x17]                  # 00459D62
-    mov di, word ptr [ebp + esi + 0x19]                  # 00459D67
-    and di, 0x7fff                                       # 00459D6C
-    mov word ptr [__E0C3B4], ax                          # 00459D71
-    mov word ptr [__E0C3B6], cx                          # 00459D77
-    movzx esi, cx                                        # 00459D7E
-    shl esi, 9                                           # 00459D81
-    msvc_or si, ax                                       # 00459D84
-    shr esi, 3                                           # 00459D87
-    mov esi, dword ptr [esi + __E40134]                  # 00459D8A
-    msvc_mov dx, di                                      # 00459D90
-    shr dx, 2                                            # 00459D93
-    mov byte ptr [__E0C3CB], dl                          # 00459D97
-.L459D9D:
-    mov al, byte ptr [esi]                               # 00459D9D
-    and al, 0x3c                                         # 00459D9F
-    cmp al, 0x20                                         # 00459DA1
-    jne .L459DAA                                         # 00459DA3
-    cmp dl, byte ptr [esi + 2]                           # 00459DA5
-    je .L459DAF                                          # 00459DA8
-.L459DAA:
-    add esi, 8                                           # 00459DAA
-    jmp .L459D9D                                         # 00459DAD
-.L459DAF:
-    mov al, byte ptr [esi + 4]                           # 00459DAF
-    mov byte ptr [__E0C3CC], al                          # 00459DB2
-    mov ax, word ptr [esi + 6]                           # 00459DB7
-    shr ax, 6                                            # 00459DBB
-    and al, 0x1f                                         # 00459DBF
-    mov byte ptr [__E0C3CD], al                          # 00459DC1
-    mov al, byte ptr [esi]                               # 00459DC6
-    and al, 3                                            # 00459DC8
-    mov byte ptr [__E0C3CE], al                          # 00459DCA
-    movzx ebp, byte ptr [__E0C3CC]                       # 00459DCF
-    imul ebp, ebp, 0x453                                 # 00459DD6
-    movzx ebp, byte ptr [ebp + _industries+16]           # 00459DDC
-    mov ebp, dword ptr [ebp*4 + _industryObjects]        # 00459DE3
-    mov_offset edi, __4F9274                             # 00459DEA
-    movzx eax, byte ptr [__E0C3CD]                       # 00459DEF
-    bt dword ptr [ebp + 0xc6], eax                       # 00459DF6
-    jae .L459E04                                         # 00459DFD
-    mov_offset edi, __4F927C                             # 00459DFF
-.L459E04:
-    cmp word ptr [edi], 0x8000                           # 00459E04
-    je .L459E32                                          # 00459E09
-    mov ax, word ptr [edi]                               # 00459E0B
-    mov cx, word ptr [edi + 2]                           # 00459E0E
-    add ax, word ptr [__E0C3B4]                          # 00459E12
-    add cx, word ptr [__E0C3B6]                          # 00459E19
-    mov dl, byte ptr [__E0C3CB]                          # 00459E20
-    mov dh, 3                                            # 00459E26
-    call _sub_4612A6                                     # 00459E28
-    add edi, 6                                           # 00459E2D
-    jmp .L459E04                                         # 00459E30
-.L459E32:
-    pop ebp                                              # 00459E32
-    pop esi                                              # 00459E33
-    pop ecx                                              # 00459E34
-    add ebp, 6                                           # 00459E35
-    dec cl                                               # 00459E38
-    jne .L459D52                                         # 00459E3A
-.L459E40:
-    add esi, 0x453                                       # 00459E40
-    cmp_offset esi, _stations                            # 00459E46
-    jb .L459D43                                          # 00459E4C
-.L459E52:
-    popal                                                # 00459E52
-    ret                                                  # 00459E53

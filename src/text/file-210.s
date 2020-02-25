@@ -14090,7 +14090,7 @@ _sub_489C6A:
     je .L489CB4                                          # 00489C71
     pushal                                               # 00489C73
     mov_offset esi, __50D1F0                             # 00489C74
-    mov ecx, 0x10                                        # 00489C79
+    mov cx, 0x10
 .L489C7E:
     cmp word ptr [esi], -1                               # 00489C7E
     je .L489CAD                                          # 00489C82
@@ -14107,8 +14107,7 @@ _sub_489C6A:
     mov word ptr [esi], 0xffff                           # 00489CA8
 .L489CAD:
     add esi, 0x24                                        # 00489CAD
-    dec ecx                                              # 00489CB0
-    jne .L489C7E                                         # 00489CB1
+    msvc_loop .L489C7E
     popal                                                # 00489CB3
 .L489CB4:
     ret                                                  # 00489CB4

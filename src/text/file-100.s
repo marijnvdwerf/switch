@@ -1128,28 +1128,6 @@ _sub_42D133:
     je .L42D4ED                                          # 0042D4E8
     or byte ptr [esi], 0x40                              # 0042D4EA
 .L42D4ED:
-    push ebx                                             # 0042D4ED
-    push edi                                             # 0042D4EE
-    push ebp                                             # 0042D4EF
-    mov di, word ptr [esi + 6]                           # 0042D4F0
-    and edi, 0x7c0                                       # 0042D4F4
-    shr edi, 6                                           # 0042D4FA
-    mov edi, dword ptr [ebp + edi*4 + 0x10]              # 0042D4FD
-    mov ebp, dword ptr [ebp + 0xc]                       # 0042D501
-    msvc_xor dh, dh                                      # 0042D504
-.L42D506:
-    movzx ebx, byte ptr [edi]                            # 0042D506
-    cmp bl, 0xff                                         # 0042D509
-    je .L42D515                                          # 0042D50C
-    or dh, byte ptr [ebp + ebx*2]                        # 0042D50E
-    inc edi                                              # 0042D512
-    jmp .L42D506                                         # 0042D513
-.L42D515:
-    pop ebp                                              # 0042D515
-    pop edi                                              # 0042D516
-    pop ebx                                              # 0042D517
-    cmp dh, 1                                            # 0042D518
-    jbe .L42D527                                         # 0042D51B
     mov dl, byte ptr [esi + 2]                           # 0042D51D
     mov dh, 6                                            # 0042D520
     call _sub_4612A6                                     # 0042D522

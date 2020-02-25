@@ -2202,8 +2202,6 @@ _sub_431315:
     call _sub_4CB966                                     # 00431393
     popal                                                # 00431398
 .L431399:
-    cmp byte ptr [__508F17], 0                           # 00431399
-    jne .L431685                                         # 004313A0
     pop eax                                              # 004313A6
 .L4313A7:
     push eax                                             # 004313A7
@@ -2399,11 +2397,6 @@ _sub_431315:
     dec byte ptr [__508F08]                              # 00431679
     mov ebx, 0x80000000                                  # 0043167F
     ret                                                  # 00431684
-.L431685:
-    pop eax                                              # 00431685
-    mov ebx, 0x80000000                                  # 00431686
-    mov word ptr [__9C68E6], 0                           # 0043168B
-    ret                                                  # 00431694
 
     .global _sub_431695
 _sub_431695:
@@ -11449,6 +11442,4 @@ _sub_438A08:
 .L438A66:
     msvc_xor ebx, ebx                                    # 00438A66
     ret                                                  # 00438A68
-# 0x438A69
-    .byte 0xCC, 0xCC, 0xCC                               #        0 ...
 

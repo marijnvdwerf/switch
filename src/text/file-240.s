@@ -4703,8 +4703,6 @@ _sub_49A0F8:
     mov bx, 0x1c9                                        # 0049A18E
 .L49A192:
     imul ebp, ebp, 0x270                                 # 0049A192
-    cmp word ptr [ebp + _towns], -1                      # 0049A198
-    je .L49A273                                          # 0049A1A0
     push eax                                             # 0049A1A6
     push ebx                                             # 0049A1A7
     push edx                                             # 0049A1A8
@@ -6292,6 +6290,4 @@ _sub_49B4E0:
 .L49B508:
     pop ebp                                              # 0049B508
     ret                                                  # 0049B509
-# 0x49B50A
-    .byte 0xCC, 0xCC                                     #        0 ..
 

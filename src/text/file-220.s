@@ -7370,8 +7370,6 @@ _sub_490756:
     msvc_xor dl, dl                                      # 0049085C
     mov ax, word ptr [esi + 2]                           # 0049085E
     mov cx, word ptr [esi + 4]                           # 00490862
-    and ax, 0xffe0                                       # 00490866
-    and cx, 0xffe0                                       # 0049086A
     call _sub_48F988                                     # 0049086E
     msvc_mov ax, bx                                      # 00490873
     pop ecx                                              # 00490876

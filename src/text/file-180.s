@@ -12132,7 +12132,6 @@ _sub_46A794:
     imul ax, ax, 3                                       # 0046ABAD
 .L46ABB1:
     mov word ptr [__F253A2], ax                          # 0046ABB1
-    call _sub_46FFCA                                     # 0046ABB7
     mov ax, word ptr [__F253A2]                          # 0046ABBC
     msvc_or ax, ax                                       # 0046ABC2
     je .L46AC99                                          # 0046ABC5
@@ -12154,10 +12153,8 @@ _sub_46A794:
     call _sub_496B6D                                     # 0046AC11
     call _sub_453234                                     # 0046AC16
     call _sub_4A8826                                     # 0046AC1B
-    call _sub_46FFCA                                     # 0046AC20
     call _sub_48B1FA                                     # 0046AC25
     call _sub_4402F4                                     # 0046AC2A
-    call _sub_46FFCA                                     # 0046AC2F
     call _sub_430319                                     # 0046AC34
     call _sub_4612EC                                     # 0046AC39
     call _sub_48A73B                                     # 0046AC3E
@@ -12198,7 +12195,6 @@ _sub_46A794:
 .L46ACD4:
     call _sub_431695                                     # 0046ACD4
     call _sub_452B5F                                     # 0046ACD9
-    call _sub_46FFCA                                     # 0046ACDE
     cmp byte ptr [__50AEC0], 0xff                        # 0046ACE3
     je .L46AD00                                          # 0046ACEA
     inc byte ptr [__50AEC0]                              # 0046ACEC
@@ -12299,9 +12295,6 @@ __46AE40:
     mov byte ptr [__50C195], 0xa                         # 0046AE78
     msvc_jmp .L46B48A                                    # 0046AE7F
 .L46AE84:
-    mov dword ptr [__50C190], 0                          # 0046AE84
-    mov byte ptr [__50C195], 9                           # 0046AE8E
-.L46AE95:
     mov_offset edi, __50B884                             # 0046AE95
     mov ebp, 0xa0a0a0a                                   # 0046AE9A
     call _sub_447485                                     # 0046AE9F
@@ -12376,6 +12369,10 @@ __46AE40:
     pop ebx                                              # 0046AF5A
     add dx, 0xa                                          # 0046AF5B
     inc bx                                               # 0046AF5F
+    mov dword ptr [__50C190], 0                       
+    mov byte ptr [__50C195], 9                        
+    jmp .L46B48A
+.L46AE95:
     cmp dword ptr [__50C190], 0                          # 0046AF61
     jne .L46AF76                                         # 0046AF68
     mov ebx, 0x130                                       # 0046AF6A
