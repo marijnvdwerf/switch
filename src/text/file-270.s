@@ -556,7 +556,7 @@ _sub_4BB586:
     mov eax, 0x1d0000                                    # 004BB586
     mov ax, word ptr [__50B894]                          # 004BB58B
     sub ax, 0x27a                                        # 004BB591
-    mov ebx, 0xa2027a                                    # 004BB595
+    mov ebx, 0xa8027a                                    # 004BB595
     mov ecx, 0x8000f                                     # 004BB59A
     mov_offset edx, _ui_terraform___events_3             # 004BB59F
     call _sub_4C9F5D                                     # 004BB5A4
@@ -577,9 +577,9 @@ _sub_4BB586:
     mov byte ptr [__113649E], 0                          # 004BB606
     call _sub_4CEE0B                                     # 004BB60D
     mov word ptr [esi + 0x38], 0x27a                     # 004BB612
-    mov word ptr [esi + 0x3c], 0xa2                      # 004BB618
+    mov word ptr [esi + 0x3c], 0xa8                      # 004BB618
     mov word ptr [esi + 0x3a], 0x27a                     # 004BB61E
-    mov word ptr [esi + 0x3e], 0xa2                      # 004BB624
+    mov word ptr [esi + 0x3e], 0xa8                      # 004BB624
     mov ebp, dword ptr [_interfaceSkinObjects]           # 004BB62A
     mov al, byte ptr [ebp + 0xe]                         # 004BB630
     mov byte ptr [esi + 0x887], al                       # 004BB633
@@ -754,7 +754,7 @@ _sub_4BB756:
     mov ax, word ptr [esi + 0x34]                        # 004BB849
     mov cx, word ptr [esi + 0x36]                        # 004BB84D
     sub ax, 0x1a                                         # 004BB851
-    sub cx, 0xe                                          # 004BB855
+    sub cx, 0x11                                          # 004BB855
     mov word ptr [_ui_terraform___widgets_3+148], ax     # 004BB859
     mov word ptr [_ui_terraform___widgets_3+152], cx     # 004BB85F
     inc ax                                               # 004BB866
@@ -786,7 +786,7 @@ _sub_4BB8C9:
     mov dx, word ptr [esi + 0x32]                        # 004BB8D8
     add cx, 3                                            # 004BB8DC
     add dx, word ptr [esi + 0x36]                        # 004BB8E0
-    sub dx, 0xd                                          # 004BB8E4
+    sub dx, 0x10                                          # 004BB8E4
     movsx ebp, word ptr [esi + 0x846]                    # 004BB8E8
     cmp bp, -1                                           # 004BB8EF
     jne .L4BB901                                         # 004BB8F3
@@ -1174,7 +1174,7 @@ _sub_4BBDA5:
     sub ax, word ptr [esi + 0x30]                        # 004BBDF5
     sub bx, word ptr [esi + 0x32]                        # 004BBDF9
     add ax, 0x1a                                         # 004BBDFD
-    cmp bx, 0x2a                                         # 004BBE01
+    cmp bx, 0x2d                                         # 004BBE01
     jb .L4BBE11                                          # 004BBE05
     cmp ax, word ptr [esi + 0x34]                        # 004BBE07
     ja .L4BBEA0                                          # 004BBE0B
@@ -1189,16 +1189,16 @@ _sub_4BBDA5:
     jl .L4BBE7F                                          # 004BBE35
     mov ax, word ptr [esi + 0x52]                        # 004BBE37
     dec ax                                               # 004BBE3B
-    add ax, 0x3c                                         # 004BBE3D
-    cmp ax, 0x232                                        # 004BBE41
+    add ax, 0x42                                         # 004BBE3D
+    cmp ax, 0x238                                        # 004BBE41
     jbe .L4BBE4B                                         # 004BBE45
-    mov ax, 0x232                                        # 004BBE47
+    mov ax, 0x238                                        # 004BBE47
 .L4BBE4B:
     cmp word ptr [__50B896], 0x258                       # 004BBE4B
     jae .L4BBE60                                         # 004BBE54
-    cmp ax, 0x166                                        # 004BBE56
+    cmp ax, 0x16c                                        # 004BBE56
     jbe .L4BBE60                                         # 004BBE5A
-    mov ax, 0x166                                        # 004BBE5C
+    mov ax, 0x16c                                        # 004BBE5C
 .L4BBE60:
     mov word ptr [esi + 0x38], 0x27a                     # 004BBE60
     mov word ptr [esi + 0x3c], ax                        # 004BBE66
@@ -1211,9 +1211,9 @@ _sub_4BBDA5:
     cmp byte ptr [__52336D], 7                           # 004BBE7F
     je .L4BBEA0                                          # 004BBE86
     mov word ptr [esi + 0x38], 0x27a                     # 004BBE88
-    mov word ptr [esi + 0x3c], 0xa2                      # 004BBE8E
+    mov word ptr [esi + 0x3c], 0xa8                      # 004BBE8E
     mov word ptr [esi + 0x3a], 0x27a                     # 004BBE94
-    mov word ptr [esi + 0x3e], 0xa2                      # 004BBE9A
+    mov word ptr [esi + 0x3e], 0xa8                      # 004BBE9A
 .L4BBEA0:
     inc word ptr [esi + 0x872]                           # 004BBEA0
     mov ebp, dword ptr [esi]                             # 004BBEA7
@@ -1392,7 +1392,7 @@ _sub_4BC029:
     mov ax, word ptr [esi + 0x34]                        # 004BC09F
     mov cx, word ptr [esi + 0x36]                        # 004BC0A3
     sub ax, 4                                            # 004BC0A7
-    sub cx, 0xe                                          # 004BC0AB
+    sub cx, 0x11                                          # 004BC0AB
     mov word ptr [_ui_terraform___widgets_4+148], ax     # 004BC0AF
     mov word ptr [_ui_terraform___widgets_4+152], cx     # 004BC0B5
     call _sub_4BCF29                                     # 004BC0BC
@@ -1407,7 +1407,7 @@ _sub_4BC0C2:
     mov dx, word ptr [esi + 0x32]                        # 004BC0D1
     add cx, 3                                            # 004BC0D5
     add dx, word ptr [esi + 0x36]                        # 004BC0D9
-    sub dx, 0xd                                          # 004BC0DD
+    sub dx, 0x10                                          # 004BC0DD
     movsx ebp, word ptr [esi + 0x846]                    # 004BC0E1
     cmp bp, -1                                           # 004BC0E8
     jne .L4BC0FA                                         # 004BC0EC
@@ -1569,7 +1569,7 @@ _sub_4BC23D:
     sub ax, word ptr [esi + 0x30]                        # 004BC28D
     sub bx, word ptr [esi + 0x32]                        # 004BC291
     add ax, 0x1a                                         # 004BC295
-    cmp bx, 0x2a                                         # 004BC299
+    cmp bx, 0x2d                                         # 004BC299
     jb .L4BC2A9                                          # 004BC29D
     cmp ax, word ptr [esi + 0x34]                        # 004BC29F
     ja .L4BC338                                          # 004BC2A3
@@ -1584,16 +1584,16 @@ _sub_4BC23D:
     jl .L4BC317                                          # 004BC2CD
     mov ax, word ptr [esi + 0x52]                        # 004BC2CF
     dec ax                                               # 004BC2D3
-    add ax, 0x3c                                         # 004BC2D5
-    cmp ax, 0x124                                        # 004BC2D9
+    add ax, 0x42                                         # 004BC2D5
+    cmp ax, 0x12a                                        # 004BC2D9
     jbe .L4BC2E3                                         # 004BC2DD
-    mov ax, 0x124                                        # 004BC2DF
+    mov ax, 0x12a                                        # 004BC2DF
 .L4BC2E3:
     cmp word ptr [__50B896], 0x258                       # 004BC2E3
     jae .L4BC2F8                                         # 004BC2EC
-    cmp ax, 0xc4                                         # 004BC2EE
+    cmp ax, 0xca                                         # 004BC2EE
     jbe .L4BC2F8                                         # 004BC2F2
-    mov ax, 0xc4                                         # 004BC2F4
+    mov ax, 0xca                                         # 004BC2F4
 .L4BC2F8:
     mov word ptr [esi + 0x38], 0x1a2                     # 004BC2F8
     mov word ptr [esi + 0x3c], ax                        # 004BC2FE
@@ -1606,9 +1606,9 @@ _sub_4BC23D:
     cmp byte ptr [__52336D], 7                           # 004BC317
     je .L4BC338                                          # 004BC31E
     mov word ptr [esi + 0x38], 0x1a2                     # 004BC320
-    mov word ptr [esi + 0x3c], 0x6c                      # 004BC326
+    mov word ptr [esi + 0x3c], 0x72                      # 004BC326
     mov word ptr [esi + 0x3a], 0x1a2                     # 004BC32C
-    mov word ptr [esi + 0x3e], 0x6c                      # 004BC332
+    mov word ptr [esi + 0x3e], 0x72                      # 004BC332
 .L4BC338:
     inc word ptr [esi + 0x872]                           # 004BC338
     mov ebp, dword ptr [esi]                             # 004BC33F
@@ -2023,8 +2023,8 @@ _sub_4BC7C6:
 .L4BC7DE:
     mov word ptr [esi + 0x38], ax                        # 004BC7DE
     mov word ptr [esi + 0x3a], ax                        # 004BC7E2
-    mov word ptr [esi + 0x3c], 0x69                      # 004BC7E6
-    mov word ptr [esi + 0x3e], 0x69                      # 004BC7EC
+    mov word ptr [esi + 0x3c], 0x6f                      # 004BC7E6
+    mov word ptr [esi + 0x3e], 0x6f                      # 004BC7EC
     mov ax, word ptr [esi + 0x38]                        # 004BC7F2
     cmp ax, word ptr [esi + 0x34]                        # 004BC7F6
     jbe .L4BC805                                         # 004BC7FA
@@ -2127,7 +2127,7 @@ _sub_4BC909:
     pop edx                                              # 004BC95F
     pop ecx                                              # 004BC960
 .L4BC961:
-    add dx, 0xa                                          # 004BC961
+    add dx, 0xd                                          # 004BC961
     cmp dword ptr [__F25310], 0x80000000                 # 004BC965
     je .L4BC98A                                          # 004BC96F
     cmp dword ptr [__F25310], 0                          # 004BC971
@@ -2346,8 +2346,8 @@ _sub_4BCBF8:
 .L4BCC10:
     mov word ptr [esi + 0x38], ax                        # 004BCC10
     mov word ptr [esi + 0x3a], ax                        # 004BCC14
-    mov word ptr [esi + 0x3c], 0x73                      # 004BCC18
-    mov word ptr [esi + 0x3e], 0x73                      # 004BCC1E
+    mov word ptr [esi + 0x3c], 0x7c                      # 004BCC18
+    mov word ptr [esi + 0x3e], 0x7c                      # 004BCC1E
     mov ax, word ptr [esi + 0x38]                        # 004BCC24
     cmp ax, word ptr [esi + 0x34]                        # 004BCC28
     jbe .L4BCC37                                         # 004BCC2C
@@ -2438,7 +2438,7 @@ _sub_4BCCFF:
     pop edx                                              # 004BCD55
     pop ecx                                              # 004BCD56
 .L4BCD57:
-    add dx, 0xa                                          # 004BCD57
+    add dx, 0xd                                          # 004BCD57
     cmp dword ptr [__1136528], 0x80000000                # 004BCD5B
     je .L4BCD80                                          # 004BCD65
     cmp dword ptr [__1136528], 0                         # 004BCD67
@@ -2565,8 +2565,8 @@ _sub_4BCEB4:
 .L4BCECC:
     mov word ptr [esi + 0x38], ax                        # 004BCECC
     mov word ptr [esi + 0x3a], ax                        # 004BCED0
-    mov word ptr [esi + 0x3c], 0x73                      # 004BCED4
-    mov word ptr [esi + 0x3e], 0x73                      # 004BCEDA
+    mov word ptr [esi + 0x3c], 0x7c                      # 004BCED4
+    mov word ptr [esi + 0x3e], 0x7c                      # 004BCEDA
     mov ax, word ptr [esi + 0x38]                        # 004BCEE0
     cmp ax, word ptr [esi + 0x34]                        # 004BCEE4
     jbe .L4BCEF3                                         # 004BCEE8
@@ -3718,17 +3718,17 @@ _sub_4BDC67:
     jmp .L4BDCF8                                         # 004BDCCA
 .L4BDCCC:
     neg ebp                                              # 004BDCCC
-    movsx ebx, word ptr [ebp*2 + _Import_SetDIBColorTable+6] # 004BDCCE
+    movsx ebx, word ptr [ebp*2 + __503B50 + 0x1000*2] # 004BDCCE
     jmp .L4BDCF8                                         # 004BDCD6
 .L4BDCD8:
     test ebp, 0x1000                                     # 004BDCD8
     jne .L4BDCEC                                         # 004BDCDE
-    movsx ebx, word ptr [ebp*2 + __4FDB50]               # 004BDCE0
+    movsx ebx, word ptr [ebp*2 + __501B50 - 0x2000*2]               # 004BDCE0
     neg ebx                                              # 004BDCE8
     jmp .L4BDCF8                                         # 004BDCEA
 .L4BDCEC:
     neg ebp                                              # 004BDCEC
-    movsx ebx, word ptr [ebp*2 + _ui_company_list___widgets_5+152] # 004BDCEE
+    movsx ebx, word ptr [ebp*2 + __503B50 + 0x3000*2] # 004BDCEE
     neg ebx                                              # 004BDCF6
 .L4BDCF8:
     test edi, 0x2000                                     # 004BDCF8

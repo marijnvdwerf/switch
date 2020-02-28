@@ -72,9 +72,9 @@ _sub_438A6C:
     mov byte ptr [esi + 0x889], al                       # 00438BC1
 .L438BC7:
     mov ax, word ptr [__50B896]                          # 00438BC7
-    sub ax, 0x1b                                         # 00438BCD
+    sub ax, 0x21                                         # 00438BCD
     shl eax, 0x10                                        # 00438BD1
-    mov ebx, 0x1b008c                                    # 00438BD4
+    mov ebx, 0x21008c                                    # 00438BD4
     mov ecx, 0x3202                                      # 00438BD9
     mov_offset edx, _ui__toolbar_player_info___widgets___events # 00438BDE
     call _sub_4C9F5D                                     # 00438BE3
@@ -93,11 +93,11 @@ _sub_438A6C:
     mov byte ptr [esi + 0x887], al                       # 00438C1F
 .L438C25:
     mov ax, word ptr [__50B896]                          # 00438C25
-    sub ax, 0x1b                                         # 00438C2B
+    sub ax, 0x21                                         # 00438C2B
     shl eax, 0x10                                        # 00438C2F
     mov ax, word ptr [__50B894]                          # 00438C32
     sub ax, 0x8c                                         # 00438C38
-    mov ebx, 0x1b008c                                    # 00438C3C
+    mov ebx, 0x21008c                                    # 00438C3C
     mov ecx, 0x3203                                      # 00438C41
     mov_offset edx, _ui__toolbar_time___widgets___events # 00438C46
     call _sub_4C9F5D                                     # 00438C4B
@@ -122,10 +122,10 @@ _sub_438A6C:
     cmp byte ptr [__508F19], 0                           # 00438CA5
     je .L438D0C                                          # 00438CAC
     mov ax, word ptr [__50B896]                          # 00438CAE
-    sub ax, 0x1b                                         # 00438CB4
+    sub ax, 0x21                                         # 00438CB4
     shl eax, 0x10                                        # 00438CB8
     mov ax, 0x8c                                         # 00438CBB
-    mov ebx, 0x1b0000                                    # 00438CBF
+    mov ebx, 0x210000                                    # 00438CBF
     mov bx, word ptr [__50B894]                          # 00438CC4
     sub bx, 0x118                                        # 00438CCB
     mov ecx, 0x3231                                      # 00438CD0
@@ -147,12 +147,12 @@ _sub_438A6C:
     ret                                                  # 00438D11
 .L438D12:
     mov ax, word ptr [__50B896]                          # 00438D12
-    sub ax, 0x75                                         # 00438D18
+    sub ax, 0x78                                         # 00438D18
     shl eax, 0x10                                        # 00438D1C
     mov ax, word ptr [__50B894]                          # 00438D1F
     sub ax, 0x128                                        # 00438D25
     shr ax, 1                                            # 00438D29
-    mov ebx, 0x5c0128                                    # 00438D2C
+    mov ebx, 0x5f0128                                    # 00438D2C
     mov ecx, 0x7210                                      # 00438D31
     mov_offset edx, _ui__title_menu___widgets___events   # 00438D36
     call _sub_4C9F5D                                     # 00438D3B
@@ -168,11 +168,11 @@ _sub_438A6C:
     mov byte ptr [esi + 0x887], 0x8b                     # 00438D6B
     mov word ptr [esi + 0x846], 0                        # 00438D72
     mov ax, word ptr [__50B896]                          # 00438D7B
-    sub ax, 0x1c                                         # 00438D81
+    sub ax, 0x22                                         # 00438D81
     shl eax, 0x10                                        # 00438D85
     mov ax, word ptr [__50B894]                          # 00438D88
     sub ax, 0x28                                         # 00438D8E
-    mov ebx, 0x1c0028                                    # 00438D92
+    mov ebx, 0x220028                                    # 00438D92
     mov ecx, 0x7211                                      # 00438D97
     mov_offset edx, _ui__title_exit___widgets___events   # 00438D9C
     call _sub_4C9F5D                                     # 00438DA1
@@ -540,7 +540,7 @@ _sub_439236:
     call _sub_4CA4DF                                     # 00439236
     mov dx, word ptr [_ui_title_exit_widgets+6]          # 0043923B
     mov cx, word ptr [esi + 0x34]                        # 00439242
-    add dx, 8                                            # 00439246
+    add dx, 9                                            # 00439246
     shr cx, 1                                            # 0043924A
     add cx, word ptr [esi + 0x30]                        # 0043924D
     add dx, word ptr [esi + 0x32]                        # 00439251
@@ -644,7 +644,7 @@ _sub_4392BD:
     call _sub_4C9B56                                     # 00439344
     je .L439356                                          # 00439349
     msvc_mov dx, bx                                      # 0043934B
-    sub dx, 0x1b                                         # 0043934E
+    sub dx, 0x21                                         # 0043934E
     mov word ptr [esi + 0x32], dx                        # 00439352
 .L439356:
     mov cl, 3                                            # 00439356
@@ -652,7 +652,7 @@ _sub_4392BD:
     call _sub_4C9B56                                     # 0043935B
     je .L439384                                          # 00439360
     msvc_mov dx, bx                                      # 00439362
-    sub dx, 0x1b                                         # 00439365
+    sub dx, 0x21                                         # 00439365
     mov word ptr [esi + 0x32], dx                        # 00439369
     msvc_mov dx, ax                                      # 0043936D
     cmp dx, 0x280                                        # 00439370
@@ -671,7 +671,7 @@ _sub_4392BD:
     sub dx, 0x94                                         # 00439396
     mov word ptr [esi + 0x30], dx                        # 0043939B
     msvc_mov dx, bx                                      # 0043939F
-    sub dx, 0x75                                         # 004393A2
+    sub dx, 0x78                                         # 004393A2
     mov word ptr [esi + 0x32], dx                        # 004393A6
 .L4393AA:
     mov cl, 0x11                                         # 004393AA
@@ -682,7 +682,7 @@ _sub_4392BD:
     sub dx, 0x28                                         # 004393B9
     mov word ptr [esi + 0x30], dx                        # 004393BD
     msvc_mov dx, bx                                      # 004393C1
-    sub dx, 0x1c                                         # 004393C4
+    sub dx, 0x22                                         # 004393C4
     mov word ptr [esi + 0x32], dx                        # 004393C8
 .L4393CC:
     mov cl, 0x31                                         # 004393CC
@@ -786,7 +786,7 @@ _sub_4393EF:
     pop ebp                                              # 00439550
     pop edx                                              # 00439551
     pop ecx                                              # 00439552
-    add dx, 0xc                                          # 00439553
+    add dx, 0xf                                          # 00439553
     mov esi, dword ptr [esp]                             # 00439557
     mov bx, 0x6fc                                        # 0043955A
     test dword ptr [ebp + _companies+4], 0x30            # 0043955E
@@ -1254,7 +1254,7 @@ _sub_439B4A:
     call _sub_494DE8                                     # 00439B8C
     pop edx                                              # 00439B91
     pop ecx                                              # 00439B92
-    add dx, 0xa                                          # 00439B93
+    add dx, 0xd                                          # 00439B93
     msvc_xor al, al                                      # 00439B97
     mov bx, 0x3f7                                        # 00439B99
     call _sub_494DE8                                     # 00439B9D
@@ -2991,7 +2991,7 @@ _sub_43B26C:
     jne .L43B2E3                                         # 0043B276
     mov ax, word ptr [__50B896]                          # 0043B278
     shr ax, 1                                            # 0043B27E
-    sub ax, 0xa4                                         # 0043B281
+    sub ax, 0xbc                                         # 0043B281
     cmp ax, 0x1c                                         # 0043B285
     jge .L43B28F                                         # 0043B289
     mov ax, 0x1c                                         # 0043B28B
@@ -3000,7 +3000,7 @@ _sub_43B26C:
     mov ax, word ptr [__50B894]                          # 0043B292
     shr ax, 1                                            # 0043B298
     sub ax, 0xc8                                         # 0043B29B
-    mov ebx, 0x1480190                                   # 0043B29F
+    mov ebx, 0x1780190                                   # 0043B29F
     mov ecx, 9                                           # 0043B2A4
     mov_offset edx, _ui__about___widgets___events        # 0043B2A9
     call _sub_4C9F5D                                     # 0043B2AE
@@ -3023,7 +3023,7 @@ _sub_43B2E4:
     mov cx, word ptr [esi + 0x30]                        # 0043B2E9
     mov dx, word ptr [esi + 0x32]                        # 0043B2ED
     add cx, 0xc8                                         # 0043B2F1
-    add dx, 0x11                                         # 0043B2F6
+    add dx, 0x14                                         # 0043B2F6
     push esi                                             # 0043B2FA
     push ecx                                             # 0043B2FB
     push edx                                             # 0043B2FC
@@ -3035,7 +3035,7 @@ _sub_43B2E4:
     mov byte ptr [__5215B4], 0x30                        # 0043B314
     pop edx                                              # 0043B31B
     pop ecx                                              # 0043B31C
-    add dx, 0xa                                          # 0043B31D
+    add dx, 0xd                                          # 0043B31D
     push ecx                                             # 0043B321
     push edx                                             # 0043B322
     mov bx, 0x46                                         # 0043B323
@@ -3043,7 +3043,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B329
     pop edx                                              # 0043B32E
     pop ecx                                              # 0043B32F
-    add dx, 0x4f                                         # 0043B330
+    add dx, 0x55                                         # 0043B330
     push ecx                                             # 0043B334
     push edx                                             # 0043B335
     mov bx, 0x47                                         # 0043B336
@@ -3051,7 +3051,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B33C
     pop edx                                              # 0043B341
     pop ecx                                              # 0043B342
-    add dx, 0xa                                          # 0043B343
+    add dx, 0xd                                          # 0043B343
     push ecx                                             # 0043B347
     push edx                                             # 0043B348
     mov bx, 0x48                                         # 0043B349
@@ -3059,7 +3059,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B34F
     pop edx                                              # 0043B354
     pop ecx                                              # 0043B355
-    add dx, 0xa                                          # 0043B356
+    add dx, 0xd                                          # 0043B356
     push ecx                                             # 0043B35A
     push edx                                             # 0043B35B
     mov bx, 0x49                                         # 0043B35C
@@ -3067,7 +3067,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B362
     pop edx                                              # 0043B367
     pop ecx                                              # 0043B368
-    add dx, 0xa                                          # 0043B369
+    add dx, 0xd                                          # 0043B369
     push ecx                                             # 0043B36D
     push edx                                             # 0043B36E
     mov bx, 0x4a                                         # 0043B36F
@@ -3075,7 +3075,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B375
     pop edx                                              # 0043B37A
     pop ecx                                              # 0043B37B
-    add dx, 0xd                                          # 0043B37C
+    add dx, 0x10                                          # 0043B37C
     push ecx                                             # 0043B380
     push edx                                             # 0043B381
     mov bx, 0x4b                                         # 0043B382
@@ -3083,7 +3083,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B388
     pop edx                                              # 0043B38D
     pop ecx                                              # 0043B38E
-    add dx, 0x19                                         # 0043B38F
+    add dx, 0x1f                                         # 0043B38F
     push ecx                                             # 0043B393
     push edx                                             # 0043B394
     mov bx, 0x4c                                         # 0043B395
@@ -3091,7 +3091,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B39B
     pop edx                                              # 0043B3A0
     pop ecx                                              # 0043B3A1
-    add dx, 0xa                                          # 0043B3A2
+    add dx, 0xd                                          # 0043B3A2
     push ecx                                             # 0043B3A6
     push edx                                             # 0043B3A7
     mov bx, 0x4d                                         # 0043B3A8
@@ -3099,7 +3099,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B3AE
     pop edx                                              # 0043B3B3
     pop ecx                                              # 0043B3B4
-    add dx, 0xa                                          # 0043B3B5
+    add dx, 0xd                                          # 0043B3B5
     push ecx                                             # 0043B3B9
     push edx                                             # 0043B3BA
     mov bx, 0x4e                                         # 0043B3BB
@@ -3107,7 +3107,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B3C1
     pop edx                                              # 0043B3C6
     pop ecx                                              # 0043B3C7
-    add dx, 0xa                                          # 0043B3C8
+    add dx, 0xd                                          # 0043B3C8
     push ecx                                             # 0043B3CC
     push edx                                             # 0043B3CD
     mov bx, 0x4f                                         # 0043B3CE
@@ -3115,7 +3115,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B3D4
     pop edx                                              # 0043B3D9
     pop ecx                                              # 0043B3DA
-    add dx, 0xa                                          # 0043B3DB
+    add dx, 0xd                                          # 0043B3DB
     push ecx                                             # 0043B3DF
     push edx                                             # 0043B3E0
     mov bx, 0x50                                         # 0043B3E1
@@ -3123,7 +3123,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B3E7
     pop edx                                              # 0043B3EC
     pop ecx                                              # 0043B3ED
-    add dx, 0xa                                          # 0043B3EE
+    add dx, 0xd                                          # 0043B3EE
     push ecx                                             # 0043B3F2
     push edx                                             # 0043B3F3
     mov bx, 0x51                                         # 0043B3F4
@@ -3131,7 +3131,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B3FA
     pop edx                                              # 0043B3FF
     pop ecx                                              # 0043B400
-    add dx, 0xa                                          # 0043B401
+    add dx, 0xd                                          # 0043B401
     push ecx                                             # 0043B405
     push edx                                             # 0043B406
     mov bx, 0x52                                         # 0043B407
@@ -3139,7 +3139,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B40D
     pop edx                                              # 0043B412
     pop ecx                                              # 0043B413
-    add dx, 0xa                                          # 0043B414
+    add dx, 0xd                                          # 0043B414
     push ecx                                             # 0043B418
     push edx                                             # 0043B419
     mov bx, 0x53                                         # 0043B41A
@@ -3147,7 +3147,7 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B420
     pop edx                                              # 0043B425
     pop ecx                                              # 0043B426
-    add dx, 0xa                                          # 0043B427
+    add dx, 0xd                                          # 0043B427
     push ecx                                             # 0043B42B
     push edx                                             # 0043B42C
     mov bx, 0x54                                         # 0043B42D
@@ -3155,13 +3155,13 @@ _sub_43B2E4:
     call _sub_494DE8                                     # 0043B433
     pop edx                                              # 0043B438
     pop ecx                                              # 0043B439
-    add dx, 0xc                                          # 0043B43A
+    add dx, 0xf                                          # 0043B43A
     pop esi                                              # 0043B43E
     push esi                                             # 0043B43F
     mov cx, word ptr [esi + 0x30]                        # 0043B440
     mov dx, word ptr [esi + 0x32]                        # 0043B444
     add cx, 0x5c                                         # 0043B448
-    add dx, 0x28                                         # 0043B44C
+    add dx, 0x31                                         # 0043B44C
     mov ebx, 0xe20                                       # 0043B450
     call _sub_448C79                                     # 0043B455
     pop esi                                              # 0043B45A
@@ -3169,7 +3169,7 @@ _sub_43B2E4:
     mov cx, word ptr [esi + 0x30]                        # 0043B45C
     mov dx, word ptr [esi + 0x32]                        # 0043B460
     add cx, 0x10                                         # 0043B464
-    add dx, 0xfc                                         # 0043B468
+    add dx, 0x12c                                         # 0043B468
     mov ebx, 0xe27                                       # 0043B46D
     call _sub_448C79                                     # 0043B472
     pop esi                                              # 0043B477
@@ -3177,7 +3177,7 @@ _sub_43B2E4:
     mov cx, word ptr [esi + 0x30]                        # 0043B479
     mov dx, word ptr [esi + 0x32]                        # 0043B47D
     add cx, 0x9d                                         # 0043B481
-    add dx, 0xff                                         # 0043B486
+    add dx, 0x12f                                         # 0043B486
     mov bx, 0x78a                                        # 0043B48B
     msvc_xor al, al                                      # 0043B48F
     call _sub_494B3F                                     # 0043B491
@@ -3201,7 +3201,7 @@ _sub_43B498:
     jne .L43B51F                                         # 0043B4BA
     mov ax, word ptr [__50B896]                          # 0043B4BC
     shr ax, 1                                            # 0043B4C2
-    sub ax, 0x9c                                         # 0043B4C5
+    sub ax, 0x9d                                         # 0043B4C5
     cmp ax, 0x1c                                         # 0043B4C9
     jge .L43B4D3                                         # 0043B4CD
     mov ax, 0x1c                                         # 0043B4CF
@@ -3210,7 +3210,7 @@ _sub_43B498:
     mov ax, word ptr [__50B894]                          # 0043B4D6
     shr ax, 1                                            # 0043B4DC
     sub ax, 0xfa                                         # 0043B4DF
-    mov ebx, 0x13801f4                                   # 0043B4E3
+    mov ebx, 0x13b01f4                                   # 0043B4E3
     mov ecx, 0xb                                         # 0043B4E8
     mov_offset edx, _ui__about_music___widgets___events  # 0043B4ED
     call _sub_4C9F5D                                     # 0043B4F2
@@ -3233,7 +3233,7 @@ _sub_43B498:
     jne .L43B591                                         # 0043B52C
     mov ax, word ptr [__50B896]                          # 0043B52E
     shr ax, 1                                            # 0043B534
-    sub ax, 0x9c                                         # 0043B537
+    sub ax, 0x9d                                         # 0043B537
     cmp ax, 0x1c                                         # 0043B53B
     jge .L43B545                                         # 0043B53F
     mov ax, 0x1c                                         # 0043B541
@@ -3242,7 +3242,7 @@ _sub_43B498:
     mov ax, word ptr [__50B894]                          # 0043B548
     shr ax, 1                                            # 0043B54E
     sub ax, 0x12c                                        # 0043B551
-    mov ebx, 0x1380258                                   # 0043B555
+    mov ebx, 0x13b0258                                   # 0043B555
     mov ecx, 0xa                                         # 0043B55A
     mov_offset edx, _ui__about_atari___widgets___events  # 0043B55F
     call _sub_4C9F5D                                     # 0043B564
@@ -3279,7 +3279,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B5AB
     pop edx                                              # 0043B5B0
     pop ecx                                              # 0043B5B1
-    add dx, 0xe                                          # 0043B5B2
+    add dx, 0x11                                         # 0043B5B2
     push ecx                                             # 0043B5B6
     push edx                                             # 0043B5B7
     mov bx, 0x798                                        # 0043B5B8
@@ -3287,7 +3287,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B5BE
     pop edx                                              # 0043B5C3
     pop ecx                                              # 0043B5C4
-    add dx, 0xe                                          # 0043B5C5
+    add dx, 0x11                                         # 0043B5C5
     push ecx                                             # 0043B5C9
     push edx                                             # 0043B5CA
     mov bx, 0x799                                        # 0043B5CB
@@ -3295,7 +3295,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B5D1
     pop edx                                              # 0043B5D6
     pop ecx                                              # 0043B5D7
-    add dx, 0xe                                          # 0043B5D8
+    add dx, 0x11                                         # 0043B5D8
     push ecx                                             # 0043B5DC
     push edx                                             # 0043B5DD
     mov bx, 0x79a                                        # 0043B5DE
@@ -3303,7 +3303,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B5E4
     pop edx                                              # 0043B5E9
     pop ecx                                              # 0043B5EA
-    add dx, 0xe                                          # 0043B5EB
+    add dx, 0x11                                         # 0043B5EB
     push ecx                                             # 0043B5EF
     push edx                                             # 0043B5F0
     mov bx, 0x79b                                        # 0043B5F1
@@ -3311,7 +3311,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B5F7
     pop edx                                              # 0043B5FC
     pop ecx                                              # 0043B5FD
-    add dx, 0xe                                          # 0043B5FE
+    add dx, 0x11                                         # 0043B5FE
     push ecx                                             # 0043B602
     push edx                                             # 0043B603
     mov bx, 0x79c                                        # 0043B604
@@ -3319,7 +3319,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B60A
     pop edx                                              # 0043B60F
     pop ecx                                              # 0043B610
-    add dx, 0xe                                          # 0043B611
+    add dx, 0x11                                         # 0043B611
     push ecx                                             # 0043B615
     push edx                                             # 0043B616
     mov bx, 0x79d                                        # 0043B617
@@ -3327,7 +3327,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B61D
     pop edx                                              # 0043B622
     pop ecx                                              # 0043B623
-    add dx, 0xe                                          # 0043B624
+    add dx, 0x11                                         # 0043B624
     push ecx                                             # 0043B628
     push edx                                             # 0043B629
     mov bx, 0x79e                                        # 0043B62A
@@ -3335,7 +3335,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B630
     pop edx                                              # 0043B635
     pop ecx                                              # 0043B636
-    add dx, 0xe                                          # 0043B637
+    add dx, 0x11                                         # 0043B637
     push ecx                                             # 0043B63B
     push edx                                             # 0043B63C
     mov bx, 0x79f                                        # 0043B63D
@@ -3343,7 +3343,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B643
     pop edx                                              # 0043B648
     pop ecx                                              # 0043B649
-    add dx, 0xe                                          # 0043B64A
+    add dx, 0x11                                         # 0043B64A
     push ecx                                             # 0043B64E
     push edx                                             # 0043B64F
     mov bx, 0x7a0                                        # 0043B650
@@ -3351,7 +3351,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B656
     pop edx                                              # 0043B65B
     pop ecx                                              # 0043B65C
-    add dx, 0xe                                          # 0043B65D
+    add dx, 0x11                                         # 0043B65D
     push ecx                                             # 0043B661
     push edx                                             # 0043B662
     mov bx, 0x7a1                                        # 0043B663
@@ -3359,7 +3359,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B669
     pop edx                                              # 0043B66E
     pop ecx                                              # 0043B66F
-    add dx, 0xe                                          # 0043B670
+    add dx, 0x11                                         # 0043B670
     push ecx                                             # 0043B674
     push edx                                             # 0043B675
     mov bx, 0x7a2                                        # 0043B676
@@ -3367,7 +3367,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B67C
     pop edx                                              # 0043B681
     pop ecx                                              # 0043B682
-    add dx, 0xe                                          # 0043B683
+    add dx, 0x11                                         # 0043B683
     push ecx                                             # 0043B687
     push edx                                             # 0043B688
     mov bx, 0x7a3                                        # 0043B689
@@ -3375,7 +3375,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B68F
     pop edx                                              # 0043B694
     pop ecx                                              # 0043B695
-    add dx, 0xe                                          # 0043B696
+    add dx, 0x11                                         # 0043B696
     push ecx                                             # 0043B69A
     push edx                                             # 0043B69B
     mov bx, 0x7a4                                        # 0043B69C
@@ -3383,7 +3383,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B6A2
     pop edx                                              # 0043B6A7
     pop ecx                                              # 0043B6A8
-    add dx, 0xe                                          # 0043B6A9
+    add dx, 0x11                                         # 0043B6A9
     push ecx                                             # 0043B6AD
     push edx                                             # 0043B6AE
     mov bx, 0x7a5                                        # 0043B6AF
@@ -3391,7 +3391,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B6B5
     pop edx                                              # 0043B6BA
     pop ecx                                              # 0043B6BB
-    add dx, 0xe                                          # 0043B6BC
+    add dx, 0x11                                         # 0043B6BC
     push ecx                                             # 0043B6C0
     push edx                                             # 0043B6C1
     mov bx, 0x7a6                                        # 0043B6C2
@@ -3399,7 +3399,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B6C8
     pop edx                                              # 0043B6CD
     pop ecx                                              # 0043B6CE
-    add dx, 0xe                                          # 0043B6CF
+    add dx, 0x11                                         # 0043B6CF
     push ecx                                             # 0043B6D3
     push edx                                             # 0043B6D4
     mov bx, 0x7a7                                        # 0043B6D5
@@ -3407,7 +3407,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B6DB
     pop edx                                              # 0043B6E0
     pop ecx                                              # 0043B6E1
-    add dx, 0xe                                          # 0043B6E2
+    add dx, 0x11                                         # 0043B6E2
     push ecx                                             # 0043B6E6
     push edx                                             # 0043B6E7
     mov bx, 0x7a8                                        # 0043B6E8
@@ -3415,7 +3415,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B6EE
     pop edx                                              # 0043B6F3
     pop ecx                                              # 0043B6F4
-    add dx, 0xe                                          # 0043B6F5
+    add dx, 0x11                                         # 0043B6F5
     push ecx                                             # 0043B6F9
     push edx                                             # 0043B6FA
     mov bx, 0x7a9                                        # 0043B6FB
@@ -3423,7 +3423,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B701
     pop edx                                              # 0043B706
     pop ecx                                              # 0043B707
-    add dx, 0xe                                          # 0043B708
+    add dx, 0x11                                         # 0043B708
     push ecx                                             # 0043B70C
     push edx                                             # 0043B70D
     mov bx, 0x7aa                                        # 0043B70E
@@ -3431,7 +3431,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B714
     pop edx                                              # 0043B719
     pop ecx                                              # 0043B71A
-    add dx, 0xe                                          # 0043B71B
+    add dx, 0x11                                         # 0043B71B
     push ecx                                             # 0043B71F
     push edx                                             # 0043B720
     mov bx, 0x7ab                                        # 0043B721
@@ -3439,7 +3439,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B727
     pop edx                                              # 0043B72C
     pop ecx                                              # 0043B72D
-    add dx, 0xe                                          # 0043B72E
+    add dx, 0x11                                         # 0043B72E
     push ecx                                             # 0043B732
     push edx                                             # 0043B733
     mov bx, 0x7ac                                        # 0043B734
@@ -3447,7 +3447,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B73A
     pop edx                                              # 0043B73F
     pop ecx                                              # 0043B740
-    add dx, 0xe                                          # 0043B741
+    add dx, 0x11                                         # 0043B741
     push ecx                                             # 0043B745
     push edx                                             # 0043B746
     mov bx, 0x7ad                                        # 0043B747
@@ -3455,7 +3455,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B74D
     pop edx                                              # 0043B752
     pop ecx                                              # 0043B753
-    add dx, 0xe                                          # 0043B754
+    add dx, 0x11                                         # 0043B754
     push ecx                                             # 0043B758
     push edx                                             # 0043B759
     mov bx, 0x7ae                                        # 0043B75A
@@ -3463,7 +3463,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B760
     pop edx                                              # 0043B765
     pop ecx                                              # 0043B766
-    add dx, 0xe                                          # 0043B767
+    add dx, 0x11                                         # 0043B767
     push ecx                                             # 0043B76B
     push edx                                             # 0043B76C
     mov bx, 0x7af                                        # 0043B76D
@@ -3471,7 +3471,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B773
     pop edx                                              # 0043B778
     pop ecx                                              # 0043B779
-    add dx, 0xe                                          # 0043B77A
+    add dx, 0x11                                         # 0043B77A
     push ecx                                             # 0043B77E
     push edx                                             # 0043B77F
     mov bx, 0x7b0                                        # 0043B780
@@ -3479,7 +3479,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B786
     pop edx                                              # 0043B78B
     pop ecx                                              # 0043B78C
-    add dx, 0xe                                          # 0043B78D
+    add dx, 0x11                                         # 0043B78D
     push ecx                                             # 0043B791
     push edx                                             # 0043B792
     mov bx, 0x7b1                                        # 0043B793
@@ -3487,7 +3487,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B799
     pop edx                                              # 0043B79E
     pop ecx                                              # 0043B79F
-    add dx, 0xe                                          # 0043B7A0
+    add dx, 0x11                                         # 0043B7A0
     push ecx                                             # 0043B7A4
     push edx                                             # 0043B7A5
     mov bx, 0x7b2                                        # 0043B7A6
@@ -3495,7 +3495,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B7AC
     pop edx                                              # 0043B7B1
     pop ecx                                              # 0043B7B2
-    add dx, 0xe                                          # 0043B7B3
+    add dx, 0x11                                         # 0043B7B3
     push ecx                                             # 0043B7B7
     push edx                                             # 0043B7B8
     mov bx, 0x7b3                                        # 0043B7B9
@@ -3503,7 +3503,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B7BF
     pop edx                                              # 0043B7C4
     pop ecx                                              # 0043B7C5
-    add dx, 0xe                                          # 0043B7C6
+    add dx, 0x11                                         # 0043B7C6
     push ecx                                             # 0043B7CA
     push edx                                             # 0043B7CB
     mov bx, 0x7b4                                        # 0043B7CC
@@ -3511,7 +3511,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B7D2
     pop edx                                              # 0043B7D7
     pop ecx                                              # 0043B7D8
-    add dx, 0xe                                          # 0043B7D9
+    add dx, 0x11                                         # 0043B7D9
     push ecx                                             # 0043B7DD
     push edx                                             # 0043B7DE
     mov bx, 0x7b5                                        # 0043B7DF
@@ -3519,7 +3519,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B7E5
     pop edx                                              # 0043B7EA
     pop ecx                                              # 0043B7EB
-    add dx, 0xe                                          # 0043B7EC
+    add dx, 0x11                                         # 0043B7EC
     push ecx                                             # 0043B7F0
     push edx                                             # 0043B7F1
     mov bx, 0x7b6                                        # 0043B7F2
@@ -3527,7 +3527,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B7F8
     pop edx                                              # 0043B7FD
     pop ecx                                              # 0043B7FE
-    add dx, 0xe                                          # 0043B7FF
+    add dx, 0x11                                         # 0043B7FF
     push ecx                                             # 0043B803
     push edx                                             # 0043B804
     mov bx, 0x7b7                                        # 0043B805
@@ -3535,7 +3535,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B80B
     pop edx                                              # 0043B810
     pop ecx                                              # 0043B811
-    add dx, 0xe                                          # 0043B812
+    add dx, 0x11                                         # 0043B812
     push ecx                                             # 0043B816
     push edx                                             # 0043B817
     mov bx, 0x7b8                                        # 0043B818
@@ -3543,7 +3543,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B81E
     pop edx                                              # 0043B823
     pop ecx                                              # 0043B824
-    add dx, 0xe                                          # 0043B825
+    add dx, 0x11                                         # 0043B825
     push ecx                                             # 0043B829
     push edx                                             # 0043B82A
     mov bx, 0x7b9                                        # 0043B82B
@@ -3551,7 +3551,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B831
     pop edx                                              # 0043B836
     pop ecx                                              # 0043B837
-    add dx, 0xe                                          # 0043B838
+    add dx, 0x11                                         # 0043B838
     push ecx                                             # 0043B83C
     push edx                                             # 0043B83D
     mov bx, 0x7ba                                        # 0043B83E
@@ -3559,7 +3559,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B844
     pop edx                                              # 0043B849
     pop ecx                                              # 0043B84A
-    add dx, 0xe                                          # 0043B84B
+    add dx, 0x11                                         # 0043B84B
     push ecx                                             # 0043B84F
     push edx                                             # 0043B850
     mov bx, 0x7bb                                        # 0043B851
@@ -3567,7 +3567,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B857
     pop edx                                              # 0043B85C
     pop ecx                                              # 0043B85D
-    add dx, 0xe                                          # 0043B85E
+    add dx, 0x11                                         # 0043B85E
     push ecx                                             # 0043B862
     push edx                                             # 0043B863
     mov bx, 0x7bc                                        # 0043B864
@@ -3575,7 +3575,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B86A
     pop edx                                              # 0043B86F
     pop ecx                                              # 0043B870
-    add dx, 0xe                                          # 0043B871
+    add dx, 0x11                                         # 0043B871
     push ecx                                             # 0043B875
     push edx                                             # 0043B876
     mov bx, 0x7bd                                        # 0043B877
@@ -3583,7 +3583,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B87D
     pop edx                                              # 0043B882
     pop ecx                                              # 0043B883
-    add dx, 0xe                                          # 0043B884
+    add dx, 0x11                                         # 0043B884
     push ecx                                             # 0043B888
     push edx                                             # 0043B889
     mov bx, 0x7be                                        # 0043B88A
@@ -3591,7 +3591,7 @@ _sub_43B59A:
     call _sub_494DE8                                     # 0043B890
     pop edx                                              # 0043B895
     pop ecx                                              # 0043B896
-    add dx, 0xe                                          # 0043B897
+    add dx, 0x11                                         # 0043B897
     pop esi                                              # 0043B89B
     ret                                                  # 0043B89C
 
@@ -3603,7 +3603,7 @@ _sub_43B89D:
 
     .global _sub_43B8A8
 _sub_43B8A8:
-    mov dx, 0x234                                        # 0043B8A8
+    mov dx, 0x2ac                                        # 0043B8A8
     ret                                                  # 0043B8AC
 
     .global _sub_43B8AD
@@ -3632,7 +3632,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B8CF
     pop edx                                              # 0043B8D4
     pop ecx                                              # 0043B8D5
-    add dx, 0xa                                          # 0043B8D6
+    add dx, 0xd                                          # 0043B8D6
     push ecx                                             # 0043B8DA
     push edx                                             # 0043B8DB
     mov bx, 0x3fd                                        # 0043B8DC
@@ -3640,7 +3640,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B8E2
     pop edx                                              # 0043B8E7
     pop ecx                                              # 0043B8E8
-    add dx, 0xa                                          # 0043B8E9
+    add dx, 0xd                                          # 0043B8E9
     push ecx                                             # 0043B8ED
     push edx                                             # 0043B8EE
     mov bx, 0x3fb                                        # 0043B8EF
@@ -3648,7 +3648,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B8F5
     pop edx                                              # 0043B8FA
     pop ecx                                              # 0043B8FB
-    add dx, 0xe                                          # 0043B8FC
+    add dx, 0x11                                         # 0043B8FC
     push ecx                                             # 0043B900
     push edx                                             # 0043B901
     mov bx, 0x3fe                                        # 0043B902
@@ -3656,7 +3656,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B908
     pop edx                                              # 0043B90D
     pop ecx                                              # 0043B90E
-    add dx, 0xa                                          # 0043B90F
+    add dx, 0xd                                          # 0043B90F
     push ecx                                             # 0043B913
     push edx                                             # 0043B914
     mov bx, 0x3ff                                        # 0043B915
@@ -3664,7 +3664,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B91B
     pop edx                                              # 0043B920
     pop ecx                                              # 0043B921
-    add dx, 0xa                                          # 0043B922
+    add dx, 0xd                                          # 0043B922
     push ecx                                             # 0043B926
     push edx                                             # 0043B927
     mov bx, 0x3fb                                        # 0043B928
@@ -3672,7 +3672,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B92E
     pop edx                                              # 0043B933
     pop ecx                                              # 0043B934
-    add dx, 0xe                                          # 0043B935
+    add dx, 0x11                                         # 0043B935
     push ecx                                             # 0043B939
     push edx                                             # 0043B93A
     mov bx, 0x400                                        # 0043B93B
@@ -3680,7 +3680,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B941
     pop edx                                              # 0043B946
     pop ecx                                              # 0043B947
-    add dx, 0xa                                          # 0043B948
+    add dx, 0xd                                          # 0043B948
     push ecx                                             # 0043B94C
     push edx                                             # 0043B94D
     mov bx, 0x401                                        # 0043B94E
@@ -3688,7 +3688,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B954
     pop edx                                              # 0043B959
     pop ecx                                              # 0043B95A
-    add dx, 0xa                                          # 0043B95B
+    add dx, 0xd                                          # 0043B95B
     push ecx                                             # 0043B95F
     push edx                                             # 0043B960
     mov bx, 0x3fb                                        # 0043B961
@@ -3696,7 +3696,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B967
     pop edx                                              # 0043B96C
     pop ecx                                              # 0043B96D
-    add dx, 0xe                                          # 0043B96E
+    add dx, 0x11                                         # 0043B96E
     push ecx                                             # 0043B972
     push edx                                             # 0043B973
     mov bx, 0x402                                        # 0043B974
@@ -3704,7 +3704,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B97A
     pop edx                                              # 0043B97F
     pop ecx                                              # 0043B980
-    add dx, 0xa                                          # 0043B981
+    add dx, 0xd                                          # 0043B981
     push ecx                                             # 0043B985
     push edx                                             # 0043B986
     mov bx, 0x403                                        # 0043B987
@@ -3712,7 +3712,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B98D
     pop edx                                              # 0043B992
     pop ecx                                              # 0043B993
-    add dx, 0xa                                          # 0043B994
+    add dx, 0xd                                          # 0043B994
     push ecx                                             # 0043B998
     push edx                                             # 0043B999
     mov bx, 0x3fb                                        # 0043B99A
@@ -3720,7 +3720,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B9A0
     pop edx                                              # 0043B9A5
     pop ecx                                              # 0043B9A6
-    add dx, 0xe                                          # 0043B9A7
+    add dx, 0x11                                         # 0043B9A7
     push ecx                                             # 0043B9AB
     push edx                                             # 0043B9AC
     mov bx, 0x404                                        # 0043B9AD
@@ -3728,7 +3728,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B9B3
     pop edx                                              # 0043B9B8
     pop ecx                                              # 0043B9B9
-    add dx, 0xa                                          # 0043B9BA
+    add dx, 0xd                                          # 0043B9BA
     push ecx                                             # 0043B9BE
     push edx                                             # 0043B9BF
     mov bx, 0x405                                        # 0043B9C0
@@ -3736,7 +3736,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B9C6
     pop edx                                              # 0043B9CB
     pop ecx                                              # 0043B9CC
-    add dx, 0xa                                          # 0043B9CD
+    add dx, 0xd                                          # 0043B9CD
     push ecx                                             # 0043B9D1
     push edx                                             # 0043B9D2
     mov bx, 0x3fb                                        # 0043B9D3
@@ -3744,7 +3744,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B9D9
     pop edx                                              # 0043B9DE
     pop ecx                                              # 0043B9DF
-    add dx, 0xe                                          # 0043B9E0
+    add dx, 0x11                                         # 0043B9E0
     push ecx                                             # 0043B9E4
     push edx                                             # 0043B9E5
     mov bx, 0x406                                        # 0043B9E6
@@ -3752,7 +3752,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B9EC
     pop edx                                              # 0043B9F1
     pop ecx                                              # 0043B9F2
-    add dx, 0xa                                          # 0043B9F3
+    add dx, 0xd                                          # 0043B9F3
     push ecx                                             # 0043B9F7
     push edx                                             # 0043B9F8
     mov bx, 0x407                                        # 0043B9F9
@@ -3760,7 +3760,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043B9FF
     pop edx                                              # 0043BA04
     pop ecx                                              # 0043BA05
-    add dx, 0xa                                          # 0043BA06
+    add dx, 0xd                                          # 0043BA06
     push ecx                                             # 0043BA0A
     push edx                                             # 0043BA0B
     mov bx, 0x3fb                                        # 0043BA0C
@@ -3768,7 +3768,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BA12
     pop edx                                              # 0043BA17
     pop ecx                                              # 0043BA18
-    add dx, 0xe                                          # 0043BA19
+    add dx, 0x11                                         # 0043BA19
     push ecx                                             # 0043BA1D
     push edx                                             # 0043BA1E
     mov bx, 0x408                                        # 0043BA1F
@@ -3776,7 +3776,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BA25
     pop edx                                              # 0043BA2A
     pop ecx                                              # 0043BA2B
-    add dx, 0xa                                          # 0043BA2C
+    add dx, 0xd                                          # 0043BA2C
     push ecx                                             # 0043BA30
     push edx                                             # 0043BA31
     mov bx, 0x409                                        # 0043BA32
@@ -3784,7 +3784,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BA38
     pop edx                                              # 0043BA3D
     pop ecx                                              # 0043BA3E
-    add dx, 0xa                                          # 0043BA3F
+    add dx, 0xd                                          # 0043BA3F
     push ecx                                             # 0043BA43
     push edx                                             # 0043BA44
     mov bx, 0x3fb                                        # 0043BA45
@@ -3792,7 +3792,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BA4B
     pop edx                                              # 0043BA50
     pop ecx                                              # 0043BA51
-    add dx, 0xe                                          # 0043BA52
+    add dx, 0x11                                         # 0043BA52
     push ecx                                             # 0043BA56
     push edx                                             # 0043BA57
     mov bx, 0x40a                                        # 0043BA58
@@ -3800,7 +3800,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BA5E
     pop edx                                              # 0043BA63
     pop ecx                                              # 0043BA64
-    add dx, 0xa                                          # 0043BA65
+    add dx, 0xd                                          # 0043BA65
     push ecx                                             # 0043BA69
     push edx                                             # 0043BA6A
     mov bx, 0x40b                                        # 0043BA6B
@@ -3808,7 +3808,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BA71
     pop edx                                              # 0043BA76
     pop ecx                                              # 0043BA77
-    add dx, 0xa                                          # 0043BA78
+    add dx, 0xd                                          # 0043BA78
     push ecx                                             # 0043BA7C
     push edx                                             # 0043BA7D
     mov bx, 0x3fb                                        # 0043BA7E
@@ -3816,7 +3816,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BA84
     pop edx                                              # 0043BA89
     pop ecx                                              # 0043BA8A
-    add dx, 0xe                                          # 0043BA8B
+    add dx, 0x11                                         # 0043BA8B
     push ecx                                             # 0043BA8F
     push edx                                             # 0043BA90
     mov bx, 0x40c                                        # 0043BA91
@@ -3824,7 +3824,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BA97
     pop edx                                              # 0043BA9C
     pop ecx                                              # 0043BA9D
-    add dx, 0xa                                          # 0043BA9E
+    add dx, 0xd                                          # 0043BA9E
     push ecx                                             # 0043BAA2
     push edx                                             # 0043BAA3
     mov bx, 0x40d                                        # 0043BAA4
@@ -3832,7 +3832,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BAAA
     pop edx                                              # 0043BAAF
     pop ecx                                              # 0043BAB0
-    add dx, 0xa                                          # 0043BAB1
+    add dx, 0xd                                          # 0043BAB1
     push ecx                                             # 0043BAB5
     push edx                                             # 0043BAB6
     mov bx, 0x3fb                                        # 0043BAB7
@@ -3840,7 +3840,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BABD
     pop edx                                              # 0043BAC2
     pop ecx                                              # 0043BAC3
-    add dx, 0xe                                          # 0043BAC4
+    add dx, 0x11                                         # 0043BAC4
     push ecx                                             # 0043BAC8
     push edx                                             # 0043BAC9
     mov bx, 0x40e                                        # 0043BACA
@@ -3848,7 +3848,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BAD0
     pop edx                                              # 0043BAD5
     pop ecx                                              # 0043BAD6
-    add dx, 0xa                                          # 0043BAD7
+    add dx, 0xd                                          # 0043BAD7
     push ecx                                             # 0043BADB
     push edx                                             # 0043BADC
     mov bx, 0x40f                                        # 0043BADD
@@ -3856,7 +3856,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BAE3
     pop edx                                              # 0043BAE8
     pop ecx                                              # 0043BAE9
-    add dx, 0xa                                          # 0043BAEA
+    add dx, 0xd                                          # 0043BAEA
     push ecx                                             # 0043BAEE
     push edx                                             # 0043BAEF
     mov bx, 0x3fb                                        # 0043BAF0
@@ -3864,7 +3864,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BAF6
     pop edx                                              # 0043BAFB
     pop ecx                                              # 0043BAFC
-    add dx, 0xe                                          # 0043BAFD
+    add dx, 0x11                                         # 0043BAFD
     push ecx                                             # 0043BB01
     push edx                                             # 0043BB02
     mov bx, 0x410                                        # 0043BB03
@@ -3872,7 +3872,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BB09
     pop edx                                              # 0043BB0E
     pop ecx                                              # 0043BB0F
-    add dx, 0xa                                          # 0043BB10
+    add dx, 0xd                                          # 0043BB10
     push ecx                                             # 0043BB14
     push edx                                             # 0043BB15
     mov bx, 0x411                                        # 0043BB16
@@ -3880,7 +3880,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BB1C
     pop edx                                              # 0043BB21
     pop ecx                                              # 0043BB22
-    add dx, 0xa                                          # 0043BB23
+    add dx, 0xd                                          # 0043BB23
     push ecx                                             # 0043BB27
     push edx                                             # 0043BB28
     mov bx, 0x3fb                                        # 0043BB29
@@ -3888,7 +3888,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BB2F
     pop edx                                              # 0043BB34
     pop ecx                                              # 0043BB35
-    add dx, 0xe                                          # 0043BB36
+    add dx, 0x11                                         # 0043BB36
     push ecx                                             # 0043BB3A
     push edx                                             # 0043BB3B
     mov bx, 0x412                                        # 0043BB3C
@@ -3896,7 +3896,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BB42
     pop edx                                              # 0043BB47
     pop ecx                                              # 0043BB48
-    add dx, 0xa                                          # 0043BB49
+    add dx, 0xd                                          # 0043BB49
     push ecx                                             # 0043BB4D
     push edx                                             # 0043BB4E
     mov bx, 0x413                                        # 0043BB4F
@@ -3904,7 +3904,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BB55
     pop edx                                              # 0043BB5A
     pop ecx                                              # 0043BB5B
-    add dx, 0xa                                          # 0043BB5C
+    add dx, 0xd                                          # 0043BB5C
     push ecx                                             # 0043BB60
     push edx                                             # 0043BB61
     mov bx, 0x3fb                                        # 0043BB62
@@ -3912,7 +3912,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BB68
     pop edx                                              # 0043BB6D
     pop ecx                                              # 0043BB6E
-    add dx, 0xe                                          # 0043BB6F
+    add dx, 0x11                                         # 0043BB6F
     push ecx                                             # 0043BB73
     push edx                                             # 0043BB74
     mov bx, 0x414                                        # 0043BB75
@@ -3920,7 +3920,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BB7B
     pop edx                                              # 0043BB80
     pop ecx                                              # 0043BB81
-    add dx, 0xa                                          # 0043BB82
+    add dx, 0xd                                          # 0043BB82
     push ecx                                             # 0043BB86
     push edx                                             # 0043BB87
     mov bx, 0x415                                        # 0043BB88
@@ -3928,7 +3928,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BB8E
     pop edx                                              # 0043BB93
     pop ecx                                              # 0043BB94
-    add dx, 0xa                                          # 0043BB95
+    add dx, 0xd                                          # 0043BB95
     push ecx                                             # 0043BB99
     push edx                                             # 0043BB9A
     mov bx, 0x3fb                                        # 0043BB9B
@@ -3936,7 +3936,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BBA1
     pop edx                                              # 0043BBA6
     pop ecx                                              # 0043BBA7
-    add dx, 0xe                                          # 0043BBA8
+    add dx, 0x11                                         # 0043BBA8
     push ecx                                             # 0043BBAC
     push edx                                             # 0043BBAD
     mov bx, 0x416                                        # 0043BBAE
@@ -3944,7 +3944,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BBB4
     pop edx                                              # 0043BBB9
     pop ecx                                              # 0043BBBA
-    add dx, 0xa                                          # 0043BBBB
+    add dx, 0xd                                          # 0043BBBB
     push ecx                                             # 0043BBBF
     push edx                                             # 0043BBC0
     mov bx, 0x417                                        # 0043BBC1
@@ -3952,7 +3952,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BBC7
     pop edx                                              # 0043BBCC
     pop ecx                                              # 0043BBCD
-    add dx, 0xa                                          # 0043BBCE
+    add dx, 0xd                                          # 0043BBCE
     push ecx                                             # 0043BBD2
     push edx                                             # 0043BBD3
     mov bx, 0x3fb                                        # 0043BBD4
@@ -3960,7 +3960,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BBDA
     pop edx                                              # 0043BBDF
     pop ecx                                              # 0043BBE0
-    add dx, 0xe                                          # 0043BBE1
+    add dx, 0x11                                         # 0043BBE1
     push ecx                                             # 0043BBE5
     push edx                                             # 0043BBE6
     mov bx, 0x418                                        # 0043BBE7
@@ -3968,7 +3968,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BBED
     pop edx                                              # 0043BBF2
     pop ecx                                              # 0043BBF3
-    add dx, 0xa                                          # 0043BBF4
+    add dx, 0xd                                          # 0043BBF4
     push ecx                                             # 0043BBF8
     push edx                                             # 0043BBF9
     mov bx, 0x419                                        # 0043BBFA
@@ -3976,7 +3976,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC00
     pop edx                                              # 0043BC05
     pop ecx                                              # 0043BC06
-    add dx, 0xa                                          # 0043BC07
+    add dx, 0xd                                          # 0043BC07
     push ecx                                             # 0043BC0B
     push edx                                             # 0043BC0C
     mov bx, 0x3fb                                        # 0043BC0D
@@ -3984,7 +3984,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC13
     pop edx                                              # 0043BC18
     pop ecx                                              # 0043BC19
-    add dx, 0xe                                          # 0043BC1A
+    add dx, 0x11                                         # 0043BC1A
     push ecx                                             # 0043BC1E
     push edx                                             # 0043BC1F
     mov bx, 0x41a                                        # 0043BC20
@@ -3992,7 +3992,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC26
     pop edx                                              # 0043BC2B
     pop ecx                                              # 0043BC2C
-    add dx, 0xa                                          # 0043BC2D
+    add dx, 0xd                                          # 0043BC2D
     push ecx                                             # 0043BC31
     push edx                                             # 0043BC32
     mov bx, 0x41b                                        # 0043BC33
@@ -4000,7 +4000,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC39
     pop edx                                              # 0043BC3E
     pop ecx                                              # 0043BC3F
-    add dx, 0xa                                          # 0043BC40
+    add dx, 0xd                                          # 0043BC40
     push ecx                                             # 0043BC44
     push edx                                             # 0043BC45
     mov bx, 0x3fb                                        # 0043BC46
@@ -4008,7 +4008,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC4C
     pop edx                                              # 0043BC51
     pop ecx                                              # 0043BC52
-    add dx, 0xe                                          # 0043BC53
+    add dx, 0x11                                         # 0043BC53
     push ecx                                             # 0043BC57
     push edx                                             # 0043BC58
     mov bx, 0x41c                                        # 0043BC59
@@ -4016,7 +4016,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC5F
     pop edx                                              # 0043BC64
     pop ecx                                              # 0043BC65
-    add dx, 0xa                                          # 0043BC66
+    add dx, 0xd                                          # 0043BC66
     push ecx                                             # 0043BC6A
     push edx                                             # 0043BC6B
     mov bx, 0x41d                                        # 0043BC6C
@@ -4024,7 +4024,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC72
     pop edx                                              # 0043BC77
     pop ecx                                              # 0043BC78
-    add dx, 0xa                                          # 0043BC79
+    add dx, 0xd                                          # 0043BC79
     push ecx                                             # 0043BC7D
     push edx                                             # 0043BC7E
     mov bx, 0x3fb                                        # 0043BC7F
@@ -4032,7 +4032,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC85
     pop edx                                              # 0043BC8A
     pop ecx                                              # 0043BC8B
-    add dx, 0xe                                          # 0043BC8C
+    add dx, 0x11                                         # 0043BC8C
     push ecx                                             # 0043BC90
     push edx                                             # 0043BC91
     mov bx, 0x41e                                        # 0043BC92
@@ -4040,7 +4040,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BC98
     pop edx                                              # 0043BC9D
     pop ecx                                              # 0043BC9E
-    add dx, 0xa                                          # 0043BC9F
+    add dx, 0xd                                          # 0043BC9F
     push ecx                                             # 0043BCA3
     push edx                                             # 0043BCA4
     mov bx, 0x41f                                        # 0043BCA5
@@ -4048,7 +4048,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BCAB
     pop edx                                              # 0043BCB0
     pop ecx                                              # 0043BCB1
-    add dx, 0xa                                          # 0043BCB2
+    add dx, 0xd                                          # 0043BCB2
     push ecx                                             # 0043BCB6
     push edx                                             # 0043BCB7
     mov bx, 0x3fb                                        # 0043BCB8
@@ -4056,7 +4056,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BCBE
     pop edx                                              # 0043BCC3
     pop ecx                                              # 0043BCC4
-    add dx, 0xe                                          # 0043BCC5
+    add dx, 0x11                                         # 0043BCC5
     push ecx                                             # 0043BCC9
     push edx                                             # 0043BCCA
     mov bx, 0x420                                        # 0043BCCB
@@ -4064,7 +4064,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BCD1
     pop edx                                              # 0043BCD6
     pop ecx                                              # 0043BCD7
-    add dx, 0xa                                          # 0043BCD8
+    add dx, 0xd                                          # 0043BCD8
     push ecx                                             # 0043BCDC
     push edx                                             # 0043BCDD
     mov bx, 0x421                                        # 0043BCDE
@@ -4072,7 +4072,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BCE4
     pop edx                                              # 0043BCE9
     pop ecx                                              # 0043BCEA
-    add dx, 0xa                                          # 0043BCEB
+    add dx, 0xd                                          # 0043BCEB
     push ecx                                             # 0043BCEF
     push edx                                             # 0043BCF0
     mov bx, 0x3fb                                        # 0043BCF1
@@ -4080,7 +4080,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BCF7
     pop edx                                              # 0043BCFC
     pop ecx                                              # 0043BCFD
-    add dx, 0xe                                          # 0043BCFE
+    add dx, 0x11                                         # 0043BCFE
     push ecx                                             # 0043BD02
     push edx                                             # 0043BD03
     mov bx, 0x422                                        # 0043BD04
@@ -4088,7 +4088,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BD0A
     pop edx                                              # 0043BD0F
     pop ecx                                              # 0043BD10
-    add dx, 0xa                                          # 0043BD11
+    add dx, 0xd                                          # 0043BD11
     push ecx                                             # 0043BD15
     push edx                                             # 0043BD16
     mov bx, 0x423                                        # 0043BD17
@@ -4096,7 +4096,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BD1D
     pop edx                                              # 0043BD22
     pop ecx                                              # 0043BD23
-    add dx, 0xa                                          # 0043BD24
+    add dx, 0xd                                          # 0043BD24
     push ecx                                             # 0043BD28
     push edx                                             # 0043BD29
     mov bx, 0x3fb                                        # 0043BD2A
@@ -4104,7 +4104,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BD30
     pop edx                                              # 0043BD35
     pop ecx                                              # 0043BD36
-    add dx, 0xe                                          # 0043BD37
+    add dx, 0x11                                         # 0043BD37
     push ecx                                             # 0043BD3B
     push edx                                             # 0043BD3C
     mov bx, 0x424                                        # 0043BD3D
@@ -4112,7 +4112,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BD43
     pop edx                                              # 0043BD48
     pop ecx                                              # 0043BD49
-    add dx, 0xa                                          # 0043BD4A
+    add dx, 0xd                                          # 0043BD4A
     push ecx                                             # 0043BD4E
     push edx                                             # 0043BD4F
     mov bx, 0x425                                        # 0043BD50
@@ -4120,7 +4120,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BD56
     pop edx                                              # 0043BD5B
     pop ecx                                              # 0043BD5C
-    add dx, 0xa                                          # 0043BD5D
+    add dx, 0xd                                          # 0043BD5D
     push ecx                                             # 0043BD61
     push edx                                             # 0043BD62
     mov bx, 0x3fb                                        # 0043BD63
@@ -4128,7 +4128,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BD69
     pop edx                                              # 0043BD6E
     pop ecx                                              # 0043BD6F
-    add dx, 0xe                                          # 0043BD70
+    add dx, 0x11                                         # 0043BD70
     push ecx                                             # 0043BD74
     push edx                                             # 0043BD75
     mov bx, 0x426                                        # 0043BD76
@@ -4136,7 +4136,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BD7C
     pop edx                                              # 0043BD81
     pop ecx                                              # 0043BD82
-    add dx, 0xa                                          # 0043BD83
+    add dx, 0xd                                          # 0043BD83
     push ecx                                             # 0043BD87
     push edx                                             # 0043BD88
     mov bx, 0x427                                        # 0043BD89
@@ -4144,7 +4144,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BD8F
     pop edx                                              # 0043BD94
     pop ecx                                              # 0043BD95
-    add dx, 0xa                                          # 0043BD96
+    add dx, 0xd                                          # 0043BD96
     push ecx                                             # 0043BD9A
     push edx                                             # 0043BD9B
     mov bx, 0x3fb                                        # 0043BD9C
@@ -4152,7 +4152,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BDA2
     pop edx                                              # 0043BDA7
     pop ecx                                              # 0043BDA8
-    add dx, 0xe                                          # 0043BDA9
+    add dx, 0x11                                         # 0043BDA9
     push ecx                                             # 0043BDAD
     push edx                                             # 0043BDAE
     mov bx, 0x428                                        # 0043BDAF
@@ -4160,7 +4160,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BDB5
     pop edx                                              # 0043BDBA
     pop ecx                                              # 0043BDBB
-    add dx, 0xa                                          # 0043BDBC
+    add dx, 0xd                                          # 0043BDBC
     push ecx                                             # 0043BDC0
     push edx                                             # 0043BDC1
     mov bx, 0x429                                        # 0043BDC2
@@ -4168,7 +4168,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BDC8
     pop edx                                              # 0043BDCD
     pop ecx                                              # 0043BDCE
-    add dx, 0xa                                          # 0043BDCF
+    add dx, 0xd                                          # 0043BDCF
     push ecx                                             # 0043BDD3
     push edx                                             # 0043BDD4
     mov bx, 0x3fb                                        # 0043BDD5
@@ -4176,7 +4176,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BDDB
     pop edx                                              # 0043BDE0
     pop ecx                                              # 0043BDE1
-    add dx, 0xe                                          # 0043BDE2
+    add dx, 0x11                                         # 0043BDE2
     push ecx                                             # 0043BDE6
     push edx                                             # 0043BDE7
     mov bx, 0x42a                                        # 0043BDE8
@@ -4184,7 +4184,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BDEE
     pop edx                                              # 0043BDF3
     pop ecx                                              # 0043BDF4
-    add dx, 0xa                                          # 0043BDF5
+    add dx, 0xd                                          # 0043BDF5
     push ecx                                             # 0043BDF9
     push edx                                             # 0043BDFA
     mov bx, 0x42b                                        # 0043BDFB
@@ -4192,7 +4192,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE01
     pop edx                                              # 0043BE06
     pop ecx                                              # 0043BE07
-    add dx, 0xa                                          # 0043BE08
+    add dx, 0xd                                          # 0043BE08
     push ecx                                             # 0043BE0C
     push edx                                             # 0043BE0D
     mov bx, 0x3fb                                        # 0043BE0E
@@ -4200,7 +4200,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE14
     pop edx                                              # 0043BE19
     pop ecx                                              # 0043BE1A
-    add dx, 0xe                                          # 0043BE1B
+    add dx, 0x11                                         # 0043BE1B
     push ecx                                             # 0043BE1F
     push edx                                             # 0043BE20
     mov bx, 0x42c                                        # 0043BE21
@@ -4208,7 +4208,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE27
     pop edx                                              # 0043BE2C
     pop ecx                                              # 0043BE2D
-    add dx, 0xa                                          # 0043BE2E
+    add dx, 0xd                                          # 0043BE2E
     push ecx                                             # 0043BE32
     push edx                                             # 0043BE33
     mov bx, 0x42d                                        # 0043BE34
@@ -4216,7 +4216,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE3A
     pop edx                                              # 0043BE3F
     pop ecx                                              # 0043BE40
-    add dx, 0xa                                          # 0043BE41
+    add dx, 0xd                                          # 0043BE41
     push ecx                                             # 0043BE45
     push edx                                             # 0043BE46
     mov bx, 0x3fb                                        # 0043BE47
@@ -4224,7 +4224,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE4D
     pop edx                                              # 0043BE52
     pop ecx                                              # 0043BE53
-    add dx, 0xe                                          # 0043BE54
+    add dx, 0x11                                         # 0043BE54
     push ecx                                             # 0043BE58
     push edx                                             # 0043BE59
     mov bx, 0x42e                                        # 0043BE5A
@@ -4232,7 +4232,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE60
     pop edx                                              # 0043BE65
     pop ecx                                              # 0043BE66
-    add dx, 0xa                                          # 0043BE67
+    add dx, 0xd                                          # 0043BE67
     push ecx                                             # 0043BE6B
     push edx                                             # 0043BE6C
     mov bx, 0x42f                                        # 0043BE6D
@@ -4240,7 +4240,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE73
     pop edx                                              # 0043BE78
     pop ecx                                              # 0043BE79
-    add dx, 0xa                                          # 0043BE7A
+    add dx, 0xd                                          # 0043BE7A
     push ecx                                             # 0043BE7E
     push edx                                             # 0043BE7F
     mov bx, 0x3fb                                        # 0043BE80
@@ -4248,7 +4248,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE86
     pop edx                                              # 0043BE8B
     pop ecx                                              # 0043BE8C
-    add dx, 0xe                                          # 0043BE8D
+    add dx, 0x11                                         # 0043BE8D
     push ecx                                             # 0043BE91
     push edx                                             # 0043BE92
     mov bx, 0x430                                        # 0043BE93
@@ -4256,7 +4256,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BE99
     pop edx                                              # 0043BE9E
     pop ecx                                              # 0043BE9F
-    add dx, 0xa                                          # 0043BEA0
+    add dx, 0xd                                          # 0043BEA0
     push ecx                                             # 0043BEA4
     push edx                                             # 0043BEA5
     mov bx, 0x431                                        # 0043BEA6
@@ -4264,7 +4264,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BEAC
     pop edx                                              # 0043BEB1
     pop ecx                                              # 0043BEB2
-    add dx, 0xa                                          # 0043BEB3
+    add dx, 0xd                                          # 0043BEB3
     push ecx                                             # 0043BEB7
     push edx                                             # 0043BEB8
     mov bx, 0x3fb                                        # 0043BEB9
@@ -4272,7 +4272,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BEBF
     pop edx                                              # 0043BEC4
     pop ecx                                              # 0043BEC5
-    add dx, 0xe                                          # 0043BEC6
+    add dx, 0x11                                         # 0043BEC6
     push ecx                                             # 0043BECA
     push edx                                             # 0043BECB
     mov bx, 0x432                                        # 0043BECC
@@ -4280,7 +4280,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BED2
     pop edx                                              # 0043BED7
     pop ecx                                              # 0043BED8
-    add dx, 0xa                                          # 0043BED9
+    add dx, 0xd                                          # 0043BED9
     push ecx                                             # 0043BEDD
     push edx                                             # 0043BEDE
     mov bx, 0x433                                        # 0043BEDF
@@ -4288,7 +4288,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BEE5
     pop edx                                              # 0043BEEA
     pop ecx                                              # 0043BEEB
-    add dx, 0xa                                          # 0043BEEC
+    add dx, 0xd                                          # 0043BEEC
     push ecx                                             # 0043BEF0
     push edx                                             # 0043BEF1
     mov bx, 0x3fb                                        # 0043BEF2
@@ -4296,7 +4296,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BEF8
     pop edx                                              # 0043BEFD
     pop ecx                                              # 0043BEFE
-    add dx, 0xe                                          # 0043BEFF
+    add dx, 0x11                                         # 0043BEFF
     push ecx                                             # 0043BF03
     push edx                                             # 0043BF04
     mov bx, 0x434                                        # 0043BF05
@@ -4304,7 +4304,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BF0B
     pop edx                                              # 0043BF10
     pop ecx                                              # 0043BF11
-    add dx, 0xa                                          # 0043BF12
+    add dx, 0xd                                          # 0043BF12
     push ecx                                             # 0043BF16
     push edx                                             # 0043BF17
     mov bx, 0x435                                        # 0043BF18
@@ -4312,7 +4312,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BF1E
     pop edx                                              # 0043BF23
     pop ecx                                              # 0043BF24
-    add dx, 0xa                                          # 0043BF25
+    add dx, 0xd                                          # 0043BF25
     push ecx                                             # 0043BF29
     push edx                                             # 0043BF2A
     mov bx, 0x3fb                                        # 0043BF2B
@@ -4320,7 +4320,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BF31
     pop edx                                              # 0043BF36
     pop ecx                                              # 0043BF37
-    add dx, 0xe                                          # 0043BF38
+    add dx, 0x11                                         # 0043BF38
     push ecx                                             # 0043BF3C
     push edx                                             # 0043BF3D
     mov bx, 0x436                                        # 0043BF3E
@@ -4328,7 +4328,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BF44
     pop edx                                              # 0043BF49
     pop ecx                                              # 0043BF4A
-    add dx, 0xa                                          # 0043BF4B
+    add dx, 0xd                                          # 0043BF4B
     push ecx                                             # 0043BF4F
     push edx                                             # 0043BF50
     mov bx, 0x437                                        # 0043BF51
@@ -4336,7 +4336,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BF57
     pop edx                                              # 0043BF5C
     pop ecx                                              # 0043BF5D
-    add dx, 0xa                                          # 0043BF5E
+    add dx, 0xd                                          # 0043BF5E
     push ecx                                             # 0043BF62
     push edx                                             # 0043BF63
     mov bx, 0x3fb                                        # 0043BF64
@@ -4344,7 +4344,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BF6A
     pop edx                                              # 0043BF6F
     pop ecx                                              # 0043BF70
-    add dx, 0xe                                          # 0043BF71
+    add dx, 0x11                                         # 0043BF71
     push ecx                                             # 0043BF75
     push edx                                             # 0043BF76
     mov bx, 0x438                                        # 0043BF77
@@ -4352,7 +4352,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BF7D
     pop edx                                              # 0043BF82
     pop ecx                                              # 0043BF83
-    add dx, 0xa                                          # 0043BF84
+    add dx, 0xd                                          # 0043BF84
     push ecx                                             # 0043BF88
     push edx                                             # 0043BF89
     mov bx, 0x439                                        # 0043BF8A
@@ -4360,7 +4360,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BF90
     pop edx                                              # 0043BF95
     pop ecx                                              # 0043BF96
-    add dx, 0xa                                          # 0043BF97
+    add dx, 0xd                                          # 0043BF97
     push ecx                                             # 0043BF9B
     push edx                                             # 0043BF9C
     mov bx, 0x3fb                                        # 0043BF9D
@@ -4368,7 +4368,7 @@ _sub_43B8BE:
     call _sub_494DE8                                     # 0043BFA3
     pop edx                                              # 0043BFA8
     pop ecx                                              # 0043BFA9
-    add dx, 0xe                                          # 0043BFAA
+    add dx, 0x11                                         # 0043BFAA
     pop esi                                              # 0043BFAE
     ret                                                  # 0043BFAF
 
@@ -4380,7 +4380,7 @@ _sub_43BFB0:
 
     .global _sub_43BFBB
 _sub_43BFBB:
-    mov dx, 0x41e                                        # 0043BFBB
+    mov dx, 0x535                                        # 0043BFBB
     ret                                                  # 0043BFBF
 
     .global _sub_43BFC0
@@ -4573,14 +4573,14 @@ _sub_43C182:
     .global _sub_43C27E
 _sub_43C27E:
     mov word ptr [__50A002], di                          # 0043C27E
-    call _sub_4CE6F2                                     # 0043C285
+    call korsub_4CDCB0                                     # 0043C285
     mov cl, 0xe                                          # 0043C28A
     msvc_xor dx, dx                                      # 0043C28C
     call _sub_4CD3A9                                     # 0043C28F
     jne .L43C30F                                         # 0043C294
     mov ax, word ptr [__50B896]                          # 0043C296
     shr ax, 1                                            # 0043C29C
-    sub ax, 0x18                                         # 0043C29F
+    sub ax, 0x1c                                         # 0043C29F
     cmp ax, 0x1c                                         # 0043C2A3
     jge .L43C2AD                                         # 0043C2A7
     mov ax, 0x1c                                         # 0043C2A9
@@ -4589,7 +4589,7 @@ _sub_43C27E:
     mov ax, word ptr [__50B894]                          # 0043C2B0
     shr ax, 1                                            # 0043C2B6
     sub ax, 0x82                                         # 0043C2B9
-    mov ebx, 0x300104                                    # 0043C2BD
+    mov ebx, 0x390104                                    # 0043C2BD
     mov ecx, 0x20000e                                    # 0043C2C2
     mov_offset edx, _ui__prompt_save_game___widgets___events # 0043C2C7
     call _sub_4C9F5D                                     # 0043C2CC
@@ -4877,7 +4877,7 @@ _sub_43C590:
     cmp word ptr [__50AEBA], 0x300                       # 0043C68F
     je .L43C6CC                                          # 0043C698
 .L43C69A:
-    call _sub_4CE6F2                                     # 0043C69A
+    call korsub_4CDCB0                                     # 0043C69A
     call _sub_489BA1                                     # 0043C69F
     mov eax, 0x320                                       # 0043C6A4
     mov ebx, 0x258                                       # 0043C6A9

@@ -83,6 +83,26 @@ _sub_44733C:
     add esi, 0x10                                        # 0044746E
     dec ecx                                              # 00447471
     jne .L44742F                                         # 00447472
+    mov    ebx,0x9
+    call   _sub_4416B5
+    mov   dword ptr [__113E87C],0x3
+    push   ebx
+    call   _sub_4082AD
+    add    esp,0x4
+    mov    dword ptr [__113E87C], 0x0
+    cmp    eax,0xffffffff
+    je     .L447476
+    push   eax
+    push   0x6ae00
+    push   0xe32824
+    push   eax
+    call   _sub_4081FE
+    add    esp,0xc
+    pop    eax
+    push   eax
+    call   _sub_408297
+    add    esp,0x4
+
     ret                                                  # 00447474
 .L447475:
     pop eax                                              # 00447475
@@ -16879,7 +16899,7 @@ _sub_451025:
     msvc_cmp dx, bx                                      # 00451078
     jge .L451215                                         # 0045107B
     msvc_mov bx, dx                                      # 00451081
-    add bx, 0x5a                                         # 00451084
+    add bx, 0x41                                         # 00451084
     cmp bx, word ptr [edi + 6]                           # 00451088
     jle .L451215                                         # 0045108C
     cmp al, 0xff                                         # 00451092
@@ -16938,7 +16958,7 @@ _sub_451025:
     msvc_xor eax, eax                                    # 00451187
 .L451189:
     msvc_mov ax, dx                                      # 00451189
-    add ax, 0x13                                         # 0045118C
+    add ax, 0xe                                         # 0045118C
     cmp ax, word ptr [edi + 6]                           # 00451190
     jle .L451569                                         # 00451194
     mov ax, word ptr [edi + 6]                           # 0045119A
@@ -16961,11 +16981,13 @@ _sub_451025:
     mov bx, word ptr [edi + 4]                           # 004511C2
     add bx, word ptr [edi + 8]                           # 004511C6
     msvc_cmp cx, bx                                      # 004511CA
-    jge .L451569                                         # 004511CD
+    jge .loc0                                         # 004511CD
     msvc_mov bx, cx                                      # 004511D3
     add bx, 0x1a                                         # 004511D6
     cmp bx, word ptr [edi + 4]                           # 004511DA
     jl .L451216                                          # 004511DE
+    cmp    al,0xdf
+    je     .Lunk
     movzx ebx, al                                        # 004511E0
     add bx, word ptr [__112C876]                         # 004511E3
     push dword ptr [ebx + __112C884]                     # 004511EA
@@ -16984,14 +17006,48 @@ _sub_451025:
     msvc_add cl, al                                      # 0045120E
     adc ch, 0                                            # 00451210
     jmp .L4511AB                                         # 00451213
+.Lunk:
+    mov    ax,WORD PTR [esi]
+    add    esi,0x2
+    push   ecx
+    push   edx
+    push   edi
+    push   esi
+    xchg   al,ah
+    sub    ah,0xa1
+    sub    al,0x40
+    movzx  ebx,ah
+    imul   ebx,ebx,0xc0
+    movzx  eax,al
+    msvc_add    ebx,eax
+    add    ebx,0x101a
+    call   korsub_4523e5
+    mov    ebx,0x101a
+    mov    DWORD PTR [__E04324],0x20000000
+    inc    dx
+    call   _sub_448D90
+    pop    esi
+    pop    edi
+    pop    edx
+    pop    ecx
+    add    cx,0xd
+    msvc_xor    eax,eax
+    jmp    .L4511AB
+
 .L451215:
     ret                                                  # 00451215
 .L451216:
+cmp    al,0xdf
+je     .Lunk2
     movzx ebx, al                                        # 00451216
     add bx, word ptr [__112C876]                         # 00451219
     add cl, byte ptr [ebx + __112C884]                   # 00451220
     adc ch, 0                                            # 00451226
     jmp .L4511AB                                         # 00451229
+.Lunk2:
+    add    cx,0xd
+    add    esi,0x2
+    jmp    .L4511AB
 .L45122B:
     cmp al, 0xe5                                         # 0045122B
     je .L4513BB                                          # 0045122D
@@ -17097,23 +17153,23 @@ _sub_451025:
     msvc_jmp .L4511AB                                    # 00451380
 .L451385:
     mov cx, word ptr [__E04348]                          # 00451385
-    add dx, 5                                            # 0045138C
+    add dx, 6                                            # 0045138C
     cmp word ptr [__112C876], 0xe0                       # 00451390
     jbe .L4511AB                                         # 00451399
-    sub dx, 2                                            # 0045139F
+    sub dx, 0                                            # 0045139F
     cmp word ptr [__112C876], 0x1c0                      # 004513A3
     je .L4511AB                                          # 004513AC
-    sub dx, -6                                           # 004513B2
+    sub dx, 0                                           # 004513B2
     msvc_jmp .L4511AB                                    # 004513B6
 .L4513BB:
     mov cx, word ptr [__E04348]                          # 004513BB
-    add dx, 0xa                                          # 004513C2
+    add dx, 0xd                                          # 004513C2
     cmp word ptr [__112C876], 0xe0                       # 004513C6
     jbe .L4511AB                                         # 004513CF
-    sub dx, 4                                            # 004513D5
+    sub dx, 0                                            # 004513D5
     cmp word ptr [__112C876], 0x1c0                      # 004513D9
     je .L4511AB                                          # 004513E2
-    sub dx, -0xc                                         # 004513E8
+    sub dx, 0                                         # 004513E8
     msvc_jmp .L4511AB                                    # 004513EC
 .L4513F1:
     mov al, byte ptr [esi]                               # 004513F1
@@ -17201,16 +17257,25 @@ _sub_451025:
     pop ebx                                              # 00451559
     mov_dword_ptr __50B860, __50B8C0                     # 0045155A
     msvc_jmp .L451189                                    # 00451564
+.loc0:
+    cmp    al,0xdf
+    jne    .L451569
+    add    esi,0x2
 .L451569:
     mov al, byte ptr [esi]                               # 00451569
     inc esi                                              # 0045156B
     cmp al, 0x20                                         # 0045156C
     jb .L4511AE                                          # 0045156E
+    cmp al, 0xff                                         # 00451574
+    je .loc1                                         # 00451576
     cmp al, 0x9e                                         # 00451574
     jae .L451569                                         # 00451576
     cmp al, 0x90                                         # 00451578
     jae .L451405                                         # 0045157A
     jmp .L451569                                         # 00451580
+.loc1:
+   add    esi,0x2
+   jmp    .L451569
 
     .global _sub_451582
 _sub_451582:
@@ -17274,7 +17339,9 @@ _sub_451582:
     msvc_mov bx, cx                                      # 00451660
     add bx, 0x1a                                         # 00451663
     cmp bx, word ptr [edi + 4]                           # 00451667
-    jl .L4516B1                                          # 0045166B
+    jl .0x450987                                          # 0045166B
+    cmp    al,0xdf
+    je     .L0x450929
     movzx ebx, al                                        # 0045166D
     add bx, word ptr [__112C876]                         # 00451670
     push dword ptr [ebx + __112C884]                     # 00451677
@@ -17294,9 +17361,40 @@ _sub_451582:
     msvc_add cl, al                                      # 004516A2
     adc ch, 0                                            # 004516A4
     jmp .L45163F                                         # 004516A7
+.L0x450929:
+    mov    ax,WORD PTR [esi]
+    add    esi,0x2
+    push   ecx
+    push   edx
+    push   edi
+    push   esi
+    xchg   al,ah
+    sub    ah,0xa1
+    sub    al,0x40
+    movzx  ebx,ah
+    imul   ebx,ebx,0xc0
+    movzx  eax,al
+    msvc_add    ebx,eax
+    add    ebx,0x101a
+    call   korsub_4523e5
+    mov    ebx,0x101a
+    mov    DWORD PTR [0xe2a7c8],0x20000000
+    inc    dx
+    call   _sub_448D90
+    dec    WORD PTR [0xe2a7f0]
+    pop    esi
+    pop    edi
+    pop    edx
+    pop    ecx
+    add    cx,0xd
+    msvc_xor    eax,eax
+    jmp    .L45163F
 .L4516A9:
     mov bp, word ptr [__E0434C]                          # 004516A9
     ret                                                  # 004516B0
+.0x450987:
+    cmp    al,0xdf
+    je     .loc2
 .L4516B1:
     movzx ebx, al                                        # 004516B1
     add bx, word ptr [__112C876]                         # 004516B4
@@ -17304,6 +17402,11 @@ _sub_451582:
     adc ch, 0                                            # 004516C1
     dec word ptr [__E0434C]                              # 004516C4
     msvc_jmp .L45163F                                    # 004516CB
+.loc2:
+    add    cx,0xd
+    add    esi,0x2
+    dec    WORD PTR [0xe2a7f0]
+    jmp    .L45163F
 .L4516D0:
     cmp al, 0xe5                                         # 004516D0
     je .L4517BE                                          # 004516D2
@@ -17360,23 +17463,23 @@ _sub_451582:
     msvc_jmp .L45163F                                    # 00451783
 .L451788:
     mov cx, word ptr [__E04348]                          # 00451788
-    add dx, 5                                            # 0045178F
+    add dx, 6                                            # 0045178F
     cmp word ptr [__112C876], 0xe0                       # 00451793
     jbe .L45163F                                         # 0045179C
-    sub dx, 2                                            # 004517A2
+    sub dx, 0                                            # 004517A2
     cmp word ptr [__112C876], 0x1c0                      # 004517A6
     je .L45163F                                          # 004517AF
-    sub dx, -6                                           # 004517B5
+    sub dx, 0                                           # 004517B5
     msvc_jmp .L45163F                                    # 004517B9
 .L4517BE:
     mov cx, word ptr [__E04348]                          # 004517BE
-    add dx, 0xa                                          # 004517C5
+    add dx, 0xd                                          # 004517C5
     cmp word ptr [__112C876], 0xe0                       # 004517C9
     jbe .L45163F                                         # 004517D2
-    sub dx, 4                                            # 004517D8
+    sub dx, 0                                            # 004517D8
     cmp word ptr [__112C876], 0x1c0                      # 004517DC
     je .L45163F                                          # 004517E5
-    sub dx, -0xc                                         # 004517EB
+    sub dx, 0                                         # 004517EB
     msvc_jmp .L45163F                                    # 004517EF
 .L4517F4:
     mov al, byte ptr [esi]                               # 004517F4
@@ -17522,7 +17625,7 @@ _sub_45196C:
     msvc_xor eax, eax                                    # 00451A5B
 .L451A5D:
     msvc_mov ax, dx                                      # 00451A5D
-    add ax, 0x27                                         # 00451A60
+    add ax, 0x22                                         # 00451A60
     cmp ax, word ptr [edi + 6]                           # 00451A64
     jle .L451D7F                                         # 00451A68
     mov ax, word ptr [edi + 6]                           # 00451A6E
@@ -17615,23 +17718,23 @@ _sub_45196C:
     msvc_jmp .L451A86                                    # 00451B96
 .L451B9B:
     mov cx, word ptr [__E04348]                          # 00451B9B
-    add dx, 5                                            # 00451BA2
+    add dx, 6                                            # 00451BA2
     cmp word ptr [__112C876], 0xe0                       # 00451BA6
     jbe .L451A86                                         # 00451BAF
-    sub dx, 2                                            # 00451BB5
+    sub dx, 0                                            # 00451BB5
     cmp word ptr [__112C876], 0x1c0                      # 00451BB9
     je .L451A86                                          # 00451BC2
-    sub dx, -6                                           # 00451BC8
+    sub dx, 0                                           # 00451BC8
     msvc_jmp .L451A86                                    # 00451BCC
 .L451BD1:
     mov cx, word ptr [__E04348]                          # 00451BD1
-    add dx, 0xa                                          # 00451BD8
+    add dx, 0xd                                          # 00451BD8
     cmp word ptr [__112C876], 0xe0                       # 00451BDC
     jbe .L451A86                                         # 00451BE5
-    sub dx, 4                                            # 00451BEB
+    sub dx, 0                                            # 00451BEB
     cmp word ptr [__112C876], 0x1c0                      # 00451BEF
     je .L451A86                                          # 00451BF8
-    sub dx, -0xc                                         # 00451BFE
+    sub dx, 0                                         # 00451BFE
     msvc_jmp .L451A86                                    # 00451C02
 .L451C07:
     mov al, byte ptr [esi]                               # 00451C07
@@ -18287,7 +18390,7 @@ _sub_4524C1:
 .L4524DB:
     cmp dword ptr [__52533C], 0                          # 004524DB
     je .L452524                                          # 004524E2
-    call _sub_4CE6F2                                     # 004524E4
+    call korsub_4CDCB0                                     # 004524E4
     call _sub_489BA1                                     # 004524E9
     movzx eax, word ptr [__50AEB8]                       # 004524EE
     movzx ebx, word ptr [__50AEBA]                       # 004524F5
@@ -19308,6 +19411,40 @@ _sub_45308A:
     pop edi                                              # 004530F6
     ret                                                  # 004530F7
 
+    .global korsub_4523e5
+korsub_4523e5:
+    push   ebx
+    push   ecx
+    push   edi
+    mov    edi, 0x50abed
+    mov    ecx, 0x2b
+    msvc_xor    eax, eax
+    rep stos DWORD PTR es:[edi], eax
+    sub    ebx, 0x101a
+    imul   ebx, ebx, 0x18
+    mov    esi, 0x50abed
+.0x452404:
+    mov    ax, WORD PTR [ebx+0xe32824]
+    xchg   ah, al
+    mov    bp, 0xc
+.0x452411:
+    shl    ax, 1
+    jae    .0x45241d
+    mov    BYTE PTR [esi], 0x1
+    mov    BYTE PTR [esi+0xe], 0x2
+.0x45241d:
+    inc    esi
+    dec    bp
+    jne    .0x452411
+    inc    esi
+    add    ebx, 0x2
+    cmp    esi, 0x50ac89
+    jb     .0x452404
+    pop    edi
+    pop    ecx
+    pop    ebx
+    ret
+
     .global _sub_4530F8
 _sub_4530F8:
     push edi                                             # 004530F8
@@ -19413,6 +19550,4 @@ _sub_4530F8:
     pop esi                                              # 0045320F
     pop edi                                              # 00453210
     ret                                                  # 00453211
-# 0x453212
-    .byte 0xCC, 0xCC                                     #        0 ..
 

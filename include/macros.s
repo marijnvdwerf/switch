@@ -269,3 +269,15 @@
     .skip \size
     .size  \name, \size
 .endm
+
+.macro strcpy s=__50B745, d=__112CE04
+    mov_offset esi, \s                             # 00441852
+    mov_offset edi, \d                            # 00441857
+2:
+    mov al, byte ptr [esi]                               # 0044185C
+    mov byte ptr [edi], al                               # 0044185E
+    inc esi                                              # 00441860
+    inc edi                                              # 00441861
+    msvc_or al, al                                       # 00441862
+    jne 2b
+.endm

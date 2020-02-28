@@ -4,16 +4,132 @@
 
 .text
 
-
     .global _sub_4949BC
 _sub_4949BC:
+    mov    esi,0x9ead88
+    mov    edi,0x9e7588
+    mov    ebp,0x9e8388
+    mov    ecx,0x5b
+.0x493b74:
+    mov    eax,DWORD PTR [esi]
+    mov    DWORD PTR [edi],eax
+    mov    DWORD PTR [ebp+0x0],eax
+    mov    ax,WORD PTR [esi+0x4]
+    mov    WORD PTR [edi+0x4],ax
+    mov    WORD PTR [ebp+0x4],ax
+    mov    ax,WORD PTR [esi+0x6]
+    mov    WORD PTR [edi+0x6],ax
+    mov    WORD PTR [ebp+0x6],ax
+    mov    ax,WORD PTR [esi+0x8]
+    inc    ax
+    mov    WORD PTR [edi+0x8],ax
+    mov    WORD PTR [ebp+0x8],ax
+    mov    ax,WORD PTR [esi+0xa]
+    inc    ax
+    mov    WORD PTR [edi+0xa],ax
+    mov    WORD PTR [ebp+0xa],ax
+    mov    ax,WORD PTR [esi+0xc]
+    or     ax,0x8000
+    mov    WORD PTR [edi+0xc],ax
+    mov    WORD PTR [ebp+0xc],ax
+    mov    ax,WORD PTR [esi+0xe]
+    mov    WORD PTR [edi+0xe],ax
+    mov    WORD PTR [ebp+0xe],ax
+    add    esi,0x10
+    add    edi,0x10
+    add    ebp,0x10
+    dec    ecx
+    jne    .0x493b74
+    mov    esi,0x9eb108
+    mov    edi,0x9e7e58
+    mov    ebp,0x9e8c58
+    mov    ecx,0x1
+.0x493beb:
+    mov    eax,DWORD PTR [esi]
+    mov    DWORD PTR [edi],eax
+    mov    DWORD PTR [ebp+0x0],eax
+    mov    ax,WORD PTR [esi+0x4]
+    mov    WORD PTR [edi+0x4],ax
+    mov    WORD PTR [ebp+0x4],ax
+    mov    ax,WORD PTR [esi+0x6]
+    mov    WORD PTR [edi+0x6],ax
+    mov    WORD PTR [ebp+0x6],ax
+    mov    ax,WORD PTR [esi+0x8]
+    inc    ax
+    mov    WORD PTR [edi+0x8],ax
+    mov    WORD PTR [ebp+0x8],ax
+    mov    ax,WORD PTR [esi+0xa]
+    inc    ax
+    mov    WORD PTR [edi+0xa],ax
+    mov    WORD PTR [ebp+0xa],ax
+    mov    ax,WORD PTR [esi+0xc]
+    or     ax,0x8000
+    mov    WORD PTR [edi+0xc],ax
+    mov    WORD PTR [ebp+0xc],ax
+    mov    ax,WORD PTR [esi+0xe]
+    mov    WORD PTR [edi+0xe],ax
+    mov    WORD PTR [ebp+0xe],ax
+    add    esi,0x10
+    add    edi,0x10
+    add    ebp,0x10
+    dec    ecx
+    jne    .0x493beb
+    mov    esi,0x9eb368
+    mov    edi,0x9e7f88
+    mov    ebp,0x9e8d88
+    mov    ecx,0x3f
+.0x493c62:
+    mov    eax,DWORD PTR [esi]
+    mov    DWORD PTR [edi],eax
+    mov    DWORD PTR [ebp+0x0],eax
+    mov    ax,WORD PTR [esi+0x4]
+    mov    WORD PTR [edi+0x4],ax
+    mov    WORD PTR [ebp+0x4],ax
+    mov    ax,WORD PTR [esi+0x6]
+    mov    WORD PTR [edi+0x6],ax
+    mov    WORD PTR [ebp+0x6],ax
+    mov    ax,WORD PTR [esi+0x8]
+    inc    ax
+    mov    WORD PTR [edi+0x8],ax
+    mov    WORD PTR [ebp+0x8],ax
+    mov    ax,WORD PTR [esi+0xa]
+    inc    ax
+    mov    WORD PTR [edi+0xa],ax
+    mov    WORD PTR [ebp+0xa],ax
+    mov    ax,WORD PTR [esi+0xc]
+    or     ax,0x8000
+    mov    WORD PTR [edi+0xc],ax
+    mov    WORD PTR [ebp+0xc],ax
+    mov    ax,WORD PTR [esi+0xe]
+    mov    WORD PTR [edi+0xe],ax
+    mov    WORD PTR [ebp+0xe],ax
+    add    esi,0x10
+    add    edi,0x10
+    add    ebp,0x10
+    dec    ecx
+    jne    .0x493c62
+    add    WORD PTR [__g1Data + 0x9e8d52-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8d62-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8c52-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8d42-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8b92-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8c32-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9ec122-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9ec112-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8ca2-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8cf2-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8d02-0x9e2fc8],0x1
+    add    WORD PTR [__g1Data + 0x9e8d12-0x9e2fc8],0x1
     mov_offset edi, __112C884                            # 004949BC
     mov ebx, 0x45c                                       # 004949C1
 .L4949C6:
     msvc_mov esi, ebx                                    # 004949C6
     shl esi, 4                                           # 004949C8
     mov ax, word ptr [esi + __g1Data+4]                  # 004949CB
+    test   WORD PTR [esi+__g1Data + 0x9e2fd4-0x9e2fc8],0x8000
+    jne    .0x493d48
     dec ax                                               # 004949D2
+.0x493d48:
     cmp bx, 0x4b7                                        # 004949D4
     jb .L4949E4                                          # 004949D9
     cmp bx, 0x4db                                        # 004949DB
@@ -30,7 +146,10 @@ _sub_4949BC:
     msvc_mov esi, ebx                                    # 004949F5
     shl esi, 4                                           # 004949F7
     mov ax, word ptr [esi + __g1Data+4]                  # 004949FA
+    test   WORD PTR [esi+0x9e2fd4],0x8000
+    jne    .0x493d82
     dec ax                                               # 00494A01
+.0x493d82:
     cmp bx, 0x597                                        # 00494A03
     jb .L494A13                                          # 00494A08
     cmp bx, 0x5bb                                        # 00494A0A
@@ -139,6 +258,19 @@ _sub_4949BC:
     add edi, 0x812                                       # 00494B35
     dec ecx                                              # 00494B3B
     jne .L494B18                                         # 00494B3C
+    mov    esi,0x9e2fc8
+    add    esi,0x101a0
+    mov    ecx,0x2590
+.L0x493ecd:
+    mov    DWORD PTR [esi],0x50abed
+    mov    WORD PTR [esi+0x4],0xd
+    mov    WORD PTR [esi+0x6],0xd
+    mov    WORD PTR [esi+0x8],0x0
+    mov    WORD PTR [esi+0xa],0x0
+    mov    WORD PTR [esi+0xc],0x1
+    add    esi,0x10
+    dec    ecx
+    jne    .L0x493ecd
     ret                                                  # 00494B3E
 
     .global _sub_494B3F
@@ -325,7 +457,7 @@ _sub_494CB2:
     msvc_add bx, ax                                      # 00494CF6
     dec bx                                               # 00494CF9
     msvc_mov cx, dx                                      # 00494CFB
-    add cx, 0xb                                          # 00494CFE
+    add cx, 0xe                                          # 00494CFE
     msvc_mov dx, cx                                      # 00494D02
     movzx ebp, byte ptr [__50B8C1]                       # 00494D05
     call _sub_4474BA                                     # 00494D0C
@@ -353,7 +485,7 @@ _sub_494D30:
     msvc_sub ax, dx                                      # 00494D3F
     msvc_add bx, ax                                      # 00494D42
     dec bx                                               # 00494D45
-    add cx, 0xb                                          # 00494D47
+    add cx, 0xe                                          # 00494D47
     msvc_mov dx, cx                                      # 00494D4B
     movzx ebp, byte ptr [__50B8C1]                       # 00494D4E
     call _sub_4474BA                                     # 00494D55
@@ -397,7 +529,7 @@ _sub_494D78:
     pop ebx                                              # 00494DB1
     msvc_add bx, ax                                      # 00494DB2
     dec bx                                               # 00494DB5
-    add cx, 0xb                                          # 00494DB7
+    add cx, 0xe                                          # 00494DB7
     msvc_mov dx, cx                                      # 00494DBB
     movzx ebp, byte ptr [__50B8C1]                       # 00494DBE
     call _sub_4474BA                                     # 00494DC5
@@ -494,6 +626,8 @@ _sub_494E33:
     inc esi                                              # 00494E88
     msvc_or al, al                                       # 00494E89
     je .L494EA8                                          # 00494E8B
+    cmp al, 0xff                                         # 00494E8D
+    je .L0x494262                                         # 00494E8F
     cmp al, 0x20                                         # 00494E8D
     jae .L494E86                                         # 00494E8F
     cmp al, 4                                            # 00494E91
@@ -505,17 +639,20 @@ _sub_494E33:
     jbe .L494E86                                         # 00494E9E
     add esi, 2                                           # 00494EA0
     jmp .L494E86                                         # 00494EA3
+.L0x494262:
+    add esi, 2
+    jmp .L494E86
 .L494EA5:
     inc esi                                              # 00494EA5
     jmp .L494E86                                         # 00494EA6
 .L494EA8:
-    add dx, 0xa                                          # 00494EA8
+    add dx, 0xd                                          # 00494EA8
     cmp word ptr [__112C876], 0xe0                       # 00494EAC
     jbe .L494ECA                                         # 00494EB5
-    add dx, -4                                           # 00494EB7
+    add dx, 0                                           # 00494EB7
     cmp word ptr [__112C876], 0x1c0                      # 00494EBB
     jbe .L494ECA                                         # 00494EC4
-    add dx, 0xc                                          # 00494EC6
+    add dx, 0                                          # 00494EC6
 .L494ECA:
     dec bp                                               # 00494ECA
     jns .L494E61                                         # 00494ECC
@@ -552,13 +689,13 @@ _sub_494ECF:
     call _sub_495301                                     # 00494F18
     mov word ptr [__112C87A], cx                         # 00494F1D
     pop esi                                              # 00494F24
-    mov word ptr [__112D404], 0xa                        # 00494F25
+    mov word ptr [__112D404], 0xd                        # 00494F25
     cmp bx, 0xe0                                         # 00494F2E
     jbe .L494F4E                                         # 00494F33
-    mov word ptr [__112D404], 6                          # 00494F35
+    mov word ptr [__112D404], 0xd                          # 00494F35
     cmp bx, 0x1c0                                        # 00494F3E
     je .L494F4E                                          # 00494F43
-    mov word ptr [__112D404], 0x12                       # 00494F45
+    mov word ptr [__112D404], 0xd                       # 00494F45
 .L494F4E:
     cmp byte ptr [__112CC04], 0xb                        # 00494F4E
     jne .L494F5E                                         # 00494F55
@@ -600,6 +737,8 @@ _sub_494ECF:
     inc esi                                              # 00494FA8
     msvc_or al, al                                       # 00494FA9
     je .L494FC8                                          # 00494FAB
+    cmp al, 0xFF                                         # 00494FAD
+    je .Lff                                         # 00494FAF
     cmp al, 0x20                                         # 00494FAD
     jae .L494FA6                                         # 00494FAF
     cmp al, 4                                            # 00494FB1
@@ -611,6 +750,9 @@ _sub_494ECF:
     jbe .L494FA6                                         # 00494FBE
     add esi, 2                                           # 00494FC0
     jmp .L494FA6                                         # 00494FC3
+.Lff:
+    add esi, 2
+    jmp .L494FA6
 .L494FC5:
     inc esi                                              # 00494FC5
     jmp .L494FA6                                         # 00494FC6
@@ -656,13 +798,13 @@ _sub_494FE0:
     mov word ptr [__112C876], 0xe0                       # 0049502D
     call _sub_495301                                     # 00495036
     pop esi                                              # 0049503B
-    mov word ptr [__112D404], 0xa                        # 0049503C
+    mov word ptr [__112D404], 0xd                        # 0049503C
     cmp bx, 0xe0                                         # 00495045
     jbe .L495065                                         # 0049504A
-    mov word ptr [__112D404], 6                          # 0049504C
+    mov word ptr [__112D404], 0xd                          # 0049504C
     cmp bx, 0x1c0                                        # 00495055
     je .L495065                                          # 0049505A
-    mov word ptr [__112D404], 0x12                       # 0049505C
+    mov word ptr [__112D404], 0xd                       # 0049505C
 .L495065:
     mov bx, word ptr [__112D404]                         # 00495065
     shr bx, 1                                            # 0049506C
@@ -702,6 +844,8 @@ _sub_494FE0:
     inc esi                                              # 004950BD
     msvc_or al, al                                       # 004950BE
     je .L4950DD                                          # 004950C0
+    cmp al, 0xFF
+    je .Lff2
     cmp al, 0x20                                         # 004950C2
     jae .L4950BB                                         # 004950C4
     cmp al, 4                                            # 004950C6
@@ -713,6 +857,9 @@ _sub_494FE0:
     jbe .L4950BB                                         # 004950D3
     add esi, 2                                           # 004950D5
     jmp .L4950BB                                         # 004950D8
+.Lff2:
+    add esi, 2
+    jmp .L4950BB
 .L4950DA:
     inc esi                                              # 004950DA
     jmp .L4950BB                                         # 004950DB
@@ -762,13 +909,13 @@ _sub_4950EF:
     call _sub_49544E                                     # 00495158
     mov word ptr [__112C880], ax                         # 0049515D
     pop esi                                              # 00495163
-    mov word ptr [__112D404], 0xa                        # 00495164
+    mov word ptr [__112D404], 0xd                        # 00495164
     cmp bx, 0xe0                                         # 0049516D
     jbe .L49518D                                         # 00495172
-    mov word ptr [__112D404], 6                          # 00495174
+    mov word ptr [__112D404], 0xd                          # 00495174
     cmp bx, 0x1c0                                        # 0049517D
     je .L49518D                                          # 00495182
-    mov word ptr [__112D404], 0x12                       # 00495184
+    mov word ptr [__112D404], 0xd                       # 00495184
 .L49518D:
     mov bx, word ptr [__112D404]                         # 0049518D
     msvc_mov di, bx                                      # 00495194
@@ -812,6 +959,8 @@ _sub_4950EF:
     inc esi                                              # 004951F1
     msvc_or al, al                                       # 004951F2
     je .L495211                                          # 004951F4
+    cmp al, 0xff
+    je .Lff3
     cmp al, 0x20                                         # 004951F6
     jae .L4951EF                                         # 004951F8
     cmp al, 4                                            # 004951FA
@@ -823,6 +972,9 @@ _sub_4950EF:
     jbe .L4951EF                                         # 00495207
     add esi, 2                                           # 00495209
     jmp .L4951EF                                         # 0049520C
+.Lff3:
+    add esi, 2
+    jmp .L4951EF
 .L49520E:
     inc esi                                              # 0049520E
     jmp .L4951EF                                         # 0049520F
@@ -863,13 +1015,13 @@ _sub_495224:
     push esi                                             # 0049526C
     call _sub_495301                                     # 0049526D
     pop esi                                              # 00495272
-    mov word ptr [__112D404], 0xa                        # 00495273
+    mov word ptr [__112D404], 0xd                        # 00495273
     cmp bx, 0xe0                                         # 0049527C
     jbe .L49529C                                         # 00495281
-    mov word ptr [__112D404], 6                          # 00495283
+    mov word ptr [__112D404], 0xd                          # 00495283
     cmp bx, 0x1c0                                        # 0049528C
     je .L49529C                                          # 00495291
-    mov word ptr [__112D404], 0x12                       # 00495293
+    mov word ptr [__112D404], 0xd                       # 00495293
 .L49529C:
     mov bx, word ptr [__112D404]                         # 0049529C
     shr bx, 1                                            # 004952A3
@@ -896,6 +1048,8 @@ _sub_495224:
     inc esi                                              # 004952CF
     msvc_or al, al                                       # 004952D0
     je .L4952EF                                          # 004952D2
+    cmp al, 0xff
+    je .Lff4
     cmp al, 0x20                                         # 004952D4
     jae .L4952CD                                         # 004952D6
     cmp al, 4                                            # 004952D8
@@ -907,6 +1061,9 @@ _sub_495224:
     jbe .L4952CD                                         # 004952E5
     add esi, 2                                           # 004952E7
     jmp .L4952CD                                         # 004952EA
+.Lff4:
+    add esi, 2
+    jmp .L4952CD
 .L4952EC:
     inc esi                                              # 004952EC
     jmp .L4952CD                                         # 004952ED
@@ -950,19 +1107,29 @@ _sub_49533C:
     je .L495385                                          # 0049535A
     sub al, 0x20                                         # 0049535C
     jb .L4953AD                                          # 0049535E
+    cmp    al,0xff-0x20
+    jne    .L0x494753
+    add    cx,0xd
+    add    esi,0x2
+    jmp    .L49536A
+.L0x494753:
     add cl, byte ptr [ebx + eax + __112C884]             # 00495360
     adc ch, 0                                            # 00495367
 .L49536A:
     msvc_cmp cx, di                                      # 0049536A
     jbe _sub_49533C                                      # 0049536D
     cmp dword ptr [__112C814], 0                         # 0049536F
-    je .L495392                                          # 00495376
+    je .0x49478e                                          # 00495376
     mov esi, dword ptr [__112C814]                       # 00495378
     mov cx, word ptr [__112C818]                         # 0049537E
 .L495385:
     inc word ptr [__112C81A]                             # 00495385
+    cmp    BYTE PTR [esi-0x1],0xff
+    je     .0x4947ae
     mov byte ptr [esi - 1], 0                            # 0049538C
     jmp _sub_49531F                                      # 00495390
+.0x49478e:
+    jmp .L495436
 .L495392:
     dec esi                                              # 00495392
     push esi                                             # 00495393
@@ -976,6 +1143,17 @@ _sub_49533C:
     pop esi                                              # 0049539F
     inc esi                                              # 004953A0
     inc word ptr [__112C81A]                             # 004953A1
+    msvc_jmp _sub_49531F                                 # 004953A8
+.0x4947ae:
+    push   esi
+    msvc_xor    al,al
+.l0x4947b1:
+    xchg   BYTE PTR [esi-0x1],al
+    inc    esi
+    msvc_or     al,al
+    jne    .l0x4947b1
+    mov    BYTE PTR [esi-0x1],al
+    pop    esi
     msvc_jmp _sub_49531F                                 # 004953A8
 .L4953AD:
     add al, 0x20                                         # 004953AD
@@ -1065,6 +1243,13 @@ _sub_49544E:
     je .L4954EB                                          # 004954B7
     sub al, 0x20                                         # 004954B9
     jb .L495523                                          # 004954BB
+    cmp    al,0xff-0x20
+    jne    .L0x4948e5
+    add    cx,0xd
+    add    esi,0x2
+    dec bp
+    jmp    .L4954C9
+.L0x4948e5:
     add cl, byte ptr [ebx + eax + __112C884]             # 004954BD
     adc ch, 0                                            # 004954C4
     dec bp                                               # 004954C7
@@ -1072,7 +1257,7 @@ _sub_49544E:
     msvc_cmp cx, di                                      # 004954C9
     jbe .L495492                                         # 004954CC
     cmp dword ptr [__112C814], 0                         # 004954CE
-    je .L495508                                          # 004954D5
+    je .0x494936                                          # 004954D5
     mov esi, dword ptr [__112C814]                       # 004954D7
     mov cx, word ptr [__112C818]                         # 004954DD
     mov bp, word ptr [__112C87E]                         # 004954E4
@@ -1082,8 +1267,12 @@ _sub_49544E:
     jle .L4954FF                                         # 004954F6
     inc word ptr [__112C87C]                             # 004954F8
 .L4954FF:
+    cmp    BYTE PTR [esi-0x1],0xff
+    je     .0x494956
     mov byte ptr [esi - 1], 0                            # 004954FF
     msvc_jmp .L495475                                    # 00495503
+.0x494936:
+    jmp  .L49559E
 .L495508:
     dec esi                                              # 00495508
     push esi                                             # 00495509
@@ -1098,6 +1287,17 @@ _sub_49544E:
     inc esi                                              # 00495516
     inc word ptr [__112C81A]                             # 00495517
     msvc_jmp .L495475                                    # 0049551E
+.0x494956:
+    push   esi
+    msvc_xor    al,al
+.0x494959:
+    xchg   BYTE PTR [esi-0x1],al
+    inc    esi
+    msvc_or     al,al
+    jne    .0x494959
+    mov    BYTE PTR [esi-0x1],al
+    pop    esi
+    jmp    .L495475
 .L495523:
     add al, 0x20                                         # 00495523
     cmp al, 4                                            # 00495525
@@ -1168,9 +1368,15 @@ _sub_4955BC:
     je .L4955F8                                          # 004955E6
     sub al, 0x20                                         # 004955E8
     jb .L495600                                          # 004955EA
+    cmp    al,0xdf
+    je     .0x494a43
     add cl, byte ptr [ebx + eax + __112C884]             # 004955EC
     adc ch, 0                                            # 004955F3
     jmp .L4955D1                                         # 004955F6
+.0x494a43:
+    add    cx,0xd
+    add    esi,0x2
+    jmp    .L4955D1
 .L4955F8:
     mov cx, word ptr [__112C878]                         # 004955F8
     ret                                                  # 004955FF
@@ -1243,9 +1449,15 @@ _sub_495685:
     je .L4956A8                                          # 00495696
     sub al, 0x20                                         # 00495698
     jb .L4956A9                                          # 0049569A
+    cmp    al,0xdf
+    je     .0x494b03
     add cl, byte ptr [ebx + eax + __112C884]             # 0049569C
     adc ch, 0                                            # 004956A3
     jmp .L495691                                         # 004956A6
+.0x494b03:
+    add    cx,0xd
+    add    esi,0x2
+    jmp    .L495691
 .L4956A8:
     ret                                                  # 004956A8
 .L4956A9:
@@ -1317,9 +1529,15 @@ _sub_495715:
     je .L49574F                                          # 00495731
     sub al, 0x20                                         # 00495733
     jb .L49575D                                          # 00495735
+    cmp    al,0xdf
+    je     .0x494bae
     add cl, byte ptr [ebx + eax + __112C884]             # 00495737
     adc ch, 0                                            # 0049573E
     jmp .L495728                                         # 00495741
+.0x494bae:
+    add    cx,0xd
+    add    esi,0x2
+    jmp    .L495728
 .L495743:
     cmp cx, word ptr [esp]                               # 00495743
     jbe .L49574D                                         # 00495747
@@ -1396,6 +1614,8 @@ _sub_4957C4:
     inc esi                                              # 004957EB
     msvc_or al, al                                       # 004957EC
     je .L495816                                          # 004957EE
+    cmp    al,0xff
+    je     .0x494c8a
     sub al, 0x20                                         # 004957F0
     jb .L495820                                          # 004957F2
     add cl, byte ptr [ebx + eax + __112C884]             # 004957F4
@@ -1407,6 +1627,10 @@ _sub_4957C4:
     ja .L4957E9                                          # 00495806
     msvc_mov ebp, esi                                    # 00495808
     jmp .L4957E9                                         # 0049580A
+.0x494c8a:
+    add    cx,0xd
+    add    esi,0x2
+    jmp    .L4957FE
 .L49580C:
     mov dword ptr [ebp], 0x2e2e2e                        # 0049580C
     msvc_mov cx, di                                      # 00495813
@@ -1507,7 +1731,7 @@ _sub_4958C6:
     jb .L4958DF                                          # 004958D0
     cmp ax, 0xa040                                       # 004958D2
     jb .L4958FB                                          # 004958D6
-    jmp dword ptr [eax*4 + _GetProcAddress]              # 004958D8
+    jmp dword ptr [eax*4 + __4FF274 - 0xa040*4]            # 004958D8
 .L4958DF:
     sub eax, 0x8000                                      # 004958DF
     add ecx, 2                                           # 004958E4
@@ -1558,6 +1782,8 @@ _sub_49593C:
     jb .L49594B                                          # 00495945
     cmp al, 0x90                                         # 00495947
     jb .L495980                                          # 00495949
+    cmp al, 0xFF                                         # 00495947
+    je .L49596C                                          # 00495949
 .L49594B:
     mov byte ptr [edi], al                               # 0049594B
     inc edi                                              # 0049594D
@@ -1939,13 +2165,13 @@ _sub_495CB5:
     push eax                                             # 00495CBB
     push ebx                                             # 00495CBC
     push edx                                             # 00495CBD
-    mov eax, dword ptr [esp]                             # 00495CBE
-    add eax, 0xa                                         # 00495CC1
+    mov eax, dword ptr [esp + 4]                             # 00495CBE
+    add eax, 0x27b                                         # 00495CC1
     call _sub_4958C6                                     # 00495CC4
     mov byte ptr [edi], 0x20                             # 00495CC9
     inc edi                                              # 00495CCC
-    mov eax, dword ptr [esp + 4]                         # 00495CCD
-    add eax, 0x27b                                       # 00495CD1
+    mov eax, dword ptr [esp]                         # 00495CCD
+    add eax, 0xa                                       # 00495CD1
     call _sub_4958C6                                     # 00495CD6
     pop edx                                              # 00495CDB
     pop ebx                                              # 00495CDC
@@ -1960,13 +2186,13 @@ _sub_495CE0:
     push eax                                             # 00495CE6
     push ebx                                             # 00495CE7
     push edx                                             # 00495CE8
-    mov eax, dword ptr [esp]                             # 00495CE9
-    add eax, 0xa                                         # 00495CEC
+    mov eax, dword ptr [esp + 4]                             # 00495CE9
+    add eax, 0x29                                         # 00495CEC
     call _sub_4958C6                                     # 00495CEF
     mov byte ptr [edi], 0x20                             # 00495CF4
     inc edi                                              # 00495CF7
-    mov eax, dword ptr [esp + 4]                         # 00495CF8
-    add eax, 0x29                                        # 00495CFC
+    mov eax, dword ptr [esp ]                         # 00495CF8
+    add eax, 0xa                                        # 00495CFC
     call _sub_4958C6                                     # 00495CFF
     pop edx                                              # 00495D04
     pop ebx                                              # 00495D05
@@ -1981,9 +2207,8 @@ _sub_495D09:
     push eax                                             # 00495D0F
     push ebx                                             # 00495D10
     push edx                                             # 00495D11
-    mov eax, dword ptr [esp]                             # 00495D12
-    add eax, 0xa                                         # 00495D15
-    call _sub_4958C6                                     # 00495D18
+    mov eax, dword ptr [esp + 8]                             # 00495D12
+    call _sub_495E2A                                    # 00495D18
     mov byte ptr [edi], 0x20                             # 00495D1D
     inc edi                                              # 00495D20
     mov eax, dword ptr [esp + 4]                         # 00495D21
@@ -1991,8 +2216,9 @@ _sub_495D09:
     call _sub_4958C6                                     # 00495D2A
     mov byte ptr [edi], 0x20                             # 00495D2F
     inc edi                                              # 00495D32
-    mov eax, dword ptr [esp + 8]                         # 00495D33
-    call _sub_495E2A                                     # 00495D37
+    mov eax, dword ptr [esp]                         # 00495D33
+    add eax, 0xa                                         # 00495D15
+    call  _sub_4958C6                                     # 00495D37
     pop edx                                              # 00495D3C
     pop ebx                                              # 00495D3D
     pop eax                                              # 00495D3E
@@ -2006,9 +2232,8 @@ _sub_495D41:
     push eax                                             # 00495D47
     push ebx                                             # 00495D48
     push edx                                             # 00495D49
-    mov eax, dword ptr [esp]                             # 00495D4A
-    add eax, 0xa                                         # 00495D4D
-    call _sub_4958C6                                     # 00495D50
+    mov eax, dword ptr [esp + 8]                         # 00495D69
+    call _sub_495E2A                                     # 00495D6D
     mov byte ptr [edi], 0x20                             # 00495D55
     inc edi                                              # 00495D58
     mov eax, dword ptr [esp + 4]                         # 00495D59
@@ -2016,8 +2241,9 @@ _sub_495D41:
     call _sub_4958C6                                     # 00495D60
     mov byte ptr [edi], 0x20                             # 00495D65
     inc edi                                              # 00495D68
-    mov eax, dword ptr [esp + 8]                         # 00495D69
-    call _sub_495E2A                                     # 00495D6D
+    mov eax, dword ptr [esp]                             # 00495D4A
+    add eax, 0xa                                         # 00495D4D
+    call _sub_4958C6                                     # 00495D50
     pop edx                                              # 00495D72
     pop ebx                                              # 00495D73
     pop eax                                              # 00495D74
@@ -2031,13 +2257,13 @@ _sub_495D77:
     push eax                                             # 00495D7D
     push ebx                                             # 00495D7E
     push edx                                             # 00495D7F
+    mov eax, dword ptr [esp + 8]                         # 00495D92
+    call _sub_495E2A                                     # 00495D96
+    mov byte ptr [edi], 0x20                             # 00495D8E
+    inc edi                                              # 00495D91
     mov eax, dword ptr [esp + 4]                         # 00495D80
     add eax, 0x27b                                       # 00495D84
     call _sub_4958C6                                     # 00495D89
-    mov byte ptr [edi], 0x20                             # 00495D8E
-    inc edi                                              # 00495D91
-    mov eax, dword ptr [esp + 8]                         # 00495D92
-    call _sub_495E2A                                     # 00495D96
     pop edx                                              # 00495D9B
     pop ebx                                              # 00495D9C
     pop eax                                              # 00495D9D
@@ -2051,13 +2277,13 @@ _sub_495DA0:
     push eax                                             # 00495DA6
     push ebx                                             # 00495DA7
     push edx                                             # 00495DA8
+    mov eax, dword ptr [esp + 8]                         # 00495DB9
+    call _sub_495E2A                                     # 00495DBD
+    mov byte ptr [edi], 0x20                             # 00495DB5
+    inc edi                                              # 00495DB8
     mov eax, dword ptr [esp + 4]                         # 00495DA9
     add eax, 0x29                                        # 00495DAD
     call _sub_4958C6                                     # 00495DB0
-    mov byte ptr [edi], 0x20                             # 00495DB5
-    inc edi                                              # 00495DB8
-    mov eax, dword ptr [esp + 8]                         # 00495DB9
-    call _sub_495E2A                                     # 00495DBD
     pop edx                                              # 00495DC2
     pop ebx                                              # 00495DC3
     pop eax                                              # 00495DC4
@@ -2074,13 +2300,13 @@ _sub_495DC7:
     push eax                                             # 00495DD3
     push ebx                                             # 00495DD4
     push edx                                             # 00495DD5
+    mov eax, dword ptr [esp + 8]                         # 00495DE6
+    call _sub_495E2A                                     # 00495DEA
+    mov byte ptr [edi], 0x20                             # 00495DE2
+    inc edi                                              # 00495DE5
     mov eax, dword ptr [esp + 4]                         # 00495DD6
     add eax, 0x29                                        # 00495DDA
     call _sub_4958C6                                     # 00495DDD
-    mov byte ptr [edi], 0x20                             # 00495DE2
-    inc edi                                              # 00495DE5
-    mov eax, dword ptr [esp + 8]                         # 00495DE6
-    call _sub_495E2A                                     # 00495DEA
     pop edx                                              # 00495DEF
     pop ebx                                              # 00495DF0
     pop eax                                              # 00495DF1
@@ -3052,8 +3278,14 @@ _sub_496522:
     msvc_or dl, dl                                       # 0049658D
     je .L49659D                                          # 0049658F
     inc bp                                               # 00496591
+    cmp    dl,0xff
+    jne    .0x495a2f
+    cmp    bp,0x1d
+    jae    .0x495a35
+ .0x495a2f:
     cmp bp, 0x20                                         # 00496593
     jb .L496587                                          # 00496597
+ .0x495a35:
     mov byte ptr [esi - 1], 0                            # 00496599
 .L49659D:
     pop ebp                                              # 0049659D
@@ -3170,6 +3402,8 @@ _sub_4965F4:
     inc esi                                              # 004966CE
     msvc_or al, al                                       # 004966CF
     je .L49672A                                          # 004966D1
+    cmp al, 0xff
+    je .0x495bc3
     cmp al, 0x9e                                         # 004966D3
     jae .L4966DB                                         # 004966D5
     cmp al, 0x90                                         # 004966D7
@@ -3206,6 +3440,9 @@ _sub_4965F4:
     dec edx                                              # 0049671E
     jne .L4966F2                                         # 0049671F
     jmp .L4966CC                                         # 00496721
+.0x495bc3:
+    add esi, 2
+    jmp .L4966CC
 .L496723:
     dec ecx                                              # 00496723
     inc ebx                                              # 00496724
@@ -3234,6 +3471,54 @@ _sub_4965F4:
 .L496764:
     mov ebx, 0x141                                       # 00496764
     ret                                                  # 00496769
+
+    .global korFun
+korFun:
+    push   eax
+.0x495c13:
+    mov    al,BYTE PTR [esi]
+    msvc_or     al,al
+    je     .0x495c2e
+    cmp    al,0xff
+    jne    .0x495c28
+    mov    al,BYTE PTR [esi+0x1]
+    mov    BYTE PTR [edi],al
+    add    esi,0x2
+    inc    edi
+    mov    al,BYTE PTR [esi]
+.0x495c28:
+    mov    BYTE PTR [edi],al
+    inc    esi
+    inc    edi
+    jmp    .0x495c13
+.0x495c2e:
+    mov    BYTE PTR [edi],al
+    pop    eax
+    ret
+
+    .global korsub_495c32
+korsub_495c32:
+    push   eax
+.0x495c33:
+    mov    al,BYTE PTR [esi]
+    msvc_or     al,al
+    je     .0x495c4f
+    cmp    al,0x81
+    jb     .0x495c49
+    mov    BYTE PTR [edi],0xff
+    mov    BYTE PTR [edi+0x1],al
+    add    edi,0x2
+    inc    esi
+    mov    al,BYTE PTR [esi]
+.0x495c49:
+    mov    BYTE PTR [edi],al
+    inc    edi
+    inc    esi
+    jmp    .0x495c33
+.0x495c4f:
+    mov    BYTE PTR [edi],al
+    pop eax
+    ret
 
     .global _sub_49676A
 _sub_49676A:
@@ -3275,17 +3560,25 @@ _sub_49678D:
     jb .L4967EC                                          # 004967AC
     mov dword ptr [__112C814], esi                       # 004967AE
     mov word ptr [__112C818], cx                         # 004967B4
+    cmp    al,0xdf
+    jne    .0x495cb1
+    add    cx,0xd
+    add    esi,0x2
+    jmp    .L4967C5
+.0x495cb1:
     add cl, byte ptr [ebx + eax + __112C884]             # 004967BB
     adc ch, 0                                            # 004967C2
 .L4967C5:
     msvc_cmp cx, di                                      # 004967C5
     jbe .L49679F                                         # 004967C8
     cmp dword ptr [__112C814], 0                         # 004967CA
-    je .L4967E6                                          # 004967D1
+    je .0x495cdf                                          # 004967D1
     mov esi, dword ptr [__112C814]                       # 004967D3
     mov cx, word ptr [__112C818]                         # 004967D9
     mov byte ptr [esi - 1], 0                            # 004967E0
     jmp .L49685A                                         # 004967E4
+.0x495cdf:
+    msvc_jmp .L49685A
 .L4967E6:
     dec esi                                              # 004967E6
     mov byte ptr [esi], 0                                # 004967E7
@@ -3338,6 +3631,7 @@ _sub_49678D:
     popal                                                # 0049685A
     ret                                                  # 0049685B
 
+.align 4, 0xCC
     .global _sub_49685C
 _sub_49685C:
     mov word ptr [_scenarioChunk3+26], ax                # 0049685C

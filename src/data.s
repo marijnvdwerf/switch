@@ -1751,12 +1751,12 @@ __508C78:
 # 0x508C8C
     .global _ui_window_36_widgets_1
 _ui_window_36_widgets_1:
-    widget 0x05, 0, 0, 359, 0, 158, 0xFFFFFFFF, 65535
+    widget 0x05, 0, 0, 359, 0, 152, 0xFFFFFFFF, 65535
     widget 0x09, 0, 343, 355, 2, 14, 0x00000911, 60
-    widget 0x13, 0, 2, 169, 85, 148, 0xFFFFFFFE, 65535
-    widget 0x13, 0, 180, 347, 85, 148, 0xFFFFFFFE, 65535
-    widget 0x09, 0, 2, 181, 83, 157, 0xFFFFFFFF, 65535
-    widget 0x09, 0, 2, 181, 83, 157, 0xFFFFFFFF, 65535
+    widget 0x13, 0, 2, 169, 72, 135, 0xFFFFFFFE, 65535
+    widget 0x13, 0, 180, 347, 72, 135, 0xFFFFFFFE, 65535
+    widget 0x09, 0, 2, 181, 70, 151, 0xFFFFFFFF, 65535
+    widget 0x09, 0, 2, 181, 70, 151, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x508CED
@@ -1765,12 +1765,12 @@ _ui_window_36_widgets_1:
 # 0x508CF0
     .global _ui_window_36_widgets_0
 _ui_window_36_widgets_0:
-    widget 0x03, 0, 0, 359, 0, 116, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 359, 0, 135, 0xFFFFFFFF, 65535
     widget 0x09, 0, 345, 357, 2, 14, 0x00000911, 60
-    widget 0x13, 0, 2, 169, 43, 106, 0xFFFFFFFE, 65535
-    widget 0x13, 0, 180, 347, 43, 106, 0xFFFFFFFE, 65535
-    widget 0x09, 0, 2, 181, 41, 115, 0xFFFFFFFF, 65535
-    widget 0x09, 0, 2, 181, 41, 115, 0xFFFFFFFF, 65535
+    widget 0x13, 0, 2, 169, 55, 118, 0xFFFFFFFE, 65535
+    widget 0x13, 0, 180, 347, 55, 118, 0xFFFFFFFE, 65535
+    widget 0x09, 0, 2, 181, 53, 134, 0xFFFFFFFF, 65535
+    widget 0x09, 0, 2, 181, 53, 134, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x508D51
@@ -1779,7 +1779,7 @@ _ui_window_36_widgets_0:
 # 0x508D54
     .global _ui_window_36_widgets_2
 _ui_window_36_widgets_2:
-    widget 0x03, 0, 0, 110, 0, 25, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 110, 0, 27, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x508D65
@@ -1788,13 +1788,13 @@ _ui_window_36_widgets_2:
 # 0x508D68
     .global _ui_messages___widgets_0
 _ui_messages___widgets_0:
-    widget 0x02, 0, 0, 365, 0, 216, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 364, 1, 13, 0x00000591, 65535
+    widget 0x02, 0, 0, 365, 0, 222, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 364, 1, 16, 0x00000591, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1426
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1427
-    widget 0x1A, 1, 3, 362, 45, 190, 0x00000002, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1426
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1427
+    widget 0x1A, 1, 3, 362, 48, 190, 0x00000002, 65535
     .byte 0x1E
 
 # 0x508DD9
@@ -1803,24 +1803,24 @@ _ui_messages___widgets_0:
 # 0x508DDC
     .global _ui_messages___widgets_1
 _ui_messages___widgets_1:
-    widget 0x02, 0, 0, 365, 0, 138, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 364, 1, 13, 0x00000594, 65535
+    widget 0x02, 0, 0, 365, 0, 159, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 364, 1, 16, 0x00000594, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1426
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1427
-    widget 0x12, 1, 236, 359, 47, 58, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 348, 358, 48, 57, 0x00000060, 65535
-    widget 0x12, 1, 236, 359, 62, 73, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 348, 358, 63, 72, 0x00000060, 65535
-    widget 0x12, 1, 236, 359, 77, 88, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 348, 358, 78, 87, 0x00000060, 65535
-    widget 0x12, 1, 236, 359, 92, 103, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 348, 358, 93, 102, 0x00000060, 65535
-    widget 0x12, 1, 236, 359, 107, 118, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 348, 358, 108, 117, 0x00000060, 65535
-    widget 0x12, 1, 236, 359, 122, 133, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 348, 358, 123, 132, 0x00000060, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1426
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1427
+    widget 0x12, 1, 236, 359, 50, 64, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 348, 358, 51, 63, 0x00000060, 65535
+    widget 0x12, 1, 236, 359, 68, 82, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 348, 358, 69, 81, 0x00000060, 65535
+    widget 0x12, 1, 236, 359, 86, 100, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 348, 358, 87, 99, 0x00000060, 65535
+    widget 0x12, 1, 236, 359, 104, 118, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 348, 358, 105, 117, 0x00000060, 65535
+    widget 0x12, 1, 236, 359, 122, 136, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 348, 358, 123, 135, 0x00000060, 65535
+    widget 0x12, 1, 236, 359, 140, 154, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 348, 358, 141, 153, 0x00000060, 65535
     .byte 0x1E
 
 # 0x508EFD
@@ -1902,7 +1902,7 @@ __508F1B:
 # 0x508F1C
     .global _ui_window_12_widgets_0
 _ui_window_12_widgets_0:
-    widget 0x03, 0, 0, 199, 0, 41, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 199, 0, 53, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x508F2D
@@ -1932,22 +1932,22 @@ _ui_window_46:
 # 0x508F88
     .global _ui_company___widgets_0
 _ui_company___widgets_0:
-    widget 0x02, 0, 0, 269, 0, 181, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 268, 1, 13, 0x000000F6, 65535
+    widget 0x02, 0, 0, 269, 0, 187, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 268, 1, 16, 0x000000F6, 65535
     widget 0x09, 0, 255, 267, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 269, 41, 181, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1113
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1112
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1116
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1114
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1115
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1117
-    widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
-    widget 0x0D, 1, 3, 244, 160, 180, 0xFFFFFFFF, 65535
-    widget 0x13, 1, 3, 98, 44, 163, 0xFFFFFFFE, 65535
+    widget 0x01, 1, 0, 269, 44, 187, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1113
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1112
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1116
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1114
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1115
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1117
+    widget 0x09, 0, 0, 25, 17, 42, 0xFFFFFFFF, 1465
+    widget 0x0D, 1, 3, 244, 160, 186, 0xFFFFFFFF, 65535
+    widget 0x13, 1, 3, 98, 47, 166, 0xFFFFFFFE, 65535
     widget 0x09, 1, 0, 23, 0, 23, 0xFFFFFFFF, 355
-    widget 0x09, 1, 178, 243, 57, 122, 0xFFFFFFFF, 65535
-    widget 0x09, 1, 154, 265, 124, 145, 0xFFFFFFFF, 1454
+    widget 0x09, 1, 178, 243, 60, 125, 0xFFFFFFFF, 65535
+    widget 0x09, 1, 154, 265, 127, 154, 0xFFFFFFFF, 1454
     .byte 0x1E
 
 # 0x509089
@@ -1956,19 +1956,19 @@ _ui_company___widgets_0:
 # 0x50908C
     .global _ui_company___widgets_1
 _ui_company___widgets_1:
-    widget 0x02, 0, 0, 339, 0, 193, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 338, 1, 13, 0x000000F7, 65535
+    widget 0x02, 0, 0, 339, 0, 235, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 338, 1, 16, 0x000000F7, 65535
     widget 0x09, 0, 325, 337, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 269, 41, 181, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1113
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1112
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1116
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1114
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1115
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1117
-    widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
-    widget 0x13, 1, 219, 314, 54, 173, 0xFFFFFFFE, 65535
-    widget 0x09, 1, 315, 338, 92, 115, 0xFFFFFFFF, 1453
+    widget 0x01, 1, 0, 269, 44, 187, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1113
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1112
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1116
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1114
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1115
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1117
+    widget 0x09, 0, 0, 25, 17, 42, 0xFFFFFFFF, 1465
+    widget 0x13, 1, 219, 314, 60, 179, 0xFFFFFFFE, 65535
+    widget 0x09, 1, 315, 338, 95, 118, 0xFFFFFFFF, 1453
     widget 0x09, 1, 0, 23, 0, 23, 0xFFFFFFFF, 355
     .byte 0x1E
 
@@ -1978,21 +1978,21 @@ _ui_company___widgets_1:
 # 0x509170
     .global _ui_company___widgets_3
 _ui_company___widgets_3:
-    widget 0x02, 0, 0, 635, 0, 318, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 634, 1, 13, 0x000000F8, 65535
+    widget 0x02, 0, 0, 635, 0, 387, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 634, 1, 16, 0x000000F8, 65535
     widget 0x09, 0, 621, 633, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 269, 41, 181, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1113
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1112
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1116
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1114
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1115
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1117
-    widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
-    widget 0x1A, 1, 133, 631, 45, 259, 0x00000001, 65535
-    widget 0x11, 1, 87, 186, 264, 275, 0x00000261, 65535
-    widget 0x0B, 1, 175, 185, 265, 269, 0x000001E6, 65535
-    widget 0x0B, 1, 175, 185, 270, 274, 0x000001E7, 65535
+    widget 0x01, 1, 0, 269, 44, 187, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1113
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1112
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1116
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1114
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1115
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1117
+    widget 0x09, 0, 0, 25, 17, 42, 0xFFFFFFFF, 1465
+    widget 0x1A, 1, 133, 631, 48, 319, 0x00000001, 65535
+    widget 0x11, 1, 87, 186, 324, 338, 0x00000261, 65535
+    widget 0x0B, 1, 175, 185, 325, 330, 0x000001E6, 65535
+    widget 0x0B, 1, 175, 185, 331, 336, 0x000001E7, 65535
     .byte 0x1E
 
 # 0x509261
@@ -2001,17 +2001,17 @@ _ui_company___widgets_3:
 # 0x509264
     .global _ui_company___widgets_4
 _ui_company___widgets_4:
-    widget 0x02, 0, 0, 239, 0, 381, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 238, 1, 13, 0x000000F9, 65535
+    widget 0x02, 0, 0, 239, 0, 483, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 238, 1, 16, 0x000000F9, 65535
     widget 0x09, 0, 225, 237, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 269, 41, 181, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1113
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1112
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1116
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1114
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1115
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1117
-    widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
+    widget 0x01, 1, 0, 269, 44, 187, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1113
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1112
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1116
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1114
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1115
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1117
+    widget 0x09, 0, 0, 25, 17, 42, 0xFFFFFFFF, 1465
     .byte 0x1E
 
 # 0x509315
@@ -2020,49 +2020,49 @@ _ui_company___widgets_4:
 # 0x509318
     .global _ui_company___widgets_2
 _ui_company___widgets_2:
-    widget 0x02, 0, 0, 264, 0, 251, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 263, 1, 13, 0x000000FA, 65535
+    widget 0x02, 0, 0, 264, 0, 290, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 263, 1, 16, 0x000000FA, 65535
     widget 0x09, 0, 250, 262, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 269, 41, 181, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1113
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1112
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1116
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1114
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1115
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1117
-    widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
-    widget 0x1B, 1, 15, 218, 81, 92, 0x0000044E, 1121
-    widget 0x1B, 1, 15, 218, 98, 109, 0x0000044F, 1121
-    widget 0x1B, 1, 15, 218, 115, 126, 0x00000450, 1121
-    widget 0x1B, 1, 15, 218, 132, 143, 0x00000451, 1121
-    widget 0x1B, 1, 15, 218, 149, 160, 0x00000452, 1121
-    widget 0x1B, 1, 15, 218, 166, 177, 0x00000453, 1121
-    widget 0x1B, 1, 15, 218, 183, 194, 0x00000454, 1121
-    widget 0x1B, 1, 15, 218, 200, 211, 0x00000455, 1121
-    widget 0x1B, 1, 15, 218, 217, 228, 0x00000456, 1121
-    widget 0x1B, 1, 15, 218, 234, 245, 0x00000457, 1121
-    widget 0x0A, 1, 221, 236, 48, 63, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 78, 93, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 95, 110, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 112, 127, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 129, 144, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 146, 161, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 163, 178, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 180, 195, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 197, 212, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 214, 229, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 221, 236, 231, 246, 0xFFFFFFFF, 1119
-    widget 0x0A, 1, 239, 254, 48, 63, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 78, 93, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 95, 110, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 112, 127, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 129, 144, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 146, 161, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 163, 178, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 180, 195, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 197, 212, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 214, 229, 0xFFFFFFFF, 1120
-    widget 0x0A, 1, 239, 254, 231, 246, 0xFFFFFFFF, 1120
+    widget 0x01, 1, 0, 269, 44, 187, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1113
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1112
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1116
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1114
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1115
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1117
+    widget 0x09, 0, 0, 25, 17, 42, 0xFFFFFFFF, 1465
+    widget 0x1B, 1, 15, 218, 88, 102, 0x0000044E, 1121
+    widget 0x1B, 1, 15, 218, 105, 119, 0x0000044F, 1121
+    widget 0x1B, 1, 15, 218, 122, 136, 0x00000450, 1121
+    widget 0x1B, 1, 15, 218, 139, 153, 0x00000451, 1121
+    widget 0x1B, 1, 15, 218, 156, 170, 0x00000452, 1121
+    widget 0x1B, 1, 15, 218, 173, 187, 0x00000453, 1121
+    widget 0x1B, 1, 15, 218, 190, 204, 0x00000454, 1121
+    widget 0x1B, 1, 15, 218, 207, 221, 0x00000455, 1121
+    widget 0x1B, 1, 15, 218, 224, 238, 0x00000456, 1121
+    widget 0x1B, 1, 15, 218, 241, 255, 0x00000457, 1121
+    widget 0x0A, 1, 221, 236, 51, 66, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 87, 102, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 104, 119, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 121, 136, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 138, 153, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 155, 170, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 172, 187, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 189, 204, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 206, 221, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 223, 238, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 221, 236, 240, 255, 0xFFFFFFFF, 1119
+    widget 0x0A, 1, 239, 254, 51, 66, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 87, 102, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 104, 119, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 121, 136, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 138, 153, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 155, 170, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 172, 187, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 189, 204, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 206, 221, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 223, 238, 0xFFFFFFFF, 1120
+    widget 0x0A, 1, 239, 254, 240, 255, 0xFFFFFFFF, 1120
     .byte 0x1E
 
 # 0x5095C9
@@ -2071,17 +2071,17 @@ _ui_company___widgets_2:
 # 0x5095CC
     .global _ui_company___widgets_5
 _ui_company___widgets_5:
-    widget 0x02, 0, 0, 319, 0, 181, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 318, 1, 13, 0x000000FB, 65535
+    widget 0x02, 0, 0, 319, 0, 223, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 318, 1, 16, 0x000000FB, 65535
     widget 0x09, 0, 305, 317, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 269, 41, 181, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1113
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1112
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1116
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1114
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1115
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1117
-    widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
+    widget 0x01, 1, 0, 269, 44, 187, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1113
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1112
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1116
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1114
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1115
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1117
+    widget 0x09, 0, 0, 25, 17, 42, 0xFFFFFFFF, 1465
     .byte 0x1E
 
 # 0x50967D
@@ -2090,12 +2090,12 @@ _ui_company___widgets_5:
 # 0x509680
     .global _ui_company_face_selection
 _ui_company_face_selection:
-    widget 0x02, 0, 0, 399, 0, 271, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 398, 1, 13, 0x0000060E, 65535
+    widget 0x02, 0, 0, 399, 0, 274, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 398, 1, 16, 0x0000060E, 65535
     widget 0x09, 0, 385, 397, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 399, 15, 271, 0xFFFFFFFF, 65535
-    widget 0x1A, 1, 4, 191, 19, 266, 0x00000002, 1551
-    widget 0x05, 1, 265, 330, 23, 88, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 399, 18, 274, 0xFFFFFFFF, 65535
+    widget 0x1A, 1, 4, 191, 22, 269, 0x00000002, 1551
+    widget 0x05, 1, 265, 330, 26, 91, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x5096E1
@@ -2104,22 +2104,22 @@ _ui_company_face_selection:
 # 0x5096E4
     .global _ui_company_list___widgets_0
 _ui_company_list___widgets_0:
-    widget 0x02, 0, 0, 639, 0, 271, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 638, 1, 13, 0x000006D1, 65535
+    widget 0x02, 0, 0, 639, 0, 277, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 638, 1, 16, 0x000006D1, 65535
     widget 0x09, 0, 625, 637, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 639, 41, 271, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1750
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1751
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1752
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1984
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1753
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1754
-    widget 0x08, 1, 189, 219, 15, 41, 0x20000953, 1995
-    widget 0x0E, 1, 4, 178, 43, 54, 0xFFFFFFFF, 1755
-    widget 0x0E, 1, 179, 388, 43, 54, 0xFFFFFFFF, 1756
-    widget 0x0E, 1, 389, 533, 43, 54, 0xFFFFFFFF, 1757
-    widget 0x0E, 1, 534, 633, 43, 54, 0xFFFFFFFF, 1758
-    widget 0x1A, 1, 3, 636, 56, 256, 0x00000002, 65535
+    widget 0x01, 1, 0, 639, 44, 277, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1750
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1751
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1752
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1984
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1753
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1754
+    widget 0x08, 1, 189, 219, 18, 44, 0x20000953, 1995
+    widget 0x0E, 1, 4, 178, 46, 60, 0xFFFFFFFF, 1755
+    widget 0x0E, 1, 179, 388, 46, 60, 0xFFFFFFFF, 1756
+    widget 0x0E, 1, 389, 533, 46, 60, 0xFFFFFFFF, 1757
+    widget 0x0E, 1, 534, 633, 46, 60, 0xFFFFFFFF, 1758
+    widget 0x1A, 1, 3, 636, 62, 259, 0x00000002, 65535
     .byte 0x1E
 
 # 0x5097E5
@@ -2128,17 +2128,17 @@ _ui_company_list___widgets_0:
 # 0x5097E8
     .global _ui_company_list___widgets_1
 _ui_company_list___widgets_1:
-    widget 0x02, 0, 0, 634, 0, 321, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 633, 1, 13, 0x000006D2, 65535
+    widget 0x02, 0, 0, 634, 0, 327, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 633, 1, 16, 0x000006D2, 65535
     widget 0x09, 0, 620, 632, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 639, 41, 271, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1750
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1751
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1752
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1984
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1753
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1754
-    widget 0x08, 1, 189, 219, 15, 41, 0x20000953, 1995
+    widget 0x01, 1, 0, 639, 44, 277, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1750
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1751
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1752
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1984
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1753
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1754
+    widget 0x08, 1, 189, 219, 18, 44, 0x20000953, 1995
     .byte 0x1E
 
 # 0x509899
@@ -2147,17 +2147,17 @@ _ui_company_list___widgets_1:
 # 0x50989C
     .global _ui_company_list___widgets_2
 _ui_company_list___widgets_2:
-    widget 0x02, 0, 0, 634, 0, 321, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 633, 1, 13, 0x000006D3, 65535
+    widget 0x02, 0, 0, 634, 0, 327, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 633, 1, 16, 0x000006D3, 65535
     widget 0x09, 0, 620, 632, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 639, 41, 271, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1750
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1751
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1752
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1984
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1753
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1754
-    widget 0x08, 1, 189, 219, 15, 41, 0x20000953, 1995
+    widget 0x01, 1, 0, 639, 44, 277, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1750
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1751
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1752
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1984
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1753
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1754
+    widget 0x08, 1, 189, 219, 18, 44, 0x20000953, 1995
     .byte 0x1E
 
 # 0x50994D
@@ -2166,17 +2166,17 @@ _ui_company_list___widgets_2:
 # 0x509950
     .global _ui_company_list___widgets_3
 _ui_company_list___widgets_3:
-    widget 0x02, 0, 0, 634, 0, 321, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 633, 1, 13, 0x000007BF, 65535
+    widget 0x02, 0, 0, 634, 0, 327, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 633, 1, 16, 0x000007BF, 65535
     widget 0x09, 0, 620, 632, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 639, 41, 271, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1750
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1751
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1752
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1984
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1753
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1754
-    widget 0x08, 1, 189, 219, 15, 41, 0x20000953, 1995
+    widget 0x01, 1, 0, 639, 44, 277, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1750
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1751
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1752
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1984
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1753
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1754
+    widget 0x08, 1, 189, 219, 18, 44, 0x20000953, 1995
     .byte 0x1E
 
 # 0x509A01
@@ -2185,17 +2185,17 @@ _ui_company_list___widgets_3:
 # 0x509A04
     .global _ui_company_list___widgets_4
 _ui_company_list___widgets_4:
-    widget 0x02, 0, 0, 684, 0, 321, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 683, 1, 13, 0x000006D4, 65535
+    widget 0x02, 0, 0, 684, 0, 327, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 683, 1, 16, 0x000006D4, 65535
     widget 0x09, 0, 670, 682, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 639, 41, 271, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1750
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1751
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1752
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1984
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1753
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1754
-    widget 0x08, 1, 189, 219, 15, 41, 0x20000953, 1995
+    widget 0x01, 1, 0, 639, 44, 277, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1750
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1751
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1752
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1984
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1753
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1754
+    widget 0x08, 1, 189, 219, 18, 44, 0x20000953, 1995
     .byte 0x1E
 
 # 0x509AB5
@@ -2204,17 +2204,17 @@ _ui_company_list___widgets_4:
 # 0x509AB8
     .global _ui_company_list___widgets_5
 _ui_company_list___widgets_5:
-    widget 0x02, 0, 0, 494, 0, 341, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 493, 1, 13, 0x000006D5, 65535
+    widget 0x02, 0, 0, 494, 0, 353, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 493, 1, 16, 0x000006D5, 65535
     widget 0x09, 0, 480, 492, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 639, 41, 271, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1750
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1751
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1752
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1984
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1753
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1754
-    widget 0x08, 1, 189, 219, 15, 41, 0x20000953, 1995
+    widget 0x01, 1, 0, 639, 44, 277, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1750
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1751
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1752
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1984
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1753
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1754
+    widget 0x08, 1, 189, 219, 18, 44, 0x20000953, 1995
     .byte 0x1E
 
 # 0x509B69
@@ -2223,17 +2223,17 @@ _ui_company_list___widgets_5:
 # 0x509B6C
     .global _ui_company_list___widgets_6
 _ui_company_list___widgets_6:
-    widget 0x02, 0, 0, 494, 0, 168, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 493, 1, 13, 0x000007CC, 65535
+    widget 0x02, 0, 0, 494, 0, 180, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 493, 1, 16, 0x000007CC, 65535
     widget 0x09, 0, 480, 492, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 639, 41, 271, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1750
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1751
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1752
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1984
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1753
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1754
-    widget 0x08, 1, 189, 219, 15, 41, 0x20000953, 1995
+    widget 0x01, 1, 0, 639, 44, 277, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1750
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1751
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1752
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1984
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1753
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1754
+    widget 0x08, 1, 189, 219, 18, 44, 0x20000953, 1995
     .byte 0x1E
 
 # 0x509C1D
@@ -2272,11 +2272,11 @@ _ui_toolbar_top_widgets:
 # 0x509D08
     .global _ui_toolbar_player_info_widgets
 _ui_toolbar_player_info_widgets:
-    widget 0x03, 0, 0, 139, 0, 28, 0xFFFFFFFF, 65535
-    widget 0x03, 0, 2, 137, 2, 26, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 139, 0, 34, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 2, 137, 2, 32, 0xFFFFFFFF, 65535
     widget 0x09, 0, 1, 26, 1, 26, 0xFFFFFFFF, 65535
-    widget 0x09, 0, 27, 137, 2, 13, 0xFFFFFFFF, 698
-    widget 0x09, 0, 27, 137, 14, 25, 0xFFFFFFFF, 697
+    widget 0x09, 0, 27, 137, 2, 16, 0xFFFFFFFF, 698
+    widget 0x09, 0, 27, 137, 17, 31, 0xFFFFFFFF, 697
     .byte 0x1E
 
 # 0x509D59
@@ -2285,14 +2285,14 @@ _ui_toolbar_player_info_widgets:
 # 0x509D5C
     .global _ui_toolbar_time_widgets
 _ui_toolbar_time_widgets:
-    widget 0x03, 0, 0, 139, 0, 28, 0xFFFFFFFF, 65535
-    widget 0x03, 0, 2, 137, 2, 26, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 139, 0, 34, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 2, 137, 2, 32, 0xFFFFFFFF, 65535
     widget 0x09, 0, 113, 138, 1, 26, 0xFFFFFFFF, 65535
-    widget 0x09, 0, 2, 112, 2, 13, 0xFFFFFFFF, 647
-    widget 0x09, 0, 18, 37, 15, 26, 0x2000099C, 1817
-    widget 0x09, 0, 38, 57, 15, 26, 0x2000099E, 1818
-    widget 0x09, 0, 58, 77, 15, 26, 0x200009A0, 1819
-    widget 0x09, 0, 78, 97, 15, 26, 0x200009A2, 1820
+    widget 0x09, 0, 2, 112, 2, 16, 0xFFFFFFFF, 647
+    widget 0x09, 0, 18, 37, 21, 32, 0x2000099C, 1817
+    widget 0x09, 0, 38, 57, 21, 32, 0x2000099E, 1818
+    widget 0x09, 0, 58, 77, 21, 32, 0x200009A0, 1819
+    widget 0x09, 0, 78, 97, 21, 32, 0x200009A2, 1820
     .byte 0x1E
 
 # 0x509DDD
@@ -2301,7 +2301,7 @@ _ui_toolbar_time_widgets:
 # 0x509DE0
     .global _ui_tutorial_widgets
 _ui_tutorial_widgets:
-    widget 0x03, 0, 0, 139, 0, 28, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 139, 0, 34, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x509DF1
@@ -2315,7 +2315,7 @@ _ui_title_menu_widgets:
     widget 0x09, 1, 148, 221, 0, 73, 0xFFFFFFFF, 615
     widget 0x09, 1, 222, 295, 0, 73, 0xFFFFFFFF, 1740
     widget 0x09, 1, 265, 295, 47, 73, 0xFFFFFFFF, 1933
-    widget 0x09, 1, 0, 295, 74, 91, 0xFFFFFFFF, 1567
+    widget 0x09, 1, 0, 295, 74, 94, 0xFFFFFFFF, 1567
     .byte 0x1E
 
 # 0x509E55
@@ -2324,7 +2324,7 @@ _ui_title_menu_widgets:
 # 0x509E58
     .global _ui_title_exit_widgets
 _ui_title_exit_widgets:
-    widget 0x09, 1, 0, 39, 0, 27, 0xFFFFFFFF, 616
+    widget 0x09, 1, 0, 39, 0, 33, 0xFFFFFFFF, 616
     .byte 0x1E
 
 # 0x509E69
@@ -2342,12 +2342,12 @@ _ui_title_logo_widgets:
 # 0x509E80
     .global _ui_about_widgets
 _ui_about_widgets:
-    widget 0x02, 0, 0, 399, 0, 327, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 398, 1, 13, 0x00000044, 65535
+    widget 0x02, 0, 0, 399, 0, 375, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 398, 1, 16, 0x00000044, 65535
     widget 0x09, 0, 385, 397, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 399, 15, 327, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 100, 299, 228, 239, 0x000003F9, 65535
-    widget 0x0B, 1, 157, 356, 305, 316, 0x00000789, 65535
+    widget 0x01, 1, 0, 399, 18, 375, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 100, 299, 273, 287, 0x000003F9, 65535
+    widget 0x0B, 1, 157, 356, 353, 367, 0x00000789, 65535
     .byte 0x1E
 
 # 0x509EE1
@@ -2356,11 +2356,11 @@ _ui_about_widgets:
 # 0x509EE4
     .global _ui_about_atari_widgets
 _ui_about_atari_widgets:
-    widget 0x02, 0, 0, 599, 0, 311, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 598, 1, 13, 0x0000078B, 65535
+    widget 0x02, 0, 0, 599, 0, 314, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 598, 1, 16, 0x0000078B, 65535
     widget 0x09, 0, 585, 597, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 599, 15, 311, 0xFFFFFFFF, 65535
-    widget 0x1A, 1, 4, 595, 18, 307, 0x00000002, 65535
+    widget 0x01, 1, 0, 599, 18, 314, 0xFFFFFFFF, 65535
+    widget 0x1A, 1, 4, 595, 21, 310, 0x00000002, 65535
     .byte 0x1E
 
 # 0x509F35
@@ -2369,11 +2369,11 @@ _ui_about_atari_widgets:
 # 0x509F38
     .global _ui_about_music_widgets
 _ui_about_music_widgets:
-    widget 0x02, 0, 0, 499, 0, 311, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 498, 1, 13, 0x000003FA, 65535
+    widget 0x02, 0, 0, 499, 0, 314, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 498, 1, 16, 0x000003FA, 65535
     widget 0x09, 0, 485, 497, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 499, 15, 311, 0xFFFFFFFF, 65535
-    widget 0x1A, 1, 4, 495, 18, 307, 0x00000002, 65535
+    widget 0x01, 1, 0, 499, 18, 314, 0xFFFFFFFF, 65535
+    widget 0x1A, 1, 4, 495, 21, 310, 0x00000002, 65535
     .byte 0x1E
 
 # 0x509F89
@@ -2382,13 +2382,13 @@ _ui_about_music_widgets:
 # 0x509F8C
     .global _ui_prompt_save_game_widgets
 _ui_prompt_save_game_widgets:
-    widget 0x01, 0, 0, 259, 0, 47, 0xFFFFFFFF, 65535
-    widget 0x16, 0, 1, 258, 1, 13, 0x00000000, 65535
-    widget 0x0B, 0, 247, 257, 2, 12, 0x00000038, 60
-    widget 0x0D, 0, 2, 257, 17, 28, 0x00000000, 65535
-    widget 0x0B, 0, 8, 85, 33, 44, 0x000000B8, 65535
-    widget 0x0B, 0, 91, 168, 33, 44, 0x000000B9, 65535
-    widget 0x0B, 0, 174, 251, 33, 44, 0x000000BA, 65535
+    widget 0x01, 0, 0, 259, 0, 56, 0xFFFFFFFF, 65535
+    widget 0x16, 0, 1, 258, 1, 16, 0x00000000, 65535
+    widget 0x0B, 0, 247, 257, 2, 15, 0x00000038, 60
+    widget 0x0D, 0, 2, 257, 20, 34, 0x00000000, 65535
+    widget 0x0B, 0, 8, 85, 39, 53, 0x000000B8, 65535
+    widget 0x0B, 0, 91, 168, 39, 53, 0x000000B9, 65535
+    widget 0x0B, 0, 174, 251, 39, 53, 0x000000BA, 65535
     .byte 0x1E
 
 # 0x509FFD
@@ -2518,10 +2518,10 @@ _ui_toolbar_top_alt_widgets:
 # 0x50A12C
     .global _ui_window_4_widgets
 _ui_window_4_widgets:
-    widget 0x03, 0, 0, 199, 0, 33, 0xFFFFFFFF, 65535
-    widget 0x09, 0, 2, 197, 2, 31, 0xFFFFFFFF, 65535
-    widget 0x03, 0, 440, 639, 0, 33, 0xFFFFFFFF, 65535
-    widget 0x09, 0, 442, 637, 2, 31, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 199, 0, 42, 0xFFFFFFFF, 65535
+    widget 0x09, 0, 2, 197, 2, 40, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 440, 639, 0, 42, 0xFFFFFFFF, 65535
+    widget 0x09, 0, 442, 637, 2, 40, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x50A16D
@@ -2530,216 +2530,209 @@ _ui_window_4_widgets:
 # 0x50A170
     .global _ui_landscape_generation___widgets_0
 _ui_landscape_generation___widgets_0:
-    widget 0x02, 0, 0, 365, 0, 216, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x00000631, 65535
+    widget 0x02, 0, 0, 365, 0, 222, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x00000631, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1590
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1591
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1592
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1593
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1594
-    widget 0x11, 1, 256, 355, 52, 63, 0x00000659, 65535
-    widget 0x0B, 1, 344, 354, 53, 57, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 58, 62, 0x000001E7, 65535
-    widget 0x1B, 1, 10, 355, 68, 79, 0x0000065B, 1628
-    widget 0x0B, 1, 196, 355, 200, 211, 0x0000065D, 1630
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1590
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1591
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1592
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1593
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1594
+    widget 0x11, 1, 256, 355, 55, 69, 0x00000659, 65535
+    widget 0x0B, 1, 344, 354, 56, 61, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 62, 67, 0x000001E7, 65535
+    widget 0x1B, 1, 10, 355, 74, 88, 0x0000065B, 1628
+    widget 0x0B, 1, 196, 355, 203, 217, 0x0000065D, 1630
     .byte 0x1E
 
-# 0x50A251
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50A254
     .global _ui_landscape_generation___widgets_1
 _ui_landscape_generation___widgets_1:
-    widget 0x02, 0, 0, 365, 0, 231, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x00000632, 65535
+    widget 0x02, 0, 0, 365, 0, 249, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x00000632, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1590
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1591
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1592
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1593
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1594
-    widget 0x11, 1, 256, 355, 52, 63, 0x00000665, 65535
-    widget 0x0B, 1, 344, 354, 53, 57, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 58, 62, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 67, 78, 0x00000677, 65535
-    widget 0x0B, 1, 344, 354, 68, 72, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 73, 77, 0x000001E7, 65535
-    widget 0x12, 1, 176, 355, 82, 93, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 83, 92, 0x00000060, 65535
-    widget 0x11, 1, 256, 355, 97, 108, 0x0000067F, 65535
-    widget 0x0B, 1, 344, 354, 98, 102, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 103, 107, 0x000001E7, 65535
-    widget 0x1B, 1, 10, 355, 113, 124, 0x000006CB, 65535
-    widget 0x1A, 1, 4, 361, 127, 226, 0x00000002, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1590
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1591
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1592
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1593
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1594
+    widget 0x11, 1, 256, 355, 55, 69, 0x00000665, 65535
+    widget 0x0B, 1, 344, 354, 56, 61, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 62, 67, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 73, 87, 0x00000677, 65535
+    widget 0x0B, 1, 344, 354, 74, 79, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 80, 85, 0x000001E7, 65535
+    widget 0x12, 1, 176, 355, 91, 105, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 92, 104, 0x00000060, 65535
+    widget 0x11, 1, 256, 355, 109, 123, 0x0000067F, 65535
+    widget 0x0B, 1, 344, 354, 110, 115, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 116, 121, 0x000001E7, 65535
+    widget 0x1B, 1, 10, 355, 128, 142, 0x000006CB, 65535
+    widget 0x1A, 1, 4, 361, 145, 244, 0x00000002, 65535
     .byte 0x1E
 
-# 0x50A3B5
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50A3B8
     .global _ui_landscape_generation___widgets_2
 _ui_landscape_generation___widgets_2:
-    widget 0x02, 0, 0, 365, 0, 216, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x00000633, 65535
+    widget 0x02, 0, 0, 365, 0, 222, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x00000633, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1590
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1591
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1592
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1593
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1594
-    widget 0x11, 1, 256, 355, 52, 63, 0x00000667, 65535
-    widget 0x0B, 1, 344, 354, 53, 57, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 58, 62, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 67, 78, 0x00000669, 65535
-    widget 0x0B, 1, 344, 354, 68, 72, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 73, 77, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 82, 93, 0x0000066B, 65535
-    widget 0x0B, 1, 344, 354, 83, 87, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 88, 92, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 97, 108, 0x0000066D, 65535
-    widget 0x0B, 1, 344, 354, 98, 102, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 103, 107, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 112, 123, 0x0000066F, 65535
-    widget 0x0B, 1, 344, 354, 113, 117, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 118, 122, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 127, 138, 0x00000671, 65535
-    widget 0x0B, 1, 344, 354, 128, 132, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 133, 137, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 142, 153, 0x00000673, 65535
-    widget 0x0B, 1, 344, 354, 143, 147, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 148, 152, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 157, 168, 0x00000675, 65535
-    widget 0x0B, 1, 344, 354, 158, 162, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 163, 167, 0x000001E7, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1590
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1591
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1592
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1593
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1594
+    widget 0x11, 1, 256, 355, 55, 69, 0x00000667, 65535
+    widget 0x0B, 1, 344, 354, 56, 61, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 62, 67, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 73, 87, 0x00000669, 65535
+    widget 0x0B, 1, 344, 354, 74, 79, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 80, 85, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 91, 105, 0x0000066B, 65535
+    widget 0x0B, 1, 344, 354, 92, 97, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 98, 103, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 109, 123, 0x0000066D, 65535
+    widget 0x0B, 1, 344, 354, 110, 115, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 116, 121, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 127, 141, 0x0000066F, 65535
+    widget 0x0B, 1, 344, 354, 128, 133, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 134, 139, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 145, 159, 0x00000671, 65535
+    widget 0x0B, 1, 344, 354, 146, 151, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 152, 157, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 163, 177, 0x00000673, 65535
+    widget 0x0B, 1, 344, 354, 164, 169, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 170, 175, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 181, 195, 0x00000675, 65535
+    widget 0x0B, 1, 344, 354, 182, 187, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 188, 193, 0x000001E7, 65535
     .byte 0x1E
 
-# 0x50A5C9
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50A5CC
     .global _ui_landscape_generation___widgets_3
 _ui_landscape_generation___widgets_3:
-    widget 0x02, 0, 0, 365, 0, 216, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x00000634, 65535
+    widget 0x02, 0, 0, 365, 0, 222, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x00000634, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1590
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1591
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1592
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1593
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1594
-    widget 0x11, 1, 256, 355, 52, 63, 0x00000681, 65535
-    widget 0x0B, 1, 344, 354, 53, 57, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 58, 62, 0x000001E7, 65535
-    widget 0x12, 1, 176, 355, 67, 78, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 68, 77, 0x00000060, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1590
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1591
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1592
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1593
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1594
+    widget 0x11, 1, 256, 355, 55, 69, 0x00000681, 65535
+    widget 0x0B, 1, 344, 354, 56, 61, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 62, 67, 0x000001E7, 65535
+    widget 0x12, 1, 176, 355, 73, 87, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 74, 86, 0x00000060, 65535
     .byte 0x1E
 
-# 0x50A6AD
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50A6B0
     .global _ui_landscape_generation___widgets_4
 _ui_landscape_generation___widgets_4:
-    widget 0x02, 0, 0, 365, 0, 216, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x00000635, 65535
+    widget 0x02, 0, 0, 365, 0, 222, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x00000635, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1590
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1591
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1592
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1593
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1594
-    widget 0x12, 1, 176, 355, 52, 63, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 53, 62, 0x00000060, 65535
-    widget 0x1B, 1, 10, 355, 68, 79, 0x0000074F, 65535
-    widget 0x1B, 1, 10, 355, 83, 94, 0x00000750, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1590
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1591
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1592
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1593
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1594
+    widget 0x12, 1, 176, 355, 55, 69, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 56, 68, 0x00000060, 65535
+    widget 0x1B, 1, 10, 355, 74, 88, 0x0000074F, 65535
+    widget 0x1B, 1, 10, 355, 92, 106, 0x00000750, 65535
     .byte 0x1E
 
-# 0x50A781
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50A784
     .global _ui_scenario_options___widgets_3
 _ui_scenario_options___widgets_3:
-    widget 0x02, 0, 0, 365, 0, 216, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x0000068E, 65535
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1675
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1676
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1677
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1674
-    widget 0x0B, 1, 281, 355, 52, 63, 0x000006A4, 65535
-    widget 0x12, 1, 196, 355, 67, 78, 0x00000000, 65535
-    widget 0x0B, 1, 344, 354, 68, 77, 0x00000060, 65535
-    widget 0x0B, 1, 281, 355, 82, 93, 0x000006A4, 65535
+    widget 0x02, 0, 0, 365, 0, 222, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x0000068E, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1675
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1676
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1677
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1674
+    widget 0x0B, 1, 281, 355, 55, 69, 0x000006A4, 65535
+    widget 0x12, 1, 196, 355, 73, 87, 0x00000000, 65535
+    widget 0x0B, 1, 344, 354, 74, 86, 0x00000060, 65535
+    widget 0x0B, 1, 281, 355, 91, 105, 0x000006A4, 65535
     .byte 0x1E
 
-# 0x50A835
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50A838
     .global _ui_scenario_options___widgets_1
 _ui_scenario_options___widgets_1:
-    widget 0x02, 0, 0, 365, 0, 326, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x00000690, 65535
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1675
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1676
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1677
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1674
-    widget 0x11, 1, 256, 355, 52, 63, 0x00000693, 65535
-    widget 0x0B, 1, 344, 354, 53, 57, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 58, 62, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 67, 78, 0x00000695, 65535
-    widget 0x0B, 1, 344, 354, 68, 72, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 73, 77, 0x000001E7, 65535
-    widget 0x12, 1, 246, 355, 102, 113, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 103, 112, 0x00000060, 65535
-    widget 0x12, 1, 246, 355, 117, 128, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 118, 127, 0x00000060, 65535
-    widget 0x12, 1, 246, 355, 132, 143, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 133, 142, 0x00000060, 65535
-    widget 0x1B, 1, 15, 355, 160, 171, 0x000005EE, 65535
-    widget 0x1B, 1, 15, 355, 172, 183, 0x000005EF, 65535
-    widget 0x1B, 1, 15, 355, 184, 195, 0x000005F0, 65535
-    widget 0x1B, 1, 15, 355, 196, 207, 0x000005F1, 65535
-    widget 0x1B, 1, 15, 355, 208, 219, 0x000005F2, 65535
-    widget 0x1B, 1, 15, 355, 220, 231, 0x000005F3, 65535
-    widget 0x1B, 1, 15, 355, 247, 258, 0x000005EE, 65535
-    widget 0x1B, 1, 15, 355, 259, 270, 0x000005EF, 65535
-    widget 0x1B, 1, 15, 355, 271, 282, 0x000005F0, 65535
-    widget 0x1B, 1, 15, 355, 283, 294, 0x000005F1, 65535
-    widget 0x1B, 1, 15, 355, 295, 306, 0x000005F2, 65535
-    widget 0x1B, 1, 15, 355, 307, 318, 0x000005F3, 65535
+    widget 0x02, 0, 0, 365, 0, 389, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x00000690, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1675
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1676
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1677
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1674
+    widget 0x11, 1, 256, 355, 55, 69, 0x00000693, 65535
+    widget 0x0B, 1, 344, 354, 56, 61, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 62, 67, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 73, 87, 0x00000695, 65535
+    widget 0x0B, 1, 344, 354, 74, 79, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 80, 85, 0x000001E7, 65535
+    widget 0x12, 1, 246, 355, 114, 128, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 115, 127, 0x00000060, 65535
+    widget 0x12, 1, 246, 355, 132, 146, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 133, 145, 0x00000060, 65535
+    widget 0x12, 1, 246, 355, 150, 164, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 151, 163, 0x00000060, 65535
+    widget 0x1B, 1, 15, 355, 184, 198, 0x000005EE, 65535
+    widget 0x1B, 1, 15, 355, 199, 213, 0x000005EF, 65535
+    widget 0x1B, 1, 15, 355, 214, 228, 0x000005F0, 65535
+    widget 0x1B, 1, 15, 355, 229, 243, 0x000005F1, 65535
+    widget 0x1B, 1, 15, 355, 244, 258, 0x000005F2, 65535
+    widget 0x1B, 1, 15, 355, 259, 273, 0x000005F3, 65535
+    widget 0x1B, 1, 15, 355, 292, 306, 0x000005EE, 65535
+    widget 0x1B, 1, 15, 355, 307, 321, 0x000005EF, 65535
+    widget 0x1B, 1, 15, 355, 322, 336, 0x000005F0, 65535
+    widget 0x1B, 1, 15, 355, 337, 351, 0x000005F1, 65535
+    widget 0x1B, 1, 15, 355, 352, 366, 0x000005F2, 65535
+    widget 0x1B, 1, 15, 355, 367, 381, 0x000005F3, 65535
     .byte 0x1E
 
-# 0x50AA29
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50AA2C
     .global _ui_scenario_options___widgets_2
 _ui_scenario_options___widgets_2:
-    widget 0x02, 0, 0, 365, 0, 216, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x00000691, 65535
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1675
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1676
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1677
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1674
-    widget 0x11, 1, 256, 355, 52, 63, 0x0000069F, 65535
-    widget 0x0B, 1, 344, 354, 53, 57, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 58, 62, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 67, 78, 0x000006A1, 65535
-    widget 0x0B, 1, 344, 354, 68, 72, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 73, 77, 0x000001E7, 65535
-    widget 0x11, 1, 256, 355, 82, 93, 0x000006A3, 65535
-    widget 0x0B, 1, 344, 354, 83, 87, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 88, 92, 0x000001E7, 65535
+    widget 0x02, 0, 0, 365, 0, 222, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x00000691, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1675
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1676
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1677
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1674
+    widget 0x11, 1, 256, 355, 55, 69, 0x0000069F, 65535
+    widget 0x0B, 1, 344, 354, 56, 61, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 62, 67, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 73, 87, 0x000006A1, 65535
+    widget 0x0B, 1, 344, 354, 74, 79, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 80, 85, 0x000001E7, 65535
+    widget 0x11, 1, 256, 355, 91, 105, 0x000006A3, 65535
+    widget 0x0B, 1, 344, 354, 92, 97, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 98, 103, 0x000001E7, 65535
     .byte 0x1E
 
 # 0x50AB2D
@@ -2748,26 +2741,26 @@ _ui_scenario_options___widgets_2:
 # 0x50AB30
     .global _ui_scenario_options___widgets_0
 _ui_scenario_options___widgets_0:
-    widget 0x02, 0, 0, 365, 0, 196, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x0000068F, 65535
-    widget 0x01, 1, 0, 365, 41, 215, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1675
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1676
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1677
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1674
-    widget 0x12, 1, 10, 355, 52, 63, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 53, 62, 0x00000060, 65535
-    widget 0x11, 1, 10, 172, 67, 78, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 161, 171, 68, 72, 0x000001E6, 65535
-    widget 0x0B, 1, 161, 171, 73, 77, 0x000001E7, 65535
-    widget 0x12, 1, 193, 355, 67, 78, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 68, 77, 0x00000060, 65535
-    widget 0x1B, 1, 10, 355, 83, 94, 0x00000738, 65535
-    widget 0x1B, 1, 10, 355, 98, 109, 0x00000739, 65535
-    widget 0x1B, 1, 10, 355, 113, 124, 0x0000073A, 65535
-    widget 0x11, 1, 256, 355, 112, 123, 0x00000744, 65535
-    widget 0x0B, 1, 344, 354, 113, 117, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 118, 122, 0x000001E7, 65535
+    widget 0x02, 0, 0, 365, 0, 232, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x0000068F, 65535
+    widget 0x01, 1, 0, 365, 44, 221, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1675
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1676
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1677
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1674
+    widget 0x12, 1, 10, 355, 55, 69, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 56, 68, 0x00000060, 65535
+    widget 0x11, 1, 10, 172, 73, 87, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 161, 171, 74, 79, 0x000001E6, 65535
+    widget 0x0B, 1, 161, 171, 80, 85, 0x000001E7, 65535
+    widget 0x12, 1, 193, 355, 73, 87, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 74, 86, 0x00000060, 65535
+    widget 0x1B, 1, 10, 355, 92, 106, 0x00000738, 65535
+    widget 0x1B, 1, 10, 355, 110, 124, 0x00000739, 65535
+    widget 0x1B, 1, 10, 355, 128, 142, 0x0000073A, 65535
+    widget 0x11, 1, 256, 355, 127, 141, 0x00000744, 65535
+    widget 0x0B, 1, 344, 354, 128, 133, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 134, 139, 0x000001E7, 65535
     .byte 0x1E
 
 # 0x50AC71
@@ -2795,16 +2788,16 @@ __50ACB3:
 # 0x50ACB4
     .global _ui__scenario_select___widgets___widgets
 _ui__scenario_select___widgets___widgets:
-    widget 0x02, 0, 0, 609, 0, 411, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 608, 1, 13, 0x00000288, 65535
+    widget 0x02, 0, 0, 609, 0, 414, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 608, 1, 16, 0x00000288, 65535
     widget 0x09, 0, 595, 607, 2, 14, 0x00000911, 60
-    widget 0x03, 1, 0, 609, 48, 411, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 93, 15, 48, 0x20000E29, 65535
-    widget 0x08, 1, 94, 184, 15, 48, 0x20000E29, 65535
-    widget 0x08, 1, 185, 275, 15, 48, 0x20000E29, 65535
-    widget 0x08, 1, 276, 366, 15, 48, 0x20000E29, 65535
-    widget 0x08, 1, 367, 457, 15, 48, 0x20000E29, 65535
-    widget 0x1A, 1, 3, 433, 52, 407, 0x00000002, 65535
+    widget 0x03, 1, 0, 609, 57, 414, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 93, 18, 57, 0x20000E2B, 65535
+    widget 0x08, 1, 94, 184, 18, 57, 0x20000E2B, 65535
+    widget 0x08, 1, 185, 275, 18, 57, 0x20000E2B, 65535
+    widget 0x08, 1, 276, 366, 18, 57, 0x20000E2B, 65535
+    widget 0x08, 1, 367, 457, 18, 57, 0x20000E2B, 65535
+    widget 0x1A, 1, 3, 433, 64, 410, 0x00000002, 65535
     .byte 0x1E
 
 # 0x50AD55
@@ -2813,24 +2806,12 @@ _ui__scenario_select___widgets___widgets:
 # 0x50AD58
     .global _ui__prompt_browse___widgets___widgets
 _ui__prompt_browse___widgets___widgets:
-    widget 0x02, 0, 0, 499, 0, 379, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 498, 1, 13, 0x000007F7, 65535
-    widget 0x09, 0, 485, 497, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 499, 15, 379, 0xFFFFFFFF, 65535
-    widget 0x09, 1, 473, 496, 18, 41, 0x00000906, 2006
-    widget 0x11, 1, 88, 495, 348, 361, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 426, 495, 364, 375, 0x000000BB, 65535
-    widget 0x1A, 1, 3, 496, 45, 367, 0x00000002, 65535
-    .byte 0x1E
-
-# 0x50ADD9
-    .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50ADDC
     .global _ui_window_53_widgets
 _ui_window_53_widgets:
     widget 0x02, 0, 0, 249, 0, 199, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 248, 1, 13, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 248, 1, 16, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x50ADFD
@@ -2839,11 +2820,11 @@ _ui_window_53_widgets:
 # 0x50AE00
     .global _ui_prompt_ok_cancel_widgets
 _ui_prompt_ok_cancel_widgets:
-    widget 0x01, 0, 0, 279, 0, 91, 0xFFFFFFFF, 65535
-    widget 0x16, 0, 1, 278, 1, 13, 0x000007F7, 65535
-    widget 0x0B, 0, 267, 277, 2, 12, 0x00000038, 60
-    widget 0x0B, 0, 20, 119, 77, 88, 0x0000065F, 65535
-    widget 0x0B, 0, 160, 259, 77, 88, 0x000000BA, 65535
+    widget 0x01, 0, 0, 279, 0, 112, 0xFFFFFFFF, 65535
+    widget 0x16, 0, 1, 278, 1, 16, 0x000007F7, 65535
+    widget 0x0B, 0, 267, 277, 2, 15, 0x00000038, 60
+    widget 0x0B, 0, 20, 119, 95, 109, 0x0000065F, 65535
+    widget 0x0B, 0, 160, 259, 95, 109, 0x000000BA, 65535
     .byte 0x1E
 
 # 0x50AE51
@@ -3065,7 +3046,7 @@ __50AEDB:
     .global __50AEDC
 __50AEDC:
 # 0x50AEDC
-    .byte 0x00, 0x01                                     #        0 ..
+    .byte 0x01, 0x00                                     #        0 ..
 
 # 0x50AEDE
     .global __50AEDE
@@ -4411,41 +4392,46 @@ __50BC1C:
     .global __50BC60
 __50BC60:
 # 0x50BC60
-    .byte 0xFF, 0xFF, 0xFF, 0xFF, 0x5B, 0x2A, 0x45, 0x00 #        0 ....[*E.
-    .byte 0xB4, 0x2A, 0x45, 0x00, 0xFF, 0xFF, 0xFF, 0xFF #        8 .*E.....
-    .byte 0x00, 0x00, 0x00, 0x00                         #       10 ....
+    .byte 0xFF, 0xFF, 0xFF, 0xFF
+    .4byte _sub_452A5B
+    .4byte _sub_452AB4
+    .byte 0xFF, 0xFF, 0xFF, 0xFF #        8 .*E.....
+    .byte 0x00
+
+
+    .fill 18*16+4,1,0x01
 
 # 0x50BC74
+    .align 4
     .global _ui_industry___widgets_0
 _ui_industry___widgets_0:
-    widget 0x02, 0, 0, 222, 0, 136, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 221, 1, 13, 0x0000054F, 65535
+    widget 0x02, 0, 0, 222, 0, 163, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 221, 1, 16, 0x0000054F, 65535
     widget 0x09, 0, 208, 220, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 136, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1389
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1390
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1390
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1414
-    widget 0x13, 1, 3, 197, 44, 123, 0xFFFFFFFE, 65535
-    widget 0x0D, 1, 3, 197, 115, 135, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 222, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1389
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1390
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1390
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1414
+    widget 0x13, 1, 3, 197, 47, 147, 0xFFFFFFFE, 65535
+    widget 0x0D, 1, 3, 197, 136, 162, 0xFFFFFFFF, 65535
     widget 0x09, 1, 0, 23, 0, 23, 0xFFFFFFFF, 355
-    widget 0x09, 1, 198, 221, 44, 67, 0x0000093B, 1365
+    widget 0x09, 1, 198, 221, 47, 70, 0x0000093B, 1365
     .byte 0x1E
 
-# 0x50BD35
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50BD38
     .global _ui_industry___widgets_1
 _ui_industry___widgets_1:
-    widget 0x02, 0, 0, 222, 0, 136, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 221, 1, 13, 0x00000552, 65535
+    widget 0x02, 0, 0, 222, 0, 163, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 221, 1, 16, 0x00000552, 65535
     widget 0x09, 0, 208, 220, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 136, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1389
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1390
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1390
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1414
+    widget 0x01, 1, 0, 222, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1389
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1390
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1390
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1414
     .byte 0x1E
 
 # 0x50BDB9
@@ -4454,14 +4440,14 @@ _ui_industry___widgets_1:
 # 0x50BDBC
     .global _ui_industry___widgets_3
 _ui_industry___widgets_3:
-    widget 0x02, 0, 0, 299, 0, 126, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 298, 1, 13, 0x00000553, 65535
+    widget 0x02, 0, 0, 299, 0, 150, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 298, 1, 16, 0x00000553, 65535
     widget 0x09, 0, 285, 297, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 136, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1389
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1390
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1390
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1414
+    widget 0x01, 1, 0, 222, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1389
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1390
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1390
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1414
     .byte 0x1E
 
 # 0x50BE3D
@@ -4470,31 +4456,30 @@ _ui_industry___widgets_3:
 # 0x50BE40
     .global _ui_industry_list___widgets_0
 _ui_industry_list___widgets_0:
-    widget 0x02, 0, 0, 599, 0, 196, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 598, 1, 13, 0x00000526, 65535
+    widget 0x02, 0, 0, 599, 0, 202, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 598, 1, 16, 0x00000526, 65535
     widget 0x09, 0, 585, 597, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 599, 41, 195, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1325
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1326
-    widget 0x0E, 1, 4, 203, 43, 54, 0xFFFFFFFF, 1382
-    widget 0x0E, 1, 204, 443, 43, 54, 0xFFFFFFFF, 1376
-    widget 0x0E, 1, 444, 603, 43, 54, 0xFFFFFFFF, 1377
-    widget 0x1A, 1, 3, 596, 56, 181, 0x00000002, 65535
+    widget 0x01, 1, 0, 599, 44, 201, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1325
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1326
+    widget 0x0E, 1, 4, 203, 46, 60, 0xFFFFFFFF, 1382
+    widget 0x0E, 1, 204, 443, 46, 60, 0xFFFFFFFF, 1376
+    widget 0x0E, 1, 444, 603, 46, 60, 0xFFFFFFFF, 1377
+    widget 0x1A, 1, 3, 596, 62, 184, 0x00000002, 65535
     .byte 0x1E
 
-# 0x50BEE1
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50BEE4
     .global _ui_industry_list___widgets_1
 _ui_industry_list___widgets_1:
-    widget 0x02, 0, 0, 577, 0, 171, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 576, 1, 13, 0x00000527, 65535
+    widget 0x02, 0, 0, 577, 0, 177, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 576, 1, 16, 0x00000527, 65535
     widget 0x09, 0, 563, 575, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 599, 41, 195, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1325
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1326
-    widget 0x1A, 1, 2, 552, 45, 156, 0x00000002, 65535
+    widget 0x01, 1, 0, 599, 44, 201, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1325
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1326
+    widget 0x1A, 1, 2, 552, 48, 159, 0x00000002, 65535
     .byte 0x1E
 
 # 0x50BF55
@@ -4996,17 +4981,17 @@ __50C1AE:
 # 0x50C1B4
     .global _ui_map
 _ui_map:
-    widget 0x02, 0, 0, 349, 0, 271, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 348, 1, 13, 0xFFFFFFFF, 65535
+    widget 0x02, 0, 0, 349, 0, 277, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 348, 1, 16, 0xFFFFFFFF, 65535
     widget 0x09, 0, 335, 347, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 349, 41, 270, 0xFFFFFFFF, 65535
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1178
-    widget 0x06, 1, 34, 64, 15, 41, 0x20000953, 1179
-    widget 0x06, 1, 65, 95, 15, 41, 0x20000953, 1180
-    widget 0x06, 1, 96, 126, 15, 41, 0x20000953, 1181
-    widget 0x06, 1, 158, 188, 15, 41, 0x20000953, 1182
-    widget 0x1A, 1, 3, 242, 44, 258, 0x00000003, 65535
-    widget 0x0D, 1, 3, 324, 250, 270, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 349, 44, 276, 0xFFFFFFFF, 65535
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1178
+    widget 0x06, 1, 34, 64, 18, 44, 0x20000953, 1179
+    widget 0x06, 1, 65, 95, 18, 44, 0x20000953, 1180
+    widget 0x06, 1, 96, 126, 18, 44, 0x20000953, 1181
+    widget 0x06, 1, 158, 188, 18, 44, 0x20000953, 1182
+    widget 0x1A, 1, 3, 242, 47, 261, 0x00000003, 65535
+    widget 0x0D, 1, 3, 324, 250, 276, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x50C265
@@ -5015,36 +5000,35 @@ _ui_map:
 # 0x50C268
     .global _ui_multiplayer___widgets_0
 _ui_multiplayer___widgets_0:
-    widget 0x02, 0, 0, 365, 0, 211, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x000005BA, 65535
+    widget 0x02, 0, 0, 365, 0, 235, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x000005BA, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 210, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 65535
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 65535
-    widget 0x05, 1, 3, 362, 42, 101, 0xFFFFFFFF, 65535
-    widget 0x09, 1, 10, 355, 109, 140, 0x00000908, 65535
-    widget 0x09, 1, 10, 355, 109, 140, 0x0000090A, 65535
-    widget 0x09, 1, 10, 355, 149, 180, 0x00000909, 65535
-    widget 0x0B, 1, 262, 361, 197, 208, 0x000000BA, 65535
-    widget 0x0B, 1, 262, 361, 197, 208, 0x000000BB, 65535
+    widget 0x01, 1, 0, 365, 44, 234, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 65535
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 65535
+    widget 0x05, 1, 3, 362, 45, 122, 0xFFFFFFFF, 65535
+    widget 0x09, 1, 10, 355, 130, 161, 0x00000908, 65535
+    widget 0x09, 1, 10, 355, 130, 161, 0x0000090A, 65535
+    widget 0x09, 1, 10, 355, 170, 201, 0x00000909, 65535
+    widget 0x0B, 1, 262, 361, 218, 232, 0x000000BA, 65535
+    widget 0x0B, 1, 262, 361, 218, 232, 0x000000BB, 65535
     .byte 0x1E
 
-# 0x50C329
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50C32C
     .global _ui_multiplayer___widgets_1
 _ui_multiplayer___widgets_1:
-    widget 0x02, 0, 0, 365, 0, 211, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x000005BB, 65535
+    widget 0x02, 0, 0, 365, 0, 235, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x000005BB, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 210, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 65535
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 65535
-    widget 0x11, 1, 256, 355, 52, 63, 0x000006B9, 65535
-    widget 0x0B, 1, 344, 354, 53, 57, 0x000001E6, 65535
-    widget 0x0B, 1, 344, 354, 58, 62, 0x000001E7, 65535
-    widget 0x1B, 1, 10, 355, 68, 79, 0x00000751, 1874
+    widget 0x01, 1, 0, 365, 44, 234, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 65535
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 65535
+    widget 0x11, 1, 256, 355, 55, 69, 0x000006B9, 65535
+    widget 0x0B, 1, 344, 354, 56, 61, 0x000001E6, 65535
+    widget 0x0B, 1, 344, 354, 62, 67, 0x000001E7, 65535
+    widget 0x1B, 1, 10, 355, 74, 88, 0x00000751, 1874
     .byte 0x1E
 
 # 0x50C3CD
@@ -6085,7 +6069,7 @@ __50D150:
     .global __50D154
 __50D154:
 # 0x50D154
-    .byte 0x1A, 0x20, 0x00, 0x00                         #        0 . ..
+    .byte 0xAA, 0x45, 0x00, 0x00                         #        0 . ..
 
 # 0x50D158
     .global __50D158
@@ -6114,14 +6098,14 @@ __50D161:
 # 0x50D164
     .global _ui_object_selection
 _ui_object_selection:
-    widget 0x02, 0, 0, 599, 0, 397, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 598, 1, 13, 0x00000804, 65535
+    widget 0x02, 0, 0, 599, 0, 400, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 598, 1, 16, 0x00000804, 65535
     widget 0x09, 0, 585, 597, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 599, 65, 397, 0xFFFFFFFF, 65535
-    widget 0x05, 1, 3, 591, 15, 64, 0xFFFFFFFF, 65535
-    widget 0x0B, 0, 470, 591, 20, 31, 0x0000082D, 2094
-    widget 0x1A, 1, 4, 291, 68, 384, 0x00000002, 65535
-    widget 0x09, 1, 391, 504, 68, 181, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 599, 68, 400, 0xFFFFFFFF, 65535
+    widget 0x05, 1, 3, 591, 18, 67, 0xFFFFFFFF, 65535
+    widget 0x0B, 0, 470, 591, 23, 37, 0x0000082D, 2094
+    widget 0x1A, 1, 4, 291, 71, 384, 0x00000002, 65535
+    widget 0x09, 1, 391, 504, 71, 184, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x50D1E5
@@ -6368,13571 +6352,82 @@ __50D5B8:
 # 0x50D5BC
     .global _ui_station___widgets_0
 _ui_station___widgets_0:
-    widget 0x02, 0, 0, 222, 0, 136, 0xFFFFFFFF, 65535
-    widget 0x17, 0, 1, 221, 1, 13, 0x00000554, 65535
+    widget 0x02, 0, 0, 222, 0, 163, 0xFFFFFFFF, 65535
+    widget 0x17, 0, 1, 221, 1, 16, 0x00000554, 65535
     widget 0x09, 0, 208, 220, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 136, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1447
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1448
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1449
-    widget 0x13, 1, 3, 197, 44, 123, 0xFFFFFFFE, 65535
-    widget 0x0D, 1, 3, 197, 115, 135, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 222, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1447
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1448
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1449
+    widget 0x13, 1, 3, 197, 47, 147, 0xFFFFFFFE, 65535
+    widget 0x0D, 1, 3, 197, 136, 162, 0xFFFFFFFF, 65535
     widget 0x09, 1, 0, 23, 0, 23, 0xFFFFFFFF, 355
     .byte 0x1E
 
-# 0x50D65D
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50D660
     .global _ui_station___widgets_1
 _ui_station___widgets_1:
-    widget 0x02, 0, 0, 222, 0, 136, 0xFFFFFFFF, 65535
-    widget 0x17, 0, 1, 221, 1, 13, 0x00000554, 65535
+    widget 0x02, 0, 0, 222, 0, 163, 0xFFFFFFFF, 65535
+    widget 0x17, 0, 1, 221, 1, 16, 0x00000554, 65535
     widget 0x09, 0, 208, 220, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 136, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1447
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1448
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1449
-    widget 0x1A, 1, 3, 219, 44, 123, 0x00000002, 65535
-    widget 0x0D, 1, 3, 197, 125, 135, 0xFFFFFFFF, 65535
-    widget 0x09, 1, 198, 221, 44, 67, 0x0000094B, 395
+    widget 0x01, 1, 0, 222, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1447
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1448
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1449
+    widget 0x1A, 1, 3, 219, 47, 147, 0x00000002, 65535
+    widget 0x0D, 1, 3, 197, 149, 162, 0xFFFFFFFF, 65535
+    widget 0x09, 1, 198, 221, 47, 70, 0x0000094B, 395
     .byte 0x1E
 
-# 0x50D701
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50D704
     .global _ui_station___widgets_2
 _ui_station___widgets_2:
-    widget 0x02, 0, 0, 249, 0, 136, 0xFFFFFFFF, 65535
-    widget 0x17, 0, 1, 248, 1, 13, 0x00000554, 65535
+    widget 0x02, 0, 0, 249, 0, 163, 0xFFFFFFFF, 65535
+    widget 0x17, 0, 1, 248, 1, 16, 0x00000554, 65535
     widget 0x09, 0, 235, 247, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 136, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1447
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1448
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1449
-    widget 0x1A, 1, 3, 246, 44, 123, 0x00000002, 65535
-    widget 0x0D, 1, 3, 224, 125, 135, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 222, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1447
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1448
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1449
+    widget 0x1A, 1, 3, 246, 47, 147, 0x00000002, 65535
+    widget 0x0D, 1, 3, 224, 149, 162, 0xFFFFFFFF, 65535
     .byte 0x1E
 
-# 0x50D795
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x50D798
     .global _ui_station_list___widgets_0
 _ui_station_list___widgets_0:
-    widget 0x02, 0, 0, 599, 0, 196, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 598, 1, 13, 0x00000468, 65535
+    widget 0x02, 0, 0, 599, 0, 202, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 598, 1, 16, 0x00000468, 65535
     widget 0x09, 0, 585, 597, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 599, 41, 195, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1200
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1201
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1202
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1203
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1204
-    widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
-    widget 0x0E, 1, 4, 203, 43, 54, 0xFFFFFFFF, 1153
-    widget 0x0E, 1, 204, 403, 43, 54, 0xFFFFFFFF, 1441
-    widget 0x0E, 1, 404, 493, 43, 54, 0xFFFFFFFF, 1440
-    widget 0x0E, 1, 494, 613, 43, 54, 0xFFFFFFFF, 1441
-    widget 0x1A, 1, 3, 596, 56, 181, 0x00000002, 65535
+    widget 0x01, 1, 0, 599, 44, 201, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1200
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1201
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1202
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1203
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1204
+    widget 0x09, 0, 0, 25, 17, 42, 0xFFFFFFFF, 1465
+    widget 0x0E, 1, 4, 203, 46, 60, 0xFFFFFFFF, 1153
+    widget 0x0E, 1, 204, 403, 46, 60, 0xFFFFFFFF, 1441
+    widget 0x0E, 1, 404, 493, 46, 60, 0xFFFFFFFF, 1440
+    widget 0x0E, 1, 494, 613, 46, 60, 0xFFFFFFFF, 1441
+    widget 0x1A, 1, 3, 596, 62, 184, 0x00000002, 65535
     .byte 0x1E
+
 
 # 0x50D889
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
-# 0x50D88C
-    .global _str_0
-_str_0:
-    .byte EOS
+.include "strings/kor.s"
 
-# 0x50D88D
-    .global _str_1
-_str_1:
-    .byte 0x88
-    .byte EOS
-
-# 0x50D88F
-    .global _str_2
-_str_2:
-    .ascii "New Company"
-    .byte 0x88
-    .byte EOS
-
-# 0x50D89C
-    .global _str_3
-_str_3:
-    .ascii "Unnamed"
-    .byte 0x88
-    .byte EOS
-
-# 0x50D8A5
-    .global _str_4
-_str_4:
-    .ascii "Train "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50D8AD
-    .global _str_5
-_str_5:
-    .ascii "Bus "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50D8B3
-    .global _str_6
-_str_6:
-    .ascii "Truck "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50D8BB
-    .global _str_7
-_str_7:
-    .ascii "Tram "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50D8C2
-    .global _str_8
-_str_8:
-    .ascii "Aircraft "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50D8CD
-    .global _str_9
-_str_9:
-    .ascii "Ship "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50D8D4
-    .global _str_10
-_str_10:
-    .asciz "1st"
-
-# 0x50D8D8
-    .global _str_11
-_str_11:
-    .asciz "2nd"
-
-# 0x50D8DC
-    .global _str_12
-_str_12:
-    .asciz "3rd"
-
-# 0x50D8E0
-    .global _str_13
-_str_13:
-    .asciz "4th"
-
-# 0x50D8E4
-    .global _str_14
-_str_14:
-    .asciz "5th"
-
-# 0x50D8E8
-    .global _str_15
-_str_15:
-    .asciz "6th"
-
-# 0x50D8EC
-    .global _str_16
-_str_16:
-    .asciz "7th"
-
-# 0x50D8F0
-    .global _str_17
-_str_17:
-    .asciz "8th"
-
-# 0x50D8F4
-    .global _str_18
-_str_18:
-    .asciz "9th"
-
-# 0x50D8F8
-    .global _str_19
-_str_19:
-    .asciz "10th"
-
-# 0x50D8FD
-    .global _str_20
-_str_20:
-    .asciz "11th"
-
-# 0x50D902
-    .global _str_21
-_str_21:
-    .asciz "12th"
-
-# 0x50D907
-    .global _str_22
-_str_22:
-    .asciz "13th"
-
-# 0x50D90C
-    .global _str_23
-_str_23:
-    .asciz "14th"
-
-# 0x50D911
-    .global _str_24
-_str_24:
-    .asciz "15th"
-
-# 0x50D916
-    .global _str_25
-_str_25:
-    .asciz "16th"
-
-# 0x50D91B
-    .global _str_26
-_str_26:
-    .asciz "17th"
-
-# 0x50D920
-    .global _str_27
-_str_27:
-    .asciz "18th"
-
-# 0x50D925
-    .global _str_28
-_str_28:
-    .asciz "19th"
-
-# 0x50D92A
-    .global _str_29
-_str_29:
-    .asciz "20th"
-
-# 0x50D92F
-    .global _str_30
-_str_30:
-    .asciz "21st"
-
-# 0x50D934
-    .global _str_31
-_str_31:
-    .asciz "22nd"
-
-# 0x50D939
-    .global _str_32
-_str_32:
-    .asciz "23rd"
-
-# 0x50D93E
-    .global _str_33
-_str_33:
-    .asciz "24th"
-
-# 0x50D943
-    .global _str_34
-_str_34:
-    .asciz "25th"
-
-# 0x50D948
-    .global _str_35
-_str_35:
-    .asciz "26th"
-
-# 0x50D94D
-    .global _str_36
-_str_36:
-    .asciz "27th"
-
-# 0x50D952
-    .global _str_37
-_str_37:
-    .asciz "28th"
-
-# 0x50D957
-    .global _str_38
-_str_38:
-    .asciz "29th"
-
-# 0x50D95C
-    .global _str_39
-_str_39:
-    .asciz "30th"
-
-# 0x50D961
-    .global _str_40
-_str_40:
-    .asciz "31st"
-
-# 0x50D966
-    .global _str_41
-_str_41:
-    .asciz "Jan"
-
-# 0x50D96A
-    .global _str_42
-_str_42:
-    .asciz "Feb"
-
-# 0x50D96E
-    .global _str_43
-_str_43:
-    .asciz "Mar"
-
-# 0x50D972
-    .global _str_44
-_str_44:
-    .asciz "Apr"
-
-# 0x50D976
-    .global _str_45
-_str_45:
-    .asciz "May"
-
-# 0x50D97A
-    .global _str_46
-_str_46:
-    .asciz "Jun"
-
-# 0x50D97E
-    .global _str_47
-_str_47:
-    .asciz "Jul"
-
-# 0x50D982
-    .global _str_48
-_str_48:
-    .asciz "Aug"
-
-# 0x50D986
-    .global _str_49
-_str_49:
-    .asciz "Sep"
-
-# 0x50D98A
-    .global _str_50
-_str_50:
-    .asciz "Oct"
-
-# 0x50D98E
-    .global _str_51
-_str_51:
-    .asciz "Nov"
-
-# 0x50D992
-    .global _str_52
-_str_52:
-    .asciz "Dec"
-
-# 0x50D996
-    .global _str_53
-_str_53:
-    .asciz "Unable to access graphic data file"
-
-# 0x50D9B9
-    .global _str_54
-_str_54:
-    .asciz "Missing or inaccessible data file"
-
-# 0x50D9DB
-    .global _str_55
-_str_55:
-    .asciz "Unable to allocate enough memory"
-
-# 0x50D9FC
-    .global _str_56
-_str_56:
-    .byte 0x90
-    .byte 0xAD
-    .byte EOS
-
-# 0x50D9FF
-    .global _str_57
-_str_57:
-    .asciz "Chosen name in use already"
-
-# 0x50DA1A
-    .global _str_58
-_str_58:
-    .asciz "Too many names defined"
-
-# 0x50DA31
-    .global _str_59
-_str_59:
-    .ascii "Not enough cash - requires "
-    .byte 0x81
-    .byte EOS
-
-# 0x50DA4E
-    .global _str_60
-_str_60:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Close window"
-
-# 0x50DA5D
-    .global _str_61
-_str_61:
-    .asciz "Game Initialization Failed"
-
-# 0x50DA78
-    .global _str_62
-_str_62:
-    .asciz "Unable to start game in a minimized state"
-
-# 0x50DAA2
-    .global _str_63
-_str_63:
-    .asciz "Unable to initialize graphics system"
-
-# 0x50DAC7
-    .global _str_64
-_str_64:
-    .ascii "CD Key Code "
-    .byte 0x7C
-    .ascii " is not valid for your Locomotion CD!"
-    .byte 0x0D
-    .byte 0x0D
-    .asciz "Please un-install Chris Sawyer's Locomotion and re-install with the correct CD Key Code"
-
-# 0x50DB53
-    .global _str_65
-_str_65:
-    .byte 0x80
-    .ascii " x "
-    .byte 0x80
-    .byte EOS
-
-# 0x50DB59
-    .global _str_66
-_str_66:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x80
-    .ascii " x "
-    .byte 0x80
-    .byte EOS
-
-# 0x50DB67
-    .global _str_67
-_str_67:
-    .asciz "About 'Chris Sawyer's Locomotion'"
-
-# 0x50DB89
-    .global _str_68
-_str_68:
-    .asciz "Chris Sawyer's Locomotion"
-
-# 0x50DBA3
-    .global _str_69
-_str_69:
-    .byte 0x0E
-    .asciz "Version 4.02.176 (US English)"
-
-# 0x50DBC2
-    .global _str_70
-_str_70:
-    .byte 0x0E
-    .ascii "Copyright "
-    .byte 0xA9
-    .asciz " 2004 Chris Sawyer, All Rights Reserved"
-
-# 0x50DBF6
-    .global _str_71
-_str_71:
-    .byte 0x0E
-    .asciz "Designed & Programmed by Chris Sawyer"
-
-# 0x50DC1D
-    .global _str_72
-_str_72:
-    .byte 0x0E
-    .asciz "Graphics by Simon Foster"
-
-# 0x50DC37
-    .global _str_73
-_str_73:
-    .byte 0x0E
-    .asciz "Sound & Music by Allister Brimble"
-
-# 0x50DC5A
-    .global _str_74
-_str_74:
-    .byte 0x0E
-    .asciz "Title Music by John Broomhall"
-
-# 0x50DC79
-    .global _str_75
-_str_75:
-    .byte 0x0E
-    .asciz "Representation by Jacqui Lyons at Marjacq Ltd."
-
-# 0x50DCA9
-    .global _str_76
-_str_76:
-    .byte 0x0E
-    .asciz "Thanks to:-"
-
-# 0x50DCB6
-    .global _str_77
-_str_77:
-    .byte 0x0E
-    .asciz "Katrina Morrin, Natasha Morrin, Jim Wills"
-
-# 0x50DCE1
-    .global _str_78
-_str_78:
-    .byte EOS
-
-# 0x50DCE2
-    .global _str_79
-_str_79:
-    .byte EOS
-
-# 0x50DCE3
-    .global _str_80
-_str_80:
-    .byte EOS
-
-# 0x50DCE4
-    .global _str_81
-_str_81:
-    .byte EOS
-
-# 0x50DCE5
-    .global _str_82
-_str_82:
-    .byte EOS
-
-# 0x50DCE6
-    .global _str_83
-_str_83:
-    .byte EOS
-
-# 0x50DCE7
-    .global _str_84
-_str_84:
-    .byte EOS
-
-# 0x50DCE8
-    .global _str_85
-_str_85:
-    .byte 0x83
-    .byte EOS
-
-# 0x50DCEA
-    .global _str_86
-_str_86:
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DCED
-    .global _str_87
-_str_87:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DCF1
-    .global _str_88
-_str_88:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DCF6
-    .global _str_89
-_str_89:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DCFC
-    .global _str_90
-_str_90:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DD03
-    .global _str_91
-_str_91:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DD0B
-    .global _str_92
-_str_92:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DD14
-    .global _str_93
-_str_93:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DD1E
-    .global _str_94
-_str_94:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DD29
-    .global _str_95
-_str_95:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50DD35
-    .global _str_96
-_str_96:
-    .byte 0x90
-    .byte 0xAA
-    .byte EOS
-
-# 0x50DD38
-    .global _str_97
-_str_97:
-    .byte 0x0A
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x50DD3C
-    .global _str_98
-_str_98:
-    .asciz "Too low!"
-
-# 0x50DD45
-    .global _str_99
-_str_99:
-    .asciz "Too high!"
-
-# 0x50DD4F
-    .global _str_100
-_str_100:
-    .asciz "Can't lower land here..."
-
-# 0x50DD68
-    .global _str_101
-_str_101:
-    .asciz "Can't raise land here..."
-
-# 0x50DD81
-    .global _str_102
-_str_102:
-    .asciz "Object in the way"
-
-# 0x50DD93
-    .global _str_103
-_str_103:
-    .asciz "Load Game"
-
-# 0x50DD9D
-    .global _str_104
-_str_104:
-    .asciz "Save Game"
-
-# 0x50DDA7
-    .global _str_105
-_str_105:
-    .asciz "Quit Scenario Editor"
-
-# 0x50DDBC
-    .global _str_106
-_str_106:
-    .asciz "Quit Game"
-
-# 0x50DDC6
-    .global _str_107
-_str_107:
-    .ascii "Screenshot"
-    .byte 0x7F
-    .asciz ".BMP"
-
-# 0x50DDD6
-    .global _str_108
-_str_108:
-    .asciz "Screenshot"
-
-# 0x50DDE1
-    .global _str_109
-_str_109:
-    .ascii "Screenshot saved to disk as '"
-    .byte 0x83
-    .asciz "'"
-
-# 0x50DE01
-    .global _str_110
-_str_110:
-    .asciz "Screenshot failed!"
-
-# 0x50DE14
-    .global _str_111
-_str_111:
-    .asciz "Landscape data area full!"
-
-# 0x50DE2E
-    .global _str_112
-_str_112:
-    .asciz "Can't build partly above and partly below ground"
-
-# 0x50DE5F
-    .global _str_113
-_str_113:
-    .byte 0x83
-    .byte EOS
-
-# 0x50DE61
-    .global _str_114
-_str_114:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Left-Hand Curve"
-
-# 0x50DE73
-    .global _str_115
-_str_115:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Right-Hand Curve"
-
-# 0x50DE86
-    .global _str_116
-_str_116:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Left-Hand Curve (Small Radius)"
-
-# 0x50DEA7
-    .global _str_117
-_str_117:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Right-Hand Curve (Small Radius)"
-
-# 0x50DEC9
-    .global _str_118
-_str_118:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Left-Hand Curve (Very Small Radius)"
-
-# 0x50DEEF
-    .global _str_119
-_str_119:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Right-Hand Curve (Very Small Radius)"
-
-# 0x50DF16
-    .global _str_120
-_str_120:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Left-Hand Curve (Large Radius)"
-
-# 0x50DF37
-    .global _str_121
-_str_121:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Right-Hand Curve (Large Radius)"
-
-# 0x50DF59
-    .global _str_122
-_str_122:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Straight"
-
-# 0x50DF64
-    .global _str_123
-_str_123:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "'S' Bend Left"
-
-# 0x50DF74
-    .global _str_124
-_str_124:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "'S' Bend Right"
-
-# 0x50DF85
-    .global _str_125
-_str_125:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "'S' Bend to left side of dual track"
-
-# 0x50DFAB
-    .global _str_126
-_str_126:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "'S' Bend to right side of dual track"
-
-# 0x50DFD2
-    .global _str_127
-_str_127:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "'S' Bend to single track"
-
-# 0x50DFED
-    .global _str_128
-_str_128:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Turnaround"
-
-# 0x50DFFA
-    .global _str_129
-_str_129:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "(Click on landscape to start construction)"
-
-# 0x50E027
-    .global _str_130
-_str_130:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Construct this Track Section"
-
-# 0x50E046
-    .global _str_131
-_str_131:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Remove Previous Track Section"
-
-# 0x50E066
-    .global _str_132
-_str_132:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Steep Slope Down"
-
-# 0x50E079
-    .global _str_133
-_str_133:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Slope Down"
-
-# 0x50E086
-    .global _str_134
-_str_134:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Level"
-
-# 0x50E08E
-    .global _str_135
-_str_135:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Slope Up"
-
-# 0x50E099
-    .global _str_136
-_str_136:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Steep Slope Up"
-
-# 0x50E0AA
-    .global _str_137
-_str_137:
-    .byte 0x0E
-    .asciz "Build this..."
-
-# 0x50E0B9
-    .global _str_138
-_str_138:
-    .byte 0x0E
-    .ascii "Cost: "
-    .byte 0x90
-    .byte 0x81
-    .byte EOS
-
-# 0x50E0C3
-    .global _str_139
-_str_139:
-    .asciz "Can't build signal here..."
-
-# 0x50E0DE
-    .global _str_140
-_str_140:
-    .asciz "Can't build signals here..."
-
-# 0x50E0FA
-    .global _str_141
-_str_141:
-    .asciz "Can't remove signal..."
-
-# 0x50E111
-    .global _str_142
-_str_142:
-    .ascii "Can't remove "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz "..."
-
-# 0x50E126
-    .global _str_143
-_str_143:
-    .ascii "Can't build "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz "..."
-
-# 0x50E13A
-    .global _str_144
-_str_144:
-    .asciz "Raise or lower land first"
-
-# 0x50E154
-    .global _str_145
-_str_145:
-    .asciz "Underground view"
-
-# 0x50E165
-    .global _str_146
-_str_146:
-    .asciz "Hide foreground tracks & roads"
-
-# 0x50E184
-    .global _str_147
-_str_147:
-    .asciz "Station type can only be built at end of road"
-
-# 0x50E1B2
-    .global _str_148
-_str_148:
-    .ascii "Wrong type of station for "
-    .byte 0x83
-    .byte EOS
-
-# 0x50E1CE
-    .global _str_149
-_str_149:
-    .ascii "Station not compatible with "
-    .byte 0x83
-    .byte EOS
-
-# 0x50E1EC
-    .global _str_150
-_str_150:
-    .asciz "Level crossing in the way"
-
-# 0x50E206
-    .global _str_151
-_str_151:
-    .asciz "Level crossing only possible with straight road and track at same level"
-
-# 0x50E24E
-    .global _str_152
-_str_152:
-    .asciz "Junction not possible"
-
-# 0x50E264
-    .global _str_153
-_str_153:
-    .asciz "Junction must be entirely level"
-
-# 0x50E284
-    .global _str_154
-_str_154:
-    .byte 0x83
-    .asciz " in the way / wrong height for junction"
-
-# 0x50E2AD
-    .global _str_155
-_str_155:
-    .asciz "Already built here"
-
-# 0x50E2C0
-    .global _str_156
-_str_156:
-    .ascii "Unable to cross or create junction with "
-    .byte 0x83
-    .byte EOS
-
-# 0x50E2EA
-    .global _str_157
-_str_157:
-    .asciz "Junctions not possible"
-
-# 0x50E301
-    .global _str_158
-_str_158:
-    .asciz "Signal"
-
-# 0x50E308
-    .global _str_159
-_str_159:
-    .asciz "Station"
-
-# 0x50E310
-    .global _str_160
-_str_160:
-    .asciz "Airport"
-
-# 0x50E318
-    .global _str_161
-_str_161:
-    .asciz "Ship Port"
-
-# 0x50E322
-    .global _str_162
-_str_162:
-    .asciz "Station in the way"
-
-# 0x50E335
-    .global _str_163
-_str_163:
-    .asciz "Signal in the way"
-
-# 0x50E347
-    .global _str_164
-_str_164:
-    .asciz "Can't remove airport..."
-
-# 0x50E35F
-    .global _str_165
-_str_165:
-    .asciz "Can't remove ship port..."
-
-# 0x50E379
-    .global _str_166
-_str_166:
-    .asciz "Can't remove station..."
-
-# 0x50E391
-    .global _str_167
-_str_167:
-    .asciz "Wrong type of track/road!"
-
-# 0x50E3AB
-    .global _str_168
-_str_168:
-    .asciz "Bridge types must match"
-
-# 0x50E3C3
-    .global _str_169
-_str_169:
-    .asciz "Bridge not suitable for junction"
-
-# 0x50E3E4
-    .global _str_170
-_str_170:
-    .asciz "Track combination not possible"
-
-# 0x50E403
-    .global _str_171
-_str_171:
-    .asciz "Too many objects in game"
-
-# 0x50E41C
-    .global _str_172
-_str_172:
-    .asciz "Rotate Clockwise"
-
-# 0x50E42D
-    .global _str_173
-_str_173:
-    .asciz "Rotate Anti-Clockwise"
-
-# 0x50E443
-    .global _str_174
-_str_174:
-    .asciz "Locomotion: Starting for the first time..."
-
-# 0x50E46E
-    .global _str_175
-_str_175:
-    .asciz "Locomotion: Checking object files..."
-
-# 0x50E493
-    .global _str_176
-_str_176:
-    .asciz "Load Game"
-
-# 0x50E49D
-    .global _str_177
-_str_177:
-    .asciz "Quit Game"
-
-# 0x50E4A7
-    .global _str_178
-_str_178:
-    .asciz "Quit Game"
-
-# 0x50E4B1
-    .global _str_179
-_str_179:
-    .asciz "Quit Scenario Editor"
-
-# 0x50E4C6
-    .global _str_180
-_str_180:
-    .asciz "Load Landscape"
-
-# 0x50E4D5
-    .global _str_181
-_str_181:
-    .asciz "Save this before loading ?"
-
-# 0x50E4F0
-    .global _str_182
-_str_182:
-    .asciz "Save this before quitting ?"
-
-# 0x50E50C
-    .global _str_183
-_str_183:
-    .asciz "Save this before quitting ?"
-
-# 0x50E528
-    .global _str_184
-_str_184:
-    .asciz "Save"
-
-# 0x50E52D
-    .global _str_185
-_str_185:
-    .asciz "Don't Save"
-
-# 0x50E538
-    .global _str_186
-_str_186:
-    .asciz "Cancel"
-
-# 0x50E53F
-    .global _str_187
-_str_187:
-    .asciz "OK"
-
-# 0x50E542
-    .global _str_188
-_str_188:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " left"
-
-# 0x50E552
-    .global _str_189
-_str_189:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " right"
-
-# 0x50E563
-    .global _str_190
-_str_190:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " left fast"
-
-# 0x50E578
-    .global _str_191
-_str_191:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " right fast"
-
-# 0x50E58E
-    .global _str_192
-_str_192:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " left/right"
-
-# 0x50E5A4
-    .global _str_193
-_str_193:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " up"
-
-# 0x50E5B2
-    .global _str_194
-_str_194:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " down"
-
-# 0x50E5C2
-    .global _str_195
-_str_195:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " up fast"
-
-# 0x50E5D5
-    .global _str_196
-_str_196:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " down fast"
-
-# 0x50E5EA
-    .global _str_197
-_str_197:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Scroll "
-    .byte 0x83
-    .asciz " up/down"
-
-# 0x50E5FD
-    .global _str_198
-_str_198:
-    .asciz "map"
-
-# 0x50E601
-    .global _str_199
-_str_199:
-    .asciz "vehicle list"
-
-# 0x50E60E
-    .global _str_200
-_str_200:
-    .asciz "new vehicle list"
-
-# 0x50E61F
-    .global _str_201
-_str_201:
-    .asciz "list"
-
-# 0x50E624
-    .global _str_202
-_str_202:
-    .asciz "trees list"
-
-# 0x50E62F
-    .global _str_203
-_str_203:
-    .asciz "orders list"
-
-# 0x50E63B
-    .global _str_204
-_str_204:
-    .asciz "station list"
-
-# 0x50E648
-    .global _str_205
-_str_205:
-    .asciz "town list"
-
-# 0x50E652
-    .global _str_206
-_str_206:
-    .asciz "industry list"
-
-# 0x50E660
-    .global _str_207
-_str_207:
-    .asciz "new industry list"
-
-# 0x50E672
-    .global _str_208
-_str_208:
-    .asciz "building list"
-
-# 0x50E680
-    .global _str_209
-_str_209:
-    .asciz "walls list"
-
-# 0x50E68B
-    .global _str_210
-_str_210:
-    .asciz "ratings list"
-
-# 0x50E698
-    .global _str_211
-_str_211:
-    .asciz "cargo list"
-
-# 0x50E6A3
-    .global _str_212
-_str_212:
-    .asciz "message list"
-
-# 0x50E6B0
-    .global _str_213
-_str_213:
-    .asciz "company list"
-
-# 0x50E6BD
-    .global _str_214
-_str_214:
-    .asciz "scenario list"
-
-# 0x50E6CB
-    .global _str_215
-_str_215:
-    .asciz "credits list"
-
-# 0x50E6D8
-    .global _str_216
-_str_216:
-    .byte 0x0E
-    .byte 0xA0
-    .byte 0x90
-    .ascii "  "
-    .byte 0x81
-    .byte EOS
-
-# 0x50E6DF
-    .global _str_217
-_str_217:
-    .byte 0x0E
-    .byte 0xAA
-    .byte 0x90
-    .ascii "  "
-    .byte 0x81
-    .byte EOS
-
-# 0x50E6E6
-    .global _str_218
-_str_218:
-    .asciz "Unable to switch to selected mode"
-
-# 0x50E708
-    .global _str_219
-_str_219:
-    .byte 0x0E
-    .ascii "Cost: "
-    .byte 0x90
-    .byte 0x81
-    .byte EOS
-
-# 0x50E712
-    .global _str_220
-_str_220:
-    .asciz "(player 1)"
-
-# 0x50E71D
-    .global _str_221
-_str_221:
-    .asciz "(player 2)"
-
-# 0x50E728
-    .global _str_222
-_str_222:
-    .asciz "Can't change color scheme..."
-
-# 0x50E745
-    .global _str_223
-_str_223:
-    .asciz "Zoom In"
-
-# 0x50E74D
-    .global _str_224
-_str_224:
-    .asciz "Zoom Out"
-
-# 0x50E756
-    .global _str_225
-_str_225:
-    .asciz "Towns"
-
-# 0x50E75C
-    .global _str_226
-_str_226:
-    .asciz "Industries"
-
-# 0x50E767
-    .global _str_227
-_str_227:
-    .asciz "Airport"
-
-# 0x50E76F
-    .global _str_228
-_str_228:
-    .asciz "Ship Port"
-
-# 0x50E779
-    .global _str_229
-_str_229:
-    .asciz "Landscape Generation Options"
-
-# 0x50E796
-    .global _str_230
-_str_230:
-    .byte EOS
-
-# 0x50E797
-    .global _str_231
-_str_231:
-    .byte 0xB1
-    .byte EOS
-
-# 0x50E799
-    .global _str_232
-_str_232:
-    .byte 0xB6
-    .byte EOS
-
-# 0x50E79B
-    .global _str_233
-_str_233:
-    .byte 0xB1
-    .byte 0xB6
-    .byte EOS
-
-# 0x50E79E
-    .global _str_234
-_str_234:
-    .byte 0xB7
-    .byte EOS
-
-# 0x50E7A0
-    .global _str_235
-_str_235:
-    .byte 0xB1
-    .byte 0xB7
-    .byte EOS
-
-# 0x50E7A3
-    .global _str_236
-_str_236:
-    .byte 0xB6
-    .byte 0xB7
-    .byte EOS
-
-# 0x50E7A6
-    .global _str_237
-_str_237:
-    .byte 0xB1
-    .byte 0xB6
-    .byte 0xB7
-    .byte EOS
-
-# 0x50E7AA
-    .global _str_238
-_str_238:
-    .byte 0xB8
-    .byte EOS
-
-# 0x50E7AC
-    .global _str_239
-_str_239:
-    .byte 0xB1
-    .byte 0xB8
-    .byte EOS
-
-# 0x50E7AF
-    .global _str_240
-_str_240:
-    .byte 0xB6
-    .byte 0xB8
-    .byte EOS
-
-# 0x50E7B2
-    .global _str_241
-_str_241:
-    .byte 0xB1
-    .byte 0xB6
-    .byte 0xB8
-    .byte EOS
-
-# 0x50E7B6
-    .global _str_242
-_str_242:
-    .byte 0xB7
-    .byte 0xB8
-    .byte EOS
-
-# 0x50E7B9
-    .global _str_243
-_str_243:
-    .byte 0xB1
-    .byte 0xB7
-    .byte 0xB8
-    .byte EOS
-
-# 0x50E7BD
-    .global _str_244
-_str_244:
-    .byte 0xB6
-    .byte 0xB7
-    .byte 0xB8
-    .byte EOS
-
-# 0x50E7C1
-    .global _str_245
-_str_245:
-    .byte 0xB1
-    .byte 0xB6
-    .byte 0xB7
-    .byte 0xB8
-    .byte EOS
-
-# 0x50E7C6
-    .global _str_246
-_str_246:
-    .byte 0x83
-    .byte EOS
-
-# 0x50E7C8
-    .global _str_247
-_str_247:
-    .byte 0x83
-    .asciz " - Details"
-
-# 0x50E7D4
-    .global _str_248
-_str_248:
-    .byte 0x83
-    .asciz " - Finances"
-
-# 0x50E7E1
-    .global _str_249
-_str_249:
-    .byte 0x83
-    .asciz " - Cargo Delivered"
-
-# 0x50E7F5
-    .global _str_250
-_str_250:
-    .byte 0x83
-    .asciz " - Color Scheme"
-
-# 0x50E806
-    .global _str_251
-_str_251:
-    .byte 0x83
-    .asciz " - Challenge"
-
-# 0x50E814
-    .global _str_252
-_str_252:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Change direction"
-
-# 0x50E827
-    .global _str_253
-_str_253:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Pass signal at danger"
-
-# 0x50E83F
-    .global _str_254
-_str_254:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Remove "
-    .byte 0x88
-    .byte 0x83
-    .asciz " from track/road"
-
-# 0x50E85B
-    .global _str_255
-_str_255:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Place "
-    .byte 0x88
-    .byte 0x83
-    .asciz " on track/road"
-
-# 0x50E874
-    .global _str_256
-_str_256:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Remove "
-    .byte 0x88
-    .byte 0x83
-    .asciz " from airport"
-
-# 0x50E88D
-    .global _str_257
-_str_257:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Place "
-    .byte 0x88
-    .byte 0x83
-    .asciz " in airport"
-
-# 0x50E8A3
-    .global _str_258
-_str_258:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Remove "
-    .byte 0x88
-    .byte 0x83
-    .asciz " from water"
-
-# 0x50E8BA
-    .global _str_259
-_str_259:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Place "
-    .byte 0x88
-    .byte 0x83
-    .asciz " in dock"
-
-# 0x50E8CD
-    .global _str_260
-_str_260:
-    .ascii "Can't start "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz "..."
-
-# 0x50E8E1
-    .global _str_261
-_str_261:
-    .ascii "Can't select manual mode for "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz "..."
-
-# 0x50E906
-    .global _str_262
-_str_262:
-    .ascii "Can't stop "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz "..."
-
-# 0x50E919
-    .global _str_263
-_str_263:
-    .byte 0x87
-    .byte EOS
-
-# 0x50E91B
-    .global _str_264
-_str_264:
-    .ascii "Unlimited"
-    .byte 0x88
-    .byte EOS
-
-# 0x50E926
-    .global _str_265
-_str_265:
-    .asciz "Stop"
-
-# 0x50E92B
-    .global _str_266
-_str_266:
-    .asciz "Start"
-
-# 0x50E931
-    .global _str_267
-_str_267:
-    .asciz "Manual"
-
-# 0x50E938
-    .global _str_268
-_str_268:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select how much track/road to upgrade"
-
-# 0x50E960
-    .global _str_269
-_str_269:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Stop/Start "
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50E970
-    .global _str_270
-_str_270:
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x50E973
-    .global _str_271
-_str_271:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Track/road construction"
-
-# 0x50E98D
-    .global _str_272
-_str_272:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Station construction"
-
-# 0x50E9A4
-    .global _str_273
-_str_273:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Signal construction"
-
-# 0x50E9BA
-    .global _str_274
-_str_274:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Track electrification and other enhancements"
-
-# 0x50E9E9
-    .global _str_275
-_str_275:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select signal type"
-
-# 0x50E9FE
-    .global _str_276
-_str_276:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build signals in both directions"
-
-# 0x50EA21
-    .global _str_277
-_str_277:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build signal in one direction only (trains will not be allowed to travel in the other direction)"
-
-# 0x50EA84
-    .global _str_278
-_str_278:
-    .byte 0x0A
-    .byte 0x90
-    .byte 0x88
-    .byte 0x83
-    .byte 0x05
-    .ascii "Max. speed:  "
-    .byte 0x83
-    .byte 0x05
-    .ascii "Max. height above ground:  "
-    .byte 0x8D
-    .byte EOS
-
-# 0x50EAB5
-    .global _str_279
-_str_279:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select station type"
-
-# 0x50EACB
-    .global _str_280
-_str_280:
-    .ascii "Station "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50EAD5
-    .global _str_281
-_str_281:
-    .byte 0x83
-    .byte EOS
-
-# 0x50EAD7
-    .global _str_282
-_str_282:
-    .byte 0x83
-    .asciz " North"
-
-# 0x50EADF
-    .global _str_283
-_str_283:
-    .byte 0x83
-    .asciz " South"
-
-# 0x50EAE7
-    .global _str_284
-_str_284:
-    .byte 0x83
-    .asciz " East"
-
-# 0x50EAEE
-    .global _str_285
-_str_285:
-    .byte 0x83
-    .asciz " West"
-
-# 0x50EAF5
-    .global _str_286
-_str_286:
-    .byte 0x83
-    .asciz " Central"
-
-# 0x50EAFF
-    .global _str_287
-_str_287:
-    .byte 0x83
-    .asciz " Transfer"
-
-# 0x50EB0A
-    .global _str_288
-_str_288:
-    .byte 0x83
-    .asciz " Halt"
-
-# 0x50EB11
-    .global _str_289
-_str_289:
-    .byte 0x83
-    .asciz " Valley"
-
-# 0x50EB1A
-    .global _str_290
-_str_290:
-    .byte 0x83
-    .asciz " Heights"
-
-# 0x50EB24
-    .global _str_291
-_str_291:
-    .byte 0x83
-    .asciz " Woods"
-
-# 0x50EB2C
-    .global _str_292
-_str_292:
-    .byte 0x83
-    .asciz " Lakeside"
-
-# 0x50EB37
-    .global _str_293
-_str_293:
-    .byte 0x83
-    .asciz " Exchange"
-
-# 0x50EB42
-    .global _str_294
-_str_294:
-    .byte 0x83
-    .asciz " Airport"
-
-# 0x50EB4C
-    .global _str_295
-_str_295:
-    .byte 0x83
-    .asciz " Oilfield"
-
-# 0x50EB57
-    .global _str_296
-_str_296:
-    .byte 0x83
-    .asciz " Mines"
-
-# 0x50EB5F
-    .global _str_297
-_str_297:
-    .byte 0x83
-    .asciz " Docks"
-
-# 0x50EB67
-    .global _str_298
-_str_298:
-    .byte 0x83
-    .asciz " Annexe"
-
-# 0x50EB70
-    .global _str_299
-_str_299:
-    .byte 0x83
-    .asciz " Sidings"
-
-# 0x50EB7A
-    .global _str_300
-_str_300:
-    .byte 0x83
-    .asciz " Branch"
-
-# 0x50EB83
-    .global _str_301
-_str_301:
-    .ascii "Upper "
-    .byte 0x83
-    .byte EOS
-
-# 0x50EB8B
-    .global _str_302
-_str_302:
-    .ascii "Lower "
-    .byte 0x83
-    .byte EOS
-
-# 0x50EB93
-    .global _str_303
-_str_303:
-    .byte 0x83
-    .asciz " Heliport"
-
-# 0x50EB9E
-    .global _str_304
-_str_304:
-    .byte 0x83
-    .asciz " Forest"
-
-# 0x50EBA7
-    .global _str_305
-_str_305:
-    .byte 0x83
-    .asciz " Junction"
-
-# 0x50EBB2
-    .global _str_306
-_str_306:
-    .byte 0x83
-    .asciz " Cross"
-
-# 0x50EBBA
-    .global _str_307
-_str_307:
-    .byte 0x83
-    .asciz " Views"
-
-# 0x50EBC2
-    .global _str_308
-_str_308:
-    .byte 0x83
-    .asciz " 1"
-
-# 0x50EBC6
-    .global _str_309
-_str_309:
-    .byte 0x83
-    .asciz " 2"
-
-# 0x50EBCA
-    .global _str_310
-_str_310:
-    .byte 0x83
-    .asciz " 3"
-
-# 0x50EBCE
-    .global _str_311
-_str_311:
-    .byte 0x83
-    .asciz " 4"
-
-# 0x50EBD2
-    .global _str_312
-_str_312:
-    .byte 0x83
-    .asciz " 5"
-
-# 0x50EBD6
-    .global _str_313
-_str_313:
-    .byte 0x83
-    .asciz " 6"
-
-# 0x50EBDA
-    .global _str_314
-_str_314:
-    .byte 0x83
-    .asciz " 7"
-
-# 0x50EBDE
-    .global _str_315
-_str_315:
-    .byte 0x83
-    .asciz " 8"
-
-# 0x50EBE2
-    .global _str_316
-_str_316:
-    .byte 0x83
-    .asciz " 9"
-
-# 0x50EBE6
-    .global _str_317
-_str_317:
-    .byte 0x83
-    .asciz " 10"
-
-# 0x50EBEB
-    .global _str_318
-_str_318:
-    .byte 0x83
-    .asciz " 11"
-
-# 0x50EBF0
-    .global _str_319
-_str_319:
-    .byte 0x83
-    .asciz " 12"
-
-# 0x50EBF5
-    .global _str_320
-_str_320:
-    .byte 0x83
-    .asciz " 13"
-
-# 0x50EBFA
-    .global _str_321
-_str_321:
-    .byte 0x83
-    .asciz " 14"
-
-# 0x50EBFF
-    .global _str_322
-_str_322:
-    .byte 0x83
-    .asciz " 15"
-
-# 0x50EC04
-    .global _str_323
-_str_323:
-    .byte 0x83
-    .asciz " 16"
-
-# 0x50EC09
-    .global _str_324
-_str_324:
-    .byte 0x83
-    .asciz " 17"
-
-# 0x50EC0E
-    .global _str_325
-_str_325:
-    .byte 0x83
-    .asciz " 18"
-
-# 0x50EC13
-    .global _str_326
-_str_326:
-    .byte 0x83
-    .asciz " 19"
-
-# 0x50EC18
-    .global _str_327
-_str_327:
-    .byte 0x83
-    .asciz " 20"
-
-# 0x50EC1D
-    .global _str_328
-_str_328:
-    .byte 0x0E
-    .byte 0x88
-    .ascii "Weight: "
-    .byte 0x90
-    .byte 0x7B
-    .asciz "t"
-
-# 0x50EC2B
-    .global _str_329
-_str_329:
-    .byte 0x0E
-    .ascii "Total power: "
-    .byte 0x90
-    .byte 0x8E
-    .byte 0x0E
-    .ascii " Weight: "
-    .byte 0x90
-    .byte 0x7B
-    .asciz "t"
-
-# 0x50EC49
-    .global _str_330
-_str_330:
-    .byte 0x0E
-    .ascii "Max. speed: "
-    .byte 0x90
-    .byte 0x87
-    .byte 0x88
-    .byte 0x0E
-    .ascii " Reliability: "
-    .byte 0x90
-    .byte 0x7F
-    .asciz "%"
-
-# 0x50EC6C
-    .global _str_331
-_str_331:
-    .byte 0x0E
-    .ascii "Max. speed: "
-    .byte 0x90
-    .byte 0x87
-    .ascii " / "
-    .byte 0x87
-    .byte 0x0E
-    .ascii " Reliability: "
-    .byte 0x90
-    .byte 0x7F
-    .asciz "%"
-
-# 0x50EC92
-    .global _str_332
-_str_332:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Sell "
-    .byte 0x88
-    .byte 0x83
-    .byte 0x05
-    .asciz "(Or drag individual vehicle here to sell it)"
-
-# 0x50ECC9
-    .global _str_333
-_str_333:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Build new vehicle for this "
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50ECE9
-    .global _str_334
-_str_334:
-    .byte 0x90
-    .ascii "(click on view to set "
-    .byte 0x83
-    .asciz " starting position)"
-
-# 0x50ED15
-    .global _str_335
-_str_335:
-    .asciz "Vehicles are not compatible"
-
-# 0x50ED31
-    .global _str_336
-_str_336:
-    .asciz "Too many vehicles in game"
-
-# 0x50ED4B
-    .global _str_337
-_str_337:
-# 0x50ED4B
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       50 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       58 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       60 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       70 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       78 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       80 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       88 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       90 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       98 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      100 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      108 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      110 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      118 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      120 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      128 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      130 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      138 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      140 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      148 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      150 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      158 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      160 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      168 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      170 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      178 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      180 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      188 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      190 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      198 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1F8 ........
-    .byte 0x00                                           #      200 .
-
-# 0x50EF4C
-    .global _str_338
-_str_338:
-# 0x50EF4C
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       50 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       58 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       60 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       70 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       78 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       80 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       88 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       90 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       98 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      100 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      108 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      110 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      118 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      120 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      128 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      130 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      138 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      140 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      148 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      150 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      158 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      160 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      168 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      170 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      178 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      180 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      188 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      190 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      198 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1F8 ........
-    .byte 0x00                                           #      200 .
-
-# 0x50F14D
-    .global _str_339
-_str_339:
-    .byte 0x0A
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x50F151
-    .global _str_340
-_str_340:
-    .byte 0x05
-    .ascii "Built:  "
-    DATE 4
-    .byte EOS
-
-# 0x50F15D
-    .global _str_341
-_str_341:
-    .byte 0x05
-    .ascii "Value:  "
-    .byte 0x81
-    .byte EOS
-
-# 0x50F168
-    .global _str_342
-_str_342:
-    .byte 0x05
-    .ascii "Power:  "
-    .byte 0x8E
-    .byte EOS
-
-# 0x50F173
-    .global _str_343
-_str_343:
-    .byte 0x05
-    .ascii "Weight:  "
-    .byte 0x7F
-    .asciz "t"
-
-# 0x50F180
-    .global _str_344
-_str_344:
-    .byte 0x05
-    .ascii "Max. Speed:  "
-    .byte 0x87
-    .byte EOS
-
-# 0x50F190
-    .global _str_345
-_str_345:
-    .ascii " ("
-    .byte 0x87
-    .ascii " on "
-    .byte 0x83
-    .asciz ")"
-
-# 0x50F19A
-    .global _str_346
-_str_346:
-    .byte 0x05
-    .ascii "Reliability:  "
-    .byte 0x7F
-    .asciz "%"
-
-# 0x50F1AC
-    .global _str_347
-_str_347:
-    .byte 0x83
-    .ascii " "
-    .byte 0x83
-    .byte EOS
-
-# 0x50F1B0
-    .global _str_348
-_str_348:
-    .asciz "Single section"
-
-# 0x50F1BF
-    .global _str_349
-_str_349:
-    .asciz "Block section"
-
-# 0x50F1CD
-    .global _str_350
-_str_350:
-    .asciz "All connected track"
-
-# 0x50F1E1
-    .global _str_351
-_str_351:
-    .ascii "Warning: Too much track!"
-    .byte 0x05
-    .asciz "Some of selected track may not have been upgraded"
-
-# 0x50F22C
-    .global _str_352
-_str_352:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Upgrade track with these enhancements"
-
-# 0x50F254
-    .global _str_353
-_str_353:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "(Click on selected track to add this)"
-
-# 0x50F27C
-    .global _str_354
-_str_354:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select what to add to track"
-
-# 0x50F29A
-    .global _str_355
-_str_355:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Move main view to show this"
-
-# 0x50F2B8
-    .global _str_356
-_str_356:
-    .asciz "Off edge of map!"
-
-# 0x50F2C9
-    .global _str_357
-_str_357:
-    .asciz "Cannot build partly above and partly below water!"
-
-# 0x50F2FB
-    .global _str_358
-_str_358:
-    .asciz "Too close to water surface!"
-
-# 0x50F317
-    .global _str_359
-_str_359:
-    .asciz "Can't build this underwater!"
-
-# 0x50F334
-    .global _str_360
-_str_360:
-    .asciz "Can only build this above ground!"
-
-# 0x50F356
-    .global _str_361
-_str_361:
-    .asciz "Can only build this on level land"
-
-# 0x50F378
-    .global _str_362
-_str_362:
-    .asciz "Load Game"
-
-# 0x50F382
-    .global _str_363
-_str_363:
-    .asciz "Load Landscape"
-
-# 0x50F391
-    .global _str_364
-_str_364:
-    .asciz "Save Landscape"
-
-# 0x50F3A0
-    .global _str_365
-_str_365:
-    .asciz "Save Game"
-
-# 0x50F3AA
-    .global _str_366
-_str_366:
-    .asciz "Save Scenario"
-
-# 0x50F3B8
-    .global _str_367
-_str_367:
-    .asciz "Locomotion Saved Game File"
-
-# 0x50F3D3
-    .global _str_368
-_str_368:
-    .asciz "Locomotion Scenario File"
-
-# 0x50F3EC
-    .global _str_369
-_str_369:
-    .asciz "Locomotion Landscape File"
-
-# 0x50F406
-    .global _str_370
-_str_370:
-    .asciz "Game Save Failed!"
-
-# 0x50F418
-    .global _str_371
-_str_371:
-    .ascii "Failed to load saved game..."
-    .byte 0x05
-    .asciz "File contains invalid data!"
-
-# 0x50F451
-    .global _str_372
-_str_372:
-    .asciz "Hide foreground scenery & buildings"
-
-# 0x50F475
-    .global _str_373
-_str_373:
-    .asciz "Can only be built on water!"
-
-# 0x50F491
-    .global _str_374
-_str_374:
-    .asciz "Can only be built on water if next to a water-based industry!"
-
-# 0x50F4CF
-    .global _str_375
-_str_375:
-    .ascii "Name "
-    .byte 0x83
-    .byte EOS
-
-# 0x50F4D6
-    .global _str_376
-_str_376:
-    .ascii "Type new name for this "
-    .byte 0x83
-    .asciz ":"
-
-# 0x50F4F0
-    .global _str_377
-_str_377:
-    .asciz "Can't rename this vehicle..."
-
-# 0x50F50D
-    .global _str_378
-_str_378:
-    .asciz "Bridge needed"
-
-# 0x50F51B
-    .global _str_379
-_str_379:
-    .asciz "Too far above ground for this bridge type"
-
-# 0x50F545
-    .global _str_380
-_str_380:
-    .asciz "Bridge is already at it's maximum height above ground"
-
-# 0x50F57B
-    .global _str_381
-_str_381:
-    .byte 0x83
-    .asciz " requires a bridge"
-
-# 0x50F58F
-    .global _str_382
-_str_382:
-    .asciz "Bridge type unsuitable for this configuration"
-
-# 0x50F5BD
-    .global _str_383
-_str_383:
-    .asciz "Station Name"
-
-# 0x50F5CA
-    .global _str_384
-_str_384:
-    .ascii "Type new name for "
-    .byte 0x83
-    .asciz " station:"
-
-# 0x50F5E7
-    .global _str_385
-_str_385:
-    .asciz "Can't rename station..."
-
-# 0x50F5FF
-    .global _str_386
-_str_386:
-    .asciz "Invalid name for station"
-
-# 0x50F618
-    .global _str_387
-_str_387:
-    .asciz "Can't move vehicle..."
-
-# 0x50F62E
-    .global _str_388
-_str_388:
-    .asciz "Can't reverse train..."
-
-# 0x50F645
-    .global _str_389
-_str_389:
-    .asciz "Can't sell vehicle..."
-
-# 0x50F65B
-    .global _str_390
-_str_390:
-    .ascii "Can't sell "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz "..."
-
-# 0x50F670
-    .global _str_391
-_str_391:
-    .byte 0x83
-    .byte EOS
-
-# 0x50F672
-    .global _str_392
-_str_392:
-    .byte 0x83
-    .byte EOS
-
-# 0x50F674
-    .global _str_393
-_str_393:
-    .byte 0x83
-    .asciz " station platform"
-
-# 0x50F687
-    .global _str_394
-_str_394:
-    .byte 0x83
-    .asciz " station building / bus stop"
-
-# 0x50F6A5
-    .global _str_395
-_str_395:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Highlight catchment area of this station"
-
-# 0x50F6D0
-    .global _str_396
-_str_396:
-    .asciz "Mute"
-
-# 0x50F6D5
-    .global _str_397
-_str_397:
-    .asciz "Play Music"
-
-# 0x50F6E0
-    .global _str_398
-_str_398:
-    .byte 0x93
-    .asciz "Bankrupt!"
-
-# 0x50F6EB
-    .global _str_399
-_str_399:
-    .byte 0x83
-    .ascii " not allowed to wait for a full load at "
-    .byte 0x83
-    .byte EOS
-
-# 0x50F716
-    .global _str_400
-_str_400:
-    .byte 0x83
-    .asciz " has slipped to a halt on an incline"
-
-# 0x50F73C
-    .global _str_401
-_str_401:
-    .byte 0x83
-    .ascii " now accepts "
-    .byte 0x83
-    .byte EOS
-
-# 0x50F74C
-    .global _str_402
-_str_402:
-    .byte 0x83
-    .ascii " no longer accepts "
-    .byte 0x83
-    .byte EOS
-
-# 0x50F762
-    .global _str_403
-_str_403:
-    .ascii "New Transport Company!"
-    .byte 0x05
-    .byte 0x83
-    .ascii " starts construction near "
-    .byte 0x83
-    .asciz "!"
-
-# 0x50F797
-    .global _str_404
-_str_404:
-    .byte 0x83
-    .ascii " is not able to land at "
-    .byte 0x83
-    .asciz " due to the airport being unsuitable"
-
-# 0x50F7D6
-    .global _str_405
-_str_405:
-    .ascii "Citizens Celebrate!"
-    .byte 0x05
-    .ascii "First "
-    .byte 0x83
-    .ascii " arrive in "
-    .byte 0x83
-    .asciz "!"
-
-# 0x50F7FF
-    .global _str_406
-_str_406:
-    .ascii "Citizens Celebrate!"
-    .byte 0x05
-    .ascii "First "
-    .byte 0x83
-    .ascii " delivery arrives in "
-    .byte 0x83
-    .asciz "!"
-
-# 0x50F832
-    .global _str_407
-_str_407:
-    .ascii "Workers Celebrate!"
-    .byte 0x05
-    .ascii "First "
-    .byte 0x83
-    .ascii " delivered to "
-    .byte 0x83
-    .asciz "!"
-
-# 0x50F85D
-    .global _str_408
-_str_408:
-    .ascii "New Vehicle Invented -"
-    .byte 0x05
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\"!"
-
-# 0x50F879
-    .global _str_409
-_str_409:
-    .byte 0x83
-    .ascii " is promoted from "
-    .byte 0xB4
-    .byte 0x83
-    .ascii "\" to "
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\"!"
-
-# 0x50F898
-    .global _str_410
-_str_410:
-    .ascii "New "
-    .byte 0x83
-    .ascii " under construction near "
-    .byte 0x83
-    .asciz "!"
-
-# 0x50F8B9
-    .global _str_411
-_str_411:
-    .ascii "Congratulations!"
-    .byte 0x05
-    .asciz "You have successfully completed your challenge!"
-
-# 0x50F8FA
-    .global _str_412
-_str_412:
-    .ascii "Failure!"
-    .byte 0x05
-    .asciz "You have failed your challenge!"
-
-# 0x50F923
-    .global _str_413
-_str_413:
-    .ascii "Beaten!"
-    .byte 0x05
-    .byte 0x83
-    .asciz " has completed the challenge!"
-
-# 0x50F94A
-    .global _str_414
-_str_414:
-    .ascii "Bankruptcy Warning!"
-    .byte 0x05
-    .byte 0x83
-    .asciz " will be closed down in 6 months unless performance improves!"
-
-# 0x50F99D
-    .global _str_415
-_str_415:
-    .ascii "Final Warning!"
-    .byte 0x05
-    .byte 0x83
-    .asciz " will be closed down in 3 months unless performance improves!"
-
-# 0x50F9EB
-    .global _str_416
-_str_416:
-    .ascii "Bankrupt!"
-    .byte 0x05
-    .byte 0x83
-    .asciz " has been declared bankrupt and closed down!"
-
-# 0x50FA23
-    .global _str_417
-_str_417:
-    .ascii "Bankrupt!"
-    .byte 0x05
-    .byte 0x83
-    .asciz " has been declared bankrupt and closed down!"
-
-# 0x50FA5B
-    .global _str_418
-_str_418:
-    .byte 0x83
-    .asciz " has crashed!"
-
-# 0x50FA6A
-    .global _str_419
-_str_419:
-    .ascii "Corporate Scandal!"
-    .byte 0x05
-    .byte 0x83
-    .asciz " jailed for attempted robbery!"
-
-# 0x50FA9D
-    .global _str_420
-_str_420:
-    .ascii "New "
-    .byte 0x83
-    .ascii " speed record!"
-    .byte 0x05
-    .byte 0x83
-    .ascii " achieves average speed of "
-    .byte 0x87
-    .asciz " between stops!"
-
-# 0x50FADE
-    .global _str_421
-_str_421:
-    MOVE_X 10
-    .byte 0x83
-    .byte EOS
-
-# 0x50FAE2
-    .global _str_422
-_str_422:
-    .byte 0xBB
-    MOVE_X 10
-    .byte 0x83
-    .byte EOS
-
-# 0x50FAE7
-    .global _str_423
-_str_423:
-    FORMAT_NEWLINE_X_Y 1, 2
-    .byte 0x8F
-    FORMAT_NEWLINE_X_Y 26, 8
-    .byte 0x83
-    .byte EOS
-
-# 0x50FAF0
-    .global _str_424
-_str_424:
-    MOVE_X 10
-    .byte 0x85
-    .byte EOS
-
-# 0x50FAF4
-    .global _str_425
-_str_425:
-    .byte 0xBB
-    MOVE_X 10
-    .byte 0x85
-    .byte EOS
-
-# 0x50FAF9
-    .global _str_426
-_str_426:
-    .asciz "Height marks on tracks & roads"
-
-# 0x50FB18
-    .global _str_427
-_str_427:
-    .asciz "Height marks on land"
-
-# 0x50FB2D
-    .global _str_428
-_str_428:
-    .asciz "One-way direction arrows"
-
-# 0x50FB46
-    .global _str_429
-_str_429:
-    .asciz "Town names displayed"
-
-# 0x50FB5B
-    .global _str_430
-_str_430:
-    .asciz "Station names displayed"
-
-# 0x50FB73
-    .global _str_431
-_str_431:
-    .byte 0x05
-    .byte 0x0F
-    .asciz "Accepts "
-
-# 0x50FB7E
-    .global _str_432
-_str_432:
-    .asciz "1/8 "
-
-# 0x50FB83
-    .global _str_433
-_str_433:
-    .asciz "1/4 "
-
-# 0x50FB88
-    .global _str_434
-_str_434:
-    .asciz "3/8 "
-
-# 0x50FB8D
-    .global _str_435
-_str_435:
-    .asciz "1/2 "
-
-# 0x50FB92
-    .global _str_436
-_str_436:
-    .asciz "5/8 "
-
-# 0x50FB97
-    .global _str_437
-_str_437:
-    .asciz "3/4 "
-
-# 0x50FB9C
-    .global _str_438
-_str_438:
-    .asciz "7/8 "
-
-# 0x50FBA1
-    .global _str_439
-_str_439:
-    .asciz ", "
-
-# 0x50FBA4
-    .global _str_440
-_str_440:
-    .byte 0x05
-    .byte 0x0F
-    .asciz "Produces "
-
-# 0x50FBB0
-    .global _str_441
-_str_441:
-    .byte 0x05
-    .byte 0x0F
-    .asciz "Under construction"
-
-# 0x50FBC5
-    .global _str_442
-_str_442:
-    .byte 0x83
-    .byte 0x05
-    .byte 0x0F
-    .ascii "Owned by "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FBD3
-    .global _str_443
-_str_443:
-    MOVE_X 10
-    .byte 0x83
-    .byte EOS
-
-# 0x50FBD7
-    .global _str_444
-_str_444:
-    .byte 0xAC
-    MOVE_X 10
-    .byte 0x83
-    .byte EOS
-
-# 0x50FBDC
-    .global _str_445
-_str_445:
-    .asciz "Can't remove this..."
-
-# 0x50FBF1
-    .global _str_446
-_str_446:
-    .asciz "Walls & Fences"
-
-# 0x50FC00
-    .global _str_447
-_str_447:
-    .asciz "Plant Trees"
-
-# 0x50FC0C
-    .global _str_448
-_str_448:
-    .asciz "Can't position this here..."
-
-# 0x50FC28
-    .global _str_449
-_str_449:
-    .asciz "Can't plant this here..."
-
-# 0x50FC41
-    .global _str_450
-_str_450:
-    .byte 0x0B
-    .byte 0x0E
-    .byte 0x83
-    .byte EOS
-
-# 0x50FC45
-    .global _str_451
-_str_451:
-    .byte 0x83
-    .byte 0x05
-    .byte 0x0F
-    .asciz "Right-Click to Modify"
-
-# 0x50FC5E
-    .global _str_452
-_str_452:
-    .byte 0x83
-    .byte 0x05
-    .byte 0x0F
-    .asciz "Right-Click to Remove"
-
-# 0x50FC77
-    .global _str_453
-_str_453:
-    .byte 0x07
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x50FC7B
-    .global _str_454
-_str_454:
-    .byte 0x93
-    .byte 0x83
-    .byte EOS
-
-# 0x50FC7E
-    .global _str_455
-_str_455:
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x50FC81
-    .global _str_456
-_str_456:
-    .byte 0x90
-    .byte 0x83
-    .ascii " "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FC86
-    .global _str_457
-_str_457:
-    .byte 0x0E
-    .byte 0x83
-    .byte EOS
-
-# 0x50FC89
-    .global _str_458
-_str_458:
-    .byte 0x92
-    .byte 0x83
-    .byte EOS
-
-# 0x50FC8C
-    .global _str_459
-_str_459:
-    .ascii "Stopping"
-    .byte 0x88
-    .byte 0x88
-    .byte EOS
-
-# 0x50FC97
-    .global _str_460
-_str_460:
-    .ascii "/ Waiting at signal"
-    .byte 0x88
-    .byte 0x88
-    .byte EOS
-
-# 0x50FCAD
-    .global _str_461
-_str_461:
-    .ascii "at "
-    .byte 0x87
-    .byte 0x88
-    .byte EOS
-
-# 0x50FCB3
-    .global _str_462
-_str_462:
-    .byte 0x93
-    .ascii "Crashed!"
-    .byte 0x88
-    .byte 0x88
-    .byte EOS
-
-# 0x50FCBF
-    .global _str_463
-_str_463:
-    .byte 0x93
-    .ascii "Stuck!"
-    .byte 0x88
-    .byte 0x88
-    .byte EOS
-
-# 0x50FCC9
-    .global _str_464
-_str_464:
-    .byte 0x93
-    .ascii "Broken down"
-    .byte 0x88
-    .byte 0x88
-    .byte EOS
-
-# 0x50FCD8
-    .global _str_465
-_str_465:
-    .ascii "Stopped"
-    .byte 0x88
-    .byte 0x88
-    .byte EOS
-
-# 0x50FCE2
-    .global _str_466
-_str_466:
-    .ascii "Loading at "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FCEF
-    .global _str_467
-_str_467:
-    .ascii "Unloading at "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FCFE
-    .global _str_468
-_str_468:
-    .ascii "Approaching "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FD0C
-    .global _str_469
-_str_469:
-    .ascii "Landing at "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FD19
-    .global _str_470
-_str_470:
-    .ascii "Taxiing at "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FD26
-    .global _str_471
-_str_471:
-    .ascii "Taking off from "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FD38
-    .global _str_472
-_str_472:
-    .ascii "Heading for "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FD46
-    .global _str_473
-_str_473:
-    .ascii "No position"
-    .byte 0x88
-    .byte 0x88
-    .byte EOS
-
-# 0x50FD54
-    .global _str_474
-_str_474:
-    .ascii "Traveling"
-    .byte 0x88
-    .byte 0x88
-    .byte EOS
-
-# 0x50FD60
-    .global _str_475
-_str_475:
-    .byte 0x83
-    .ascii " - "
-    .byte 0x83
-    .byte EOS
-
-# 0x50FD66
-    .global _str_476
-_str_476:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x50FD6A
-    .global _str_477
-_str_477:
-    .asciz "Can't lower water level here..."
-
-# 0x50FD8A
-    .global _str_478
-_str_478:
-    .asciz "Can't raise water level here..."
-
-# 0x50FDAA
-    .global _str_479
-_str_479:
-    .asciz "(None)"
-
-# 0x50FDB1
-    .global _str_480
-_str_480:
-    .byte 0x85
-    .byte EOS
-
-# 0x50FDB3
-    .global _str_481
-_str_481:
-    .byte 0x93
-    .asciz "Closed - - "
-
-# 0x50FDC0
-    .global _str_482
-_str_482:
-    .byte 0x95
-    .byte 0x83
-    .asciz " - - "
-
-# 0x50FDC8
-    .global _str_483
-_str_483:
-    .asciz "Land slope unsuitable"
-
-# 0x50FDDE
-    .global _str_484
-_str_484:
-    .asciz "Can't build this underwater!"
-
-# 0x50FDFB
-    .global _str_485
-_str_485:
-    .asciz "Land type not suitable"
-
-# 0x50FE12
-    .global _str_486
-_str_486:
-    .byte 0x90
-    .byte 0xBC
-    .byte EOS
-
-# 0x50FE15
-    .global _str_487
-_str_487:
-    .byte 0x90
-    .byte 0xBD
-    .byte EOS
-
-# 0x50FE18
-    .global _str_488
-_str_488:
-    .asciz "train"
-
-# 0x50FE1E
-    .global _str_489
-_str_489:
-    .asciz "trains"
-
-# 0x50FE25
-    .global _str_490
-_str_490:
-    .asciz "Train"
-
-# 0x50FE2B
-    .global _str_491
-_str_491:
-    .asciz "Trains"
-
-# 0x50FE32
-    .global _str_492
-_str_492:
-    .byte 0x7F
-    .asciz " train"
-
-# 0x50FE3A
-    .global _str_493
-_str_493:
-    .byte 0x7F
-    .asciz " trains"
-
-# 0x50FE43
-    .global _str_494
-_str_494:
-    .ascii "Train "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50FE4B
-    .global _str_495
-_str_495:
-    .asciz "boat"
-
-# 0x50FE50
-    .global _str_496
-_str_496:
-    .asciz "boats"
-
-# 0x50FE56
-    .global _str_497
-_str_497:
-    .asciz "Boat"
-
-# 0x50FE5B
-    .global _str_498
-_str_498:
-    .asciz "Boats"
-
-# 0x50FE61
-    .global _str_499
-_str_499:
-    .byte 0x7F
-    .asciz " boat"
-
-# 0x50FE68
-    .global _str_500
-_str_500:
-    .byte 0x7F
-    .asciz " boats"
-
-# 0x50FE70
-    .global _str_501
-_str_501:
-    .ascii "Boat "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50FE77
-    .global _str_502
-_str_502:
-    .asciz "track"
-
-# 0x50FE7D
-    .global _str_503
-_str_503:
-    .asciz "tracks"
-
-# 0x50FE84
-    .global _str_504
-_str_504:
-    .asciz "Track"
-
-# 0x50FE8A
-    .global _str_505
-_str_505:
-    .asciz "Tracks"
-
-# 0x50FE91
-    .global _str_506
-_str_506:
-    .byte 0x7F
-    .asciz " track"
-
-# 0x50FE99
-    .global _str_507
-_str_507:
-    .byte 0x7F
-    .asciz " tracks"
-
-# 0x50FEA2
-    .global _str_508
-_str_508:
-    .ascii "Track "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50FEAA
-    .global _str_509
-_str_509:
-    .asciz "docking platform"
-
-# 0x50FEBB
-    .global _str_510
-_str_510:
-    .asciz "docking platforms"
-
-# 0x50FECD
-    .global _str_511
-_str_511:
-    .asciz "Docking platform"
-
-# 0x50FEDE
-    .global _str_512
-_str_512:
-    .asciz "Docking platforms"
-
-# 0x50FEF0
-    .global _str_513
-_str_513:
-    .byte 0x7F
-    .asciz " docking platform"
-
-# 0x50FF03
-    .global _str_514
-_str_514:
-    .byte 0x7F
-    .asciz " docking platforms"
-
-# 0x50FF17
-    .global _str_515
-_str_515:
-    .ascii "Docking platform "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50FF2A
-    .global _str_516
-_str_516:
-    .asciz "station"
-
-# 0x50FF32
-    .global _str_517
-_str_517:
-    .asciz "stations"
-
-# 0x50FF3B
-    .global _str_518
-_str_518:
-    .asciz "Station"
-
-# 0x50FF43
-    .global _str_519
-_str_519:
-    .asciz "Stations"
-
-# 0x50FF4C
-    .global _str_520
-_str_520:
-    .byte 0x7F
-    .asciz " station"
-
-# 0x50FF56
-    .global _str_521
-_str_521:
-    .byte 0x7F
-    .asciz " stations"
-
-# 0x50FF61
-    .global _str_522
-_str_522:
-    .ascii "Station "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50FF6B
-    .global _str_523
-_str_523:
-    .asciz "vehicle"
-
-# 0x50FF73
-    .global _str_524
-_str_524:
-    .asciz "vehicles"
-
-# 0x50FF7C
-    .global _str_525
-_str_525:
-    .asciz "Vehicle"
-
-# 0x50FF84
-    .global _str_526
-_str_526:
-    .asciz "Vehicles"
-
-# 0x50FF8D
-    .global _str_527
-_str_527:
-    .byte 0x7F
-    .asciz " vehicle"
-
-# 0x50FF97
-    .global _str_528
-_str_528:
-    .byte 0x7F
-    .asciz " vehicles"
-
-# 0x50FFA2
-    .global _str_529
-_str_529:
-    .ascii "Vehicle "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50FFAC
-    .global _str_530
-_str_530:
-    .asciz "building"
-
-# 0x50FFB5
-    .global _str_531
-_str_531:
-    .asciz "buildings"
-
-# 0x50FFBF
-    .global _str_532
-_str_532:
-    .asciz "Building"
-
-# 0x50FFC8
-    .global _str_533
-_str_533:
-    .asciz "Buildings"
-
-# 0x50FFD2
-    .global _str_534
-_str_534:
-    .byte 0x7F
-    .asciz " building"
-
-# 0x50FFDD
-    .global _str_535
-_str_535:
-    .byte 0x7F
-    .asciz " buildings"
-
-# 0x50FFE9
-    .global _str_536
-_str_536:
-    .ascii "Building "
-    .byte 0x7F
-    .byte EOS
-
-# 0x50FFF4
-    .global _str_537
-_str_537:
-    .asciz "structure"
-
-# 0x50FFFE
-    .global _str_538
-_str_538:
-    .asciz "structures"
-
-# 0x510009
-    .global _str_539
-_str_539:
-    .asciz "Structure"
-
-# 0x510013
-    .global _str_540
-_str_540:
-    .asciz "Structures"
-
-# 0x51001E
-    .global _str_541
-_str_541:
-    .byte 0x7F
-    .asciz " structure"
-
-# 0x51002A
-    .global _str_542
-_str_542:
-    .byte 0x7F
-    .asciz " structures"
-
-# 0x510037
-    .global _str_543
-_str_543:
-    .ascii "Structure "
-    .byte 0x7F
-    .byte EOS
-
-# 0x510043
-    .global _str_544
-_str_544:
-    .asciz "ship"
-
-# 0x510048
-    .global _str_545
-_str_545:
-    .asciz "ships"
-
-# 0x51004E
-    .global _str_546
-_str_546:
-    .asciz "Ship"
-
-# 0x510053
-    .global _str_547
-_str_547:
-    .asciz "Ships"
-
-# 0x510059
-    .global _str_548
-_str_548:
-    .byte 0x7F
-    .asciz " ship"
-
-# 0x510060
-    .global _str_549
-_str_549:
-    .byte 0x7F
-    .asciz " ships"
-
-# 0x510068
-    .global _str_550
-_str_550:
-    .ascii "Ship "
-    .byte 0x7F
-    .byte EOS
-
-# 0x51006F
-    .global _str_551
-_str_551:
-    .asciz "town"
-
-# 0x510074
-    .global _str_552
-_str_552:
-    .asciz "towns"
-
-# 0x51007A
-    .global _str_553
-_str_553:
-    .asciz "Town"
-
-# 0x51007F
-    .global _str_554
-_str_554:
-    .asciz "Towns"
-
-# 0x510085
-    .global _str_555
-_str_555:
-    .byte 0x7F
-    .asciz " town"
-
-# 0x51008C
-    .global _str_556
-_str_556:
-    .byte 0x7F
-    .asciz " towns"
-
-# 0x510094
-    .global _str_557
-_str_557:
-    .ascii "Town "
-    .byte 0x7F
-    .byte EOS
-
-# 0x51009B
-    .global _str_558
-_str_558:
-    .asciz "industry"
-
-# 0x5100A4
-    .global _str_559
-_str_559:
-    .asciz "industries"
-
-# 0x5100AF
-    .global _str_560
-_str_560:
-    .asciz "Industry"
-
-# 0x5100B8
-    .global _str_561
-_str_561:
-    .asciz "Industries"
-
-# 0x5100C3
-    .global _str_562
-_str_562:
-    .byte 0x7F
-    .asciz " industry"
-
-# 0x5100CE
-    .global _str_563
-_str_563:
-    .byte 0x7F
-    .asciz " industries"
-
-# 0x5100DB
-    .global _str_564
-_str_564:
-    .ascii "Industry "
-    .byte 0x7F
-    .byte EOS
-
-# 0x5100E6
-    .global _str_565
-_str_565:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Rotate objects by 90"
-    .byte 0xB0
-    .byte EOS
-
-# 0x5100FE
-    .global _str_566
-_str_566:
-    .asciz "Level land required"
-
-# 0x510112
-    .global _str_567
-_str_567:
-    .asciz "Can't change land type..."
-
-# 0x51012C
-    .global _str_568
-_str_568:
-    .byte 0x0B
-    .byte 0x94
-    .ascii "+ "
-    .byte 0x81
-    .byte EOS
-
-# 0x510132
-    .global _str_569
-_str_569:
-    .byte 0x0B
-    .byte 0x93
-    .ascii "- "
-    .byte 0x81
-    .byte EOS
-
-# 0x510138
-    .global _str_570
-_str_570:
-    .byte 0x0B
-    .byte 0x0D
-    .ascii "+ "
-    .byte 0x81
-    .byte EOS
-
-# 0x51013E
-    .global _str_571
-_str_571:
-    .byte 0x0B
-    .byte 0x0D
-    .ascii "- "
-    .byte 0x81
-    .byte EOS
-
-# 0x510144
-    .global _str_572
-_str_572:
-    .byte 0x82
-    .byte EOS
-
-# 0x510146
-    .global _str_573
-_str_573:
-    .byte 0x93
-    .byte 0x82
-    .byte EOS
-
-# 0x510149
-    .global _str_574
-_str_574:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Show view of "
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x51015B
-    .global _str_575
-_str_575:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Show "
-    .byte 0x88
-    .byte 0x83
-    .asciz " design details and options"
-
-# 0x510180
-    .global _str_576
-_str_576:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Show cargo/passengers in "
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x51019E
-    .global _str_577
-_str_577:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Show "
-    .byte 0x88
-    .byte 0x83
-    .asciz " route details"
-
-# 0x5101B6
-    .global _str_578
-_str_578:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Show "
-    .byte 0x88
-    .byte 0x83
-    .asciz " running costs and income"
-
-# 0x5101D9
-    .global _str_579
-_str_579:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select new start position for construction"
-
-# 0x510206
-    .global _str_580
-_str_580:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Rotate 90"
-    .byte 0xB0
-    .byte EOS
-
-# 0x510213
-    .global _str_581
-_str_581:
-    .byte 0x83
-    .asciz " in the way"
-
-# 0x510220
-    .global _str_582
-_str_582:
-    .byte 0x81
-    .byte EOS
-
-# 0x510222
-    .global _str_583
-_str_583:
-    .asciz "Can't build this here..."
-
-# 0x51023B
-    .global _str_584
-_str_584:
-    DATE 4
-    .byte EOS
-
-# 0x51023E
-    .global _str_585
-_str_585:
-    .asciz "Chris Sawyer's Locomotion"
-
-# 0x510258
-    .global _str_586
-_str_586:
-    .asciz "Please insert your Locomotion CD in the following drive:-"
-
-# 0x510292
-    .global _str_587
-_str_587:
-    .byte 0x0E
-    .asciz "Expenditure/Income"
-
-# 0x5102A6
-    .global _str_588
-_str_588:
-    .asciz "Train Income"
-
-# 0x5102B3
-    .global _str_589
-_str_589:
-    .asciz "Train Running Costs"
-
-# 0x5102C7
-    .global _str_590
-_str_590:
-    .asciz "Bus Income"
-
-# 0x5102D2
-    .global _str_591
-_str_591:
-    .asciz "Bus Running Costs"
-
-# 0x5102E4
-    .global _str_592
-_str_592:
-    .asciz "Truck Income"
-
-# 0x5102F1
-    .global _str_593
-_str_593:
-    .asciz "Truck Running Costs"
-
-# 0x510305
-    .global _str_594
-_str_594:
-    .asciz "Tram Income"
-
-# 0x510311
-    .global _str_595
-_str_595:
-    .asciz "Tram Running Costs"
-
-# 0x510324
-    .global _str_596
-_str_596:
-    .asciz "Aircraft Income"
-
-# 0x510334
-    .global _str_597
-_str_597:
-    .asciz "Aircraft Running Costs"
-
-# 0x51034B
-    .global _str_598
-_str_598:
-    .asciz "Ship Income"
-
-# 0x510357
-    .global _str_599
-_str_599:
-    .asciz "Ship Running Costs"
-
-# 0x51036A
-    .global _str_600
-_str_600:
-    .asciz "Construction"
-
-# 0x510377
-    .global _str_601
-_str_601:
-    .asciz "Vehicle Purchases"
-
-# 0x510389
-    .global _str_602
-_str_602:
-    .asciz "Vehicle Disposals"
-
-# 0x51039B
-    .global _str_603
-_str_603:
-    .asciz "Loan Interest"
-
-# 0x5103A9
-    .global _str_604
-_str_604:
-    .asciz "Miscellaneous"
-
-# 0x5103B7
-    .global _str_605
-_str_605:
-    .byte 0x80
-    .byte EOS
-
-# 0x5103B9
-    .global _str_606
-_str_606:
-    .ascii "+"
-    .byte 0x82
-    .byte EOS
-
-# 0x5103BC
-    .global _str_607
-_str_607:
-    .byte 0x82
-    .byte EOS
-
-# 0x5103BE
-    .global _str_608
-_str_608:
-    .byte 0x0E
-    .asciz "Loan:"
-
-# 0x5103C5
-    .global _str_609
-_str_609:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x81
-    .byte EOS
-
-# 0x5103CB
-    .global _str_610
-_str_610:
-    .asciz "Can't borrow any more money!"
-
-# 0x5103E8
-    .global _str_611
-_str_611:
-    .asciz "Not enough cash available!"
-
-# 0x510403
-    .global _str_612
-_str_612:
-    .asciz "Can't pay back loan!"
-
-# 0x510418
-    .global _str_613
-_str_613:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Start New Game"
-
-# 0x510429
-    .global _str_614
-_str_614:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Load Saved Game"
-
-# 0x51043B
-    .global _str_615
-_str_615:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Show Tutorial"
-
-# 0x51044B
-    .global _str_616
-_str_616:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Exit from game"
-
-# 0x51045C
-    .global _str_617
-_str_617:
-    .asciz "Hamlet"
-
-# 0x510463
-    .global _str_618
-_str_618:
-    .asciz "Village"
-
-# 0x51046B
-    .global _str_619
-_str_619:
-    .asciz "Town"
-
-# 0x510470
-    .global _str_620
-_str_620:
-    .asciz "City"
-
-# 0x510475
-    .global _str_621
-_str_621:
-    .asciz "Metropolis"
-
-# 0x510480
-    .global _str_622
-_str_622:
-    .asciz "Track/road unsuitable"
-
-# 0x510496
-    .global _str_623
-_str_623:
-    .asciz "Track/road unsuitable for station"
-
-# 0x5104B8
-    .global _str_624
-_str_624:
-    .asciz "Station cannot be built on a junction"
-
-# 0x5104DE
-    .global _str_625
-_str_625:
-    .asciz "Signals cannot be built on a junction"
-
-# 0x510504
-    .global _str_626
-_str_626:
-    .asciz "Signals cannot be built in stations"
-
-# 0x510528
-    .global _str_627
-_str_627:
-    .byte 0x83
-    .byte 0x05
-    .byte 0x0F
-    .byte 0x83
-    .byte EOS
-
-# 0x51052D
-    .global _str_628
-_str_628:
-    .byte 0x83
-    .byte 0x05
-    .byte 0x0F
-    .byte 0x83
-    .byte EOS
-
-# 0x510532
-    .global _str_629
-_str_629:
-    .byte 0x83
-    .byte 0x05
-    .byte 0x0F
-    .byte 0x83
-    .ascii " "
-    .byte 0x83
-    .byte EOS
-
-# 0x510539
-    .global _str_630
-_str_630:
-    .byte 0x0E
-    .ascii "Cash:  "
-    MOVE_X 81
-    .byte 0x93
-    .asciz "Bankrupt!"
-
-# 0x51054E
-    .global _str_631
-_str_631:
-    .byte 0x0E
-    .ascii "Cash:  "
-    MOVE_X 81
-    .byte 0x90
-    .byte 0x82
-    .byte EOS
-
-# 0x51055B
-    .global _str_632
-_str_632:
-    .byte 0x0E
-    .ascii "Cash:  "
-    MOVE_X 81
-    .byte 0x93
-    .byte 0x82
-    .byte EOS
-
-# 0x510568
-    .global _str_633
-_str_633:
-    .byte 0x0E
-    .ascii "Company Value: "
-    .byte 0x90
-    .byte 0x82
-    .byte EOS
-
-# 0x51057B
-    .global _str_634
-_str_634:
-    .byte 0x0E
-    .ascii "Profit from Vehicles: "
-    .byte 0x90
-    .byte 0x82
-    .asciz " per month"
-
-# 0x51059F
-    .global _str_635
-_str_635:
-    .asciz "January"
-
-# 0x5105A7
-    .global _str_636
-_str_636:
-    .asciz "February"
-
-# 0x5105B0
-    .global _str_637
-_str_637:
-    .asciz "March"
-
-# 0x5105B6
-    .global _str_638
-_str_638:
-    .asciz "April"
-
-# 0x5105BC
-    .global _str_639
-_str_639:
-    .asciz "May"
-
-# 0x5105C0
-    .global _str_640
-_str_640:
-    .asciz "June"
-
-# 0x5105C5
-    .global _str_641
-_str_641:
-    .asciz "July"
-
-# 0x5105CA
-    .global _str_642
-_str_642:
-    .asciz "August"
-
-# 0x5105D1
-    .global _str_643
-_str_643:
-    .asciz "September"
-
-# 0x5105DB
-    .global _str_644
-_str_644:
-    .asciz "October"
-
-# 0x5105E3
-    .global _str_645
-_str_645:
-    .asciz "November"
-
-# 0x5105EC
-    .global _str_646
-_str_646:
-    .asciz "December"
-
-# 0x5105F5
-    .global _str_647
-_str_647:
-    .byte 0x0A
-    .byte 0x90
-    DATE 0
-    .byte 0x83
-    .byte EOS
-
-# 0x5105FB
-    .global _str_648
-_str_648:
-    .asciz "Select Scenario for New Game"
-
-# 0x510618
-    .global _str_649
-_str_649:
-# 0x510618
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-
-# 0x510658
-    .global _str_650
-_str_650:
-    .byte 0x0E
-    .asciz "Sound Quality:"
-
-# 0x510668
-    .global _str_651
-_str_651:
-    .asciz "Low"
-
-# 0x51066C
-    .global _str_652
-_str_652:
-    .asciz "Medium"
-
-# 0x510673
-    .global _str_653
-_str_653:
-    .asciz "High"
-
-# 0x510678
-    .global _str_654
-_str_654:
-    .asciz "Options"
-
-# 0x510680
-    .global _str_655
-_str_655:
-    .byte 0x0E
-    .asciz "Currency:"
-
-# 0x51068B
-    .global _str_656
-_str_656:
-    .byte 0x0E
-    .asciz "Distance and Speed:"
-
-# 0x5106A0
-    .global _str_657
-_str_657:
-    .byte 0x0E
-    .asciz "Heights:"
-
-# 0x5106AA
-    .global _str_658
-_str_658:
-    .asciz "Imperial"
-
-# 0x5106B3
-    .global _str_659
-_str_659:
-    .asciz "Metric"
-
-# 0x5106BA
-    .global _str_660
-_str_660:
-    .asciz "Units"
-
-# 0x5106C0
-    .global _str_661
-_str_661:
-    .asciz "Real Values"
-
-# 0x5106CC
-    .global _str_662
-_str_662:
-    .byte 0x0E
-    .asciz "Display Resolution:"
-
-# 0x5106E1
-    .global _str_663
-_str_663:
-    .asciz "Landscape Smoothing"
-
-# 0x5106F5
-    .global _str_664
-_str_664:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Toggle landscape tile edge smoothing on/off"
-
-# 0x510723
-    .global _str_665
-_str_665:
-    .asciz "Gridlines on Landscape"
-
-# 0x51073A
-    .global _str_666
-_str_666:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Toggle gridlines on landscape on/off"
-
-# 0x510761
-    .global _str_667
-_str_667:
-    .asciz "The bank refuses to increase your loan!"
-
-# 0x510789
-    .global _str_668
-_str_668:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Click on landscape to remove trees and buildings"
-
-# 0x5107BC
-    .global _str_669
-_str_669:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Clear smaller area of land"
-
-# 0x5107D9
-    .global _str_670
-_str_670:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Clear larger area of land"
-
-# 0x5107F5
-    .global _str_671
-_str_671:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Adjust smaller area of land"
-
-# 0x510813
-    .global _str_672
-_str_672:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Adjust larger area of land"
-
-# 0x510830
-    .global _str_673
-_str_673:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Adjust smaller area of water"
-
-# 0x51084F
-    .global _str_674
-_str_674:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Adjust larger area of water"
-
-# 0x51086D
-    .global _str_675
-_str_675:
-    .asciz "Adjust Land"
-
-# 0x510879
-    .global _str_676
-_str_676:
-    .asciz "Adjust Water"
-
-# 0x510886
-    .global _str_677
-_str_677:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Click on landscape and drag up/down to raise/lower water level"
-
-# 0x5108C7
-    .global _str_678
-_str_678:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Click on landscape and drag up/down to raise/lower land"
-
-# 0x510901
-    .global _str_679
-_str_679:
-    .asciz "Clear Area"
-
-# 0x51090C
-    .global _str_680
-_str_680:
-    .asciz "Clear Area"
-
-# 0x510917
-    .global _str_681
-_str_681:
-    .asciz "Adjust Land"
-
-# 0x510923
-    .global _str_682
-_str_682:
-    .asciz "Adjust Water"
-
-# 0x510930
-    .global _str_683
-_str_683:
-    .asciz "Plant Trees"
-
-# 0x51093C
-    .global _str_684
-_str_684:
-    .asciz "Build Walls"
-
-# 0x510948
-    .global _str_685
-_str_685:
-    .byte 0x83
-    .asciz " - Vehicle Details"
-
-# 0x51095C
-    .global _str_686
-_str_686:
-    .byte 0x83
-    .asciz " - Cargo"
-
-# 0x510966
-    .global _str_687
-_str_687:
-    .byte 0x83
-    .asciz " - Route"
-
-# 0x510970
-    .global _str_688
-_str_688:
-    .byte 0x83
-    .asciz " - Finances"
-
-# 0x51097D
-    .global _str_689
-_str_689:
-    .byte 0x0E
-    .ascii "Trains: "
-    .byte 0x90
-    .byte 0x7F
-    .byte EOS
-
-# 0x510989
-    .global _str_690
-_str_690:
-    .byte 0x0E
-    .ascii "Buses: "
-    .byte 0x90
-    .byte 0x7F
-    .byte EOS
-
-# 0x510994
-    .global _str_691
-_str_691:
-    .byte 0x0E
-    .ascii "Trucks: "
-    .byte 0x90
-    .byte 0x7F
-    .byte EOS
-
-# 0x5109A0
-    .global _str_692
-_str_692:
-    .byte 0x0E
-    .ascii "Trams: "
-    .byte 0x90
-    .byte 0x7F
-    .byte EOS
-
-# 0x5109AB
-    .global _str_693
-_str_693:
-    .byte 0x0E
-    .ascii "Aircraft: "
-    .byte 0x90
-    .byte 0x7F
-    .byte EOS
-
-# 0x5109B9
-    .global _str_694
-_str_694:
-    .byte 0x0E
-    .ascii "Ships: "
-    .byte 0x90
-    .byte 0x7F
-    .byte EOS
-
-# 0x5109C4
-    .global _str_695
-_str_695:
-    .byte 0x05
-    .asciz "Challenge failed!"
-
-# 0x5109D7
-    .global _str_696
-_str_696:
-    .byte 0x05
-    .asciz "Challenge completed!"
-
-# 0x5109ED
-    .global _str_697
-_str_697:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Performance Index: "
-    .byte 0x7D
-    .ascii "% "
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x510A09
-    .global _str_698
-_str_698:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Company Value: "
-    .byte 0x82
-    .byte 0x05
-    .ascii "Profit from vehicles: "
-    .byte 0x82
-    .asciz "/month"
-
-# 0x510A3A
-    .global _str_699
-_str_699:
-    .byte 0x05
-    .ascii "Challenge progress: "
-    .byte 0x7F
-    .ascii "%"
-    .byte 0x83
-    .byte EOS
-
-# 0x510A53
-    .global _str_700
-_str_700:
-    .byte 0x05
-    .ascii "Time left: "
-    .byte 0x90
-    .byte 0x7F
-    .ascii " years "
-    .byte 0x7F
-    .asciz " months"
-
-# 0x510A71
-    .global _str_701
-_str_701:
-    .asciz "Customize Keys..."
-
-# 0x510A83
-    .global _str_702
-_str_702:
-    .asciz "Keyboard Shortcuts"
-
-# 0x510A96
-    .global _str_703
-_str_703:
-    .asciz "Reset Keys"
-
-# 0x510AA1
-    .global _str_704
-_str_704:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Set all keyboard shortcuts back to default settings"
-
-# 0x510AD7
-    .global _str_705
-_str_705:
-    .asciz "Close Top-most Window"
-
-# 0x510AED
-    .global _str_706
-_str_706:
-    .asciz "Close All Floating Windows"
-
-# 0x510B08
-    .global _str_707
-_str_707:
-    .asciz "Cancel Construction Mode"
-
-# 0x510B21
-    .global _str_708
-_str_708:
-    .asciz "Pause/Unpause Game"
-
-# 0x510B34
-    .global _str_709
-_str_709:
-    .asciz "Zoom View Out"
-
-# 0x510B42
-    .global _str_710
-_str_710:
-    .asciz "Zoom View In"
-
-# 0x510B4F
-    .global _str_711
-_str_711:
-    .asciz "Rotate View"
-
-# 0x510B5B
-    .global _str_712
-_str_712:
-    .asciz "Rotate Construction Object"
-
-# 0x510B76
-    .global _str_713
-_str_713:
-    .asciz "Underground View Toggle"
-
-# 0x510B8E
-    .global _str_714
-_str_714:
-    .asciz "Hide Foreground Tracks & Roads Toggle"
-
-# 0x510BB4
-    .global _str_715
-_str_715:
-    .asciz "Hide Foreground Scenery Toggle"
-
-# 0x510BD3
-    .global _str_716
-_str_716:
-    .asciz "Height Marks on Land Toggle"
-
-# 0x510BEF
-    .global _str_717
-_str_717:
-    .asciz "Height Marks on Tracks & Roads Toggle"
-
-# 0x510C15
-    .global _str_718
-_str_718:
-    .asciz "Dir. Arrows on Tracks & Roads Toggle"
-
-# 0x510C3A
-    .global _str_719
-_str_719:
-    .asciz "Adjust Land"
-
-# 0x510C46
-    .global _str_720
-_str_720:
-    .asciz "Adjust Water"
-
-# 0x510C53
-    .global _str_721
-_str_721:
-    .asciz "Plant Trees"
-
-# 0x510C5F
-    .global _str_722
-_str_722:
-    .asciz "Bulldoze Area"
-
-# 0x510C6D
-    .global _str_723
-_str_723:
-    .asciz "Build Tracks"
-
-# 0x510C7A
-    .global _str_724
-_str_724:
-    .asciz "Build Roads"
-
-# 0x510C86
-    .global _str_725
-_str_725:
-    .asciz "Build Airports"
-
-# 0x510C95
-    .global _str_726
-_str_726:
-    .asciz "Build Ship Ports"
-
-# 0x510CA6
-    .global _str_727
-_str_727:
-    .asciz "Build New Vehicles"
-
-# 0x510CB9
-    .global _str_728
-_str_728:
-    .asciz "Show Vehicles List"
-
-# 0x510CCC
-    .global _str_729
-_str_729:
-    .asciz "Show Stations List"
-
-# 0x510CDF
-    .global _str_730
-_str_730:
-    .asciz "Show Towns List"
-
-# 0x510CEF
-    .global _str_731
-_str_731:
-    .asciz "Show Industries List"
-
-# 0x510D04
-    .global _str_732
-_str_732:
-    .asciz "Show Map"
-
-# 0x510D0D
-    .global _str_733
-_str_733:
-    .asciz "Show Companies List"
-
-# 0x510D21
-    .global _str_734
-_str_734:
-    .asciz "Show Company Information"
-
-# 0x510D3A
-    .global _str_735
-_str_735:
-    .asciz "Show Finances"
-
-# 0x510D48
-    .global _str_736
-_str_736:
-    .asciz "Show Announcements List"
-
-# 0x510D60
-    .global _str_737
-_str_737:
-    .asciz "Screenshot"
-
-# 0x510D6B
-    .global _str_738
-_str_738:
-    .asciz "Cancel or Show Last Announcement"
-
-# 0x510D8C
-    .global _str_739
-_str_739:
-    .asciz "Send Message (2-player mode)"
-
-# 0x510DA9
-    .global _str_740
-_str_740:
-    .asciz "???"
-
-# 0x510DAD
-    .global _str_741
-_str_741:
-    .asciz "???"
-
-# 0x510DB1
-    .global _str_742
-_str_742:
-    .asciz "???"
-
-# 0x510DB5
-    .global _str_743
-_str_743:
-    .asciz "???"
-
-# 0x510DB9
-    .global _str_744
-_str_744:
-    .asciz "???"
-
-# 0x510DBD
-    .global _str_745
-_str_745:
-    .asciz "???"
-
-# 0x510DC1
-    .global _str_746
-_str_746:
-    .asciz "???"
-
-# 0x510DC5
-    .global _str_747
-_str_747:
-    .asciz "???"
-
-# 0x510DC9
-    .global _str_748
-_str_748:
-    .asciz "Backspace"
-
-# 0x510DD3
-    .global _str_749
-_str_749:
-    .asciz "Tab"
-
-# 0x510DD7
-    .global _str_750
-_str_750:
-    .asciz "???"
-
-# 0x510DDB
-    .global _str_751
-_str_751:
-    .asciz "???"
-
-# 0x510DDF
-    .global _str_752
-_str_752:
-    .asciz "Clear"
-
-# 0x510DE5
-    .global _str_753
-_str_753:
-    .asciz "Return"
-
-# 0x510DEC
-    .global _str_754
-_str_754:
-    .asciz "???"
-
-# 0x510DF0
-    .global _str_755
-_str_755:
-    .asciz "???"
-
-# 0x510DF4
-    .global _str_756
-_str_756:
-    .asciz "???"
-
-# 0x510DF8
-    .global _str_757
-_str_757:
-    .asciz "???"
-
-# 0x510DFC
-    .global _str_758
-_str_758:
-    .asciz "Alt/Menu"
-
-# 0x510E05
-    .global _str_759
-_str_759:
-    .asciz "Pause"
-
-# 0x510E0B
-    .global _str_760
-_str_760:
-    .asciz "Caps"
-
-# 0x510E10
-    .global _str_761
-_str_761:
-    .asciz "???"
-
-# 0x510E14
-    .global _str_762
-_str_762:
-    .asciz "???"
-
-# 0x510E18
-    .global _str_763
-_str_763:
-    .asciz "???"
-
-# 0x510E1C
-    .global _str_764
-_str_764:
-    .asciz "???"
-
-# 0x510E20
-    .global _str_765
-_str_765:
-    .asciz "???"
-
-# 0x510E24
-    .global _str_766
-_str_766:
-    .asciz "???"
-
-# 0x510E28
-    .global _str_767
-_str_767:
-    .asciz "Escape"
-
-# 0x510E2F
-    .global _str_768
-_str_768:
-    .asciz "???"
-
-# 0x510E33
-    .global _str_769
-_str_769:
-    .asciz "???"
-
-# 0x510E37
-    .global _str_770
-_str_770:
-    .asciz "???"
-
-# 0x510E3B
-    .global _str_771
-_str_771:
-    .asciz "???"
-
-# 0x510E3F
-    .global _str_772
-_str_772:
-    .asciz "Spacebar"
-
-# 0x510E48
-    .global _str_773
-_str_773:
-    .asciz "PgUp"
-
-# 0x510E4D
-    .global _str_774
-_str_774:
-    .asciz "PgDn"
-
-# 0x510E52
-    .global _str_775
-_str_775:
-    .asciz "End"
-
-# 0x510E56
-    .global _str_776
-_str_776:
-    .asciz "Home"
-
-# 0x510E5B
-    .global _str_777
-_str_777:
-    .asciz "Left"
-
-# 0x510E60
-    .global _str_778
-_str_778:
-    .asciz "Up"
-
-# 0x510E63
-    .global _str_779
-_str_779:
-    .asciz "Right"
-
-# 0x510E69
-    .global _str_780
-_str_780:
-    .asciz "Down"
-
-# 0x510E6E
-    .global _str_781
-_str_781:
-    .asciz "Select"
-
-# 0x510E75
-    .global _str_782
-_str_782:
-    .asciz "Print"
-
-# 0x510E7B
-    .global _str_783
-_str_783:
-    .asciz "Execute"
-
-# 0x510E83
-    .global _str_784
-_str_784:
-    .asciz "Snapshot"
-
-# 0x510E8C
-    .global _str_785
-_str_785:
-    .asciz "Insert"
-
-# 0x510E93
-    .global _str_786
-_str_786:
-    .asciz "Delete"
-
-# 0x510E9A
-    .global _str_787
-_str_787:
-    .asciz "Help"
-
-# 0x510E9F
-    .global _str_788
-_str_788:
-    .asciz "0"
-
-# 0x510EA1
-    .global _str_789
-_str_789:
-    .asciz "1"
-
-# 0x510EA3
-    .global _str_790
-_str_790:
-    .asciz "2"
-
-# 0x510EA5
-    .global _str_791
-_str_791:
-    .asciz "3"
-
-# 0x510EA7
-    .global _str_792
-_str_792:
-    .asciz "4"
-
-# 0x510EA9
-    .global _str_793
-_str_793:
-    .asciz "5"
-
-# 0x510EAB
-    .global _str_794
-_str_794:
-    .asciz "6"
-
-# 0x510EAD
-    .global _str_795
-_str_795:
-    .asciz "7"
-
-# 0x510EAF
-    .global _str_796
-_str_796:
-    .asciz "8"
-
-# 0x510EB1
-    .global _str_797
-_str_797:
-    .asciz "9"
-
-# 0x510EB3
-    .global _str_798
-_str_798:
-    .asciz "???"
-
-# 0x510EB7
-    .global _str_799
-_str_799:
-    .asciz "???"
-
-# 0x510EBB
-    .global _str_800
-_str_800:
-    .asciz "???"
-
-# 0x510EBF
-    .global _str_801
-_str_801:
-    .asciz "???"
-
-# 0x510EC3
-    .global _str_802
-_str_802:
-    .asciz "???"
-
-# 0x510EC7
-    .global _str_803
-_str_803:
-    .asciz "???"
-
-# 0x510ECB
-    .global _str_804
-_str_804:
-    .asciz "???"
-
-# 0x510ECF
-    .global _str_805
-_str_805:
-    .asciz "A"
-
-# 0x510ED1
-    .global _str_806
-_str_806:
-    .asciz "B"
-
-# 0x510ED3
-    .global _str_807
-_str_807:
-    .asciz "C"
-
-# 0x510ED5
-    .global _str_808
-_str_808:
-    .asciz "D"
-
-# 0x510ED7
-    .global _str_809
-_str_809:
-    .asciz "E"
-
-# 0x510ED9
-    .global _str_810
-_str_810:
-    .asciz "F"
-
-# 0x510EDB
-    .global _str_811
-_str_811:
-    .asciz "G"
-
-# 0x510EDD
-    .global _str_812
-_str_812:
-    .asciz "H"
-
-# 0x510EDF
-    .global _str_813
-_str_813:
-    .asciz "I"
-
-# 0x510EE1
-    .global _str_814
-_str_814:
-    .asciz "J"
-
-# 0x510EE3
-    .global _str_815
-_str_815:
-    .asciz "K"
-
-# 0x510EE5
-    .global _str_816
-_str_816:
-    .asciz "L"
-
-# 0x510EE7
-    .global _str_817
-_str_817:
-    .asciz "M"
-
-# 0x510EE9
-    .global _str_818
-_str_818:
-    .asciz "N"
-
-# 0x510EEB
-    .global _str_819
-_str_819:
-    .asciz "O"
-
-# 0x510EED
-    .global _str_820
-_str_820:
-    .asciz "P"
-
-# 0x510EEF
-    .global _str_821
-_str_821:
-    .asciz "Q"
-
-# 0x510EF1
-    .global _str_822
-_str_822:
-    .asciz "R"
-
-# 0x510EF3
-    .global _str_823
-_str_823:
-    .asciz "S"
-
-# 0x510EF5
-    .global _str_824
-_str_824:
-    .asciz "T"
-
-# 0x510EF7
-    .global _str_825
-_str_825:
-    .asciz "U"
-
-# 0x510EF9
-    .global _str_826
-_str_826:
-    .asciz "V"
-
-# 0x510EFB
-    .global _str_827
-_str_827:
-    .asciz "W"
-
-# 0x510EFD
-    .global _str_828
-_str_828:
-    .asciz "X"
-
-# 0x510EFF
-    .global _str_829
-_str_829:
-    .asciz "Y"
-
-# 0x510F01
-    .global _str_830
-_str_830:
-    .asciz "Z"
-
-# 0x510F03
-    .global _str_831
-_str_831:
-    .asciz "???"
-
-# 0x510F07
-    .global _str_832
-_str_832:
-    .asciz "???"
-
-# 0x510F0B
-    .global _str_833
-_str_833:
-    .asciz "Menu"
-
-# 0x510F10
-    .global _str_834
-_str_834:
-    .asciz "???"
-
-# 0x510F14
-    .global _str_835
-_str_835:
-    .asciz "???"
-
-# 0x510F18
-    .global _str_836
-_str_836:
-    .asciz "NumPad 0"
-
-# 0x510F21
-    .global _str_837
-_str_837:
-    .asciz "NumPad 1"
-
-# 0x510F2A
-    .global _str_838
-_str_838:
-    .asciz "NumPad 2"
-
-# 0x510F33
-    .global _str_839
-_str_839:
-    .asciz "NumPad 3"
-
-# 0x510F3C
-    .global _str_840
-_str_840:
-    .asciz "NumPad 4"
-
-# 0x510F45
-    .global _str_841
-_str_841:
-    .asciz "NumPad 5"
-
-# 0x510F4E
-    .global _str_842
-_str_842:
-    .asciz "NumPad 6"
-
-# 0x510F57
-    .global _str_843
-_str_843:
-    .asciz "NumPad 7"
-
-# 0x510F60
-    .global _str_844
-_str_844:
-    .asciz "NumPad 8"
-
-# 0x510F69
-    .global _str_845
-_str_845:
-    .asciz "NumPad 9"
-
-# 0x510F72
-    .global _str_846
-_str_846:
-    .asciz "NumPad *"
-
-# 0x510F7B
-    .global _str_847
-_str_847:
-    .asciz "NumPad +"
-
-# 0x510F84
-    .global _str_848
-_str_848:
-    .asciz "???"
-
-# 0x510F88
-    .global _str_849
-_str_849:
-    .asciz "NumPad -"
-
-# 0x510F91
-    .global _str_850
-_str_850:
-    .asciz "NumPad ."
-
-# 0x510F9A
-    .global _str_851
-_str_851:
-    .asciz "NumPad /"
-
-# 0x510FA3
-    .global _str_852
-_str_852:
-    .asciz "F1"
-
-# 0x510FA6
-    .global _str_853
-_str_853:
-    .asciz "F2"
-
-# 0x510FA9
-    .global _str_854
-_str_854:
-    .asciz "F3"
-
-# 0x510FAC
-    .global _str_855
-_str_855:
-    .asciz "F4"
-
-# 0x510FAF
-    .global _str_856
-_str_856:
-    .asciz "F5"
-
-# 0x510FB2
-    .global _str_857
-_str_857:
-    .asciz "F6"
-
-# 0x510FB5
-    .global _str_858
-_str_858:
-    .asciz "F7"
-
-# 0x510FB8
-    .global _str_859
-_str_859:
-    .asciz "F8"
-
-# 0x510FBB
-    .global _str_860
-_str_860:
-    .asciz "F9"
-
-# 0x510FBE
-    .global _str_861
-_str_861:
-    .asciz "F10"
-
-# 0x510FC2
-    .global _str_862
-_str_862:
-    .asciz "F11"
-
-# 0x510FC6
-    .global _str_863
-_str_863:
-    .asciz "F12"
-
-# 0x510FCA
-    .global _str_864
-_str_864:
-    .asciz "F13"
-
-# 0x510FCE
-    .global _str_865
-_str_865:
-    .asciz "F14"
-
-# 0x510FD2
-    .global _str_866
-_str_866:
-    .asciz "F15"
-
-# 0x510FD6
-    .global _str_867
-_str_867:
-    .asciz "F16"
-
-# 0x510FDA
-    .global _str_868
-_str_868:
-    .asciz "F17"
-
-# 0x510FDE
-    .global _str_869
-_str_869:
-    .asciz "F18"
-
-# 0x510FE2
-    .global _str_870
-_str_870:
-    .asciz "F19"
-
-# 0x510FE6
-    .global _str_871
-_str_871:
-    .asciz "F20"
-
-# 0x510FEA
-    .global _str_872
-_str_872:
-    .asciz "F21"
-
-# 0x510FEE
-    .global _str_873
-_str_873:
-    .asciz "F22"
-
-# 0x510FF2
-    .global _str_874
-_str_874:
-    .asciz "F23"
-
-# 0x510FF6
-    .global _str_875
-_str_875:
-    .asciz "F24"
-
-# 0x510FFA
-    .global _str_876
-_str_876:
-    .asciz "???"
-
-# 0x510FFE
-    .global _str_877
-_str_877:
-    .asciz "???"
-
-# 0x511002
-    .global _str_878
-_str_878:
-    .asciz "???"
-
-# 0x511006
-    .global _str_879
-_str_879:
-    .asciz "???"
-
-# 0x51100A
-    .global _str_880
-_str_880:
-    .asciz "???"
-
-# 0x51100E
-    .global _str_881
-_str_881:
-    .asciz "???"
-
-# 0x511012
-    .global _str_882
-_str_882:
-    .asciz "???"
-
-# 0x511016
-    .global _str_883
-_str_883:
-    .asciz "???"
-
-# 0x51101A
-    .global _str_884
-_str_884:
-    .asciz "NumLock"
-
-# 0x511022
-    .global _str_885
-_str_885:
-    .asciz "Scroll"
-
-# 0x511029
-    .global _str_886
-_str_886:
-    .asciz "???"
-
-# 0x51102D
-    .global _str_887
-_str_887:
-    .asciz "???"
-
-# 0x511031
-    .global _str_888
-_str_888:
-    .asciz "???"
-
-# 0x511035
-    .global _str_889
-_str_889:
-    .asciz "???"
-
-# 0x511039
-    .global _str_890
-_str_890:
-    .asciz "???"
-
-# 0x51103D
-    .global _str_891
-_str_891:
-    .asciz "???"
-
-# 0x511041
-    .global _str_892
-_str_892:
-    .asciz "???"
-
-# 0x511045
-    .global _str_893
-_str_893:
-    .asciz "???"
-
-# 0x511049
-    .global _str_894
-_str_894:
-    .asciz "???"
-
-# 0x51104D
-    .global _str_895
-_str_895:
-    .asciz "???"
-
-# 0x511051
-    .global _str_896
-_str_896:
-    .asciz "???"
-
-# 0x511055
-    .global _str_897
-_str_897:
-    .asciz "???"
-
-# 0x511059
-    .global _str_898
-_str_898:
-    .asciz "???"
-
-# 0x51105D
-    .global _str_899
-_str_899:
-    .asciz "???"
-
-# 0x511061
-    .global _str_900
-_str_900:
-    .asciz "???"
-
-# 0x511065
-    .global _str_901
-_str_901:
-    .asciz "???"
-
-# 0x511069
-    .global _str_902
-_str_902:
-    .asciz "???"
-
-# 0x51106D
-    .global _str_903
-_str_903:
-    .asciz "???"
-
-# 0x511071
-    .global _str_904
-_str_904:
-    .asciz "???"
-
-# 0x511075
-    .global _str_905
-_str_905:
-    .asciz "???"
-
-# 0x511079
-    .global _str_906
-_str_906:
-    .asciz "???"
-
-# 0x51107D
-    .global _str_907
-_str_907:
-    .asciz "???"
-
-# 0x511081
-    .global _str_908
-_str_908:
-    .asciz "???"
-
-# 0x511085
-    .global _str_909
-_str_909:
-    .asciz "???"
-
-# 0x511089
-    .global _str_910
-_str_910:
-    .asciz "???"
-
-# 0x51108D
-    .global _str_911
-_str_911:
-    .asciz "???"
-
-# 0x511091
-    .global _str_912
-_str_912:
-    .asciz "???"
-
-# 0x511095
-    .global _str_913
-_str_913:
-    .asciz "???"
-
-# 0x511099
-    .global _str_914
-_str_914:
-    .asciz "???"
-
-# 0x51109D
-    .global _str_915
-_str_915:
-    .asciz "???"
-
-# 0x5110A1
-    .global _str_916
-_str_916:
-    .asciz "???"
-
-# 0x5110A5
-    .global _str_917
-_str_917:
-    .asciz "???"
-
-# 0x5110A9
-    .global _str_918
-_str_918:
-    .asciz "???"
-
-# 0x5110AD
-    .global _str_919
-_str_919:
-    .asciz "???"
-
-# 0x5110B1
-    .global _str_920
-_str_920:
-    .asciz "???"
-
-# 0x5110B5
-    .global _str_921
-_str_921:
-    .asciz "???"
-
-# 0x5110B9
-    .global _str_922
-_str_922:
-    .asciz "???"
-
-# 0x5110BD
-    .global _str_923
-_str_923:
-    .asciz "???"
-
-# 0x5110C1
-    .global _str_924
-_str_924:
-    .asciz "???"
-
-# 0x5110C5
-    .global _str_925
-_str_925:
-    .asciz "???"
-
-# 0x5110C9
-    .global _str_926
-_str_926:
-    .asciz ";"
-
-# 0x5110CB
-    .global _str_927
-_str_927:
-    .asciz "="
-
-# 0x5110CD
-    .global _str_928
-_str_928:
-    .asciz ","
-
-# 0x5110CF
-    .global _str_929
-_str_929:
-    .asciz "-"
-
-# 0x5110D1
-    .global _str_930
-_str_930:
-    .asciz "."
-
-# 0x5110D3
-    .global _str_931
-_str_931:
-    .asciz "/"
-
-# 0x5110D5
-    .global _str_932
-_str_932:
-    .asciz "'"
-
-# 0x5110D7
-    .global _str_933
-_str_933:
-    .asciz "???"
-
-# 0x5110DB
-    .global _str_934
-_str_934:
-    .asciz "???"
-
-# 0x5110DF
-    .global _str_935
-_str_935:
-    .asciz "???"
-
-# 0x5110E3
-    .global _str_936
-_str_936:
-    .asciz "???"
-
-# 0x5110E7
-    .global _str_937
-_str_937:
-    .asciz "???"
-
-# 0x5110EB
-    .global _str_938
-_str_938:
-    .asciz "???"
-
-# 0x5110EF
-    .global _str_939
-_str_939:
-    .asciz "???"
-
-# 0x5110F3
-    .global _str_940
-_str_940:
-    .asciz "???"
-
-# 0x5110F7
-    .global _str_941
-_str_941:
-    .asciz "???"
-
-# 0x5110FB
-    .global _str_942
-_str_942:
-    .asciz "???"
-
-# 0x5110FF
-    .global _str_943
-_str_943:
-    .asciz "???"
-
-# 0x511103
-    .global _str_944
-_str_944:
-    .asciz "???"
-
-# 0x511107
-    .global _str_945
-_str_945:
-    .asciz "???"
-
-# 0x51110B
-    .global _str_946
-_str_946:
-    .asciz "???"
-
-# 0x51110F
-    .global _str_947
-_str_947:
-    .asciz "???"
-
-# 0x511113
-    .global _str_948
-_str_948:
-    .asciz "???"
-
-# 0x511117
-    .global _str_949
-_str_949:
-    .asciz "???"
-
-# 0x51111B
-    .global _str_950
-_str_950:
-    .asciz "???"
-
-# 0x51111F
-    .global _str_951
-_str_951:
-    .asciz "???"
-
-# 0x511123
-    .global _str_952
-_str_952:
-    .asciz "???"
-
-# 0x511127
-    .global _str_953
-_str_953:
-    .asciz "???"
-
-# 0x51112B
-    .global _str_954
-_str_954:
-    .asciz "???"
-
-# 0x51112F
-    .global _str_955
-_str_955:
-    .asciz "???"
-
-# 0x511133
-    .global _str_956
-_str_956:
-    .asciz "???"
-
-# 0x511137
-    .global _str_957
-_str_957:
-    .asciz "???"
-
-# 0x51113B
-    .global _str_958
-_str_958:
-    .asciz "???"
-
-# 0x51113F
-    .global _str_959
-_str_959:
-    .asciz "["
-
-# 0x511141
-    .global _str_960
-_str_960:
-    .asciz "\\"
-
-# 0x511143
-    .global _str_961
-_str_961:
-    .asciz "]"
-
-# 0x511145
-    .global _str_962
-_str_962:
-    .asciz "\""
-
-# 0x511147
-    .global _str_963
-_str_963:
-    .asciz "Bar"
-
-# 0x51114B
-    .global _str_964
-_str_964:
-    .asciz "???"
-
-# 0x51114F
-    .global _str_965
-_str_965:
-    .asciz "???"
-
-# 0x511153
-    .global _str_966
-_str_966:
-    .asciz "???"
-
-# 0x511157
-    .global _str_967
-_str_967:
-    .asciz "???"
-
-# 0x51115B
-    .global _str_968
-_str_968:
-    .asciz "???"
-
-# 0x51115F
-    .global _str_969
-_str_969:
-    .asciz "???"
-
-# 0x511163
-    .global _str_970
-_str_970:
-    .asciz "???"
-
-# 0x511167
-    .global _str_971
-_str_971:
-    .asciz "???"
-
-# 0x51116B
-    .global _str_972
-_str_972:
-    .asciz "???"
-
-# 0x51116F
-    .global _str_973
-_str_973:
-    .asciz "???"
-
-# 0x511173
-    .global _str_974
-_str_974:
-    .asciz "???"
-
-# 0x511177
-    .global _str_975
-_str_975:
-    .asciz "???"
-
-# 0x51117B
-    .global _str_976
-_str_976:
-    .asciz "???"
-
-# 0x51117F
-    .global _str_977
-_str_977:
-    .asciz "???"
-
-# 0x511183
-    .global _str_978
-_str_978:
-    .asciz "???"
-
-# 0x511187
-    .global _str_979
-_str_979:
-    .asciz "???"
-
-# 0x51118B
-    .global _str_980
-_str_980:
-    .asciz "???"
-
-# 0x51118F
-    .global _str_981
-_str_981:
-    .asciz "???"
-
-# 0x511193
-    .global _str_982
-_str_982:
-    .asciz "???"
-
-# 0x511197
-    .global _str_983
-_str_983:
-    .asciz "???"
-
-# 0x51119B
-    .global _str_984
-_str_984:
-    .asciz "???"
-
-# 0x51119F
-    .global _str_985
-_str_985:
-    .asciz "???"
-
-# 0x5111A3
-    .global _str_986
-_str_986:
-    .asciz "???"
-
-# 0x5111A7
-    .global _str_987
-_str_987:
-    .asciz "???"
-
-# 0x5111AB
-    .global _str_988
-_str_988:
-    .asciz "???"
-
-# 0x5111AF
-    .global _str_989
-_str_989:
-    .asciz "???"
-
-# 0x5111B3
-    .global _str_990
-_str_990:
-    .asciz "???"
-
-# 0x5111B7
-    .global _str_991
-_str_991:
-    .asciz "???"
-
-# 0x5111BB
-    .global _str_992
-_str_992:
-    .asciz "???"
-
-# 0x5111BF
-    .global _str_993
-_str_993:
-    .asciz "???"
-
-# 0x5111C3
-    .global _str_994
-_str_994:
-    .asciz "???"
-
-# 0x5111C7
-    .global _str_995
-_str_995:
-    .asciz "???"
-
-# 0x5111CB
-    .global _str_996
-_str_996:
-    .byte 0x83
-    .ascii ":"
-    MOVE_X 215
-    .byte 0x83
-    .byte 0x83
-    .byte EOS
-
-# 0x5111D2
-    .global _str_997
-_str_997:
-    .asciz "SHIFT + "
-
-# 0x5111DB
-    .global _str_998
-_str_998:
-    .asciz "CTRL + "
-
-# 0x5111E3
-    .global _str_999
-_str_999:
-    .asciz "Change Keyboard Shortcut"
-
-# 0x5111FC
-    .global _str_1000
-_str_1000:
-    .byte 0x0E
-    .ascii "Press new shortcut key for:"
-    .byte 0x05
-    .byte 0x06
-    .byte 0x90
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x51121F
-    .global _str_1001
-_str_1001:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Click on shortcut description to select new key"
-
-# 0x511251
-    .global _str_1002
-_str_1002:
-    .asciz "Scroll View when Pointer at Screen Edge"
-
-# 0x511279
-    .global _str_1003
-_str_1003:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select whether to scroll the view when the mouse pointer is at the screen edge"
-
-# 0x5112CA
-    .global _str_1004
-_str_1004:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "View or change control key assignments"
-
-# 0x5112F3
-    .global _str_1005
-_str_1005:
-    .asciz "Map"
-
-# 0x5112F7
-    .global _str_1006
-_str_1006:
-    .asciz "Map - Vehicles"
-
-# 0x511306
-    .global _str_1007
-_str_1007:
-    .asciz "Map - Industries"
-
-# 0x511317
-    .global _str_1008
-_str_1008:
-    .asciz "Map - Transport Routes"
-
-# 0x51132E
-    .global _str_1009
-_str_1009:
-    .asciz "Map - Companies"
-
-# 0x51133E
-    .global _str_1010
-_str_1010:
-    .asciz "Forced Software Buffer Mixing"
-
-# 0x51135C
-    .global _str_1011
-_str_1011:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select this option to improve performance if the game pauses slightly when sounds start or interference is heard"
-
-# 0x5113CF
-    .global _str_1012
-_str_1012:
-    .asciz "Scenario successfully installed"
-
-# 0x5113EF
-    .global _str_1013
-_str_1013:
-    .asciz "Scenario already installed"
-
-# 0x51140A
-    .global _str_1014
-_str_1014:
-    .byte 0x0B
-    .byte 0x0D
-    .byte 0x83
-    .byte EOS
-
-# 0x51140E
-    .global _str_1015
-_str_1015:
-    .byte 0x0B
-    .byte 0x0E
-    .asciz "(Press a key or mouse button to take control)"
-
-# 0x51143E
-    .global _str_1016
-_str_1016:
-    .asciz "Another instance of Chris Sawyer's Locomotion is already running"
-
-# 0x51147F
-    .global _str_1017
-_str_1017:
-    .asciz "Music Acknowledgements..."
-
-# 0x511499
-    .global _str_1018
-_str_1018:
-    .asciz "Music Acknowledgements"
-
-# 0x5114B0
-    .global _str_1019
-_str_1019:
-    .byte 0x90
-    .ascii "Copyright "
-    .byte 0xA9
-    .asciz " Chris Sawyer"
-
-# 0x5114CA
-    .global _str_1020
-_str_1020:
-    .byte 0x0E
-    .asciz "Locomotion Title"
-
-# 0x5114DC
-    .global _str_1021
-_str_1021:
-    .byte 0x90
-    .asciz "John Broomhall (Guitar played by Keith Thompson)"
-
-# 0x51150E
-    .global _str_1022
-_str_1022:
-    .byte 0x0E
-    .asciz "Long Dusty Road"
-
-# 0x51151F
-    .global _str_1023
-_str_1023:
-    .byte 0x90
-    .asciz "Allister Brimble (Trumpet played by Brian Moore)"
-
-# 0x511551
-    .global _str_1024
-_str_1024:
-    .byte 0x0E
-    .asciz "Flying High"
-
-# 0x51155E
-    .global _str_1025
-_str_1025:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x511570
-    .global _str_1026
-_str_1026:
-    .byte 0x0E
-    .asciz "Gettin' On The Gas"
-
-# 0x511584
-    .global _str_1027
-_str_1027:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x511596
-    .global _str_1028
-_str_1028:
-    .byte 0x0E
-    .asciz "Jumpin' The Rails"
-
-# 0x5115A9
-    .global _str_1029
-_str_1029:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x5115BB
-    .global _str_1030
-_str_1030:
-    .byte 0x0E
-    .asciz "Smooth Running"
-
-# 0x5115CB
-    .global _str_1031
-_str_1031:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x5115DD
-    .global _str_1032
-_str_1032:
-    .byte 0x0E
-    .asciz "Traffic Jam"
-
-# 0x5115EA
-    .global _str_1033
-_str_1033:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x5115FC
-    .global _str_1034
-_str_1034:
-    .byte 0x0E
-    .asciz "Never Stop 'til You Get There"
-
-# 0x51161B
-    .global _str_1035
-_str_1035:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x51162D
-    .global _str_1036
-_str_1036:
-    .byte 0x0E
-    .asciz "Soaring Away"
-
-# 0x51163B
-    .global _str_1037
-_str_1037:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x51164D
-    .global _str_1038
-_str_1038:
-    .byte 0x0E
-    .asciz "Techno Torture"
-
-# 0x51165D
-    .global _str_1039
-_str_1039:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x51166F
-    .global _str_1040
-_str_1040:
-    .byte 0x0E
-    .asciz "Everlasting High-Rise"
-
-# 0x511686
-    .global _str_1041
-_str_1041:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x511698
-    .global _str_1042
-_str_1042:
-    .byte 0x0E
-    .asciz "Solace"
-
-# 0x5116A0
-    .global _str_1043
-_str_1043:
-    .byte 0x90
-    .asciz "Scott Joplin (Performed by Peter James Adcock)"
-
-# 0x5116D0
-    .global _str_1044
-_str_1044:
-    .byte 0x0E
-    .asciz "Chrysanthemum"
-
-# 0x5116DF
-    .global _str_1045
-_str_1045:
-    .byte 0x90
-    .asciz "Scott Joplin (Performed by Peter James Adcock)"
-
-# 0x51170F
-    .global _str_1046
-_str_1046:
-    .byte 0x0E
-    .asciz "Eugenia"
-
-# 0x511718
-    .global _str_1047
-_str_1047:
-    .byte 0x90
-    .asciz "Scott Joplin (Performed by Peter James Adcock)"
-
-# 0x511748
-    .global _str_1048
-_str_1048:
-    .byte 0x0E
-    .asciz "The Ragtime Dance"
-
-# 0x51175B
-    .global _str_1049
-_str_1049:
-    .byte 0x90
-    .asciz "Scott Joplin (Performed by Peter James Adcock)"
-
-# 0x51178B
-    .global _str_1050
-_str_1050:
-    .byte 0x0E
-    .asciz "Easy Winners"
-
-# 0x511799
-    .global _str_1051
-_str_1051:
-    .byte 0x90
-    .asciz "Scott Joplin (Performed by Peter James Adcock)"
-
-# 0x5117C9
-    .global _str_1052
-_str_1052:
-    .byte 0x0E
-    .asciz "Setting Off"
-
-# 0x5117D6
-    .global _str_1053
-_str_1053:
-    .byte 0x90
-    .asciz "Allister Brimble (Trumpet played by Brian Moore, Clarinet played by John Glanfield)"
-
-# 0x51182B
-    .global _str_1054
-_str_1054:
-    .byte 0x0E
-    .asciz "A Traveller's Seranade"
-
-# 0x511843
-    .global _str_1055
-_str_1055:
-    .byte 0x90
-    .asciz "David Punshon"
-
-# 0x511852
-    .global _str_1056
-_str_1056:
-    .byte 0x0E
-    .asciz "Latino Trip"
-
-# 0x51185F
-    .global _str_1057
-_str_1057:
-    .byte 0x90
-    .asciz "David Punshon"
-
-# 0x51186E
-    .global _str_1058
-_str_1058:
-    .byte 0x0E
-    .asciz "A Good Head Of Steam"
-
-# 0x511884
-    .global _str_1059
-_str_1059:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x511896
-    .global _str_1060
-_str_1060:
-    .byte 0x0E
-    .asciz "Hop To The Bop"
-
-# 0x5118A6
-    .global _str_1061
-_str_1061:
-    .byte 0x90
-    .asciz "David Punshon"
-
-# 0x5118B5
-    .global _str_1062
-_str_1062:
-    .byte 0x0E
-    .asciz "The City Lights"
-
-# 0x5118C6
-    .global _str_1063
-_str_1063:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x5118D8
-    .global _str_1064
-_str_1064:
-    .byte 0x0E
-    .asciz "Steamin' Down Town"
-
-# 0x5118EC
-    .global _str_1065
-_str_1065:
-    .byte 0x90
-    .asciz "David Punshon"
-
-# 0x5118FB
-    .global _str_1066
-_str_1066:
-    .byte 0x0E
-    .asciz "Bright Expectations"
-
-# 0x511910
-    .global _str_1067
-_str_1067:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x511922
-    .global _str_1068
-_str_1068:
-    .byte 0x0E
-    .asciz "Mo' Station"
-
-# 0x51192F
-    .global _str_1069
-_str_1069:
-    .byte 0x90
-    .asciz "John Broomhall"
-
-# 0x51193F
-    .global _str_1070
-_str_1070:
-    .byte 0x0E
-    .asciz "Far Out"
-
-# 0x511948
-    .global _str_1071
-_str_1071:
-    .byte 0x90
-    .asciz "John Broomhall"
-
-# 0x511958
-    .global _str_1072
-_str_1072:
-    .byte 0x0E
-    .asciz "Running On Time"
-
-# 0x511969
-    .global _str_1073
-_str_1073:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x51197B
-    .global _str_1074
-_str_1074:
-    .byte 0x0E
-    .asciz "Get Me To Gladstone Bay"
-
-# 0x511994
-    .global _str_1075
-_str_1075:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x5119A6
-    .global _str_1076
-_str_1076:
-    .byte 0x0E
-    .asciz "Chuggin' Along"
-
-# 0x5119B6
-    .global _str_1077
-_str_1077:
-    .byte 0x90
-    .asciz "Allister Brimble (Trumpet played by Brian Moore)"
-
-# 0x5119E8
-    .global _str_1078
-_str_1078:
-    .byte 0x0E
-    .asciz "Don't Lose Your Rag"
-
-# 0x5119FD
-    .global _str_1079
-_str_1079:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x511A0F
-    .global _str_1080
-_str_1080:
-    .byte 0x0E
-    .asciz "Sandy Track Blues"
-
-# 0x511A22
-    .global _str_1081
-_str_1081:
-    .byte 0x90
-    .asciz "Allister Brimble"
-
-# 0x511A34
-    .global _str_1082
-_str_1082:
-    .asciz "Unable to load saved game..."
-
-# 0x511A51
-    .global _str_1083
-_str_1083:
-    .asciz "File contains invalid data"
-
-# 0x511A6C
-    .global _str_1084
-_str_1084:
-    .asciz "File is not a single player saved game"
-
-# 0x511A93
-    .global _str_1085
-_str_1085:
-    .asciz "File is not a two player saved game"
-
-# 0x511AB7
-    .global _str_1086
-_str_1086:
-    .asciz "Please wait..."
-
-# 0x511AC6
-    .global _str_1087
-_str_1087:
-    .asciz "Initialising..."
-
-# 0x511AD6
-    .global _str_1088
-_str_1088:
-    .asciz "Loading..."
-
-# 0x511AE1
-    .global _str_1089
-_str_1089:
-    .asciz "Installing new data: "
-
-# 0x511AF7
-    .global _str_1090
-_str_1090:
-    .asciz "White"
-
-# 0x511AFD
-    .global _str_1091
-_str_1091:
-    .asciz "Translucent"
-
-# 0x511B09
-    .global _str_1092
-_str_1092:
-    .byte 0x0E
-    .asciz "Construction Marker:"
-
-# 0x511B1F
-    .global _str_1093
-_str_1093:
-    .byte 0x0E
-    .asciz "Vehicles min. display scale:"
-
-# 0x511B3D
-    .global _str_1094
-_str_1094:
-    .byte 0x0E
-    .asciz "Station names min. display scale:"
-
-# 0x511B60
-    .global _str_1095
-_str_1095:
-    .asciz "Full-scale"
-
-# 0x511B6B
-    .global _str_1096
-_str_1096:
-    .asciz "Half-scale"
-
-# 0x511B76
-    .global _str_1097
-_str_1097:
-    .asciz "Quarter-scale"
-
-# 0x511B84
-    .global _str_1098
-_str_1098:
-    .asciz "Eighth-scale"
-
-# 0x511B91
-    .global _str_1099
-_str_1099:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select minimum view scale to show vehicles at"
-
-# 0x511BC1
-    .global _str_1100
-_str_1100:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select minimum view scale to show station names on"
-
-# 0x511BF6
-    .global _str_1101
-_str_1101:
-    .byte 0x0E
-    .asciz "Main color scheme:"
-
-# 0x511C0A
-    .global _str_1102
-_str_1102:
-    .byte 0x90
-    .asciz "Steam Locomotives:"
-
-# 0x511C1E
-    .global _str_1103
-_str_1103:
-    .byte 0x90
-    .asciz "Diesel Locomotives:"
-
-# 0x511C33
-    .global _str_1104
-_str_1104:
-    .byte 0x90
-    .asciz "Electric Locomotives:"
-
-# 0x511C4A
-    .global _str_1105
-_str_1105:
-    .byte 0x90
-    .asciz "Multiple Units:"
-
-# 0x511C5B
-    .global _str_1106
-_str_1106:
-    .byte 0x90
-    .asciz "Passenger Vehicles:"
-
-# 0x511C70
-    .global _str_1107
-_str_1107:
-    .byte 0x90
-    .asciz "Freight Vehicles:"
-
-# 0x511C83
-    .global _str_1108
-_str_1108:
-    .byte 0x90
-    .asciz "Buses:"
-
-# 0x511C8B
-    .global _str_1109
-_str_1109:
-    .byte 0x90
-    .asciz "Trucks:"
-
-# 0x511C94
-    .global _str_1110
-_str_1110:
-    .byte 0x90
-    .asciz "Aircraft:"
-
-# 0x511C9F
-    .global _str_1111
-_str_1111:
-    .byte 0x90
-    .asciz "Ships:"
-
-# 0x511CA7
-    .global _str_1112
-_str_1112:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Company headquarters and details"
-
-# 0x511CCA
-    .global _str_1113
-_str_1113:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Company owner and status"
-
-# 0x511CE5
-    .global _str_1114
-_str_1114:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Company finances"
-
-# 0x511CF8
-    .global _str_1115
-_str_1115:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Cargo delivered"
-
-# 0x511D0A
-    .global _str_1116
-_str_1116:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Company color scheme"
-
-# 0x511D21
-    .global _str_1117
-_str_1117:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Company challenge for this game"
-
-# 0x511D43
-    .global _str_1118
-_str_1118:
-    .byte 0x0E
-    .asciz "Special color schemes used for:"
-
-# 0x511D64
-    .global _str_1119
-_str_1119:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select main color"
-
-# 0x511D78
-    .global _str_1120
-_str_1120:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select secondary color (used only on some vehicle types)"
-
-# 0x511DB3
-    .global _str_1121
-_str_1121:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select whether to use a different color scheme for this type of vehicle"
-
-# 0x511DFD
-    .global _str_1122
-_str_1122:
-    .byte 0x83
-    .asciz " - Trains"
-
-# 0x511E08
-    .global _str_1123
-_str_1123:
-    .byte 0x83
-    .asciz " - Buses"
-
-# 0x511E12
-    .global _str_1124
-_str_1124:
-    .byte 0x83
-    .asciz " - Trucks"
-
-# 0x511E1D
-    .global _str_1125
-_str_1125:
-    .byte 0x83
-    .asciz " - Trams"
-
-# 0x511E27
-    .global _str_1126
-_str_1126:
-    .byte 0x83
-    .asciz " - Aircraft"
-
-# 0x511E34
-    .global _str_1127
-_str_1127:
-    .byte 0x83
-    .asciz " - Ships"
-
-# 0x511E3E
-    .global _str_1128
-_str_1128:
-    .byte 0x83
-    .asciz " - All Stations"
-
-# 0x511E4F
-    .global _str_1129
-_str_1129:
-    .byte 0x83
-    .asciz " - Rail Stations"
-
-# 0x511E61
-    .global _str_1130
-_str_1130:
-    .byte 0x83
-    .asciz " - Road Stations"
-
-# 0x511E73
-    .global _str_1131
-_str_1131:
-    .byte 0x83
-    .asciz " - Airports"
-
-# 0x511E80
-    .global _str_1132
-_str_1132:
-    .byte 0x83
-    .asciz " - Ship Ports"
-
-# 0x511E8F
-    .global _str_1133
-_str_1133:
-    .asciz "All Stations"
-
-# 0x511E9C
-    .global _str_1134
-_str_1134:
-    .asciz "Rail Stations"
-
-# 0x511EAA
-    .global _str_1135
-_str_1135:
-    .asciz "Road Stations"
-
-# 0x511EB8
-    .global _str_1136
-_str_1136:
-    .asciz "Airports"
-
-# 0x511EC1
-    .global _str_1137
-_str_1137:
-    .asciz "Ship Ports"
-
-# 0x511ECC
-    .global _str_1138
-_str_1138:
-    .byte 0x0E
-    .byte 0x83
-    .ascii " - "
-    .byte 0x83
-    .byte EOS
-
-# 0x511ED3
-    .global _str_1139
-_str_1139:
-    .byte 0x0E
-    .byte 0x83
-    .ascii " - "
-    .byte 0x83
-    .ascii " "
-    .byte 0x83
-    .byte EOS
-
-# 0x511EDC
-    .global _str_1140
-_str_1140:
-    .byte 0x0E
-    .byte 0x81
-    .byte EOS
-
-# 0x511EDF
-    .global _str_1141
-_str_1141:
-    .byte 0x93
-    .ascii "-"
-    .byte 0x81
-    .byte EOS
-
-# 0x511EE3
-    .global _str_1142
-_str_1142:
-    .byte 0x0E
-    .byte 0x7F
-    .asciz " year"
-
-# 0x511EEB
-    .global _str_1143
-_str_1143:
-    .byte 0x0E
-    .byte 0x7F
-    .asciz " years"
-
-# 0x511EF4
-    .global _str_1144
-_str_1144:
-    .byte 0x0E
-    .byte 0x7F
-    .asciz "%"
-
-# 0x511EF8
-    .global _str_1145
-_str_1145:
-    .byte 0x90
-    .asciz "Name"
-
-# 0x511EFE
-    .global _str_1146
-_str_1146:
-    .byte 0x90
-    .ascii "Name "
-    .byte 0xAA
-    .byte EOS
-
-# 0x511F06
-    .global _str_1147
-_str_1147:
-    .byte 0x90
-    .asciz "Monthly Profit"
-
-# 0x511F16
-    .global _str_1148
-_str_1148:
-    .byte 0x90
-    .ascii "Monthly Profit "
-    .byte 0xAA
-    .byte EOS
-
-# 0x511F28
-    .global _str_1149
-_str_1149:
-    .byte 0x90
-    .asciz "Age"
-
-# 0x511F2D
-    .global _str_1150
-_str_1150:
-    .byte 0x90
-    .ascii "Age "
-    .byte 0xAA
-    .byte EOS
-
-# 0x511F34
-    .global _str_1151
-_str_1151:
-    .byte 0x90
-    .asciz "Reliability"
-
-# 0x511F41
-    .global _str_1152
-_str_1152:
-    .byte 0x90
-    .ascii "Reliability "
-    .byte 0xAA
-    .byte EOS
-
-# 0x511F50
-    .global _str_1153
-_str_1153:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by name"
-
-# 0x511F64
-    .global _str_1154
-_str_1154:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by profit"
-
-# 0x511F7A
-    .global _str_1155
-_str_1155:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by age"
-
-# 0x511F8D
-    .global _str_1156
-_str_1156:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by reliability"
-
-# 0x511FA8
-    .global _str_1157
-_str_1157:
-    .asciz "Vehicle must be stopped first!"
-
-# 0x511FC7
-    .global _str_1158
-_str_1158:
-    .asciz "Vehicle has crashed!"
-
-# 0x511FDC
-    .global _str_1159
-_str_1159:
-    .asciz "Vehicle has broken down!"
-
-# 0x511FF5
-    .global _str_1160
-_str_1160:
-    .asciz "Vehicle is stuck!"
-
-# 0x512007
-    .global _str_1161
-_str_1161:
-    .asciz "Not enough space, or vehicle in the way"
-
-# 0x51202F
-    .global _str_1162
-_str_1162:
-    .asciz "Vehicle approaching, or in the way"
-
-# 0x512052
-    .global _str_1163
-_str_1163:
-    .ascii "Can't place "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz " here..."
-
-# 0x51206B
-    .global _str_1164
-_str_1164:
-    .ascii "Can't remove "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz "..."
-
-# 0x512080
-    .global _str_1165
-_str_1165:
-    .asciz "Can't pass signal at danger..."
-
-# 0x51209F
-    .global _str_1166
-_str_1166:
-    .ascii "This vehicle requires "
-    .byte 0x83
-    .byte EOS
-
-# 0x5120B7
-    .global _str_1167
-_str_1167:
-    .asciz "Train has no vehicles!"
-
-# 0x5120CE
-    .global _str_1168
-_str_1168:
-    .asciz "Train has no driving cab"
-
-# 0x5120E7
-    .global _str_1169
-_str_1169:
-    .asciz "Train needs a locomotive or power car"
-
-# 0x51210D
-    .global _str_1170
-_str_1170:
-    .byte 0x83
-    .ascii " from "
-    .byte 0x83
-    .byte EOS
-
-# 0x512116
-    .global _str_1171
-_str_1171:
-    .asciz "Empty"
-
-# 0x51211C
-    .global _str_1172
-_str_1172:
-    .byte 0x0A
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x512120
-    .global _str_1173
-_str_1173:
-    .byte 0x05
-    .ascii "Capacity:  "
-    .byte 0x83
-    .byte EOS
-
-# 0x51212E
-    .global _str_1174
-_str_1174:
-    .byte 0x05
-    .ascii "+ "
-    .byte 0x83
-    .byte EOS
-
-# 0x512133
-    .global _str_1175
-_str_1175:
-    .asciz "Too many stations in game!"
-
-# 0x51214E
-    .global _str_1176
-_str_1176:
-    .asciz "Station too large!"
-
-# 0x512161
-    .global _str_1177
-_str_1177:
-    .asciz "Town must be built first!"
-
-# 0x51217B
-    .global _str_1178
-_str_1178:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Show overall map"
-
-# 0x51218E
-    .global _str_1179
-_str_1179:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Show vehicle types on map"
-
-# 0x5121AA
-    .global _str_1180
-_str_1180:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Show industry types on map"
-
-# 0x5121C7
-    .global _str_1181
-_str_1181:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Show vehicle routes on map"
-
-# 0x5121E4
-    .global _str_1182
-_str_1182:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Show company ownership on map"
-
-# 0x512204
-    .global _str_1183
-_str_1183:
-    .asciz "Station too spread out!"
-
-# 0x51221C
-    .global _str_1184
-_str_1184:
-    .ascii "Can't add "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .ascii " to "
-    .byte 0x83
-    .asciz "..."
-
-# 0x512235
-    .global _str_1185
-_str_1185:
-    .ascii "Can't build "
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x83
-    .asciz "..."
-
-# 0x51224B
-    .global _str_1186
-_str_1186:
-    .byte 0x90
-    .asciz "Select new vehicle"
-
-# 0x51225F
-    .global _str_1187
-_str_1187:
-    .byte 0x90
-    .ascii "Select vehicle to add to "
-    .byte 0x83
-    .byte EOS
-
-# 0x51227B
-    .global _str_1188
-_str_1188:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build new train vehicles"
-
-# 0x512296
-    .global _str_1189
-_str_1189:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build new buses"
-
-# 0x5122A8
-    .global _str_1190
-_str_1190:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build new trucks"
-
-# 0x5122BB
-    .global _str_1191
-_str_1191:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build new trams"
-
-# 0x5122CD
-    .global _str_1192
-_str_1192:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build new aircraft"
-
-# 0x5122E2
-    .global _str_1193
-_str_1193:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build new ships"
-
-# 0x5122F4
-    .global _str_1194
-_str_1194:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Trains"
-
-# 0x5122FD
-    .global _str_1195
-_str_1195:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Buses"
-
-# 0x512305
-    .global _str_1196
-_str_1196:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Trucks"
-
-# 0x51230E
-    .global _str_1197
-_str_1197:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Trams"
-
-# 0x512316
-    .global _str_1198
-_str_1198:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Aircraft"
-
-# 0x512321
-    .global _str_1199
-_str_1199:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Ships"
-
-# 0x512329
-    .global _str_1200
-_str_1200:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "All stations"
-
-# 0x512338
-    .global _str_1201
-_str_1201:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Rail stations"
-
-# 0x512348
-    .global _str_1202
-_str_1202:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Road stations"
-
-# 0x512358
-    .global _str_1203
-_str_1203:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Airports"
-
-# 0x512363
-    .global _str_1204
-_str_1204:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Ship ports"
-
-# 0x512370
-    .global _str_1205
-_str_1205:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Clear an area of land"
-
-# 0x512388
-    .global _str_1206
-_str_1206:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Trees"
-
-# 0x512390
-    .global _str_1207
-_str_1207:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Adjust or create land"
-
-# 0x5123A8
-    .global _str_1208
-_str_1208:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Adjust or create water"
-
-# 0x5123C1
-    .global _str_1209
-_str_1209:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Walls and fences"
-
-# 0x5123D4
-    .global _str_1210
-_str_1210:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select object color"
-
-# 0x5123EA
-    .global _str_1211
-_str_1211:
-    .byte 0x0E
-    .byte 0x83
-    .byte EOS
-
-# 0x5123ED
-    .global _str_1212
-_str_1212:
-    .byte 0x0E
-    .byte 0x83
-    .asciz " (en-route from"
-
-# 0x5123FF
-    .global _str_1213
-_str_1213:
-    .byte 0x0E
-    .byte 0x83
-    .asciz ")"
-
-# 0x512403
-    .global _str_1214
-_str_1214:
-    .asciz "No space for more vehicle orders!"
-
-# 0x512425
-    .global _str_1215
-_str_1215:
-    .asciz "Too many orders for this vehicle!"
-
-# 0x512447
-    .global _str_1216
-_str_1216:
-    .asciz "- - Local - -"
-
-# 0x512455
-    .global _str_1217
-_str_1217:
-    .asciz "- - Express - -"
-
-# 0x512465
-    .global _str_1218
-_str_1218:
-    .byte 0x90
-    .asciz "- - No route defined - -"
-
-# 0x51247F
-    .global _str_1219
-_str_1219:
-    .byte 0x90
-    .asciz "- - End of route list - -"
-
-# 0x51249A
-    .global _str_1220
-_str_1220:
-    .ascii "Stop at "
-    .byte 0x83
-    .byte EOS
-
-# 0x5124A4
-    .global _str_1221
-_str_1221:
-    .ascii "Route through "
-    .byte 0x83
-    .byte EOS
-
-# 0x5124B4
-    .global _str_1222
-_str_1222:
-    .asciz "Route through waypoint"
-
-# 0x5124CB
-    .global _str_1223
-_str_1223:
-    .ascii "Unload all "
-    .byte 0x83
-    .ascii " "
-    .byte 0x8F
-    .byte EOS
-
-# 0x5124DA
-    .global _str_1224
-_str_1224:
-    .ascii "Wait for full load of "
-    .byte 0x83
-    .ascii " "
-    .byte 0x8F
-    .byte EOS
-
-# 0x5124F4
-    .global _str_1225
-_str_1225:
-    .ascii "Unload all "
-    .byte 0x83
-    .ascii " "
-    .byte 0x8F
-    .byte EOS
-
-# 0x512503
-    .global _str_1226
-_str_1226:
-    .ascii "Wait for full load of "
-    .byte 0x83
-    .ascii " "
-    .byte 0x8F
-    .byte EOS
-
-# 0x51251D
-    .global _str_1227
-_str_1227:
-    .byte 0x0E
-    .byte 0xAF
-    .byte EOS
-
-# 0x512520
-    .global _str_1228
-_str_1228:
-    .asciz "Can't insert order..."
-
-# 0x512536
-    .global _str_1229
-_str_1229:
-    .byte 0x0F
-    .ascii "Click to insert new order to"
-    .byte 0x05
-    .asciz "route through waypoint at this position"
-
-# 0x51257C
-    .global _str_1230
-_str_1230:
-    .byte 0x0F
-    .ascii "Click to insert new order to"
-    .byte 0x05
-    .ascii "stop at "
-    .byte 0x83
-    .byte EOS
-
-# 0x5125A4
-    .global _str_1231
-_str_1231:
-    .byte 0x0F
-    .ascii "Click again to change last order to"
-    .byte 0x05
-    .ascii "route through "
-    .byte 0x83
-    .byte EOS
-
-# 0x5125D9
-    .global _str_1232
-_str_1232:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Insert an order to wait for a full load of cargo"
-
-# 0x51260C
-    .global _str_1233
-_str_1233:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Insert an order to force unloading of cargo, even if cargo is not accepted by station"
-
-# 0x512664
-    .global _str_1234
-_str_1234:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Skip to next order in list"
-
-# 0x512681
-    .global _str_1235
-_str_1235:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Delete the last or selected order"
-
-# 0x5126A5
-    .global _str_1236
-_str_1236:
-    .byte 0x90
-    .asciz "Click on station or waypoint position to set route"
-
-# 0x5126D9
-    .global _str_1237
-_str_1237:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Click on order to select it, click twice to move view to show station/waypoint"
-
-# 0x51272A
-    .global _str_1238
-_str_1238:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Click on order to copy it to selected vehicle"
-
-# 0x51275A
-    .global _str_1239
-_str_1239:
-    .byte 0x83
-    .ascii " "
-    .byte 0x83
-    .byte 0x05
-    .byte 0x0F
-    .byte 0x83
-    .byte EOS
-
-# 0x512761
-    .global _str_1240
-_str_1240:
-    .asciz "Build Trains"
-
-# 0x51276E
-    .global _str_1241
-_str_1241:
-    .asciz "Build Buses"
-
-# 0x51277A
-    .global _str_1242
-_str_1242:
-    .asciz "Build Trucks"
-
-# 0x512787
-    .global _str_1243
-_str_1243:
-    .asciz "Build Trams"
-
-# 0x512793
-    .global _str_1244
-_str_1244:
-    .asciz "Build Aircraft"
-
-# 0x5127A2
-    .global _str_1245
-_str_1245:
-    .asciz "Build Ships"
-
-# 0x5127AE
-    .global _str_1246
-_str_1246:
-    .ascii "Can only be placed on "
-    .byte 0x83
-    .asciz "..."
-
-# 0x5127C9
-    .global _str_1247
-_str_1247:
-    .asciz "Road"
-
-# 0x5127CE
-    .global _str_1248
-_str_1248:
-    .byte 0x90
-    .asciz "No vehicles available"
-
-# 0x5127E5
-    .global _str_1249
-_str_1249:
-    .byte 0x90
-    .ascii "No compatible vehicles available to add to "
-    .byte 0x83
-    .byte EOS
-
-# 0x512813
-    .global _str_1250
-_str_1250:
-# 0x512813
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       50 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       58 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       60 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       70 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       78 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       80 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       88 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       90 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       98 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      100 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      108 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      110 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      118 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      120 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      128 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      130 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      138 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      140 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      148 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      150 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      158 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      160 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      168 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      170 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      178 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      180 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      188 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      190 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      198 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A8 ........
-
-# 0x5129C3
-    .global __5129C3
-__5129C3:
-# 0x5129C3
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00                                           #       50 .
-
-# 0x512A14
-    .global _str_1251
-_str_1251:
-    .byte 0x0E
-    .ascii " Cost: "
-    .byte 0x90
-    .byte 0x81
-    .byte EOS
-
-# 0x512A1F
-    .global _str_1252
-_str_1252:
-    .byte 0x05
-    .byte 0x0E
-    .ascii " Requires: "
-    .byte 0x90
-    .byte EOS
-
-# 0x512A2E
-    .global _str_1253
-_str_1253:
-    .byte 0x05
-    .byte 0x0E
-    .ascii " Power: "
-    .byte 0x90
-    .byte 0x8E
-    .byte EOS
-
-# 0x512A3B
-    .global _str_1254
-_str_1254:
-    .byte 0x05
-    .byte 0x0E
-    .ascii " Weight: "
-    .byte 0x90
-    .byte 0x7F
-    .asciz "t"
-
-# 0x512A4A
-    .global _str_1255
-_str_1255:
-    .byte 0x05
-    .byte 0x0E
-    .ascii " Max. Speed: "
-    .byte 0x90
-    .byte 0x87
-    .byte EOS
-
-# 0x512A5C
-    .global _str_1256
-_str_1256:
-    .byte 0x05
-    .byte 0x0E
-    .ascii " Designed: "
-    .byte 0x90
-    .byte 0x80
-    .byte EOS
-
-# 0x512A6C
-    .global _str_1257
-_str_1257:
-    .byte 0x05
-    .byte 0x0E
-    .ascii " Capacity: "
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x512A7C
-    .global _str_1258
-_str_1258:
-    .ascii " + "
-    .byte 0x83
-    .byte EOS
-
-# 0x512A81
-    .global _str_1259
-_str_1259:
-    .ascii " ( + "
-    .byte 0x83
-    .asciz " for steep slopes)"
-
-# 0x512A9A
-    .global _str_1260
-_str_1260:
-    .ascii " ("
-    .byte 0x87
-    .ascii " on "
-    .byte 0x83
-    .asciz ")"
-
-# 0x512AA4
-    .global _str_1261
-_str_1261:
-    .ascii "or "
-    .byte 0x83
-    .byte EOS
-
-# 0x512AA9
-    .global _str_1262
-_str_1262:
-    .byte 0x05
-    .byte 0x0E
-    .ascii " Running Cost: "
-    .byte 0x90
-    .byte 0x81
-    .asciz "/month"
-
-# 0x512AC3
-    .global _str_1263
-_str_1263:
-    .asciz " (refittable)"
-
-# 0x512AD1
-    .global _str_1264
-_str_1264:
-    .byte 0x7F
-    .asciz " train"
-
-# 0x512AD9
-    .global _str_1265
-_str_1265:
-    .byte 0x7F
-    .asciz " bus"
-
-# 0x512ADF
-    .global _str_1266
-_str_1266:
-    .byte 0x7F
-    .asciz " truck"
-
-# 0x512AE7
-    .global _str_1267
-_str_1267:
-    .byte 0x7F
-    .asciz " tram"
-
-# 0x512AEE
-    .global _str_1268
-_str_1268:
-    .byte 0x7F
-    .asciz " aircraft"
-
-# 0x512AF9
-    .global _str_1269
-_str_1269:
-    .byte 0x7F
-    .asciz " ship"
-
-# 0x512B00
-    .global _str_1270
-_str_1270:
-    .byte 0x7F
-    .asciz " trains"
-
-# 0x512B09
-    .global _str_1271
-_str_1271:
-    .byte 0x7F
-    .asciz " buses"
-
-# 0x512B11
-    .global _str_1272
-_str_1272:
-    .byte 0x7F
-    .asciz " trucks"
-
-# 0x512B1A
-    .global _str_1273
-_str_1273:
-    .byte 0x7F
-    .asciz " trams"
-
-# 0x512B22
-    .global _str_1274
-_str_1274:
-    .byte 0x7F
-    .asciz " aircraft"
-
-# 0x512B2D
-    .global _str_1275
-_str_1275:
-    .byte 0x7F
-    .asciz " ships"
-
-# 0x512B35
-    .global _str_1276
-_str_1276:
-    .asciz "train"
-
-# 0x512B3B
-    .global _str_1277
-_str_1277:
-    .asciz "bus"
-
-# 0x512B3F
-    .global _str_1278
-_str_1278:
-    .asciz "truck"
-
-# 0x512B45
-    .global _str_1279
-_str_1279:
-    .asciz "tram"
-
-# 0x512B4A
-    .global _str_1280
-_str_1280:
-    .asciz "aircraft"
-
-# 0x512B53
-    .global _str_1281
-_str_1281:
-    .asciz "ship"
-
-# 0x512B58
-    .global _str_1282
-_str_1282:
-    .byte 0x0E
-    .ascii "Total: "
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x512B63
-    .global _str_1283
-_str_1283:
-    .asciz "Empty"
-
-# 0x512B69
-    .global _str_1284
-_str_1284:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Load: "
-
-# 0x512B72
-    .global _str_1285
-_str_1285:
-    .ascii "Requires an extra "
-    .byte 0x83
-    .byte EOS
-
-# 0x512B86
-    .global _str_1286
-_str_1286:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Vehicles for "
-    .byte 0x83
-    .byte EOS
-
-# 0x512B97
-    .global _str_1287
-_str_1287:
-    .byte 0x8F
-    FORMAT_NEWLINE_X_Y 31, 8
-    .ascii " "
-    .byte 0x83
-    .byte EOS
-
-# 0x512B9E
-    .global _str_1288
-_str_1288:
-    .byte 0x88
-    .byte 0x88
-    FORMAT_NEWLINE_X_Y 31, 8
-    .ascii " "
-    .byte 0x83
-    .byte EOS
-
-# 0x512BA6
-    .global _str_1289
-_str_1289:
-    .byte 0x8F
-    FORMAT_NEWLINE_X_Y 31, 8
-    .ascii " "
-    .byte 0x83
-    .asciz " Construction"
-
-# 0x512BBA
-    .global _str_1290
-_str_1290:
-    .byte 0x83
-    .asciz " local authority refuses permission!"
-
-# 0x512BE0
-    .global _str_1291
-_str_1291:
-    .asciz "Towns"
-
-# 0x512BE6
-    .global _str_1292
-_str_1292:
-    .asciz "Build New Towns"
-
-# 0x512BF6
-    .global _str_1293
-_str_1293:
-    .asciz "Build Individual Town Buildings"
-
-# 0x512C16
-    .global _str_1294
-_str_1294:
-    .asciz "Build Miscellaneous Buildings"
-
-# 0x512C34
-    .global _str_1295
-_str_1295:
-    .byte 0x90
-    .asciz "Population"
-
-# 0x512C40
-    .global _str_1296
-_str_1296:
-    .byte 0x90
-    .ascii "Population "
-    .byte 0xAA
-    .byte EOS
-
-# 0x512C4E
-    .global _str_1297
-_str_1297:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by population"
-
-# 0x512C68
-    .global _str_1298
-_str_1298:
-    .byte 0x7B
-    .byte EOS
-
-# 0x512C6A
-    .global _str_1299
-_str_1299:
-    .byte 0x90
-    .asciz "Stations"
-
-# 0x512C74
-    .global _str_1300
-_str_1300:
-    .byte 0x90
-    .ascii "Stations "
-    .byte 0xAA
-    .byte EOS
-
-# 0x512C80
-    .global _str_1301
-_str_1301:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by no. of stations"
-
-# 0x512C9F
-    .global _str_1302
-_str_1302:
-    .byte 0x90
-    .asciz "Town"
-
-# 0x512CA5
-    .global _str_1303
-_str_1303:
-    .byte 0x90
-    .ascii "Town "
-    .byte 0xAA
-    .byte EOS
-
-# 0x512CAD
-    .global _str_1304
-_str_1304:
-    .byte 0x83
-    .ascii " population "
-    .byte 0x7B
-    .byte EOS
-
-# 0x512CBC
-    .global _str_1305
-_str_1305:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by town type"
-
-# 0x512CD5
-    .global _str_1306
-_str_1306:
-    .byte 0x90
-    .asciz "Type"
-
-# 0x512CDB
-    .global _str_1307
-_str_1307:
-    .byte 0x90
-    .ascii "Type "
-    .byte 0xAA
-    .byte EOS
-
-# 0x512CE3
-    .global _str_1308
-_str_1308:
-    .asciz "Town Name"
-
-# 0x512CED
-    .global _str_1309
-_str_1309:
-    .ascii "Type new name for "
-    .byte 0x83
-    .asciz ":"
-
-# 0x512D02
-    .global _str_1310
-_str_1310:
-    .byte 0x90
-    .byte 0x83
-    .ascii " population "
-    .byte 0x7B
-    .byte EOS
-
-# 0x512D12
-    .global _str_1311
-_str_1311:
-    .asciz "Can't rename town..."
-
-# 0x512D27
-    .global _str_1312
-_str_1312:
-    .asciz "New Station"
-
-# 0x512D33
-    .global _str_1313
-_str_1313:
-    .byte 0x90
-    .ascii "("
-    .byte 0x83
-    .asciz ")"
-
-# 0x512D38
-    .global _str_1314
-_str_1314:
-    .byte 0x0E
-    .ascii "Catchment Area"
-    .byte 0x05
-    .asciz "  Accepts: "
-
-# 0x512D54
-    .global _str_1315
-_str_1315:
-    .byte 0x0E
-    .asciz "  Produces: "
-
-# 0x512D62
-    .global _str_1316
-_str_1316:
-    .byte 0x90
-    .asciz "Nothing"
-
-# 0x512D6B
-    .global _str_1317
-_str_1317:
-    .asciz "Too many industries"
-
-# 0x512D7F
-    .global _str_1318
-_str_1318:
-    .asciz "Industries"
-
-# 0x512D8A
-    .global _str_1319
-_str_1319:
-    .asciz "Fund New Industries"
-
-# 0x512D9E
-    .global _str_1320
-_str_1320:
-    .asciz "Build Industries"
-
-# 0x512DAF
-    .global _str_1321
-_str_1321:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Towns list"
-
-# 0x512DBC
-    .global _str_1322
-_str_1322:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build towns"
-
-# 0x512DCA
-    .global _str_1323
-_str_1323:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build individual town buildings"
-
-# 0x512DEC
-    .global _str_1324
-_str_1324:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build miscellaneous buildings"
-
-# 0x512E0C
-    .global _str_1325
-_str_1325:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Industries List"
-
-# 0x512E1E
-    .global _str_1326
-_str_1326:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Fund new industries"
-
-# 0x512E34
-    .global _str_1327
-_str_1327:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build industries"
-
-# 0x512E47
-    .global _str_1328
-_str_1328:
-    .asciz "Ebony"
-
-# 0x512E4D
-    .global _str_1329
-_str_1329:
-    .asciz "Silver"
-
-# 0x512E54
-    .global _str_1330
-_str_1330:
-    .asciz "Ivory"
-
-# 0x512E5A
-    .global _str_1331
-_str_1331:
-    .asciz "Indigo"
-
-# 0x512E61
-    .global _str_1332
-_str_1332:
-    .asciz "Sapphire"
-
-# 0x512E6A
-    .global _str_1333
-_str_1333:
-    .asciz "Emerald"
-
-# 0x512E72
-    .global _str_1334
-_str_1334:
-    .asciz "Golden"
-
-# 0x512E79
-    .global _str_1335
-_str_1335:
-    .asciz "Amber"
-
-# 0x512E7F
-    .global _str_1336
-_str_1336:
-    .asciz "Bronze"
-
-# 0x512E86
-    .global _str_1337
-_str_1337:
-    .asciz "Burgundy"
-
-# 0x512E8F
-    .global _str_1338
-_str_1338:
-    .asciz "Scarlet"
-
-# 0x512E97
-    .global _str_1339
-_str_1339:
-    .byte 0x83
-    .byte EOS
-
-# 0x512E99
-    .global _str_1340
-_str_1340:
-    .byte 0x88
-    .byte 0x83
-    .byte EOS
-
-# 0x512E9C
-    .global _str_1341
-_str_1341:
-    .byte 0x83
-    .asciz " Transport"
-
-# 0x512EA8
-    .global _str_1342
-_str_1342:
-    .byte 0x83
-    .asciz " Express"
-
-# 0x512EB2
-    .global _str_1343
-_str_1343:
-    .byte 0x83
-    .asciz " Lines"
-
-# 0x512EBA
-    .global _str_1344
-_str_1344:
-    .byte 0x83
-    .asciz " Tracks"
-
-# 0x512EC3
-    .global _str_1345
-_str_1345:
-    .byte 0x83
-    .asciz " Coaches"
-
-# 0x512ECD
-    .global _str_1346
-_str_1346:
-    .byte 0x83
-    .asciz " Air"
-
-# 0x512ED3
-    .global _str_1347
-_str_1347:
-    .byte 0x83
-    .asciz " Rail"
-
-# 0x512EDA
-    .global _str_1348
-_str_1348:
-    .byte 0x83
-    .asciz " Carts"
-
-# 0x512EE2
-    .global _str_1349
-_str_1349:
-    .byte 0x83
-    .asciz " Trains"
-
-# 0x512EEB
-    .global _str_1350
-_str_1350:
-    .byte 0x83
-    .asciz " Haulage"
-
-# 0x512EF5
-    .global _str_1351
-_str_1351:
-    .byte 0x83
-    .asciz " Shipping"
-
-# 0x512F00
-    .global _str_1352
-_str_1352:
-    .byte 0x83
-    .asciz " Freight"
-
-# 0x512F0A
-    .global _str_1353
-_str_1353:
-    .byte 0x83
-    .asciz " Trucks"
-
-# 0x512F13
-    .global _str_1354
-_str_1354:
-    .byte 0x0E
-    .asciz "Headquarters"
-
-# 0x512F21
-    .global _str_1355
-_str_1355:
-    .byte 0x0E
-    .asciz "Owner"
-
-# 0x512F28
-    .global _str_1356
-_str_1356:
-    .byte 0x90
-    .ascii "@ "
-    .byte 0x7F
-    .asciz "% interest per year"
-
-# 0x512F40
-    .global _str_1357
-_str_1357:
-    .byte 0x90
-    .byte 0x0A
-    .byte 0x7B
-    .byte EOS
-
-# 0x512F44
-    .global _str_1358
-_str_1358:
-    .byte 0x90
-    .byte 0x0A
-    .byte 0x80
-    .byte EOS
-
-# 0x512F48
-    .global _str_1359
-_str_1359:
-    .byte 0x83
-    .byte EOS
-
-# 0x512F4A
-    .global _str_1360
-_str_1360:
-    .byte 0x83
-    .asciz " - Population"
-
-# 0x512F59
-    .global _str_1361
-_str_1361:
-    .byte 0x83
-    .asciz " Local Authority"
-
-# 0x512F6B
-    .global _str_1362
-_str_1362:
-    .byte 0x83
-    .asciz " - Monthly Production"
-
-# 0x512F82
-    .global _str_1363
-_str_1363:
-    .byte 0x83
-    .asciz " - Statistics"
-
-# 0x512F91
-    .global _str_1364
-_str_1364:
-    .byte 0x83
-    .ascii " "
-    .byte 0x83
-    .byte EOS
-
-# 0x512F95
-    .global _str_1365
-_str_1365:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Demolish this industry"
-
-# 0x512FAE
-    .global _str_1366
-_str_1366:
-    .asciz "Under construction"
-
-# 0x512FC1
-    .global _str_1367
-_str_1367:
-    .asciz "Producing "
-
-# 0x512FCC
-    .global _str_1368
-_str_1368:
-    .asciz "Produces "
-
-# 0x512FD6
-    .global _str_1369
-_str_1369:
-    .asciz "Produce "
-
-# 0x512FDF
-    .global _str_1370
-_str_1370:
-    .asciz " to produce "
-
-# 0x512FEC
-    .global _str_1371
-_str_1371:
-    .asciz "Requires "
-
-# 0x512FF6
-    .global _str_1372
-_str_1372:
-    .asciz "Require "
-
-# 0x512FFF
-    .global _str_1373
-_str_1373:
-    .asciz " and "
-
-# 0x513005
-    .global _str_1374
-_str_1374:
-    .asciz " or "
-
-# 0x51300A
-    .global _str_1375
-_str_1375:
-    .asciz ", "
-
-# 0x51300D
-    .global _str_1376
-_str_1376:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by industry status"
-
-# 0x51302C
-    .global _str_1377
-_str_1377:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by production percentage transported"
-
-# 0x51305D
-    .global _str_1378
-_str_1378:
-    .byte 0x90
-    .asciz "Status"
-
-# 0x513065
-    .global _str_1379
-_str_1379:
-    .byte 0x90
-    .ascii "Status "
-    .byte 0xAA
-    .byte EOS
-
-# 0x51306F
-    .global _str_1380
-_str_1380:
-    .byte 0x90
-    .asciz "Production Transported"
-
-# 0x513087
-    .global _str_1381
-_str_1381:
-    .byte 0x90
-    .ascii "Production Transported "
-    .byte 0xAA
-    .byte EOS
-
-# 0x5130A1
-    .global _str_1382
-_str_1382:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by industry name"
-
-# 0x5130BE
-    .global _str_1383
-_str_1383:
-    .byte 0x90
-    .asciz "Industry"
-
-# 0x5130C8
-    .global _str_1384
-_str_1384:
-    .byte 0x90
-    .ascii "Industry "
-    .byte 0xAA
-    .byte EOS
-
-# 0x5130D4
-    .global _str_1385
-_str_1385:
-    .byte 0x90
-    .asciz "No industries available"
-
-# 0x5130ED
-    .global _str_1386
-_str_1386:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Town"
-
-# 0x5130F4
-    .global _str_1387
-_str_1387:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Population graph"
-
-# 0x513107
-    .global _str_1388
-_str_1388:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Town's ratings of each company"
-
-# 0x513128
-    .global _str_1389
-_str_1389:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Industry"
-
-# 0x513133
-    .global _str_1390
-_str_1390:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Production graph"
-
-# 0x513146
-    .global _str_1391
-_str_1391:
-    .byte 0x90
-    .byte 0x0A
-    .ascii "("
-    .byte 0x83
-    .asciz ")"
-
-# 0x51314C
-    .global _str_1392
-_str_1392:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Completely demolish this town (and any nearby industries)"
-
-# 0x513188
-    .global _str_1393
-_str_1393:
-    .asciz "Can't remove town..."
-
-# 0x51319D
-    .global _str_1394
-_str_1394:
-    .asciz "All stations near this town must be removed first"
-
-# 0x5131CF
-    .global _str_1395
-_str_1395:
-    .asciz "Too close to another town"
-
-# 0x5131E9
-    .global _str_1396
-_str_1396:
-    .asciz "Too many towns"
-
-# 0x5131F8
-    .global _str_1397
-_str_1397:
-    .asciz "Too close to another town, or position is unsuitable"
-
-# 0x51322D
-    .global _str_1398
-_str_1398:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select size of town to construct"
-
-# 0x513250
-    .global _str_1399
-_str_1399:
-    .asciz "1 (small)"
-
-# 0x51325A
-    .global _str_1400
-_str_1400:
-    .asciz "2"
-
-# 0x51325C
-    .global _str_1401
-_str_1401:
-    .asciz "3 (medium)"
-
-# 0x513267
-    .global _str_1402
-_str_1402:
-    .asciz "4"
-
-# 0x513269
-    .global _str_1403
-_str_1403:
-    .asciz "5"
-
-# 0x51326B
-    .global _str_1404
-_str_1404:
-    .asciz "6 (large)"
-
-# 0x513275
-    .global _str_1405
-_str_1405:
-    .asciz "7"
-
-# 0x513277
-    .global _str_1406
-_str_1406:
-    .asciz "8 (gigantic)"
-
-# 0x513284
-    .global _str_1407
-_str_1407:
-    .byte 0x90
-    .asciz "Town size:"
-
-# 0x513290
-    .global _str_1408
-_str_1408:
-    .byte 0x90
-    .asciz "(Click on landscape to build new town)"
-
-# 0x5132B8
-    .global _str_1409
-_str_1409:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Expand this town"
-
-# 0x5132CB
-    .global _str_1410
-_str_1410:
-    .asciz "Too close to another industry"
-
-# 0x5132E9
-    .global _str_1411
-_str_1411:
-    .asciz "Town must be built nearby first"
-
-# 0x513309
-    .global _str_1412
-_str_1412:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Plant a cluster of the selected tree type"
-
-# 0x513335
-    .global _str_1413
-_str_1413:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Plant a random cluster of trees"
-
-# 0x513357
-    .global _str_1414
-_str_1414:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Statistics"
-
-# 0x513364
-    .global _str_1415
-_str_1415:
-    .byte 0x0E
-    .asciz "Received last month:"
-
-# 0x51337A
-    .global _str_1416
-_str_1416:
-    .byte 0x0E
-    .asciz "Produced last month:"
-
-# 0x513390
-    .global _str_1417
-_str_1417:
-    .byte 0x90
-    .byte 0x83
-    .ascii " ("
-    .byte 0x7F
-    .asciz "% transported)"
-
-# 0x5133A4
-    .global _str_1418
-_str_1418:
-    .byte 0x90
-    .byte 0x7F
-    .asciz "%"
-
-# 0x5133A8
-    .global _str_1419
-_str_1419:
-    .asciz "Closing down"
-
-# 0x5133B5
-    .global _str_1420
-_str_1420:
-    .ascii "Belongs to "
-    .byte 0x83
-    .byte EOS
-
-# 0x5133C2
-    .global _str_1421
-_str_1421:
-    .byte 0x83
-    .ascii " belongs to "
-    .byte 0x83
-    .byte EOS
-
-# 0x5133D1
-    .global _str_1422
-_str_1422:
-    .ascii "Signal belongs to "
-    .byte 0x83
-    .byte EOS
-
-# 0x5133E5
-    .global _str_1423
-_str_1423:
-    .byte 0x90
-    .byte 0x7F
-    .asciz "%"
-
-# 0x5133E9
-    .global _str_1424
-_str_1424:
-    .byte 0x90
-    .byte 0x07
-    DATE 0
-    .byte EOS
-
-# 0x5133EE
-    .global _str_1425
-_str_1425:
-    .asciz "Messages"
-
-# 0x5133F7
-    .global _str_1426
-_str_1426:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Show recent messages"
-
-# 0x51340E
-    .global _str_1427
-_str_1427:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Message options"
-
-# 0x513420
-    .global _str_1428
-_str_1428:
-    .asciz "Message Options"
-
-# 0x513430
-    .global _str_1429
-_str_1429:
-    .byte 0x07
-    DATE 0
-    .byte EOS
-
-# 0x513434
-    .global _str_1430
-_str_1430:
-    .asciz " + "
-
-# 0x513438
-    .global _str_1431
-_str_1431:
-    .asciz " waiting"
-
-# 0x513441
-    .global _str_1432
-_str_1432:
-    .asciz "Nothing waiting"
-
-# 0x513451
-    .global _str_1433
-_str_1433:
-    .byte 0x90
-    .asciz "Status"
-
-# 0x513459
-    .global _str_1434
-_str_1434:
-    .byte 0x90
-    .ascii "Status "
-    .byte 0xAA
-    .byte EOS
-
-# 0x513463
-    .global _str_1435
-_str_1435:
-    .byte 0x90
-    .asciz "Total waiting"
-
-# 0x513472
-    .global _str_1436
-_str_1436:
-    .byte 0x90
-    .ascii "Total waiting "
-    .byte 0xAA
-    .byte EOS
-
-# 0x513483
-    .global _str_1437
-_str_1437:
-    .byte 0x90
-    .asciz "Accepts"
-
-# 0x51348C
-    .global _str_1438
-_str_1438:
-    .byte 0x90
-    .ascii "Accepts "
-    .byte 0xAA
-    .byte EOS
-
-# 0x513497
-    .global _str_1439
-_str_1439:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by station status"
-
-# 0x5134B5
-    .global _str_1440
-_str_1440:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by total units waiting"
-
-# 0x5134D8
-    .global _str_1441
-_str_1441:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by cargo accepted"
-
-# 0x5134F6
-    .global _str_1442
-_str_1442:
-    .byte 0x7B
-    .asciz " units"
-
-# 0x5134FE
-    .global _str_1443
-_str_1443:
-    .asciz ", "
-
-# 0x513501
-    .global _str_1444
-_str_1444:
-    .byte 0x05
-    .asciz "Accepts "
-
-# 0x51350B
-    .global _str_1445
-_str_1445:
-    .byte 0x90
-    .asciz "Accepts: "
-
-# 0x513516
-    .global _str_1446
-_str_1446:
-    .asciz "Nothing"
-
-# 0x51351E
-    .global _str_1447
-_str_1447:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Station"
-
-# 0x513528
-    .global _str_1448
-_str_1448:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Cargo waiting and accepted"
-
-# 0x513545
-    .global _str_1449
-_str_1449:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Cargo ratings"
-
-# 0x513555
-    .global _str_1450
-_str_1450:
-    .asciz "Demolition not allowed"
-
-# 0x51356C
-    .global _str_1451
-_str_1451:
-    .asciz "Another company is about to build here"
-
-# 0x513593
-    .global _str_1452
-_str_1452:
-    .asciz "Too long!"
-
-# 0x51359D
-    .global _str_1453
-_str_1453:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Build or move headquarters"
-
-# 0x5135BA
-    .global _str_1454
-_str_1454:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Change owner name"
-
-# 0x5135CE
-    .global _str_1455
-_str_1455:
-    .byte 0x90
-    .asciz "(not yet constructed)"
-
-# 0x5135E5
-    .global _str_1456
-_str_1456:
-    .asciz "Name Company"
-
-# 0x5135F2
-    .global _str_1457
-_str_1457:
-    .asciz "Enter new company name:"
-
-# 0x51360A
-    .global _str_1458
-_str_1458:
-    .asciz "Can't rename this company..."
-
-# 0x513627
-    .global _str_1459
-_str_1459:
-    .asciz "Name Owner"
-
-# 0x513632
-    .global _str_1460
-_str_1460:
-    .asciz "Enter new name for owner:"
-
-# 0x51364C
-    .global _str_1461
-_str_1461:
-    .asciz "Can't change owner name..."
-
-# 0x513667
-    .global _str_1462
-_str_1462:
-    .asciz "Headquarters"
-
-# 0x513674
-    .global _str_1463
-_str_1463:
-    .byte 0x83
-    .asciz " Headquarters"
-
-# 0x513683
-    .global _str_1464
-_str_1464:
-    .byte 0x83
-    .asciz " local authority won't allow removal of roads currently in use"
-
-# 0x5136C3
-    .global _str_1465
-_str_1465:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select company"
-
-# 0x5136D4
-    .global _str_1466
-_str_1466:
-    .asciz "Two Player Game"
-
-# 0x5136E4
-    .global _str_1467
-_str_1467:
-    .asciz "Two Player Game - Options"
-
-# 0x5136FE
-    .global _str_1468
-_str_1468:
-    .byte 0x90
-    .ascii "To set up a two player game, one computer should be set up as a host and then the other should connect to it."
-    .byte 0x05
-    .byte 0x05
-    .asciz "Please select :"
-
-# 0x51377E
-    .global _str_1469
-_str_1469:
-    .byte EOS
-
-# 0x51377F
-    .global _str_1470
-_str_1470:
-    .byte 0x90
-    .asciz "Setting this computer up as a host..."
-
-# 0x5137A6
-    .global _str_1471
-_str_1471:
-    .byte 0x90
-    .asciz "Error: Unable to set up this computer as a host"
-
-# 0x5137D7
-    .global _str_1472
-_str_1472:
-    .byte 0x90
-    .asciz "Host setup completed - Waiting for the other computer to connect..."
-
-# 0x51381C
-    .global _str_1473
-_str_1473:
-    .byte EOS
-
-# 0x51381D
-    .global _str_1474
-_str_1474:
-    .byte EOS
-
-# 0x51381E
-    .global _str_1475
-_str_1475:
-    .byte EOS
-
-# 0x51381F
-    .global _str_1476
-_str_1476:
-    .byte 0x90
-    .asciz "Attempting to connect..."
-
-# 0x513839
-    .global _str_1477
-_str_1477:
-    .byte 0x90
-    .asciz "Error: Unable to locate or connect to host"
-
-# 0x513865
-    .global _str_1478
-_str_1478:
-    .byte 0x90
-    .ascii "Success!"
-    .byte 0x05
-    .ascii "You are now connected to: "
-    .byte 0x83
-    .byte EOS
-
-# 0x51388B
-    .global _str_1479
-_str_1479:
-    .byte 0x90
-    .ascii "Currently connected to: "
-    .byte 0x83
-    .byte 0x05
-    .byte 0x05
-    .asciz "Click below to disconnect and return to single player mode"
-
-# 0x5138E2
-    .global _str_1480
-_str_1480:
-    .byte 0x0E
-    .asciz "Set this computer up as a host"
-
-# 0x513902
-    .global _str_1481
-_str_1481:
-    .byte 0x0E
-    .asciz "Connect to host"
-
-# 0x513913
-    .global _str_1482
-_str_1482:
-    .byte 0x0E
-    .asciz "Disconnect"
-
-# 0x51391F
-    .global _str_1483
-_str_1483:
-    .asciz "Enter Host Address"
-
-# 0x513932
-    .global _str_1484
-_str_1484:
-    .asciz "Enter the IP address or computer name of the host to connect to, or leave blank to search the local network:"
-
-# 0x51399F
-    .global _str_1485
-_str_1485:
-    .byte 0x93
-    .asciz "Warning: You are connected to a different version of Chris Sawyer's Locomotion and two player game performance may not be reliable"
-
-# 0x513A23
-    .global _str_1486
-_str_1486:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Display options"
-
-# 0x513A35
-    .global _str_1487
-_str_1487:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sound options"
-
-# 0x513A45
-    .global _str_1488
-_str_1488:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Music options"
-
-# 0x513A55
-    .global _str_1489
-_str_1489:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Regional options"
-
-# 0x513A68
-    .global _str_1490
-_str_1490:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Control options"
-
-# 0x513A7A
-    .global _str_1491
-_str_1491:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Miscellaneous options"
-
-# 0x513A92
-    .global _str_1492
-_str_1492:
-    .asciz "Options - Display"
-
-# 0x513AA4
-    .global _str_1493
-_str_1493:
-    .asciz "Options - Sound"
-
-# 0x513AB4
-    .global _str_1494
-_str_1494:
-    .asciz "Options - Music"
-
-# 0x513AC4
-    .global _str_1495
-_str_1495:
-    .asciz "Options - Regional"
-
-# 0x513AD7
-    .global _str_1496
-_str_1496:
-    .asciz "Options - Controls"
-
-# 0x513AEA
-    .global _str_1497
-_str_1497:
-    .asciz "Options - Miscellaneous"
-
-# 0x513B02
-    .global _str_1498
-_str_1498:
-    .asciz "Use preferred currency always"
-
-# 0x513B20
-    .global _str_1499
-_str_1499:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Always use the preferred currency"
-
-# 0x513B44
-    .global _str_1500
-_str_1500:
-    .asciz "Use preferred currency when starting new game"
-
-# 0x513B72
-    .global _str_1501
-_str_1501:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select this option to override the default currency in a scenario"
-
-# 0x513BB6
-    .global _str_1502
-_str_1502:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select the currency for the current game"
-
-# 0x513BE1
-    .global _str_1503
-_str_1503:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select the default currency for creating new scenarios"
-
-# 0x513C1A
-    .global _str_1504
-_str_1504:
-    .byte 0x0E
-    .asciz "Current currency:"
-
-# 0x513C2D
-    .global _str_1505
-_str_1505:
-    .byte 0x0E
-    .asciz "Preferred currency:"
-
-# 0x513C42
-    .global _str_1506
-_str_1506:
-# 0x513C42
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       50 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       58 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       60 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       70 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       78 ........
-    .byte 0x00                                           #       80 .
-
-# 0x513CC3
-    .global _str_1507
-_str_1507:
-    .asciz "Own company major news:"
-
-# 0x513CDB
-    .global _str_1508
-_str_1508:
-    .asciz "Other company major news:"
-
-# 0x513CF5
-    .global _str_1509
-_str_1509:
-    .asciz "Own company minor news:"
-
-# 0x513D0D
-    .global _str_1510
-_str_1510:
-    .asciz "Other company minor news:"
-
-# 0x513D27
-    .global _str_1511
-_str_1511:
-    .asciz "General news:"
-
-# 0x513D35
-    .global _str_1512
-_str_1512:
-    .asciz "Advice:"
-
-# 0x513D3D
-    .global _str_1513
-_str_1513:
-    .asciz "Off"
-
-# 0x513D41
-    .global _str_1514
-_str_1514:
-    .asciz "Ticker Message"
-
-# 0x513D50
-    .global _str_1515
-_str_1515:
-    .asciz "News Window"
-
-# 0x513D5C
-    .global _str_1516
-_str_1516:
-    .byte 0x0E
-    .ascii "Monthly Running Cost: "
-    .byte 0x90
-    .byte 0x81
-    .byte EOS
-
-# 0x513D76
-    .global _str_1517
-_str_1517:
-    .byte 0x0E
-    .ascii "Monthly Profit: "
-    .byte 0x90
-    .byte 0x81
-    .byte EOS
-
-# 0x513D8A
-    .global _str_1518
-_str_1518:
-    .asciz "Trains"
-
-# 0x513D91
-    .global _str_1519
-_str_1519:
-    .asciz "Buses"
-
-# 0x513D97
-    .global _str_1520
-_str_1520:
-    .asciz "Trucks"
-
-# 0x513D9E
-    .global _str_1521
-_str_1521:
-    .asciz "Trams"
-
-# 0x513DA4
-    .global _str_1522
-_str_1522:
-    .asciz "Aircraft"
-
-# 0x513DAD
-    .global _str_1523
-_str_1523:
-    .asciz "Ships"
-
-# 0x513DB3
-    .global _str_1524
-_str_1524:
-    .asciz "Airport"
-
-# 0x513DBB
-    .global _str_1525
-_str_1525:
-    .asciz "Ship Port"
-
-# 0x513DC5
-    .global _str_1526
-_str_1526:
-    .asciz "Order type not valid for aircraft"
-
-# 0x513DE7
-    .global _str_1527
-_str_1527:
-    .asciz "Order type not valid for ships"
-
-# 0x513E06
-    .global _str_1528
-_str_1528:
-    .asciz "Station owned by another company"
-
-# 0x513E27
-    .global _str_1529
-_str_1529:
-    .asciz "No water!"
-
-# 0x513E31
-    .global _str_1530
-_str_1530:
-    .asciz "Water channel is currently needed by ships"
-
-# 0x513E5C
-    .global _str_1531
-_str_1531:
-    .asciz "Currently in use by at least one vehicle"
-
-# 0x513E85
-    .global _str_1532
-_str_1532:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Refit vehicle to carry a different type of cargo"
-
-# 0x513EB8
-    .global _str_1533
-_str_1533:
-    .asciz "Can't refit this vehicle to carry a different type of cargo"
-
-# 0x513EF4
-    .global _str_1534
-_str_1534:
-    .asciz "Requires water in front of dock"
-
-# 0x513F14
-    .global _str_1535
-_str_1535:
-    .byte 0x0E
-    .asciz "Currently playing:"
-
-# 0x513F28
-    .global _str_1536
-_str_1536:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Stop music"
-
-# 0x513F35
-    .global _str_1537
-_str_1537:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Play music"
-
-# 0x513F42
-    .global _str_1538
-_str_1538:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Next music track"
-
-# 0x513F55
-    .global _str_1539
-_str_1539:
-    .asciz "Play only music for current era"
-
-# 0x513F75
-    .global _str_1540
-_str_1540:
-    .asciz "Play all music"
-
-# 0x513F84
-    .global _str_1541
-_str_1541:
-    .asciz "Play customized selection of music"
-
-# 0x513FA7
-    .global _str_1542
-_str_1542:
-    .asciz "Edit selection..."
-
-# 0x513FB9
-    .global _str_1543
-_str_1543:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Edit the music track selection list"
-
-# 0x513FDF
-    .global _str_1544
-_str_1544:
-    .asciz "Edit Music Selection"
-
-# 0x513FF4
-    .global _str_1545
-_str_1545:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Click on music track to toggle selection on/off"
-
-# 0x514026
-    .global _str_1546
-_str_1546:
-    .byte 0xAC
-    .byte EOS
-
-# 0x514028
-    .global _str_1547
-_str_1547:
-    .byte 0x0E
-    .asciz "Volume:"
-
-# 0x514031
-    .global _str_1548
-_str_1548:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Set music volume"
-
-# 0x514044
-    .global _str_1549
-_str_1549:
-    .asciz "Music Options"
-
-# 0x514052
-    .global _str_1550
-_str_1550:
-    .ascii "Select Owner's Face for "
-    .byte 0x83
-    .byte EOS
-
-# 0x51406C
-    .global _str_1551
-_str_1551:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Click to select company/owner face"
-
-# 0x514091
-    .global _str_1552
-_str_1552:
-    .asciz "Already selected for another company"
-
-# 0x5140B6
-    .global _str_1553
-_str_1553:
-    .asciz "Can't select face..."
-
-# 0x5140CB
-    .global _str_1554
-_str_1554:
-    .asciz "airports"
-
-# 0x5140D4
-    .global _str_1555
-_str_1555:
-    .asciz "docks"
-
-# 0x5140DA
-    .global _str_1556
-_str_1556:
-    .byte 0x0E
-    .ascii "Company started: "
-    .byte 0x90
-    DATE 4
-    .byte EOS
-
-# 0x5140F0
-    .global _str_1557
-_str_1557:
-    .byte 0x0E
-    .ascii "Performance Index: "
-    .byte 0x90
-    .byte 0x7D
-    .ascii "% "
-    .byte 0x05
-    .ascii "  "
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x51410F
-    .global _str_1558
-_str_1558:
-    .byte 0x0E
-    .ascii "Performance Index: "
-    .byte 0x90
-    .byte 0x7D
-    .ascii "%"
-    FORMAT_INLINE_SPRITE 2325
-    .byte 0x05
-    .ascii "  "
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x514132
-    .global _str_1559
-_str_1559:
-    .byte 0x0E
-    .ascii "Performance Index: "
-    .byte 0x90
-    .byte 0x7D
-    .ascii "%"
-    FORMAT_INLINE_SPRITE 2324
-    .byte 0x05
-    .ascii "  "
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x514155
-    .global _str_1560
-_str_1560:
-    .byte 0x0E
-    .ascii "Owner: "
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x514160
-    .global _str_1561
-_str_1561:
-    .asciz "low"
-
-# 0x514164
-    .global _str_1562
-_str_1562:
-    .asciz "medium"
-
-# 0x51416B
-    .global _str_1563
-_str_1563:
-    .asciz "high"
-
-# 0x514170
-    .global _str_1564
-_str_1564:
-    .byte 0x0E
-    .ascii "Intelligence: "
-    .byte 0x90
-    .byte 0x7F
-    .ascii " ("
-    .byte 0x83
-    .asciz ")"
-
-# 0x514186
-    .global _str_1565
-_str_1565:
-    .byte 0x0E
-    .ascii "Aggressiveness: "
-    .byte 0x90
-    .byte 0x7F
-    .ascii " ("
-    .byte 0x83
-    .asciz ")"
-
-# 0x51419E
-    .global _str_1566
-_str_1566:
-    .byte 0x0E
-    .ascii "Competitiveness: "
-    .byte 0x90
-    .byte 0x7F
-    .ascii " ("
-    .byte 0x83
-    .asciz ")"
-
-# 0x5141B7
-    .global _str_1567
-_str_1567:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Toggle between single player and two player mode"
-
-# 0x5141EA
-    .global _str_1568
-_str_1568:
-    .byte 0x0B
-    .byte 0x0E
-    .asciz "Single Player Mode"
-
-# 0x5141FF
-    .global _str_1569
-_str_1569:
-    .byte 0x0B
-    .byte 0x0E
-    .ascii "Two Player Mode: Connected to "
-    .byte 0x83
-    .byte EOS
-
-# 0x514221
-    .global _str_1570
-_str_1570:
-    .asciz "Beginner"
-
-# 0x51422A
-    .global _str_1571
-_str_1571:
-    .asciz "Easy"
-
-# 0x51422F
-    .global _str_1572
-_str_1572:
-    .asciz "Medium"
-
-# 0x514236
-    .global _str_1573
-_str_1573:
-    .asciz "Challenging"
-
-# 0x514242
-    .global _str_1574
-_str_1574:
-    .asciz "Expert"
-
-# 0x514249
-    .global _str_1575
-_str_1575:
-    .asciz "Region / Object Selection"
-
-# 0x514263
-    .global _str_1576
-_str_1576:
-    .asciz "Landscape Editor"
-
-# 0x514274
-    .global _str_1577
-_str_1577:
-    .asciz "Scenario Options"
-
-# 0x514285
-    .global _str_1578
-_str_1578:
-    .asciz "Save Scenario"
-
-# 0x514293
-    .global _str_1579
-_str_1579:
-    .asciz "Back to Previous Step:"
-
-# 0x5142AA
-    .global _str_1580
-_str_1580:
-    .asciz "Forward to Next Step:"
-
-# 0x5142C0
-    .global _str_1581
-_str_1581:
-    .asciz "Load Landscape"
-
-# 0x5142CF
-    .global _str_1582
-_str_1582:
-    .asciz "Save Landscape"
-
-# 0x5142DE
-    .global _str_1583
-_str_1583:
-    .asciz "Generating landscape..."
-
-# 0x5142F6
-    .global _str_1584
-_str_1584:
-    .asciz "Can't clear entire area..."
-
-# 0x514311
-    .global _str_1585
-_str_1585:
-    .asciz "Landscape Generation - Options"
-
-# 0x514330
-    .global _str_1586
-_str_1586:
-    .asciz "Landscape Generation - Land"
-
-# 0x51434C
-    .global _str_1587
-_str_1587:
-    .asciz "Landscape Generation - Forests"
-
-# 0x51436B
-    .global _str_1588
-_str_1588:
-    .asciz "Landscape Generation - Towns"
-
-# 0x514388
-    .global _str_1589
-_str_1589:
-    .asciz "Landscape Generation - Industries"
-
-# 0x5143AA
-    .global _str_1590
-_str_1590:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Landscape generation general options"
-
-# 0x5143D1
-    .global _str_1591
-_str_1591:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Land generation options"
-
-# 0x5143EB
-    .global _str_1592
-_str_1592:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Forest generation options"
-
-# 0x514407
-    .global _str_1593
-_str_1593:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Town generation options"
-
-# 0x514421
-    .global _str_1594
-_str_1594:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Industry generation options"
-
-# 0x51443F
-    .global _str_1595
-_str_1595:
-    .asciz "[None]"
-
-# 0x514446
-    .global _str_1596
-_str_1596:
-    .asciz "Chuggin' Along"
-
-# 0x514455
-    .global _str_1597
-_str_1597:
-    .asciz "Long Dusty Road"
-
-# 0x514465
-    .global _str_1598
-_str_1598:
-    .asciz "Flying High"
-
-# 0x514471
-    .global _str_1599
-_str_1599:
-    .asciz "Gettin' On The Gas"
-
-# 0x514484
-    .global _str_1600
-_str_1600:
-    .asciz "Jumpin' The Rails"
-
-# 0x514496
-    .global _str_1601
-_str_1601:
-    .asciz "Smooth Running"
-
-# 0x5144A5
-    .global _str_1602
-_str_1602:
-    .asciz "Traffic Jam"
-
-# 0x5144B1
-    .global _str_1603
-_str_1603:
-    .asciz "Never Stop 'til You Get There"
-
-# 0x5144CF
-    .global _str_1604
-_str_1604:
-    .asciz "Soaring Away"
-
-# 0x5144DC
-    .global _str_1605
-_str_1605:
-    .asciz "Techno Torture"
-
-# 0x5144EB
-    .global _str_1606
-_str_1606:
-    .asciz "Everlasting High-Rise"
-
-# 0x514501
-    .global _str_1607
-_str_1607:
-    .asciz "Solace"
-
-# 0x514508
-    .global _str_1608
-_str_1608:
-    .asciz "Chrysanthemum"
-
-# 0x514516
-    .global _str_1609
-_str_1609:
-    .asciz "Eugenia"
-
-# 0x51451E
-    .global _str_1610
-_str_1610:
-    .asciz "The Ragtime Dance"
-
-# 0x514530
-    .global _str_1611
-_str_1611:
-    .asciz "Easy Winners"
-
-# 0x51453D
-    .global _str_1612
-_str_1612:
-    .asciz "Setting Off"
-
-# 0x514549
-    .global _str_1613
-_str_1613:
-    .asciz "A Traveller's Seranade"
-
-# 0x514560
-    .global _str_1614
-_str_1614:
-    .asciz "Latino Trip"
-
-# 0x51456C
-    .global _str_1615
-_str_1615:
-    .asciz "A Good Head Of Steam"
-
-# 0x514581
-    .global _str_1616
-_str_1616:
-    .asciz "Hop To The Bop"
-
-# 0x514590
-    .global _str_1617
-_str_1617:
-    .asciz "The City Lights"
-
-# 0x5145A0
-    .global _str_1618
-_str_1618:
-    .asciz "Steamin' Down Town"
-
-# 0x5145B3
-    .global _str_1619
-_str_1619:
-    .asciz "Bright Expectations"
-
-# 0x5145C7
-    .global _str_1620
-_str_1620:
-    .asciz "Mo' Station"
-
-# 0x5145D3
-    .global _str_1621
-_str_1621:
-    .asciz "Far Out"
-
-# 0x5145DB
-    .global _str_1622
-_str_1622:
-    .asciz "Running On Time"
-
-# 0x5145EB
-    .global _str_1623
-_str_1623:
-    .asciz "Get Me To Gladstone Bay"
-
-# 0x514603
-    .global _str_1624
-_str_1624:
-    .asciz "Sandy Track Blues"
-
-# 0x514615
-    .global _str_1625
-_str_1625:
-    .byte 0x80
-    .byte EOS
-
-# 0x514617
-    .global _str_1626
-_str_1626:
-    .byte 0x0E
-    .asciz "Start year:"
-
-# 0x514624
-    .global _str_1627
-_str_1627:
-    .asciz "Only generate random landscape when game starts"
-
-# 0x514654
-    .global _str_1628
-_str_1628:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Generate random landscape each time a new game is started"
-
-# 0x514690
-    .global _str_1629
-_str_1629:
-    .asciz "Generate new landscape"
-
-# 0x5146A7
-    .global _str_1630
-_str_1630:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Generate a new random landscape (the current landscape will be lost)"
-
-# 0x5146EE
-    .global _str_1631
-_str_1631:
-    .asciz "OK"
-
-# 0x5146F1
-    .global _str_1632
-_str_1632:
-    .asciz "Generate New Landscape"
-
-# 0x514708
-    .global _str_1633
-_str_1633:
-    .asciz "Random Landscape Option"
-
-# 0x514720
-    .global _str_1634
-_str_1634:
-    .asciz "Are you sure you want to generate a new landscape, losing your current one ?"
-
-# 0x51476D
-    .global _str_1635
-_str_1635:
-    .ascii "Are you sure you want to generate a new landscape at the start of each game ?"
-    .byte 0x05
-    .asciz "Choosing this option will mean you lose your current landscape"
-
-# 0x5147FA
-    .global _str_1636
-_str_1636:
-    .byte 0x0E
-    .asciz "Sea level:"
-
-# 0x514806
-    .global _str_1637
-_str_1637:
-    .ascii "+"
-    .byte 0x7F
-    .asciz " units"
-
-# 0x51480F
-    .global _str_1638
-_str_1638:
-    .byte 0x0E
-    .asciz "No. of forests:"
-
-# 0x514820
-    .global _str_1639
-_str_1639:
-    .byte 0x7F
-    .byte EOS
-
-# 0x514822
-    .global _str_1640
-_str_1640:
-    .byte 0x0E
-    .asciz "Minimum forest radius:"
-
-# 0x51483A
-    .global _str_1641
-_str_1641:
-    .byte 0x88
-    .byte 0x7F
-    .asciz " blocks"
-
-# 0x514844
-    .global _str_1642
-_str_1642:
-    .byte 0x0E
-    .asciz "Maximum forest radius:"
-
-# 0x51485C
-    .global _str_1643
-_str_1643:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x7F
-    .asciz " blocks"
-
-# 0x514867
-    .global _str_1644
-_str_1644:
-    .byte 0x0E
-    .asciz "Minimum forest density:"
-
-# 0x514880
-    .global _str_1645
-_str_1645:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x7F
-    .asciz "%"
-
-# 0x514886
-    .global _str_1646
-_str_1646:
-    .byte 0x0E
-    .asciz "Maximum forest density:"
-
-# 0x51489F
-    .global _str_1647
-_str_1647:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x7F
-    .asciz "%"
-
-# 0x5148A6
-    .global _str_1648
-_str_1648:
-    .byte 0x0E
-    .asciz "No. of random individual trees:"
-
-# 0x5148C7
-    .global _str_1649
-_str_1649:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x7F
-    .byte EOS
-
-# 0x5148CE
-    .global _str_1650
-_str_1650:
-    .byte 0x0E
-    .asciz "Minimum altitude for trees:"
-
-# 0x5148EB
-    .global _str_1651
-_str_1651:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x8D
-    .byte EOS
-
-# 0x5148F3
-    .global _str_1652
-_str_1652:
-    .byte 0x0E
-    .asciz "Maximum altitude for trees:"
-
-# 0x514910
-    .global _str_1653
-_str_1653:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x8D
-    .byte EOS
-
-# 0x514919
-    .global _str_1654
-_str_1654:
-    .byte 0x0E
-    .asciz "Minimum land height:"
-
-# 0x51492F
-    .global _str_1655
-_str_1655:
-    .byte 0x88
-    .byte 0x7F
-    .asciz " units"
-
-# 0x514938
-    .global _str_1656
-_str_1656:
-    .byte 0x0E
-    .asciz "Topography style:"
-
-# 0x51494B
-    .global _str_1657
-_str_1657:
-    .asciz "Flat Land"
-
-# 0x514955
-    .global _str_1658
-_str_1658:
-    .asciz "Small Hills"
-
-# 0x514961
-    .global _str_1659
-_str_1659:
-    .asciz "Mountains"
-
-# 0x51496B
-    .global _str_1660
-_str_1660:
-    .asciz "Half Mountains, Half Hills"
-
-# 0x514986
-    .global _str_1661
-_str_1661:
-    .asciz "Half Mountains, Half Flat"
-
-# 0x5149A0
-    .global _str_1662
-_str_1662:
-    .byte 0x0E
-    .asciz "Hill density:"
-
-# 0x5149AF
-    .global _str_1663
-_str_1663:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x7F
-    .asciz "%"
-
-# 0x5149B4
-    .global _str_1664
-_str_1664:
-    .byte 0x0E
-    .asciz "No. of towns:"
-
-# 0x5149C3
-    .global _str_1665
-_str_1665:
-    .byte 0x7F
-    .byte EOS
-
-# 0x5149C5
-    .global _str_1666
-_str_1666:
-    .byte 0x0E
-    .asciz "Maximum town size:"
-
-# 0x5149D9
-    .global _str_1667
-_str_1667:
-    .asciz "Low"
-
-# 0x5149DD
-    .global _str_1668
-_str_1668:
-    .asciz "Medium"
-
-# 0x5149E4
-    .global _str_1669
-_str_1669:
-    .asciz "High"
-
-# 0x5149E9
-    .global _str_1670
-_str_1670:
-    .byte 0x0E
-    .asciz "No. of industries:"
-
-# 0x5149FD
-    .global _str_1671
-_str_1671:
-    .asciz "At least one town needs to be built"
-
-# 0x514A21
-    .global _str_1672
-_str_1672:
-    .asciz "Can't advance to next editor stage..."
-
-# 0x514A47
-    .global _str_1673
-_str_1673:
-    .asciz "Can't save scenario yet..."
-
-# 0x514A62
-    .global _str_1674
-_str_1674:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Scenario options"
-
-# 0x514A75
-    .global _str_1675
-_str_1675:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Scenario challenge"
-
-# 0x514A8A
-    .global _str_1676
-_str_1676:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Company options"
-
-# 0x514A9C
-    .global _str_1677
-_str_1677:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Financial options"
-
-# 0x514AB0
-    .global _str_1678
-_str_1678:
-    .asciz "Scenario Options"
-
-# 0x514AC1
-    .global _str_1679
-_str_1679:
-    .asciz "Scenario Challenge"
-
-# 0x514AD4
-    .global _str_1680
-_str_1680:
-    .asciz "Company Options"
-
-# 0x514AE4
-    .global _str_1681
-_str_1681:
-    .asciz "Financial Options"
-
-# 0x514AF6
-    .global _str_1682
-_str_1682:
-    .byte 0x0E
-    .asciz "Maximum competing companies:"
-
-# 0x514B14
-    .global _str_1683
-_str_1683:
-    .byte 0x7F
-    .byte EOS
-
-# 0x514B16
-    .global _str_1684
-_str_1684:
-    .byte 0x0E
-    .asciz "Delay before competing companies start:"
-
-# 0x514B3F
-    .global _str_1685
-_str_1685:
-    .byte 0x88
-    .byte 0x7F
-    .asciz " months"
-
-# 0x514B49
-    .global _str_1686
-_str_1686:
-    .byte 0x0E
-    .asciz "Selection of competing companies:"
-
-# 0x514B6C
-    .global _str_1687
-_str_1687:
-    .byte 0x0E
-    .asciz "Preferred Intelligence:"
-
-# 0x514B85
-    .global _str_1688
-_str_1688:
-    .byte 0x0E
-    .asciz "Preferred Aggressiveness:"
-
-# 0x514BA0
-    .global _str_1689
-_str_1689:
-    .byte 0x0E
-    .asciz "Preferred Competitiveness:"
-
-# 0x514BBC
-    .global _str_1690
-_str_1690:
-    .asciz "Any"
-
-# 0x514BC0
-    .global _str_1691
-_str_1691:
-    .asciz "Low"
-
-# 0x514BC4
-    .global _str_1692
-_str_1692:
-    .asciz "Medium"
-
-# 0x514BCB
-    .global _str_1693
-_str_1693:
-    .asciz "High"
-
-# 0x514BD0
-    .global _str_1694
-_str_1694:
-    .byte 0x0E
-    .asciz "Starting loan:"
-
-# 0x514BE0
-    .global _str_1695
-_str_1695:
-    .byte 0x81
-    .byte EOS
-
-# 0x514BE2
-    .global _str_1696
-_str_1696:
-    .byte 0x0E
-    .asciz "Maximum loan size:"
-
-# 0x514BF6
-    .global _str_1697
-_str_1697:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x81
-    .byte EOS
-
-# 0x514BFA
-    .global _str_1698
-_str_1698:
-    .byte 0x0E
-    .asciz "Loan interest rate:"
-
-# 0x514C0F
-    .global _str_1699
-_str_1699:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x7F
-    .asciz "%"
-
-# 0x514C16
-    .global _str_1700
-_str_1700:
-    .asciz "Change..."
-
-# 0x514C20
-    .global _str_1701
-_str_1701:
-    .byte 0x0E
-    .ascii "Scenario Name: "
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x514C33
-    .global _str_1702
-_str_1702:
-    .byte 0x0E
-    .asciz "Scenario Group:"
-
-# 0x514C44
-    .global _str_1703
-_str_1703:
-    .byte 0x0E
-    .asciz "Scenario Details:"
-
-# 0x514C57
-    .global _str_1704
-_str_1704:
-    .asciz "Scenario Name"
-
-# 0x514C65
-    .global _str_1705
-_str_1705:
-    .asciz "Enter name for scenario:-"
-
-# 0x514C7F
-    .global _str_1706
-_str_1706:
-    .asciz "Scenario Details"
-
-# 0x514C90
-    .global _str_1707
-_str_1707:
-    .asciz "Enter description of this scenario:-"
-
-# 0x514CB5
-    .global _str_1708
-_str_1708:
-    .asciz "No details yet"
-
-# 0x514CC4
-    .global _str_1709
-_str_1709:
-    .asciz "Unnamed"
-
-# 0x514CCC
-    .global _str_1710
-_str_1710:
-    .asciz "Landscape save failed!"
-
-# 0x514CE3
-    .global _str_1711
-_str_1711:
-    .asciz "Scenario save failed!"
-
-# 0x514CF9
-    .global _str_1712
-_str_1712:
-    .asciz "Transferring data to other player..."
-
-# 0x514D1E
-    .global _str_1713
-_str_1713:
-    .asciz "Receiving data from other player..."
-
-# 0x514D42
-    .global _str_1714
-_str_1714:
-    .asciz "Please wait - Game is being saved by the other player..."
-
-# 0x514D7B
-    .global _str_1715
-_str_1715:
-    .asciz "Please wait - Game is being loaded by the other player..."
-
-# 0x514DB5
-    .global _str_1716
-_str_1716:
-    .asciz "Send Message"
-
-# 0x514DC2
-    .global _str_1717
-_str_1717:
-    .asciz "Send Message"
-
-# 0x514DCF
-    .global _str_1718
-_str_1718:
-    .ascii "Enter message to be sent to "
-    .byte 0x83
-    .asciz ":"
-
-# 0x514DEE
-    .global _str_1719
-_str_1719:
-# 0x514DEE
-    .byte 0x00, 0x00, 0x00, 0x00                         #        0 ....
-
-# 0x514DF2
-    .global __514DF2
-__514DF2:
-# 0x514DF2
-    .byte 0x00, 0x00, 0x00, 0x00                         #        0 ....
-
-# 0x514DF6
-    .global __514DF6
-__514DF6:
-# 0x514DF6
-    .byte 0x00, 0x00, 0x00, 0x00                         #        0 ....
-
-# 0x514DFA
-    .global __514DFA
-__514DFA:
-# 0x514DFA
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       50 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       58 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       60 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       70 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       78 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       80 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       88 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       90 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       98 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      100 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      108 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      110 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      118 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      120 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      128 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      130 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      138 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      140 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      148 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      150 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      158 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      160 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      168 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      170 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      178 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      180 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      188 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      190 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      198 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00                         #      1F0 ....
-
-# 0x514FEE
-    .global _str_1720
-_str_1720:
-    .byte 0x0E
-    .asciz "Connection time-out:"
-
-# 0x515004
-    .global _str_1721
-_str_1721:
-    .byte 0x7F
-    .asciz " secs."
-
-# 0x51500C
-    .global _str_1722
-_str_1722:
-    .asciz "Two-player data connection failed!"
-
-# 0x51502F
-    .global _str_1723
-_str_1723:
-    .byte 0x0E
-    .ascii " Designed in: "
-    .byte 0x90
-    .byte 0x80
-    .byte EOS
-
-# 0x515041
-    .global _str_1724
-_str_1724:
-    .byte 0x0E
-    .ascii " Obsolete from: "
-    .byte 0x90
-    .byte 0x80
-    .byte EOS
-
-# 0x515055
-    .global _str_1725
-_str_1725:
-    .byte 0x0E
-    .ascii " Power: "
-    .byte 0x90
-    .byte 0x8E
-    .byte EOS
-
-# 0x515061
-    .global _str_1726
-_str_1726:
-    .byte 0x0E
-    .ascii " Weight: "
-    .byte 0x90
-    .byte 0x7F
-    .asciz "t"
-
-# 0x51506F
-    .global _str_1727
-_str_1727:
-    .byte 0x0E
-    .ascii " Max. Speed: "
-    .byte 0x90
-    .byte 0x87
-    .byte EOS
-
-# 0x515080
-    .global _str_1728
-_str_1728:
-    .byte 0x0E
-    .ascii " Capacity: "
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x51508F
-    .global _str_1729
-_str_1729:
-    .asciz "Establishing connection..."
-
-# 0x5150AA
-    .global _str_1730
-_str_1730:
-    .asciz "Everywhere"
-
-# 0x5150B5
-    .global _str_1731
-_str_1731:
-    .asciz "Nowhere"
-
-# 0x5150BD
-    .global _str_1732
-_str_1732:
-    .asciz "Far from water"
-
-# 0x5150CC
-    .global _str_1733
-_str_1733:
-    .asciz "Near water"
-
-# 0x5150D7
-    .global _str_1734
-_str_1734:
-    .asciz "On mountains"
-
-# 0x5150E4
-    .global _str_1735
-_str_1735:
-    .asciz "Far from mountains"
-
-# 0x5150F7
-    .global _str_1736
-_str_1736:
-    .asciz "In small random areas"
-
-# 0x51510D
-    .global _str_1737
-_str_1737:
-    .asciz "In large random areas"
-
-# 0x515123
-    .global _str_1738
-_str_1738:
-    .asciz "Around cliffs"
-
-# 0x515131
-    .global _str_1739
-_str_1739:
-    .asciz "Create hills right up to edge of map"
-
-# 0x515156
-    .global _str_1740
-_str_1740:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Scenario Editor"
-
-# 0x515168
-    .global _str_1741
-_str_1741:
-    .byte 0x83
-    .asciz " Transport"
-
-# 0x515174
-    .global _str_1742
-_str_1742:
-    .asciz "Map"
-
-# 0x515178
-    .global _str_1743
-_str_1743:
-    FORMAT_NEWLINE_X_Y 1, 2
-    .byte 0x8F
-    FORMAT_NEWLINE_X_Y 33, 8
-    .asciz "Companies List"
-
-# 0x51518E
-    .global _str_1744
-_str_1744:
-    FORMAT_NEWLINE_X_Y 0, 8
-    .byte 0x83
-    FORMAT_NEWLINE_X_Y 25, 2
-    .byte 0x8F
-    FORMAT_NEWLINE_X_Y 51, 2
-    .byte 0x83
-    FORMAT_NEWLINE_X_Y 51, 12
-    .byte 0x0D
-    .byte 0x7D
-    .ascii "% "
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x5151A5
-    .global _str_1745
-_str_1745:
-    .asciz "Companies"
-
-# 0x5151AF
-    .global _str_1746
-_str_1746:
-    .asciz "Company Performance Indexes"
-
-# 0x5151CB
-    .global _str_1747
-_str_1747:
-    .asciz "Units of Cargo Delivered per Month"
-
-# 0x5151EE
-    .global _str_1748
-_str_1748:
-    .asciz "Company Values"
-
-# 0x5151FD
-    .global _str_1749
-_str_1749:
-    .asciz "Cargo Payment Rates"
-
-# 0x515211
-    .global _str_1750
-_str_1750:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Compare companies"
-
-# 0x515225
-    .global _str_1751
-_str_1751:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Company performance index graphs"
-
-# 0x515248
-    .global _str_1752
-_str_1752:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Graphs of cargo delivered by each company"
-
-# 0x515274
-    .global _str_1753
-_str_1753:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Company value graphs"
-
-# 0x51528B
-    .global _str_1754
-_str_1754:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Cargo payment rates"
-
-# 0x5152A1
-    .global _str_1755
-_str_1755:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by company name"
-
-# 0x5152BD
-    .global _str_1756
-_str_1756:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by company status"
-
-# 0x5152DB
-    .global _str_1757
-_str_1757:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by performance index"
-
-# 0x5152FC
-    .global _str_1758
-_str_1758:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Sort list by company value"
-
-# 0x515319
-    .global _str_1759
-_str_1759:
-    .byte 0x90
-    .asciz "Company"
-
-# 0x515322
-    .global _str_1760
-_str_1760:
-    .byte 0x90
-    .ascii "Company "
-    .byte 0xAA
-    .byte EOS
-
-# 0x51532D
-    .global _str_1761
-_str_1761:
-    .byte 0x90
-    .asciz "Status"
-
-# 0x515335
-    .global _str_1762
-_str_1762:
-    .byte 0x90
-    .ascii "Status "
-    .byte 0xAA
-    .byte EOS
-
-# 0x51533F
-    .global _str_1763
-_str_1763:
-    .byte 0x90
-    .asciz "Performance Index"
-
-# 0x515352
-    .global _str_1764
-_str_1764:
-    .byte 0x90
-    .ascii "Performance Index "
-    .byte 0xAA
-    .byte EOS
-
-# 0x515367
-    .global _str_1765
-_str_1765:
-    .byte 0x90
-    .asciz "Company Value"
-
-# 0x515376
-    .global _str_1766
-_str_1766:
-    .byte 0x90
-    .ascii "Company Value "
-    .byte 0xAA
-    .byte EOS
-
-# 0x515387
-    .global _str_1767
-_str_1767:
-    FORMAT_NEWLINE_X_Y 1, 2
-    .byte 0x8F
-    FORMAT_NEWLINE_X_Y 27, 8
-    .byte 0x83
-    .byte EOS
-
-# 0x515390
-    .global _str_1768
-_str_1768:
-    FORMAT_NEWLINE_X_Y 0, 3
-    .byte 0x7D
-    .ascii "%        "
-    FORMAT_NEWLINE_X_Y 0, 13
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x5153A4
-    .global _str_1769
-_str_1769:
-    FORMAT_NEWLINE_X_Y 0, 3
-    .byte 0x7D
-    .ascii "%"
-    FORMAT_INLINE_SPRITE 2325
-    FORMAT_NEWLINE_X_Y 0, 13
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x5153B5
-    .global _str_1770
-_str_1770:
-    FORMAT_NEWLINE_X_Y 0, 3
-    .byte 0x7D
-    .ascii "%"
-    FORMAT_INLINE_SPRITE 2324
-    FORMAT_NEWLINE_X_Y 0, 13
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\""
-
-# 0x5153C6
-    .global _str_1771
-_str_1771:
-    FORMAT_NEWLINE_X_Y 0, 8
-    .byte 0x82
-    .byte EOS
-
-# 0x5153CB
-    .global _str_1772
-_str_1772:
-    .asciz "Platelayer"
-
-# 0x5153D6
-    .global _str_1773
-_str_1773:
-    .asciz "Engineer"
-
-# 0x5153DF
-    .global _str_1774
-_str_1774:
-    .asciz "Traffic Manager"
-
-# 0x5153EF
-    .global _str_1775
-_str_1775:
-    .asciz "Transport Coordinator"
-
-# 0x515405
-    .global _str_1776
-_str_1776:
-    .asciz "Route Supervisor"
-
-# 0x515416
-    .global _str_1777
-_str_1777:
-    .asciz "Director"
-
-# 0x51541F
-    .global _str_1778
-_str_1778:
-    .asciz "Chief Executive"
-
-# 0x51542F
-    .global _str_1779
-_str_1779:
-    .asciz "Chairman"
-
-# 0x515438
-    .global _str_1780
-_str_1780:
-    .asciz "President"
-
-# 0x515442
-    .global _str_1781
-_str_1781:
-    .asciz "Tycoon"
-
-# 0x515449
-    .global _str_1782
-_str_1782:
-    .byte 0x7F
-    .asciz " company"
-
-# 0x515453
-    .global _str_1783
-_str_1783:
-    .byte 0x7F
-    .asciz " companies"
-
-# 0x51545F
-    .global _str_1784
-_str_1784:
-    DATE 8
-    .byte EOS
-
-# 0x515462
-    .global _str_1785
-_str_1785:
-    .byte 0x7D
-    .asciz "%"
-
-# 0x515465
-    .global _str_1786
-_str_1786:
-    .byte 0x0A
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x515469
-    .global _str_1787
-_str_1787:
-    .byte 0x7B
-    .byte EOS
-
-# 0x51546B
-    .global _str_1788
-_str_1788:
-    .byte 0x7D
-    .asciz "%"
-
-# 0x51546E
-    .global _str_1789
-_str_1789:
-    .ascii "         "
-    .byte 0x7D
-    .ascii "% "
-    FORMAT_INLINE_SPRITE 2325
-    .byte EOS
-
-# 0x515480
-    .global _str_1790
-_str_1790:
-    .ascii "         "
-    .byte 0x7D
-    .ascii "% "
-    FORMAT_INLINE_SPRITE 2324
-    .byte EOS
-
-# 0x515492
-    .global _str_1791
-_str_1791:
-    .byte 0x0A
-    .byte 0x90
-    .byte 0x82
-    .byte EOS
-
-# 0x515496
-    .global _str_1792
-_str_1792:
-    .byte 0x0A
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x51549A
-    .global _str_1793
-_str_1793:
-    .byte 0x0A
-    .byte 0x92
-    .byte 0x83
-    .byte EOS
-
-# 0x51549E
-    .global _str_1794
-_str_1794:
-    .asciz "Airport type is not suitable for this aircraft"
-
-# 0x5154CD
-    .global _str_1795
-_str_1795:
-    .byte 0x90
-    .byte 0xA3
-    .byte EOS
-
-# 0x5154D0
-    .global _str_1796
-_str_1796:
-    .byte 0x7F
-    .asciz " days"
-
-# 0x5154D7
-    .global _str_1797
-_str_1797:
-    .byte 0x81
-    .byte EOS
-
-# 0x5154D9
-    .global _str_1798
-_str_1798:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Payment for transporting "
-    .byte 0x7F
-    .ascii " units of cargo a distance of "
-    .byte 0x7F
-    .asciz " blocks"
-
-# 0x51551C
-    .global _str_1799
-_str_1799:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Transit time"
-
-# 0x51552B
-    .global _str_1800
-_str_1800:
-    .asciz "*  Paused  *"
-
-# 0x515538
-    .global _str_1801
-_str_1801:
-    .asciz "Town authority won't allow another airport to be constructed here"
-
-# 0x51557A
-    .global _str_1802
-_str_1802:
-    .asciz "Towns"
-
-# 0x515580
-    .global _str_1803
-_str_1803:
-    .asciz "Industries"
-
-# 0x51558B
-    .global _str_1804
-_str_1804:
-    .asciz "Roads"
-
-# 0x515591
-    .global _str_1805
-_str_1805:
-    .asciz "Railroads"
-
-# 0x51559B
-    .global _str_1806
-_str_1806:
-    .asciz "Stations"
-
-# 0x5155A4
-    .global _str_1807
-_str_1807:
-    .asciz "Vegetation"
-
-# 0x5155AF
-    .global _str_1808
-_str_1808:
-    .asciz "Aircraft Routes"
-
-# 0x5155BF
-    .global _str_1809
-_str_1809:
-    .asciz "Ship Routes"
-
-# 0x5155CB
-    .global _str_1810
-_str_1810:
-    .byte EOS
-
-# 0x5155CC
-    .global _str_1811
-_str_1811:
-    .ascii "Building "
-    .byte 0x83
-    .ascii " near "
-    .byte 0x83
-    .byte EOS
-
-# 0x5155DE
-    .global _str_1812
-_str_1812:
-    .ascii "Building "
-    .byte 0x83
-    .ascii " near "
-    .byte 0x83
-    .byte EOS
-
-# 0x5155F0
-    .global _str_1813
-_str_1813:
-    .ascii "Building "
-    .byte 0x83
-    .ascii " near "
-    .byte 0x83
-    .byte EOS
-
-# 0x515602
-    .global _str_1814
-_str_1814:
-    .ascii "Checking services near "
-    .byte 0x83
-    .byte EOS
-
-# 0x51561B
-    .global _str_1815
-_str_1815:
-    .ascii "Surveying landscape near "
-    .byte 0x83
-    .byte EOS
-
-# 0x515636
-    .global _str_1816
-_str_1816:
-    .byte 0x93
-    .asciz "Bankrupt!"
-
-# 0x515641
-    .global _str_1817
-_str_1817:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Pause game"
-
-# 0x51564E
-    .global _str_1818
-_str_1818:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Normal speed"
-
-# 0x51565D
-    .global _str_1819
-_str_1819:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Fast forward"
-
-# 0x51566C
-    .global _str_1820
-_str_1820:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Extra fast forward"
-
-# 0x515681
-    .global _str_1821
-_str_1821:
-    .byte 0x90
-    .asciz "Randomly Generated Landscape"
-
-# 0x51569F
-    .global _str_1822
-_str_1822:
-    .byte 0x0E
-    .ascii "Start date: "
-    .byte 0x90
-    .byte 0x80
-    .byte EOS
-
-# 0x5156AF
-    .global _str_1823
-_str_1823:
-    .byte 0x0E
-    .ascii "Competing companies: "
-    .byte 0x90
-    .asciz "None"
-
-# 0x5156CB
-    .global _str_1824
-_str_1824:
-    .byte 0x0E
-    .ascii "Competing companies: "
-    .byte 0x90
-    .ascii "Up to "
-    .byte 0x7F
-    .byte EOS
-
-# 0x5156EA
-    .global _str_1825
-_str_1825:
-    .byte 0x90
-    MOVE_X 10
-    .ascii "(not starting for "
-    .byte 0x7F
-    .asciz " month)"
-
-# 0x515708
-    .global _str_1826
-_str_1826:
-    .byte 0x90
-    MOVE_X 10
-    .ascii "(not starting for "
-    .byte 0x7F
-    .asciz " months)"
-
-# 0x515727
-    .global _str_1827
-_str_1827:
-    .byte 0x0E
-    .ascii "Sale value of vehicle: "
-    .byte 0x90
-    .byte 0x81
-    .byte EOS
-
-# 0x515742
-    .global _str_1828
-_str_1828:
-    .byte 0x0E
-    .ascii "Last income: "
-    .byte 0x90
-    .asciz "N/A"
-
-# 0x515755
-    .global _str_1829
-_str_1829:
-    .byte 0x0E
-    .ascii "Last income on: "
-    .byte 0x90
-    DATE 0
-    .byte EOS
-
-# 0x51576A
-    .global _str_1830
-_str_1830:
-    .byte 0x90
-    .byte 0x83
-    .ascii " transported "
-    .byte 0x7F
-    .ascii " blocks in "
-    .byte 0x7F
-    .ascii " days = "
-    .byte 0x81
-    .byte EOS
-
-# 0x515790
-    .global _str_1831
-_str_1831:
-    .byte 0x0E
-    .ascii " Earliest construction year: "
-    .byte 0x90
-    .byte 0x80
-    .byte EOS
-
-# 0x5157B1
-    .global _str_1832
-_str_1832:
-    .byte 0x0E
-    .ascii " Latest construction year: "
-    .byte 0x90
-    .byte 0x80
-    .byte EOS
-
-# 0x5157D0
-    .global _str_1833
-_str_1833:
-    .byte 0x0E
-    .asciz "Local authority's ratings of transport companies:"
-
-# 0x515803
-    .global _str_1834
-_str_1834:
-    .asciz "Appalling"
-
-# 0x51580D
-    .global _str_1835
-_str_1835:
-    .asciz "Poor"
-
-# 0x515812
-    .global _str_1836
-_str_1836:
-    .asciz "Average"
-
-# 0x51581A
-    .global _str_1837
-_str_1837:
-    .asciz "Good"
-
-# 0x51581F
-    .global _str_1838
-_str_1838:
-    .asciz "Excellent"
-
-# 0x515829
-    .global _str_1839
-_str_1839:
-    .byte 0x0E
-    .byte 0x83
-    .ascii ": "
-    .byte 0x90
-    .byte 0x7F
-    .ascii "% ("
-    .byte 0x83
-    .asciz ")"
-
-# 0x515835
-    .global _str_1840
-_str_1840:
-    .ascii "Achieve a company value of "
-    .byte 0x81
-    .byte 0x83
-    .byte 0x83
-    .byte EOS
-
-# 0x515854
-    .global _str_1841
-_str_1841:
-    .ascii "Achieve a monthly profit from vehicles of "
-    .byte 0x81
-    .byte 0x83
-    .byte 0x83
-    .byte EOS
-
-# 0x515882
-    .global _str_1842
-_str_1842:
-    .ascii "Achieve a performance index of "
-    .byte 0x7D
-    .ascii "% ("
-    .byte 0xB4
-    .byte 0x83
-    .ascii "\")"
-    .byte 0x83
-    .byte 0x83
-    .byte EOS
-
-# 0x5158AC
-    .global _str_1843
-_str_1843:
-    .ascii "Deliver "
-    .byte 0x83
-    .byte 0x83
-    .byte 0x83
-    .byte EOS
-
-# 0x5158B8
-    .global _str_1844
-_str_1844:
-    .asciz " and be the top performing company"
-
-# 0x5158DB
-    .global _str_1845
-_str_1845:
-    .asciz " and be one of the top 3 performing companies"
-
-# 0x515909
-    .global _str_1846
-_str_1846:
-    .ascii " within "
-    .byte 0x7F
-    .asciz " years"
-
-# 0x515919
-    .global _str_1847
-_str_1847:
-    .ascii " by the end of "
-    .byte 0x80
-    .byte EOS
-
-# 0x51592A
-    .global _str_1848
-_str_1848:
-    .asciz "...and be the top company"
-
-# 0x515944
-    .global _str_1849
-_str_1849:
-    .asciz "...and be within the top 3 companies"
-
-# 0x515969
-    .global _str_1850
-_str_1850:
-    .asciz "...with a time limit of:"
-
-# 0x515982
-    .global _str_1851
-_str_1851:
-    .byte 0x0E
-    .asciz "Challenge:"
-
-# 0x51598E
-    .global _str_1852
-_str_1852:
-    .byte 0x90
-    .ascii "  "
-    .byte 0x83
-    .byte EOS
-
-# 0x515993
-    .global _str_1853
-_str_1853:
-    .asciz "Achieve a certain company value"
-
-# 0x5159B3
-    .global _str_1854
-_str_1854:
-    .asciz "Achieve a certain monthly profit from vehicles"
-
-# 0x5159E2
-    .global _str_1855
-_str_1855:
-    .asciz "Achieve a certain performance index"
-
-# 0x515A06
-    .global _str_1856
-_str_1856:
-    .asciz "Deliver a certain amount of cargo"
-
-# 0x515A28
-    .global _str_1857
-_str_1857:
-    .byte 0x81
-    .byte EOS
-
-# 0x515A2A
-    .global _str_1858
-_str_1858:
-    .byte 0x7D
-    .asciz "%"
-
-# 0x515A2D
-    .global _str_1859
-_str_1859:
-    .byte 0x7B
-    .byte EOS
-
-# 0x515A2F
-    .global _str_1860
-_str_1860:
-    .byte 0x88
-    .byte 0x88
-    .byte 0x88
-    .byte 0x7F
-    .asciz " years"
-
-# 0x515A3A
-    .global _str_1861
-_str_1861:
-    .byte 0x0A
-    .ascii "(Completed by "
-    .byte 0x83
-    .ascii " in "
-    .byte 0x7F
-    .ascii " years "
-    .byte 0x7F
-    .asciz " months)"
-
-# 0x515A60
-    .global _str_1862
-_str_1862:
-    .byte 0x0E
-    .ascii "Success!"
-    .byte 0x05
-    .byte 0x90
-    .ascii "  You completed the challenge in "
-    .byte 0x7F
-    .ascii " years "
-    .byte 0x7F
-    .asciz " months"
-
-# 0x515A9D
-    .global _str_1863
-_str_1863:
-    .byte 0x0E
-    .ascii "Failed!"
-    .byte 0x05
-    .byte 0x90
-    .asciz "  You failed to complete the challenge"
-
-# 0x515ACE
-    .global _str_1864
-_str_1864:
-    .byte 0x0E
-    .ascii "You have been beaten by the other player!"
-    .byte 0x05
-    .byte 0x90
-    .ascii "  Challenge completed by "
-    .byte 0x83
-    .ascii " in "
-    .byte 0x7F
-    .ascii " years "
-    .byte 0x7F
-    .asciz " months"
-
-# 0x515B29
-    .global _str_1865
-_str_1865:
-    .byte 0x0E
-    .ascii "Progress towards completing challenge: "
-    .byte 0x90
-    .byte 0x7F
-    .asciz "%"
-
-# 0x515B55
-    .global _str_1866
-_str_1866:
-    .byte 0x0E
-    .ascii "Time remaining: "
-    .byte 0x90
-    .byte 0x7F
-    .ascii " years "
-    .byte 0x7F
-    .asciz " months"
-
-# 0x515B78
-    .global _str_1867
-_str_1867:
-    .byte 0x0E
-    .asciz "Cargo delivered:"
-
-# 0x515B8A
-    .global _str_1868
-_str_1868:
-    .byte 0x90
-    .asciz "None"
-
-# 0x515B90
-    .global _str_1869
-_str_1869:
-    .byte 0x0B
-    .byte 0x0E
-    .ascii "Exit"
-    .byte 0x05
-    .asciz "Game"
-
-# 0x515B9C
-    .global _str_1870
-_str_1870:
-    .asciz "Company is bankrupt!"
-
-# 0x515BB1
-    .global _str_1871
-_str_1871:
-    .asciz "Allow industries to close down during game"
-
-# 0x515BDC
-    .global _str_1872
-_str_1872:
-    .asciz "Allow new industries to start up during game"
-
-# 0x515C09
-    .global _str_1873
-_str_1873:
-    .asciz "Share additional companies/owner faces"
-
-# 0x515C30
-    .global _str_1874
-_str_1874:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select this option to send any customized companies/owner face data files to the other computer during the connection process"
-
-# 0x515CB0
-    .global _str_1875
-_str_1875:
-    .byte 0x0E
-    .asciz "Forbid competing companies from using:"
-
-# 0x515CD8
-    .global _str_1876
-_str_1876:
-    .byte 0x0E
-    .asciz "Forbid player companies from using:"
-
-# 0x515CFD
-    .global _str_1877
-_str_1877:
-    .byte 0x05
-    .ascii "Stops at: "
-    .byte 0x83
-    .byte EOS
-
-# 0x515D0A
-    .global _str_1878
-_str_1878:
-    .ascii ", "
-    .byte 0x83
-    .byte EOS
-
-# 0x515D0E
-    .global _str_1879
-_str_1879:
-    .asciz "Tutorial 1: Starting a bus service within a town"
-
-# 0x515D3F
-    .global _str_1880
-_str_1880:
-    .asciz "Tutorial 2: Building a bus service between two towns"
-
-# 0x515D74
-    .global _str_1881
-_str_1881:
-    .asciz "Tutorial 3: Building a rail service between two towns"
-
-# 0x515DAA
-    .global _str_1882
-_str_1882:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "We're going to build a bus service to transport passengers within a town, so the first step is to choose a town..."
-
-# 0x515E1F
-    .global _str_1883
-_str_1883:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Move the mouse with the right mouse button held down to scroll the view to take a look at the towns..."
-
-# 0x515E88
-    .global _str_1884
-_str_1884:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Boulders Bay is the largest town, so will produce the most passengers. Zoom in using the mouse scroll wheel or the zoom icon..."
-
-# 0x515F0A
-    .global _str_1885
-_str_1885:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "All road-based construction is done using the road construction window..."
-
-# 0x515F56
-    .global _str_1886
-_str_1886:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "We don't need any new roads in the town for our bus service, just bus stop stations..."
-
-# 0x515FAF
-    .global _str_1887
-_str_1887:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Our bus service will go from one side of town to the other..."
-
-# 0x515FEF
-    .global _str_1888
-_str_1888:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "The area highlighted in blue is the catchment area of the station. The more buildings in the catchment area the more passengers will use your station..."
-
-# 0x51608A
-    .global _str_1889
-_str_1889:
-    .byte 0x0A
-    .byte 0x90
-    .ascii "Check the station position accepts passengers otherwise you won't be able to unload them and won't be paid. Watch the "
-    .byte 0xB4
-    .asciz "Catchment Area\" text at the bottom of the construction window..."
-
-# 0x516144
-    .global _str_1890
-_str_1890:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "When you're happy with the location, click the left mouse button to build the station..."
-
-# 0x51619F
-    .global _str_1891
-_str_1891:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "We'll build the second station at the opposite side of town..."
-
-# 0x5161E0
-    .global _str_1892
-_str_1892:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Now we need to purchase a bus..."
-
-# 0x516203
-    .global _str_1893
-_str_1893:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "We have a choice of two bus types. Let's choose the newer design which carries more passengers..."
-
-# 0x516267
-    .global _str_1894
-_str_1894:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Move the mouse cursor to position the bus on a road and click the left mouse button to place it..."
-
-# 0x5162CC
-    .global _str_1895
-_str_1895:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Before we set the bus going it needs to know where to go to. Select the route details tab on the vehicle window..."
-
-# 0x516341
-    .global _str_1896
-_str_1896:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "To set the route, just click on the stations in the view..."
-
-# 0x51637F
-    .global _str_1897
-_str_1897:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Now we can set the bus going..."
-
-# 0x5163A1
-    .global _str_1898
-_str_1898:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Let's watch it pick up its first passengers..."
-
-# 0x5163D2
-    .global _str_1899
-_str_1899:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "We're going to build a bus service to transport passengers between Boulder Bay and Breakers Bridge. As there are no roads linking the towns, we'll need to build one..."
-
-# 0x51647C
-    .global _str_1900
-_str_1900:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select the orientation of the new section of road, and click on the view to start construction..."
-
-# 0x5164E0
-    .global _str_1901
-_str_1901:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Clicking the 'build this' icon will add more road sections of the same type..."
-
-# 0x516531
-    .global _str_1902
-_str_1902:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Before continuing, here's a quicker way of starting road construction..."
-
-# 0x51657C
-    .global _str_1903
-_str_1903:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Just click the right mouse button on the end of the road you want to extend..."
-
-# 0x5165CD
-    .global _str_1904
-_str_1904:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "We need to turn left here, so select a left hand curve..."
-
-# 0x516609
-    .global _str_1905
-_str_1905:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "And now back to building straight again..."
-
-# 0x516636
-    .global _str_1906
-_str_1906:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "That's the road built, now for the stations..."
-
-# 0x516667
-    .global _str_1907
-_str_1907:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "And finally we'll purchase a bus and set it going..."
-
-# 0x51669E
-    .global _str_1908
-_str_1908:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "This could be quite a busy route, so we'll buy a second bus as well..."
-
-# 0x5166E7
-    .global _str_1909
-_str_1909:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "To quickly copy Bus 1's entire route to Bus 2, just click on Bus 1's 'end of route list' text..."
-
-# 0x51674A
-    .global _str_1910
-_str_1910:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Let's start by building a rail passenger service between the two largest towns..."
-
-# 0x51679E
-    .global _str_1911
-_str_1911:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Rail stations can only be built on straight track and need to be long enough for our train - This is where we'll build one station in a few minutes..."
-
-# 0x516837
-    .global _str_1912
-_str_1912:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Now to build the stations..."
-
-# 0x516856
-    .global _str_1913
-_str_1913:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Now to build the train. We will need a locomotive to pull the train and carriages to carry the passengers..."
-
-# 0x5168C5
-    .global _str_1914
-_str_1914:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Because the track is just a single line, there's no need to set up a route - Just start the train..."
-
-# 0x51692C
-    .global _str_1915
-_str_1915:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Let's extend the track to create a junction and spur to the third town. Right-clicking the track opens the track construction window ready to build a junction..."
-
-# 0x5169D0
-    .global _str_1916
-_str_1916:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Because the track layout is no longer simple we need to give our train a route..."
-
-# 0x516A24
-    .global _str_1917
-_str_1917:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "We could now add a second train, but first we need to build signals to prevent train collisions..."
-
-# 0x516A89
-    .global _str_1918
-_str_1918:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "The signals divide the track into 3 separate 'block sections' and only one train will be allowed to enter each section at once..."
-
-# 0x516B0D
-    .global _str_1919
-_str_1919:
-    .asciz "Use preferred owner name when starting a new game"
-
-# 0x516B3F
-    .global _str_1920
-_str_1920:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select this option to use the same company owner name every time you start a new game"
-
-# 0x516B97
-    .global _str_1921
-_str_1921:
-    .byte 0x0E
-    .ascii "Preferred owner name: "
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x516BB1
-    .global _str_1922
-_str_1922:
-    .asciz "Preferred Owner Name"
-
-# 0x516BC6
-    .global _str_1923
-_str_1923:
-    .asciz "Enter the preferred owner name:"
-
-# 0x516BE6
-    .global _str_1924
-_str_1924:
-    .byte 0x90
-    .byte 0x07
-    .asciz "Power"
-
-# 0x516BEE
-    .global _str_1925
-_str_1925:
-    .byte 0x90
-    .byte 0x07
-    .asciz "Brake"
-
-# 0x516BF6
-    .global _str_1926
-_str_1926:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Move the selected order up in the list"
-
-# 0x516C1F
-    .global _str_1927
-_str_1927:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Move the selected order down in the list"
-
-# 0x516C4A
-    .global _str_1928
-_str_1928:
-    .asciz "Unable to run the game directly from read-only media"
-
-# 0x516C7F
-    .global _str_1929
-_str_1929:
-    .asciz "Atari Inc. Credits..."
-
-# 0x516C95
-    .global _str_1930
-_str_1930:
-    .byte 0x0E
-    .asciz "Licensed to Atari Inc."
-
-# 0x516CAD
-    .global _str_1931
-_str_1931:
-    .asciz "Atari Inc. Credits"
-
-# 0x516CC0
-    .global _str_1932
-_str_1932:
-    .asciz "Game versions are incompatible - Unable to connect!"
-
-# 0x516CF4
-    .global _str_1933
-_str_1933:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Send a short text message to the other player"
-
-# 0x516D24
-    .global _str_1934
-_str_1934:
-    .asciz "the other player"
-
-# 0x516D35
-    .global _str_1935
-_str_1935:
-    .asciz "The other player has exited the game: Two player mode has been disconnected"
-
-# 0x516D81
-    .global _str_1936
-_str_1936:
-    .byte 0x95
-    .ascii "Use of this product is subject to the terms of a license agreement"
-    .byte 0x05
-    .ascii "found in the product's "
-    .byte 0xB4
-    .asciz "ReadMe\" file and in the manual"
-
-# 0x516DFC
-    .global _str_1937
-_str_1937:
-    .byte 0x95
-    .asciz "ESRB Notice: Game experience may change during online play"
-
-# 0x516E38
-    .global _str_1938
-_str_1938:
-    .byte 0x96
-    .asciz "Some forms of transport in this game have names that may be similar to those of real vehicles."
-
-# 0x516E98
-    .global _str_1939
-_str_1939:
-    .byte 0x96
-    .asciz "This is a device to help players relate to the fictional universe of the game."
-
-# 0x516EE8
-    .global _str_1940
-_str_1940:
-    .byte 0x96
-    .asciz "The qualities (including speed, capacity, reliability, and cost) that have been attributed to various"
-
-# 0x516F4F
-    .global _str_1941
-_str_1941:
-    .byte 0x96
-    .asciz "vehicles are for game purposes only and are not intended to represent those of real"
-
-# 0x516FA4
-    .global _str_1942
-_str_1942:
-    .byte 0x96
-    .asciz "commercially available machines whether similarly named or not."
-
-# 0x516FE5
-    .global _str_1943
-_str_1943:
-    .byte 0x0E
-    .asciz "Senior Producer:  Thomas J. Zahorik"
-
-# 0x51700A
-    .global _str_1944
-_str_1944:
-    .byte 0x0E
-    .asciz "Senior Brand Manager:  Jeff Foley"
-
-# 0x51702D
-    .global _str_1945
-_str_1945:
-    .byte 0x0E
-    .asciz "Executive Producer:  Bob Welch"
-
-# 0x51704D
-    .global _str_1946
-_str_1946:
-    .byte 0x0E
-    .asciz "Director of Technology:  Paul Hellier"
-
-# 0x517074
-    .global _str_1947
-_str_1947:
-    .byte 0x0E
-    .asciz "Director of Marketing:  Peter Matiss"
-
-# 0x51709A
-    .global _str_1948
-_str_1948:
-    .byte 0x0E
-    .asciz "Director of Creative Services:  Steve Martin"
-
-# 0x5170C8
-    .global _str_1949
-_str_1949:
-    .byte 0x0E
-    .asciz "Graphic Designer:  Rod Tilley"
-
-# 0x5170E7
-    .global _str_1950
-_str_1950:
-    .byte 0x0E
-    .asciz "Director of Editorial & Documentation Services:  Elizabeth Mackney"
-
-# 0x51712B
-    .global _str_1951
-_str_1951:
-    .byte 0x0E
-    .asciz "Documentation Specialist:  Kurt Carlson"
-
-# 0x517154
-    .global _str_1952
-_str_1952:
-    .byte 0x0E
-    .asciz "Copywriter:  Paul Collin"
-
-# 0x51716E
-    .global _str_1953
-_str_1953:
-    .byte 0x0E
-    .asciz "Manual Writer:  David Ellis"
-
-# 0x51718B
-    .global _str_1954
-_str_1954:
-    .byte 0x0E
-    .asciz "Director of Publishing Support:  Michael Gilmartin"
-
-# 0x5171BF
-    .global _str_1955
-_str_1955:
-    .byte 0x0E
-    .asciz "Q.A. Managers:  Bill Carroll, Dave Strang"
-
-# 0x5171EA
-    .global _str_1956
-_str_1956:
-    .byte 0x0E
-    .asciz "Q.A. Supervisor:  Jason Cordero"
-
-# 0x51720B
-    .global _str_1957
-_str_1957:
-    .byte 0x0E
-    .asciz "I.T. Manager/Western Region:  Ken Ford"
-
-# 0x517233
-    .global _str_1958
-_str_1958:
-    .byte 0x0E
-    .asciz "Manager of Technical Support:  Michael Vetsch"
-
-# 0x517262
-    .global _str_1959
-_str_1959:
-    .byte 0x0E
-    .asciz "Lead Tester:  Marshall Clevesy"
-
-# 0x517282
-    .global _str_1960
-_str_1960:
-    .byte 0x0E
-    .asciz "Assistant Lead Tester:  Sean McLaren"
-
-# 0x5172A8
-    .global _str_1961
-_str_1961:
-    .byte 0x0E
-    .ascii "Testers:  Randy Alfonso, Leticia Due"
-    .byte 0xF1
-    .asciz "as, John Hockaday, Tony Hsu, Brandon Reed, Nessie Rilveria"
-
-# 0x517309
-    .global _str_1962
-_str_1962:
-    .byte 0x0E
-    .asciz "Compatibility Lab Supervisor:  Dave Strang "
-
-# 0x517336
-    .global _str_1963
-_str_1963:
-    .byte 0x0E
-    .asciz "Compatibility Test Lead:  Cuong Vu"
-
-# 0x51735A
-    .global _str_1964
-_str_1964:
-    .byte 0x0E
-    .asciz "Compatibility Analysts:  Randy Buchholz, Mark Florentino, Chris McQuinn, Scotte Kramer, Patricia-Jean Cody"
-
-# 0x5173C6
-    .global _str_1965
-_str_1965:
-    .byte 0x0E
-    .asciz "Engineering Services Specialist:  Ken Edwards"
-
-# 0x5173F5
-    .global _str_1966
-_str_1966:
-    .byte 0x0E
-    .asciz "Engineering Services Technicians:  Eugene Lai, Dan Burkhead"
-
-# 0x517432
-    .global _str_1967
-_str_1967:
-    .byte 0x0E
-    .asciz "Special Thanks:  John Billington, Cecelia Hernandez"
-
-# 0x517467
-    .global _str_1968
-_str_1968:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517469
-    .global _str_1969
-_str_1969:
-    .byte 0x0E
-    .byte EOS
-
-# 0x51746B
-    .global _str_1970
-_str_1970:
-    .byte 0x0E
-    .byte EOS
-
-# 0x51746D
-    .global _str_1971
-_str_1971:
-    .byte 0x0E
-    .byte EOS
-
-# 0x51746F
-    .global _str_1972
-_str_1972:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517471
-    .global _str_1973
-_str_1973:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517473
-    .global _str_1974
-_str_1974:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517475
-    .global _str_1975
-_str_1975:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517477
-    .global _str_1976
-_str_1976:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517479
-    .global _str_1977
-_str_1977:
-    .byte 0x0E
-    .byte EOS
-
-# 0x51747B
-    .global _str_1978
-_str_1978:
-    .byte 0x0E
-    .byte EOS
-
-# 0x51747D
-    .global _str_1979
-_str_1979:
-    .byte 0x0E
-    .byte EOS
-
-# 0x51747F
-    .global _str_1980
-_str_1980:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517481
-    .global _str_1981
-_str_1981:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517483
-    .global _str_1982
-_str_1982:
-    .byte 0x0E
-    .byte EOS
-
-# 0x517485
-    .global _str_1983
-_str_1983:
-    .asciz "Distance x Units of Cargo Delivered per Month"
-
-# 0x5174B3
-    .global _str_1984
-_str_1984:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Graphs of distance cargo delivered by each company"
-
-# 0x5174E8
-    .global _str_1985
-_str_1985:
-    .byte 0x0E
-    .ascii "Last journey average speed: "
-    .byte 0x90
-    .byte 0x87
-    .byte EOS
-
-# 0x517508
-    .global _str_1986
-_str_1986:
-    .asciz "land"
-
-# 0x51750D
-    .global _str_1987
-_str_1987:
-    .asciz "air"
-
-# 0x517511
-    .global _str_1988
-_str_1988:
-    .asciz "water"
-
-# 0x517517
-    .global _str_1989
-_str_1989:
-    .asciz "Train"
-
-# 0x51751D
-    .global _str_1990
-_str_1990:
-    .asciz "Bus"
-
-# 0x517521
-    .global _str_1991
-_str_1991:
-    .asciz "Truck"
-
-# 0x517527
-    .global _str_1992
-_str_1992:
-    .asciz "Tram"
-
-# 0x51752C
-    .global _str_1993
-_str_1993:
-    .asciz "Aircraft"
-
-# 0x517535
-    .global _str_1994
-_str_1994:
-    .asciz "Ship"
-
-# 0x51753A
-    .global _str_1995
-_str_1995:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Speed records"
-
-# 0x51754A
-    .global _str_1996
-_str_1996:
-    .asciz "Speed Records"
-
-# 0x517558
-    .global _str_1997
-_str_1997:
-    .byte 0x0E
-    .ascii "Land service speed record: "
-    .byte 0x90
-    .byte 0x87
-    .byte EOS
-
-# 0x517577
-    .global _str_1998
-_str_1998:
-    .byte 0x0E
-    .ascii "Air service speed record: "
-    .byte 0x90
-    .byte 0x87
-    .byte EOS
-
-# 0x517595
-    .global _str_1999
-_str_1999:
-    .byte 0x0E
-    .ascii "Water service speed record: "
-    .byte 0x90
-    .byte 0x87
-    .byte EOS
-
-# 0x5175B5
-    .global _str_2000
-_str_2000:
-    .byte 0x90
-    .ascii "Achieved by "
-    .byte 0x83
-    .ascii " on "
-    DATE 0
-    .byte EOS
-
-# 0x5175CA
-    .global _str_2001
-_str_2001:
-    .asciz "Confirm Display Mode Change"
-
-# 0x5175E6
-    .global _str_2002
-_str_2002:
-    .byte 0x0E
-    .ascii "Display resolution changed to "
-    .byte 0x80
-    .ascii " x "
-    .byte 0x80
-    .byte EOS
-
-# 0x51760B
-    .global _str_2003
-_str_2003:
-    .byte 0x0E
-    .asciz "_"
-
-# 0x51760E
-    .global _str_2004
-_str_2004:
-    .byte 0x0E
-    .asciz "File name:"
-
-# 0x51761A
-    .global _str_2005
-_str_2005:
-    .byte 0x0E
-    .ascii "Folder:  "
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x517627
-    .global _str_2006
-_str_2006:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Up one level to parent folder"
-
-# 0x517647
-    .global _str_2007
-_str_2007:
-    .byte 0x0E
-    .ascii "Company: "
-    .byte 0x90
-    .byte 0x83
-    .byte EOS
-
-# 0x517654
-    .global _str_2008
-_str_2008:
-    .byte 0x0E
-    .ascii "Date: "
-    .byte 0x90
-    DATE 0
-    .byte EOS
-
-# 0x51765F
-    .global _str_2009
-_str_2009:
-    .byte 0x0E
-    .ascii "Challenge progress: "
-    .byte 0x90
-    .byte 0x7F
-    .asciz "%"
-
-# 0x517678
-    .global _str_2010
-_str_2010:
-    .byte 0x0E
-    .ascii "Challenge: "
-    .byte 0x90
-    .asciz "Completed"
-
-# 0x51768F
-    .global _str_2011
-_str_2011:
-    .byte 0x0E
-    .ascii "Challenge: "
-    .byte 0x90
-    .asciz "Failed"
-
-# 0x5176A3
-    .global _str_2012
-_str_2012:
-    .ascii "Replace existing file: "
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\"?"
-
-# 0x5176BF
-    .global _str_2013
-_str_2013:
-    .asciz "Replace"
-
-# 0x5176C7
-    .global _str_2014
-_str_2014:
-    .ascii "Delete file: "
-    .byte 0xB4
-    .byte 0x83
-    .asciz "\"?"
-
-# 0x5176D9
-    .global _str_2015
-_str_2015:
-    .asciz "Delete"
-
-# 0x5176E0
-    .global _str_2016
-_str_2016:
-    .asciz "Error: Invalid filename"
-
-# 0x5176F8
-    .global _str_2017
-_str_2017:
-    .asciz "Industry Name"
-
-# 0x517706
-    .global _str_2018
-_str_2018:
-    .ascii "Enter new name for "
-    .byte 0x83
-    .asciz ":"
-
-# 0x51771C
-    .global _str_2019
-_str_2019:
-    .asciz "Can't rename industry..."
-
-# 0x517735
-    .global _str_2020
-_str_2020:
-    FORMAT_NEWLINE_X_Y 0, 1
-    .byte 0x8F
-    .byte 0x0A
-    FORMAT_NEWLINE_X_Y 45, 1
-    .ascii "Max. speed: "
-    .byte 0x83
-    FORMAT_NEWLINE_X_Y 45, 11
-    .ascii "Height limit: "
-    .byte 0x8D
-    .byte EOS
-
-# 0x51775D
-    .global _str_2021
-_str_2021:
-    .asciz "Duplicate CD Keys found - Unable to connect!"
-
-# 0x51778A
-    .global _str_2022
-_str_2022:
-    .byte 0x90
-    .byte 0x0A
-    .ascii "(Computer Name = "
-    .byte 0x83
-    .asciz ")"
-
-# 0x5177A0
-    .global _str_2023
-_str_2023:
-    .asciz "1st"
-
-# 0x5177A4
-    .global _str_2024
-_str_2024:
-    .asciz "2nd"
-
-# 0x5177A8
-    .global _str_2025
-_str_2025:
-    .asciz "3rd"
-
-# 0x5177AC
-    .global _str_2026
-_str_2026:
-    .asciz "4th"
-
-# 0x5177B0
-    .global _str_2027
-_str_2027:
-    .asciz "5th"
-
-# 0x5177B4
-    .global _str_2028
-_str_2028:
-    .asciz "6th"
-
-# 0x5177B8
-    .global _str_2029
-_str_2029:
-    .asciz "7th"
-
-# 0x5177BC
-    .global _str_2030
-_str_2030:
-    .asciz "8th"
-
-# 0x5177C0
-    .global _str_2031
-_str_2031:
-    .asciz "9th"
-
-# 0x5177C4
-    .global _str_2032
-_str_2032:
-    .asciz "10th"
-
-# 0x5177C9
-    .global _str_2033
-_str_2033:
-    .asciz "11th"
-
-# 0x5177CE
-    .global _str_2034
-_str_2034:
-    .asciz "12th"
-
-# 0x5177D3
-    .global _str_2035
-_str_2035:
-    .asciz "13th"
-
-# 0x5177D8
-    .global _str_2036
-_str_2036:
-    .asciz "14th"
-
-# 0x5177DD
-    .global _str_2037
-_str_2037:
-    .asciz "15th"
-
-# 0x5177E2
-    .global _str_2038
-_str_2038:
-    .byte 0x90
-    .byte 0x7F
-    .ascii " selected (maximum "
-    .byte 0x7F
-    .asciz ")"
-
-# 0x5177FA
-    .global _str_2039
-_str_2039:
-# 0x5177FA
-    .byte 0x00                                           #        0 .
-
-# 0x5177FB
-    .global __5177FB
-__5177FB:
-# 0x5177FB
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       50 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       58 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       60 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       70 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       78 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       80 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       88 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       90 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       98 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      100 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      108 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      110 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      118 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      120 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      128 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      130 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      138 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      140 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      148 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      150 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      158 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      160 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      168 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      170 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      178 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      180 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      188 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      190 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      198 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1F8 ........
-
-# 0x5179FB
-    .global _str_2040
-_str_2040:
-# 0x5179FB
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       18 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       20 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       28 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       30 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       38 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       40 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       48 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       50 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       58 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       60 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       68 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       70 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       78 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       80 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       88 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       90 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       98 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       F8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      100 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      108 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      110 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      118 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      120 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      128 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      130 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      138 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      140 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      148 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      150 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      158 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      160 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      168 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      170 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      178 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      180 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      188 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      190 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      198 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1A8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1B8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1C8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1D8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1E8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1F0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #      1F8 ........
-    .byte 0x00                                           #      200 .
-
-# 0x517BFC
-    .global _str_2041
-_str_2041:
-    .byte 0x90
-    .asciz "(ID: "
-
-# 0x517C03
-    .global _str_2042
-_str_2042:
-    .asciz "Data for the following object not found: "
-
-# 0x517C2D
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00       #       18 .......
-
-# 0x517C4C
-    .global _str_2043
-_str_2043:
-    .asciz "Not enough space for graphics"
-
-# 0x517C6A
-    .global _str_2044
-_str_2044:
-    .asciz "Too many objects of this type selected"
-
-# 0x517C91
-    .global _str_2045
-_str_2045:
-    .asciz "The following object must be selected first: "
-
-# 0x517CBF
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        8 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #       10 ........
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00       #       18 .......
-
-# 0x517CDE
-    .global _str_2046
-_str_2046:
-    .asciz "This object is currently in use"
-
-# 0x517CFE
-    .global _str_2047
-_str_2047:
-    .asciz "This object is required by another object"
-
-# 0x517D28
-    .global _str_2048
-_str_2048:
-    .asciz "This object is always required"
-
-# 0x517D47
-    .global _str_2049
-_str_2049:
-    .asciz "Unable to select this object"
-
-# 0x517D64
-    .global _str_2050
-_str_2050:
-    .asciz "Unable to deselect this object"
-
-# 0x517D83
-    .global _str_2051
-_str_2051:
-    .asciz "Invalid selection of objects"
-
-# 0x517DA0
-    .global _str_2052
-_str_2052:
-    .ascii "Object Selection - "
-    .byte 0x83
-    .byte EOS
-
-# 0x517DB5
-    .global _str_2053
-_str_2053:
-    .asciz "Interface Styles"
-
-# 0x517DC6
-    .global _str_2054
-_str_2054:
-    .asciz "Sounds"
-
-# 0x517DCD
-    .global _str_2055
-_str_2055:
-    .asciz "Currency"
-
-# 0x517DD6
-    .global _str_2056
-_str_2056:
-    .asciz "Animation Effects"
-
-# 0x517DE8
-    .global _str_2057
-_str_2057:
-    .asciz "Land Vertical Faces"
-
-# 0x517DFC
-    .global _str_2058
-_str_2058:
-    .asciz "Water"
-
-# 0x517E02
-    .global _str_2059
-_str_2059:
-    .asciz "Land"
-
-# 0x517E07
-    .global _str_2060
-_str_2060:
-    .asciz "Town Names"
-
-# 0x517E12
-    .global _str_2061
-_str_2061:
-    .asciz "Cargo"
-
-# 0x517E18
-    .global _str_2062
-_str_2062:
-    .asciz "Walls"
-
-# 0x517E1E
-    .global _str_2063
-_str_2063:
-    .asciz "Signals"
-
-# 0x517E26
-    .global _str_2064
-_str_2064:
-    .asciz "Level Crossings"
-
-# 0x517E36
-    .global _str_2065
-_str_2065:
-    .asciz "Street Lights"
-
-# 0x517E44
-    .global _str_2066
-_str_2066:
-    .asciz "Tunnels"
-
-# 0x517E4C
-    .global _str_2067
-_str_2067:
-    .asciz "Bridges"
-
-# 0x517E54
-    .global _str_2068
-_str_2068:
-    .asciz "Track Stations"
-
-# 0x517E63
-    .global _str_2069
-_str_2069:
-    .asciz "Track Extras"
-
-# 0x517E70
-    .global _str_2070
-_str_2070:
-    .asciz "Tracks"
-
-# 0x517E77
-    .global _str_2071
-_str_2071:
-    .asciz "Road Stations"
-
-# 0x517E85
-    .global _str_2072
-_str_2072:
-    .asciz "Road Extras"
-
-# 0x517E91
-    .global _str_2073
-_str_2073:
-    .asciz "Roads"
-
-# 0x517E97
-    .global _str_2074
-_str_2074:
-    .asciz "Airports"
-
-# 0x517EA0
-    .global _str_2075
-_str_2075:
-    .asciz "Ship Ports"
-
-# 0x517EAB
-    .global _str_2076
-_str_2076:
-    .asciz "Vehicles"
-
-# 0x517EB4
-    .global _str_2077
-_str_2077:
-    .asciz "Trees"
-
-# 0x517EBA
-    .global _str_2078
-_str_2078:
-    .asciz "Snow"
-
-# 0x517EBF
-    .global _str_2079
-_str_2079:
-    .asciz "Climate"
-
-# 0x517EC7
-    .global _str_2080
-_str_2080:
-    .asciz "Map Generation Data"
-
-# 0x517EDB
-    .global _str_2081
-_str_2081:
-    .asciz "Buildings"
-
-# 0x517EE5
-    .global _str_2082
-_str_2082:
-    .asciz "Scaffolding"
-
-# 0x517EF1
-    .global _str_2083
-_str_2083:
-    .asciz "Industries"
-
-# 0x517EFC
-    .global _str_2084
-_str_2084:
-    .asciz "World Region"
-
-# 0x517F09
-    .global _str_2085
-_str_2085:
-    .asciz "Company Owners"
-
-# 0x517F18
-    .global _str_2086
-_str_2086:
-    .asciz "Scenario Descriptions"
-
-# 0x517F2E
-    .global _str_2087
-_str_2087:
-    .asciz "list of objects"
-
-# 0x517F3E
-    .global _str_2088
-_str_2088:
-    .asciz "Missing object data, ID: "
-
-# 0x517F58
-    .global _str_2089
-_str_2089:
-    .asciz "Export plug-in objects with saved games"
-
-# 0x517F80
-    .global _str_2090
-_str_2090:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Select whether to save any additional plug-in object data required (add-in data not supplied with the main product) in saved game or scenario files, allowing them to be loaded by someone who doesn't have the additional object data"
-
-# 0x518069
-    .global _str_2091
-_str_2091:
-    .asciz "At least one generic dual direction road type must be selected"
-
-# 0x5180A8
-    .global _str_2092
-_str_2092:
-    .asciz "A scaffolding type must be selected"
-
-# 0x5180CC
-    .global _str_2093
-_str_2093:
-    .asciz "Advanced"
-
-# 0x5180D5
-    .global _str_2094
-_str_2094:
-    .byte 0x0A
-    .byte 0x90
-    .asciz "Allow more advanced selection of individual items"
-
-# 0x518109
-    .global _str_2095
-_str_2095:
-    .byte 0x92
-    .byte 0x08
-    .byte 0xA3
-    .byte EOS
-
-# 0x51810D
-    .global _str_2096
-_str_2096:
-    .asciz "New objects installed successfully"
-
-# 0x518130
-    .global _str_2097
-_str_2097:
-    .asciz "At least one industry must be selected"
-
-# 0x518157
-    .global _str_2098
-_str_2098:
-    .asciz "At least one town building must be selected"
-
-# 0x518183
-    .global _str_2099
-_str_2099:
-    .asciz "An company headquarters building type must be selected"
-
-# 0x5181BA
-    .global _str_2100
-_str_2100:
-    .asciz "Only one company headquarters building type must be selected"
-
-# 0x5181F7
-    .global _str_2101
-_str_2101:
-    .asciz "An interface type must be selected"
-
-# 0x51821A
-    .global _str_2102
-_str_2102:
-    .asciz "At least one vehicle type must be selected"
-
-# 0x518245
-    .global _str_2103
-_str_2103:
-    .asciz "At least one land type must be selected"
-
-# 0x51826D
-    .global _str_2104
-_str_2104:
-    .asciz "A currency type must be selected"
-
-# 0x51828E
-    .global _str_2105
-_str_2105:
-    .asciz "A water type must be selected"
-
-# 0x5182AC
-    .global _str_2106
-_str_2106:
-    .asciz "A town name style must be selected"
-
-# 0x5182CF
-    .global _str_2107
-_str_2107:
-    .asciz "At least one level crossing type must be selected"
-
-# 0x518301
-    .global _str_2108
-_str_2108:
-    .asciz "A street light type must be selected"
-
-# 0x518326
-    .global _str_2109
-_str_2109:
-    .asciz "A snow type must be selected (even if not needed)"
-
-# 0x518358
-    .global _str_2110
-_str_2110:
-    .asciz "A climate type must be selected"
-
-# 0x518378
-    .global _str_2111
-_str_2111:
-    .asciz "A map generation data type must be selected"
-
-# 0x5183A4
-    .global _str_2112
-_str_2112:
-    .asciz "A region type must be selected"
-
-# 0x5183C3
-    .global _strMPH
-_strMPH:
-    .asciz "mph"
-
-# 0x5183C7
-    .global _strKMH
-_strKMH:
-    .ascii "kmh"
-    .byte 0xB9
-    .byte EOS
-
-# 0x5183CC
-    .global _strHour
-_strHour:
-    .asciz "hour:"
-
-# 0x5183D2
-    .global _strHours
-_strHours:
-    .asciz "hours:"
-
-# 0x5183D9
-    .global _strMins
-_strMins:
-    .asciz "mins"
-
-# 0x5183DE
-    .global _strMin
-_strMin:
-    .asciz "min:"
-
-# 0x5183E3
-    .global _strSecs
-_strSecs:
-    .asciz "secs"
-
-# 0x5183E8
-    .global _strUnits
-_strUnits:
-    .asciz " units"
-
-# 0x5183EF
-    .global _strFeet
-_strFeet:
-    .asciz "ft"
-
-# 0x5183F2
-    .global _strMeter
-_strMeter:
-    .asciz "m"
-
-# 0x5183F4
-    .global _strHP
-_strHP:
-    .asciz "hp"
-
-# 0x5183F7
-    .global _strKW
-_strKW:
-    .asciz "kW"
-
-# 0x5183FA
-    .byte 0x00, 0x00                                     #        0 ..
 
 # 0x5183FC
+    .align 4
     .global __5183FC
 __5183FC:
     .4byte _str_0
@@ -28976,145 +15471,139 @@ __5217F6:
 # 0x521840
     .global _ui_town___widgets_0
 _ui_town___widgets_0:
-    widget 0x02, 0, 0, 222, 0, 160, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 221, 1, 13, 0x0000054F, 65535
+    widget 0x02, 0, 0, 222, 0, 166, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 221, 1, 16, 0x0000054F, 65535
     widget 0x09, 0, 208, 220, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 160, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1386
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1387
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1388
-    widget 0x13, 1, 3, 197, 44, 147, 0xFFFFFFFE, 65535
-    widget 0x0D, 1, 3, 197, 139, 159, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 222, 44, 166, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1386
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1387
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1388
+    widget 0x13, 1, 3, 197, 47, 150, 0xFFFFFFFE, 65535
+    widget 0x0D, 1, 3, 197, 139, 165, 0xFFFFFFFF, 65535
     widget 0x09, 1, 0, 23, 0, 23, 0xFFFFFFFF, 355
-    widget 0x09, 1, 198, 221, 44, 67, 0x0000094E, 1409
-    widget 0x09, 1, 198, 221, 68, 91, 0x0000093B, 1392
+    widget 0x09, 1, 198, 221, 47, 70, 0x0000094E, 1409
+    widget 0x09, 1, 198, 221, 71, 94, 0x0000093B, 1392
     .byte 0x1E
 
-# 0x521901
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x521904
     .global _ui_town___widgets_1
 _ui_town___widgets_1:
-    widget 0x02, 0, 0, 222, 0, 160, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 221, 1, 13, 0x00000550, 65535
+    widget 0x02, 0, 0, 222, 0, 166, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 221, 1, 16, 0x00000550, 65535
     widget 0x09, 0, 208, 220, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 160, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1386
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1387
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1388
+    widget 0x01, 1, 0, 222, 44, 166, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1386
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1387
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1388
     .byte 0x1E
 
-# 0x521975
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x521978
     .global _ui_town___widgets_2
 _ui_town___widgets_2:
-    widget 0x02, 0, 0, 339, 0, 207, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 338, 1, 13, 0x00000551, 65535
+    widget 0x02, 0, 0, 339, 0, 258, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 338, 1, 16, 0x00000551, 65535
     widget 0x09, 0, 325, 337, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 222, 41, 160, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1386
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1387
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1388
+    widget 0x01, 1, 0, 222, 44, 166, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1386
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1387
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1388
     .byte 0x1E
 
-# 0x5219E9
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x5219EC
     .global _ui_town_list___widgets_0
 _ui_town_list___widgets_0:
-    widget 0x02, 0, 0, 599, 0, 196, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 598, 1, 13, 0x0000050B, 65535
+    widget 0x02, 0, 0, 599, 0, 202, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 598, 1, 16, 0x0000050B, 65535
     widget 0x09, 0, 585, 597, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 599, 41, 195, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1321
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1322
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1323
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1324
-    widget 0x0E, 1, 4, 203, 43, 54, 0xFFFFFFFF, 1153
-    widget 0x0E, 1, 204, 283, 43, 54, 0xFFFFFFFF, 1305
-    widget 0x0E, 1, 284, 353, 43, 54, 0xFFFFFFFF, 1297
-    widget 0x0E, 1, 354, 423, 43, 54, 0xFFFFFFFF, 1301
-    widget 0x1A, 1, 3, 596, 56, 181, 0x00000002, 65535
+    widget 0x01, 1, 0, 599, 44, 201, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1321
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1322
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1323
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1324
+    widget 0x0E, 1, 4, 203, 46, 60, 0xFFFFFFFF, 1153
+    widget 0x0E, 1, 204, 283, 46, 60, 0xFFFFFFFF, 1305
+    widget 0x0E, 1, 284, 353, 46, 60, 0xFFFFFFFF, 1297
+    widget 0x0E, 1, 354, 423, 46, 60, 0xFFFFFFFF, 1301
+    widget 0x1A, 1, 3, 596, 62, 184, 0x00000002, 65535
     .byte 0x1E
 
-# 0x521ABD
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x521AC0
     .global _ui_town_list___widgets_1
 _ui_town_list___widgets_1:
-    widget 0x02, 0, 0, 219, 0, 86, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 218, 1, 13, 0x0000050C, 65535
+    widget 0x02, 0, 0, 219, 0, 95, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 218, 1, 16, 0x0000050C, 65535
     widget 0x09, 0, 205, 217, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 599, 41, 195, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1321
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1322
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1323
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1324
-    widget 0x12, 1, 100, 216, 45, 56, 0xFFFFFFFF, 1398
-    widget 0x0B, 1, 205, 215, 46, 55, 0x00000060, 1398
+    widget 0x01, 1, 0, 599, 44, 201, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1321
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1322
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1323
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1324
+    widget 0x12, 1, 100, 216, 48, 62, 0xFFFFFFFF, 1398
+    widget 0x0B, 1, 205, 215, 49, 61, 0x00000060, 1398
     .byte 0x1E
 
-# 0x521B61
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x521B64
     .global _ui_town_list___widgets_2
 _ui_town_list___widgets_2:
-    widget 0x02, 0, 0, 639, 0, 171, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 638, 1, 13, 0x0000050D, 65535
+    widget 0x02, 0, 0, 639, 0, 177, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 638, 1, 16, 0x0000050D, 65535
     widget 0x09, 0, 625, 637, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 599, 41, 195, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1321
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1322
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1323
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1324
-    widget 0x1A, 1, 2, 574, 45, 156, 0x00000002, 65535
-    widget 0x09, 1, 575, 598, 46, 69, 0x0000093D, 565
-    widget 0x0A, 1, 579, 594, 91, 106, 0xFFFFFFFF, 1210
+    widget 0x01, 1, 0, 599, 44, 201, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1321
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1322
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1323
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1324
+    widget 0x1A, 1, 2, 574, 48, 159, 0x00000002, 65535
+    widget 0x09, 1, 575, 598, 49, 72, 0x0000093D, 565
+    widget 0x0A, 1, 579, 594, 94, 109, 0xFFFFFFFF, 1210
     .byte 0x1E
 
-# 0x521C15
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x521C18
     .global _ui_construction___widgets_0
 _ui_construction___widgets_0:
-    widget 0x02, 0, 0, 137, 0, 275, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 136, 1, 13, 0x00000071, 65535
+    widget 0x02, 0, 0, 137, 0, 278, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 136, 1, 16, 0x00000071, 65535
     widget 0x09, 0, 123, 135, 2, 14, 0x00000911, 60
-    widget 0x03, 1, 0, 137, 41, 275, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 271
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 272
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 273
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 274
-    widget 0x09, 1, 3, 24, 45, 68, 0x00000924, 118
-    widget 0x09, 1, 3, 24, 45, 68, 0x00000926, 116
-    widget 0x09, 1, 25, 46, 45, 68, 0x00000928, 114
-    widget 0x09, 1, 47, 68, 45, 68, 0x0000092A, 120
-    widget 0x09, 1, 69, 90, 45, 68, 0x0000092B, 121
-    widget 0x09, 1, 91, 112, 45, 68, 0x00000929, 115
-    widget 0x09, 1, 113, 134, 45, 68, 0x00000927, 117
-    widget 0x09, 1, 113, 134, 45, 68, 0x00000925, 119
-    widget 0x09, 1, 9, 32, 69, 92, 0x00000933, 125
-    widget 0x09, 1, 33, 56, 69, 92, 0x00000931, 123
-    widget 0x09, 1, 57, 80, 69, 92, 0x0000091F, 122
-    widget 0x09, 1, 81, 104, 69, 92, 0x00000932, 124
-    widget 0x09, 1, 105, 128, 69, 92, 0x00000934, 126
-    widget 0x09, 1, 9, 32, 96, 119, 0x0000092C, 132
-    widget 0x09, 1, 33, 56, 96, 119, 0x0000092D, 133
-    widget 0x09, 1, 57, 80, 96, 119, 0x0000092E, 134
-    widget 0x09, 1, 81, 104, 96, 119, 0x0000092F, 135
-    widget 0x09, 1, 105, 128, 96, 119, 0x00000930, 136
-    widget 0x12, 1, 40, 97, 123, 142, 0x00000000, 278
-    widget 0x0B, 1, 86, 96, 124, 141, 0x00000060, 278
-    widget 0x05, 1, 3, 134, 145, 244, 0xFFFFFFFF, 130
-    widget 0x09, 1, 6, 51, 248, 271, 0x00000939, 131
-    widget 0x09, 1, 57, 80, 248, 271, 0x0000093D, 580
+    widget 0x03, 1, 0, 137, 44, 278, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 271
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 272
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 273
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 274
+    widget 0x09, 1, 3, 24, 48, 71, 0x00000924, 118
+    widget 0x09, 1, 3, 24, 48, 71, 0x00000926, 116
+    widget 0x09, 1, 25, 46, 48, 71, 0x00000928, 114
+    widget 0x09, 1, 47, 68, 48, 71, 0x0000092A, 120
+    widget 0x09, 1, 69, 90, 48, 71, 0x0000092B, 121
+    widget 0x09, 1, 91, 112, 48, 71, 0x00000929, 115
+    widget 0x09, 1, 113, 134, 48, 71, 0x00000927, 117
+    widget 0x09, 1, 113, 134, 48, 71, 0x00000925, 119
+    widget 0x09, 1, 9, 32, 72, 95, 0x00000933, 125
+    widget 0x09, 1, 33, 56, 72, 95, 0x00000931, 123
+    widget 0x09, 1, 57, 80, 72, 95, 0x0000091F, 122
+    widget 0x09, 1, 81, 104, 72, 95, 0x00000932, 124
+    widget 0x09, 1, 105, 128, 72, 95, 0x00000934, 126
+    widget 0x09, 1, 9, 32, 99, 122, 0x0000092C, 132
+    widget 0x09, 1, 33, 56, 99, 122, 0x0000092D, 133
+    widget 0x09, 1, 57, 80, 99, 122, 0x0000092E, 134
+    widget 0x09, 1, 81, 104, 99, 122, 0x0000092F, 135
+    widget 0x09, 1, 105, 128, 99, 122, 0x00000930, 136
+    widget 0x12, 1, 40, 97, 126, 145, 0x00000000, 278
+    widget 0x0B, 1, 86, 96, 127, 144, 0x00000060, 278
+    widget 0x05, 1, 3, 134, 148, 247, 0xFFFFFFFF, 130
+    widget 0x09, 1, 6, 51, 251, 274, 0x00000939, 131
+    widget 0x09, 1, 57, 80, 251, 274, 0x0000093D, 580
     .byte 0x1E
 
 # 0x521E09
@@ -29123,61 +15612,59 @@ _ui_construction___widgets_0:
 # 0x521E0C
     .global _ui_construction___widgets_1
 _ui_construction___widgets_1:
-    widget 0x02, 0, 0, 137, 0, 189, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 136, 1, 13, 0x00000071, 65535
+    widget 0x02, 0, 0, 137, 0, 210, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 136, 1, 16, 0x00000071, 65535
     widget 0x09, 0, 123, 135, 2, 14, 0x00000911, 60
-    widget 0x03, 1, 0, 137, 41, 189, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 271
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 272
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 273
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 274
-    widget 0x12, 1, 3, 134, 45, 56, 0xFFFFFFFF, 279
-    widget 0x0B, 1, 123, 133, 46, 55, 0x00000060, 279
-    widget 0x03, 1, 35, 102, 60, 127, 0xFFFFFFFF, 65535
-    widget 0x09, 1, 112, 135, 104, 127, 0x0000093D, 580
+    widget 0x03, 1, 0, 137, 44, 210, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 271
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 272
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 273
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 274
+    widget 0x12, 1, 3, 134, 48, 62, 0xFFFFFFFF, 279
+    widget 0x0B, 1, 123, 133, 49, 61, 0x00000060, 279
+    widget 0x03, 1, 35, 102, 66, 133, 0xFFFFFFFF, 65535
+    widget 0x09, 1, 112, 135, 110, 133, 0x0000093D, 580
     .byte 0x1E
 
-# 0x521ECD
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x521ED0
     .global _ui_construction___widgets_2
 _ui_construction___widgets_2:
-    widget 0x02, 0, 0, 137, 0, 166, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 136, 1, 13, 0x00000071, 65535
+    widget 0x02, 0, 0, 137, 0, 187, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 136, 1, 16, 0x00000071, 65535
     widget 0x09, 0, 123, 135, 2, 14, 0x00000911, 60
-    widget 0x03, 1, 0, 137, 41, 166, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 271
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 272
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 273
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 274
-    widget 0x12, 1, 3, 134, 45, 56, 0xFFFFFFFF, 275
-    widget 0x0B, 1, 123, 133, 46, 55, 0x00000060, 275
-    widget 0x09, 1, 27, 66, 110, 149, 0xFFFFFFFF, 276
-    widget 0x09, 1, 71, 110, 110, 149, 0xFFFFFFFF, 277
+    widget 0x03, 1, 0, 137, 44, 187, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 271
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 272
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 273
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 274
+    widget 0x12, 1, 3, 134, 48, 62, 0xFFFFFFFF, 275
+    widget 0x0B, 1, 123, 133, 49, 61, 0x00000060, 275
+    widget 0x09, 1, 27, 66, 128, 167, 0xFFFFFFFF, 276
+    widget 0x09, 1, 71, 110, 128, 167, 0xFFFFFFFF, 277
     .byte 0x1E
 
-# 0x521F91
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x521F94
     .global _ui_construction___widgets_3
 _ui_construction___widgets_3:
-    widget 0x02, 0, 0, 137, 0, 191, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 136, 1, 13, 0x00000071, 65535
+    widget 0x02, 0, 0, 137, 0, 212, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 136, 1, 16, 0x00000071, 65535
     widget 0x09, 0, 123, 135, 2, 14, 0x00000911, 60
-    widget 0x03, 1, 0, 137, 41, 191, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 271
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 272
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 273
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 274
-    widget 0x1B, 1, 3, 134, 45, 56, 0x00000000, 354
-    widget 0x1B, 1, 3, 134, 57, 68, 0x00000000, 354
-    widget 0x1B, 1, 3, 134, 69, 80, 0x00000000, 354
-    widget 0x1B, 1, 3, 134, 81, 92, 0x00000000, 354
-    widget 0x03, 1, 35, 100, 110, 175, 0xFFFFFFFF, 65535
-    widget 0x12, 1, 3, 134, 95, 106, 0xFFFFFFFF, 268
-    widget 0x0B, 1, 123, 133, 96, 105, 0x00000060, 268
+    widget 0x03, 1, 0, 137, 44, 212, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 271
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 272
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 273
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 274
+    widget 0x1B, 1, 3, 134, 48, 62, 0x00000000, 354
+    widget 0x1B, 1, 3, 134, 63, 77, 0x00000000, 354
+    widget 0x1B, 1, 3, 134, 78, 92, 0x00000000, 354
+    widget 0x1B, 1, 3, 134, 93, 107, 0x00000000, 354
+    widget 0x03, 1, 35, 100, 128, 193, 0xFFFFFFFF, 65535
+    widget 0x12, 1, 3, 134, 110, 124, 0xFFFFFFFF, 268
+    widget 0x0B, 1, 123, 133, 111, 123, 0x00000060, 268
     .byte 0x1E
 
 # 0x522085
@@ -29316,105 +15803,101 @@ __5220BC:
 # 0x5220C0
     .global _ui_vehicle___widgets_0
 _ui_vehicle___widgets_0:
-    widget 0x02, 0, 0, 264, 0, 176, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 263, 1, 13, 0x00000055, 65535
+    widget 0x02, 0, 0, 264, 0, 209, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 263, 1, 16, 0x00000055, 65535
     widget 0x09, 0, 250, 262, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 264, 41, 176, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 574
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 575
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 576
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 578
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 577
-    widget 0x13, 1, 3, 239, 44, 163, 0xFFFFFFFE, 65535
-    widget 0x0D, 1, 3, 239, 155, 175, 0xFFFFFFFF, 65535
-    widget 0x05, 1, 240, 263, 46, 160, 0xFFFFFFFF, 65535
-    widget 0x09, 1, 240, 263, 44, 67, 0x00000941, 269
-    widget 0x09, 1, 240, 263, 68, 91, 0xFFFFFFFF, 254
-    widget 0x09, 1, 240, 263, 92, 115, 0x00000946, 253
-    widget 0x09, 1, 240, 263, 116, 139, 0x00000937, 252
+    widget 0x01, 1, 0, 264, 44, 209, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 574
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 575
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 576
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 578
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 577
+    widget 0x13, 1, 3, 239, 47, 193, 0xFFFFFFFE, 65535
+    widget 0x0D, 1, 3, 239, 182, 208, 0xFFFFFFFF, 65535
+    widget 0x05, 1, 240, 263, 49, 163, 0xFFFFFFFF, 65535
+    widget 0x09, 1, 240, 263, 47, 70, 0x00000941, 269
+    widget 0x09, 1, 240, 263, 71, 94, 0xFFFFFFFF, 254
+    widget 0x09, 1, 240, 263, 95, 118, 0x00000946, 253
+    widget 0x09, 1, 240, 263, 119, 142, 0x00000937, 252
     widget 0x09, 1, 0, 23, 0, 23, 0xFFFFFFFF, 355
     .byte 0x1E
 
-# 0x5221D1
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x5221D4
     .global _ui_vehicle___widgets_1
 _ui_vehicle___widgets_1:
-    widget 0x02, 0, 0, 264, 0, 176, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 263, 1, 13, 0x000002AD, 65535
+    widget 0x02, 0, 0, 264, 0, 209, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 263, 1, 16, 0x000002AD, 65535
     widget 0x09, 0, 250, 262, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 264, 41, 176, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 574
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 575
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 576
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 578
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 577
-    widget 0x09, 1, 240, 263, 44, 67, 0xFFFFFFFF, 333
-    widget 0x09, 1, 240, 263, 68, 91, 0xFFFFFFFF, 254
-    widget 0x09, 1, 240, 263, 96, 119, 0x0000093B, 332
-    widget 0x1A, 1, 3, 239, 44, 153, 0x00000002, 65535
+    widget 0x01, 1, 0, 264, 44, 209, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 574
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 575
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 576
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 578
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 577
+    widget 0x09, 1, 240, 263, 47, 70, 0xFFFFFFFF, 333
+    widget 0x09, 1, 240, 263, 71, 94, 0xFFFFFFFF, 254
+    widget 0x09, 1, 240, 263, 99, 122, 0x0000093B, 332
+    widget 0x1A, 1, 3, 239, 47, 180, 0x00000002, 65535
     .byte 0x1E
 
-# 0x5222A5
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x5222A8
     .global _ui_vehicle___widgets_2
 _ui_vehicle___widgets_2:
-    widget 0x02, 0, 0, 264, 0, 176, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 263, 1, 13, 0x000002AE, 65535
+    widget 0x02, 0, 0, 264, 0, 209, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 263, 1, 16, 0x000002AE, 65535
     widget 0x09, 0, 250, 262, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 264, 41, 176, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 574
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 575
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 576
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 578
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 577
-    widget 0x09, 1, 240, 263, 44, 67, 0x00000952, 1532
-    widget 0x1A, 1, 3, 261, 44, 163, 0x00000002, 65535
+    widget 0x01, 1, 0, 264, 44, 209, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 574
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 575
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 576
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 578
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 577
+    widget 0x09, 1, 240, 263, 47, 70, 0x00000952, 1532
+    widget 0x1A, 1, 3, 261, 47, 193, 0x00000002, 65535
     .byte 0x1E
 
-# 0x522359
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x52235C
     .global _ui_vehicle___widgets_4
 _ui_vehicle___widgets_4:
-    widget 0x02, 0, 0, 264, 0, 176, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 263, 1, 13, 0x000002AF, 65535
+    widget 0x02, 0, 0, 264, 0, 209, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 263, 1, 16, 0x000002AF, 65535
     widget 0x09, 0, 250, 262, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 264, 41, 176, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 574
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 575
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 576
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 578
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 577
+    widget 0x01, 1, 0, 264, 44, 209, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 574
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 575
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 576
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 578
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 577
     widget 0x00, 0, 0, 0, 0, 0, 0xFFFFFFFF, 65535
-    widget 0x1A, 1, 3, 239, 44, 163, 0x00000002, 1237
-    widget 0x09, 1, 240, 263, 44, 67, 0x0000094A, 1233
-    widget 0x09, 1, 240, 263, 68, 91, 0x00000949, 1232
-    widget 0x09, 1, 240, 263, 92, 115, 0x00000948, 1234
-    widget 0x09, 1, 240, 263, 116, 139, 0x00000947, 1235
-    widget 0x09, 1, 240, 263, 140, 151, 0x00000922, 1926
-    widget 0x09, 1, 240, 263, 152, 163, 0x00000923, 1927
+    widget 0x1A, 1, 3, 239, 47, 193, 0x00000002, 1237
+    widget 0x09, 1, 240, 263, 47, 70, 0x0000094A, 1233
+    widget 0x09, 1, 240, 263, 71, 94, 0x00000949, 1232
+    widget 0x09, 1, 240, 263, 95, 118, 0x00000948, 1234
+    widget 0x09, 1, 240, 263, 119, 142, 0x00000947, 1235
+    widget 0x09, 1, 240, 263, 143, 154, 0x00000922, 1926
+    widget 0x09, 1, 240, 263, 155, 166, 0x00000923, 1927
     .byte 0x1E
 
-# 0x52246D
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x522470
     .global _ui_vehicle___widgets_3
 _ui_vehicle___widgets_3:
-    widget 0x02, 0, 0, 399, 0, 201, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 398, 1, 13, 0x000002B0, 65535
+    widget 0x02, 0, 0, 399, 0, 240, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 398, 1, 16, 0x000002B0, 65535
     widget 0x09, 0, 385, 397, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 264, 41, 176, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 574
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 575
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 576
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 578
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 577
+    widget 0x01, 1, 0, 264, 44, 209, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 574
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 575
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 576
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 578
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 577
     .byte 0x1E
 
 # 0x522501
@@ -29432,99 +15915,95 @@ _ui_window_25_widgets:
 # 0x522518
     .global _ui_terraform___widgets_0
 _ui_terraform___widgets_0:
-    widget 0x02, 0, 0, 129, 0, 104, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 128, 1, 13, 0x000002A7, 65535
+    widget 0x02, 0, 0, 129, 0, 110, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 128, 1, 16, 0x000002A7, 65535
     widget 0x09, 0, 115, 127, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 129, 41, 114, 0xFFFFFFFF, 65535
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1205
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1207
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1208
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1206
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1209
-    widget 0x03, 1, 33, 96, 45, 88, 0x0000098F, 668
-    widget 0x07, 1, 34, 49, 46, 61, 0x2000098B, 669
-    widget 0x07, 1, 80, 95, 72, 87, 0x2000098D, 670
+    widget 0x01, 1, 0, 129, 44, 123, 0xFFFFFFFF, 65535
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1205
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1207
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1208
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1206
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1209
+    widget 0x03, 1, 33, 96, 48, 91, 0x0000098F, 668
+    widget 0x07, 1, 34, 49, 49, 64, 0x2000098B, 669
+    widget 0x07, 1, 80, 95, 75, 90, 0x2000098D, 670
     .byte 0x1E
 
-# 0x5225D9
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x5225DC
     .global _ui_terraform___widgets_1
 _ui_terraform___widgets_1:
-    widget 0x02, 0, 0, 129, 0, 114, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 128, 1, 13, 0x000002A3, 65535
+    widget 0x02, 0, 0, 129, 0, 123, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 128, 1, 16, 0x000002A3, 65535
     widget 0x09, 0, 115, 127, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 129, 41, 114, 0xFFFFFFFF, 65535
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1205
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1207
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1208
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1206
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1209
-    widget 0x03, 1, 33, 96, 45, 88, 0x0000098F, 678
-    widget 0x07, 1, 34, 49, 46, 61, 0x2000098B, 671
-    widget 0x07, 1, 80, 95, 72, 87, 0x2000098D, 672
-    widget 0x06, 0, 55, 74, 92, 111, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 129, 44, 123, 0xFFFFFFFF, 65535
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1205
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1207
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1208
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1206
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1209
+    widget 0x03, 1, 33, 96, 48, 91, 0x0000098F, 678
+    widget 0x07, 1, 34, 49, 49, 64, 0x2000098B, 671
+    widget 0x07, 1, 80, 95, 75, 90, 0x2000098D, 672
+    widget 0x06, 0, 55, 74, 95, 114, 0xFFFFFFFF, 65535
     .byte 0x1E
 
-# 0x5226AD
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x5226B0
     .global _ui_terraform___widgets_2
 _ui_terraform___widgets_2:
-    widget 0x02, 0, 0, 129, 0, 114, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 128, 1, 13, 0x000002A4, 65535
+    widget 0x02, 0, 0, 129, 0, 123, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 128, 1, 16, 0x000002A4, 65535
     widget 0x09, 0, 115, 127, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 129, 41, 114, 0xFFFFFFFF, 65535
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1205
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1207
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1208
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1206
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1209
-    widget 0x03, 1, 33, 96, 45, 88, 0x0000098F, 677
-    widget 0x07, 1, 34, 49, 46, 61, 0x2000098B, 673
-    widget 0x07, 1, 80, 95, 72, 87, 0x2000098D, 674
+    widget 0x01, 1, 0, 129, 44, 123, 0xFFFFFFFF, 65535
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1205
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1207
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1208
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1206
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1209
+    widget 0x03, 1, 33, 96, 48, 91, 0x0000098F, 677
+    widget 0x07, 1, 34, 49, 49, 64, 0x2000098B, 673
+    widget 0x07, 1, 80, 95, 75, 90, 0x2000098D, 674
     .byte 0x1E
 
-# 0x522771
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x522774
     .global _ui_terraform___widgets_3
 _ui_terraform___widgets_3:
-    widget 0x02, 0, 0, 633, 0, 161, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 632, 1, 13, 0x000001BF, 65535
+    widget 0x02, 0, 0, 633, 0, 167, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 632, 1, 16, 0x000001BF, 65535
     widget 0x09, 0, 619, 631, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 129, 41, 114, 0xFFFFFFFF, 65535
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1205
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1207
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1208
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1206
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1209
-    widget 0x1A, 1, 2, 608, 45, 146, 0x00000002, 65535
-    widget 0x09, 1, 609, 632, 46, 69, 0x0000093D, 565
-    widget 0x0A, 1, 609, 632, 70, 93, 0xFFFFFFFF, 1210
-    widget 0x09, 1, 609, 632, 94, 117, 0x0000094C, 1412
-    widget 0x09, 1, 609, 632, 118, 141, 0x0000094D, 1413
+    widget 0x01, 1, 0, 129, 44, 123, 0xFFFFFFFF, 65535
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1205
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1207
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1208
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1206
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1209
+    widget 0x1A, 1, 2, 608, 48, 149, 0x00000002, 65535
+    widget 0x09, 1, 609, 632, 49, 72, 0x0000093D, 565
+    widget 0x0A, 1, 609, 632, 73, 96, 0xFFFFFFFF, 1210
+    widget 0x09, 1, 609, 632, 97, 120, 0x0000094C, 1412
+    widget 0x09, 1, 609, 632, 121, 144, 0x0000094D, 1413
     .byte 0x1E
 
-# 0x522855
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x522858
     .global _ui_terraform___widgets_4
 _ui_terraform___widgets_4:
-    widget 0x02, 0, 0, 417, 0, 107, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 416, 1, 13, 0x000001BE, 65535
+    widget 0x02, 0, 0, 417, 0, 113, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 416, 1, 16, 0x000001BE, 65535
     widget 0x09, 0, 403, 415, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 129, 41, 114, 0xFFFFFFFF, 65535
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1205
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1207
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1208
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1206
-    widget 0x06, 1, 3, 33, 15, 41, 0x20000953, 1209
-    widget 0x1A, 1, 2, 392, 45, 92, 0x00000002, 65535
+    widget 0x01, 1, 0, 129, 44, 123, 0xFFFFFFFF, 65535
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1205
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1207
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1208
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1206
+    widget 0x06, 1, 3, 33, 18, 44, 0x20000953, 1209
+    widget 0x1A, 1, 2, 392, 48, 95, 0x00000002, 65535
     .byte 0x1E
 
 # 0x5228F9
@@ -29533,12 +16012,12 @@ _ui_terraform___widgets_4:
 # 0x5228FC
     .global _ui_keyboard_shortcuts
 _ui_keyboard_shortcuts:
-    widget 0x02, 0, 0, 359, 0, 237, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 358, 1, 13, 0x000002BE, 65535
+    widget 0x02, 0, 0, 359, 0, 240, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 358, 1, 16, 0x000002BE, 65535
     widget 0x09, 0, 345, 357, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 359, 15, 237, 0xFFFFFFFF, 65535
-    widget 0x1A, 1, 4, 355, 19, 220, 0x00000002, 1001
-    widget 0x0B, 1, 4, 153, 223, 234, 0x000002BF, 704
+    widget 0x01, 1, 0, 359, 18, 240, 0xFFFFFFFF, 65535
+    widget 0x1A, 1, 4, 355, 22, 220, 0x00000002, 1001
+    widget 0x0B, 1, 4, 153, 223, 237, 0x000002BF, 704
     .byte 0x1E
 
 # 0x52295D
@@ -29547,10 +16026,10 @@ _ui_keyboard_shortcuts:
 # 0x522960
     .global _ui_keyboard_shortcuts_edit
 _ui_keyboard_shortcuts_edit:
-    widget 0x02, 0, 0, 279, 0, 71, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 278, 1, 13, 0x000003E7, 65535
+    widget 0x02, 0, 0, 279, 0, 83, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 278, 1, 16, 0x000003E7, 65535
     widget 0x09, 0, 265, 277, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 279, 15, 71, 0xFFFFFFFF, 65535
+    widget 0x01, 1, 0, 279, 18, 83, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x5229A1
@@ -29559,11 +16038,11 @@ _ui_keyboard_shortcuts_edit:
 # 0x5229A4
     .global _ui_music_selection
 _ui_music_selection:
-    widget 0x02, 0, 0, 359, 0, 237, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 358, 1, 13, 0x00000608, 65535
+    widget 0x02, 0, 0, 359, 0, 240, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 358, 1, 16, 0x00000608, 65535
     widget 0x09, 0, 345, 357, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 359, 15, 237, 0xFFFFFFFF, 65535
-    widget 0x1A, 1, 4, 355, 19, 236, 0x00000002, 1545
+    widget 0x01, 1, 0, 359, 18, 240, 0xFFFFFFFF, 65535
+    widget 0x1A, 1, 4, 355, 22, 239, 0x00000002, 1545
     .byte 0x1E
 
 # 0x5229F5
@@ -29572,104 +16051,101 @@ _ui_music_selection:
 # 0x5229F8
     .global _ui_options___widgets_0
 _ui_options___widgets_0:
-    widget 0x02, 0, 0, 365, 0, 143, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x000005D4, 65535
+    widget 0x02, 0, 0, 365, 0, 164, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x000005D4, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 142, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1486
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1487
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1488
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1489
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1490
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1491
-    widget 0x12, 1, 183, 355, 49, 60, 0x00000042, 65535
-    widget 0x0B, 1, 344, 354, 50, 59, 0x00000060, 65535
-    widget 0x1B, 1, 10, 355, 65, 76, 0x00000297, 664
-    widget 0x1B, 1, 10, 355, 80, 91, 0x00000299, 666
-    widget 0x12, 1, 183, 355, 94, 105, 0xFFFFFFFF, 1099
-    widget 0x0B, 1, 344, 354, 95, 104, 0x00000060, 1099
-    widget 0x12, 1, 183, 355, 109, 120, 0xFFFFFFFF, 1100
-    widget 0x0B, 1, 344, 354, 110, 119, 0x00000060, 1100
-    widget 0x12, 1, 183, 355, 124, 135, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 344, 354, 125, 134, 0x00000060, 65535
+    widget 0x01, 1, 0, 365, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1486
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1487
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1488
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1489
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1490
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1491
+    widget 0x12, 1, 183, 355, 52, 66, 0x00000042, 65535
+    widget 0x0B, 1, 344, 354, 53, 65, 0x00000060, 65535
+    widget 0x1B, 1, 10, 355, 71, 85, 0x00000297, 664
+    widget 0x1B, 1, 10, 355, 89, 103, 0x00000299, 666
+    widget 0x12, 1, 183, 355, 106, 120, 0xFFFFFFFF, 1099
+    widget 0x0B, 1, 344, 354, 107, 119, 0x00000060, 1099
+    widget 0x12, 1, 183, 355, 124, 138, 0xFFFFFFFF, 1100
+    widget 0x0B, 1, 344, 354, 125, 137, 0x00000060, 1100
+    widget 0x12, 1, 183, 355, 142, 156, 0xFFFFFFFF, 65535
+    widget 0x0B, 1, 344, 354, 143, 155, 0x00000060, 65535
     .byte 0x1E
 
-# 0x522B39
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x522B3C
     .global _ui_options___widgets_1
 _ui_options___widgets_1:
-    widget 0x02, 0, 0, 365, 0, 96, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x000005D5, 65535
+    widget 0x02, 0, 0, 365, 0, 108, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x000005D5, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 142, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1486
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1487
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1488
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1489
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1490
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1491
-    widget 0x12, 1, 10, 355, 49, 60, 0x00000055, 65535
-    widget 0x0B, 1, 344, 354, 50, 59, 0x00000060, 65535
-    widget 0x12, 1, 183, 355, 64, 75, 0x0000005A, 65535
-    widget 0x0B, 1, 344, 354, 65, 74, 0x00000060, 65535
-    widget 0x1B, 1, 10, 355, 79, 90, 0x000003F2, 1011
+    widget 0x01, 1, 0, 365, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1486
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1487
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1488
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1489
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1490
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1491
+    widget 0x12, 1, 10, 355, 52, 66, 0x00000055, 65535
+    widget 0x0B, 1, 344, 354, 53, 65, 0x00000060, 65535
+    widget 0x12, 1, 183, 355, 70, 84, 0x0000005A, 65535
+    widget 0x0B, 1, 344, 354, 71, 83, 0x00000060, 65535
+    widget 0x1B, 1, 10, 355, 88, 102, 0x000003F2, 1011
     .byte 0x1E
 
-# 0x522C2D
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x522C30
     .global _ui_options___widgets_2
 _ui_options___widgets_2:
-    widget 0x02, 0, 0, 365, 0, 128, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x000005D6, 65535
+    widget 0x02, 0, 0, 365, 0, 140, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x000005D6, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 142, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1486
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1487
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1488
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1489
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1490
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1491
-    widget 0x12, 1, 160, 355, 49, 60, 0x00000055, 65535
-    widget 0x0B, 1, 344, 354, 50, 59, 0x00000060, 65535
-    widget 0x09, 1, 10, 33, 64, 87, 0x0000094F, 1536
-    widget 0x09, 1, 34, 57, 64, 87, 0x00000950, 1537
-    widget 0x09, 1, 58, 81, 64, 87, 0x00000951, 1538
-    widget 0x05, 1, 256, 364, 64, 87, 0xFFFFFFFF, 1548
-    widget 0x12, 1, 10, 355, 93, 104, 0x00000056, 65535
-    widget 0x0B, 1, 344, 354, 94, 103, 0x00000060, 65535
-    widget 0x0B, 1, 183, 355, 108, 119, 0x00000606, 1543
+    widget 0x01, 1, 0, 365, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1486
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1487
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1488
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1489
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1490
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1491
+    widget 0x12, 1, 160, 355, 52, 66, 0x00000055, 65535
+    widget 0x0B, 1, 344, 354, 53, 65, 0x00000060, 65535
+    widget 0x09, 1, 10, 33, 70, 93, 0x0000094F, 1536
+    widget 0x09, 1, 34, 57, 70, 93, 0x00000950, 1537
+    widget 0x09, 1, 58, 81, 70, 93, 0x00000951, 1538
+    widget 0x05, 1, 256, 364, 70, 93, 0xFFFFFFFF, 1548
+    widget 0x12, 1, 10, 355, 99, 113, 0x00000056, 65535
+    widget 0x0B, 1, 344, 354, 100, 112, 0x00000060, 65535
+    widget 0x0B, 1, 183, 355, 117, 131, 0x00000606, 1543
     .byte 0x1E
 
-# 0x522D61
     .byte 0x00, 0x00, 0x00                               #        0 ...
 
 # 0x522D64
     .global _ui_options___widgets_3
 _ui_options___widgets_3:
-    widget 0x02, 0, 0, 365, 0, 146, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x000005D7, 65535
+    widget 0x02, 0, 0, 365, 0, 167, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x000005D7, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 142, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1486
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1487
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1488
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1489
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1490
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1491
-    widget 0x12, 1, 183, 355, 49, 60, 0x0000005B, 65535
-    widget 0x0B, 1, 344, 354, 50, 59, 0x00000060, 65535
-    widget 0x12, 1, 183, 355, 64, 75, 0x00000058, 65535
-    widget 0x0B, 1, 344, 354, 65, 74, 0x00000060, 65535
-    widget 0x12, 1, 183, 355, 84, 95, 0x0000005A, 1502
-    widget 0x0B, 1, 344, 354, 85, 94, 0x00000060, 1502
-    widget 0x12, 1, 183, 355, 99, 110, 0x000005E2, 1503
-    widget 0x0B, 1, 344, 354, 100, 109, 0x00000060, 1503
-    widget 0x1B, 1, 10, 355, 114, 125, 0x000005DC, 1501
-    widget 0x1B, 1, 10, 355, 129, 140, 0x000005DA, 1499
+    widget 0x01, 1, 0, 365, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1486
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1487
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1488
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1489
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1490
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1491
+    widget 0x12, 1, 183, 355, 52, 66, 0x0000005B, 65535
+    widget 0x0B, 1, 344, 354, 53, 65, 0x00000060, 65535
+    widget 0x12, 1, 183, 355, 70, 84, 0x00000058, 65535
+    widget 0x0B, 1, 344, 354, 71, 83, 0x00000060, 65535
+    widget 0x12, 1, 183, 355, 93, 107, 0x0000005A, 1502
+    widget 0x0B, 1, 344, 354, 94, 106, 0x00000060, 1502
+    widget 0x12, 1, 183, 355, 111, 125, 0x000005E2, 1503
+    widget 0x0B, 1, 344, 354, 112, 124, 0x00000060, 1503
+    widget 0x1B, 1, 10, 355, 129, 143, 0x000005DC, 1501
+    widget 0x1B, 1, 10, 355, 147, 161, 0x000005DA, 1499
     .byte 0x1E
 
 # 0x522EA5
@@ -29678,18 +16154,18 @@ _ui_options___widgets_3:
 # 0x522EA8
     .global _ui_options___widgets_4
 _ui_options___widgets_4:
-    widget 0x02, 0, 0, 365, 0, 86, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 364, 1, 13, 0x000005D8, 65535
+    widget 0x02, 0, 0, 365, 0, 95, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 364, 1, 16, 0x000005D8, 65535
     widget 0x09, 0, 351, 363, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 142, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1486
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1487
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1488
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1489
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1490
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1491
-    widget 0x1B, 1, 10, 355, 50, 61, 0x000003EA, 1003
-    widget 0x0B, 1, 26, 185, 64, 75, 0x000002BD, 1004
+    widget 0x01, 1, 0, 365, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1486
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1487
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1488
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1489
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1490
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1491
+    widget 0x1B, 1, 10, 355, 53, 67, 0x000003EA, 1003
+    widget 0x0B, 1, 26, 185, 70, 84, 0x000002BD, 1004
     .byte 0x1E
 
 # 0x522F69
@@ -29698,19 +16174,19 @@ _ui_options___widgets_4:
 # 0x522F6C
     .global _ui_options___widgets_5
 _ui_options___widgets_5:
-    widget 0x02, 0, 0, 419, 0, 101, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 418, 1, 13, 0x000005D9, 65535
+    widget 0x02, 0, 0, 419, 0, 113, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 418, 1, 16, 0x000005D9, 65535
     widget 0x09, 0, 405, 417, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 365, 41, 142, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1486
-    widget 0x08, 1, 34, 64, 15, 41, 0x20000953, 1487
-    widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1488
-    widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1489
-    widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1490
-    widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1491
-    widget 0x1B, 1, 10, 409, 49, 60, 0x0000077F, 1920
-    widget 0x0B, 1, 335, 409, 64, 75, 0x000006A4, 65535
-    widget 0x1B, 1, 10, 409, 79, 90, 0x00000829, 2090
+    widget 0x01, 1, 0, 365, 44, 163, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1486
+    widget 0x08, 1, 34, 64, 18, 44, 0x20000953, 1487
+    widget 0x08, 1, 65, 95, 18, 44, 0x20000953, 1488
+    widget 0x08, 1, 96, 126, 18, 44, 0x20000953, 1489
+    widget 0x08, 1, 127, 157, 18, 44, 0x20000953, 1490
+    widget 0x08, 1, 158, 188, 18, 44, 0x20000953, 1491
+    widget 0x1B, 1, 10, 409, 52, 66, 0x0000077F, 1920
+    widget 0x0B, 1, 335, 409, 70, 84, 0x000006A4, 65535
+    widget 0x1B, 1, 10, 409, 88, 102, 0x00000829, 2090
     .byte 0x1E
 
 # 0x52303D
@@ -29719,11 +16195,11 @@ _ui_options___widgets_5:
 # 0x523040
     .global _ui_window_44
 _ui_window_44:
-    widget 0x01, 0, 0, 279, 0, 91, 0xFFFFFFFF, 65535
-    widget 0x16, 0, 1, 278, 1, 13, 0x00000000, 65535
-    widget 0x0B, 0, 267, 277, 2, 12, 0x00000038, 60
-    widget 0x0B, 0, 20, 119, 77, 88, 0x0000065F, 65535
-    widget 0x0B, 0, 160, 259, 77, 88, 0x000000BA, 65535
+    widget 0x01, 0, 0, 279, 0, 112, 0xFFFFFFFF, 65535
+    widget 0x16, 0, 1, 278, 1, 16, 0x00000000, 65535
+    widget 0x0B, 0, 267, 277, 2, 15, 0x00000038, 60
+    widget 0x0B, 0, 20, 119, 95, 109, 0x0000065F, 65535
+    widget 0x0B, 0, 160, 259, 95, 109, 0x000000BA, 65535
     .byte 0x1E
 
 # 0x523091
@@ -29732,9 +16208,9 @@ _ui_window_44:
 # 0x523094
     .global _ui_prompt_confirm_display_mode
 _ui_prompt_confirm_display_mode:
-    widget 0x01, 0, 0, 279, 0, 91, 0xFFFFFFFF, 65535
-    widget 0x16, 0, 1, 278, 1, 13, 0x000007D1, 65535
-    widget 0x0B, 0, 90, 189, 77, 88, 0x0000065F, 65535
+    widget 0x01, 0, 0, 279, 0, 112, 0xFFFFFFFF, 65535
+    widget 0x16, 0, 1, 278, 1, 16, 0x000007D1, 65535
+    widget 0x0B, 0, 90, 189, 95, 109, 0x0000065F, 65535
     .byte 0x1E
 
 # 0x5230C5
@@ -29749,22 +16225,22 @@ __5230C8:
 # 0x5230CC
     .global _ui_vehicle_list___widgets_0
 _ui_vehicle_list___widgets_0:
-    widget 0x02, 0, 0, 549, 0, 212, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 548, 1, 13, 0xFFFFFFFF, 65535
+    widget 0x02, 0, 0, 549, 0, 245, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 548, 1, 16, 0xFFFFFFFF, 65535
     widget 0x09, 0, 535, 547, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 549, 41, 212, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1194
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1195
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1196
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1197
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1198
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1199
-    widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
-    widget 0x0E, 1, 4, 313, 43, 54, 0xFFFFFFFF, 1153
-    widget 0x0E, 1, 314, 413, 43, 54, 0xFFFFFFFF, 1154
-    widget 0x0E, 1, 414, 478, 43, 54, 0xFFFFFFFF, 1155
-    widget 0x0E, 1, 479, 545, 43, 54, 0xFFFFFFFF, 1156
-    widget 0x1A, 1, 3, 546, 56, 193, 0x00000002, 65535
+    widget 0x01, 1, 0, 549, 44, 245, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1194
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1195
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1196
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1197
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1198
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1199
+    widget 0x09, 0, 0, 25, 17, 42, 0xFFFFFFFF, 1465
+    widget 0x0E, 1, 4, 313, 46, 60, 0xFFFFFFFF, 1153
+    widget 0x0E, 1, 314, 413, 46, 60, 0xFFFFFFFF, 1154
+    widget 0x0E, 1, 414, 478, 46, 60, 0xFFFFFFFF, 1155
+    widget 0x0E, 1, 479, 545, 46, 60, 0xFFFFFFFF, 1156
+    widget 0x1A, 1, 3, 546, 62, 226, 0x00000002, 65535
     .byte 0x1E
 
 # 0x5231CD
@@ -29773,26 +16249,26 @@ _ui_vehicle_list___widgets_0:
 # 0x5231D0
     .global _ui_build_vehicle___widgets_0
 _ui_build_vehicle___widgets_0:
-    widget 0x02, 0, 0, 379, 0, 232, 0xFFFFFFFF, 65535
-    widget 0x18, 0, 1, 378, 1, 13, 0xFFFFFFFF, 65535
+    widget 0x02, 0, 0, 379, 0, 271, 0xFFFFFFFF, 65535
+    widget 0x18, 0, 1, 378, 1, 16, 0xFFFFFFFF, 65535
     widget 0x09, 0, 365, 377, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 379, 41, 232, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1188
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1189
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1190
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1191
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1192
-    widget 0x08, 1, 3, 33, 15, 41, 0x20000953, 1193
-    widget 0x08, 1, 5, 35, 43, 69, 0x20000953, 1286
-    widget 0x08, 1, 36, 66, 43, 69, 0x20000953, 1286
-    widget 0x08, 1, 67, 97, 43, 69, 0x20000953, 1286
-    widget 0x08, 1, 98, 128, 43, 69, 0x20000953, 1286
-    widget 0x08, 1, 129, 159, 43, 69, 0x20000953, 1286
-    widget 0x08, 1, 160, 190, 43, 69, 0x20000953, 1286
-    widget 0x08, 1, 191, 221, 43, 69, 0x20000953, 1286
-    widget 0x08, 1, 222, 252, 43, 69, 0x20000953, 1286
-    widget 0x1A, 1, 3, 376, 72, 217, 0x00000002, 65535
-    widget 0x1A, 1, 250, 429, 44, 109, 0x00000000, 65535
+    widget 0x01, 1, 0, 379, 44, 271, 0xFFFFFFFF, 65535
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1188
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1189
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1190
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1191
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1192
+    widget 0x08, 1, 3, 33, 18, 44, 0x20000953, 1193
+    widget 0x08, 1, 5, 35, 46, 72, 0x20000953, 1286
+    widget 0x08, 1, 36, 66, 46, 72, 0x20000953, 1286
+    widget 0x08, 1, 67, 97, 46, 72, 0x20000953, 1286
+    widget 0x08, 1, 98, 128, 46, 72, 0x20000953, 1286
+    widget 0x08, 1, 129, 159, 46, 72, 0x20000953, 1286
+    widget 0x08, 1, 160, 190, 46, 72, 0x20000953, 1286
+    widget 0x08, 1, 191, 221, 46, 72, 0x20000953, 1286
+    widget 0x08, 1, 222, 252, 46, 72, 0x20000953, 1286
+    widget 0x1A, 1, 3, 376, 75, 253, 0x00000002, 65535
+    widget 0x1A, 1, 250, 429, 47, 112, 0x00000000, 65535
     .byte 0x1E
 
 # 0x523311
@@ -29958,7 +16434,11 @@ __523354:
     .global __523358
 __523358:
 # 0x523358
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
+    .byte 0x00, 0x00, 0x00, 0x00
+
+    .global __52335C
+__52335C:
+    .byte 0x00, 0x00, 0x00, 0x00 #        0 ........
 
 # 0x523360
     .global __523360
@@ -30300,7 +16780,7 @@ __5233CC:
 # 0x5234CC
     .global _ui_tooltip_widgets
 _ui_tooltip_widgets:
-    widget 0x03, 0, 0, 199, 0, 31, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 199, 0, 40, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x5234DD
@@ -30318,7 +16798,7 @@ _ui_dropdown_widgets:
 # 0x5234F4
     .global _ui_window_30_widgets
 _ui_window_30_widgets:
-    widget 0x03, 0, 0, 219, 0, 29, 0xFFFFFFFF, 65535
+    widget 0x03, 0, 0, 219, 0, 38, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x523505
@@ -30333,9 +16813,9 @@ __523508:
 # 0x52350C
     .global _ui_window_47_widgets
 _ui_window_47_widgets:
-    widget 0x02, 0, 0, 349, 0, 46, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 348, 1, 13, 0x000004E2, 65535
-    widget 0x01, 1, 0, 349, 15, 46, 0xFFFFFFFF, 65535
+    widget 0x02, 0, 0, 349, 0, 49, 0xFFFFFFFF, 65535
+    widget 0x19, 0, 1, 348, 1, 16, 0x000004E2, 65535
+    widget 0x01, 1, 0, 349, 18, 49, 0xFFFFFFFF, 65535
     .byte 0x1E
 
 # 0x52353D
@@ -30344,16 +16824,9 @@ _ui_window_47_widgets:
 # 0x523540
     .global _ui_text_input_widgets
 _ui_text_input_widgets:
-    widget 0x02, 0, 0, 329, 0, 89, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 328, 1, 13, 0xFFFFFFFF, 65535
-    widget 0x09, 0, 315, 327, 2, 14, 0x00000911, 60
-    widget 0x01, 1, 0, 329, 15, 89, 0xFFFFFFFF, 65535
-    widget 0x11, 1, 4, 325, 58, 71, 0xFFFFFFFF, 65535
-    widget 0x0B, 1, 256, 325, 74, 85, 0x000000BB, 65535
-    .byte 0x1E
 
 # 0x5235A1
-    .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
+    .byte  0x00, 0x00, 0x00, 0x00, 0x00 #        0 ........
     .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x75 #        8 .......u
     .byte 0x98, 0x00, 0x00, 0x73, 0x98, 0x00, 0x00       #       10 ...s...
 

@@ -1437,6 +1437,11 @@ _sub_497A6A:
     mov dword ptr [esp + 0x10], eax                      # 00497C06
 .L497C0A:
     pop esi                                              # 00497C0A
+    push   edi
+    mov    edi,DWORD PTR [0x11c7acc]
+    call   _sub_497C11
+    pop    edi
+
     pop esi                                              # 00497C0B
     pop ecx                                              # 00497C0C
     pop ebx                                              # 00497C0D
@@ -3250,12 +3255,12 @@ _sub_498EAF:
     add ax, 0xc                                          # 00498F2F
     mov word ptr [_ui_town___widgets_0+36], ax           # 00498F33
     sub ax, 0x17                                         # 00498F39
-    sub cx, 0xd                                          # 00498F3D
+    sub cx, 0x10                                         # 00498F3D
     mov word ptr [_ui_town___widgets_0+116], ax          # 00498F41
     mov word ptr [_ui_town___widgets_0+120], cx          # 00498F47
     add cx, 2                                            # 00498F4E
     mov word ptr [_ui_town___widgets_0+134], cx          # 00498F52
-    add cx, 9                                            # 00498F59
+    add cx, 0xc                                            # 00498F59
     mov word ptr [_ui_town___widgets_0+136], cx          # 00498F5D
     mov ax, word ptr [esi + 0x34]                        # 00498F64
     sub ax, 0xe                                          # 00498F68
@@ -3475,7 +3480,7 @@ _sub_4991BC:
     call _sub_4999A1                                     # 00499257
     call _sub_4CA4BD                                     # 0049925C
     mov word ptr [esi + 0x34], 0xdf                      # 00499261
-    mov word ptr [esi + 0x36], 0xa1                      # 00499267
+    mov word ptr [esi + 0x36], 0xa7                      # 00499267
     mov ebp, dword ptr [esi]                             # 0049926D
     call dword ptr [ebp + 8]                             # 0049926F
     mov ebp, dword ptr [esi]                             # 00499272
@@ -3603,7 +3608,7 @@ _sub_49938B:
 _sub_4993A5:
     call _sub_498E9B                                     # 004993A5
     mov word ptr [esi + 0x38], 0xc0                      # 004993AA
-    mov word ptr [esi + 0x3c], 0xa1                      # 004993B0
+    mov word ptr [esi + 0x3c], 0xa7                      # 004993B0
     mov word ptr [esi + 0x3a], 0x258                     # 004993B6
     mov word ptr [esi + 0x3e], 0x1b8                     # 004993BC
     mov ax, word ptr [esi + 0x38]                        # 004993C2
@@ -3640,7 +3645,7 @@ _sub_4993A5:
     jne .L499430                                         # 0049942A
     add ax, 0x16                                         # 0049942C
 .L499430:
-    sub bx, 0x3b                                         # 00499430
+    sub bx, 0x41                                         # 00499430
     cmp ax, word ptr [edi]                               # 00499434
     jne .L49943F                                         # 00499437
     cmp bx, word ptr [edi + 2]                           # 00499439
@@ -3708,15 +3713,15 @@ _sub_4994F9:
     mov cx, word ptr [esi + 0x32]                        # 00499507
     mov bx, word ptr [esi + 0x34]                        # 0049950B
     mov dx, word ptr [esi + 0x36]                        # 0049950F
-    add cx, 0x2c                                         # 00499513
-    sub dx, 0x2c                                         # 00499517
+    add cx, 0x2f                                         # 00499513
+    sub dx, 0x2f                                         # 00499517
     push edi                                             # 0049951B
     call _sub_4CEC50                                     # 0049951C
     je .L4996AA                                          # 00499521
     mov cx, 0x29                                         # 00499527
     mov dx, word ptr [esi + 0x36]                        # 0049952B
-    sub dx, 0x39                                         # 0049952F
-    mov bx, 0xe                                          # 00499533
+    sub dx, 0x3f                                         # 0049952F
+    mov bx, 0x11                                         # 00499533
     movzx ebp, word ptr [esi + 0x40]                     # 00499537
     imul ebp, ebp, 0x270                                 # 0049953B
     push ebx                                             # 00499541
@@ -3744,7 +3749,7 @@ _sub_4994F9:
     push ecx                                             # 00499585
     push edx                                             # 00499586
     sub cx, 2                                            # 00499587
-    sub dx, 6                                            # 0049958B
+    sub dx, 9                                            # 0049958B
     mov bx, 0x54d                                        # 0049958F
     msvc_xor al, al                                      # 00499593
     mov_offset esi, __112C826                            # 00499595
@@ -3770,7 +3775,7 @@ _sub_4994F9:
     mov word ptr [__112C826], dx                         # 004995D7
     add cx, word ptr [esp + 0x18]                        # 004995DE
     mov dx, word ptr [esp + 0x1c]                        # 004995E3
-    sub dx, 0xc                                          # 004995E8
+    sub dx, 0xf                                          # 004995E8
     msvc_or bh, bh                                       # 004995EC
     jne .L499604                                         # 004995EE
     mov bx, 0x54e                                        # 004995F0
@@ -3784,7 +3789,7 @@ _sub_4994F9:
 .L499604:
     msvc_mov ax, cx                                      # 00499604
     msvc_mov cx, dx                                      # 00499607
-    add cx, 0xb                                          # 0049960A
+    add cx, 0xe                                          # 0049960A
     mov dx, word ptr [esp + 0x14]                        # 0049960E
     msvc_mov bx, ax                                      # 00499613
     mov esi, dword ptr [esp + 0x10]                      # 00499616
@@ -3874,9 +3879,9 @@ _sub_4996DC:
 _sub_4996F6:
     call _sub_498E9B                                     # 004996F6
     mov word ptr [esi + 0x38], 0x12b                     # 004996FB
-    mov word ptr [esi + 0x3c], 0xac                      # 00499701
+    mov word ptr [esi + 0x3c], 0xb5                      # 00499701
     mov word ptr [esi + 0x3a], 0x12b                     # 00499707
-    mov word ptr [esi + 0x3e], 0x147                     # 0049970D
+    mov word ptr [esi + 0x3e], 0x150                     # 0049970D
     mov ax, word ptr [esi + 0x38]                        # 00499713
     cmp ax, word ptr [esi + 0x34]                        # 00499717
     jbe .L499726                                         # 0049971B
@@ -3950,7 +3955,7 @@ _sub_4997F1:
     mov cx, word ptr [esi + 0x30]                        # 004997FB
     mov dx, word ptr [esi + 0x32]                        # 004997FF
     add cx, 4                                            # 00499803
-    add dx, 0x2e                                         # 00499807
+    add dx, 0x31                                         # 00499807
     push ecx                                             # 0049980B
     push edx                                             # 0049980C
     push esi                                             # 0049980D
@@ -3960,7 +3965,7 @@ _sub_4997F1:
     pop esi                                              # 00499819
     pop edx                                              # 0049981A
     pop ecx                                              # 0049981B
-    add dx, 0xe                                          # 0049981C
+    add dx, 0x11                                         # 0049981C
     add cx, 4                                            # 00499820
     movzx ebx, word ptr [esi + 0x40]                     # 00499824
     imul ebx, ebx, 0x270                                 # 00499828
@@ -4021,7 +4026,7 @@ _sub_4997F1:
     pop edx                                              # 004998D5
     pop ecx                                              # 004998D6
     pop ebx                                              # 004998D7
-    add dx, 0xa                                          # 004998D8
+    add dx, 0xd                                          # 004998D8
 .L4998DC:
     inc ebp                                              # 004998DC
     cmp ebp, 0xf                                         # 004998DD
@@ -4062,9 +4067,9 @@ _sub_499917:
 _sub_499936:
     call _sub_498E9B                                     # 00499936
     mov word ptr [esi + 0x38], 0x154                     # 0049993B
-    mov word ptr [esi + 0x3c], 0xd0                      # 00499941
+    mov word ptr [esi + 0x3c], 0x103                      # 00499941
     mov word ptr [esi + 0x3a], 0x154                     # 00499947
-    mov word ptr [esi + 0x3e], 0xd0                      # 0049994D
+    mov word ptr [esi + 0x3e], 0x103                      # 0049994D
     mov ax, word ptr [esi + 0x38]                        # 00499953
     cmp ax, word ptr [esi + 0x34]                        # 00499957
     jbe .L499966                                         # 0049995B
@@ -4286,7 +4291,7 @@ _sub_499B7E:
 _sub_499C0D:
     push edx                                             # 00499C0D
     mov ecx, 0x10021                                     # 00499C0E
-    mov ebx, 0xa100df                                    # 00499C13
+    mov ebx, 0xa700df                                    # 00499C13
     mov_offset edx, _ui_town___events_0                  # 00499C18
     call _sub_4C9C68                                     # 00499C1D
     mov_dword_ptr_reg esi, 0x2c, _ui_town___widgets_0    # 00499C22
@@ -4298,7 +4303,7 @@ _sub_499C0D:
     mov word ptr [esi + 0x872], 0                        # 00499C3F
     call _sub_4999A1                                     # 00499C48
     mov word ptr [esi + 0x38], 0xc0                      # 00499C4D
-    mov word ptr [esi + 0x3c], 0xa1                      # 00499C53
+    mov word ptr [esi + 0x3c], 0xa7                      # 00499C53
     mov word ptr [esi + 0x3a], 0x258                     # 00499C59
     mov word ptr [esi + 0x3e], 0x1b8                     # 00499C5F
     bts dword ptr [esi + 0x42], 9                        # 00499C65
@@ -4322,7 +4327,7 @@ _sub_499C83:
 .L499C9A:
     call _sub_499CFC                                     # 00499C9A
     mov word ptr [esi + 0x34], 0x258                     # 00499C9F
-    mov word ptr [esi + 0x36], 0xc5                      # 00499CA5
+    mov word ptr [esi + 0x36], 0xcb                      # 00499CA5
     mov word ptr [esi + 0x870], 0                        # 00499CAB
     call _sub_4CA4BD                                     # 00499CB4
     mov eax, dword ptr [__4FF764]                        # 00499CB9
@@ -4349,7 +4354,7 @@ _sub_499CFC:
     mov eax, 0x1d0000                                    # 00499CFC
     mov ax, word ptr [__50B894]                          # 00499D01
     sub ax, 0x258                                        # 00499D07
-    mov ebx, 0xc50258                                    # 00499D0B
+    mov ebx, 0xcb0258                                    # 00499D0B
     mov ecx, 0x20                                        # 00499D10
     mov_offset edx, _ui_town_list___events_0             # 00499D15
     call _sub_4C9F5D                                     # 00499D1A
@@ -4572,7 +4577,7 @@ _sub_499F53:
     add ax, 0xc                                          # 00499FBF
     mov word ptr [_ui_town_list___widgets_0+36], ax      # 00499FC3
     dec ax                                               # 00499FC9
-    sub bx, 0xd                                          # 00499FCB
+    sub bx, 0x10                                         # 00499FCB
     mov word ptr [_ui_town_list___widgets_0+196], ax     # 00499FCF
     mov word ptr [_ui_town_list___widgets_0+200], bx     # 00499FD5
     mov ax, word ptr [esi + 0x34]                        # 00499FDC
@@ -4638,7 +4643,7 @@ _sub_49A0A7:
     mov dx, word ptr [esi + 0x32]                        # 0049A0B6
     add cx, 4                                            # 0049A0BA
     add dx, word ptr [esi + 0x36]                        # 0049A0BE
-    sub dx, 0xc                                          # 0049A0C2
+    sub dx, 0xf                                          # 0049A0C2
     mov bx, 0x22b                                        # 0049A0C6
     mov ax, word ptr [esi + 0x83c]                       # 0049A0CA
     mov word ptr [__112C828], ax                         # 0049A0D1
@@ -4673,7 +4678,7 @@ _sub_49A0F8:
     cmp ax, word ptr [esi + 0x83c]                       # 0049A123
     jae .L49A27D                                         # 0049A12A
     msvc_mov cx, dx                                      # 0049A130
-    add cx, 0xa                                          # 0049A133
+    add cx, 0xd                                          # 0049A133
     cmp cx, word ptr [edi + 6]                           # 0049A137
     jle .L49A273                                         # 0049A13B
     mov cx, word ptr [edi + 6]                           # 0049A141
@@ -4691,7 +4696,7 @@ _sub_49A0F8:
     push ebp                                             # 0049A170
     push esi                                             # 0049A171
     msvc_mov cx, dx                                      # 0049A172
-    add dx, 9                                            # 0049A175
+    add dx, 0xc                                          # 0049A175
     msvc_xor ax, ax                                      # 0049A179
     mov bx, word ptr [esi + 0x34]                        # 0049A17C
     mov ebp, 0x2000030                                   # 0049A180
@@ -4703,8 +4708,6 @@ _sub_49A0F8:
     mov bx, 0x1c9                                        # 0049A18E
 .L49A192:
     imul ebp, ebp, 0x270                                 # 0049A192
-    cmp word ptr [ebp + _towns], -1                      # 0049A198
-    je .L49A273                                          # 0049A1A0
     push eax                                             # 0049A1A6
     push ebx                                             # 0049A1A7
     push edx                                             # 0049A1A8
@@ -4760,7 +4763,7 @@ _sub_49A0F8:
     pop ebx                                              # 0049A271
     pop eax                                              # 0049A272
 .L49A273:
-    add dx, 0xa                                          # 0049A273
+    add dx, 0xd                                          # 0049A273
     inc eax                                              # 0049A277
     msvc_jmp .L49A123                                    # 0049A278
 .L49A27D:
@@ -4848,7 +4851,7 @@ _sub_49A37E:
     mov word ptr [esi + 0x3a], 0x258                     # 0049A38A
     mov word ptr [esi + 0x3e], 0x384                     # 0049A390
     mov word ptr [esi + 0x34], 0x258                     # 0049A396
-    mov word ptr [esi + 0x36], 0xc5                      # 0049A39C
+    mov word ptr [esi + 0x36], 0xcb                      # 0049A39C
     mov word ptr [esi + 0x83c], 0                        # 0049A3A2
     mov word ptr [esi + 0x840], 0xffff                   # 0049A3AB
     call _sub_499DDE                                     # 0049A3B4
@@ -4857,11 +4860,11 @@ _sub_49A37E:
     .global _sub_49A3BE
 _sub_49A3BE:
     mov word ptr [esi + 0x38], 0xdc                      # 0049A3BE
-    mov word ptr [esi + 0x3c], 0x57                      # 0049A3C4
+    mov word ptr [esi + 0x3c], 0x60                      # 0049A3C4
     mov word ptr [esi + 0x3a], 0xdc                      # 0049A3CA
-    mov word ptr [esi + 0x3e], 0x57                      # 0049A3D0
+    mov word ptr [esi + 0x3e], 0x60                      # 0049A3D0
     mov word ptr [esi + 0x34], 0xdc                      # 0049A3D6
-    mov word ptr [esi + 0x36], 0x57                      # 0049A3DC
+    mov word ptr [esi + 0x36], 0x60                      # 0049A3DC
     mov dx, 5                                            # 0049A3E2
     mov al, 0x26                                         # 0049A3E6
     call _sub_4CE367                                     # 0049A3E8
@@ -4872,11 +4875,11 @@ _sub_49A3BE:
     .global _sub_49A3FF
 _sub_49A3FF:
     mov word ptr [esi + 0x38], 0x258                     # 0049A3FF
-    mov word ptr [esi + 0x3c], 0xac                      # 0049A405
+    mov word ptr [esi + 0x3c], 0xb2                      # 0049A405
     mov word ptr [esi + 0x3a], 0x258                     # 0049A40B
-    mov word ptr [esi + 0x3e], 0xac                      # 0049A411
+    mov word ptr [esi + 0x3e], 0xb2                      # 0049A411
     mov word ptr [esi + 0x34], 0x258                     # 0049A417
-    mov word ptr [esi + 0x36], 0xac                      # 0049A41D
+    mov word ptr [esi + 0x36], 0xb2                      # 0049A41D
     mov dx, 6                                            # 0049A423
     cmp word ptr [esi + 0x870], 3                        # 0049A427
     jne .L49A435                                         # 0049A42F
@@ -4940,7 +4943,7 @@ _sub_49A4D8:
     .global _sub_49A4FA
 _sub_49A4FA:
     movzx edx, word ptr [esi + 0x83c]                    # 0049A4FA
-    imul edx, edx, 0xa                                   # 0049A501
+    imul edx, edx, 0xd                                   # 0049A501
     ret                                                  # 0049A504
 
     .global _sub_49A505
@@ -4949,7 +4952,7 @@ _sub_49A505:
     jne _sub_49A599                                      # 0049A509
     movzx eax, dx                                        # 0049A50F
     msvc_xor edx, edx                                    # 0049A512
-    mov ecx, 0xa                                         # 0049A514
+    mov ecx, 0xd                                         # 0049A514
     div ecx                                              # 0049A519
     cmp ax, word ptr [esi + 0x83c]                       # 0049A51B
     jae _sub_49A599                                      # 0049A522
@@ -4963,7 +4966,7 @@ _sub_49A532:
     and dword ptr [esi + 0x42], 0xffffbfff               # 0049A532
     movzx eax, dx                                        # 0049A539
     msvc_xor edx, edx                                    # 0049A53C
-    mov ecx, 0xa                                         # 0049A53E
+    mov ecx, 0xd                                         # 0049A53E
     div ecx                                              # 0049A543
     mov dx, 0xffff                                       # 0049A545
     cmp ax, word ptr [esi + 0x83c]                       # 0049A549
@@ -4980,7 +4983,7 @@ _sub_49A532:
 _sub_49A56D:
     movzx eax, dx                                        # 0049A56D
     msvc_xor edx, edx                                    # 0049A570
-    mov ecx, 0xa                                         # 0049A572
+    mov ecx, 0xd                                         # 0049A572
     div ecx                                              # 0049A577
     cmp ax, word ptr [esi + 0x83c]                       # 0049A579
     jae _sub_49A599                                      # 0049A580
@@ -5055,7 +5058,7 @@ _sub_49A627:
     mov dx, word ptr [esi + 0x32]                        # 0049A658
     add cx, 3                                            # 0049A65C
     add dx, word ptr [esi + 0x36]                        # 0049A660
-    sub dx, 0xd                                          # 0049A664
+    sub dx, 0x10                                          # 0049A664
     mov bx, 0x580                                        # 0049A668
     msvc_xor al, al                                      # 0049A66C
     call _sub_494B3F                                     # 0049A66E
@@ -5298,7 +5301,7 @@ _sub_49A8A6:
     mov ax, word ptr [esi + 0x34]                        # 0049A95B
     mov cx, word ptr [esi + 0x36]                        # 0049A95F
     sub ax, 0x1a                                         # 0049A963
-    sub cx, 0xe                                          # 0049A967
+    sub cx, 0x11                                         # 0049A967
     mov word ptr [_ui_town_list___widgets_2+132], ax     # 0049A96B
     mov word ptr [_ui_town_list___widgets_2+136], cx     # 0049A971
     inc ax                                               # 0049A978
@@ -5326,7 +5329,7 @@ _sub_49A9C2:
     mov dx, word ptr [esi + 0x32]                        # 0049A9D1
     add cx, 3                                            # 0049A9D5
     add dx, word ptr [esi + 0x36]                        # 0049A9D9
-    sub dx, 0xd                                          # 0049A9DD
+    sub dx, 0x10                                          # 0049A9DD
     movsx ebp, word ptr [esi + 0x846]                    # 0049A9E1
     cmp bp, -1                                           # 0049A9E8
     jne .L49A9FA                                         # 0049A9EC
@@ -5635,7 +5638,7 @@ _sub_49AD51:
     sub ax, word ptr [esi + 0x30]                        # 0049AD86
     sub bx, word ptr [esi + 0x32]                        # 0049AD8A
     add ax, 0x1a                                         # 0049AD8E
-    cmp bx, 0x2a                                         # 0049AD92
+    cmp bx, 0x2d                                         # 0049AD92
     jb .L49ADA2                                          # 0049AD96
     cmp ax, word ptr [esi + 0x34]                        # 0049AD98
     ja .L49AE31                                          # 0049AD9C
@@ -5650,16 +5653,16 @@ _sub_49AD51:
     jl .L49AE10                                          # 0049ADC6
     mov ax, word ptr [esi + 0x52]                        # 0049ADC8
     dec ax                                               # 0049ADCC
-    add ax, 0x3c                                         # 0049ADCE
-    cmp ax, 0x1f4                                        # 0049ADD2
+    add ax, 0x42                                         # 0049ADCE
+    cmp ax, 0x1fa                                        # 0049ADD2
     jbe .L49ADDC                                         # 0049ADD6
-    mov ax, 0x1f4                                        # 0049ADD8
+    mov ax, 0x1fa                                        # 0049ADD8
 .L49ADDC:
     cmp word ptr [__50B896], 0x258                       # 0049ADDC
     jae .L49ADF1                                         # 0049ADE5
-    cmp ax, 0x114                                        # 0049ADE7
+    cmp ax, 0x11a                                        # 0049ADE7
     jbe .L49ADF1                                         # 0049ADEB
-    mov ax, 0x114                                        # 0049ADED
+    mov ax, 0x11a                                        # 0049ADED
 .L49ADF1:
     mov word ptr [esi + 0x38], 0x258                     # 0049ADF1
     mov word ptr [esi + 0x3c], ax                        # 0049ADF7
@@ -5672,9 +5675,9 @@ _sub_49AD51:
     cmp byte ptr [__52336D], 7                           # 0049AE10
     je .L49AE31                                          # 0049AE17
     mov word ptr [esi + 0x38], 0x258                     # 0049AE19
-    mov word ptr [esi + 0x3c], 0xac                      # 0049AE1F
+    mov word ptr [esi + 0x3c], 0xb2                      # 0049AE1F
     mov word ptr [esi + 0x3a], 0x258                     # 0049AE25
-    mov word ptr [esi + 0x3e], 0xac                      # 0049AE2B
+    mov word ptr [esi + 0x3e], 0xb2                      # 0049AE2B
 .L49AE31:
     inc word ptr [esi + 0x872]                           # 0049AE31
     mov ebp, dword ptr [esi]                             # 0049AE38

@@ -4324,12 +4324,12 @@ _sub_48E352:
     add ax, 0xc                                          # 0048E3F4
     mov word ptr [_ui_station___widgets_0+36], ax        # 0048E3F8
     sub ax, 1                                            # 0048E3FE
-    sub cx, 0xd                                          # 0048E402
+    sub cx, 0x10                                          # 0048E402
     mov word ptr [_ui_station___widgets_0+116], ax       # 0048E406
     mov word ptr [_ui_station___widgets_0+120], cx       # 0048E40C
     add cx, 2                                            # 0048E413
     mov word ptr [_ui_station___widgets_0+134], cx       # 0048E417
-    add cx, 9                                            # 0048E41E
+    add cx, 0xC                                            # 0048E41E
     mov word ptr [_ui_station___widgets_0+136], cx       # 0048E422
     mov ax, word ptr [esi + 0x34]                        # 0048E429
     sub ax, 0xe                                          # 0048E42D
@@ -4572,7 +4572,7 @@ _sub_48E6F1:
 _sub_48E70B:
     call _sub_48E32C                                     # 0048E70B
     mov word ptr [esi + 0x38], 0xc0                      # 0048E710
-    mov word ptr [esi + 0x3c], 0x89                      # 0048E716
+    mov word ptr [esi + 0x3c], 0xa4                      # 0048E716
     mov word ptr [esi + 0x3a], 0x258                     # 0048E71C
     mov word ptr [esi + 0x3e], 0x1b8                     # 0048E722
     mov ax, word ptr [esi + 0x38]                        # 0048E728
@@ -4605,7 +4605,7 @@ _sub_48E70B:
     mov ax, word ptr [esi + 0x34]                        # 0048E77B
     mov bx, word ptr [esi + 0x36]                        # 0048E77F
     sub ax, 8                                            # 0048E783
-    sub bx, 0x3b                                         # 0048E787
+    sub bx, 0x41                                         # 0048E787
     cmp ax, word ptr [edi]                               # 0048E78B
     jne .L48E796                                         # 0048E78E
     cmp bx, word ptr [edi + 2]                           # 0048E790
@@ -4669,12 +4669,12 @@ _sub_48E7C0:
     add ax, 0xc                                          # 0048E862
     mov word ptr [_ui_station___widgets_1+36], ax        # 0048E866
     sub ax, 0x17                                         # 0048E86C
-    sub cx, 0xd                                          # 0048E870
+    sub cx, 0x10                                         # 0048E870
     mov word ptr [_ui_station___widgets_1+116], ax       # 0048E874
     mov word ptr [_ui_station___widgets_1+120], cx       # 0048E87A
     add cx, 2                                            # 0048E881
     mov word ptr [_ui_station___widgets_1+134], cx       # 0048E885
-    add cx, 9                                            # 0048E88C
+    add cx, 0xC                                            # 0048E88C
     mov word ptr [_ui_station___widgets_1+136], cx       # 0048E890
     mov ax, word ptr [esi + 0x34]                        # 0048E897
     sub ax, 0xe                                          # 0048E89B
@@ -4835,7 +4835,7 @@ _sub_48E986:
     pop esi                                              # 0048EA74
     pop ebp                                              # 0048EA75
     pop edx                                              # 0048EA76
-    add edx, 0xa                                         # 0048EA77
+    add edx, 0xd                                         # 0048EA77
     mov ecx, dword ptr [esp]                             # 0048EA7A
     movzx ecx, word ptr [ecx + _stations+48]             # 0048EA7D
     cmp cx, word ptr [esi + 0x40]                        # 0048EA84
@@ -4858,7 +4858,7 @@ _sub_48E986:
     pop esi                                              # 0048EACF
     pop ebp                                              # 0048EAD0
     pop edx                                              # 0048EAD1
-    add edx, 0xa                                         # 0048EAD2
+    add edx, 0xd                                         # 0048EAD2
 .L48EAD5:
     add edx, 2                                           # 0048EAD5
 .L48EAD8:
@@ -4926,11 +4926,11 @@ _sub_48EB64:
 .L48EB72:
     cmp word ptr [ebx + ebp + _stations+46], 0           # 0048EB72
     je .L48EB91                                          # 0048EB7B
-    add edx, 0xc                                         # 0048EB7D
+    add edx, 0xf                                         # 0048EB7D
     mov cx, word ptr [ebx + ebp + _stations+48]          # 0048EB80
     cmp cx, word ptr [esi + 0x40]                        # 0048EB88
     je .L48EB91                                          # 0048EB8C
-    add edx, 0xa                                         # 0048EB8E
+    add edx, 0xd                                         # 0048EB8E
 .L48EB91:
     add ebx, 0xd                                         # 0048EB91
     cmp ebx, 0x1a0                                       # 0048EB94
@@ -4951,7 +4951,7 @@ _sub_48EB9D:
 _sub_48EBB7:
     call _sub_48E32C                                     # 0048EBB7
     mov word ptr [esi + 0x38], 0xc0                      # 0048EBBC
-    mov word ptr [esi + 0x3c], 0x89                      # 0048EBC2
+    mov word ptr [esi + 0x3c], 0xa4                      # 0048EBC2
     mov word ptr [esi + 0x3a], 0x258                     # 0048EBC8
     mov word ptr [esi + 0x3e], 0x1b8                     # 0048EBCE
     mov ax, word ptr [esi + 0x38]                        # 0048EBD4
@@ -5036,12 +5036,12 @@ _sub_48EC3B:
     add ax, 0xc                                          # 0048ECDD
     mov word ptr [_ui_station___widgets_2+36], ax        # 0048ECE1
     dec ax                                               # 0048ECE7
-    sub cx, 0xd                                          # 0048ECE9
+    sub cx, 0x10                                          # 0048ECE9
     mov word ptr [_ui_station___widgets_2+116], ax       # 0048ECED
     mov word ptr [_ui_station___widgets_2+120], cx       # 0048ECF3
     add cx, 2                                            # 0048ECFA
     mov word ptr [_ui_station___widgets_2+134], cx       # 0048ECFE
-    add cx, 9                                            # 0048ED05
+    add cx, 0xc                                            # 0048ED05
     mov word ptr [_ui_station___widgets_2+136], cx       # 0048ED09
     mov ax, word ptr [esi + 0x34]                        # 0048ED10
     sub ax, 0xe                                          # 0048ED14
@@ -5125,7 +5125,7 @@ _sub_48ED2F:
     pop esi                                              # 0048EE03
     pop ebp                                              # 0048EE04
     pop edx                                              # 0048EE05
-    add edx, 0xa                                         # 0048EE06
+    add edx, 0xd                                         # 0048EE06
 .L48EE09:
     pop ebp                                              # 0048EE09
     pop ebx                                              # 0048EE0A
@@ -5169,7 +5169,7 @@ _sub_48EE4A:
     add ebx, 0xd                                         # 0048EE64
     cmp ebx, 0x1a0                                       # 0048EE67
     jb .L48EE58                                          # 0048EE6D
-    imul edx, edx, 0xa                                   # 0048EE6F
+    imul edx, edx, 0xd                                   # 0048EE6F
     ret                                                  # 0048EE72
 
     .global _sub_48EE73
@@ -5191,7 +5191,7 @@ _sub_48EE7D:
 _sub_48EE97:
     call _sub_48E32C                                     # 0048EE97
     mov word ptr [esi + 0x38], 0xfa                      # 0048EE9C
-    mov word ptr [esi + 0x3c], 0x89                      # 0048EEA2
+    mov word ptr [esi + 0x3c], 0xa4                      # 0048EEA2
     mov word ptr [esi + 0x3a], 0xfa                      # 0048EEA8
     mov word ptr [esi + 0x3e], 0x1b8                     # 0048EEAE
     mov ax, word ptr [esi + 0x38]                        # 0048EEB4
@@ -5226,6 +5226,7 @@ _sub_48EF01:
 
     .global _sub_48EF02
 _sub_48EF02:
+add    dx,0x4
     mov ah, 0x60                                         # 0048EF02
     mul ah                                               # 0048EF04
     movzx bx, ah                                         # 0048EF06
@@ -5531,7 +5532,7 @@ _sub_48F210:
 _sub_48F29F:
     push edx                                             # 0048F29F
     mov ecx, 0x90018                                     # 0048F2A0
-    mov ebx, 0x8900df                                    # 0048F2A5
+    mov ebx, 0xa400df                                    # 0048F2A5
     mov_offset edx, _ui_station___events_0               # 0048F2AA
     call _sub_4C9C68                                     # 0048F2AF
     mov_dword_ptr_reg esi, 0x2c, _ui_station___widgets_0 # 0048F2B4
@@ -5547,7 +5548,7 @@ _sub_48F29F:
     mov word ptr [esi + 0x872], 0                        # 0048F2E6
     call _sub_48EF7C                                     # 0048F2EF
     mov word ptr [esi + 0x38], 0xc0                      # 0048F2F4
-    mov word ptr [esi + 0x3c], 0x89                      # 0048F2FA
+    mov word ptr [esi + 0x3c], 0xa4                      # 0048F2FA
     mov word ptr [esi + 0x3a], 0x258                     # 0048F300
     mov word ptr [esi + 0x3e], 0x1b8                     # 0048F306
     bts dword ptr [esi + 0x42], 9                        # 0048F30C
@@ -7370,8 +7371,6 @@ _sub_490756:
     msvc_xor dl, dl                                      # 0049085C
     mov ax, word ptr [esi + 2]                           # 0049085E
     mov cx, word ptr [esi + 4]                           # 00490862
-    and ax, 0xffe0                                       # 00490866
-    and cx, 0xffe0                                       # 0049086A
     call _sub_48F988                                     # 0049086E
     msvc_mov ax, bx                                      # 00490873
     pop ecx                                              # 00490876
@@ -7591,7 +7590,7 @@ _sub_4908DB:
     pop ebp                                              # 00490A80
     pop edx                                              # 00490A81
     pop ecx                                              # 00490A82
-    add dx, 0xa                                          # 00490A83
+    add dx, 0xd                                          # 00490A83
 .L490A87:
     cmp word ptr [ebp + 0x2c], -1                        # 00490A87
     je .L490AA6                                          # 00490A8C
@@ -7605,7 +7604,7 @@ _sub_4908DB:
     pop ebp                                              # 00490A9F
     pop edx                                              # 00490AA0
     pop ecx                                              # 00490AA1
-    add dx, 0xa                                          # 00490AA2
+    add dx, 0xd                                          # 00490AA2
 .L490AA6:
     pop esi                                              # 00490AA6
     ret                                                  # 00490AA7
@@ -7800,7 +7799,7 @@ _sub_490AA8:
     pop ebp                                              # 00490C71
     pop edx                                              # 00490C72
     pop ecx                                              # 00490C73
-    add dx, 0xa                                          # 00490C74
+    add dx, 0xd                                          # 00490C74
 .L490C78:
     cmp word ptr [ebp + 0x2a], -1                        # 00490C78
     je .L490C97                                          # 00490C7D
@@ -7814,7 +7813,7 @@ _sub_490AA8:
     pop ebp                                              # 00490C90
     pop edx                                              # 00490C91
     pop ecx                                              # 00490C92
-    add dx, 0xa                                          # 00490C93
+    add dx, 0xd                                          # 00490C93
 .L490C97:
     pop esi                                              # 00490C97
     ret                                                  # 00490C98
@@ -7940,7 +7939,7 @@ _sub_490C99:
     pop ebp                                              # 00490E05
     pop edx                                              # 00490E06
     pop ecx                                              # 00490E07
-    add dx, 0xa                                          # 00490E08
+    add dx, 0xd                                          # 00490E08
 .L490E0C:
     cmp word ptr [ebp + 0xaa], -1                        # 00490E0C
     je .L490E31                                          # 00490E14
@@ -7954,7 +7953,7 @@ _sub_490C99:
     pop ebp                                              # 00490E2A
     pop edx                                              # 00490E2B
     pop ecx                                              # 00490E2C
-    add dx, 0xa                                          # 00490E2D
+    add dx, 0xd                                          # 00490E2D
 .L490E31:
     pop esi                                              # 00490E31
     ret                                                  # 00490E32
@@ -8063,7 +8062,7 @@ _sub_490E33:
     pop ebp                                              # 00490F44
     pop edx                                              # 00490F45
     pop ecx                                              # 00490F46
-    add dx, 0xa                                          # 00490F47
+    add dx, 0xd                                          # 00490F47
 .L490F4B:
     cmp word ptr [ebp + 0x22], -1                        # 00490F4B
     je .L490F6A                                          # 00490F50
@@ -8077,7 +8076,7 @@ _sub_490E33:
     pop ebp                                              # 00490F63
     pop edx                                              # 00490F64
     pop ecx                                              # 00490F65
-    add dx, 0xa                                          # 00490F66
+    add dx, 0xd                                          # 00490F66
 .L490F6A:
     pop esi                                              # 00490F6A
     ret                                                  # 00490F6B
@@ -8105,7 +8104,7 @@ _sub_490F6C:
 .L490FAE:
     call _sub_491010                                     # 00490FAE
     mov word ptr [esi + 0x34], 0x258                     # 00490FB3
-    mov word ptr [esi + 0x36], 0xc5                      # 00490FB9
+    mov word ptr [esi + 0x36], 0xcb                      # 00490FB9
 .L490FBF:
     mov word ptr [esi + 0x870], 0                        # 00490FBF
     call _sub_4CA4BD                                     # 00490FC8
@@ -8132,7 +8131,7 @@ _sub_490F6C:
 _sub_491010:
     push eax                                             # 00491010
     mov ecx, 0x8001d                                     # 00491011
-    mov ebx, 0xc50258                                    # 00491016
+    mov ebx, 0xcb0258                                    # 00491016
     mov_offset edx, _ui_station_list___events_0          # 0049101B
     call _sub_4C9C68                                     # 00491020
     mov_dword_ptr_reg esi, 0x2c, _ui_station_list___widgets_0 # 00491025
@@ -8453,7 +8452,7 @@ _sub_491344:
     add ax, 0xc                                          # 004913D8
     mov word ptr [_ui_station_list___widgets_0+36], ax   # 004913DC
     dec ax                                               # 004913E2
-    sub bx, 0xd                                          # 004913E4
+    sub bx, 0x10                                         # 004913E4
     mov word ptr [_ui_station_list___widgets_0+228], ax  # 004913E8
     mov word ptr [_ui_station_list___widgets_0+232], bx  # 004913EE
     mov ax, word ptr [esi + 0x34]                        # 004913F5
@@ -8543,7 +8542,7 @@ _sub_4914D8:
     mov dx, word ptr [esi + 0x32]                        # 0049153D
     add cx, 4                                            # 00491541
     add dx, word ptr [esi + 0x36]                        # 00491545
-    sub dx, 0xc                                          # 00491549
+    sub dx, 0xf                                          # 00491549
     mov bx, 0x208                                        # 0049154D
     mov ax, word ptr [esi + 0x83c]                       # 00491551
     mov word ptr [__112C828], ax                         # 00491558
@@ -8578,7 +8577,7 @@ _sub_49157F:
     cmp ax, word ptr [esi + 0x83c]                       # 004915AA
     jae .L491783                                         # 004915B1
     msvc_mov cx, dx                                      # 004915B7
-    add cx, 0xa                                          # 004915BA
+    add cx, 0xd                                          # 004915BA
     cmp cx, word ptr [edi + 6]                           # 004915BE
     jle .L491779                                         # 004915C2
     mov cx, word ptr [edi + 6]                           # 004915C8
@@ -8596,7 +8595,7 @@ _sub_49157F:
     push ebp                                             # 004915F7
     push esi                                             # 004915F8
     msvc_mov cx, dx                                      # 004915F9
-    add dx, 9                                            # 004915FC
+    add dx, 0xc                                          # 004915FC
     msvc_xor ax, ax                                      # 00491600
     mov bx, word ptr [esi + 0x34]                        # 00491603
     mov ebp, 0x2000030                                   # 00491607
@@ -8712,7 +8711,7 @@ _sub_49157F:
     pop ebx                                              # 00491777
     pop eax                                              # 00491778
 .L491779:
-    add dx, 0xa                                          # 00491779
+    add dx, 0xd                                          # 00491779
     inc eax                                              # 0049177D
     msvc_jmp .L4915AA                                    # 0049177E
 .L491783:
@@ -8872,7 +8871,7 @@ _sub_491977:
     .global _sub_491999
 _sub_491999:
     movzx edx, word ptr [esi + 0x83c]                    # 00491999
-    imul edx, edx, 0xa                                   # 004919A0
+    imul edx, edx, 0xd                                   # 004919A0
     ret                                                  # 004919A3
 
     .global _sub_4919A4
@@ -8881,7 +8880,7 @@ _sub_4919A4:
     jne _sub_491A38                                      # 004919A8
     movzx eax, dx                                        # 004919AE
     msvc_xor edx, edx                                    # 004919B1
-    mov ecx, 0xa                                         # 004919B3
+    mov ecx, 0xd                                         # 004919B3
     div ecx                                              # 004919B8
     cmp ax, word ptr [esi + 0x83c]                       # 004919BA
     jae _sub_491A38                                      # 004919C1
@@ -8895,7 +8894,7 @@ _sub_4919D1:
     and dword ptr [esi + 0x42], 0xffffbfff               # 004919D1
     movzx eax, dx                                        # 004919D8
     msvc_xor edx, edx                                    # 004919DB
-    mov ecx, 0xa                                         # 004919DD
+    mov ecx, 0xd                                         # 004919DD
     div ecx                                              # 004919E2
     mov dx, 0xffff                                       # 004919E4
     cmp ax, word ptr [esi + 0x83c]                       # 004919E8
@@ -8912,7 +8911,7 @@ _sub_4919D1:
 _sub_491A0C:
     movzx eax, dx                                        # 00491A0C
     msvc_xor edx, edx                                    # 00491A0F
-    mov ecx, 0xa                                         # 00491A11
+    mov ecx, 0xd                                         # 00491A11
     div ecx                                              # 00491A16
     cmp ax, word ptr [esi + 0x83c]                       # 00491A18
     jae _sub_491A38                                      # 00491A1F
@@ -10320,7 +10319,7 @@ _sub_492A98:
 .L492AAF:
     cmp word ptr [edx + esi + _stations+46], 0           # 00492AAF
     je .L492B0E                                          # 00492AB8
-    cmp_offset edi, __5129C3                             # 00492ABA
+    cmp_offset edi, _str_1250+0x1b0                             # 00492ABA
     jae .L492B0E                                         # 00492AC0
     msvc_or bl, bl                                       # 00492AC2
     je .L492AD8                                          # 00492AC4

@@ -738,6 +738,8 @@ variable __5253AC
 # 0x5253AC
 .skip 0x4
 
+variable _unkKor, 4
+
 # 0x5253B0
 variable __5253B0
 
@@ -2222,8 +2224,11 @@ variable __9E2422
 
 # 0x9E2424
 variable __g1Data, 0x4201A0
+.skip 0x25900
+
 # 0xE025C4
 variable __E025C4
+
 
 # 0xE025C4
 .skip 0x1D4C
@@ -2413,6 +2418,8 @@ variable __E0C37C
 
 # 0xE0C37C
 .skip 0x4
+
+.skip 0x9d600-0x32800
 
 # 0xE0C380
 variable __E0C380
@@ -6116,6 +6123,8 @@ variable __112C66A
 # 0x112C66A
 .skip 0x6
 
+.skip 0xc00
+
 # 0x112C670
 variable __112C670
 
@@ -8420,12 +8429,6 @@ variable __11360A0
 # 0x11360A0
 .skip 0x2C
 
-# 0x11360CC
-variable __11360CC
-
-# 0x11360CC
-.skip 0x4
-
 # 0x11360D0
 variable __11360D0
 
@@ -10718,6 +10721,8 @@ variable __113E0A4
 # 0x113E0A4
 .skip 0x4
 
+.skip 0x10+8+0x200
+
 # 0x113E0A8
 variable __113E0A8
 
@@ -10765,6 +10770,8 @@ variable __113E0C4
 
 # 0x113E0C4
 .skip 0x1C
+
+.skip 8
 
 # 0x113E0E0
 variable __113E0E0
@@ -11068,6 +11075,8 @@ variable __113E9C8
 # 0x113E9C8
 .skip 0x4
 
+.skip 4
+
 # 0x113E9CC
 variable __113E9CC
 
@@ -11097,6 +11106,8 @@ variable __113E9DC
 
 # 0x113E9DC
 .skip 0x4
+
+.skip 12+0x10
 
 # 0x113E9E0
 variable __113E9E0

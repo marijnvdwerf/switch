@@ -9620,6 +9620,149 @@ _sub_40704B:
 .L407199:
     ret 0x10                                             # 00407199
 
+    .global unkfunk1
+unkfunk1:
+    mov    eax,DWORD PTR [esp+0x8]
+    push   esi
+    sub    eax,0x110
+    je     .0x407209
+    dec    eax
+    jne    .0x4071b7
+    mov    esi,DWORD PTR [esp+0x10]
+    mov    eax,esi
+    dec    eax
+    je     .0x4071be
+    dec    eax
+    je     .0x4071d8
+.0x4071b7:
+    xor    eax,eax
+    jmp    .0x40730c
+.0x4071be:
+    push   0x104
+    push   DWORD PTR [__113E0AC]
+    push   0x3e8
+    push   DWORD PTR [esp+0x14]
+.fill 6, 1, 0xcc
+.0x4071d8:
+    mov    eax,  DWORD PTR [0x11d0a8c]
+    push   0x1
+    mov    DWORD PTR [eax],esi
+    mov    eax,DWORD PTR [0x11d0180]
+    pop    esi
+    push   DWORD PTR [esp+0x8]
+    mov    DWORD PTR [eax],esi
+.fill 6, 1, 0xcc
+    and    DWORD PTR [__525390],0x0
+    push   0x0
+    call   _sub_406417
+    pop    ecx
+    msvc_mov    eax,esi
+    jmp    .0x40730c
+.0x407209:
+    mov    eax,DWORD PTR [__52539C]
+    mov    esi,DWORD PTR [esp+0x8]
+    push   ebx
+    push   ebp
+    push   edi
+    mov    edi,DWORD PTR [_SendDlgItemMessageA]
+    test   eax,eax
+    mov    ebp,0x3e8
+    mov    ebx,0x3ea
+    je     .0x40726f
+    push   0x1
+    push   eax
+    push   0x30
+    push   esi
+.fill 6, 1, 0xcc
+    push   0x1
+    push   DWORD PTR [0x525f3c]
+    push   0x30
+    push   ebx
+    push   esi
+    call   edi
+    push   0x1
+    push   DWORD PTR [0x525f3c]
+    push   0x30
+    push   ebp
+    push   esi
+    call   edi
+    push   0x1
+    push   DWORD PTR [0x525f3c]
+    push   0x30
+    push   0x1
+    push   esi
+    call   edi
+    push   0x1
+    push   DWORD PTR [0x525f3c]
+    push   0x30
+    push   0x2
+    push   esi
+    call   edi
+.0x40726f:
+    push   DWORD PTR [0x11d0dcc]
+    push   esi
+.fill 6, 1, 0xcc
+    push   DWORD PTR [0x11d0dc4]
+    push   ebx
+    mov    ebx,DWORD PTR [_SetDlgItemTextA]
+    push   esi
+    call   ebx
+    push   DWORD PTR [0x11d05c0]
+    push   0x1
+    push   esi
+    call   ebx
+    push   DWORD PTR [0x11d0a88]
+    push   0x2
+    push   esi
+    call   ebx
+    push   DWORD PTR [0x11d0164]
+    call   _sub_4D16C0
+    test   eax,eax
+    pop    ecx
+    jbe    .0x4072c9
+    push   DWORD PTR [0x11d0164]
+    push   ebp
+    push   esi
+    call   ebx
+    push   0xffffffff
+    push   0x0
+    push   0xb1
+    push   ebp
+    push   esi
+    call   edi
+.0x4072c9:
+    push   ebp
+    push   esi
+.fill 6, 1, 0xcc
+    push   eax
+.fill 6, 1, 0xcc
+    mov    eax,[0x11d090c]
+    msvc_xor    ecx,ecx
+    cdq
+    sub    eax,edx
+    push   0x205
+    sar    eax,1
+    push   ecx
+    sub    eax,0x40
+    push   ecx
+    push   eax
+    mov    eax,[0x11d03a4]
+    cdq
+    msvc_sub    eax,edx
+    sar    eax,1
+    sub    eax,0x80
+    push   eax
+    push   ecx
+    push   esi
+.fill 6, 1, 0xcc
+    pop    edi
+    pop    ebp
+    msvc_xor    eax,eax
+    pop    ebx
+.0x40730c:
+    pop    esi
+    ret    0x10
+
     .global _sub_40719C
 _sub_40719C:
     push ebp                                             # 0040719C
@@ -9642,6 +9785,45 @@ _sub_40719C:
     msvc_abscall _DialogBoxParamA                        # 004071DC
     pop ebp                                              # 004071E2
     ret                                                  # 004071E3
+
+    .global korsub
+korsub:
+    push   ebp
+    msvc_mov    ebp,esp
+    cmp    DWORD PTR [__525390],0x0
+    jne    .0x4073cb
+    mov    eax,DWORD PTR [ebp+0x8]
+    mov    ecx,DWORD PTR [ebp+0x20]
+    mov    [__113ECEC],eax
+    mov    eax,DWORD PTR [ebp+0xc]
+    mov    [__113ECE4],eax
+    mov    eax,DWORD PTR [ebp+0x10]
+    mov    [__113E500],eax
+    mov    eax,DWORD PTR [ebp+0x14]
+    mov    [__113E9C8],eax
+    mov    eax,DWORD PTR [ebp+0x18]
+    mov    [__113E0AC],eax
+    mov    eax,DWORD PTR [ebp+0x1c]
+    push   0x0
+    mov    [0x11d0180],eax
+    mov    DWORD PTR [0x11d0a8c],ecx
+    and    DWORD PTR [eax],0x0
+    push_dword   unkfunk1
+    push   DWORD PTR [__525320]
+    push   0x65
+    push   DWORD PTR [__113E0B4]
+    .fill 6, 1, 0xcc # call dword ptr
+    msvc_xor    ecx,ecx
+    mov    [__525390],eax
+    test   eax,eax
+    setne  cl
+    msvc_mov    eax,ecx
+    pop    ebp
+    ret    
+.0x4073cb:
+    msvc_xor    eax,eax
+    pop    ebp
+    ret    
 
     .global _sub_4071E4
 _sub_4071E4:
@@ -11274,10 +11456,151 @@ _sub_408337:
 
     .global _sub_408347
 _sub_408347:
-    push dword ptr [esp + 4]                             # 00408347
-    push_dword 0x200                                     # 0040834B
-    msvc_abscall _GetLogicalDriveStringsA                # 00408350
-    ret                                                  # 00408356
+    push   ebp
+    msvc_mov    ebp,esp
+    sub    esp,0x254
+    mov    dl,BYTE PTR [0x525f50]
+    push   esi
+    push   edi
+    push   0x40
+    pop    ecx
+    xor    eax,eax
+    lea    edi,[ebp-0x253]
+    mov    BYTE PTR [ebp-0x254],dl
+    rep stos DWORD PTR es:[edi],eax
+    stos   WORD PTR es:[edi],ax
+    stos   BYTE PTR es:[edi],al
+    push   0x40
+    xor    eax,eax
+    pop    ecx
+    lea    edi,[ebp-0x14f]
+    mov    BYTE PTR [ebp-0x150],dl
+    mov    esi,DWORD PTR [ebp+0x10]
+    rep stos DWORD PTR es:[edi],eax
+    stos   WORD PTR es:[edi],ax
+    push   0x2e
+    push   esi
+    stos   BYTE PTR es:[edi],al
+    call   _sub_4D1F70
+    push   0x5c
+    push   esi
+    mov    edi,eax
+    call   _sub_4D1F70
+    add    esp,0x10
+    test   edi,edi
+    je     .0x4085bd
+    test   eax,eax
+    je     .0x4085b4
+    lea    edi,[eax+0x1]
+    lea    eax,[ebp-0x150]
+    push   edi
+    push   eax
+    call   _sub_4D15D0
+    and    BYTE PTR [edi],0x0
+    lea    eax,[ebp-0x254]
+    push   esi
+    push   eax
+    call   _sub_4D15D0
+    add    esp,0x10
+    jmp    .0x4085d0
+.0x4085b4:
+    push   esi
+    lea    eax,[ebp-0x150]
+    jmp    .0x4085c8
+.0x4085bd:
+    test   eax,eax
+    je     .0x4085d0
+    push   esi
+    lea    eax,[ebp-0x254]
+.0x4085c8:
+    push   eax
+    call   _sub_4D15D0
+    pop    ecx
+    pop    ecx
+.0x4085d0:
+    lea    eax,[ebp-0x150]
+    push   eax
+    push   esi
+    call   _sub_4D15D0
+    push   0x4c
+    lea    eax,[ebp-0x4c]
+    pop    edi
+    push   edi
+    push   0x0
+    push   eax
+    call   _sub_4D0FC0
+    mov    eax,[0x525ec0]
+    push   DWORD PTR [ebp+0x18]
+    mov    DWORD PTR [ebp-0x48],eax
+    lea    eax,[ebp-0x254]
+    mov    DWORD PTR [ebp-0x4c],edi
+    mov    DWORD PTR [ebp-0x20],eax
+    mov    eax,DWORD PTR [ebp+0xc]
+    mov    edi,0x11cff60
+    push   edi
+    mov    DWORD PTR [ebp-0x30],esi
+    mov    DWORD PTR [ebp-0x1c],eax
+    mov    DWORD PTR [ebp-0x2c],0x104
+    call   _sub_4D15D0
+    push   edi
+    call   _sub_4D16C0
+    push   DWORD PTR [ebp+0x14]
+    mov    esi,eax
+    add    esi,0x11cff61
+    push   esi
+    call   _sub_4D15D0
+    push   esi
+    call   _sub_4D16C0
+    and    BYTE PTR [eax+esi*1+0x1],0x0
+    mov    eax,[0x525e7c]
+    add    esp,0x2c
+    cmp    DWORD PTR [0x525dc0],0x2
+    mov    DWORD PTR [ebp-0x40],edi
+    mov    [0x11d0160],eax
+    push   0x1
+    pop    esi
+    jne    .0x408672
+    cmp    DWORD PTR [0x524d04],esi
+    jne    .0x408672
+    push   0x0
+    call   _sub_4034FB
+    pop    ecx
+    mov    DWORD PTR [0x525e7c],esi
+.0x408672:
+    mov    eax,DWORD PTR [ebp+0x8]
+    dec    eax
+    je     .0x40868d
+    dec    eax
+    jne    .0x4086a0
+    lea    eax,[ebp-0x4c]
+    mov    DWORD PTR [ebp-0x18],0x82806
+    push   eax
+    call   _sub_4CFF1E
+    jmp    .0x40869d
+.0x40868d:
+    lea    eax,[ebp-0x4c]
+    mov    DWORD PTR [ebp-0x18],0xa1804
+    push   eax
+    call   _sub_4CFF1E
+.0x40869d:
+    mov    DWORD PTR [ebp+0x10],eax
+.0x4086a0:
+    cmp    DWORD PTR [0x525dc0],0x2
+    jne    .0x4086b8
+    cmp    DWORD PTR [0x524d04],esi
+    jne    .0x4086b8
+    push   esi
+    call   _sub_4034FB
+    pop    ecx
+.0x4086b8:
+    mov    eax,[0x11d0160]
+    pop    edi
+    mov    [0x525e7c],eax
+    mov    eax,DWORD PTR [ebp+0x10]
+    pop    esi
+    leave
+    ret
+
 
     .global _sub_408357
 _sub_408357:

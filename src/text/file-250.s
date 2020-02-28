@@ -2156,7 +2156,7 @@ _loc_49D0F4:
     mov dx, word ptr [_ui_construction___widgets_0+456]  # 0049D17F
     add cx, word ptr [esi + 0x30]                        # 0049D186
     add dx, word ptr [esi + 0x32]                        # 0049D18A
-    sub dx, 0x17                                         # 0049D18E
+    sub dx, 0x1d                                         # 0049D18E
     cmp byte ptr [__1136061], 1                          # 0049D192
     je .L49D1AC                                          # 0049D199
     push ecx                                             # 0049D19B
@@ -2169,7 +2169,7 @@ _loc_49D0F4:
     pop edx                                              # 0049D1AA
     pop ecx                                              # 0049D1AB
 .L49D1AC:
-    add dx, 0xb                                          # 0049D1AC
+    add dx, 0xe                                          # 0049D1AC
     cmp dword ptr [__1135F3E], 0x80000000                # 0049D1B0
     je .L49D1D5                                          # 0049D1BA
     cmp dword ptr [__1135F3E], 0                         # 0049D1BC
@@ -2330,7 +2330,7 @@ _loc_49D313:
     mov dx, word ptr [_ui_construction___widgets_0+456]  # 0049D39E
     add cx, word ptr [esi + 0x30]                        # 0049D3A5
     add dx, word ptr [esi + 0x32]                        # 0049D3A9
-    sub dx, 0x17                                         # 0049D3AD
+    sub dx, 0x1d                                         # 0049D3AD
     cmp byte ptr [__1136061], 1                          # 0049D3B1
     je .L49D3CB                                          # 0049D3B8
     push ecx                                             # 0049D3BA
@@ -2343,7 +2343,7 @@ _loc_49D313:
     pop edx                                              # 0049D3C9
     pop ecx                                              # 0049D3CA
 .L49D3CB:
-    add dx, 0xb                                          # 0049D3CB
+    add dx, 0xe                                          # 0049D3CB
     cmp dword ptr [__1135F3E], 0x80000000                # 0049D3CF
     je .L49D3F4                                          # 0049D3D9
     cmp dword ptr [__1135F3E], 0                         # 0049D3DB
@@ -2623,7 +2623,7 @@ _sub_49D83A:
     cmp byte ptr [ebx + __1136030], 0xff                 # 0049D848
     jne .L49D847                                         # 0049D84F
     or bx, 0xc000                                        # 0049D851
-    mov ah, 0x16                                         # 0049D856
+    mov ah, 0x1c                                         # 0049D856
     mov cx, word ptr [edi - 0xe]                         # 0049D858
     mov dx, word ptr [edi - 0xa]                         # 0049D85C
     mov di, word ptr [edi - 8]                           # 0049D860
@@ -3099,7 +3099,7 @@ _sub_49DE40:
     mov cx, word ptr [_ui_construction___widgets_1+168]  # 0049DF36
     add cx, word ptr [esi + 0x32]                        # 0049DF3D
     mov bx, word ptr [esi + 0x34]                        # 0049DF41
-    add cx, 0x10                                         # 0049DF45
+    add cx, 0x13                                         # 0049DF45
     msvc_mov dx, cx                                      # 0049DF49
     msvc_add bx, ax                                      # 0049DF4C
     inc dx                                               # 0049DF4F
@@ -3114,7 +3114,7 @@ _sub_49DE40:
     mov dx, word ptr [_ui_construction___widgets_1+168]  # 0049DF6F
     add cx, 0x45                                         # 0049DF76
     add dx, word ptr [esi + 0x32]                        # 0049DF7A
-    add dx, 0x12                                         # 0049DF7E
+    add dx, 0x15                                         # 0049DF7E
     test byte ptr [__522096], 8                          # 0049DF82
     je .L49E0CE                                          # 0049DF89
     mov bx, 0x520                                        # 0049DF8F
@@ -3138,7 +3138,7 @@ _sub_49DE40:
     mov dx, word ptr [_ui_construction___widgets_1+168]  # 0049DFDF
     add cx, 2                                            # 0049DFE6
     add dx, word ptr [esi + 0x32]                        # 0049DFEA
-    add dx, 0x1d                                         # 0049DFEE
+    add dx, 0x23                                         # 0049DFEE
     mov bx, 0x522                                        # 0049DFF2
     msvc_xor al, al                                      # 0049DFF6
     call _sub_494B3F                                     # 0049DFF8
@@ -3180,7 +3180,7 @@ _sub_49DE40:
     mov dx, word ptr [_ui_construction___widgets_1+168]  # 0049E05A
     add cx, 2                                            # 0049E061
     add dx, word ptr [esi + 0x32]                        # 0049E065
-    add dx, 0x31                                         # 0049E069
+    add dx, 0x3d                                         # 0049E069
     mov bx, 0x523                                        # 0049E06D
     msvc_xor al, al                                      # 0049E071
     call _sub_494B3F                                     # 0049E073
@@ -3548,7 +3548,7 @@ _sub_49E501:
     mov cx, word ptr [esi + 0x30]                        # 0049E51E
     add cx, 3                                            # 0049E522
     mov dx, word ptr [esi + 0x32]                        # 0049E526
-    add dx, 0x3f                                         # 0049E52A
+    add dx, 0x45                                         # 0049E52A
     mov bp, 0x82                                         # 0049E52E
     mov word ptr [__112C826], bx                         # 0049E532
     msvc_xor al, al                                      # 0049E539
@@ -6085,7 +6085,7 @@ _sub_4A095F:
     .global _sub_4A0963
 _sub_4A0963:
     mov eax, 0x1e0000                                    # 004A0963
-    mov ebx, 0x114008a                                   # 004A0968
+    mov ebx, 0x117008a                                   # 004A0968
     mov ecx, 0xc000d                                     # 004A096D
     mov_offset edx, _ui_construction___events_0          # 004A0972
     call _sub_4C9F5D                                     # 004A0977
@@ -6531,7 +6531,7 @@ _sub_4A0EAD:
     mov dword ptr [esi + 0x2c], eax                      # 004A0F18
     call _sub_49CE33                                     # 004A0F1B
     mov word ptr [esi + 0x34], 0x8a                      # 004A0F20
-    mov word ptr [esi + 0x36], 0x114                     # 004A0F26
+    mov word ptr [esi + 0x36], 0x117                     # 004A0F26
 .L4A0F2C:
     popal                                                # 004A0F2C
     mov bl, byte ptr [edx + 5]                           # 004A0F2D
@@ -6993,7 +6993,7 @@ _sub_4A147F:
     mov dword ptr [esi + 0x2c], eax                      # 004A14D8
     call _sub_49CE33                                     # 004A14DB
     mov word ptr [esi + 0x34], 0x8a                      # 004A14E0
-    mov word ptr [esi + 0x36], 0x114                     # 004A14E6
+    mov word ptr [esi + 0x36], 0x117                     # 004A14E6
 .L4A14EC:
     popal                                                # 004A14EC
     mov bl, byte ptr [edx + 5]                           # 004A14ED

@@ -12289,7 +12289,7 @@ __46AE40:
     .4byte .L46B3C4
     .4byte .L46B3EC
     .4byte .L46AE6C
-    .4byte .L46AE95
+    .4byte .0x46a16a
     .4byte .L46AE84
 
 .L46AE6C:
@@ -12299,8 +12299,6 @@ __46AE40:
     mov byte ptr [__50C195], 0xa                         # 0046AE78
     msvc_jmp .L46B48A                                    # 0046AE7F
 .L46AE84:
-    mov dword ptr [__50C190], 0                          # 0046AE84
-    mov byte ptr [__50C195], 9                           # 0046AE8E
 .L46AE95:
     mov_offset edi, __50B884                             # 0046AE95
     mov ebp, 0xa0a0a0a                                   # 0046AE9A
@@ -12310,7 +12308,7 @@ __46AE40:
     mov dx, word ptr [__50B896]                          # 0046AEAF
     shr cx, 1                                            # 0046AEB6
     shr dx, 1                                            # 0046AEB9
-    sub dx, 0x50                                         # 0046AEBC
+    sub dx, 0x68                                         # 0046AEBC
     msvc_xor al, al                                      # 0046AEC0
     call _sub_494ECF                                     # 0046AEC2
     mov bx, 0x791                                        # 0046AEC7
@@ -12325,7 +12323,7 @@ __46AE40:
     mov dx, word ptr [__50B896]                          # 0046AEF1
     shr cx, 1                                            # 0046AEF8
     shr dx, 1                                            # 0046AEFB
-    add dx, 0x50                                         # 0046AEFE
+    add dx, 0x68                                         # 0046AEFE
     push ebx                                             # 0046AF02
     push ecx                                             # 0046AF03
     push edx                                             # 0046AF04
@@ -12334,7 +12332,7 @@ __46AE40:
     pop edx                                              # 0046AF0C
     pop ecx                                              # 0046AF0D
     pop ebx                                              # 0046AF0E
-    add dx, 0xa                                          # 0046AF0F
+    add dx, 0xd                                          # 0046AF0F
     inc bx                                               # 0046AF13
     push ebx                                             # 0046AF15
     push ecx                                             # 0046AF16
@@ -12344,7 +12342,7 @@ __46AE40:
     pop edx                                              # 0046AF1F
     pop ecx                                              # 0046AF20
     pop ebx                                              # 0046AF21
-    add dx, 0xa                                          # 0046AF22
+    add dx, 0xd                                          # 0046AF22
     inc bx                                               # 0046AF26
     push ebx                                             # 0046AF28
     push ecx                                             # 0046AF29
@@ -12354,7 +12352,7 @@ __46AE40:
     pop edx                                              # 0046AF32
     pop ecx                                              # 0046AF33
     pop ebx                                              # 0046AF34
-    add dx, 0xa                                          # 0046AF35
+    add dx, 0xd                                          # 0046AF35
     inc bx                                               # 0046AF39
     push ebx                                             # 0046AF3B
     push ecx                                             # 0046AF3C
@@ -12364,7 +12362,7 @@ __46AE40:
     pop edx                                              # 0046AF45
     pop ecx                                              # 0046AF46
     pop ebx                                              # 0046AF47
-    add dx, 0xa                                          # 0046AF48
+    add dx, 0xd                                          # 0046AF48
     inc bx                                               # 0046AF4C
     push ebx                                             # 0046AF4E
     push ecx                                             # 0046AF4F
@@ -12374,8 +12372,12 @@ __46AE40:
     pop edx                                              # 0046AF58
     pop ecx                                              # 0046AF59
     pop ebx                                              # 0046AF5A
-    add dx, 0xa                                          # 0046AF5B
+    add dx, 0xd                                          # 0046AF5B
     inc bx                                               # 0046AF5F
+    mov dword ptr [__50C190], 0
+    mov byte ptr [__50C195], 9
+    jmp .L46B48A
+.0x46a16a:
     cmp dword ptr [__50C190], 0                          # 0046AF61
     jne .L46AF76                                         # 0046AF68
     mov ebx, 0x130                                       # 0046AF6A

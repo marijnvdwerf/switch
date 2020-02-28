@@ -435,7 +435,6 @@ _sub_4A8B81:
     mov edi, dword ptr [__1136120]                       # 004A8D29
     test byte ptr [edi + 0x73], 1                        # 004A8D2F
     je .L4A8F3A                                          # 004A8D33
-    mov word ptr [esi + 0x54], 0xffff                    # 004A8D39
     mov byte ptr [esi + 0x5d], 7                         # 004A8D3F
     msvc_jmp .L4A8F3A                                    # 004A8D43
 .L4A8D48:
@@ -2093,7 +2092,7 @@ _sub_4AA24A:
     msvc_mov ebp, ebx                                    # 004AA34C
     and ebp, 0x1ff                                       # 004AA34E
     shr dx, 2                                            # 004AA354
-    call _sub_47D959                                     # 004AA358
+    call _sub_47D8C0                                     # 004AA358
     popal                                                # 004AA35D
     jmp .L4AA348                                         # 004AA35E
 .L4AA360:
@@ -4741,8 +4740,6 @@ _sub_4AC3D3:
     jne .L4AC73F                                         # 004AC714
     cmp ebx, 2                                           # 004AC716
     ja .L4AC73F                                          # 004AC719
-    cmp dword ptr [__113643C], 0x120                     # 004AC71B
-    jbe .L4AC73F                                         # 004AC725
     mov ebp, dword ptr [__1136444]                       # 004AC727
     imul ebp, ebp, 5                                     # 004AC72D
     shr ebp, 2                                           # 004AC730
@@ -4753,8 +4750,6 @@ _sub_4AC3D3:
     jne .L4AC76D                                         # 004AC742
     cmp eax, 2                                           # 004AC744
     ja .L4AC76D                                          # 004AC747
-    cmp dword ptr [__1136444], 0x120                     # 004AC749
-    jbe .L4AC76D                                         # 004AC753
     mov ebp, dword ptr [__113643C]                       # 004AC755
     imul ebp, ebp, 5                                     # 004AC75B
     shr ebp, 2                                           # 004AC75E
@@ -5008,8 +5003,6 @@ _sub_4AC94F:
     cmp dword ptr [esp], 1                               # 004ACB1E
     jb .L4ACBEE                                          # 004ACB22
     je .L4AC96D                                          # 004ACB28
-    mov esi, dword ptr [__113644C]                       # 004ACB2E
-    mov dword ptr [__11360CC], esi                       # 004ACB34
     msvc_xor esi, esi                                    # 004ACB3A
 .L4ACB3C:
     cmp esi, dword ptr [esp]                             # 004ACB3C
@@ -5022,16 +5015,12 @@ _sub_4AC94F:
     push esi                                             # 004ACB4E
     and ebp, 0x81ff                                      # 004ACB4F
     push dword ptr [__113644C]                           # 004ACB55
-    push dword ptr [__11360CC]                           # 004ACB5B
-    mov word ptr [__1135FAE], 0xffff                     # 004ACB61
     call _sub_4AC94F                                     # 004ACB6A
-    pop dword ptr [__11360CC]                            # 004ACB6F
-    mov eax, dword ptr [__113644C]                       # 004ACB75
-    cmp eax, dword ptr [__11360CC]                       # 004ACB7A
+    pop eax
+    cmp eax, dword ptr [__113644C]                       # 004ACB7A
     jae .L4ACB87                                         # 004ACB80
-    mov dword ptr [__11360CC], eax                       # 004ACB82
+    mov dword ptr [__113644C], eax                       # 004ACB82
 .L4ACB87:
-    pop dword ptr [__113644C]                            # 004ACB87
     pop esi                                              # 004ACB8D
     pop edx                                              # 004ACB8E
     pop ecx                                              # 004ACB8F
@@ -5055,8 +5044,6 @@ _sub_4AC94F:
     mov dword ptr [__113644C], 3                         # 004ACBCA
     msvc_jmp .L4ACAE7                                    # 004ACBD4
 .L4ACBD9:
-    mov esi, dword ptr [__11360CC]                       # 004ACBD9
-    mov dword ptr [__113644C], esi                       # 004ACBDF
     mov word ptr [__1135FAE], 0xffff                     # 004ACBE5
 .L4ACBEE:
     add esp, 0x30                                        # 004ACBEE
@@ -6304,7 +6291,7 @@ _sub_4ADB47:
     push edx                                             # 004ADCD7
     push ebp                                             # 004ADCD8
     shr dx, 2                                            # 004ADCD9
-    call _sub_47D959                                     # 004ADCDD
+    call _sub_47D8C0                                     # 004ADCDD
     pop ebp                                              # 004ADCE2
     pop edx                                              # 004ADCE3
     pop ecx                                              # 004ADCE4
@@ -6534,7 +6521,7 @@ _sub_4ADB47:
     msvc_mov bp, bx                                      # 004ADFF5
     and ebp, 0x1ff                                       # 004ADFF8
     or ebp, 0x80000000                                   # 004ADFFE
-    call _sub_47D959                                     # 004AE004
+    call _sub_47D8C0                                     # 004AE004
     popal                                                # 004AE009
 .L4AE00A:
     movzx ebx, word ptr [esi + 0x2c]                     # 004AE00A
@@ -6665,10 +6652,6 @@ _sub_4AE133:
     jb .L4AE1C3                                          # 004AE19E
     test dword ptr [__1136114], 9                        # 004AE1A0
     je .L4AE1C3                                          # 004AE1AA
-    test dword ptr [__1136114], 8                        # 004AE1AC
-    jne .L4AE1BF                                         # 004AE1B6
-    cmp eax, 0x996                                       # 004AE1B8
-    jb .L4AE1C3                                          # 004AE1BD
 .L4AE1BF:
     or dword ptr [esp], 1                                # 004AE1BF
 .L4AE1C3:
@@ -6688,7 +6671,7 @@ _sub_4AE133:
     movzx esi, si                                        # 004AE1F3
     shl esi, 7                                           # 004AE1F6
     add_offset esi, _things                              # 004AE1F9
-    msvc_jmp .L4AE170                                    # 004AE1FF
+    jmp .L4AE170                                    # 004AE1FF
 .L4AE204:
     pop ecx                                              # 004AE204
     pop esi                                              # 004AE205
@@ -7587,9 +7570,6 @@ _sub_4AED34:
     add_offset esi, _things                              # 004AEF0F
     call _sub_4AF7A4                                     # 004AEF15
     call _sub_4B7CC3                                     # 004AEF1A
-    pushal                                               # 004AEF1F
-    call _sub_4BAA76                                     # 004AEF20
-    popal                                                # 004AEF25
     pop edx                                              # 004AEF26
     mov esi, dword ptr [__1136240]                       # 004AEF27
     cmp esi, -1                                          # 004AEF2D
@@ -9626,7 +9606,7 @@ _sub_4B08DD:
     push edx                                             # 004B0A58
     push ebp                                             # 004B0A59
     shr dx, 2                                            # 004B0A5A
-    call _sub_47D959                                     # 004B0A5E
+    call _sub_47D8C0                                     # 004B0A5E
     pop ebp                                              # 004B0A63
     pop edx                                              # 004B0A64
     pop ecx                                              # 004B0A65
@@ -9773,14 +9753,6 @@ _sub_4B0BDD:
     msvc_and eax, eax                                    # 004B0C46
     ret                                                  # 004B0C48
 .L4B0C49:
-    movzx edi, word ptr [esi + 0x3a]                     # 004B0C49
-    shl edi, 7                                           # 004B0C4D
-    add_offset edi, _things                              # 004B0C50
-    movzx edi, word ptr [edi + 0x3a]                     # 004B0C56
-    shl edi, 7                                           # 004B0C5A
-    add_offset edi, _things                              # 004B0C5D
-    test byte ptr [edi + 0x73], 1                        # 004B0C63
-    jne .L4B0CC2                                         # 004B0C67
     cmp word ptr [esi + 0x30], -1                        # 004B0C69
     je .L4B0C45                                          # 004B0C6E
     cmp byte ptr [esi + 0x5d], 6                         # 004B0C70
@@ -11322,12 +11294,12 @@ _sub_4B1EB5:
     sub ax, 0x1b                                         # 004B2175
     mov byte ptr [_ui_vehicle___widgets_0+176], 5        # 004B2179
 .L4B2180:
-    sub cx, 0xd                                          # 004B2180
+    sub cx, 0x10                                         # 004B2180
     mov word ptr [_ui_vehicle___widgets_0+148], ax       # 004B2184
     mov word ptr [_ui_vehicle___widgets_0+152], cx       # 004B218A
     add cx, 2                                            # 004B2191
     mov word ptr [_ui_vehicle___widgets_0+166], cx       # 004B2195
-    add cx, 9                                            # 004B219C
+    add cx, 0xc                                           # 004B219C
     mov word ptr [_ui_vehicle___widgets_0+168], cx       # 004B21A0
     mov ax, word ptr [esi + 0x34]                        # 004B21A7
     sub ax, 0xe                                          # 004B21AB
@@ -11414,6 +11386,16 @@ _sub_4B226D:
 .L4B2324:
     mov bp, word ptr [_ui_vehicle___widgets_0+164]       # 004B2324
     sub bp, word ptr [_ui_vehicle___widgets_0+162]       # 004B232B
+cmp    WORD PTR [0x11be6d0],0x1cd
+
+jne    .0x4b17d6
+mov    ax,[0x11be6ca]
+xchg   WORD PTR [0x11be6d0],ax
+mov    [0x11be6ca,ax
+mov    eax,[0x11be6cc]
+xchg   DWORD PTR [0x11be6d2],eax
+mov    [0x11be6cc],eax
+.0x4b17d6:
     msvc_xor al, al                                      # 004B2332
     mov_offset esi, __112C826                            # 004B2334
     call _sub_494BBF                                     # 004B2339
@@ -11438,7 +11420,7 @@ _sub_4B226D:
     shr cx, 1                                            # 004B2393
     add cx, word ptr [esi + 0x30]                        # 004B2396
     add dx, word ptr [esi + 0x32]                        # 004B239A
-    sub dx, -4                                           # 004B239E
+    sub dx, 3                                           # 004B239E
     mov bx, 0x784                                        # 004B23A2
     msvc_xor al, al                                      # 004B23A6
     call _sub_494DE8                                     # 004B23A8
@@ -11504,7 +11486,7 @@ _sub_4B226D:
     add dx, word ptr [esi + 0x32]                        # 004B24A9
     mov bp, word ptr [_ui_vehicle___widgets_0+148]       # 004B24AD
     sub bp, word ptr [_ui_vehicle___widgets_0+146]       # 004B24B4
-    sub bp, 5                                            # 004B24BB
+    sub bp, 6                                            # 004B24BB
     mov bx, 0x14e                                        # 004B24BF
     mov_offset esi, __112C826                            # 004B24C3
     msvc_xor al, al                                      # 004B24C8
@@ -12493,7 +12475,7 @@ _sub_4B31F2:
 _sub_4B3210:
     call _sub_4B1E94                                     # 004B3210
     mov word ptr [esi + 0x38], 0xc0                      # 004B3215
-    mov word ptr [esi + 0x3c], 0xb1                      # 004B321B
+    mov word ptr [esi + 0x3c], 0xd2                      # 004B321B
     mov word ptr [esi + 0x3a], 0x258                     # 004B3221
     mov word ptr [esi + 0x3e], 0x1b8                     # 004B3227
     mov ax, word ptr [esi + 0x38]                        # 004B322D
@@ -12534,7 +12516,7 @@ _sub_4B3210:
     je .L4B32A8                                          # 004B32A2
     add ax, 0x16                                         # 004B32A4
 .L4B32A8:
-    sub bx, 0x3b                                         # 004B32A8
+    sub bx, 0x41                                         # 004B32A8
     test word ptr [ebp + 0xc], 0x40                      # 004B32AC
     je .L4B32C3                                          # 004B32B2
     mov cl, byte ptr [ebp + 0x21]                        # 004B32B4
@@ -12617,7 +12599,7 @@ _sub_4B3300:
     add ax, 0xc                                          # 004B33A9
     mov word ptr [_ui_vehicle___widgets_1+36], ax        # 004B33AD
     sub ax, 0x17                                         # 004B33B3
-    sub cx, 0x17                                         # 004B33B7
+    sub cx, 0x1d                                         # 004B33B7
     mov word ptr [_ui_vehicle___widgets_1+196], ax       # 004B33BB
     mov word ptr [_ui_vehicle___widgets_1+200], cx       # 004B33C1
     mov ax, word ptr [esi + 0x34]                        # 004B33C8
@@ -12750,7 +12732,7 @@ _sub_4B3542:
     mov dx, word ptr [esi + 0x32]                        # 004B35AF
     add cx, 3                                            # 004B35B3
     add dx, word ptr [esi + 0x36]                        # 004B35B7
-    sub dx, 0x17                                         # 004B35BB
+    sub dx, 0x1d                                         # 004B35BB
     push ecx                                             # 004B35BF
     push edx                                             # 004B35C0
     push ebp                                             # 004B35C1
@@ -12782,7 +12764,7 @@ _sub_4B3542:
     pop ebp                                              # 004B361C
     pop edx                                              # 004B361D
     pop ecx                                              # 004B361E
-    add dx, 0xa                                          # 004B361F
+    add dx, 0xd                                          # 004B361F
     push ecx                                             # 004B3623
     push edx                                             # 004B3624
     push ebp                                             # 004B3625
@@ -12914,7 +12896,7 @@ _sub_4B36A3:
     mov ebx, dword ptr [esp + 0x10]                      # 004B37B0
     mov bx, word ptr [ebx + 0x83e]                       # 004B37B4
     shr bx, 1                                            # 004B37BB
-    sub bx, 6                                            # 004B37BE
+    sub bx, 7                                            # 004B37BE
     msvc_add dx, bx                                      # 004B37C2
     msvc_mov bx, ax                                      # 004B37C5
     msvc_xor al, al                                      # 004B37C8
@@ -13349,7 +13331,7 @@ _sub_4B3C45:
 _sub_4B3D73:
     call _sub_4B1E94                                     # 004B3D73
     mov word ptr [esi + 0x38], 0xc0                      # 004B3D78
-    mov word ptr [esi + 0x3c], 0x94                      # 004B3D7E
+    mov word ptr [esi + 0x3c], 0x9d                      # 004B3D7E
     mov word ptr [esi + 0x3a], 0x190                     # 004B3D84
     mov word ptr [esi + 0x3e], 0x1b8                     # 004B3D8A
     mov ax, word ptr [esi + 0x38]                        # 004B3D90
@@ -13419,7 +13401,7 @@ _sub_4B3DDE:
     add ax, 0xc                                          # 004B3E6C
     mov word ptr [_ui_vehicle___widgets_2+36], ax        # 004B3E70
     sub ax, 0x17                                         # 004B3E76
-    sub cx, 0xd                                          # 004B3E7A
+    sub cx, 0x10                                         # 004B3E7A
     mov word ptr [_ui_vehicle___widgets_2+164], ax       # 004B3E7E
     mov word ptr [_ui_vehicle___widgets_2+168], cx       # 004B3E84
     mov ax, word ptr [esi + 0x34]                        # 004B3E8B
@@ -13468,7 +13450,7 @@ _sub_4B3F0D:
     mov dx, word ptr [esi + 0x32]                        # 004B3F38
     add cx, 3                                            # 004B3F3C
     add dx, word ptr [esi + 0x36]                        # 004B3F40
-    sub dx, 0xd                                          # 004B3F44
+    sub dx, 0x10                                          # 004B3F44
     mov bp, word ptr [esi + 0x34]                        # 004B3F48
     sub bp, 0xf                                          # 004B3F4C
     mov bx, 0x502                                        # 004B3F50
@@ -13564,12 +13546,12 @@ _sub_4B3F62:
     sub ax, 0x16                                         # 004B407C
     shr ax, 1                                            # 004B4080
     msvc_sub dx, ax                                      # 004B4083
-    sub dx, 0xa                                          # 004B4086
+    sub dx, 0xd                                          # 004B4086
     mov al, byte ptr [ebp + 0x51]                        # 004B408A
     or al, byte ptr [ebx + 0x51]                         # 004B408D
     jne .L4B40B5                                         # 004B4090
     mov word ptr [__112C826], 0x493                      # 004B4092
-    add dx, 5                                            # 004B409B
+    add dx, 6                                            # 004B409B
     mov_offset esi, __112C826                            # 004B409F
     mov bx, word ptr [esp + 8]                           # 004B40A4
     msvc_xor al, al                                      # 004B40A9
@@ -13582,7 +13564,7 @@ _sub_4B3F62:
     cmp byte ptr [ebx + 0x51], 0                         # 004B40BD
     jne .L4B40C7                                         # 004B40C1
 .L4B40C3:
-    add dx, 5                                            # 004B40C3
+    add dx, 6                                            # 004B40C3
 .L4B40C7:
     push ecx                                             # 004B40C7
     push ebx                                             # 004B40C8
@@ -13609,7 +13591,7 @@ _sub_4B3F62:
     mov bx, word ptr [esp + 0x10]                        # 004B4123
     mov_offset esi, __112C826                            # 004B4128
     call _sub_494B3F                                     # 004B412D
-    add dx, 0xa                                          # 004B4132
+    add dx, 0xd                                          # 004B4132
 .L4B4136:
     pop ebp                                              # 004B4136
     pop ecx                                              # 004B4137
@@ -13638,7 +13620,7 @@ _sub_4B3F62:
     mov bx, word ptr [esp + 0x10]                        # 004B4194
     mov_offset esi, __112C826                            # 004B4199
     call _sub_494B3F                                     # 004B419E
-    add dx, 0xa                                          # 004B41A3
+    add dx, 0xd                                          # 004B41A3
 .L4B41A7:
     pop ebp                                              # 004B41A7
     pop ecx                                              # 004B41A8
@@ -13995,7 +13977,7 @@ _sub_4B4607:
 _sub_4B4621:
     call _sub_4B1E94                                     # 004B4621
     mov word ptr [esi + 0x38], 0xc0                      # 004B4626
-    mov word ptr [esi + 0x3c], 0x8e                      # 004B462C
+    mov word ptr [esi + 0x3c], 0x94                      # 004B462C
     mov word ptr [esi + 0x3a], 0x190                     # 004B4632
     mov word ptr [esi + 0x3e], 0x1b8                     # 004B4638
     mov ax, word ptr [esi + 0x38]                        # 004B463E
@@ -14075,7 +14057,7 @@ _sub_4B468C:
     add ax, 0xc                                          # 004B474C
     mov word ptr [_ui_vehicle___widgets_4+36], ax        # 004B4750
     sub ax, 0x17                                         # 004B4756
-    sub cx, 0xd                                          # 004B475A
+    sub cx, 0x10                                         # 004B475A
     mov word ptr [_ui_vehicle___widgets_4+164], ax       # 004B475E
     mov word ptr [_ui_vehicle___widgets_4+168], cx       # 004B4764
     mov ax, word ptr [esi + 0x34]                        # 004B476B
@@ -14135,7 +14117,7 @@ _sub_4B4866:
     mov dx, word ptr [esi + 0x32]                        # 004B4874
     add cx, 3                                            # 004B4878
     add dx, word ptr [esi + 0x36]                        # 004B487C
-    sub dx, 0xd                                          # 004B4880
+    sub dx, 0x10                                          # 004B4880
     bt dword ptr [__523368], 3                           # 004B4884
     jae .L4B48B9                                         # 004B488C
     cmp byte ptr [__523392], 0x17                        # 004B488E
@@ -14177,7 +14159,7 @@ _sub_4B48BA:
     msvc_mov esi, ebx                                    # 004B48FF
     msvc_xor dx, dx                                      # 004B4901
     msvc_mov cx, dx                                      # 004B4904
-    add dx, 9                                            # 004B4907
+    add dx, 0xc                                            # 004B4907
     msvc_xor ax, ax                                      # 004B490B
     mov bx, word ptr [ebx + 0x34]                        # 004B490E
     mov ebp, 0x2000030                                   # 004B4912
@@ -14204,7 +14186,7 @@ _sub_4B48BA:
     call _sub_494B3F                                     # 004B4957
     pop esi                                              # 004B495C
     pop eax                                              # 004B495D
-    add edx, 0xa                                         # 004B495E
+    add edx, 0xd                                         # 004B495E
     cmp word ptr [esi + 0x4c], 1                         # 004B4961
     je .L4B4B2C                                          # 004B4966
     mov ebp, dword ptr [esi + 0x46]                      # 004B496C
@@ -14219,9 +14201,9 @@ _sub_4B48BA:
     push ebp                                             # 004B4989
     push esi                                             # 004B498A
     msvc_mov esi, ebx                                    # 004B498B
-    imul dx, dx, 0xa                                     # 004B498D
+    imul dx, dx, 0xd                                     # 004B498D
     msvc_mov cx, dx                                      # 004B4991
-    add dx, 9                                            # 004B4994
+    add dx, 0xc                                          # 004B4994
     msvc_xor ax, ax                                      # 004B4998
     mov bx, word ptr [esi + 0x34]                        # 004B499B
     mov ebp, 0xa                                         # 004B499F
@@ -14240,9 +14222,9 @@ _sub_4B48BA:
     push ebp                                             # 004B49BF
     push esi                                             # 004B49C0
     msvc_mov esi, ebx                                    # 004B49C1
-    imul dx, dx, 0xa                                     # 004B49C3
+    imul dx, dx, 0xd                                     # 004B49C3
     msvc_mov cx, dx                                      # 004B49C7
-    add dx, 9                                            # 004B49CA
+    add dx, 0xc                                            # 004B49CA
     msvc_xor ax, ax                                      # 004B49CE
     mov bx, word ptr [esi + 0x34]                        # 004B49D1
     mov ebp, 0x2000030                                   # 004B49D5
@@ -14291,7 +14273,7 @@ _loc_4B4A58:
     mov word ptr [__112C826], bx                         # 004B4A65
     msvc_mov bx, ax                                      # 004B4A6C
     mov cx, 8                                            # 004B4A6F
-    imul dx, dx, 0xa                                     # 004B4A73
+    imul dx, dx, 0xd                                     # 004B4A73
     mov esi, dword ptr [esp + 0x10]                      # 004B4A77
     dec dx                                               # 004B4A7B
     msvc_xor al, al                                      # 004B4A7D
@@ -14316,7 +14298,7 @@ _loc_4B4A58:
     movzx ebx, byte ptr [__113646A]                      # 004B4ACC
     add ebx, 0x20100ca6                                  # 004B4AD3
     add cx, 3                                            # 004B4AD9
-    add dx, 1                                            # 004B4ADD
+    add dx, 2                                            # 004B4ADD
     call _sub_448C79                                     # 004B4AE1
 .L4B4AE6:
     inc byte ptr [__113646A]                             # 004B4AE6
@@ -14335,7 +14317,7 @@ _loc_4B4A58:
     push esi                                             # 004B4AFE
     mov bx, 0x4cb                                        # 004B4AFF
     mov cx, 1                                            # 004B4B03
-    imul dx, dx, 0xa                                     # 004B4B07
+    imul dx, dx, 0xd                                     # 004B4B07
     msvc_xor al, al                                      # 004B4B0B
     dec dx                                               # 004B4B0D
     call _sub_494B3F                                     # 004B4B0F
@@ -14353,7 +14335,7 @@ _loc_4B4A58:
     push esi                                             # 004B4B2C
     mov bx, 0x4c2                                        # 004B4B2D
     mov cx, 8                                            # 004B4B31
-    mov dx, 9                                            # 004B4B35
+    mov dx, 0xc                                           # 004B4B35
     msvc_xor al, al                                      # 004B4B39
     call _sub_494B3F                                     # 004B4B3B
     pop esi                                              # 004B4B40
@@ -14544,12 +14526,12 @@ _sub_4B4D9B:
     shl ebp, 7                                           # 004B4D9F
     add_offset ebp, _things                              # 004B4DA2
     mov ebx, dword ptr [ebp + 0x46]                      # 004B4DA8
-    mov dx, 0xa                                          # 004B4DAB
+    mov dx, 0xd                                          # 004B4DAB
 .L4B4DAF:
     mov cl, byte ptr [ebx + __987C5C]                    # 004B4DAF
     and ecx, 7                                           # 004B4DB5
     add ebx, dword ptr [ecx*4 + __4FE070]                # 004B4DB8
-    add dx, 0xa                                          # 004B4DBF
+    add dx, 0xd                                          # 004B4DBF
     cmp cl, 0                                            # 004B4DC3
     jne .L4B4DAF                                         # 004B4DC6
     ret                                                  # 004B4DC8
@@ -15023,7 +15005,7 @@ _sub_4B530C:
     and dword ptr [esi + 0x42], 0xffffbfff               # 004B530C
     movzx eax, dx                                        # 004B5313
     msvc_xor edx, edx                                    # 004B5316
-    mov ecx, 0xa                                         # 004B5318
+    mov ecx, 0xd                                         # 004B5318
     div ecx                                              # 004B531D
     cmp ax, word ptr [esi + 0x840]                       # 004B531F
     je _sub_4B56CD                                       # 004B5326
@@ -15050,7 +15032,7 @@ _sub_4B5339:
 _sub_4B5369:
     movzx eax, dx                                        # 004B5369
     msvc_xor edx, edx                                    # 004B536C
-    mov ecx, 0xa                                         # 004B536E
+    mov ecx, 0xd                                         # 004B536E
     div ecx                                              # 004B5373
     movzx edi, word ptr [esi + 0x40]                     # 004B5375
     shl edi, 7                                           # 004B5379
@@ -15274,7 +15256,7 @@ _sub_4B55D1:
 _sub_4B564E:
     call _sub_4B1E94                                     # 004B564E
     mov word ptr [esi + 0x38], 0x109                     # 004B5653
-    mov word ptr [esi + 0x3c], 0xb2                      # 004B5659
+    mov word ptr [esi + 0x3c], 0xb8                      # 004B5659
     mov word ptr [esi + 0x3a], 0x258                     # 004B565F
     mov word ptr [esi + 0x3e], 0x1b8                     # 004B5665
     mov ax, word ptr [esi + 0x38]                        # 004B566B
@@ -15361,7 +15343,7 @@ _sub_4B576C:
     call _sub_4CA4DF                                     # 004B576C
     call _sub_4B5F0D                                     # 004B5771
     mov dx, word ptr [esi + 0x32]                        # 004B5776
-    add dx, 0x2e                                         # 004B577A
+    add dx, 0x31                                         # 004B577A
     movzx ebx, word ptr [esi + 0x40]                     # 004B577E
     shl ebx, 7                                           # 004B5782
     add_offset ebx, _things                              # 004B5785
@@ -15381,7 +15363,7 @@ _sub_4B576C:
     call _sub_494B3F                                     # 004B57B1
     pop esi                                              # 004B57B6
     pop edx                                              # 004B57B7
-    add dx, 0xa                                          # 004B57B8
+    add dx, 0xd                                          # 004B57B8
     msvc_jmp .L4B586F                                    # 004B57BC
 .L4B57C1:
     mov dword ptr [__112C826], eax                       # 004B57C1
@@ -15397,7 +15379,7 @@ _sub_4B576C:
     pop esi                                              # 004B57E1
     pop edx                                              # 004B57E2
     pop ebx                                              # 004B57E3
-    add dx, 0xa                                          # 004B57E4
+    add dx, 0xd                                          # 004B57E4
     msvc_xor ebp, ebp                                    # 004B57E8
 .L4B57EA:
     movzx eax, byte ptr [ebp + ebx + 0x57]               # 004B57EA
@@ -15453,7 +15435,7 @@ _sub_4B576C:
     pop esi                                              # 004B5894
     pop edx                                              # 004B5895
     pop ebx                                              # 004B5896
-    add dx, 0xf                                          # 004B5897
+    add dx, 0x12                                          # 004B5897
 .L4B589B:
     push ebx                                             # 004B589B
     push edx                                             # 004B589C
@@ -15472,7 +15454,7 @@ _sub_4B576C:
     pop esi                                              # 004B58C5
     pop edx                                              # 004B58C6
     pop ebx                                              # 004B58C7
-    add dx, 0xa                                          # 004B58C8
+    add dx, 0xd                                          # 004B58C8
     push ebx                                             # 004B58CC
     push edx                                             # 004B58CD
     push esi                                             # 004B58CE
@@ -15497,10 +15479,10 @@ _sub_4B576C:
     pop esi                                              # 004B5915
     pop edx                                              # 004B5916
     pop ebx                                              # 004B5917
-    add dx, 0xf                                          # 004B5918
+    add dx, 0x12                                          # 004B5918
     mov dx, word ptr [esi + 0x32]                        # 004B591C
     add dx, word ptr [esi + 0x36]                        # 004B5920
-    sub dx, 0xe                                          # 004B5924
+    sub dx, 0x11                                          # 004B5924
     push ebx                                             # 004B5928
     push edx                                             # 004B5929
     push esi                                             # 004B592A
@@ -15566,9 +15548,9 @@ _sub_4B5995:
 _sub_4B59AF:
     call _sub_4B1E94                                     # 004B59AF
     mov word ptr [esi + 0x38], 0x190                     # 004B59B4
-    mov word ptr [esi + 0x3c], 0xca                      # 004B59BA
+    mov word ptr [esi + 0x3c], 0xf1                      # 004B59BA
     mov word ptr [esi + 0x3a], 0x190                     # 004B59C0
-    mov word ptr [esi + 0x3e], 0xca                      # 004B59C6
+    mov word ptr [esi + 0x3e], 0xf1                      # 004B59C6
     mov ax, word ptr [esi + 0x38]                        # 004B59CC
     cmp ax, word ptr [esi + 0x34]                        # 004B59D0
     jbe .L4B59DF                                         # 004B59D4
@@ -16132,7 +16114,7 @@ _sub_4B60CC:
 _sub_4B60DC:
     push eax                                             # 004B60DC
     mov ecx, 0x90017                                     # 004B60DD
-    mov ebx, 0xb10109                                    # 004B60E2
+    mov ebx, 0xd20109                                    # 004B60E2
     mov_offset edx, _ui_vehicle___events_0               # 004B60E7
     call _sub_4C9C68                                     # 004B60EC
     mov_dword_ptr_reg esi, 0x2c, _ui_vehicle___widgets_0 # 004B60F1
@@ -16152,7 +16134,7 @@ _sub_4B60DC:
     mov word ptr [esi + 0x872], 0                        # 004B6136
     call _sub_4B5D82                                     # 004B613F
     mov word ptr [esi + 0x38], 0xc0                      # 004B6144
-    mov word ptr [esi + 0x3c], 0xb1                      # 004B614A
+    mov word ptr [esi + 0x3c], 0xd2                      # 004B614A
     mov word ptr [esi + 0x3a], 0x258                     # 004B6150
     mov word ptr [esi + 0x3e], 0x1b8                     # 004B6156
     bts dword ptr [esi + 0x42], 9                        # 004B615C
@@ -19634,7 +19616,7 @@ _sub_4B8405:
     pop ebp                                              # 004B8CBB
     pop edx                                              # 004B8CBC
     pop ecx                                              # 004B8CBD
-    add dx, 0xa                                          # 004B8CBE
+    add dx, 0xd                                          # 004B8CBE
 .L4B8CC2:
     cmp word ptr [ebp + 0x116], -1                       # 004B8CC2
     je .L4B8CE7                                          # 004B8CCA
@@ -19648,7 +19630,7 @@ _sub_4B8405:
     pop ebp                                              # 004B8CE0
     pop edx                                              # 004B8CE1
     pop ecx                                              # 004B8CE2
-    add dx, 0xa                                          # 004B8CE3
+    add dx, 0xd                                          # 004B8CE3
 .L4B8CE7:
     cmp word ptr [ebp + 0xd8], 0                         # 004B8CE7
     je .L4B8D18                                          # 004B8CEF
@@ -19666,7 +19648,7 @@ _sub_4B8405:
     pop ebp                                              # 004B8D11
     pop edx                                              # 004B8D12
     pop ecx                                              # 004B8D13
-    add dx, 0xa                                          # 004B8D14
+    add dx, 0xd                                          # 004B8D14
 .L4B8D18:
     push ecx                                             # 004B8D18
     push edx                                             # 004B8D19
@@ -19678,7 +19660,7 @@ _sub_4B8405:
     pop ebp                                              # 004B8D2C
     pop edx                                              # 004B8D2D
     pop ecx                                              # 004B8D2E
-    add dx, 0xa                                          # 004B8D2F
+    add dx, 0xd                                          # 004B8D2F
     push ecx                                             # 004B8D33
     push edx                                             # 004B8D34
     push ebp                                             # 004B8D35
@@ -19689,7 +19671,7 @@ _sub_4B8405:
     pop ebp                                              # 004B8D47
     pop edx                                              # 004B8D48
     pop ecx                                              # 004B8D49
-    add dx, 0xa                                          # 004B8D4A
+    add dx, 0xd                                          # 004B8D4A
     cmp byte ptr [ebp + 0x10c], 0                        # 004B8D4E
     je .L4B8ED0                                          # 004B8D55
     push ecx                                             # 004B8D5B

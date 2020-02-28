@@ -13940,6 +13940,26 @@ _sub_4899E4:
     msvc_xor eax, eax                                    # 00489A2F
 .L489A31:
     call _sub_489A37                                     # 00489A31
+    push   edi
+    push   esi
+    msvc_xor    edx,edx
+.0x488baa:
+    msvc_mov    edi,edx
+    imul   edi,edi,0x180
+    add    edi,0x11bd914
+    msvc_mov    esi,edx
+    imul   esi,esi,0x210
+    add    esi,0x10
+    add    esi,DWORD PTR [__5251F4]
+    call   korsub_495c32
+    inc    edx
+    cmp    edx,0x8
+    jae    .0x488bdc
+    cmp    edx,DWORD PTR [__5251F0]
+    jb     .0x488baa
+.0x488bdc:
+    pop    esi
+    pop    edi
     ret                                                  # 00489A36
 
     .global _sub_489A37

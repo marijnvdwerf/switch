@@ -1128,28 +1128,6 @@ _sub_42D133:
     je .L42D4ED                                          # 0042D4E8
     or byte ptr [esi], 0x40                              # 0042D4EA
 .L42D4ED:
-    push ebx                                             # 0042D4ED
-    push edi                                             # 0042D4EE
-    push ebp                                             # 0042D4EF
-    mov di, word ptr [esi + 6]                           # 0042D4F0
-    and edi, 0x7c0                                       # 0042D4F4
-    shr edi, 6                                           # 0042D4FA
-    mov edi, dword ptr [ebp + edi*4 + 0x10]              # 0042D4FD
-    mov ebp, dword ptr [ebp + 0xc]                       # 0042D501
-    msvc_xor dh, dh                                      # 0042D504
-.L42D506:
-    movzx ebx, byte ptr [edi]                            # 0042D506
-    cmp bl, 0xff                                         # 0042D509
-    je .L42D515                                          # 0042D50C
-    or dh, byte ptr [ebp + ebx*2]                        # 0042D50E
-    inc edi                                              # 0042D512
-    jmp .L42D506                                         # 0042D513
-.L42D515:
-    pop ebp                                              # 0042D515
-    pop edi                                              # 0042D516
-    pop ebx                                              # 0042D517
-    cmp dh, 1                                            # 0042D518
-    jbe .L42D527                                         # 0042D51B
     mov dl, byte ptr [esi + 2]                           # 0042D51D
     mov dh, 6                                            # 0042D520
     call _sub_4612A6                                     # 0042D522
@@ -1946,7 +1924,7 @@ _sub_42DBD2:
     pop ebp                                              # 0042DEA0
     pop edx                                              # 0042DEA1
     pop ecx                                              # 0042DEA2
-    add dx, 0xa                                          # 0042DEA3
+    add dx, 0xd                                          # 0042DEA3
 .L42DEA7:
     cmp word ptr [ebp + 0x96], -1                        # 0042DEA7
     je .L42DECC                                          # 0042DEAF
@@ -1960,7 +1938,7 @@ _sub_42DBD2:
     pop ebp                                              # 0042DEC5
     pop edx                                              # 0042DEC6
     pop ecx                                              # 0042DEC7
-    add dx, 0xa                                          # 0042DEC8
+    add dx, 0xd                                          # 0042DEC8
 .L42DECC:
     pop esi                                              # 0042DECC
     ret                                                  # 0042DECD

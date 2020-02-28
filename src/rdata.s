@@ -327,11 +327,6 @@ _FindClose:
 _GetCurrentDirectoryA:
     .4byte _Import_GetCurrentDirectoryA - image_base
 
-# 0x4D710C
-    .global _GetLogicalDriveStringsA
-_GetLogicalDriveStringsA:
-    .4byte _Import_GetLogicalDriveStringsA - image_base
-
 # 0x4D7110
     .global _GetCommandLineA
 _GetCommandLineA:
@@ -653,6 +648,9 @@ _TranslateMessage:
 _DispatchMessageA:
     .4byte _Import_DispatchMessageA - image_base
 
+_CreateDialogParamA:
+    .4byte _Import_CreateDialogParamA - image_base
+
 # 0x4D7214
     .global _GetDlgItemTextA
 _GetDlgItemTextA:
@@ -884,6 +882,14 @@ _mmioOpenA:
 # 0x4D72CC
     .4byte 0
 
+_GetSaveFileNameA:
+    .4byte _Import_GetSaveFileNameA - image_base
+
+_GetOpenFileNameA:
+    .4byte _Import_GetOpenFileNameA - image_base
+
+    .4byte 0
+
 # 0x4D72D0
     .global _CoInitializeEx
 _CoInitializeEx:
@@ -900,6 +906,8 @@ _CoUninitialize:
     .4byte _Import_CoUninitialize - image_base
 
 # 0x4D72DC
+    .4byte 0
+
     .4byte 0
 
 # 0x4D72E0
@@ -27716,7 +27724,7 @@ __4FAE28:
 # 0x4FAEE8
     .global __4FAEE8
 __4FAEE8:
-    .asciz "Data\\G1.DAT"
+    .asciz "Data\\G1K.DAT"
 
 # 0x4FAEF4
     .global __4FAEF4
@@ -27761,7 +27769,7 @@ __4FAF5B:
 # 0x4FAF69
     .global __4FAF69
 __4FAF69:
-    .asciz "Data\\KANJI.DAT"
+    .asciz "Data\\HANG.DAT"
 
 # 0x4FAF78
     .global __4FAF78
@@ -27926,32 +27934,35 @@ __4FB139:
 # 0x4FB158
     .global __4FB158
 __4FB158:
-    .asciz "Data\\TUT1024_1.DAT"
+    .asciz "Data\\TUTK1024_1.DAT"
 
 # 0x4FB16B
     .global __4FB16B
 __4FB16B:
-    .asciz "Data\\TUT1024_2.DAT"
+    .asciz "Data\\TUTK1024_2.DAT"
 
 # 0x4FB17E
     .global __4FB17E
 __4FB17E:
-    .asciz "Data\\TUT1024_3.DAT"
+    .asciz "Data\\TUTK1024_3.DAT"
 
 # 0x4FB191
     .global __4FB191
 __4FB191:
-    .asciz "Data\\TUT800_1.DAT"
+    .asciz "Data\\TUTK800_1.DAT"
 
 # 0x4FB1A3
     .global __4FB1A3
 __4FB1A3:
-    .asciz "Data\\TUT800_2.DAT"
+    .asciz "Data\\TUTK800_2.DAT"
 
 # 0x4FB1B5
     .global __4FB1B5
 __4FB1B5:
-    .asciz "Data\\TUT800_3.DAT"
+    .asciz "Data\\TUTK800_3.DAT"
+
+    .asciz "Race to Read"
+    .asciz "Vache and Vineyards"
 
 # 0x4FB1C7
     .global __4FB1C7
@@ -27968,7 +27979,7 @@ __4FB1D8:
 __4FB1E3:
 # 0x4FB1E3
     .byte 0x82, 0x00, 0x00, 0x00, 0x43, 0x55, 0x52, 0x52 #        0 ....CURR
-    .byte 0x44, 0x4F, 0x4C, 0x4C, 0x00, 0x00, 0x00, 0x00 #        8 DOLL....
+    .byte 0x57, 0x4F, 0x4E, 0x20, 0x00, 0x00, 0x00, 0x00 #        8 WON ....
 
 # 0x4FB1F3
     .global __4FB1F3
@@ -27993,12 +28004,10 @@ __4FB1F3:
 # 0x4FB265
     .global _font
 _font:
-    .asciz "MS Sans Serif"
-
-# 0x4FB273
-    .byte 0x00                                           #        0 .
+.asciz ""
 
 # 0x4FB274
+    .align 4
     .global __4FB274
 __4FB274:
     .4byte _sub_442C17
@@ -28046,39 +28055,6 @@ _ui__scenario_select___widgets___events:
     .4byte _sub_443995
     .4byte _sub_4439AF
     .4byte _sub_443D02
-
-# 0x4FB308
-    .global _ui__prompt_browse___widgets___events
-_ui__prompt_browse___widgets___events:
-    .4byte _sub_44647C
-    .4byte _sub_446465
-    .4byte _sub_4467F6
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_4467E1
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_4464A1
-    .4byte _sub_4464F7
-    .4byte _sub_44685B
-    .4byte _sub_4464B1
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_4467D7
-    .4byte _sub_44685B
-    .4byte _sub_44685B
-    .4byte _sub_445C8F
-    .4byte _sub_445E38
-    .4byte _sub_446314
 
 # 0x4FB37C
     .global _ui__prompt_ok_cancel___widgets___events
@@ -32697,40 +32673,40 @@ __4FEB92:
 __4FEBA0:
     .2byte 0xE0
     .2byte 0xE0
-    .2byte 0x1C0
-    .2byte 0x1C0
+    .2byte 0xE0
+    .2byte 0xE0
 
 # 0x4FEBA8
     .global __4FEBA8
 __4FEBA8:
-    .2byte 0xB
-    .2byte 0xB
-    .2byte 0x7
-    .2byte 0x7
+    .2byte 0xE
+    .2byte 0xE
+    .2byte 0xE
+    .2byte 0xE
 
 # 0x4FEBB0
     .global __4FEBB0
 __4FEBB0:
     .2byte 0x3
     .2byte 0x3
-    .2byte 0x1
-    .2byte 0x1
+    .2byte 0x3
+    .2byte 0x3
 
 # 0x4FEBB8
     .global __4FEBB8
 __4FEBB8:
     .2byte 0x6
     .2byte 0x6
-    .2byte 0x2
-    .2byte 0x2
+    .2byte 0x6
+    .2byte 0x6
 
 # 0x4FEBC0
     .global __4FEBC0
 __4FEBC0:
-    .4byte 2315
-    .4byte 2315
-    .4byte 2319
-    .4byte 2319
+    .4byte 2317
+    .4byte 2317
+    .4byte 2317
+    .4byte 2317
 
 # 0x4FEBD0
     .global __4FEBD0
@@ -33779,16 +33755,16 @@ __4FF6A0:
 __4FF6F4:
     .2byte 0xE0
     .2byte 0xE0
-    .2byte 0x0
-    .2byte 0x0
+    .2byte 0xE0
+    .2byte 0xE0
 
 # 0x4FF6FC
     .global __4FF6FC
 __4FF6FC:
-    .2byte 0xB
-    .2byte 0xB
-    .2byte 0xB
-    .2byte 0xB
+    .2byte 0xE
+    .2byte 0xE
+    .2byte 0xE
+    .2byte 0xE
 
 # 0x4FF704
     .global __4FF704
@@ -37838,12 +37814,12 @@ __5043BC:
 # 0x5043D4
     .global __5043D4
 __5043D4:
-    .2byte 0x1C
-    .2byte 0x1C
-    .2byte 0x1C
-    .2byte 0x1C
-    .2byte 0x30
-    .2byte 0x24
+    .2byte 0x1F
+    .2byte 0x1F
+    .2byte 0x1F
+    .2byte 0x1F
+    .2byte 0x33
+    .2byte 0x27
 
 # 0x5043E0
     .global __5043E0
@@ -38291,39 +38267,6 @@ _ui__dropdown___widgets___events:
     .4byte _sub_4CD00E
     .4byte _sub_4CD01A
 
-# 0x504944
-    .global _ui__text_input___widgets___events
-_ui__text_input___widgets___events:
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE8B6
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE8FA
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE90F
-    .4byte _sub_4CE726
-    .4byte _sub_4CE75B
-    .4byte _sub_4CE90F
-
 # 0x5049B8
     .global _ui__window_30___widgets___events
 _ui__window_30___widgets___events:
@@ -38475,6 +38418,8 @@ _c_dfDIMouse:
     .4byte 7
     .4byte _dfDIMouse
 
+.4byte 0
+
 # 0x504BA0
     .global __504BA0
 __504BA0:
@@ -38496,6 +38441,7 @@ __504BB0:
 __504BB8:
 # 0x504BB8
     .byte 0x00, 0x00, 0x00, 0xC0, 0x7E, 0x01, 0x50, 0x41 #        0 ....~.PA
+
 
 # 0x504BC0
     .global __504BC0
@@ -38856,6 +38802,11 @@ __504FF0:
     .4byte 0x0
     .4byte _str_GDI32.dll - image_base
     .4byte _SelectPalette - image_base
+    .4byte _IGetSaveFileNameA - image_base
+    .4byte 0x0
+    .4byte 0x0
+    .4byte _str_comdlg32.dll - image_base
+    .4byte _GetSaveFileNameA - image_base
     .4byte _IGetUserNameA - image_base
     .4byte 0x0
     .4byte 0x0
@@ -39212,11 +39163,6 @@ _IFindClose:
 _IGetCurrentDirectoryA:
     .4byte _Import_GetCurrentDirectoryA - image_base
 
-# 0x5051D8
-    .global _IGetLogicalDriveStringsA
-_IGetLogicalDriveStringsA:
-    .4byte _Import_GetLogicalDriveStringsA - image_base
-
 # 0x5051DC
     .global _IGetCommandLineA
 _IGetCommandLineA:
@@ -39538,6 +39484,9 @@ _ITranslateMessage:
 _IDispatchMessageA:
     .4byte _Import_DispatchMessageA - image_base
 
+_ICreateDialogParamA:
+    .4byte _Import_CreateDialogParamA - image_base
+
 # 0x5052E0
     .global _IGetDlgItemTextA
 _IGetDlgItemTextA:
@@ -39767,6 +39716,14 @@ _ImmioOpenA:
     .4byte _Import_mmioOpenA - image_base
 
 # 0x505398
+    .4byte 0
+
+_IGetSaveFileNameA:
+    .4byte _Import_GetSaveFileNameA - image_base
+
+_IGetOpenFileNameA:
+    .4byte _Import_GetOpenFileNameA - image_base
+
     .4byte 0
 
 # 0x50539C
@@ -40226,8 +40183,6 @@ _Import_GetCurrentDirectoryA:
 # 0x50579A
     .global _Import_GetLogicalDriveStringsA
 _Import_GetLogicalDriveStringsA:
-    .2byte 286
-    .asciz "GetLogicalDriveStringsA"
 
 # 0x5057B4
     .global _str_KERNEL32.dll
@@ -40465,7 +40420,12 @@ _Import_DialogBoxParamA:
     .2byte 147
     .asciz "DialogBoxParamA"
 
+_Import_CreateDialogParamA:
+    .2byte 79
+    .asciz "CreateDialogParamA"
+
 # 0x5059B8
+    .align 2
     .global _Import_DispatchMessageA
 _Import_DispatchMessageA:
     .2byte 149
@@ -40793,11 +40753,21 @@ _Import_CreateRectRgn:
 _str_GDI32.dll:
     .asciz "GDI32.dll"
 
-# 0x505C6C
-    .byte 0x63, 0x6F, 0x6D, 0x64, 0x6C, 0x67, 0x33, 0x32 #        0 comdlg32
-    .byte 0x2E, 0x64, 0x6C, 0x6C, 0x00, 0x00             #        8 .dll..
+_Import_GetOpenFileNameA:
+    .2byte 9
+    .asciz "GetOpenFileNameA"
+
+    .align 2
+_Import_GetSaveFileNameA:
+    .2byte 11
+    .asciz "GetSaveFileNameA"
+
+    .align 2
+_str_comdlg32.dll:
+    .asciz "comdlg32.dll"
 
 # 0x505C7A
+    .align 2
     .global _Import_RegCloseKey
 _Import_RegCloseKey:
     .2byte 347
