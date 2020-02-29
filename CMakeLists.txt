@@ -37,7 +37,9 @@ set(SRC
         src/text/file-300.s
         src/text/file-310.s
         src/text/file-320.s
-        src/rdata2.s
+        src/rdata.s
+        src/data.s
+        src/bss.s
         )
 
 set_source_files_properties(${SRC} PROPERTIES COMPILE_FLAGS -I${CMAKE_CURRENT_SOURCE_DIR}/include)
@@ -48,12 +50,12 @@ add_executable(loco  ${SRC})
 
 find_program(EXE_LD NAMES ld.lld HINTS ${_CMAKE_TOOLCHAIN_LOCATION})
 if (EXE_LD STREQUAL "EXE_LD-NOTFOUND")
-    set(EXE_LD "/usr/local/Cellar/llvm/9.0.0_1/bin/ld.lld")
+    set(EXE_LD "/usr/local/opt/llvm/bin/ld.lld")
 endif ()
 set(CMAKE_LINKER ${EXE_LD})
 
 set(CMAKE_ASM_LINK_EXECUTABLE "<CMAKE_LINKER> <CMAKE_ASM_LINK_FLAGS> <LINK_FLAGS> <OBJECTS> -o <TARGET> <LINK_LIBRARIES>")
-set(CMAKE_ASM_LINK_FLAGS "--Map=out.map --Tdata=0x506000 --Ttext=0x401000")
+set(CMAKE_ASM_LINK_FLAGS "--Map=out.map --Ttext=0x401000")
 
 set(CMAKE_ASM_FLAGS "-target i386-pc-linux-gnu -m32")
 
