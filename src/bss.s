@@ -11532,7 +11532,13 @@ variable __11416A4
 variable __11416A8
 
 # 0x11416A8
-.skip 0x1018
+.skip 0x18
+
+# 0x11416C0
+variable __11416C0
+
+# 0x11416C0
+.skip 0x1000
 
 # 0x11426C0
 variable __11426C0

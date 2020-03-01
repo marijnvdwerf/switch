@@ -15091,10 +15091,10 @@ _sub_4D1577:
     .global _sub_4D158E
 _sub_4D158E:
     mov_offset eax, _sub_4D30AA                          # 004D158E
-    mov_dword_ptr 0x5235f4, _sub_4D2D3F                  # 004D1593
+    mov_dword_ptr __5235F4, _sub_4D2D3F                  # 004D1593
     mov dword ptr [__5235F0], eax                        # 004D159D
-    mov_dword_ptr 0x5235f8, _sub_4D2DA5                  # 004D15A2
-    mov_dword_ptr 0x5235fc, _sub_4D2CE5                  # 004D15AC
+    mov_dword_ptr __5235F8, _sub_4D2DA5                  # 004D15A2
+    mov_dword_ptr __5235FC, _sub_4D2CE5                  # 004D15AC
     mov_dword_ptr __523600, _sub_4D2D8D                  # 004D15B6
     mov dword ptr [__523604], eax                        # 004D15C0
     ret                                                  # 004D15C5
@@ -16365,7 +16365,7 @@ _sub_4D208D:
     push dword ptr [esp + 4]                             # 004D209B
     call _sub_4D44FB                                     # 004D209F
     push_dword 0xff                                      # 004D20A4
-    msvc_abscall 0x5235e0                                # 004D20A9
+    msvc_abscall __5235E0                                # 004D20A9
     pop ecx                                              # 004D20AF
     pop ecx                                              # 004D20B0
     ret                                                  # 004D20B1
@@ -18541,7 +18541,7 @@ _sub_4D3235:
     jne .L4D3607                                         # 004D35F7
     lea eax, [ebp - 0x248]                               # 004D35F9
     push eax                                             # 004D35FF
-    msvc_abscall 0x5235fc                                # 004D3600
+    msvc_abscall __5235FC                                # 004D3600
     pop ecx                                              # 004D3606
 .L4D3607:
     cmp bl, 0x67                                         # 004D3607
@@ -18550,7 +18550,7 @@ _sub_4D3235:
     jne .L4D361E                                         # 004D360E
     lea eax, [ebp - 0x248]                               # 004D3610
     push eax                                             # 004D3616
-    msvc_abscall 0x5235f4                                # 004D3617
+    msvc_abscall __5235F4                                # 004D3617
     pop ecx                                              # 004D361D
 .L4D361E:
     cmp byte ptr [ebp - 0x248], 0x2d                     # 004D361E
@@ -22014,7 +22014,7 @@ _sub_4D53ED:
     pop ecx                                              # 004D543F
 .L4D5440:
     msvc_xor ecx, ecx                                    # 004D5440
-    mov eax, 0x523980                                    # 004D5442
+    mov_offset eax, __523980                             # 004D5442
 .L4D5447:
     mov edx, dword ptr [__11416A8]                       # 004D5447
     mov dword ptr [ecx + edx], eax                       # 004D544D
