@@ -20249,7 +20249,7 @@ _sub_4D44FB:
     sub esp, 0x1a4                                       # 004D44FE
     mov edx, dword ptr [ebp + 8]                         # 004D4504
     msvc_xor ecx, ecx                                    # 004D4507
-    mov_offset eax, __5238B8                             # 004D4509
+    mov_offset eax, ___rt_err_msg                        # 004D4509
 .L4D450E:
     cmp edx, dword ptr [eax]                             # 004D450E
     je .L4D451D                                          # 004D4510
@@ -20261,7 +20261,7 @@ _sub_4D44FB:
     push esi                                             # 004D451D
     msvc_mov esi, ecx                                    # 004D451E
     shl esi, 3                                           # 004D4520
-    cmp edx, dword ptr [esi + __5238B8]                  # 004D4523
+    cmp edx, dword ptr [esi + ___rt_err_msg]             # 004D4523
     jne .L4D464B                                         # 004D4529
     mov eax, dword ptr [__113DF10]                       # 004D452F
     cmp eax, 1                                           # 004D4534
@@ -20321,7 +20321,7 @@ _sub_4D44FB:
     push_dword 0x504f4c                                  # 004D45EC
     push eax                                             # 004D45F1
     call _sub_4D15E0                                     # 004D45F2
-    push dword ptr [esi + __5238BC]                      # 004D45F7
+    push dword ptr [esi + ___rt_err_msg+4]               # 004D45F7
     lea eax, [ebp - 0xa0]                                # 004D45FD
     push eax                                             # 004D4603
     call _sub_4D15E0                                     # 004D4604
@@ -20335,7 +20335,7 @@ _sub_4D44FB:
     jmp .L4D464B                                         # 004D4623
 .L4D4625:
     lea eax, [ebp + 8]                                   # 004D4625
-    lea esi, [esi + __5238BC]                            # 004D4628
+    lea esi, [esi + ___rt_err_msg+4]                     # 004D4628
     push 0                                               # 004D462E
     push eax                                             # 004D4630
     push dword ptr [esi]                                 # 004D4631
