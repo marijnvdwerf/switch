@@ -12204,10 +12204,10 @@ _sub_48864C:
     shl ebx, 3                                           # 004886CA
     msvc_or ebx, ecx                                     # 004886CD
     movzx ebx, byte ptr [ebx*8 + __4F7B5C]               # 004886CF
-    mov edi, 0x4fe830                                    # 004886D7
+    mov_offset edi, __4FE830                             # 004886D7
     test word ptr [ebp + 2], 1                           # 004886DC
     je .L4886E9                                          # 004886E2
-    mov edi, 0x4fe870                                    # 004886E4
+    mov_offset edi, __4FE870                             # 004886E4
 .L4886E9:
     movsx ax, byte ptr [edi + ebx*4 + 2]                 # 004886E9
     movsx cx, byte ptr [edi + ebx*4 + 3]                 # 004886EF
@@ -12387,10 +12387,10 @@ _sub_48864C:
     shl ebx, 3                                           # 0048892E
     msvc_or ebx, ecx                                     # 00488931
     movzx ebx, byte ptr [ebx*8 + __4F7B7C]               # 00488933
-    mov edi, 0x4fe830                                    # 0048893B
+    mov_offset edi, __4FE830                             # 0048893B
     test word ptr [ebp + 2], 1                           # 00488940
     je .L48894D                                          # 00488946
-    mov edi, 0x4fe870                                    # 00488948
+    mov_offset edi, __4FE870                             # 00488948
 .L48894D:
     movsx ax, byte ptr [edi + ebx*4 + 2]                 # 0048894D
     movsx cx, byte ptr [edi + ebx*4 + 3]                 # 00488953

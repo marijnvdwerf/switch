@@ -1330,10 +1330,10 @@ _sub_4709B6:
     sar bx, cl                                           # 00470A1C
     sar dx, cl                                           # 00470A1F
     sar di, cl                                           # 00470A22
-    mov word ptr [esi + ebp*2 + 0xf2494e], ax            # 00470A25
-    mov word ptr [esi + ebp*2 + 0xf2495e], bx            # 00470A2D
-    mov word ptr [esi + ebp*2 + 0xf24956], dx            # 00470A35
-    mov word ptr [esi + ebp*2 + 0xf24966], di            # 00470A3D
+    mov word ptr [esi + ebp*2 + __F2494E], ax            # 00470A25
+    mov word ptr [esi + ebp*2 + __F2495E], bx            # 00470A2D
+    mov word ptr [esi + ebp*2 + __F24956], dx            # 00470A35
+    mov word ptr [esi + ebp*2 + __F24966], di            # 00470A3D
     pop edx                                              # 00470A45
     pop ecx                                              # 00470A46
     pop eax                                              # 00470A47
@@ -1382,16 +1382,16 @@ _sub_470A62:
     je .L470B52                                          # 00470AC5
     inc edx                                              # 00470ACB
     mov ax, word ptr [edi + 6]                           # 00470ACC
-    cmp ax, word ptr [esi + ecx*2 + 0xf24966]            # 00470AD0
+    cmp ax, word ptr [esi + ecx*2 + __F24966]            # 00470AD0
     jg .L470B52                                          # 00470AD8
     add ax, word ptr [edi + 0xa]                         # 00470ADA
-    cmp ax, word ptr [esi + ecx*2 + 0xf2495e]            # 00470ADE
+    cmp ax, word ptr [esi + ecx*2 + __F2495E]            # 00470ADE
     jl .L470B52                                          # 00470AE6
     mov ax, word ptr [edi + 4]                           # 00470AE8
-    cmp ax, word ptr [esi + ecx*2 + 0xf24956]            # 00470AEC
+    cmp ax, word ptr [esi + ecx*2 + __F24956]            # 00470AEC
     jg .L470B52                                          # 00470AF4
     add ax, word ptr [edi + 8]                           # 00470AF6
-    cmp ax, word ptr [esi + ecx*2 + 0xf2494e]            # 00470AFA
+    cmp ax, word ptr [esi + ecx*2 + __F2494E]            # 00470AFA
     jl .L470B52                                          # 00470B02
     push ecx                                             # 00470B04
     push edx                                             # 00470B05
@@ -1410,8 +1410,8 @@ _sub_470A62:
     push ecx                                             # 00470B25
     push edx                                             # 00470B26
     push esi                                             # 00470B27
-    mov dx, word ptr [esi + ecx*2 + 0xf2495e]            # 00470B28
-    mov cx, word ptr [esi + ecx*2 + 0xf2494e]            # 00470B30
+    mov dx, word ptr [esi + ecx*2 + __F2495E]            # 00470B28
+    mov cx, word ptr [esi + ecx*2 + __F2494E]            # 00470B30
     mov word ptr [__112C876], 0                          # 00470B38
     inc cx                                               # 00470B41
     mov al, 0x22                                         # 00470B43
@@ -1734,7 +1734,7 @@ _sub_470F3C:
     push ecx                                             # 00470F4B
     mov dword ptr [__113E87C], 3                         # 00470F4C
     push_dword __9DA286                                  # 00470F56
-    push_dword 0x50b635                                  # 00470F5B
+    push_dword __50B635                                  # 00470F5B
     call _sub_40830E                                     # 00470F60
     add esp, 8                                           # 00470F65
     mov dword ptr [__113E87C], 0                         # 00470F68
@@ -1886,7 +1886,7 @@ _sub_470F3C:
     push esi                                             # 00471249
     mov dword ptr [__113E87C], 3                         # 0047124A
     push_dword __9DA286                                  # 00471254
-    push_dword 0x50b635                                  # 00471259
+    push_dword __50B635                                  # 00471259
     call _sub_40830E                                     # 0047125E
     add esp, 8                                           # 00471263
     mov dword ptr [__113E87C], 0                         # 00471266
@@ -1928,7 +1928,7 @@ _sub_470F3C:
     je .L47175E                                          # 0047130A
     mov dword ptr [__50D13C], eax                        # 00471310
 .L471315:
-    mov esi, 0x50b635                                    # 00471315
+    mov_offset esi, __50B635                             # 00471315
     mov_offset edi, __112CC04                            # 0047131A
 .L47131F:
     mov al, byte ptr [esi]                               # 0047131F
@@ -2316,7 +2316,7 @@ _sub_47176D:
     jne .L471AEC                                         # 004717EF
 .L4717F5:
     add esi, 0x10                                        # 004717F5
-    mov ebx, 0x50b635                                    # 004717F8
+    mov_offset ebx, __50B635                             # 004717F8
     mov_offset edi, __112CC04                            # 004717FD
 .L471802:
     mov al, byte ptr [ebx]                               # 00471802
@@ -2627,7 +2627,7 @@ _sub_471BCE:
     jne .L471F4F                                         # 00471C46
 .L471C4C:
     add esi, 0x10                                        # 00471C4C
-    mov ebx, 0x50b635                                    # 00471C4F
+    mov_offset ebx, __50B635                             # 00471C4F
     mov_offset edi, __112CC04                            # 00471C54
 .L471C59:
     mov al, byte ptr [ebx]                               # 00471C59
@@ -3659,7 +3659,7 @@ _sub_472687:
     mov dword ptr [__113E87C], 0                         # 004728A0
     popal                                                # 004728AA
     push dword ptr [__9D1CBC]                            # 004728AB
-    mov esi, 0x50b635                                    # 004728B1
+    mov_offset esi, __50B635                             # 004728B1
     mov_offset edi, __112CE04                            # 004728B6
 .L4728BB:
     mov al, byte ptr [esi]                               # 004728BB
@@ -4060,7 +4060,7 @@ _sub_472C84:
 
     .global _sub_472CFD
 _sub_472CFD:
-    mov ebp, 0x4fe3b6                                    # 00472CFD
+    mov_offset ebp, __4FE3B6                             # 00472CFD
 .L472D02:
     cmp byte ptr [ebp], 0xff                             # 00472D02
     je .L472D18                                          # 00472D06
@@ -4077,7 +4077,7 @@ _sub_472CFD:
 _sub_472D19:
     cmp word ptr [__112C1F3], 0                          # 00472D19
     jne .L472D3E                                         # 00472D21
-    mov ebp, 0x4fe3b7                                    # 00472D23
+    mov_offset ebp, __4FE3B7                             # 00472D23
 .L472D28:
     cmp byte ptr [ebp], 0xff                             # 00472D28
     je .L472D3E                                          # 00472D2C
@@ -4921,7 +4921,7 @@ _sub_47361D:
     je .L47372A                                          # 00473726
     or al, 0x40                                          # 00473728
 .L47372A:
-    mov esi, 0x5045f8                                    # 0047372A
+    mov_offset esi, __5045F8                             # 0047372A
     call _sub_451025                                     # 0047372F
     pop esi                                              # 00473734
     pop ebp                                              # 00473735
@@ -7704,8 +7704,8 @@ _sub_47541A:
     mov ecx, 0x10                                        # 004754DD
     call _sub_46F530                                     # 004754E2
     push esi                                             # 004754E7
-    mov esi, 0x50b635                                    # 004754E8
-    mov edi, 0x9d0f74                                    # 004754ED
+    mov_offset esi, __50B635                             # 004754E8
+    mov_offset edi, __9D0F74                             # 004754ED
 .L4754F2:
     mov al, byte ptr [esi]                               # 004754F2
     mov byte ptr [edi], al                               # 004754F4
@@ -7722,7 +7722,7 @@ _sub_47541A:
     mov byte ptr [edi + 4], 0                            # 00475514
 .L475518:
     mov dword ptr [__113E87C], 3                         # 00475518
-    push_dword 0x9d0f74                                  # 00475522
+    push_dword __9D0F74                                  # 00475522
     call _sub_4082AD                                     # 00475527
     add esp, 4                                           # 0047552C
     mov dword ptr [__113E87C], 0                         # 0047552F
@@ -7833,8 +7833,8 @@ _sub_47559C:
     jmp .L4755B3                                         # 00475631
 .L475633:
     add ebp, 0x10                                        # 00475633
-    mov ebx, 0x50b635                                    # 00475636
-    mov edi, 0x9d0f74                                    # 0047563B
+    mov_offset ebx, __50B635                             # 00475636
+    mov_offset edi, __9D0F74                             # 0047563B
 .L475640:
     mov al, byte ptr [ebx]                               # 00475640
     mov byte ptr [edi], al                               # 00475642
@@ -7850,7 +7850,7 @@ _sub_47559C:
     inc edi                                              # 00475651
     msvc_or al, al                                       # 00475652
     jne .L47564B                                         # 00475654
-    mov esi, 0x9d0f74                                    # 00475656
+    mov_offset esi, __9D0F74                             # 00475656
     call _sub_475666                                     # 0047565B
     msvc_jmp _sub_47559C                                 # 00475660
 .L475665:
@@ -8004,7 +8004,7 @@ _sub_475868:
     je .L475981                                          # 00475889
     push ecx                                             # 0047588F
     mov dword ptr [__113E87C], 3                         # 00475890
-    push_dword 0x9d0f74                                  # 0047589A
+    push_dword __9D0F74                                  # 0047589A
     call _sub_4082CA                                     # 0047589F
     add esp, 4                                           # 004758A4
     mov dword ptr [__113E87C], 0                         # 004758A7
@@ -8125,7 +8125,7 @@ _sub_4759A6:
     je .L475A75                                          # 00475A0F
     inc ebp                                              # 00475A11
 .L475A12:
-    movsx ax, byte ptr [ebp + edi*2 + 0x4f720c]          # 00475A12
+    movsx ax, byte ptr [ebp + edi*2 + __4F720C]          # 00475A12
     msvc_add dx, ax                                      # 00475A1B
     movzx ebx, dx                                        # 00475A1E
     add ebx, 8                                           # 00475A21
@@ -8175,12 +8175,12 @@ _sub_4759A6:
     je .L475B39                                          # 00475AD7
     inc ebp                                              # 00475AD9
 .L475ADA:
-    movsx ax, byte ptr [ebp + edi*2 + 0x4f720c]          # 00475ADA
+    movsx ax, byte ptr [ebp + edi*2 + __4F720C]          # 00475ADA
     msvc_add dx, ax                                      # 00475AE3
     add dx, 2                                            # 00475AE6
     shl ebp, 2                                           # 00475AEA
     msvc_add ebp, ecx                                    # 00475AED
-    movzx ebx, byte ptr [ebp + edi*8 + 0x4f7220]         # 00475AEF
+    movzx ebx, byte ptr [ebp + edi*8 + __4F7220]         # 00475AEF
     add ebx, 0x20700da4                                  # 00475AF7
     msvc_xor al, al                                      # 00475AFD
     msvc_xor cl, cl                                      # 00475AFF
@@ -12500,10 +12500,10 @@ _sub_478F1F:
     mov word ptr [__E3F0BC], 0                           # 00478F26
     pushal                                               # 00478F2F
     mov edi, dword ptr [__E0C3E0]                        # 00478F30
-    mov eax, 0xe0c410                                    # 00478F36
+    mov_offset eax, __E0C410                             # 00478F36
     add eax, 0x32c40                                     # 00478F3B
     mov dword ptr [__E0C404], eax                        # 00478F40
-    mov ebp, 0xe0c410                                    # 00478F45
+    mov_offset ebp, __E0C410                             # 00478F45
     call _sub_45A6CA                                     # 00478F4A
     popal                                                # 00478F4F
     mov si, word ptr [__F24484]                          # 00478F50
@@ -17738,7 +17738,7 @@ _sub_47CD78:
     shl eax, 4                                           # 0047CD8C
     msvc_or ax, cx                                       # 0047CD8F
     mov byte ptr [__112C328], 0                          # 0047CD92
-    mov ebp, 0x500244                                    # 0047CD99
+    mov_offset ebp, __500244                             # 0047CD99
 .L47CD9E:
     and eax, 0x3ffff                                     # 0047CD9E
     push eax                                             # 0047CDA3
@@ -18779,7 +18779,7 @@ _sub_47D9F2:
     mov_offset esi, __4D9DE4                             # 0047DA21
     mov ecx, 0x200                                       # 0047DA26
     rep movsd dword ptr es:[edi], dword ptr [esi]        # 0047DA2B
-    mov esi, 0x4f7338                                    # 0047DA2D
+    mov_offset esi, __4F7338                             # 0047DA2D
     mov_offset edi, __112C32C                            # 0047DA32
     mov ecx, 0x20                                        # 0047DA37
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 0047DA3C
@@ -18797,11 +18797,11 @@ _sub_47D9F2:
     mov_offset esi, __4D9DE4+1024                        # 0047DA63
     mov ecx, 0x80                                        # 0047DA68
     rep movsd dword ptr es:[edi], dword ptr [esi]        # 0047DA6D
-    mov esi, 0x4f7348                                    # 0047DA6F
+    mov_offset esi, __4F7348                             # 0047DA6F
     mov_offset edi, __112C32C                            # 0047DA74
     mov ecx, 0x10                                        # 0047DA79
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 0047DA7E
-    mov esi, 0x4f7338                                    # 0047DA80
+    mov_offset esi, __4F7338                             # 0047DA80
     mov ecx, 0x10                                        # 0047DA85
     rep movsb byte ptr es:[edi], byte ptr [esi]          # 0047DA8A
     ret                                                  # 0047DA8C

@@ -2158,12 +2158,12 @@ _sub_495E2A:
 .L495E72:
     mov bh, 0x30                                         # 00495E72
 .L495E74:
-    sub_offset eax, __987C5C+6692                        # 00495E74
+    sub eax, 0x989680                                    # 00495E74
     jb .L495E7F                                          # 00495E79
     inc bh                                               # 00495E7B
     jmp .L495E74                                         # 00495E7D
 .L495E7F:
-    add_offset eax, __987C5C+6692                        # 00495E7F
+    add eax, 0x989680                                    # 00495E7F
     msvc_or bl, bh                                       # 00495E84
     cmp bl, 0x30                                         # 00495E86
     je .L495E8E                                          # 00495E89
@@ -2298,12 +2298,12 @@ _sub_495F35:
 .L495F83:
     mov bh, 0x30                                         # 00495F83
 .L495F85:
-    sub_offset eax, __987C5C+6692                        # 00495F85
+    sub eax, 0x989680                                    # 00495F85
     jb .L495F90                                          # 00495F8A
     inc bh                                               # 00495F8C
     jmp .L495F85                                         # 00495F8E
 .L495F90:
-    add_offset eax, __987C5C+6692                        # 00495F90
+    add eax, 0x989680                                    # 00495F90
     msvc_or bl, bh                                       # 00495F95
     cmp bl, 0x30                                         # 00495F97
     je .L495F9F                                          # 00495F9A
@@ -2560,12 +2560,12 @@ _sub_496052:
 .L4961C3:
     mov bh, 0x30                                         # 004961C3
 .L4961C5:
-    sub_offset eax, __987C5C+6692                        # 004961C5
+    sub eax, 0x989680                                    # 004961C5
     jb .L4961D0                                          # 004961CA
     inc bh                                               # 004961CC
     jmp .L4961C5                                         # 004961CE
 .L4961D0:
-    add_offset eax, __987C5C+6692                        # 004961D0
+    add eax, 0x989680                                    # 004961D0
     msvc_or bl, bh                                       # 004961D5
     cmp bl, 0x30                                         # 004961D7
     je .L4961E9                                          # 004961DA
@@ -2747,12 +2747,12 @@ _sub_4962F1:
 .L49633B:
     mov bh, 0x30                                         # 0049633B
 .L49633D:
-    sub_offset eax, __987C5C+6692                        # 0049633D
+    sub eax, 0x989680                                    # 0049633D
     jb .L496348                                          # 00496342
     inc bh                                               # 00496344
     jmp .L49633D                                         # 00496346
 .L496348:
-    add_offset eax, __987C5C+6692                        # 00496348
+    add eax, 0x989680                                    # 00496348
     msvc_or bl, bh                                       # 0049634D
     cmp bl, 0x30                                         # 0049634F
     je .L496357                                          # 00496352
@@ -2879,12 +2879,12 @@ _sub_4963FC:
 .L496440:
     mov bh, 0x30                                         # 00496440
 .L496442:
-    sub_offset eax, __987C5C+6692                        # 00496442
+    sub eax, 0x989680                                    # 00496442
     jb .L49644D                                          # 00496447
     inc bh                                               # 00496449
     jmp .L496442                                         # 0049644B
 .L49644D:
-    add_offset eax, __987C5C+6692                        # 0049644D
+    add eax, 0x989680                                    # 0049644D
     msvc_or bl, bh                                       # 00496452
     cmp bl, 0x30                                         # 00496454
     je .L496462                                          # 00496457

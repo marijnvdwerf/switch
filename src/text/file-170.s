@@ -42,7 +42,7 @@ _sub_459E54:
     msvc_and bx, dx                                      # 00459EDC
     mov word ptr [__E0C3E8], ax                          # 00459EDF
     mov word ptr [__E0C3EA], bx                          # 00459EE5
-    mov edi, 0xe0c3f4                                    # 00459EEC
+    mov_offset edi, __E0C3F4                             # 00459EEC
     mov ax, word ptr [__E0C3EA]                          # 00459EF1
     mov word ptr [edi + 6], ax                           # 00459EF7
     mov word ptr [edi + 0xa], 1                          # 00459EFB
@@ -51,11 +51,11 @@ _sub_459E54:
     mov cx, word ptr [__E0C3E8]                          # 00459F0B
     mov word ptr [edi + 4], cx                           # 00459F12
     mov word ptr [edi + 8], 1                            # 00459F16
-    mov ebp, 0xe0c410                                    # 00459F1C
+    mov_offset ebp, __E0C410                             # 00459F1C
     add ebp, 0x32c40                                     # 00459F21
     mov dword ptr [__E0C404], ebp                        # 00459F27
     mov dword ptr [__E0C3E0], edi                        # 00459F2D
-    mov ebp, 0xe0c410                                    # 00459F33
+    mov_offset ebp, __E0C410                             # 00459F33
     call _sub_45A6CA                                     # 00459F38
     call _sub_4622A2                                     # 00459F3D
     call _sub_45E7B5                                     # 00459F42
@@ -105,7 +105,7 @@ _sub_459E54:
     msvc_and bx, dx                                      # 00459FE8
     mov word ptr [__E0C3E8], ax                          # 00459FEB
     mov word ptr [__E0C3EA], bx                          # 00459FF1
-    mov edi, 0xe0c3f4                                    # 00459FF8
+    mov_offset edi, __E0C3F4                             # 00459FF8
     mov ax, word ptr [__E0C3EA]                          # 00459FFD
     mov word ptr [edi + 6], ax                           # 0045A003
     mov word ptr [edi + 0xa], 1                          # 0045A007
@@ -114,11 +114,11 @@ _sub_459E54:
     mov cx, word ptr [__E0C3E8]                          # 0045A017
     mov word ptr [edi + 4], cx                           # 0045A01E
     mov word ptr [edi + 8], 1                            # 0045A022
-    mov ebp, 0xe0c410                                    # 0045A028
+    mov_offset ebp, __E0C410                             # 0045A028
     add ebp, 0x32c40                                     # 0045A02D
     mov dword ptr [__E0C404], ebp                        # 0045A033
     mov dword ptr [__E0C3E0], edi                        # 0045A039
-    mov ebp, 0xe0c410                                    # 0045A03F
+    mov_offset ebp, __E0C410                             # 0045A03F
     call _sub_45A6CA                                     # 0045A044
     call _sub_4622A2                                     # 0045A049
     call _sub_45E7B5                                     # 0045A04E
@@ -315,7 +315,7 @@ _sub_45A1A4:
     mul ebx                                              # 0045A26E
     msvc_add ecx, eax                                    # 0045A270
     mov dword ptr [__E0C3E4], ecx                        # 0045A272
-    mov edi, 0xe0c3f4                                    # 0045A278
+    mov_offset edi, __E0C3F4                             # 0045A278
     mov ax, word ptr [__E0C3EA]                          # 0045A27D
     mov word ptr [edi + 6], ax                           # 0045A283
     mov ax, word ptr [__E0C3EE]                          # 0045A287
@@ -367,11 +367,11 @@ _sub_45A1A4:
     mov ebp, 0xa0a0a0a                                   # 0045A31A
 .L45A31F:
     call _sub_447485                                     # 0045A31F
-    mov ebp, 0xe0c410                                    # 0045A324
+    mov_offset ebp, __E0C410                             # 0045A324
     add ebp, 0x32c40                                     # 0045A329
     mov dword ptr [__E0C404], ebp                        # 0045A32F
     mov dword ptr [__E0C3E0], edi                        # 0045A335
-    mov ebp, 0xe0c410                                    # 0045A33B
+    mov_offset ebp, __E0C410                             # 0045A33B
     call _sub_45A6CA                                     # 0045A340
     call _sub_4622A2                                     # 0045A345
     call _sub_45E7B5                                     # 0045A34A

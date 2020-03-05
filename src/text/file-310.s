@@ -229,7 +229,7 @@ _sub_4C4DAD:
     add ebp, 6                                           # 004C4E88
     jmp .L4C4E6C                                         # 004C4E8B
 .L4C4E8D:
-    cmp ebp, 0xf0029c                                    # 004C4E8D
+    cmp_offset ebp, __F0029C                             # 004C4E8D
     jae .L4C4DC2                                         # 004C4E93
     mov word ptr [ebp], ax                               # 004C4E99
     mov word ptr [ebp + 2], cx                           # 004C4E9D

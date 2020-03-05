@@ -440,7 +440,7 @@ _sub_4A8B81:
     msvc_jmp .L4A8F3A                                    # 004A8D43
 .L4A8D48:
     call _sub_4707C0                                     # 004A8D48
-    mov_offset eax, __g1Data+3581660                     # 004A8D4D
+    mov eax, 0xd4cb00                                    # 004A8D4D
     mov ebx, dword ptr [__113612C]                       # 004A8D52
     call _sub_4ACEE7                                     # 004A8D58
     cmp byte ptr [esi + 0x42], 1                         # 004A8D5D
@@ -720,7 +720,7 @@ _sub_4A8B81:
 .L4A912E:
     mov byte ptr [edi + 0x5a], 2                         # 004A912E
     mov edx, 0x20000                                     # 004A9132
-    cmp_offset eax, _things+1329444                      # 004A9137
+    cmp eax, 0x820000                                    # 004A9137
     jb .L4A915B                                          # 004A913C
     mov edx, 0x50000                                     # 004A913E
     cmp eax, 0x1900000                                   # 004A9143
@@ -10647,7 +10647,7 @@ _sub_4B1876:
     and cx, 0x1ff                                        # 004B18A2
     shl eax, 4                                           # 004B18A7
     msvc_or ax, cx                                       # 004B18AA
-    mov ebp, 0x500244                                    # 004B18AD
+    mov_offset ebp, __500244                             # 004B18AD
 .L4B18B2:
     and eax, 0x3ffff                                     # 004B18B2
     mov cx, word ptr [eax*2 + __1025A8C]                 # 004B18B7

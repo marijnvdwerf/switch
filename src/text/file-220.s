@@ -9688,9 +9688,9 @@ _sub_491FE0:
     movzx ecx, cx                                        # 0049232A
     imul ecx, ecx, 0x180                                 # 0049232D
     and byte ptr [eax + ecx + __F00484], 0xfd            # 00492333
-    and byte ptr [eax + ecx + 0xf00485], 0xfd            # 0049233B
-    and byte ptr [eax + ecx + 0xf00604], 0xfd            # 00492343
-    and byte ptr [eax + ecx + 0xf00605], 0xfd            # 0049234B
+    and byte ptr [eax + ecx + __F00485], 0xfd            # 0049233B
+    and byte ptr [eax + ecx + __F00604], 0xfd            # 00492343
+    and byte ptr [eax + ecx + __F00605], 0xfd            # 0049234B
 .L492353:
     add esi, 8                                           # 00492353
     test byte ptr [esi - 7], 0x80                        # 00492356
@@ -9885,9 +9885,9 @@ _sub_49239A:
     movzx ecx, cx                                        # 004925D0
     imul ecx, ecx, 0x180                                 # 004925D3
     and byte ptr [eax + ecx + __F00484], 0xfd            # 004925D9
-    and byte ptr [eax + ecx + 0xf00485], 0xfd            # 004925E1
-    and byte ptr [eax + ecx + 0xf00604], 0xfd            # 004925E9
-    and byte ptr [eax + ecx + 0xf00605], 0xfd            # 004925F1
+    and byte ptr [eax + ecx + __F00485], 0xfd            # 004925E1
+    and byte ptr [eax + ecx + __F00604], 0xfd            # 004925E9
+    and byte ptr [eax + ecx + __F00605], 0xfd            # 004925F1
 .L4925F9:
     add esi, 8                                           # 004925F9
     test byte ptr [esi - 7], 0x80                        # 004925FC
@@ -11802,7 +11802,7 @@ _sub_493F0E:
 .L493F87:
     test byte ptr [esi + 5], 0x1f                        # 00493F87
     je .L49401C                                          # 00493F8B
-    mov ebp, 0x4febd0                                    # 00493F91
+    mov_offset ebp, __4FEBD0                             # 00493F91
 .L493F96:
     mov ax, word ptr [ebp]                               # 00493F96
     cmp ax, -1                                           # 00493F9A

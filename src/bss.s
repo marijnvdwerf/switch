@@ -18,7 +18,13 @@ variable __524124
 variable __524128
 
 # 0x524128
-.skip 0x8
+.skip 0x4
+
+# 0x52412C
+variable __52412C
+
+# 0x52412C
+.skip 0x4
 
 # 0x524130
 variable __524130
@@ -114,19 +120,49 @@ variable __524174
 variable __524178
 
 # 0x524178
-.skip 0x400
+.skip 0x1
+
+# 0x524179
+variable __524179
+
+# 0x524179
+.skip 0x3FF
 
 # 0x524578
 variable __524578
 
 # 0x524578
-.skip 0xC
+.skip 0x1
+
+# 0x524579
+variable __524579
+
+# 0x524579
+.skip 0x7
+
+# 0x524580
+variable __524580
+
+# 0x524580
+.skip 0x3
+
+# 0x524583
+variable __524583
+
+# 0x524583
+.skip 0x1
 
 # 0x524584
 variable __524584
 
 # 0x524584
-.skip 0x400
+.skip 0x1
+
+# 0x524585
+variable __524585
+
+# 0x524585
+.skip 0x3FF
 
 # 0x524984
 variable __524984
@@ -330,8 +366,60 @@ variable __525228
 variable __525230
 
 # 0x525230
-.skip 0x6C
+.skip 0x4
 
+# 0x525234
+variable __525234, 0x4
+# 0x525238
+variable __525238, 0x4
+# 0x52523C
+variable __52523C, 0x4
+# 0x525240
+variable __525240, 0x4
+# 0x525244
+variable __525244, 0x4
+# 0x525248
+variable __525248, 0x4
+# 0x52524C
+variable __52524C, 0x4
+# 0x525250
+variable __525250, 0x4
+# 0x525254
+variable __525254, 0x4
+# 0x525258
+variable __525258, 0x4
+# 0x52525C
+variable __52525C, 0x4
+# 0x525260
+variable __525260, 0x4
+# 0x525264
+variable __525264, 0x4
+# 0x525268
+variable __525268, 0x4
+# 0x52526C
+variable __52526C, 0x4
+# 0x525270
+variable __525270, 0x4
+# 0x525274
+variable __525274, 0x4
+# 0x525278
+variable __525278, 0x4
+# 0x52527C
+variable __52527C, 0x4
+# 0x525280
+variable __525280, 0x4
+# 0x525284
+variable __525284, 0x4
+# 0x525288
+variable __525288, 0x4
+# 0x52528C
+variable __52528C, 0x4
+# 0x525290
+variable __525290, 0x4
+# 0x525294
+variable __525294, 0x4
+# 0x525298
+variable __525298, 0x4
 # 0x52529C
 variable __52529C
 
@@ -450,7 +538,13 @@ variable __5252E4
 variable __5252E8
 
 # 0x5252E8
-.skip 0x24
+.skip 0x8
+
+# 0x5252F0
+variable __5252F0
+
+# 0x5252F0
+.skip 0x1C
 
 # 0x52530C
 variable __52530C
@@ -558,7 +652,13 @@ variable __52534C
 variable __525350
 
 # 0x525350
-.skip 0x24
+.skip 0x4
+
+# 0x525354
+variable __525354
+
+# 0x525354
+.skip 0x20
 
 # 0x525374
 variable __525374
@@ -1366,7 +1466,13 @@ variable __9C6476
 variable __9C64B3
 
 # 0x9C64B3
-.skip 0x200
+.skip 0x1
+
+# 0x9C64B4
+variable __9C64B4
+
+# 0x9C64B4
+.skip 0x1FF
 
 # 0x9C66B3
 variable __9C66B3
@@ -1378,7 +1484,13 @@ variable __9C66B3
 variable __9C66B5
 
 # 0x9C66B5
-.skip 0x200
+.skip 0x1
+
+# 0x9C66B6
+variable __9C66B6
+
+# 0x9C66B6
+.skip 0x1FF
 
 # 0x9C68B5
 variable __9C68B5
@@ -1640,6 +1752,8 @@ variable __9CCA30
 
 # 0x9CCA34
 variable _scenarioHeader, 0x20
+# 0x9CCA54
+variable __9CCA54
 
 # 0x9CCA54
 .skip 0x6
@@ -1660,7 +1774,25 @@ variable __9CCBDE
 variable __9D0D6E
 
 # 0x9D0D6E
-.skip 0x30A
+.skip 0x4
+
+# 0x9D0D72
+variable __9D0D72
+
+# 0x9D0D72
+.skip 0x101
+
+# 0x9D0E73
+variable __9D0E73
+
+# 0x9D0E73
+.skip 0x101
+
+# 0x9D0F74
+variable __9D0F74
+
+# 0x9D0F74
+.skip 0x104
 
 # 0x9D1078
 variable __9D1078
@@ -1690,13 +1822,25 @@ variable __9D1084
 variable __9D1086
 
 # 0x9D1086
-.skip 0x20C
+.skip 0x108
+
+# 0x9D118E
+variable __9D118E
+
+# 0x9D118E
+.skip 0x104
 
 # 0x9D1292
 variable __9D1292
 
 # 0x9D1292
-.skip 0xA08
+.skip 0x908
+
+# 0x9D1B9A
+variable __9D1B9A
+
+# 0x9D1B9A
+.skip 0x100
 
 # 0x9D1C9A
 variable __9D1C9A
@@ -1786,7 +1930,13 @@ variable __9D1CC7
 variable __9D1CC8
 
 # 0x9D1CC8
-.skip 0x8000
+.skip 0x16E
+
+# 0x9D1E36
+variable __9D1E36
+
+# 0x9D1E36
+.skip 0x7E92
 
 # 0x9D9CC8
 variable __9D9CC8
@@ -1858,13 +2008,31 @@ variable __9D9D62
 variable __9D9D63
 
 # 0x9D9D63
-.skip 0x121
+.skip 0x1
+
+# 0x9D9D64
+variable __9D9D64
+
+# 0x9D9D64
+.skip 0x100
+
+# 0x9D9E64
+variable __9D9E64
+
+# 0x9D9E64
+.skip 0x20
 
 # 0x9D9E84
 variable __9D9E84
 
 # 0x9D9E84
-.skip 0x400
+.skip 0x200
+
+# 0x9DA084
+variable __9DA084
+
+# 0x9DA084
+.skip 0x200
 
 # 0x9DA284
 variable __9DA284
@@ -2002,7 +2170,13 @@ variable __9DA410
 variable __9DA414
 
 # 0x9DA414
-.skip 0x8000
+.skip 0x10
+
+# 0x9DA424
+variable __9DA424
+
+# 0x9DA424
+.skip 0x7FF0
 
 # 0x9E2414
 variable __9E2414
@@ -2048,6 +2222,8 @@ variable __9E2422
 
 # 0x9E2424
 variable __g1Data, 0x4201A0
+# 0xE025C4
+variable __E025C4
 
 # 0xE025C4
 .skip 0x1D4C
@@ -2170,7 +2346,13 @@ variable __E04350
 variable __E04352
 
 # 0xE04352
-.skip 0x8006
+.skip 0x6
+
+# 0xE04358
+variable __E04358
+
+# 0xE04358
+.skip 0x8000
 
 # 0xE0C358
 variable __E0C358
@@ -2530,7 +2712,13 @@ variable __E0C3F0
 variable __E0C3F2
 
 # 0xE0C3F2
-.skip 0x12
+.skip 0x2
+
+# 0xE0C3F4
+variable __E0C3F4
+
+# 0xE0C3F4
+.skip 0x10
 
 # 0xE0C404
 variable __E0C404
@@ -2548,7 +2736,13 @@ variable __E0C408
 variable __E0C40C
 
 # 0xE0C40C
-.skip 0x32C84
+.skip 0x4
+
+# 0xE0C410
+variable __E0C410
+
+# 0xE0C410
+.skip 0x32C80
 
 # 0xE3F090
 variable __E3F090
@@ -3018,7 +3212,13 @@ variable __F00170
 variable __F00176
 
 # 0xF00176
-.skip 0x258
+.skip 0x126
+
+# 0xF0029C
+variable __F0029C
+
+# 0xF0029C
+.skip 0x132
 
 # 0xF003CE
 variable __F003CE
@@ -3396,7 +3596,25 @@ variable __F00480
 variable __F00484
 
 # 0xF00484
-.skip 0x24000
+.skip 0x1
+
+# 0xF00485
+variable __F00485
+
+# 0xF00485
+.skip 0x17F
+
+# 0xF00604
+variable __F00604
+
+# 0xF00604
+.skip 0x1
+
+# 0xF00605
+variable __F00605
+
+# 0xF00605
+.skip 0x23E7F
 
 # 0xF24484
 variable __F24484
@@ -3480,7 +3698,31 @@ variable __F24948
 variable __F2494A
 
 # 0xF2494A
-.skip 0x24
+.skip 0x4
+
+# 0xF2494E
+variable __F2494E
+
+# 0xF2494E
+.skip 0x8
+
+# 0xF24956
+variable __F24956
+
+# 0xF24956
+.skip 0x8
+
+# 0xF2495E
+variable __F2495E
+
+# 0xF2495E
+.skip 0x8
+
+# 0xF24966
+variable __F24966
+
+# 0xF24966
+.skip 0x8
 
 # 0xF2496E
 variable __F2496E
@@ -3828,7 +4070,13 @@ variable __F25350
 variable __F25374
 
 # 0xF25374
-.skip 0x18
+.skip 0x4
+
+# 0xF25378
+variable __F25378
+
+# 0xF25378
+.skip 0x14
 
 # 0xF2538C
 variable __F2538C
@@ -4050,13 +4298,25 @@ variable __F2542C
 variable __F2542D
 
 # 0xF2542D
-.skip 0x40
+.skip 0x1
+
+# 0xF2542E
+variable __F2542E
+
+# 0xF2542E
+.skip 0x3F
 
 # 0xF2546D
 variable __F2546D
 
 # 0xF2546D
-.skip 0x105
+.skip 0x63
+
+# 0xF254D0
+variable __F254D0
+
+# 0xF254D0
+.skip 0xA2
 
 # 0xF25572
 variable __F25572
@@ -4092,7 +4352,13 @@ variable __F2557A
 variable __F2557C
 
 # 0xF2557C
-.skip 0x4
+.skip 0x2
+
+# 0xF2557E
+variable __F2557E
+
+# 0xF2557E
+.skip 0x2
 
 # 0xF25580
 variable __F25580
@@ -4116,7 +4382,19 @@ variable __F25588
 variable __F255BD
 
 # 0xF255BD
-.skip 0xB7
+.skip 0x1
+
+# 0xF255BE
+variable __F255BE
+
+# 0xF255BE
+.skip 0x20
+
+# 0xF255DE
+variable __F255DE
+
+# 0xF255DE
+.skip 0x96
 
 # 0xF25674
 variable __F25674
@@ -4146,7 +4424,13 @@ variable __F2567E
 variable __F25680
 
 # 0xF25680
-.skip 0x80100
+.skip 0x100
+
+# 0xF25780
+variable __F25780
+
+# 0xF25780
+.skip 0x80000
 
 # 0xFA5780
 variable __FA5780
@@ -4170,7 +4454,13 @@ variable __FA5882
 variable __FA5884
 
 # 0xFA5884
-.skip 0x80100
+.skip 0x100
+
+# 0xFA5984
+variable __FA5984
+
+# 0xFA5984
+.skip 0x80000
 
 # 0x1025984
 variable __1025984

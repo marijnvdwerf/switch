@@ -332,7 +332,7 @@ _sub_4C5C69:
     imul bx, cx                                          # 004C5CCB
     msvc_add bx, ax                                      # 004C5CCF
     and ebx, 0xffff                                      # 004C5CD2
-    add ebx, 0xe025c4                                    # 004C5CD8
+    add_offset ebx, __E025C4                             # 004C5CD8
     msvc_sub dx, ax                                      # 004C5CDE
     inc dx                                               # 004C5CE1
     msvc_sub cx, dx                                      # 004C5CE3
@@ -357,7 +357,7 @@ _sub_4C5CFA:
     msvc_xor ebx, ebx                                    # 004C5CFC
     msvc_xor ecx, ecx                                    # 004C5CFE
 .L4C5D00:
-    cmp byte ptr [ecx + eax + 0xe025c4], 0               # 004C5D00
+    cmp byte ptr [ecx + eax + __E025C4], 0               # 004C5D00
     je .L4C5DB0                                          # 004C5D08
     msvc_mov edx, eax                                    # 004C5D0E
     msvc_mov ebp, ebx                                    # 004C5D10
@@ -367,7 +367,7 @@ _sub_4C5CFA:
     add edi, dword ptr [__50B8A4]                        # 004C5D15
     cmp ebp, dword ptr [__50B8A8]                        # 004C5D1B
     jae .L4C5D2D                                         # 004C5D21
-    cmp byte ptr [edi + edx + 0xe025c4], 0               # 004C5D23
+    cmp byte ptr [edi + edx + __E025C4], 0               # 004C5D23
     jne .L4C5D14                                         # 004C5D2B
 .L4C5D2D:
     dec ebp                                              # 004C5D2D
@@ -376,7 +376,7 @@ _sub_4C5CFA:
 .L4C5D35:
     push eax                                             # 004C5D35
 .L4C5D36:
-    mov byte ptr [ecx + eax + 0xe025c4], 0               # 004C5D36
+    mov byte ptr [ecx + eax + __E025C4], 0               # 004C5D36
     inc eax                                              # 004C5D3E
     msvc_cmp eax, edx                                    # 004C5D3F
     jbe .L4C5D36                                         # 004C5D41
@@ -1391,7 +1391,7 @@ _sub_4C68AA:
 _sub_4C68BC:
     push eax                                             # 004C68BC
     push ecx                                             # 004C68BD
-    mov ebp, 0x5046b4                                    # 004C68BE
+    mov_offset ebp, __5046B4                             # 004C68BE
     mov ax, word ptr [ebp]                               # 004C68C3
     mul word ptr [edi + 0xc]                             # 004C68C7
     msvc_mov cx, dx                                      # 004C68CB
@@ -7012,7 +7012,7 @@ _sub_4CB00B:
     mov word ptr [__112C876], 0xe0                       # 004CB066
     mov al, byte ptr [__113DDFA]                         # 004CB06F
     and al, 0x7f                                         # 004CB074
-    mov esi, 0x5045f8                                    # 004CB076
+    mov_offset esi, __5045F8                             # 004CB076
     call _sub_451025                                     # 004CB07B
 .L4CB080:
     pop ebp                                              # 004CB080
@@ -7280,7 +7280,7 @@ _sub_4CB31C:
     msvc_mov cx, ax                                      # 004CB3B9
     add cx, 2                                            # 004CB3BC
     msvc_xor al, al                                      # 004CB3C0
-    mov esi, 0x5045f2                                    # 004CB3C2
+    mov_offset esi, __5045F2                             # 004CB3C2
     call _sub_451025                                     # 004CB3C7
     popal                                                # 004CB3CC
     pushal                                               # 004CB3CD
@@ -7300,7 +7300,7 @@ _sub_4CB31C:
     msvc_mov cx, bx                                      # 004CB3F9
     dec cx                                               # 004CB3FC
     msvc_xor al, al                                      # 004CB3FE
-    mov esi, 0x5045f5                                    # 004CB400
+    mov_offset esi, __5045F5                             # 004CB400
     call _sub_451025                                     # 004CB405
     popal                                                # 004CB40A
     pushal                                               # 004CB40B
@@ -7381,7 +7381,7 @@ _sub_4CB31C:
     inc cx                                               # 004CB506
     dec dx                                               # 004CB508
     msvc_xor al, al                                      # 004CB50A
-    mov esi, 0x5045ec                                    # 004CB50C
+    mov_offset esi, __5045EC                             # 004CB50C
     call _sub_451025                                     # 004CB511
     popal                                                # 004CB516
     pushal                                               # 004CB517
@@ -7400,7 +7400,7 @@ _sub_4CB31C:
     inc cx                                               # 004CB53C
     dec dx                                               # 004CB53E
     msvc_xor al, al                                      # 004CB540
-    mov esi, 0x5045ef                                    # 004CB542
+    mov_offset esi, __5045EF                             # 004CB542
     call _sub_451025                                     # 004CB547
     popal                                                # 004CB54C
     pushal                                               # 004CB54D
@@ -15952,14 +15952,14 @@ _sub_4D1CF2:
 _sub_4D1D15:
     push ebx                                             # 004D1D15
     push ecx                                             # 004D1D16
-    mov ebx, 0x5235d0                                    # 004D1D17
+    mov_offset ebx, __5235D0                             # 004D1D17
     jmp .L4D1D28                                         # 004D1D1C
 
     .global _sub_4D1D1E
 _sub_4D1D1E:
     push ebx                                             # 004D1D1E
     push ecx                                             # 004D1D1F
-    mov ebx, 0x5235d0                                    # 004D1D20
+    mov_offset ebx, __5235D0                             # 004D1D20
     mov ecx, dword ptr [ebp + 8]                         # 004D1D25
 .L4D1D28:
     mov dword ptr [ebx + 8], ecx                         # 004D1D28
@@ -17547,11 +17547,11 @@ _sub_4D2C6C:
 
     .global _sub_4D2CBC
 _sub_4D2CBC:
-    push_dword 0x504be4                                  # 004D2CBC
+    push_dword __504BE4                                  # 004D2CBC
     msvc_abscall _GetModuleHandleA                       # 004D2CC1
     test eax, eax                                        # 004D2CC7
     je .L4D2CE0                                          # 004D2CC9
-    push_dword 0x504bc8                                  # 004D2CCB
+    push_dword __504BC8                                  # 004D2CCB
     push eax                                             # 004D2CD0
     msvc_abscall _GetProcAddress                         # 004D2CD1
     test eax, eax                                        # 004D2CD7
@@ -18115,9 +18115,9 @@ _sub_4D3120:
     test ax, 0x10c                                       # 004D3167
     mov dword ptr [esi + 0xc], eax                       # 004D316B
     jne .L4D3192                                         # 004D316E
-    cmp esi, 0x5239a0                                    # 004D3170
+    cmp_offset esi, __5239A0                             # 004D3170
     je .L4D3180                                          # 004D3176
-    cmp esi, 0x5239c0                                    # 004D3178
+    cmp_offset esi, __5239C0                             # 004D3178
     jne .L4D318B                                         # 004D317E
 .L4D3180:
     push ebx                                             # 004D3180
@@ -18161,7 +18161,7 @@ _sub_4D3120:
     lea eax, [eax + ecx*8]                               # 004D31D8
     jmp .L4D31E2                                         # 004D31DB
 .L4D31DD:
-    mov eax, 0x5238b0                                    # 004D31DD
+    mov_offset eax, __5238B0                             # 004D31DD
 .L4D31E2:
     test byte ptr [eax + 4], 0x20                        # 004D31E2
     je .L4D31F5                                          # 004D31E6
@@ -18238,13 +18238,13 @@ _sub_4D3235:
     cmp bl, 0x78                                         # 004D3277
     jg .L4D328A                                          # 004D327A
     movsx eax, bl                                        # 004D327C
-    mov al, byte ptr [eax + __504BE0]                    # 004D327F
+    mov al, byte ptr [eax + __504BC8+24]                 # 004D327F
     and eax, 0xf                                         # 004D3285
     jmp .L4D328C                                         # 004D3288
 .L4D328A:
     msvc_xor eax, eax                                    # 004D328A
 .L4D328C:
-    movsx eax, byte ptr [esi + eax*8 + 0x504c00]         # 004D328C
+    movsx eax, byte ptr [esi + eax*8 + __504C00]         # 004D328C
     sar eax, 4                                           # 004D3294
     cmp eax, 7                                           # 004D3297
     mov dword ptr [ebp - 0x30], eax                      # 004D329A
@@ -19046,7 +19046,7 @@ _sub_4D3A3F:
     push 1                                               # 004D3A71
     pop ebx                                              # 004D3A73
     push ebx                                             # 004D3A74
-    push_dword 0x504c78                                  # 004D3A75
+    push_dword __504C78                                  # 004D3A75
     mov esi, 0x100                                       # 004D3A7A
     push esi                                             # 004D3A7F
     push edi                                             # 004D3A80
@@ -19059,7 +19059,7 @@ _sub_4D3A3F:
     push edi                                             # 004D3A93
     push edi                                             # 004D3A94
     push ebx                                             # 004D3A95
-    push_dword 0x504c74                                  # 004D3A96
+    push_dword __504C74                                  # 004D3A96
     push esi                                             # 004D3A9B
     push edi                                             # 004D3A9C
     msvc_abscall _LCMapStringA                           # 004D3A9D
@@ -20255,7 +20255,7 @@ _sub_4D44FB:
     je .L4D451D                                          # 004D4510
     add eax, 8                                           # 004D4512
     inc ecx                                              # 004D4515
-    cmp eax, 0x523948                                    # 004D4516
+    cmp_offset eax, __523948                             # 004D4516
     jl .L4D450E                                          # 004D451B
 .L4D451D:
     push esi                                             # 004D451D
@@ -20281,7 +20281,7 @@ _sub_4D44FB:
     test eax, eax                                        # 004D456E
     jne .L4D4585                                         # 004D4570
     lea eax, [ebp - 0x1a4]                               # 004D4572
-    push_dword 0x504f70                                  # 004D4578
+    push_dword __504F70                                  # 004D4578
     push eax                                             # 004D457D
     call _sub_4D15D0                                     # 004D457E
     pop ecx                                              # 004D4583
@@ -20304,13 +20304,13 @@ _sub_4D44FB:
     sub eax, 0x3b                                        # 004D45B3
     push 3                                               # 004D45B6
     msvc_add edi, eax                                    # 004D45B8
-    push_dword 0x504f6c                                  # 004D45BA
+    push_dword __504F6C                                  # 004D45BA
     push edi                                             # 004D45BF
     call _sub_4D1E20                                     # 004D45C0
     add esp, 0x10                                        # 004D45C5
 .L4D45C8:
     lea eax, [ebp - 0xa0]                                # 004D45C8
-    push_dword 0x504f50                                  # 004D45CE
+    push_dword __504F50                                  # 004D45CE
     push eax                                             # 004D45D3
     call _sub_4D15D0                                     # 004D45D4
     lea eax, [ebp - 0xa0]                                # 004D45D9
@@ -20318,7 +20318,7 @@ _sub_4D44FB:
     push eax                                             # 004D45E0
     call _sub_4D15E0                                     # 004D45E1
     lea eax, [ebp - 0xa0]                                # 004D45E6
-    push_dword 0x504f4c                                  # 004D45EC
+    push_dword __504F4C                                  # 004D45EC
     push eax                                             # 004D45F1
     call _sub_4D15E0                                     # 004D45F2
     push dword ptr [esi + ___rt_err_msg+4]               # 004D45F7
@@ -20327,7 +20327,7 @@ _sub_4D44FB:
     call _sub_4D15E0                                     # 004D4604
     push_dword 0x12010                                   # 004D4609
     lea eax, [ebp - 0xa0]                                # 004D460E
-    push_dword 0x504f24                                  # 004D4614
+    push_dword __504F24                                  # 004D4614
     push eax                                             # 004D4619
     call _sub_4D5B9A                                     # 004D461A
     add esp, 0x2c                                        # 004D461F
@@ -21456,7 +21456,7 @@ _sub_4D4DB0:
 
     .global _sub_4D4F1C
 _sub_4D4F1C:
-    push_dword 0x523950                                  # 004D4F1C
+    push_dword __523950                                  # 004D4F1C
     push dword ptr [esp + 0xc]                           # 004D4F21
     push dword ptr [esp + 0xc]                           # 004D4F25
     call _sub_4D4DB0                                     # 004D4F29
@@ -21465,7 +21465,7 @@ _sub_4D4F1C:
 
     .global _sub_4D4F32
 _sub_4D4F32:
-    push_dword 0x523968                                  # 004D4F32
+    push_dword __523968                                  # 004D4F32
     push dword ptr [esp + 0xc]                           # 004D4F37
     push dword ptr [esp + 0xc]                           # 004D4F3B
     call _sub_4D4DB0                                     # 004D4F3F
@@ -22023,7 +22023,7 @@ _sub_4D53ED:
     cmp_offset eax, __523C00                             # 004D5456
     jl .L4D5447                                          # 004D545B
     msvc_xor edx, edx                                    # 004D545D
-    mov ecx, 0x523990                                    # 004D545F
+    mov_offset ecx, __523990                             # 004D545F
 .L4D5464:
     msvc_mov eax, edx                                    # 004D5464
     msvc_mov esi, edx                                    # 004D5466
@@ -22040,7 +22040,7 @@ _sub_4D53ED:
 .L4D5484:
     add ecx, 0x20                                        # 004D5484
     inc edx                                              # 004D5487
-    cmp ecx, 0x5239f0                                    # 004D5488
+    cmp_offset ecx, __5239F0                             # 004D5488
     jl .L4D5464                                          # 004D548E
     pop esi                                              # 004D5490
     ret                                                  # 004D5491
@@ -22257,7 +22257,7 @@ _sub_4D562F:
     push 1                                               # 004D5664
     pop esi                                              # 004D5666
     push esi                                             # 004D5667
-    push_dword 0x504c78                                  # 004D5668
+    push_dword __504C78                                  # 004D5668
     push esi                                             # 004D566D
     msvc_abscall _GetStringTypeW                         # 004D566E
     test eax, eax                                        # 004D5674
@@ -22268,7 +22268,7 @@ _sub_4D562F:
     lea eax, [ebp - 0x1c]                                # 004D567C
     push eax                                             # 004D567F
     push esi                                             # 004D5680
-    push_dword 0x504c74                                  # 004D5681
+    push_dword __504C74                                  # 004D5681
     push esi                                             # 004D5686
     push ebx                                             # 004D5687
     msvc_abscall _GetStringTypeA                         # 004D5688
@@ -22430,13 +22430,13 @@ _sub_4D57BA:
     msvc_cmp esi, ebx                                    # 004D57DF
     je .L4D593D                                          # 004D57E1
     msvc_xor edx, edx                                    # 004D57E7
-    mov eax, 0x523c08                                    # 004D57E9
+    mov_offset eax, __523C08                             # 004D57E9
 .L4D57EE:
     cmp dword ptr [eax], esi                             # 004D57EE
     je .L4D5864                                          # 004D57F0
     add eax, 0x30                                        # 004D57F2
     inc edx                                              # 004D57F5
-    cmp eax, 0x523cf8                                    # 004D57F6
+    cmp_offset eax, __523CF8                             # 004D57F6
     jl .L4D57EE                                          # 004D57FB
     lea eax, [ebp - 0x18]                                # 004D57FD
     push eax                                             # 004D5800
@@ -22798,22 +22798,22 @@ _sub_4D5B9A:
     push esi                                             # 004D5BA3
     push edi                                             # 004D5BA4
     jne .L4D5BE9                                         # 004D5BA5
-    push_dword 0x504fc4                                  # 004D5BA7
+    push_dword __504FC4                                  # 004D5BA7
     msvc_abscall _LoadLibraryA                           # 004D5BAC
     msvc_mov edi, eax                                    # 004D5BB2
     msvc_cmp edi, ebx                                    # 004D5BB4
     je .L4D5C1F                                          # 004D5BB6
     mov esi, dword ptr [_GetProcAddress]                 # 004D5BB8
-    push_dword 0x504fb8                                  # 004D5BBE
+    push_dword __504FB8                                  # 004D5BBE
     push edi                                             # 004D5BC3
     call esi                                             # 004D5BC4
     test eax, eax                                        # 004D5BC6
     mov dword ptr [__113E09C], eax                       # 004D5BC8
     je .L4D5C1F                                          # 004D5BCD
-    push_dword 0x504fa8                                  # 004D5BCF
+    push_dword __504FA8                                  # 004D5BCF
     push edi                                             # 004D5BD4
     call esi                                             # 004D5BD5
-    push_dword 0x504f94                                  # 004D5BD7
+    push_dword __504F94                                  # 004D5BD7
     push edi                                             # 004D5BDC
     mov dword ptr [__113E0A0], eax                       # 004D5BDD
     call esi                                             # 004D5BE2
@@ -23622,7 +23622,7 @@ _sub_4D6295:
 .L4D633A:
     test edi, 0x40000000                                 # 004D633A
     jne .L4D6349                                         # 004D6340
-    push_dword 0x504fe8                                  # 004D6342
+    push_dword __504FE8                                  # 004D6342
     jmp .L4D638F                                         # 004D6347
 .L4D6349:
     test cx, cx                                          # 004D6349
@@ -23631,14 +23631,14 @@ _sub_4D6295:
     jne .L4D6363                                         # 004D6354
     cmp dword ptr [ebp + 8], 0                           # 004D6356
     jne .L4D638A                                         # 004D635A
-    push_dword 0x504fe0                                  # 004D635C
+    push_dword __504FE0                                  # 004D635C
     jmp .L4D6372                                         # 004D6361
 .L4D6363:
     msvc_cmp edi, eax                                    # 004D6363
     jne .L4D638A                                         # 004D6365
     cmp dword ptr [ebp + 8], 0                           # 004D6367
     jne .L4D638A                                         # 004D636B
-    push_dword 0x504fd8                                  # 004D636D
+    push_dword __504FD8                                  # 004D636D
 .L4D6372:
     lea eax, [ebx + 4]                                   # 004D6372
     push eax                                             # 004D6375
@@ -23650,7 +23650,7 @@ _sub_4D6295:
     and dword ptr [ebp - 4], 0                           # 004D6381
     msvc_jmp .L4D64F8                                    # 004D6385
 .L4D638A:
-    push_dword 0x504fd0                                  # 004D638A
+    push_dword __504FD0                                  # 004D638A
 .L4D638F:
     lea eax, [ebx + 4]                                   # 004D638F
     push eax                                             # 004D6392
@@ -23834,13 +23834,13 @@ _sub_4D6528:
     mov ecx, dword ptr [esp + 4]                         # 004D6528
     msvc_xor edx, edx                                    # 004D652C
     mov dword ptr [__113DEB8], ecx                       # 004D652E
-    mov eax, 0x523cf8                                    # 004D6534
+    mov_offset eax, __523CF8                             # 004D6534
 .L4D6539:
     cmp ecx, dword ptr [eax]                             # 004D6539
     je .L4D655D                                          # 004D653B
     add eax, 8                                           # 004D653D
     inc edx                                              # 004D6540
-    cmp eax, 0x523e60                                    # 004D6541
+    cmp_offset eax, __523E60                             # 004D6541
     jl .L4D6539                                          # 004D6546
     cmp ecx, 0x13                                        # 004D6548
     jb .L4D656A                                          # 004D654B
@@ -24327,14 +24327,14 @@ _sub_4D69CB:
     msvc_mov ebp, esp                                    # 004D69CC
     sub esp, 0xc                                         # 004D69CE
     push ebx                                             # 004D69D1
-    mov ebx, 0x523e60                                    # 004D69D2
+    mov_offset ebx, __523E60                             # 004D69D2
     msvc_xor ecx, ecx                                    # 004D69D7
     sub ebx, 0x60                                        # 004D69D9
     cmp dword ptr [ebp + 0xc], ecx                       # 004D69DC
     je .L4D6A44                                          # 004D69DF
     jge .L4D69F3                                         # 004D69E1
     mov eax, dword ptr [ebp + 0xc]                       # 004D69E3
-    mov ebx, 0x523fc0                                    # 004D69E6
+    mov_offset ebx, __523FC0                             # 004D69E6
     neg eax                                              # 004D69EB
     mov dword ptr [ebp + 0xc], eax                       # 004D69ED
     sub ebx, 0x60                                        # 004D69F0

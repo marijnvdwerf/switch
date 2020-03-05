@@ -6218,10 +6218,10 @@ _sub_4A0AE5:
     mov word ptr [__E3F0BC], 0                           # 004A0AEC
     pushal                                               # 004A0AF5
     mov edi, dword ptr [__E0C3E0]                        # 004A0AF6
-    mov eax, 0xe0c410                                    # 004A0AFC
+    mov_offset eax, __E0C410                             # 004A0AFC
     add eax, 0x32c40                                     # 004A0B01
     mov dword ptr [__E0C404], eax                        # 004A0B06
-    mov ebp, 0xe0c410                                    # 004A0B0B
+    mov_offset ebp, __E0C410                             # 004A0B0B
     call _sub_45A6CA                                     # 004A0B10
     popal                                                # 004A0B15
     mov si, word ptr [__F24484]                          # 004A0B16

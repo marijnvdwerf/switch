@@ -173,7 +173,7 @@ _sub_4BE65E:
     mov dword ptr [__113E87C], 0                         # 004BE66D
     call _sub_489BA1                                     # 004BE677
     call _sub_406B2F                                     # 004BE67C
-    mov esi, 0x50b0ce                                    # 004BE681
+    mov_offset esi, __50B0CE                             # 004BE681
     mov_offset edi, __112CC04                            # 004BE686
 .L4BE68B:
     mov al, byte ptr [esi]                               # 004BE68B

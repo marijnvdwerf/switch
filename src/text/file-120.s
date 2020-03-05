@@ -2597,7 +2597,7 @@ _sub_431908:
     call _sub_4CC692                                     # 00431915
     pop edx                                              # 0043191A
     mov byte ptr [__9C64B3], 0x90                        # 0043191B
-    mov edi, 0x9c64b4                                    # 00431922
+    mov_offset edi, __9C64B4                             # 00431922
     cmp bx, -1                                           # 00431927
     je .L43193E                                          # 0043192B
     push ebx                                             # 0043192D
@@ -2717,7 +2717,7 @@ _sub_431A8A:
     call _sub_4CC692                                     # 00431A99
     pop edx                                              # 00431A9E
     mov byte ptr [__9C64B3], 0x90                        # 00431A9F
-    mov edi, 0x9c64b4                                    # 00431AA6
+    mov_offset edi, __9C64B4                             # 00431AA6
     cmp bx, -1                                           # 00431AAB
     je .L431AC2                                          # 00431AAF
     push ebx                                             # 00431AB1
@@ -7560,7 +7560,7 @@ _sub_4356D8:
     call _sub_4CC692                                     # 004356E5
     pop edx                                              # 004356EA
     mov byte ptr [__9C66B5], 0x90                        # 004356EB
-    mov edi, 0x9c66b6                                    # 004356F2
+    mov_offset edi, __9C66B6                             # 004356F2
     cmp bx, -1                                           # 004356F7
     je .L43570E                                          # 004356FB
     push ebx                                             # 004356FD
