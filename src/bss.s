@@ -535,16 +535,11 @@ variable __5252E4
 .skip 0x4
 
 # 0x5252E8
-variable __5252E8
+variable __5252E8, 4
+variable __5060D0
 
-# 0x5252E8
-.skip 0x8
-
-# 0x5252F0
 variable __5252F0
-
-# 0x5252F0
-.skip 0x1C
+.skip 0x20
 
 # 0x52530C
 variable __52530C
@@ -3205,9 +3200,10 @@ variable __F00170
 
 # 0xF00176
 variable __F00176
+.skip 0x50+10
 variable __F0029C
+.skip 0x70-10
 
-.skip 0xc0
 
 # 0xF003CE
 variable __F003CE
@@ -10718,8 +10714,6 @@ variable __113E0B8
 # 0x113E0BC
 variable __113E0BC
 
-# 0x113E0BC
-.skip 0x4
 
 # 0x113E0C0
 variable __113E0C0
@@ -10732,6 +10726,7 @@ variable __113E0C4
 
 # 0x113E0C4
 .skip 0x1C-0x18
+.skip 4
 
 # 0x113E0E0
 variable __113E0E0

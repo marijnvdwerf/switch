@@ -18780,7 +18780,7 @@ _sub_452AB4:
 
     .global _sub_452B5F
 _sub_452B5F:
-    DebugStamp
+    DebugStamp 0x12081503
     cmp byte ptr [__50B8AE], 0                           # 00452B5F
     je .L452BA3                                          # 00452B66
     mov ebx, dword ptr [__52339C]                        # 00452B68

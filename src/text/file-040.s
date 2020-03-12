@@ -1578,7 +1578,7 @@ _sub_414339:
     mov ecx, 1                                           # 004143C8
     call dword ptr [ebp*4 + __4FD170]                    # 004143CD
     mov ebx, dword ptr [__1135F26]                       # 004143D4
-    add ebx, 0x1d6                                       # 004143DA
+    add ebx, 0x190                                       # 004143DA
     mov di, 0x1c                                         # 004143E0
     mov si, 0x1c                                         # 004143E4
     mov ah, 1                                            # 004143E8

@@ -926,7 +926,7 @@ _sub_4C56F6:
     je .L4C57A5                                          # 004C5700
     test dword ptr [_scenarioChunk3+326], 3              # 004C5706
     jne .L4C57A5                                         # 004C5710
-    DebugStamp
+    DebugStamp 0x4061930
     mov_offset ebp, __9586DC                             # 004C5716
 .L4C571B:
     cmp word ptr [ebp], 0x8000                           # 004C571B

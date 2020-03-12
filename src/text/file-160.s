@@ -708,7 +708,7 @@ _sub_45383B:
 
     .global _sub_453C52
 _sub_453C52:
-    DebugStamp
+    DebugStamp 0x14121705
     mov byte ptr [__E3F0AC], 0x14                        # 00453C52
     push esi                                             # 00453C59
     movzx ebp, byte ptr [esi + 4]                        # 00453C5A
@@ -1262,7 +1262,7 @@ _sub_453C52:
 
     .global _sub_45436B
 _sub_45436B:
-    DebugStamp
+    DebugStamp 0x3011642
     mov byte ptr [__9C68EA], 0x40                        # 0045436B
     mov word ptr [__9C68E0], ax                          # 00454372
     mov word ptr [__9C68E2], cx                          # 00454378
@@ -2887,7 +2887,7 @@ _sub_45572D:
 
     .global _sub_45579F
 _sub_45579F:
-DebugStamp
+    DebugStamp 0x3012102
     mov word ptr [__E0C3B4], ax                          # 0045579F
     mov word ptr [__E0C3B6], cx                          # 004557A5
     movzx esi, cx                                        # 004557AC
@@ -3019,7 +3019,7 @@ _sub_455916:
 
     .global _sub_455943
 _sub_455943:
-DebugStamp
+    DebugStamp 0x3011643
     mov byte ptr [__9C68EA], 0x40                        # 00455943
     push edx                                             # 0045594A
     movzx esi, dl                                        # 0045594B

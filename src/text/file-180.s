@@ -146,7 +146,7 @@ _sub_4612A6:
 
     .global _sub_4612EC
 _sub_4612EC:
-DebugStamp
+    DebugStamp 0x12081064
     test dword ptr [_scenarioChunk3+16], 1               # 004612EC
     je .L461347                                          # 004612F6
     movzx ecx, word ptr [_scenarioChunk3+340]            # 004612F8
@@ -324,7 +324,7 @@ _sub_46148F:
     mov dword ptr [__113E87C], 0                         # 004614D5
     cmp eax, -1                                          # 004614DF
     jne .L4614F2                                         # 004614E2
-    DebugStamp
+    DebugStamp 0
     mov eax, 0x1112                                      # 004614E4
     mov bx, 0xffff                                       # 004614E9
     msvc_jmp _sub_4BE5EB                                 # 004614ED
@@ -3382,7 +3382,7 @@ _sub_4638CF:
 
     .global _sub_463ABA
 _sub_463ABA:
-    DebugStamp
+    DebugStamp 0x1011046
     test dword ptr [_scenarioChunk3+16], 1               # 00463ABA
     je _sub_463B65                                       # 00463AC4
     mov byte ptr [__9C68EB], 0xf                         # 00463ACA
@@ -3434,7 +3434,7 @@ _sub_463ABA:
 
     .global _sub_463B65
 _sub_463B65:
-    DebugStamp
+    DebugStamp 0x1011047
     ret                                                  # 00463B65
 
     .global _sub_463B66
@@ -4181,10 +4181,10 @@ _sub_46445C:
     shl ebp, 5                                           # 00464495
     mov dword ptr [__F25318], ebp                        # 00464498
     add dword ptr [__F25318], 0x10                       # 0046449E
-    mov dword ptr [__F2531C], 0xe93                      # 004644A5
+    mov dword ptr [__F2531C], 0xe91                      # 004644A5
     test word ptr [__E3F0BC], 1                          # 004644AF
     je .L4644C4                                          # 004644B8
-    mov dword ptr [__F2531C], 0xe9d                      # 004644BA
+    mov dword ptr [__F2531C], 0xe9b                      # 004644BA
 .L4644C4:
     mov word ptr [__F25326], 0                           # 004644C4
     msvc_mov dh, ch                                      # 004644CD
@@ -4416,10 +4416,10 @@ _sub_464742:
     pop eax                                              # 004647BD
 .L4647BE:
     add dword ptr [__F25318], 0x10                       # 004647BE
-    mov dword ptr [__F2531C], 0xe93                      # 004647C5
+    mov dword ptr [__F2531C], 0xe91                      # 004647C5
     test word ptr [__E3F0BC], 1                          # 004647CF
     je .L4647E4                                          # 004647D8
-    mov dword ptr [__F2531C], 0xe9d                      # 004647DA
+    mov dword ptr [__F2531C], 0xe9b                      # 004647DA
 .L4647E4:
     mov word ptr [__F25326], 1                           # 004647E4
     msvc_mov dh, ch                                      # 004647ED
@@ -5002,10 +5002,10 @@ _sub_464EF3:
     shl ebp, 5                                           # 00464F3E
     mov dword ptr [__F25318], ebp                        # 00464F41
     add dword ptr [__F25318], 0x10                       # 00464F47
-    mov dword ptr [__F2531C], 0xe93                      # 00464F4E
+    mov dword ptr [__F2531C], 0xe91                      # 00464F4E
     test word ptr [__E3F0BC], 1                          # 00464F58
     je .L464F6D                                          # 00464F61
-    mov dword ptr [__F2531C], 0xe9d                      # 00464F63
+    mov dword ptr [__F2531C], 0xe9b                      # 00464F63
 .L464F6D:
     mov word ptr [__F25326], 0                           # 00464F6D
     msvc_mov dh, ch                                      # 00464F76
@@ -5243,10 +5243,10 @@ _sub_4651EB:
     pop eax                                              # 00465278
 .L465279:
     add dword ptr [__F25318], 0x10                       # 00465279
-    mov dword ptr [__F2531C], 0xe93                      # 00465280
+    mov dword ptr [__F2531C], 0xe91                      # 00465280
     test word ptr [__E3F0BC], 1                          # 0046528A
     je .L46529F                                          # 00465293
-    mov dword ptr [__F2531C], 0xe9d                      # 00465295
+    mov dword ptr [__F2531C], 0xe9b                      # 00465295
 .L46529F:
     mov word ptr [__F25326], 1                           # 0046529F
     msvc_mov dh, ch                                      # 004652A8
@@ -11507,7 +11507,7 @@ _sub_46A379:
     mov edi, dword ptr [__F00160]                        # 0046A379
     mov ecx, 0x10000                                     # 0046A37F
 .L46A384:
-    and dword ptr [edi], 0x7f7f7f7f                      # 0046A384
+    and dword ptr [edi], 0x7e6f7f7f                      # 0046A384
     add edi, 4                                           # 0046A38A
     dec ecx                                              # 0046A38D
     jne .L46A384                                         # 0046A38E
@@ -11577,7 +11577,7 @@ _sub_46A439:
     mov edi, dword ptr [__F00160]                        # 0046A439
     mov ecx, 0x10000                                     # 0046A43F
 .L46A444:
-    and dword ptr [edi], 0x7f7f7f7f                      # 0046A444
+    and dword ptr [edi], 0x7e6f7f7f                      # 0046A444
     add edi, 4                                           # 0046A44A
     dec ecx                                              # 0046A44D
     jne .L46A444                                         # 0046A44E
@@ -11647,7 +11647,7 @@ _sub_46A4F9:
     mov edi, dword ptr [__F00160]                        # 0046A4F9
     mov ecx, 0x10000                                     # 0046A4FF
 .L46A504:
-    and dword ptr [edi], 0x7f7f7f7f                      # 0046A504
+    and dword ptr [edi], 0x7e6f7f7f                      # 0046A504
     add edi, 4                                           # 0046A50A
     dec ecx                                              # 0046A50D
     jne .L46A504                                         # 0046A50E
@@ -11716,7 +11716,7 @@ _sub_46A5B3:
     mov edi, dword ptr [__F00160]                        # 0046A5B3
     mov ecx, 0x10000                                     # 0046A5B9
 .L46A5BE:
-    and dword ptr [edi], 0x7f7f7f7f                      # 0046A5BE
+    and dword ptr [edi], 0x7e6f7f7f                      # 0046A5BE
     add edi, 4                                           # 0046A5C4
     dec ecx                                              # 0046A5C7
     jne .L46A5BE                                         # 0046A5C8
@@ -11785,7 +11785,7 @@ _sub_46A66D:
     mov edi, dword ptr [__F00160]                        # 0046A66D
     mov ecx, 0x10000                                     # 0046A673
 .L46A678:
-    and dword ptr [edi], 0x7f7f7f7f                      # 0046A678
+    and dword ptr [edi], 0x7e6f7f7f                      # 0046A678
     add edi, 4                                           # 0046A67E
     dec ecx                                              # 0046A681
     jne .L46A678                                         # 0046A682
@@ -11796,7 +11796,7 @@ _sub_46A66D:
     mov si, 0x180                                        # 0046A690
 .L46A694:
     mov ax, word ptr [ebp + edi]                         # 0046A694
-    and ax, 0x7f7f                                       # 0046A699
+    and ax, 0x7e6f                                       # 0046A699
     msvc_sub ah, al                                      # 0046A69D
     jae .L46A6A3                                         # 0046A69F
     neg ah                                               # 0046A6A1
@@ -11804,7 +11804,7 @@ _sub_46A66D:
     cmp ah, 4                                            # 0046A6A3
     jae .L46A6BE                                         # 0046A6A6
     mov ah, byte ptr [ebp + edi + 0x200]                 # 0046A6A8
-    and ax, 0x7f7f                                       # 0046A6AF
+    and ax, 0x7e6f                                       # 0046A6AF
     msvc_sub ah, al                                      # 0046A6B3
     jae .L46A6B9                                         # 0046A6B5
     neg ah                                               # 0046A6B7

@@ -870,7 +870,7 @@ _sub_42CF7C:
 
     .global _sub_42D133
 _sub_42D133:
-    DebugStamp
+    DebugStamp 0x27071611
     mov byte ptr [__9C68EA], 0x30                        # 0042D133
     mov word ptr [__9C68E0], ax                          # 0042D13A
     mov word ptr [__9C68E2], cx                          # 0042D140
@@ -1279,7 +1279,7 @@ _sub_42D5E5:
 
     .global _sub_42D74E
 _sub_42D74E:
-DebugStamp
+    DebugStamp 0x23111633
     mov byte ptr [__9C68EA], 0x30                        # 0042D74E
     mov word ptr [__9C68E0], ax                          # 0042D755
     mov word ptr [__9C68E2], cx                          # 0042D75B
@@ -2698,7 +2698,7 @@ _sub_42E646:
 
     .global _sub_42E6F2
 _sub_42E6F2:
-DebugStamp
+    DebugStamp 0x18061659
     mov byte ptr [__9C68EB], 0xf                         # 0042E6F2
     msvc_xor ebx, ebx                                    # 0042E6F9
 .L42E6FB:
@@ -3216,7 +3216,7 @@ _sub_42EB94:
 
     .global _sub_42ECFC
 _sub_42ECFC:
-DebugStamp 0x25081703
+    DebugStamp 0x25081703
     mov byte ptr [__9C68EA], 0x30                        # 0042ECFC
     mov word ptr [__9C68E0], ax                          # 0042ED03
     mov word ptr [__9C68E2], cx                          # 0042ED09

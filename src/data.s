@@ -2,9 +2,6 @@
 
 .data
 
-.global __5060D0
-__5060D0:
-
 # 0x506000
     .global __506000
 __506000:
@@ -1942,9 +1939,9 @@ _ui_company___widgets_3:
     widget 0x08, 1, 127, 157, 15, 41, 0x20000953, 1115
     widget 0x08, 1, 158, 188, 15, 41, 0x20000953, 1117
     widget 0x09, 0, 0, 25, 14, 39, 0xFFFFFFFF, 1465
-    widget 0x11, 1, 87, 186, 264, 275, 0x00000261, 65535
-    widget 0x0B, 1, 175, 185, 265, 269, 0x000001E6, 65535
-    widget 0x0B, 1, 175, 185, 270, 274, 0x000001E7, 65535
+    widget 0x11, 1, 87, 186, 0xff, 0x10a, 0x00000261, 65535
+    widget 0x0B, 1, 175, 185, 0x100, 0x104, 0x000001E6, 65535
+    widget 0x0B, 1, 175, 185, 0x105, 0x109, 0x000001E7, 65535
     .byte 0x1E
 
 # 0x509261
@@ -2626,7 +2623,7 @@ _ui_scenario_options___widgets_3:
     widget 0x08, 1, 65, 95, 15, 41, 0x20000953, 1677
     widget 0x08, 1, 96, 126, 15, 41, 0x20000953, 1674
     widget 0x0B, 1, 281, 355, 52, 63, 0x000006A4, 65535
-    widget 0x12, 1, 196, 355, 67, 78, 0x00000000, 65535
+    widget 0x12, 1, 196, 355, 67, 78, 0xFFFFFFFF, 65535
     widget 0x0B, 1, 344, 354, 68, 77, 0x00000060, 65535
     widget 0x0B, 1, 281, 355, 82, 93, 0x000006A4, 65535
     .byte 0x1E
@@ -2732,11 +2729,11 @@ _ui__scenario_select___widgets___widgets:
     widget 0x19, 0, 1, 608, 1, 13, 0x00000288, 65535
     widget 0x09, 0, 595, 607, 2, 14, 0x00000911, 60
     widget 0x03, 1, 0, 609, 48, 411, 0xFFFFFFFF, 65535
-    widget 0x08, 1, 3, 93, 15, 48, 0x20000E29, 65535
-    widget 0x08, 1, 94, 184, 15, 48, 0x20000E29, 65535
-    widget 0x08, 1, 185, 275, 15, 48, 0x20000E29, 65535
-    widget 0x08, 1, 276, 366, 15, 48, 0x20000E29, 65535
-    widget 0x08, 1, 367, 457, 15, 48, 0x20000E29, 65535
+    widget 0x08, 1, 3, 93, 15, 48, 0x20000E27, 65535
+    widget 0x08, 1, 94, 184, 15, 48, 0x20000E27, 65535
+    widget 0x08, 1, 185, 275, 15, 48, 0x20000E27, 65535
+    widget 0x08, 1, 276, 366, 15, 48, 0x20000E27, 65535
+    widget 0x08, 1, 367, 457, 15, 48, 0x20000E27, 65535
     widget 0x1A, 1, 3, 433, 52, 407, 0x00000002, 65535
     .byte 0x1E
 
@@ -2747,7 +2744,7 @@ _ui__scenario_select___widgets___widgets:
     .global _ui__prompt_browse___widgets___widgets
 _ui__prompt_browse___widgets___widgets:
     widget 0x02, 0, 0, 499, 0, 379, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 498, 1, 13, 0x000007F7, 65535
+    widget 0x19, 0, 1, 498, 1, 13, 0x000007E6, 65535
     widget 0x09, 0, 485, 497, 2, 14, 0x00000911, 60
     widget 0x01, 1, 0, 499, 15, 379, 0xFFFFFFFF, 65535
     widget 0x09, 1, 473, 496, 18, 41, 0x00000906, 2006
@@ -2773,7 +2770,7 @@ _ui_window_53_widgets:
     .global _ui_prompt_ok_cancel_widgets
 _ui_prompt_ok_cancel_widgets:
     widget 0x01, 0, 0, 279, 0, 91, 0xFFFFFFFF, 65535
-    widget 0x16, 0, 1, 278, 1, 13, 0x000007F7, 65535
+    widget 0x16, 0, 1, 278, 1, 13, 0x000007E6, 65535
     widget 0x0B, 0, 267, 277, 2, 12, 0x00000038, 60
     widget 0x0B, 0, 20, 119, 77, 88, 0x0000065F, 65535
     widget 0x0B, 0, 160, 259, 77, 88, 0x000000BA, 65535
@@ -2998,7 +2995,7 @@ __50AEDB:
     .global __50AEDC
 __50AEDC:
 # 0x50AEDC
-    .byte 0x00, 0x00                                     #        0 ..
+    .byte 0x00, 0x01                                     #        0 ..
 
 # 0x50AEDE
     .global __50AEDE
@@ -28641,13 +28638,13 @@ __5215C0:
 # 0x5215C0
     .byte 0x00, 0x00, 0x00, 0x00                         #        0 ....
 
+    .global __5215C4
+__5215C4:
 .byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 
     .asciz "DEBUG_AUTO_DUMP.SV5"
 
 # 0x5215C4
-    .global __5215C4
-__5215C4:
 # 0x5215C4
     .byte 0x1F, 0x00, 0x1E, 0x00 #        0 ........
     .byte 0x1F, 0x00, 0x1E, 0x00, 0x1F, 0x00, 0x1F, 0x00 #        8 ........

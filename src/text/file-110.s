@@ -51,11 +51,11 @@ _sub_42F23C:
     shr ebp, 0x10                                        # 0042F29B
     movzx eax, byte ptr [esi + 0x1d]                     # 0042F29E
     imul ebp, dword ptr [eax*4 + _scenarioChunk3+70]      # 0042F2A2
-    shr    ebp,0x8
-    imul   ebp,ebx
-    imul   ebp,ecx
-    shr    ebp,0xc
-    mov    eax,ebp
+    shr ebp, 0x8
+    imul ebp, ebx
+    imul ebp, ecx
+    shr ebp, 0xc
+    msvc_mov eax, ebp
     pop ebp                                              # 0042F2B8
     pop esi                                              # 0042F2B9
     pop edi                                              # 0042F2BA

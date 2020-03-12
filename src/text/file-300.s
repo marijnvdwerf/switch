@@ -7,7 +7,7 @@
 
     .global _sub_4C3D7C
 _sub_4C3D7C:
-    DebugStamp
+    DebugStamp 0x1050004
     mov edi, dword ptr [__E0C3E0]                        # 004C3D7C
     mov byte ptr [__E3F0AC], 0xd                         # 004C3D82
     mov bp, word ptr [esi + 4]                           # 004C3D89

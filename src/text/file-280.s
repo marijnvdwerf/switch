@@ -3779,7 +3779,7 @@ _sub_4C1282:
     inc dx                                               # 004C12AD
     add cx, word ptr [esi + 0x30]                        # 004C12AF
     add dx, word ptr [esi + 0x32]                        # 004C12B3
-    mov word ptr [__112C826], 0x7f7                      # 004C12B7
+    mov word ptr [__112C826], 0x7e6                      # 004C12B7
     mov bx, 0x781                                        # 004C12C0
     mov_offset esi, __112C826                            # 004C12C4
     msvc_xor al, al                                      # 004C12C9
@@ -3836,7 +3836,7 @@ _sub_4C1319:
     jne .L4C1323                                         # 004C132B
     mov eax, 0x782                                       # 004C132D
     mov ebx, 0x783                                       # 004C1332
-    mov ecx, 0x7f7                                       # 004C1337
+    mov ecx, 0x7e6                                       # 004C1337
     call _sub_4CE523                                     # 004C133C
     ret                                                  # 004C1341
 

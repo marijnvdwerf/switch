@@ -4951,7 +4951,7 @@ _sub_48259F:
 
     .global _sub_482662
 _sub_482662:
-    DebugStamp
+    DebugStamp 0x7090903
     push edi                                             # 00482662
     push esi                                             # 00482663
     push ebp                                             # 00482664
@@ -8709,7 +8709,7 @@ _sub_485849:
 _sub_485B68:
     test byte ptr [__112C519], 0x80                      # 00485B68
     jne .L485E6A                                         # 00485B6F
-    DebugStamp
+    DebugStamp 0x25090921
     mov ax, word ptr [__112C3C6]                         # 00485B75
     mov cx, word ptr [__112C3C8]                         # 00485B7B
     mov dl, byte ptr [__112C517]                         # 00485B82
@@ -8898,7 +8898,7 @@ _sub_485B68:
     mov eax, 1                                           # 00485E64
     ret                                                  # 00485E69
 .L485E6A:
-DebugStamp 0x27091140
+    DebugStamp 0x27091140
     mov ax, word ptr [__112C3C6]                         # 00485E6A
     mov cx, word ptr [__112C3C8]                         # 00485E70
     mov dl, byte ptr [__112C517]                         # 00485E77
@@ -12620,7 +12620,7 @@ _sub_488B4D:
 
     .global _sub_488BDB
 _sub_488BDB:
-DebugStamp 0x25012111
+    DebugStamp 0x25012111
     mov byte ptr [__9C68EA], 0x30                        # 00488BDB
     mov word ptr [__9C68E0], ax                          # 00488BE2
     mov word ptr [__9C68E2], cx                          # 00488BE8
@@ -12673,7 +12673,7 @@ DebugStamp 0x25012111
     add esi, 8                                           # 00488C90
     jmp .L488C49                                         # 00488C93
 .L488C95:
-DebugStamp
+    DebugStamp 0x25012112
     test byte ptr [esi + 6], 0x10                        # 00488C95
     jne _sub_4891C9                                      # 00488C99
     push eax                                             # 00488C9F
@@ -13139,7 +13139,7 @@ _sub_4891DB:
 
     .global _sub_4891E4
 _sub_4891E4:
-DebugStamp
+    DebugStamp 0x27011910
     mov byte ptr [__9C68EA], 0x30                        # 004891E4
     mov word ptr [__9C68E0], ax                          # 004891EB
     mov word ptr [__9C68E2], cx                          # 004891F1
@@ -13192,7 +13192,7 @@ DebugStamp
     je .L489247                                          # 00489295
     msvc_jmp _sub_489506                                 # 00489297
 .L48929C:
-DebugStamp
+    DebugStamp 0x27011911
     push eax                                             # 0048929C
     mov al, byte ptr [esi + 7]                           # 0048929D
     and al, 0xf                                          # 004892A0
@@ -13551,7 +13551,7 @@ _sub_48950F:
 
     .global _sub_48963F
 _sub_48963F:
-DebugStamp
+    DebugStamp 0x1021622
     pushal                                               # 0048963F
     test ebp, 4                                          # 00489640
     je .L489685                                          # 00489646
@@ -15061,7 +15061,7 @@ _sub_48A590:
 
     .global _sub_48A73B
 _sub_48A73B:
-DebugStamp
+    DebugStamp 0x12081065
     test dword ptr [_scenarioChunk3+16], 1               # 0048A73B
     je .L48A78C                                          # 0048A745
     cmp dword ptr [__50D1E8], -1                         # 0048A747
@@ -15084,7 +15084,7 @@ DebugStamp
 
     .global _sub_48A78D
 _sub_48A78D:
-DebugStamp
+    DebugStamp 0x7021012
     bt dword ptr [__50D1EC], 0                           # 0048A78D
     jae .L48AA0B                                         # 0048A795
     cmp byte ptr [__50D554], 0                           # 0048A79B
@@ -15454,7 +15454,7 @@ _sub_48AC66:
 
     .global _sub_48ACFD
 _sub_48ACFD:
-DebugStamp
+    DebugStamp 0x12081065
     bt dword ptr [__50D1EC], 0                           # 0048ACFD
     jae .L48AFA4                                         # 0048AD05
     cmp byte ptr [__50D554], 0                           # 0048AD0B

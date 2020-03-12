@@ -83,7 +83,7 @@ _sub_496BBC:
 
     .global _sub_496C22
 _sub_496C22:
-    DebugStamp
+    DebugStamp 0x18020839
     cmp ax, -1                                           # 00496C22
     je .L496D94                                          # 00496C26
     push eax                                             # 00496C2C
@@ -761,7 +761,7 @@ _sub_49742F:
 
     .global _sub_49748C
 _sub_49748C:
-DebugStamp
+    DebugStamp 0x12052112
     mov_offset esi, _towns                               # 0049748C
 .L497491:
     cmp word ptr [esi], -1                               # 00497491

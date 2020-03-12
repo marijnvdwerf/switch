@@ -18,7 +18,7 @@ _sub_4A8810:
 
     .global _sub_4A8826
 _sub_4A8826:
-DebugStamp
+    DebugStamp 0x12081061
     test dword ptr [_scenarioChunk3+16], 1               # 004A8826
     je .L4A8881                                          # 004A8830
     test word ptr [__508F14], 2                          # 004A8832
@@ -329,7 +329,7 @@ _loc_4A8B7C:
 
     .global _sub_4A8B81
 _sub_4A8B81:
-DebugStamp
+    DebugStamp 0x24031650
     mov dword ptr [__1136118], esi                       # 004A8B81
     movzx edi, word ptr [esi + 0x3a]                     # 004A8B87
     shl edi, 7                                           # 004A8B8B
@@ -440,7 +440,7 @@ DebugStamp
     mov byte ptr [esi + 0x5d], 7                         # 004A8D3F
     msvc_jmp .L4A8F3A                                    # 004A8D43
 .L4A8D48:
-DebugStamp 0x19091254
+    DebugStamp 0x19091254
     call _sub_4707C0                                     # 004A8D48
     mov eax, 0xd4cb00                                    # 004A8D4D
     mov ebx, dword ptr [__113612C]                       # 004A8D52
@@ -563,7 +563,7 @@ DebugStamp 0x19091254
     add_offset edi, _things                              # 004A8EE0
     mov word ptr [edi + 0x46], 0                         # 004A8EE6
 .L4A8EEC:
-    DebugStamp
+    DebugStamp 0x19091255
     movzx edi, word ptr [esi + 0x3a]                     # 004A8EEC
     shl edi, 7                                           # 004A8EF0
     add_offset edi, _things                              # 004A8EF3
@@ -646,7 +646,7 @@ DebugStamp 0x19091254
     call _sub_4BA142                                     # 004A9011
     jb .L4A8F3A                                          # 004A9016
     call _sub_4BAC74                                     # 004A901C
-    DebugStamp
+    DebugStamp 0x11110018
     mov byte ptr [esi + 0x5d], 1                         # 004A9021
     call _sub_4707C0                                     # 004A9025
     test word ptr [esi + 0xc], 0x40                      # 004A902A
@@ -1167,7 +1167,7 @@ DebugStamp 0x19091254
 
     .global _sub_4A9788
 _sub_4A9788:
-DebugStamp
+    DebugStamp 0x24031651
     cmp byte ptr [esi + 0x42], 2                         # 004A9788
     je .L4A9B08                                          # 004A978C
     cmp byte ptr [esi + 0x42], 3                         # 004A9792
@@ -1458,7 +1458,7 @@ DebugStamp
 
     .global _sub_4A9B0B
 _sub_4A9B0B:
-    DebugStamp
+    DebugStamp 0x24031652
     cmp byte ptr [esi + 0x42], 2                         # 004A9B0B
     je .L4AA005                                          # 004A9B0F
     cmp byte ptr [esi + 0x42], 3                         # 004A9B15
@@ -1858,7 +1858,7 @@ _sub_4A9B0B:
 
     .global _sub_4AA008
 _sub_4AA008:
-DebugStamp
+    DebugStamp 0x24031653
     msvc_mov eax, esi                                    # 004AA008
     xchg dword ptr [__1136128], eax                      # 004AA00A
     mov dword ptr [__1136124], eax                       # 004AA010
@@ -1988,7 +1988,7 @@ DebugStamp
 
     .global _sub_4AA1D0
 _sub_4AA1D0:
-DebugStamp
+    DebugStamp 0x24031654
     cmp byte ptr [esi + 0x42], 2                         # 004AA1D0
     je .L4AA242                                          # 004AA1D4
     cmp byte ptr [esi + 0x42], 3                         # 004AA1D6
@@ -2027,7 +2027,7 @@ DebugStamp
 
     .global _sub_4AA24A
 _sub_4AA24A:
-DebugStamp
+    DebugStamp 0x24031655
     cmp byte ptr [esi + 0x42], 2                         # 004AA24A
     je .L4AA367                                          # 004AA24E
     cmp byte ptr [esi + 0x42], 3                         # 004AA254
@@ -4547,7 +4547,7 @@ _sub_4AC34D:
 
     .global _sub_4AC3D3
 _sub_4AC3D3:
-DebugStamp
+    DebugStamp 0x30011248
     btr dx, 0xf                                          # 004AC3D3
     jb .L4AC3E4                                          # 004AC3D8
     mov dword ptr [__1136450], 0xfffffffe                # 004AC3DA
@@ -5136,7 +5136,7 @@ _sub_4ACBFF:
 _sub_4ACCDC:
     cmp byte ptr [esi + 0x42], 1                         # 004ACCDC
     je .L4ACDE0                                          # 004ACCE0
-    DebugStamp
+    DebugStamp 0x16071644
     mov al, byte ptr [esi + 0x53]                        # 004ACCE6
     movzx ebp, word ptr [esi + 0x3a]                     # 004ACCE9
     shl ebp, 7                                           # 004ACCED
@@ -5197,7 +5197,7 @@ _sub_4ACCDC:
     stc                                                  # 004ACDDE
     ret                                                  # 004ACDDF
 .L4ACDE0:
-DebugStamp
+    DebugStamp 0x16071645
     movzx ebx, byte ptr [esi + 0x35]                     # 004ACDE0
     cmp bl, 0xff                                         # 004ACDE4
     je .L4ACDF8                                          # 004ACDE7
@@ -6171,7 +6171,7 @@ _sub_4ADAA8:
 
     .global _sub_4ADB47
 _sub_4ADB47:
-DebugStamp
+    DebugStamp 0x27041151
     mov dword ptr [__1136142], eax                       # 004ADB47
     push esi                                             # 004ADB4C
 .L4ADB4D:
@@ -6764,7 +6764,7 @@ _sub_4AE2AB:
 
     .global _sub_4AE318
 _sub_4AE318:
-DebugStamp
+    DebugStamp 0x15031204
     mov byte ptr [__113646B], al                         # 004AE318
     mov eax, 4                                           # 004AE31D
     call _sub_470188                                     # 004AE322
@@ -6775,7 +6775,7 @@ DebugStamp
     call _sub_4B1E00                                     # 004AE33D
     jb .L4AE5E2                                          # 004AE342
     msvc_mov bp, ax                                      # 004AE348
-    DebugStamp
+    DebugStamp 0x15031205
     mov bl, 1                                            # 004AE34B
     call _sub_470039                                     # 004AE34D
     mov bl, byte ptr [__9C68EB]                          # 004AE352
@@ -6920,7 +6920,7 @@ DebugStamp
     shl esi, 7                                           # 004AE5C8
     add_offset esi, _things                              # 004AE5CB
     call _sub_4B7CC3                                     # 004AE5D1
-    DebugStamp
+    DebugStamp 0x15031206
     msvc_and eax, eax                                    # 004AE5D6
     ret                                                  # 004AE5D8
 .L4AE5D9:
@@ -6999,7 +6999,7 @@ _sub_4AE5E4:
     mov bl, byte ptr [__9C68EB]                          # 004AE6E6
     call _sub_437ED0                                     # 004AE6EC
     pop ebx                                              # 004AE6F1
-DebugStamp
+    DebugStamp 0x15031208
     push edx                                             # 004AE6F2
     push esi                                             # 004AE6F3
     mov esi, dword ptr [__1136240]                       # 004AE6F4
@@ -7023,7 +7023,7 @@ DebugStamp
     movsx ebx, word ptr [ebp + 8]                        # 004AE73E
     imul ebx, dword ptr [eax*4 + _scenarioChunk3+70]     # 004AE742
     sar ebx, 6                                           # 004AE74A
-    DebugStamp
+    DebugStamp 0x15031209
     ret                                                  # 004AE74D
 .L4AE74E:
     mov word ptr [__9C68E0], 0x8000                      # 004AE74E
@@ -7050,7 +7050,7 @@ DebugStamp
     call _sub_4AE86D                                     # 004AE79D
     pop edx                                              # 004AE7A2
     jae .L4AE6DE                                         # 004AE7A3
-    DebugStamp
+    DebugStamp 0x15031207
     movzx eax, word ptr [esi + 0x36]                     # 004AE7A9
     call _sub_4B1E77                                     # 004AE7AD
     call _sub_470334                                     # 004AE7B2
@@ -8953,7 +8953,7 @@ _sub_4AFFF3:
 
     .global _sub_4B01B6
 _sub_4B01B6:
-DebugStamp
+    DebugStamp 0x15102011
     push eax                                             # 004B01B6
     movzx esi, di                                        # 004B01B7
     shl esi, 7                                           # 004B01BA
@@ -9264,7 +9264,7 @@ DebugStamp
 
     .global _sub_4B05E4
 _sub_4B05E4:
-    DebugStamp
+    DebugStamp 0x15102014
     cmp word ptr [esi + 0x30], -1                        # 004B05E4
     jne .L4B0815                                         # 004B05E9
     cmp byte ptr [esi + 0x42], 1                         # 004B05EF
@@ -9427,19 +9427,19 @@ _sub_4B05E4:
     shl edi, 7                                           # 004B0808
     add_offset edi, _things                              # 004B080B
     or byte ptr [edi + 0x48], 4                          # 004B0811
-    DebugStamp
+    DebugStamp 0x15102015
 .L4B0815:
     msvc_and eax, eax                                    # 004B0815
     ret                                                  # 004B0817
 .L4B0818:
     popal                                                # 004B0818
-    DebugStamp
+    DebugStamp 0x15102016
     mov al, 1                                            # 004B0819
     stc                                                  # 004B081B
     ret                                                  # 004B081C
 .L4B081D:
     call _sub_4B08DD                                     # 004B081D
-    DebugStamp
+    DebugStamp 0x15102017
     msvc_xor al, al                                      # 004B0822
     stc                                                  # 004B0824
     ret                                                  # 004B0825
@@ -16818,7 +16818,7 @@ _loc_4B67D7:
     mov ax, word ptr [ebx + _stations+44]                # 004B67EB
     shl eax, 0x10                                        # 004B67F2
     mov ax, word ptr [ebx + _stations]                   # 004B67F5
-    mov bx, 0x1d6                                        # 004B67FC
+    mov bx, 0x190                                        # 004B67FC
     msvc_jmp .L4B691C                                    # 004B6800
     .global _loc_4B6805
 _loc_4B6805:
@@ -20400,7 +20400,7 @@ _sub_4B949C:
 
     .global _sub_4B94CF
 _sub_4B94CF:
-DebugStamp 0x4041202
+    DebugStamp 0x4041202
     test dword ptr [_scenarioChunk3+16], 1               # 004B94CF
     je .L4B9508                                          # 004B94D9
     mov si, word ptr [_scenarioChunk3+42]                # 004B94DB
@@ -21504,7 +21504,7 @@ _sub_4BA142:
     mov ecx, 1                                           # 004BA31F
 .L4BA324:
     pop esi                                              # 004BA324
-    DebugStamp
+    DebugStamp 0x11110001
     movzx ebp, word ptr [esi + 0x54]                     # 004BA325
     imul ebp, ebp, 0x3d2                                 # 004BA329
     cmp byte ptr [edi + 0x51], 0                         # 004BA32F
@@ -21707,7 +21707,7 @@ _sub_4BA142:
 .L4BA598:
     jmp .L4BA5B7                                         # 004BA598
 .L4BA59A:
-DebugStamp 0x11110004
+    DebugStamp 0x11110004
     movzx ebx, byte ptr [edi + 0x4c]                     # 004BA59A
     imul ebx, ebx, 0xd                                   # 004BA59E
     mov ax, word ptr [ebx + ebp + _stations+48]          # 004BA5A1

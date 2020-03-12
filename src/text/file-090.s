@@ -1060,7 +1060,7 @@ _loc_42B246:
     mov bl, byte ptr [ebx + __4FD97E]                    # 0042BF0F
     movzx eax, byte ptr [__F25340]                       # 0042BF15
     imul eax, eax, 0x13                                  # 0042BF1C
-    add eax, 0x41900e1c                                  # 0042BF1F
+    add eax, 0x41900e1a                                  # 0042BF1F
     msvc_add ebx, eax                                    # 0042BF24
     cmp byte ptr [__525D0C], 0                           # 0042BF26
     je .L42BF67                                          # 0042BF2D

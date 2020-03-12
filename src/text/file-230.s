@@ -3277,7 +3277,7 @@ _sub_4968C7:
     jne .L4969D9                                         # 004968E0
     .fill 0x4982ca-0x498276
 test:
-    DebugStamp
+    DebugStamp 0x12081058
     add word ptr [_scenarioChunk3+24], 0x2aa             # 004968E6
     jae .L4969D9                                         # 004968EF
     inc dword ptr [_scenarioChunk3+20]                   # 004968F5
