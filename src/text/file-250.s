@@ -11279,7 +11279,7 @@ _sub_4A4903:
     sub ax, 0x10                                         # 004A4A88
     sub cx, 0x10                                         # 004A4A8C
     call _sub_4BF52B                                     # 004A4A90
-    shr eax, 4                                           # 004A4A95
+    shr al, 4                                           # 004A4A95
     mov byte ptr [__113608F], al                         # 004A4A98
     pop ecx                                              # 004A4A9D
     pop eax                                              # 004A4A9E
@@ -11380,7 +11380,7 @@ label:
     test   BYTE PTR [esi],0x3c
     jne    .0x4a67cf
 .0x4a67d7:
-    mov    dx,WORD PTR [0x10b7d0e]
+    mov    dx,WORD PTR [__1135FEA]
     shr    dx,0x2
     mov    al,0x3
     cmp    dl,BYTE PTR [esi+0x2]
@@ -11517,7 +11517,7 @@ label:
     test   BYTE PTR [esi],0x3c
     jne    .20x4a67cf
 .20x4a67d7:
-    mov    dx,WORD PTR [0x10b7d0e]
+    mov    dx,WORD PTR [__1135FEA]
     shr    dx,0x2
     mov    al,0x3
     cmp    dl,BYTE PTR [esi+0x2]
@@ -12087,7 +12087,7 @@ _sub_4A5600:
     test   BYTE PTR [esi],0x3c
     jne    .10x4a67cf
 .10x4a67d7:
-    mov    dx,WORD PTR [0x10b7d0e]
+    mov    dx,WORD PTR [__1135FFC]
     shr    dx,0x2
     mov    al,0x3
     cmp    dl,BYTE PTR [esi+0x2]
@@ -12197,7 +12197,7 @@ _sub_4A5600:
     test   BYTE PTR [esi],0x3c
     jne    .30x4a67cf
 .30x4a67d7:
-    mov    dx,WORD PTR [0x10b7d0e]
+    mov    dx,WORD PTR [__1135FFC]
     shr    dx,0x2
     mov    al,0x3
     cmp    dl,BYTE PTR [esi+0x2]

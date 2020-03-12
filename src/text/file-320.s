@@ -2047,10 +2047,10 @@ _sub_4C6EE6:
 .L4C7066:
     cmp byte ptr [__508F19], 2                           # 004C7066
     jne .L4C707C                                         # 004C706D
-    movzx ax, byte ptr [__1140845]                       # 004C706F
+    movzx ax, byte ptr [__1140848]                       # 004C706F
     call _sub_43C7CF                                     # 004C7077
 .L4C707C:
-    test byte ptr [__1140845], 0x80                      # 004C707C
+    test byte ptr [__1140848], 0x80                      # 004C707C
     je .L4C70F1                                          # 004C7083
 .L4C7085:
     cmp byte ptr [__508F19], 1                           # 004C7085

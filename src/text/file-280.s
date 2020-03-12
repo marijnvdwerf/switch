@@ -355,7 +355,7 @@ _sub_4BE87B:
     call _sub_4CC692                                     # 004BE896
     mov byte ptr [__11364A4], al                         # 004BE89B
     mov ecx, 0x14                                        # 004BE8A0
-    mov ebx, 0x480118                                    # 004BE8A5
+    mov ebx, 0x4800fa                                    # 004BE8A5
     mov_offset edx, _ui__keyboard_shortcuts_edit___events # 004BE8AA
     call _sub_4C9C68                                     # 004BE8AF
     mov_dword_ptr_reg esi, 0x2c, _ui_keyboard_shortcuts_edit # 004BE8B4

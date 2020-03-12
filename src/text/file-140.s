@@ -8294,8 +8294,8 @@ _sub_44370A:
     .global _sub_4437FC
 _sub_4437FC:
     mov dword ptr [_scenarioChunk3+336], 0x62277         # 004437FC
-    mov    eax,[0x5280cc]
-    mov    [0x528c3a],eax
+    mov    eax,[__5060D0]
+    mov    [__5060D0],eax
     ret                                                  # 00443806
 
     .global _sub_443807
