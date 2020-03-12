@@ -2211,9 +2211,12 @@ variable __9E2422
 .skip 0x2
 
 # 0x9E2424
-variable __g1Data, 0x4201A0
+variable __g1Data, 0x4201A0 - 0xe20
+
 # 0xE025C4
 variable __E025C4
+
+.skip 0xe20
 
 # 0xE025C4
 .skip 0x1D4C - 0xe20
