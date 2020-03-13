@@ -2748,7 +2748,7 @@ _ui__prompt_browse___widgets___widgets:
     widget 0x09, 0, 485, 497, 2, 14, 0x00000911, 60
     widget 0x01, 1, 0, 499, 15, 379, 0xFFFFFFFF, 65535
     widget 0x09, 1, 473, 496, 18, 41, 0x00000906, 2006
-    widget 0x11, 1, 88, 495, 348, 361, 0xFFFFFFFF, 65535
+    widget 0x11, 1, 84, 495, 348, 361, 0xFFFFFFFF, 65535
     widget 0x0B, 1, 426, 495, 364, 375, 0x000000BB, 65535
     widget 0x1A, 1, 3, 496, 45, 367, 0x00000002, 65535
     .byte 0x1E
@@ -6021,8 +6021,7 @@ __50D150:
 # 0x50D154
     .global __50D154
 __50D154:
-# 0x50D154
-    .byte 0x1A, 0x20, 0x00, 0x00                         #        0 . ..
+    .4byte 7992
 
 # 0x50D158
     .global __50D158
@@ -6052,11 +6051,11 @@ __50D161:
     .global _ui_object_selection
 _ui_object_selection:
     widget 0x02, 0, 0, 599, 0, 397, 0xFFFFFFFF, 65535
-    widget 0x19, 0, 1, 598, 1, 13, 0x00000804, 65535
+    widget 0x19, 0, 1, 598, 1, 13, 0x000007f3, 65535
     widget 0x09, 0, 585, 597, 2, 14, 0x00000911, 60
     widget 0x01, 1, 0, 599, 65, 397, 0xFFFFFFFF, 65535
     widget 0x05, 1, 3, 591, 15, 64, 0xFFFFFFFF, 65535
-    widget 0x0B, 0, 470, 591, 20, 31, 0x0000082D, 2094
+    widget 0x0B, 0, 470, 591, 20, 31, 0x0000081c, 2077
     widget 0x1A, 1, 4, 291, 68, 384, 0x00000002, 65535
     widget 0x09, 1, 391, 504, 68, 181, 0xFFFFFFFF, 65535
     .byte 0x1E
@@ -6769,7 +6768,7 @@ _str_68:
     .global _str_69
 _str_69:
     .byte 0x0E
-    .asciz "Version 4.02.169 (UK English)"
+    .asciz "Version 4.02.039 (US English)"
 
 # 0x50DBC2
     .global _str_70
@@ -7919,7 +7918,7 @@ _str_249:
     .global _str_250
 _str_250:
     .byte 0x83
-    .asciz " - color Scheme"
+    .asciz " - Color Scheme"
 
 # 0x50E806
     .global _str_251
@@ -10371,13 +10370,13 @@ _str_605:
     .global _str_606
 _str_606:
     .ascii "+"
-    .byte 0x82
+    .byte 0x81
     .byte EOS
 
 # 0x5103BC
     .global _str_607
 _str_607:
-    .byte 0x82
+    .byte 0x81
     .byte EOS
 
 # 0x5103BE
@@ -12298,7 +12297,7 @@ _str_961:
 # 0x511145
     .global _str_962
 _str_962:
-    .asciz "#"
+    .asciz "\""
 
 # 0x511147
     .global _str_963
@@ -21867,23 +21866,6 @@ __5183FC:
     .4byte _str_2018
     .4byte _str_2019
     .4byte _str_2020
-    .4byte _str_2021
-    .4byte _str_2022
-    .4byte _str_2023
-    .4byte _str_2024
-    .4byte _str_2025
-    .4byte _str_2026
-    .4byte _str_2027
-    .4byte _str_2028
-    .4byte _str_2029
-    .4byte _str_2030
-    .4byte _str_2031
-    .4byte _str_2032
-    .4byte _str_2033
-    .4byte _str_2034
-    .4byte _str_2035
-    .4byte _str_2036
-    .4byte _str_2037
     .4byte _str_2038
     .4byte _str_2039
     .4byte _str_2040
@@ -21959,6 +21941,9 @@ __5183FC:
     .4byte _str_2110
     .4byte _str_2111
     .4byte _str_2112
+.rept 17
+    .4byte 0
+.endr
     .4byte 0
     .4byte 0
     .4byte 0
