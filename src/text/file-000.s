@@ -8210,7 +8210,7 @@ _sub_406386:
   test   eax,eax
     jne    .0x4063ec
     mov    eax,DWORD PTR [ebp-0x4]
-    mov    [0x5280cc],eax
+    mov    [__5060D0],eax
 .0x4063ec:
     push dword ptr [ebp - 4]                             # 004063DE
     msvc_abscall _RegCloseKey                            # 004063E1

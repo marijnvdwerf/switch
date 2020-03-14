@@ -1396,7 +1396,6 @@ _sub_429739:
     push esi                                             # 004298A8
     mov_offset ebx, _str_2039                            # 004298A9
     lea edx, [ebp + 1]                                   # 004298AE
-laebl:
     mov byte ptr [ebx], 8                                # 004298C1
 .L4298C5:
     mov byte ptr [ebx+1], 0x90                             # 004298C5

@@ -537,9 +537,10 @@ variable __5252E4
 # 0x5252E8
 variable __5252E8, 4
 variable __5060D0
+.skip 0x4
 
 variable __5252F0
-.skip 0x20
+.skip 0x20-0x4
 
 # 0x52530C
 variable __52530C

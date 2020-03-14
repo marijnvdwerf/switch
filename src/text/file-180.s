@@ -11862,9 +11862,6 @@ _sub_46A66D:
     jb .L46A703                                          # 0046A744
     ret                                                  # 0046A746
 
-    .global _sub_46A747
-_sub_46A747:
-
     .align 4
     .global _sub_46A794
 _sub_46A794:

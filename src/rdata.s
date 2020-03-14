@@ -26173,19 +26173,19 @@ _ui_company___events_3:
     .4byte _sub_433A21
     .4byte _sub_433A21
     .4byte _sub_433A21
-    .4byte _sub_43386F
+    .4byte _sub_433A21
     .4byte _sub_433A21
     .4byte _sub_433A21
     .4byte _sub_433A21
     .4byte _sub_43385D
     .4byte _sub_433A21
     .4byte _sub_433A21
-    .4byte _sub_433887
+    .4byte _sub_433A21
     .4byte _sub_433A21
     .4byte _sub_433A21
     .4byte _sub_4332E4
     .4byte _sub_4333D0
-    .4byte _sub_43361E
+    .4byte _sub_433A21
 
 # 0x4F9934
     .global _ui_company___events_4
@@ -27247,7 +27247,7 @@ _ui_landscape_generation___events_1:
     .4byte _sub_43E420
     .4byte _sub_43E420
     .4byte _sub_43E420
-    .4byte _sub_43E2A2
+    .4byte _sub_43E420
     .4byte _sub_43E420
     .4byte _sub_43E420
     .4byte _sub_43DEBF

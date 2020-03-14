@@ -2187,7 +2187,6 @@ _sub_428379:
     je .L4283D6                                          # 004283C9
 .L4283CB:
     add esi, 8                                           # 004283CB
-    lasdasd:
     jmp .L4283B6                                         # 004283D4
 .L4283D6:
     mov dh, byte ptr [esi + 5]                           # 004283D6

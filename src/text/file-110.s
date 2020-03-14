@@ -64,9 +64,6 @@ _sub_42F23C:
     pop ebx                                              # 0042F2BD
     ret                                                  # 0042F2BE
 
-    .global _sub_42F2BF
-_sub_42F2BF:
-
     .global _sub_42F2FE
 _sub_42F2FE:
     DebugStamp 0x4121606

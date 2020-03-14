@@ -4961,7 +4961,6 @@ _sub_4333D0:
     call   _sub_4474BA
     pop    esi
 
-label:
     movzx ebp, word ptr [esi + 0x40]                     # 004334D3
     imul ebp, ebp, 0x8fa8                                # 004334D7
     push esi                                             # 004334DD
@@ -5051,9 +5050,6 @@ label:
     pop esi                                              # 0043361C
     ret                                                  # 0043361D
 
-    .global _sub_43361E
-_sub_43361E:
-
     .global _sub_433819
 _sub_433819:
     cmp dx, 2                                            # 00433819
@@ -5088,12 +5084,6 @@ _sub_433868:
     cmp dx, 0xa                                          # 00433868
     je _sub_433891                                       # 0043386C
     ret                                                  # 0043386E
-
-    .global _sub_43386F
-_sub_43386F:
-
-    .global _sub_433887
-_sub_433887:
 
     .global _sub_433891
 _sub_433891:

@@ -366,7 +366,7 @@ _sub_4534BD:
     or     ah,ah
     je     .L453749
     push   eax
-    call _sub_42F2BF                                     # 0045372E
+    call _sub_42F489                                     # 0045372E
     pop    eax
     movzx ax, ah                                         # 00453733
     add word ptr [esi + 0x19f], bx                       # 00453737
@@ -436,7 +436,7 @@ _sub_4534BD:
     je     .L453837
 .L453802:
     push eax
-    call _sub_42F2BF                                     # 0045381C
+    call _sub_42F489                                     # 0045381C
     pop eax
     movzx ax, ah                                         # 00453821
     add word ptr [esi + 0x1a1], ax                       # 00453825

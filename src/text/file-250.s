@@ -10938,8 +10938,28 @@ _sub_4A4542:
     mov word ptr [__1136004], ax                         # 004A4639
     mov word ptr [__1136006], cx                         # 004A463F
     mov word ptr [__1136008], di                         # 004A4646
-    .fill 0x4a6237-0x4a61f9-4
-labeel:
+    pusha
+    movzx esi, cx
+    shl esi, 0x9
+    msvc_or si, ax
+    shr esi, 0x3
+    mov esi, DWORD PTR [esi + __E40134]
+    test BYTE PTR [esi], 0x3c
+    je .0x4a621d
+.0x4a6215:
+    add esi, 0x8
+    test BYTE PTR [esi], 0x3c
+    jne .0x4a6215
+.0x4a621d:
+    mov dx, WORD PTR [__1136008]
+    shr dx, 0x2
+    mov al, 0x3
+    cmp dl, BYTE PTR [esi+0x2]
+    jae .0x4a6231
+    mov al, 0x1
+.0x4a6231:
+    call _sub_4A0A18
+    popa
     mov byte ptr [__113604D], bh                         # 004A464D
     mov byte ptr [__113604E], dl                         # 004A4653
     mov byte ptr [__113604F], dh                         # 004A4659
@@ -11363,7 +11383,6 @@ _sub_4A4B07:
     call _sub_49FEC7                                     # 004A4BE1
     popal                                                # 004A4BE6
 .L4A4BE7:
-label:
     mov word ptr [__1135FE6], ax                         # 004A4BE7
     mov word ptr [__1135FE8], cx                         # 004A4BED
     mov word ptr [__1135FEA], di                         # 004A4BF4

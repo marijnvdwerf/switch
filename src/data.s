@@ -28625,8 +28625,15 @@ __5215C0:
 
     .global __5215C4
 __5215C4:
-.byte 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+    .byte 0x00
 
+    .align 4
+    .global __5215C8
+__5215C8:
+    .2byte 0x0000
+
+    .global __5215CA
+__5215CA:
     .asciz "DEBUG_AUTO_DUMP.SV5"
 
 # 0x5215C4

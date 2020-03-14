@@ -3070,9 +3070,6 @@ _sub_4965A6:
 .L4965C1:
     ret                                                  # 004965C1
 
-    .global _sub_4965C2
-_sub_4965C2:
-
     .global _sub_4965E3
 _sub_4965E3:
     mov al, byte ptr [esi]                               # 004965E3
@@ -3240,9 +3237,6 @@ _sub_49676A:
     pop ebx                                              # 0049678B
     ret                                                  # 0049678C
 
-    .global _sub_49678D
-_sub_49678D:
-
     .align 4
     .global _sub_49685C
 _sub_49685C:
@@ -3275,8 +3269,33 @@ _sub_4968C7:
     je .L4969D9                                          # 004968D1
     test word ptr [__508F14], 2                          # 004968D7
     jne .L4969D9                                         # 004968E0
-    .fill 0x4982ca-0x498276
-test:
+    test WORD PTR [__508F14], 0x1
+    jne .0x4982ca
+    inc WORD PTR [__5215C8]
+    cmp WORD PTR [__5215C8], 0x3c0
+    jb .0x4982ca
+    mov WORD PTR [__5215C8], 0x0
+    mov_offset esi, __50B1CF
+    mov_offset edi, __112CE04
+.0x4982a6:
+    mov al, BYTE PTR [esi]
+    mov BYTE PTR [edi],al
+    inc esi
+    inc edi
+    msvc_or al, al
+    jne .0x4982a6
+    mov_offset esi, __5215CA
+    dec edi
+.0x4982b6:
+    mov al, BYTE PTR [esi]
+    mov BYTE PTR [edi], al
+    inc esi
+    inc edi
+    msvc_or al, al
+    jne .0x4982b6
+    mov eax, 0x40000000
+    call _sub_441C26
+.0x4982ca:
     DebugStamp 0x12081058
     add word ptr [_scenarioChunk3+24], 0x2aa             # 004968E6
     jae .L4969D9                                         # 004968EF
