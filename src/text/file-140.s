@@ -3276,7 +3276,7 @@ _sub_43F34D:
     msvc_or al, al                                       # 0043F360
     je .L43F36F                                          # 0043F362
 .L0x43f67a:
-    cmp_offset ebx, _scenarioChunk1+361                  # 0043F364
+    cmp_offset ebx, _scenarioChunk1+359                  # 0043F364
     jb .L43F35A                                          # 0043F36A
     mov byte ptr [ebx], 0                                # 0043F36C
 .L43F36F:
@@ -11193,12 +11193,6 @@ _sub_445A4A:
 .L445AB7:
     popal                                                # 00445AB7
     ret                                                  # 00445AB8
-
-    .global _sub_445AB9
-_sub_445AB9:
-
-    .global _sub_44685C
-_sub_44685C:
 
     .global _sub_446F1D
 _sub_446F1D:

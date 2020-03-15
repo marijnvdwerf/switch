@@ -11353,9 +11353,6 @@ _sub_4CE45C:
     stc
     ret
 
-.global _sub_4CE6F2
-_sub_4CE6F2:
-
 .global _sub_4CE523 // 0x4cdb21
 _sub_4CE523:
     call   korsub_4CDCB0

@@ -5728,7 +5728,7 @@ _sub_473D1D:
     mov word ptr [__9C68E6], 0x7fe                       # 00473F9F
     jmp .L473FD9                                         # 00473FA8
 .L473FAA:
-    mov_offset edi, _str_2045+45                         # 00473FAA
+    mov_offset edi, _str_2045+48                         # 00473FAA
     msvc_mov ebp, esi                                    # 00473FAF
     call _sub_473BC7                                     # 00473FB1
     mov word ptr [__9C68E6], 0x7fd                       # 00473FB6
